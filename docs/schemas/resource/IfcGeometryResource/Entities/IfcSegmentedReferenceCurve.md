@@ -8,12 +8,14 @@ The parameterization of _IfcSegmentedReferenceCurve_ is based on the parameteriz
 Figure 1 shows a cross section of a _IfcSegmentedReferenceCurve_ usage for an alignment representation featuring cant with rotation about the low rail and varying superelevation.
 
 ![IfcSegmentedReferenceCurve_RailheadRotation](../../../../figures/IfcSegmentedReferenceCurve_RailheadRotation.svg)
-*Figure 1 — use of a segmented reference curve on a cant segment based on a gradient curve*
+
+Figure 1 — use of a segmented reference curve on a cant segment based on a gradient curve.
 
 Figure 2 shows a cross section of a _IfcSegmentedReferenceCurve_ usage for an alignment representation feature cant with rotation about the track centerline with no deviating position.
 
 ![IfcSegmentedReferenceCurve_CenterRotation](../../../../figures/IfcSegmentedReferenceCurve_CenterRotation.svg)
-*Figure 2 — use of a segmented reference curve on a cant segment based on a gradient curve with rotation about track centerline and no superelevation*
+
+Figure 2 — use of a segmented reference curve on a cant segment based on a gradient curve with rotation about track centerline and no superelevation.
 
 Informally, a _IfcSegmentedReferenceCurve_ is a curve defined in a “horizontal distance along base curve, deviating elevation” coordinate system. The _IfcCurveSegment.ParentCurve_ defines the change in cross slope between rail heads over the length of the segment. When the _IfcCurveSegment.Placement.Location_ differs from the _IfcCurveSegmentPlacement.Location_ of the next segment (or the _IfcSegmentedReferenceCurve.EndPoint_ for the last segment, if specified), the _IfcCurveSegment.ParentCurve_ also defines the deviating elevation. If the _IfcCurveSegment.Placement.Location_ is the same as for the start of the next segment, the deviating elevation along the length of the segment is constant.
 
