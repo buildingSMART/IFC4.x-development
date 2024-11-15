@@ -19,7 +19,7 @@ Figure 2 — use of a segmented reference curve on a cant segment based on a gra
 
 Informally, a _IfcSegmentedReferenceCurve_ is a curve defined in a “horizontal distance along base curve, deviating elevation” coordinate system. The _IfcCurveSegment.ParentCurve_ defines the change in cross slope between rail heads over the length of the segment. When the _IfcCurveSegment.Placement.Location_ differs from the _IfcCurveSegmentPlacement.Location_ of the next segment (or the _IfcSegmentedReferenceCurve.EndPoint_ for the last segment, if specified), the _IfcCurveSegment.ParentCurve_ also defines the deviating elevation. If the _IfcCurveSegment.Placement.Location_ is the same as for the start of the next segment, the deviating elevation along the length of the segment is constant.
 
-:construction: **REF TO EXAMPLE IN ANNEX E**
+The evaluation of a _IfcCurveSegment_ that is part of a _IfcSegmentedReferenceCurve_ is illustrated by the file in the Examples section below.
 
 ## Attributes
 
