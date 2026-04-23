@@ -246,16 +246,16 @@ encode the constraint as an OCL `ownedRule`:
 
 ## Select types
 
-SELECT types are `packagedElement` elements with `xmi:type="uml:Class"` and
-a name prefixed with `un_` (union):
+SELECT types are `packagedElement` elements with `xmi:type="uml:Dependency"` at the package level, where the `client` is the select type and the `supplier` is each member type:
 
 ```xml
-<packagedElement xmi:type="uml:Class" xmi:id="un_IfcAxis2Placement"
-                 name="IfcAxis2Placement">
+<packagedElement xmi:type="uml:Dependency" xmi:id="dependency_1377"
+                 client="un_IfcAxis2Placement"
+                 supplier="cl_IfcAxis2Placement2D"/>
+<packagedElement xmi:type="uml:Dependency" xmi:id="dependency_1378"
+                 client="un_IfcAxis2Placement"
+                 supplier="cl_IfcAxis2Placement3D"/>
 ```
-
-The members of the select are encoded as generalizations from the member types
-to the select type (reverse of entity inheritance direction).
 
 ---
 
@@ -357,22 +357,42 @@ Applicability is encoded as `uml:Dependency` elements at the package level:
 
 ### Predefined type applicability
 
-When a pset applies only to a specific predefined type value, the supplier
-references the predefined type enum value, not the entity directly:
+When a pset applies only to a specific predefined type value, predefined type
+values are represented in two ways in the UML:
+
+1. As `ownedLiteral` elements within the `uml:Enumeration` (standard enumeration encoding)
+2. As `uml:Class` elements that are subtypes of the occurrence or type object class
+   that defines the `PredefinedType` attribute
+
+These predefined type classes are named using the TypeEnum name followed by a dot
+and the enumeration value (e.g. `IfcRoadPartTypeEnum.BICYCLECROSSING`). The dot
+in the name excludes them from EXPRESS serialization. Their xmi:id uses an
+underscore instead of the dot (e.g. `cl_IfcRoadPartTypeEnum_BICYCLECROSSING`).
 
 ```xml
-<packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2"
-                 client="cl_Pset_BoilerTypeSteam"
-                 supplier="cl_IfcBoilerTypeEnum_STEAM"/>
+<!-- Predefined type class — subtype of IfcRoadPart -->
+<packagedElement xmi:type="uml:Class"
+                 xmi:id="cl_IfcRoadPartTypeEnum_BICYCLECROSSING"
+                 name="IfcRoadPartTypeEnum.BICYCLECROSSING">
+  <generalization xmi:type="uml:Generalization"
+                  xmi:id="gen_21458"
+                  general="cl_IfcRoadPart"/>
+</packagedElement>
+
+<!-- Pset associated to the predefined type class -->
+<packagedElement xmi:type="uml:Dependency"
+                 xmi:id="dependency_21657"
+                 client="cl_Pset_RoadDesignCriteriaCommon"
+                 supplier="cl_IfcRoadPartTypeEnum_BICYCLECROSSING"/>
 ```
 
-The naming convention is `cl_IfcXxxTypeEnum_VALUE`. The entity name is derived
-by stripping the `TypeEnum_VALUE` suffix, and the predefined type value is
-the part after the last `_`.
+The naming convention for the xmi:id is `cl_IfcXxxTypeEnum_VALUE`. The entity
+name is derived by stripping the `TypeEnum_VALUE` suffix (`IfcRoadPart`), and
+the predefined type value is the part after the last `_` (`BICYCLECROSSING`).
 
 For `PSET_TYPEDRIVENOVERRIDE` psets with a predefined type, the applicability
-implies both the occurrence entity (`IfcBoiler/STEAM`) and the type entity
-(`IfcBoilerType/STEAM`).
+implies both the occurrence entity (`IfcRoadPart/BICYCLECROSSING`) and the type
+entity (`IfcRoadPartType/BICYCLECROSSING`).
 
 ---
 
@@ -424,7 +444,7 @@ type references to `IfcAreaMeasure`, `IfcLengthMeasure`, etc.
 
 ## Predefined type subclasses (dot notation)
 
-In some cases, predefined type values appear as `uml:Class` elements with a
+Predefined type values appear as `uml:Class` elements with a
 dot in the name (e.g. `IfcDoor.GATE`). The dot pattern identifies these as
 predefined type pseudo-classes — they are excluded from EXPRESS serialization
 and exist only to enable pset applicability links in the UML model.
