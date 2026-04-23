@@ -18,7 +18,7 @@ One `.uml` file per IFC subschema, named after the subschema:
 
 ```
 schemas/
-  ifc4x3_add2.uml          — top-level aggregate (imports all subschemas)
+  ifc4x3_add2.uml           — top-level aggregate (imports all subschemas)
   propertytypes.uml         — PEnum definitions shared across subschemas
   IfcKernel.uml             — core layer
   IfcGeometryResource.uml   — resource layer
@@ -94,12 +94,12 @@ EXPRESS aggregates (LIST, SET, BAG, ARRAY) are encoded in the attribute **name**
 rather than UML multiplicities, to preserve EXPRESS semantics precisely.
 The name suffix encodes the aggregate type and bounds:
 
-| Suffix pattern | EXPRESS meaning |
-|---|---|
-| `_LU[1:?]` | `LIST [1:?] OF UNIQUE` |
-| `_S[0:?]` | `SET [0:?] OF` |
-| `_L[1:3]` | `LIST [1:3] OF` |
-| `_A[3:3]` | `ARRAY [3:3] OF` |
+| Suffix pattern | EXPRESS meaning        |
+|----------------|------------------------|
+| `_LU[1:?]`     | `LIST [1:?] OF UNIQUE` |
+| `_S[0:?]`      | `SET [0:?] OF`         |
+| `_L[1:3]`      | `LIST [1:3] OF`        |
+| `_A[3:3]`      | `ARRAY [3:3] OF`       |
 
 Example: `UAxes_LU[1:?]` means `LIST [1:?] OF UNIQUE IfcGridAxis`.
 
@@ -134,11 +134,11 @@ and inverse attributes** section below.
 
 Attribute types are referenced via `href` to elements in the same or other files:
 
-| Target type | href pattern |
-|---|---|
-| Entity | `IfcGeometryResource.uml#cl_IfcPoint` |
+| Target type | href pattern                                   |
+|-------------|------------------------------------------------|
+| Entity      | `IfcGeometryResource.uml#cl_IfcPoint`          |
 | Enumeration | `IfcSharedBldgElements.uml#en_IfcWallTypeEnum` |
-| Data type | `IfcMeasureResource.uml#dt_IfcLengthMeasure` |
+| Data type   | `IfcMeasureResource.uml#dt_IfcLengthMeasure`   |
 | Select type | `IfcGeometryResource.uml#un_IfcAxis2Placement` |
 
 ---
@@ -317,26 +317,26 @@ naming convention — there is no stereotype or special type.
 The `ownedComment` body encodes the pset template type, which governs
 applicability behaviour:
 
-| Template type | Meaning |
-|---|---|
+| Template type             | Meaning                                                               |
+|---------------------------|-----------------------------------------------------------------------|
 | `PSET_TYPEDRIVENOVERRIDE` | Applies to both type entity and occurrence; occurrence overrides type |
-| `PSET_OCCURRENCEDRIVEN` | Applies to occurrence entities only |
-| `PSET_PERFORMANCEDRIVEN` | Performance-based measurement sets |
-| `PSET_MATERIALDRIVEN` | Applies to materials |
-| `PSET_PROFILEDRIVEN` | Applies to profiles |
+| `PSET_OCCURRENCEDRIVEN`   | Applies to occurrence entities only                                   |
+| `PSET_PERFORMANCEDRIVEN`  | Performance-based measurement sets                                    |
+| `PSET_MATERIALDRIVEN`     | Applies to materials                                                  |
+| `PSET_PROFILEDRIVEN`      | Applies to profiles                                                   |
 
 ### Properties within a pset
 
 Properties are `ownedAttribute` children of the pset class. The property
 type is determined by the combination of the `type` element and multiplicity:
 
-| Condition | Property type |
-|---|---|
-| `uml:Enumeration` type reference | `IfcPropertyEnumeratedValue` |
-| `uml:DataType` href, lower=0, upper=1 | `IfcPropertySingleValue` |
-| `uml:DataType` href, lower=0, upper=* | `IfcPropertyListValue` |
-| `uml:DataType` href with `BOUNDED` comment | `IfcPropertyBoundedValue` |
-| `uml:Class` type reference | `IfcPropertyReferenceValue` |
+| Condition                                  | Property type                |
+|--------------------------------------------|------------------------------|
+| `uml:Enumeration` type reference           | `IfcPropertyEnumeratedValue` |
+| `uml:DataType` href, lower=0, upper=1      | `IfcPropertySingleValue`     |
+| `uml:DataType` href, lower=0, upper=*      | `IfcPropertyListValue`       |
+| `uml:DataType` href with `BOUNDED` comment | `IfcPropertyBoundedValue`    |
+| `uml:Class` type reference                 | `IfcPropertyReferenceValue`  |
 
 The data type name is extracted from the `href` fragment after the `#` and
 prefix (e.g. `IfcMeasureResource.uml#dt_IfcLengthMeasure` → `IfcLengthMeasure`).
@@ -436,14 +436,19 @@ and exist only to enable pset applicability links in the UML model.
 The UML files contain the machine-readable schema. The following IFC content
 is defined elsewhere:
 
-| Content | Location |
-|---|---|
-| Entity descriptions and extended descriptions | `docs/schemas/{layer}/{package}/Entities/{EntityName}.md` |
-| Attribute descriptions | `## Attributes` section of entity markdown files |
-| Entity notes, history, examples, deprecations | Annotation blocks in entity markdown files |
-| Informal propositions | Entity markdown files (prose, not machine-readable) |
-| Property set descriptions | `docs/schemas/{layer}/{package}/PropertySets/Pset_*.md` |
-| Property base definitions | `docs/properties/{PropertyName}.md` |
-| Property enumeration descriptions and value descriptions | `docs/schemas/{layer}/{package}/PropertyEnumerations/PEnum_*.md` |
-| Concept templates | `docs/templates/{category}/{template}/README.md` |
-| EXPRESS functions documentation | `docs/schemas/{layer}/{package}/Functions/{FunctionName}.md` |
+| Content                                                  | Location                                                                               |
+|----------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Entity descriptions and extended descriptions            | `docs/schemas/{layer}/{package}/Entities/{EntityName}.md`                              |
+| Attribute descriptions                                   | `## Attributes` section of entity markdown files                                       |
+| Entity notes, history, examples, deprecations            | Annotation blocks in entity markdown files                                             |
+| Informal propositions                                    | Entity markdown files (prose, not machine-readable)                                    |
+| Property set descriptions                                | `docs/schemas/{layer}/{package}/PropertySets/Pset_*.md`                                |
+| Property base definitions                                | `docs/properties/{PropertyName}.md`                                                    |
+| Property enumeration descriptions and value descriptions | `docs/schemas/{layer}/{package}/PropertyEnumerations/PEnum_*.md`                       |
+| Concept templates                                        | `docs/templates/{category}/{template}/README.md`                                       |
+| General usages                                           | `schemas/mvd/GeneralUsage.csv`                                                         |
+| MVD applicability                                        | `schemas/mvd.csv`                                                                      |
+| EXPRESS functions documentation                          | `docs/schemas/{layer}/{package}/Functions/{FunctionName}.md`                           |
+| WHERE rules documentation                                | `## Formal Propositions` section of entity markdown files                              |
+| Figures                                                  | `docs/figures`                                                                         |
+| Examples IFC files in documentation                      | In the `https://github.com/buildingSMART/IFC4.3.x-sample-models` repo, under `models/` |
