@@ -26,8 +26,8 @@ class base(object):
     
     def traverse(self):
         if getattr(self.xml, 'tagName', '') == "packageImport":
-            # Legacy EA form:        <packageImport importedPackage="file.uml#id"/>
-            # Papyrus-canonical form: <packageImport><importedPackage href="file.uml#id"/></packageImport>
+            # EA -form        <packageImport importedPackage="file.uml#id"/>
+            # java: <packageImport><importedPackage href="file.uml#id"/></packageImport>
             ip = self.attributes().get('importedPackage')
             if ip is None:
                 try:
