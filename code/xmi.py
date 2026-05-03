@@ -25,13 +25,22 @@ class base(object):
         return li[0]
     
     def traverse(self):
-        if getattr(self.xml, 'tagName', '') == "packageImport" and '#' in self.resolve('importedPackage'):
-            fn, hash = self.resolve('importedPackage').split('#')
-            if dc := self.doc.imports.get(fn):
-                pass
-            else:
-                dc = self.doc.imports[fn] = doc(str(Path(self.doc.filename).parent / fn))
-            self = dc.by_id[hash]
+        if getattr(self.xml, 'tagName', '') == "packageImport":
+            # Legacy EA form:        <packageImport importedPackage="file.uml#id"/>
+            # Papyrus-canonical form: <packageImport><importedPackage href="file.uml#id"/></packageImport>
+            ip = self.attributes().get('importedPackage')
+            if ip is None:
+                try:
+                    ip = (self | 'importedPackage').href
+                except ValueError:
+                    ip = None
+            if ip and '#' in ip:
+                fn, hash = ip.split('#')
+                if dc := self.doc.imports.get(fn):
+                    pass
+                else:
+                    dc = self.doc.imports[fn] = doc(str(Path(self.doc.filename).parent / fn))
+                self = dc.by_id[hash]
         yield self
         for c in self.children:
             yield from c.traverse()
