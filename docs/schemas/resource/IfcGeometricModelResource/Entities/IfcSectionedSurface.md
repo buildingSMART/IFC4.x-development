@@ -7,7 +7,7 @@ The profile normal is derived from the associated _IfcAxis2PlacementLinear_, not
 
 Figure 1 illustrates an _IfcSectionedSurface_ defined using _IfcOpenCrossProfileDef_.
 
-![sectioned surface](../../../../figures/IfcSectionedSurface_1.png)
+<img width="605" height="278" alt="Figure 8 8 3 37 A - Revised" src="https://github.com/user-attachments/assets/b701f053-42cd-4429-beaf-0311e71e58ea" />
 
 Figure 1 — Sectioned surface using _IfcOpenCrossProfileDef_
 
