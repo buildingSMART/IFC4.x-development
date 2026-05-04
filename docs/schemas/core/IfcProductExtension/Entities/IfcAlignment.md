@@ -56,7 +56,7 @@ The alignment concept is organised into two parts. These two parts work together
 
 **Geometry definition:** the IFC schema provides well established IFC geometric entities to represent the business concepts. 
 
-A mapping between the *business logic* and its *geometry definition* in IFC is described by the concept templates related to the alignment geometry.
+A mapping between the *business logic* and its *geometry definition* in IFC is described by the partial concept templates related to the alignment geometry.
 
 
 ## Attributes
