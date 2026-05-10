@@ -71,7 +71,7 @@ def unescape(s):
 def float_international(s):
     return float(s.replace(',', '.'))
     
-assocation_data = namedtuple("assocation_data", ("own_end", "type", "other_end", "asssocation"))
+association_data = namedtuple("association_data", ("own_end", "type", "other_end", "asssocation"))
 
 def yield_parents(node):
     yield node
@@ -335,13 +335,13 @@ class xmi_document:
 
             
     def extract_associations(self, concepts=False):
-        # Extract some data from the assocations for use later on
+        # Extract some data from the associations for use later on
         
         if concepts:
             self.concepts = defaultdict(lambda: defaultdict(list))
             self.concept_associations = defaultdict(lambda: defaultdict(list))
         else:
-            self.assocations = defaultdict(list)
+            self.associations = defaultdict(list)
             self.assoc_from = defaultdict(list)
             self.assoc_to = defaultdict(list)
         
@@ -390,8 +390,8 @@ class xmi_document:
                     else:
                         self.assoc_to[from_id].append(to_id)
                 
-                self.assocations[tv1].append(assocation_data(c2, self.xmi.by_id[t2], c1, assoc))
-                self.assocations[tv2].append(assocation_data(c1, self.xmi.by_id[t1], c2, assoc))
+                self.associations[tv1].append(association_data(c2, self.xmi.by_id[t2], c1, assoc))
+                self.associations[tv2].append(association_data(c1, self.xmi.by_id[t1], c2, assoc))
 
         if concepts:
             
@@ -677,14 +677,14 @@ class xmi_document:
                     
                 # In case of asymmetric inverse relationships we need to find the
                 # proper target element.
-                assocs_by_name = self.assocations[c.name].copy()
+                assocs_by_name = self.associations[c.name].copy()
                 # count duplicate role names
                 counter = Counter()
                 counter.update(ass[0].name for ass in assocs_by_name)
                 # flag duplicates
                 duplicates = [ass[0].name is not None and counter[ass[0].name] > 1 for ass in assocs_by_name]
                 # look up suppression tag
-                suppressed = [self.xmi.tags['ExpressSuppressRel'].get(ass[2].id) == "YES" for ass in self.assocations[c.name]]
+                suppressed = [self.xmi.tags['ExpressSuppressRel'].get(ass[2].id) == "YES" for ass in self.associations[c.name]]
                 # apply filter
                 assocs_by_name = [a for a,d,s in zip(assocs_by_name, duplicates, suppressed) if not (d and s)]
                     

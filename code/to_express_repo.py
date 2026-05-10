@@ -26,7 +26,7 @@ except:
 xmi = xmi.doc(fn)
 
 connector_data = namedtuple("connector_data", ("is_inverse", "inverse_order", "aggregation_type", "is_optional"))
-assocation_data = namedtuple("assocation_data", ("own_end", "type", "other_end", "asssocation"))
+association_data = namedtuple("association_data", ("own_end", "type", "other_end", "asssocation"))
 # The order in which definitions are to appear in the Express schema
 EXPRESS_ORDER=("TYPE", "ENUM", "SELECT", "ENTITY", "FUNCTION", "RULE")
 
@@ -47,15 +47,15 @@ for c in xmi/"connector":
         is_optional = "ExpressOptional" in st.tags()
         connectors[c.idref][other_cls] = connector_data(is_inverse, inverse_order, st.tags().get("ExpressAggregation"), is_optional)
     
-# Extract some data from the assocations for use later on
-assocations = defaultdict(list)
+# Extract some data from the associations for use later on
+associations = defaultdict(list)
 for assoc in xmi.by_tag_and_type["packagedElement"]["uml:Association"]:
     c1, c2 = assoc/'ownedEnd'
     t1, t2 = map(lambda c: (c|"type").idref, (c1, c2))
     tv1, tv2 = map(lambda t: xmi.by_id[t].name, (t1, t2))
     cv1, cv2 = map(operator.attrgetter('name'), (c1, c2))
-    assocations[tv1].append(assocation_data(c2, xmi.by_id[t2], c1, assoc))
-    assocations[tv2].append(assocation_data(c1, xmi.by_id[t1], c2, assoc))
+    associations[tv1].append(association_data(c2, xmi.by_id[t2], c1, assoc))
+    associations[tv2].append(association_data(c1, xmi.by_id[t1], c2, assoc))
 
 order = dict()
 for o in xmi/"thecustomprofile:ExpressOrdering":
@@ -124,7 +124,7 @@ def generate_definitions():
                 other_name = xmi.by_id[other].name
                 [supertypes, subtypes][issub].append(other_name)
             
-            for end_node, end_node_type, other_end, assoc_node in assocations[c.name]:
+            for end_node, end_node_type, other_end, assoc_node in associations[c.name]:
                 try:
                     nm = end_node.name
                     assert nm

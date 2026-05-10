@@ -511,7 +511,7 @@ class Tex_object(object):
 
         if depth < 1:
  
-            for rel in ['substitution','realization','dependency', 'assocation']:
+            for rel in ['substitution','realization','dependency', 'association']:
 
                 if rel == 'substitution':
                     dict_to_use = UMLobject.substitution_rel
@@ -519,7 +519,7 @@ class Tex_object(object):
                 elif rel == 'realization':
                     dict_to_use = UMLobject.realization_rel
                     reltype = 'real'
-                elif rel == 'assocation':
+                elif rel == 'association':
                     dict_to_use = UMLobject.assoc_rel
                     reltype = 'assoc'
                 else:

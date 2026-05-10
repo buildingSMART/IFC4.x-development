@@ -1053,7 +1053,7 @@ ex:hasProperty a sh:SPARQLConstraint;
 
 
 ex:hasNoDuplicateAssociation a sh:SPARQLConstraint;
-    sh:message "For assocation '{?resourceName}' - '{?psetName}' {?duplicates} duplicate associations are found" ;
+    sh:message "For association '{?resourceName}' - '{?psetName}' {?duplicates} duplicate associations are found" ;
     sh:select """
         PREFIX ex:  <http://example.org/ifc43Shapes/>
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

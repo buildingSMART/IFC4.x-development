@@ -9,7 +9,7 @@ class concept_type(Enum):
     OBJECT_TYPING = auto()
     # Packaged directed association class
     DIRECTIONAL_BINARY = auto()
-    # Packaged intermediate class with normal undirected assocations
+    # Packaged intermediate class with normal undirected associations
     DIRECTIONAL_GROUPED = auto()
     # N-ary packaged association class
     # currently, only approach with concept-introduced string labels
