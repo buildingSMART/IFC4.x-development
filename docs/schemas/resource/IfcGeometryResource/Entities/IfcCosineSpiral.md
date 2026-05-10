@@ -8,13 +8,13 @@ The cosine spiral curve is parameterized by its curve length and for a given par
 
 The *Heading Angle* \\(\theta(s)\\) represents the orientation of the tangent to the curve at a given arc length. It indicates the direction in which the curve is "pointing" at that point. As you move along the curve, \\(\theta(s)\\) changes, showing how the curve’s direction evolves.
 
-$$\theta(s) = \frac{1}{A_0} s \;+\; \frac{L}{\pi A_1} \sin\!\biggl(\frac{\pi}{L}s\biggr)$$
+$$\theta(s) = \frac{1}{A_0} s + \frac{L}{\pi A_1} \sin\biggl(\frac{\pi}{L}s\biggr)$$
 
 **Curvature:**
 
 The *Curvature* \\(\kappa(s)\\) describes how quickly the heading angle changes with respect to the arc length \\(s\\). It reflects the "tightness" of the curve. Higher curvature values correspond to sharper bends, and lower curvature values correspond to straighter segments.
 
-$$\kappa(s) = \frac{L}{A_0} \;+\; \frac{L}{A_1}\cos\!\biggl(\frac{\pi}{L}s\biggr)$$
+$$\kappa(s) = \frac{1}{A_0} + \frac{1}{A_1}\cos\biggl(\frac{\pi}{L}s\biggr)$$
 
 ## Attributes
 
