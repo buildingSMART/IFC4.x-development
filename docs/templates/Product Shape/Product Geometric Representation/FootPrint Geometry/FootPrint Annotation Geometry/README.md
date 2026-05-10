@@ -10,7 +10,7 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 * _IfcShapeRepresentation_._Items_ :
     * subtypes of _IfcPoint_ and _IfcCurve_ being two-dimensional and within an _IfcGeometricCurveSet_
     * subtypes of _IfcAnnotationFillArea_ for hatches
-    * subtypes of _IfcTextLiteral_ for text
+    * _IfcTextLiteralWithExtent_ for text
 
 ```
 concept {
@@ -21,7 +21,7 @@ concept {
     IfcShapeRepresentation:RepresentationType -> IfcLabel_1
     IfcShapeRepresentation:Items -> IfcGeometricCurveSet
     IfcShapeRepresentation:Items -> IfcAnnotationFillArea
-    IfcShapeRepresentation:Items -> IfcTextLiteral
+    IfcShapeRepresentation:Items -> IfcTextLiteralWithExtent
     IfcLabel_0 -> constraint_0
     constraint_0[label="=FootPrint"]
     IfcLabel_1 -> constraint_1

@@ -10,7 +10,7 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 * _IfcShapeRepresentation_._Items_ :
     * subtypes of _IfcPoint_ and _IfcCurve_ being two-dimensional and within an _IfcGeometricCurveSet_
     * subtypes of _IfcAnnotationFillArea_ for hatches
-    * subtypes of _IfcTextLiteral_ for text
+    * _IfcTextLiteralWithExtentWithExtent_ for text
 
 ```
 concept {
@@ -22,7 +22,7 @@ concept {
     IfcShapeRepresentation:Items -> IfcAnnotationFillArea
     IfcShapeRepresentation:Items -> IfcIndexedPolyCurve_2
     IfcShapeRepresentation:Items -> IfcCartesianPoint
-    IfcShapeRepresentation:Items -> IfcTextLiteral
+    IfcShapeRepresentation:Items -> IfcTextLiteralWithExtent
     IfcLabel_0 -> constraint_0
     constraint_0[label="=Annotation"]
     IfcLabel_1 -> constraint_1
@@ -43,10 +43,10 @@ concept {
     IfcCartesianPointList2D_2:CoordList -> IfcLengthMeasure
     IfcStyledItem_1:Styles -> IfcCurveStyle
     IfcCurveStyle -> Geometry_Curve_Style
-    IfcTextLiteral:Literal -> IfcPresentableText
-    IfcTextLiteral:Placement -> IfcAxis2Placement2D
-    IfcTextLiteral:Path -> IfcTextPath
-    IfcTextLiteral:StyledByItem -> IfcStyledItem_2:Item
+    IfcTextLiteralWithExtent:Literal -> IfcPresentableText
+    IfcTextLiteralWithExtent:Placement -> IfcAxis2Placement2D
+    IfcTextLiteralWithExtent:Path -> IfcTextPath
+    IfcTextLiteralWithExtent:StyledByItem -> IfcStyledItem_2:Item
     IfcStyledItem_2:Styles -> IfcTextStyle
     IfcTextStyle -> Geometry_Text_Style
     IfcShapeRepresentation:RepresentationIdentifier[binding="Identifier"]
