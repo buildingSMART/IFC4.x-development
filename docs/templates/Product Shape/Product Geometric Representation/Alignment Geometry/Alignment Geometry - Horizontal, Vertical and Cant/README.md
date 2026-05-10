@@ -41,11 +41,11 @@ concept {
     constraint_1[label="='Curve3D'"]
     IfcSegmentedReferenceCurve:BaseCurve -> IfcGradientCurve
     IfcSegmentedReferenceCurve:Segments -> IfcCurveSegment_1
-    IfcCurveSegment_1 -> Curve_Segment_Vertical
+    IfcCurveSegment_1 -> Curve_Segment_Cant
     IfcShapeRepresentation_1:RepresentationIdentifier[binding="Identifier"]
     IfcShapeRepresentation_1:RepresentationType[binding="Type"]
     IfcGradientCurve:BaseCurve -> IfcCompositeCurve
     IfcGradientCurve:Segments -> IfcCurveSegment_2
-    IfcCurveSegment_2 -> Curve_Segment_Cant
+    IfcCurveSegment_2 -> Curve_Segment_Vertical
 }
 ```
