@@ -25,7 +25,7 @@ A movable wall that is either movable, such as folding wall or a sliding wall, o
 A wall-like barrier to protect human or vehicle from falling, or to prevent the spread of fires. Often designed at the edge of balconies, terraces or roofs, or along edges of bridges.
 
 ### PARTITIONING
-A wall designed to partition spaces that often has a light-weight, sandwich-like construction (e.g. using gypsum board). Partitioning walls are normally non load bearing.
+A wall designed to partition spaces that can be a light-weight, layered system (e.g. using gypsum board) or solid wall made out of blocks or elements (e.g. using gypsum, light-weight concrete or calcium silicate). Partitioning walls are non-load-bearing.
 
 ### PLUMBINGWALL
 A pier, or enclosure, or encasement, normally used to enclose plumbing in sanitary rooms. Such walls often do not extend to the ceiling.
