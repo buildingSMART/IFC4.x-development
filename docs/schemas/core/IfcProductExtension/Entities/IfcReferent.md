@@ -11,7 +11,7 @@ Referents may be used for several scenarios:
 * indicating broken chainage where distance measurements reset or reverse directions, or have jumps.
 * indicating domain-specific design parameters (via property sets) at locations along an alignment curve
 
-> NOTE Referents can be nested to alignments, using _IfcRelNests_, to describe stations along an alignment. Being _IfcRelNests.RelatedObjects_ an ordered list, the first nested referent is the starting station of a given alignment.
+> NOTE Referents can be nested to alignments, using _IfcRelNests_, to describe stations along an alignment. Being _IfcRelNests.RelatedObjects_ an ordered list, the first nested referent is the starting station of a given alignment. _IfcReferent_ must preceed IfcAlignmentHorizontal, IfcAlignmentVertical, and IfcAlignmentCant when present in the same _IfcRelNests.RelatedObjects_ list.
 
 > NOTE The stationing value of any object can be provided, using an _IfcReferent_ and the respective _Pset_Stationing_. The relationship between the given object and the referent indicating its stationing value is an _IfcRelPositions_. 
 
