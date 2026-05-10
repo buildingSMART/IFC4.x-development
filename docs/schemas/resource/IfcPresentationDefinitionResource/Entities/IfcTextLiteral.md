@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/d496b421-29d2-435b-8210-2d395f883c82)
+
 # IfcTextLiteral
 
 The text literal is a geometric representation item which describes a text string using a string literal and additional position and path information. The text size and appearance is determined by the _IfcTextStyle_ that is associated to the _IfcTextLiteral_ through an _IfcStyledItem_.
