@@ -454,7 +454,7 @@ class xmi_document:
                     ty = self.xmi.by_id[(attr.resolve("type"))]
                     
                     if c.name.startswith("Pset"):
-                        bounds = ((attr|"lowerValue").value or "0", (attr|"upperValue").value)
+                        bounds = ((attr|"lowerValue").value or "0", (attr|"upperValue").value or "1")
                         prop_args = {"Type": re.split(r'_\w\[', ty.name)[0]}
 
                         allowed_reference_types = {"IfcAddress", "IfcAppliedValue", "IfcExternalReference", "IfcMaterialDefinition", "IfcOrganization", "IfcPerson", "IfcPersonAndOrganization", "IfcTable", "IfcTimeSeries"}
