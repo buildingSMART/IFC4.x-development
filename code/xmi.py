@@ -26,15 +26,8 @@ class base(object):
     
     def traverse(self):
         if getattr(self.xml, 'tagName', '') == "packageImport":
-            # EA -form        <packageImport importedPackage="file.uml#id"/>
-            # java: <packageImport><importedPackage href="file.uml#id"/></packageImport>
-            ip = self.attributes().get('importedPackage')
-            if ip is None:
-                try:
-                    ip = (self | 'importedPackage').href
-                except ValueError:
-                    ip = None
-            if ip and '#' in ip:
+            ip = self.resolve('importedPackage', keep_prefix=True)
+            if '#' in ip:
                 fn, hash = ip.split('#')
                 if dc := self.doc.imports.get(fn):
                     pass
@@ -62,11 +55,12 @@ class node(base):
     def tags(self):    
         return dict(map(lambda t: (t.name, t.value), self/"tag"))
     
-    def resolve(self, k):
+    def resolve(self, k, keep_prefix=False):
         v = self.attributes().get(k)
         if v is not None:
             return v
-        return (self | k).href.split('#')[1]
+        href = (self | k).href
+        return href if keep_prefix else href.split('#')[1]
 
     def attributes(self):
         return dict((k, getattr(self, k)) for k in self.xml.attributes.keys())
