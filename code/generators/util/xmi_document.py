@@ -454,7 +454,7 @@ class xmi_document:
                     ty = self.xmi.by_id[(attr.resolve("type"))]
                     
                     if c.name.startswith("Pset"):
-                        bounds = ((attr|"lowerValue").value, (attr|"upperValue").value)
+                        bounds = ((attr|"lowerValue").value or "0", (attr|"upperValue").value)
                         prop_args = {"Type": re.split(r'_\w\[', ty.name)[0]}
 
                         allowed_reference_types = {"IfcAddress", "IfcAppliedValue", "IfcExternalReference", "IfcMaterialDefinition", "IfcOrganization", "IfcPerson", "IfcPersonAndOrganization", "IfcTable", "IfcTimeSeries"}
@@ -570,7 +570,7 @@ class xmi_document:
                     else:
                         name, *aggr = a.name.split('_')
                         parts = []
-                        if (a|'lowerValue').value == "0":
+                        if ((a|'lowerValue').value or "0") == "0":
                             parts.append("OPTIONAL")
                         for ag in aggr:
                             parts.extend(format_aggr(ag))
