@@ -3426,21 +3426,6 @@ OR
         <ownedComment xmi:type="uml:Comment" xmi:id="comment_tm16_01">
           <body>PSET_TYPEDRIVENOVERRIDE</body>
         </ownedComment>
-        <!-- Common reused properties first (Reference, Status) so Pset_ArchElementCommon
-             matches the convention used by Pset_WallCommon / Pset_DoorCommon.
-             The csv only lists InnerRadius/OuterRadius/CentroidRadius as ADD, plus
-             EXIST rows for Thickness + LoadBearing (renamed from IsLoadBearing).
-             We include Reference + Status for editorial consistency with peers. -->
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementCommon_Reference" name="Reference" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_tm16_p01" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_tm16_p01" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementCommon_Status" name="Status" isOrdered="false">
-          <type xmi:type="uml:Enumeration" href="propertytypes.uml#en_PEnum_ElementStatus"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_tm16_p02" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_tm16_p02" value="*"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementCommon_LoadBearing" name="LoadBearing" isOrdered="false">
           <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_tm16_p03" value="0"/>
