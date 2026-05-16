@@ -139,7 +139,7 @@ jobs:
       # ----------------------------------------------------------------
       # Baseline generation (best-effort -- failure does not block)
       # ----------------------------------------------------------------
-      - name: Generate baseline EXPRESS from BASE_REF
+      - name: Generate baseline EXPRESS (+ XSD) from BASE_REF
         if: steps.diff.outputs.have_base == 'true'
         id: baseline
         continue-on-error: true
@@ -148,7 +148,8 @@ jobs:
           git worktree add "$BASE_TMP" "$BASE_REF"
           cd "$BASE_TMP/code"
           python -m generators.express ../schemas/ifc4x3_add2.uml \
-            -o /tmp/baseline.exp 2>&1 | tail -5
+            -o /tmp/baseline.exp \
+            --with-xsd --xsd-output /tmp/baseline.xsd 2>&1 | tail -5
           base_lines=$(wc -l < /tmp/baseline.exp)
           echo "lines=$base_lines" >> "$GITHUB_OUTPUT"
           echo "  baseline: $base_lines lines"
@@ -156,12 +157,13 @@ jobs:
       # ----------------------------------------------------------------
       # PR head generation
       # ----------------------------------------------------------------
-      - name: Generate EXPRESS from PR head
+      - name: Generate EXPRESS (+ XSD) from PR head
         id: gen_express
         run: |
           cd code
           python -m generators.express ../schemas/ifc4x3_add2.uml \
-            -o /tmp/pr.exp 2>&1 | tee /tmp/express.log | tail -50 || true
+            -o /tmp/pr.exp \
+            --with-xsd --xsd-output /tmp/pr.xsd 2>&1 | tee /tmp/express.log | tail -50 || true
           if [ ! -f /tmp/pr.exp ]; then
             echo "::error::generators.express did not produce /tmp/pr.exp"
             echo "--- last 80 lines of full output ---"
@@ -170,6 +172,19 @@ jobs:
           fi
           echo "lines=$(wc -l </tmp/pr.exp)" >> "$GITHUB_OUTPUT"
           echo "tail=$(tail -1 /tmp/pr.exp)" >> "$GITHUB_OUTPUT"
+
+      # ----------------------------------------------------------------
+      - name: Generate EXPRESS diff (baseline vs PR)
+        id: express_diff
+        if: always() && steps.baseline.outcome == 'success'
+        continue-on-error: true
+        run: |
+          cd code
+          python -m express_diff /tmp/baseline.exp /tmp/pr.exp /tmp/express_diff.md 2>&1 | tail -5
+          if [ -f /tmp/express_diff.md ]; then
+            echo "  diff lines: $(wc -l < /tmp/express_diff.md)"
+            echo "size=$(wc -c < /tmp/express_diff.md)" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: VALIDATE -- EXPRESS line count and END_SCHEMA
         id: validate_express
@@ -362,6 +377,7 @@ jobs:
           MD_FILES:           ${{ steps.diff.outputs.md_files }}
         with:
           script: |
+            const fs = require('fs');
             const icon = (o) => ({ success: '✓', failure: '✗', skipped: '⊘', cancelled: '⊘' }[o] || '?');
             const checks = [
               ['EXPRESS schema valid',                process.env.OUT_EXPRESS],
@@ -382,6 +398,30 @@ jobs:
               ? `- ${label} (${items.length}): \`${items.join('`, `')}\``
               : `- ${label}: (none)`;
 
+            // Embed the express_diff report as a collapsible <details> block.
+            // Cap at 8000 chars to stay well under GitHub's 65k comment limit.
+            let diffSection = '';
+            try {
+              if (fs.existsSync('/tmp/express_diff.md')) {
+                let diff = fs.readFileSync('/tmp/express_diff.md', 'utf8');
+                let truncated = '';
+                if (diff.length > 8000) {
+                  diff = diff.slice(0, 8000);
+                  truncated = '\n\n_Diff truncated -- full report in the workflow artifact bundle._';
+                }
+                diffSection = [
+                  '',
+                  '<details><summary>📋 EXPRESS schema diff (baseline vs PR head)</summary>',
+                  '',
+                  diff,
+                  truncated,
+                  '</details>',
+                ].join('\n');
+              }
+            } catch (e) {
+              diffSection = `\n_express_diff unavailable: ${e.message}_`;
+            }
+
             const body = [
               '### PR Validation -- schema generators',
               '',
@@ -394,6 +434,7 @@ jobs:
               list('New UML Psets/Qtos', psets),
               list('UML files changed',  uml),
               list('MD docs changed',    md),
+              diffSection,
               '',
               `<sub>See [workflow run](${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}) for failure details.</sub>`,
             ].join('\n');
@@ -414,6 +455,9 @@ jobs:
           path: |
             /tmp/pr.exp
             /tmp/baseline.exp
+            /tmp/pr.xsd
+            /tmp/baseline.xsd
+            /tmp/express_diff.md
             /tmp/pset_out/
             /tmp/structure.json
             /tmp/bsdd_out/
