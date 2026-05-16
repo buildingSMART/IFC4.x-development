@@ -1,4 +1,7 @@
 import argparse
+import csv
+import glob
+import os
 from pathlib import Path
 import re
 import json
@@ -281,6 +284,17 @@ if __name__ == "__main__":
         for x in sorted(roots):
             do_print(x)
 
+    mvd_root = REPO_ROOT / "schemas" / "mvd"
+    xmi_concepts = {}
+    for fp in sorted(glob.glob(str(mvd_root / "**" / "*.csv"), recursive=True)):
+        rel = os.path.relpath(fp, mvd_root)
+        keys = [x.split('.')[0] for x in rel.split(os.sep)]
+        cur = xmi_concepts
+        for k in keys[:-1]:
+            cur = cur.setdefault(k, {})
+        with open(fp, newline='', encoding='utf-8') as cf:
+            cur[keys[-1]] = list(csv.DictReader(cf))
+
     json.dump({
         "entity_supertype": supertype,
         "entity_to_package": entity_to_package,
@@ -291,5 +305,6 @@ if __name__ == "__main__":
         "deprecated_entities": deprecated_entities,
         "abstract_entities": abstract_entities,
         "type_values": type_values,
-        "entity_where_clauses": where_clauses
+        "entity_where_clauses": where_clauses,
+        "xmi_concepts": xmi_concepts
     }, open(args.output, "w", encoding="utf-8"))
