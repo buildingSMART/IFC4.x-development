@@ -1,0 +1,421 @@
+# Pass criteria (each emits ::error:: and fails the job if violated):
+#   - EXPRESS schema closes with END_SCHEMA;
+#   - EXPRESS line count >= 10,000 (catches the silent-empty-schema bug)
+#   - EXPRESS line count within +/- 50% of the BASE_REF baseline
+#   - Every modified Pset_*.xml or Qto_*.xml is emitted by generators.pset
+#   - Every new ENTITY/TYPE declared in the UML diff is present in
+#      structure.json after the json generator runs
+
+name: PR Validation (schema generators)
+
+on:
+  pull_request:
+    branches:
+      - ifc4.4-main
+      - ifc4.3-main
+    paths:
+      - 'schemas/**'
+      - 'docs/**'
+      - 'reference_schemas/psd/**'
+      - 'code/**'
+      - '.github/workflows/pr-validation.yml'
+  workflow_dispatch:
+    inputs:
+      base_ref:
+        description: 'Base ref to diff against (default: PR base or ifc4.4-main)'
+        required: false
+        default: 'ifc4.4-main'
+      shadow_mode:
+        description: 'shadow_mode=true: validation runs but does not fail the job (used during rollout)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: pr-validation-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write   # for the summary comment
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      PR_NUMBER:    ${{ github.event.pull_request.number }}
+      BASE_REF:     ${{ github.event.pull_request.base.ref || inputs.base_ref || 'ifc4.4-main' }}
+      SHADOW_MODE:  ${{ inputs.shadow_mode || 'false' }}
+      PYTHONHASHSEED: "0"
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      # ----------------------------------------------------------------
+      - name: Checkout PR head (with base history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # need base ref for diff
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: code/requirements.txt
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y graphviz rsync unzip
+
+      - name: Install pip deps
+        run: |
+          python -m pip install --upgrade pip wheel setuptools
+          python -m pip install --no-build-isolation "PyYAML==6.0"
+          python -m pip install reversestem
+          python -m pip install -r code/requirements.txt nltk
+          python -m pip install ifcopenshell
+
+      # ----------------------------------------------------------------
+      # Diff & detection
+      # ----------------------------------------------------------------
+      - name: Compute diff vs base
+        id: diff
+        run: |
+          # Fetch base ref. May fail on forks where base branch isn't
+          # mirrored; if so we fall back to a lighter check.
+          if git fetch origin "$BASE_REF":"$BASE_REF" 2>/dev/null; then
+            echo "have_base=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::could not fetch BASE_REF=$BASE_REF -- skipping baseline-diff checks"
+            echo "have_base=false" >> "$GITHUB_OUTPUT"
+          fi
+
+          # Modified UML schemas, MD docs, and pset XMLs (one per line)
+          {
+            echo "uml_files<<EOF"
+            git diff --name-only "$BASE_REF"...HEAD -- 'schemas/*.uml' 2>/dev/null || true
+            echo "EOF"
+            echo "md_files<<EOF"
+            git diff --name-only "$BASE_REF"...HEAD -- 'docs/**/*.md' 2>/dev/null || true
+            echo "EOF"
+            echo "psd_files<<EOF"
+            git diff --name-only "$BASE_REF"...HEAD -- 'reference_schemas/psd/*.xml' 2>/dev/null || true
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+          # New entities (only ADDITIONS in the diff, only uml:Class names
+          # starting with Ifc). Tested locally against the TM16 patch:
+          # correctly detected IfcArchElement and IfcArchElementType.
+          {
+            echo "new_entities<<EOF"
+            git diff "$BASE_REF"...HEAD -- 'schemas/*.uml' 2>/dev/null | \
+              grep -E '^\+.*<packagedElement.*xmi:type="uml:Class".*name="(Ifc[A-Za-z]+)"' | \
+              sed -E 's/.*name="(Ifc[A-Za-z]+)".*/\1/' | sort -u || true
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+          # New UML Psets/Qtos -- mirror of new_entities but matching Pset_/Qto_.
+          # generators.pset produces one XML per such class IF the
+          # uml:Dependency edge is present. We use this list to verify output.
+          {
+            echo "new_psets<<EOF"
+            git diff "$BASE_REF"...HEAD -- 'schemas/*.uml' 2>/dev/null | \
+              grep -E '^\+.*<packagedElement.*xmi:type="uml:Class".*name="((Pset|Qto)_[A-Za-z0-9_]+)"' | \
+              sed -E 's/.*name="((Pset|Qto)_[A-Za-z0-9_]+)".*/\1/' | sort -u || true
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+          # New PEnums (only ADDITIONS, only uml:Enumeration names starting with PEnum_).
+          {
+            echo "new_penums<<EOF"
+            git diff "$BASE_REF"...HEAD -- 'schemas/propertytypes.uml' 2>/dev/null | \
+              grep -E '^\+.*<packagedElement.*xmi:type="uml:Enumeration".*name="(PEnum_[A-Za-z0-9_]+)"' | \
+              sed -E 's/.*name="(PEnum_[A-Za-z0-9_]+)".*/\1/' | sort -u || true
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      # ----------------------------------------------------------------
+      # Baseline generation (best-effort -- failure does not block)
+      # ----------------------------------------------------------------
+      - name: Generate baseline EXPRESS from BASE_REF
+        if: steps.diff.outputs.have_base == 'true'
+        id: baseline
+        continue-on-error: true
+        run: |
+          BASE_TMP=$(mktemp -d)
+          git worktree add "$BASE_TMP" "$BASE_REF"
+          cd "$BASE_TMP/code"
+          python -m generators.express ../schemas/ifc4x3_add2.uml \
+            -o /tmp/baseline.exp 2>&1 | tail -5
+          base_lines=$(wc -l < /tmp/baseline.exp)
+          echo "lines=$base_lines" >> "$GITHUB_OUTPUT"
+          echo "  baseline: $base_lines lines"
+
+      # ----------------------------------------------------------------
+      # PR head generation
+      # ----------------------------------------------------------------
+      - name: Generate EXPRESS from PR head
+        id: gen_express
+        run: |
+          cd code
+          python -m generators.express ../schemas/ifc4x3_add2.uml \
+            -o /tmp/pr.exp 2>&1 | tee /tmp/express.log | tail -50 || true
+          if [ ! -f /tmp/pr.exp ]; then
+            echo "::error::generators.express did not produce /tmp/pr.exp"
+            echo "--- last 80 lines of full output ---"
+            tail -80 /tmp/express.log
+            exit 1
+          fi
+          echo "lines=$(wc -l </tmp/pr.exp)" >> "$GITHUB_OUTPUT"
+          echo "tail=$(tail -1 /tmp/pr.exp)" >> "$GITHUB_OUTPUT"
+
+      - name: VALIDATE -- EXPRESS line count and END_SCHEMA
+        id: validate_express
+        if: always()
+        env:
+          LINES: ${{ steps.gen_express.outputs.lines }}
+          TAIL: ${{ steps.gen_express.outputs.tail }}
+          BASE_LINES: ${{ steps.baseline.outputs.lines }}
+        run: |
+          fail=0
+          if [ "$TAIL" != "END_SCHEMA;" ]; then
+            echo "::error::EXPRESS schema did not close with END_SCHEMA; (last line was: $TAIL)"
+            fail=1
+          fi
+          if [ "$LINES" -lt 10000 ]; then
+            echo "::error::EXPRESS schema has only $LINES lines (expected ~14000). This is the silent-empty-schema class of bug -- see PR #1087."
+            fail=1
+          fi
+          if [ -n "$BASE_LINES" ] && [ "$BASE_LINES" -gt 0 ]; then
+            ratio=$(python -c "print($LINES/$BASE_LINES)")
+            echo "  PR=$LINES  baseline=$BASE_LINES  ratio=$ratio"
+            if ! python -c "import sys; r=$LINES/$BASE_LINES; sys.exit(0 if 0.5 <= r <= 1.5 else 1)"; then
+              echo "::error::PR EXPRESS line count is $LINES vs baseline $BASE_LINES (ratio $ratio); outside +/- 50%."
+              fail=1
+            fi
+          fi
+          [ $fail -eq 0 ] || exit ${SHADOW_MODE:+0}${SHADOW_MODE:-1}
+
+      # ----------------------------------------------------------------
+      - name: Generate Pset XMLs
+        id: gen_pset
+        run: |
+          cd code
+          mkdir -p /tmp/pset_out
+          python -m generators.pset ../schemas/ifc4x3_add2.uml \
+            -o /tmp/pset_out 2>&1 | grep -v "^WARNING" | tail -20
+          echo "count=$(ls /tmp/pset_out | wc -l)" >> "$GITHUB_OUTPUT"
+
+      - name: VALIDATE -- new UML Psets/Qtos are emitted by generator
+        id: validate_uml_psets
+        if: always()
+        env:
+          NEW_PSETS: ${{ steps.diff.outputs.new_psets }}
+        run: |
+          if [ -z "$(echo "$NEW_PSETS" | tr -d '[:space:]')" ]; then
+            echo "No new UML Psets/Qtos detected -- skipping check"
+            exit 0
+          fi
+          fail=0
+          while read -r p; do
+            [ -z "$p" ] && continue
+            if [ ! -f "/tmp/pset_out/${p}.xml" ]; then
+              echo "::error::UML class $p declared in PR but generators.pset did not emit ${p}.xml. Likely cause: missing uml:Dependency edge from cl_${p} to its applicable entity in the UML."
+              fail=1
+            fi
+          done <<< "$NEW_PSETS"
+          [ $fail -eq 0 ] || exit 1
+
+      - name: VALIDATE -- modified psets are emitted by generator
+        id: validate_modified_psets
+        if: always()
+        env:
+          PSD_FILES: ${{ steps.diff.outputs.psd_files }}
+        run: |
+          fail=0
+          while read -r f; do
+            [ -z "$f" ] && continue
+            base=$(basename "$f")
+            if [ ! -f "/tmp/pset_out/$base" ]; then
+              echo "::error::Pset $base modified in PR but generator did not emit it. Likely cause: missing uml:Dependency edge from cl_${base%.xml} to its applicable entity in the UML."
+              fail=1
+            fi
+          done <<< "$PSD_FILES"
+          [ $fail -eq 0 ] || exit ${SHADOW_MODE:+0}${SHADOW_MODE:-1}
+
+      # ----------------------------------------------------------------
+      - name: Generate JSON
+        run: |
+          cd code
+          python -m generators.json ../schemas/ifc4x3_add2.uml /tmp/pset_out \
+            --output /tmp/structure.json 2>&1 | grep -v "^WARNING" | tail -5
+          ls -la /tmp/structure.json
+
+      - name: VALIDATE -- new entities present in structure.json
+        id: validate_entities_json
+        if: always()
+        env:
+          NEW_ENTITIES: ${{ steps.diff.outputs.new_entities }}
+        run: |
+          fail=0
+          while read -r e; do
+            [ -z "$e" ] && continue
+            if ! grep -q "\"$e\"" /tmp/structure.json; then
+              echo "::error::Entity $e is declared in the UML diff but not present in generated structure.json. Possible cause: malformed packagedElement or missing generalization edge."
+              fail=1
+            fi
+          done <<< "$NEW_ENTITIES"
+          [ $fail -eq 0 ] || exit ${SHADOW_MODE:+0}${SHADOW_MODE:-1}
+
+      # ----------------------------------------------------------------
+      - name: VALIDATE -- new entities have MD docs
+        id: validate_md_docs
+        if: always()
+        env:
+          NEW_ENTITIES: ${{ steps.diff.outputs.new_entities }}
+        run: |
+          fail=0
+          while read -r e; do
+            [ -z "$e" ] && continue
+            if ! find docs/schemas -path "*/Entities/${e}.md" 2>/dev/null | grep -q .; then
+              echo "::error::Entity $e is declared in UML but has no docs/schemas/**/Entities/${e}.md. Without this, the HTML page renders empty."
+              fail=1
+            fi
+          done <<< "$NEW_ENTITIES"
+          [ $fail -eq 0 ] || exit 1
+
+      # ----------------------------------------------------------------
+      - name: VALIDATE -- PEnum convention (no USERDEFINED/NOTDEFINED/UNKNOWN; tail OTHER,NOTKNOWN,UNSET)
+        id: validate_penum
+        if: always()
+        env:
+          UML_FILES: ${{ steps.diff.outputs.uml_files }}
+        run: |
+          if ! echo "$UML_FILES" | grep -q "propertytypes.uml"; then
+            echo "propertytypes.uml not in diff -- skipping PEnum check"
+            exit 0
+          fi
+          fail=0
+          new_penums=$(git diff "$BASE_REF"...HEAD -- schemas/propertytypes.uml 2>/dev/null | \
+            grep -E '^\+.*<packagedElement.*xmi:type="uml:Enumeration".*name="PEnum_[A-Za-z0-9_]+"' | \
+            sed -E 's/.*name="(PEnum_[A-Za-z0-9_]+)".*/\1/' | sort -u)
+          if [ -z "$new_penums" ]; then
+            echo "No new PEnums detected -- skipping convention check"
+            exit 0
+          fi
+          while read -r p; do
+            [ -z "$p" ] && continue
+            literals=$(python3 - "$p" <<'PY'
+          import sys, xml.etree.ElementTree as ET
+          name = sys.argv[1]
+          tree = ET.parse('schemas/propertytypes.uml')
+          for pe in tree.getroot().iter():
+              if pe.get('name') == name and pe.get('{http://www.omg.org/spec/XMI/20131001}type') == 'uml:Enumeration':
+                  lits = [l.get('name') for l in pe.findall('ownedLiteral')]
+                  print(','.join(lits))
+                  break
+          PY
+          )
+            for bad in USERDEFINED NOTDEFINED UNKNOWN; do
+              if echo "$literals" | grep -qw "$bad"; then
+                echo "::error::PEnum $p contains forbidden value '$bad'. Use OTHER/NOTKNOWN/UNSET instead."
+                fail=1
+              fi
+            done
+            tail3=$(echo "$literals" | awk -F',' '{print $(NF-2)","$(NF-1)","$NF}')
+            if [ "$tail3" != "OTHER,NOTKNOWN,UNSET" ]; then
+              echo "::error::PEnum $p does not end with OTHER,NOTKNOWN,UNSET (got tail: $tail3)."
+              fail=1
+            fi
+          done <<< "$new_penums"
+          [ $fail -eq 0 ] || exit 1
+
+      # ----------------------------------------------------------------
+      - name: Generate bSDD (best-effort)
+        continue-on-error: true
+        run: |
+          cd code
+          mkdir -p /tmp/bsdd_out
+          python -m generators.bsdd ../schemas/ifc4x3_add2.uml \
+            --output /tmp/bsdd_out 2>&1 | grep -v "^WARNING" | tail -5
+
+      # ----------------------------------------------------------------
+      # PR summary comment -- per-check pass/fail + lists of new artifacts.
+      # Posted as github-actions[bot] on the PR conversation.
+      # ----------------------------------------------------------------
+      - name: Summary comment on PR
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/github-script@v7
+        env:
+          OUT_EXPRESS:        ${{ steps.validate_express.outcome }}
+          OUT_UML_PSETS:      ${{ steps.validate_uml_psets.outcome }}
+          OUT_MODIFIED_PSETS: ${{ steps.validate_modified_psets.outcome }}
+          OUT_ENTITIES_JSON:  ${{ steps.validate_entities_json.outcome }}
+          OUT_MD_DOCS:        ${{ steps.validate_md_docs.outcome }}
+          OUT_PENUM:          ${{ steps.validate_penum.outcome }}
+          NEW_ENTS:           ${{ steps.diff.outputs.new_entities }}
+          NEW_PSETS:          ${{ steps.diff.outputs.new_psets }}
+          NEW_PENUMS:         ${{ steps.diff.outputs.new_penums }}
+          UML_FILES:          ${{ steps.diff.outputs.uml_files }}
+          MD_FILES:           ${{ steps.diff.outputs.md_files }}
+        with:
+          script: |
+            const icon = (o) => ({ success: '✓', failure: '✗', skipped: '⊘', cancelled: '⊘' }[o] || '?');
+            const checks = [
+              ['EXPRESS schema valid',                process.env.OUT_EXPRESS],
+              ['New entities present in structure.json', process.env.OUT_ENTITIES_JSON],
+              ['MD docs for new entities',             process.env.OUT_MD_DOCS],
+              ['PEnum convention',                     process.env.OUT_PENUM],
+              ['New UML Psets/Qtos emitted',           process.env.OUT_UML_PSETS],
+              ['Modified psets emitted',               process.env.OUT_MODIFIED_PSETS],
+            ];
+            const split = (v) => (v || '').trim().split('\n').filter(Boolean);
+            const ents   = split(process.env.NEW_ENTS);
+            const psets  = split(process.env.NEW_PSETS);
+            const penums = split(process.env.NEW_PENUMS);
+            const uml    = split(process.env.UML_FILES).map(p => p.split('/').pop());
+            const md     = split(process.env.MD_FILES).map(p => p.split('/').pop());
+
+            const list = (label, items) => items.length
+              ? `- ${label} (${items.length}): \`${items.join('`, `')}\``
+              : `- ${label}: (none)`;
+
+            const body = [
+              '### PR Validation -- schema generators',
+              '',
+              '**Checks:**',
+              ...checks.map(([name, o]) => `  - ${icon(o)} ${name}`),
+              '',
+              '**Detected:**',
+              list('New entities',       ents),
+              list('New PEnums',         penums),
+              list('New UML Psets/Qtos', psets),
+              list('UML files changed',  uml),
+              list('MD docs changed',    md),
+              '',
+              `<sub>See [workflow run](${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}) for failure details.</sub>`,
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body
+            });
+
+      # ----------------------------------------------------------------
+      - name: Upload generated artifacts (debug)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-${{ github.event.pull_request.number || github.run_id }}-outputs
+          path: |
+            /tmp/pr.exp
+            /tmp/baseline.exp
+            /tmp/pset_out/
+            /tmp/structure.json
+            /tmp/bsdd_out/
+          retention-days: 7
+          if-no-files-found: warn
