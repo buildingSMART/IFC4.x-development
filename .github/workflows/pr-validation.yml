@@ -139,17 +139,35 @@ jobs:
       # ----------------------------------------------------------------
       # Baseline generation (best-effort -- failure does not block)
       # ----------------------------------------------------------------
-      - name: Generate baseline EXPRESS (+ XSD) from BASE_REF
+      # Baseline EXPRESS+XSD depends only on BASE_REF SHA; cache by that
+      # key so retries on the same PR (and other PRs against the same
+      # ifc4.4-main commit) skip the ~3-4 min regen.
+      - name: Cache baseline EXPRESS + XSD
+        if: steps.diff.outputs.have_base == 'true'
+        uses: actions/cache@v4
+        id: cache_baseline
+        with:
+          path: |
+            /tmp/baseline.exp
+            /tmp/baseline.xsd
+          key: baseline-exp-xsd-${{ github.event.pull_request.base.sha || github.sha }}
+
+      - name: Generate or restore baseline EXPRESS (+ XSD)
         if: steps.diff.outputs.have_base == 'true'
         id: baseline
         continue-on-error: true
         run: |
-          BASE_TMP=$(mktemp -d)
-          git worktree add "$BASE_TMP" "$BASE_REF"
-          cd "$BASE_TMP/code"
-          python -m generators.express ../schemas/ifc4x3_add2.uml \
-            -o /tmp/baseline.exp \
-            --with-xsd --xsd-output /tmp/baseline.xsd 2>&1 | tail -5
+          if [ -f /tmp/baseline.exp ]; then
+            echo "Cache hit -- restored baseline.exp + baseline.xsd"
+          else
+            echo "Cache miss -- generating baseline from BASE_REF=$BASE_REF"
+            BASE_TMP=$(mktemp -d)
+            git worktree add "$BASE_TMP" "$BASE_REF"
+            cd "$BASE_TMP/code"
+            python -m generators.express ../schemas/ifc4x3_add2.uml \
+              -o /tmp/baseline.exp \
+              --with-xsd --xsd-output /tmp/baseline.xsd 2>&1 | tee /tmp/baseline.log | tail -5
+          fi
           base_lines=$(wc -l < /tmp/baseline.exp)
           echo "lines=$base_lines" >> "$GITHUB_OUTPUT"
           echo "  baseline: $base_lines lines"
