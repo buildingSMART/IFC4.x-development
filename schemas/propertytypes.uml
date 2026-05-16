@@ -326,6 +326,37 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_tm16_12" name="UNSET"/>
       </packagedElement>
 
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_BarSectionType" name="PEnum_BarSectionType">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_SMOOTH" name="SMOOTH"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_RIBBED" name="RIBBED"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_HOLLOW" name="HOLLOW"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_OTHER" name="OTHER"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_NOTKNOWN" name="NOTKNOWN"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_UNSET" name="UNSET"/>
+      </packagedElement>
+
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_BoltCrossSection" name="PEnum_BoltCrossSection">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_SOLIDBAR" name="SOLIDBAR"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_HOLLOWBAR" name="HOLLOWBAR"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_RIBBED" name="RIBBED"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_OTHER" name="OTHER"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_NOTKNOWN" name="NOTKNOWN"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_UNSET" name="UNSET"/>
+      </packagedElement>
+
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_BoltType" name="PEnum_BoltType">
+        <ownedComment xmi:type="uml:Comment" xmi:id="comment_tm16_boltype_break">
+          <body>DELIBERATELY-BROKEN-FOR-CI-TEST: contains UNKNOWN to trigger PEnum convention check.</body>
+        </ownedComment>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_GROUTED" name="GROUTED"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_ANCHORED" name="ANCHORED"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_FRICTION" name="FRICTION"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_UNKNOWN" name="UNKNOWN"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_OTHER" name="OTHER"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_NOTKNOWN" name="NOTKNOWN"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_UNSET" name="UNSET"/>
+      </packagedElement>
+
 </packagedElement>
   </uml:Model>
 </xmi:XMI>
