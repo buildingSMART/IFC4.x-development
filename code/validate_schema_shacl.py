@@ -11,7 +11,7 @@ from md import parse_document
 
 import rdflib
 
-import append_xmi
+import xmi
 
 from rdflib import Namespace
 from rdflib.namespace import RDF, RDFS
@@ -57,11 +57,9 @@ def process_document(g, fn, subj, cls):
 
 if not os.path.exists(os.path.join(tempfile.gettempdir(), "schema.ttl")):
 
-    d = append_xmi.context(filename=relative_path("../schemas/IFC.xml"))
+    d = xmi.doc(relative_path("../schemas/ifc4x3_add2.uml"))
     
     id_to_node = {}
-    counter = {'c': 1}
-    node_mapping = {}
     g = rdflib.Graph()
 
     def fqdn(s):
@@ -69,45 +67,43 @@ if not os.path.exists(os.path.join(tempfile.gettempdir(), "schema.ttl")):
             return rdflib.URIRef("/".join(s[1:].split("}")))
         else:
             return rdflib.URIRef(f"http://example.org/ifc43Shapes/{s}")
-    
-    def v(nd, stack):
-        if nd.tag == "{http://schema.omg.org/spec/XMI/2.1}Extension":
-            return False
-
-        nid = nd.attributes.get("{http://schema.omg.org/spec/XMI/2.1}id")
-        if nid:
-            id_to_node[nid] = nd
-            
-        s = fqdn(f"node_{counter['c']}")
-        counter['c'] += 1
-        node_mapping[nd] = s
-
-    d._recurse(v)
-    
-    def v(nd, stack):
-        if nd.tag == "{http://schema.omg.org/spec/XMI/2.1}Extension":
-            return False
-            
-        s = node_mapping[nd]
         
-        g.add((s, RDF.type, fqdn(nd.tag)))
-        
-        if nd.child_with_tag("generalization"):
-            # embellish with proper subtype relationship so that we
-            # can use property paths for recursive query in sparql
-            st = nd.child_with_tag("generalization").attributes['general']
-            g.add((s, RDFS.subClassOf, node_mapping[id_to_node[st]]))
-            
-        for k, v in nd.attributes.items():
-            if v in id_to_node:
-                g.add((s, fqdn(k), node_mapping[id_to_node[v]]))
+    all_ids = set(filter(None, (nd.attributes().get('xmi:id') for nd in d.traverse())))
+    
+    for nd in d.traverse():
+        nd_id = nd.attributes().get('xmi:id')
+        if nd_id is None:
+            continue
+        s = fqdn(nd_id)
+        g.add((s, RDF.type, fqdn(nd.xml.tagName)))
+        if xmi_type := nd.attributes().get('xmi:type'):
+            g.add((s, RDF.type, fqdn(xmi_type.removeprefix('uml:'))))
+
+        for ch in nd.child_with_tag('generalization'):
+            gen = ch.attributes().get('general')
+            if gen is None:
+                gen = next(ch.child_with_tag('general')).attributes()['href'].split('#')[-1]
+            g.add((s, RDFS.subClassOf, fqdn(gen)))
+                    
+        for k, v in nd.attributes().items():
+            if v in all_ids:
+                g.add((s, fqdn(k), fqdn(v)))
+            elif v and v.split() and all(x in all_ids for x in v.split()):
+                for x in v.split():
+                    g.add((s, fqdn(k), fqdn(x)))
             else:
                 g.add((s, fqdn(k), rdflib.Literal(v)))
-            
-        if stack:
-            g.add((s, fqdn("containedIn"), node_mapping[stack[-1]]))
 
-    d._recurse(v)
+        for ch in nd.children:
+            if href := ch.attributes().get('href'):
+                g.add((s, fqdn(ch.xml.tagName), fqdn(href.split('#')[-1])))
+
+        if nd.xml.tagName == "ownedComment":
+            g.add((s, fqdn('body'), rdflib.Literal(next(iter(nd.children)).text)))
+
+        if nd.parent:
+            if pid := nd.parent.attributes().get('xmi:id'):
+                g.add((s, fqdn("containedIn"), fqdn(pid)))
     
     base_path = relative_path("..")
     
@@ -127,7 +123,7 @@ if platform.system() == 'Windows':
     if not os.path.exists(VALIDATE_PATH):
         raise RuntimeError(
             "Unable to find shaclvalidate \n"
-            "Download shacl from https://repo1.maven.org/maven2/org/topbraid/shacl/1.3.2/shacl-1.3.2-bin.zip\n"
+            "Download shacl from https://repo1.maven.org/maven2/org/topbraid/shacl/1.5.0/shacl-1.5.0-bin.zip\n"
             "Extract and place in the this folder: \n" + 
             os.path.abspath(os.path.dirname(__file__))            
         )
@@ -156,9 +152,3 @@ with open(relative_path('../output/shacl-result.md'), "w") as f:
         f.write(f"## {k.split('/')[-1]}\n\n")
         for _, v in vs:
             f.write(f"* {v}\n")
-        
-
-# set PATH=C:\Program Files\Eclipse Adoptium\jdk-17.0.2.8-hotspot\bin;%PATH%
-# set JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-17.0.2.8-hotspot
-# set JENA_HOME=C:\Apps\apache-jena-4.3.2
-# C:\Apps\apache-jena-4.3.2\bat\shacl.bat validate -v --shapes shapes.ttl --data %TEMP%\schema.ttl

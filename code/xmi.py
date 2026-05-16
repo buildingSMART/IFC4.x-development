@@ -9,11 +9,21 @@ from xml.dom import minidom
 from collections import defaultdict
 
 class base(object):
+    children: list
+
+    def __init__(self):
+        self.children = []
+
     def child_with_tag_recursive(self, other):
-        if self.xml.tagName == other:
+        if getattr(self.xml, 'tagName', None) == other:
             yield self
         for x in self.children:
             yield from x.child_with_tag_recursive(other)
+
+    def child_with_tag(self, other):
+        for ch in self.children:
+            if getattr(ch.xml, 'tagName', None) == other:
+                yield ch
 
     def __truediv__(self, other):
         return list(self.child_with_tag_recursive(other))
@@ -25,8 +35,8 @@ class base(object):
         return li[0]
     
     def traverse(self):
-        if getattr(self.xml, 'tagName', '') == "packageImport" and '#' in self.resolve('importedPackage'):
-            fn, hash = self.resolve('importedPackage').split('#')
+        if getattr(self.xml, 'tagName', '') == "packageImport" and '#' in self.resolve('importedPackage', full=True):
+            fn, hash = self.resolve('importedPackage', full=True).split('#')
             if dc := self.doc.imports.get(fn):
                 pass
             else:
@@ -36,13 +46,16 @@ class base(object):
         for c in self.children:
             yield from c.traverse()
 
+    def attributes(self):
+        return dict((k, getattr(self, k)) for k in (self.xml.attributes or {}).keys())
+        
 class node(base):
     
     def __init__(self, xmlnode, parent, doc):
+        super().__init__()
         self.xml = xmlnode
         self.parent = parent
         self.doc = doc
-        self.children = []
 
     @property
     def text(self):
@@ -53,15 +66,19 @@ class node(base):
     def tags(self):    
         return dict(map(lambda t: (t.name, t.value), self/"tag"))
     
-    def resolve(self, k):
+    def resolve(self, k, full=False):
         v = self.attributes().get(k)
         if v is not None:
             return v
-        return (self | k).href.split('#')[1]
+        ch = [n for n in self.children if n.xml.tagName == k]
+        if len(ch) == 1:
+            v = ch[0].href
+            if full:
+                return v
+            else:
+                return v.split('#')[1]
+        return None
 
-    def attributes(self):
-        return dict((k, getattr(self, k)) for k in self.xml.attributes.keys())
-        
     def __getattr__(self, k):
         di = (self.xml.attributes or {})
         attr = di.get(k, di.get('xmi:'+k))
@@ -146,28 +163,8 @@ class doc(base):
             if elem.xml.nodeType == elem.xml.ELEMENT_NODE:
                 for fn in fns:
                     fn(elem)
-        
-        """
-        merge_default_dict = lambda acc, d: defaultdict(list, {k: acc.get(k, []) + d.get(k, []) for k in (acc.keys() | d.keys())})
-        merge_nested = lambda acc, d: defaultdict(
-            lambda: defaultdict(list),
-            {
-                k: defaultdict(
-                    list,
-                    {
-                        kk: acc.get(k, {}).get(kk, []) + d.get(k, {}).get(kk, [])
-                        for kk in (acc.get(k, {}).keys() | d.get(k, {}).keys())
-                    }
-                )
-                for k in (acc.keys() | d.keys())
-            }
-        )
-
-        self.by_id = reduce(operator.or_, (i.by_id for i in self.imports), self.by_id)
-        self.by_tag = reduce(merge_default_dict, (i.by_tag for i in self.imports), self.by_tag)
-        self.by_type = reduce(merge_default_dict, (i.by_type for i in self.imports), self.by_type)
-        self.by_tag_and_type = reduce(merge_nested, (i.by_tag_and_type for i in self.imports), self.by_tag_and_type)
-        """
+                    
+        self.children = [self.root]
     
     def locate(self, node):
         # pat = r'(?<=<)(%s[^\\/]*?xmi:idref="%s"[^\\/]*?)((?= \\/>)|(?=>))' % (node.xml.tagName, node.idref)
