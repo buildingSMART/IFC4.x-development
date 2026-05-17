@@ -312,6 +312,20 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24889" name="4"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24890" name="NONE"/>
       </packagedElement>
-    </packagedElement>
+    
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SegmentJointType" name="PEnum_SegmentJointType">
+        <ownedComment xmi:type="uml:Comment" xmi:id="comment_tm16_05">
+          <body>TUNNEL-TEAM-CONFIRM-VALUES</body>
+        </ownedComment>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_tm16_06" name="FLAT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_tm16_07" name="TONGUE_GROOVE"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_tm16_08" name="CONVEX_CONVEX"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_tm16_09" name="CONCAVE_CONVEX"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_tm16_10" name="OTHER"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_tm16_11" name="NOTKNOWN"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_tm16_12" name="UNSET"/>
+      </packagedElement>
+
+</packagedElement>
   </uml:Model>
 </xmi:XMI>
