@@ -4,427 +4,271 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-ex:PropertySet a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-        
-        SELECT ?this
-        WHERE {
-            ?this a ex:Class .
-            ?comment ex:containedIn ?this .
-
-            {
-                ?comment ex:body 'PSET_TYPEDRIVENOVERRIDE' .
-            } UNION {
-                ?comment ex:body 'PSET_PERFORMANCEDRIVEN' .
-            } UNION {
-                ?comment ex:body 'PSET_OCCURRENCEDRIVEN' .
-            } UNION {
-                ?comment ex:body 'PSET_TYPEDRIVENONLY' .
+ex:InferClassKindTypes a sh:NodeShape ;
+    sh:targetClass ex:Class ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:order 0 ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            CONSTRUCT {
+                ?this a ex:PropertySet .
             }
-        }
-   """
-   .
-
-
-ex:TypeDrivenPropertyOrQuantitySet a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-        
-        SELECT ?this
-        WHERE {
-            ?this a ex:Class .
-            ?comment ex:containedIn ?this .
-
-            {
-                ?comment ex:body 'PSET_TYPEDRIVENOVERRIDE' .
-            } UNION {
-                ?comment ex:body 'PSET_TYPEDRIVENONLY' .
-            } UNION {
-                ?comment ex:body 'PSET_OCCURRENCEDRIVEN' .
-            } UNION {
-                ?comment ex:body 'PSET_TYPEDRIVENONLY' .
-            }
-        }
-   """
-   .
-
-
-ex:QuantitySet a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-        
-        SELECT ?this
-        WHERE {
-            ?this a ex:Class .
-            ?comment ex:containedIn ?this .
-
-            {
-                ?comment ex:body 'QTO_TYPEDRIVENONLY' .
-            } UNION {
-                ?comment ex:body 'QTO_TYPEDRIVENOVERRIDE' .
-            } UNION {
-                ?comment ex:body 'QTO_OCCURRENCEDRIVEN' .
-            }
-        }
-   """
-   .
-
-
-ex:PropertySetProperty a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-        
-        SELECT ?this
-        WHERE {
-            ?pset a ex:Class .
-            ?comment ex:containedIn ?this .
-            
-            ?this a ex:Property .
-            ?this ex:containedIn ?pset .
-
-            {
-                ?comment ex:body 'PSET_TYPEDRIVENOVERRIDE' .
-            } UNION {
-                ?comment ex:body 'PSET_TYPEDRIVENONLY' .
-            } UNION {
-                ?comment ex:body 'PSET_OCCURRENCEDRIVEN' .
-            } UNION {
-                ?comment ex:body 'PSET_TYPEDRIVENONLY' .
-            }
-        }
-   """
-   .
-   
-ex:QuantitySetQuantity a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-        
-        SELECT ?this
-        WHERE {
-            ?pset a ex:Class .
-            ?comment ex:containedIn ?this .
-            
-            ?this a ex:Property .
-            ?this ex:containedIn ?pset .
-
-            {
-                ?comment ex:body 'QTO_TYPEDRIVENONLY' .
-            } UNION {
-                ?comment ex:body 'QTO_TYPEDRIVENOVERRIDE' .
-            } UNION {
-                ?comment ex:body 'QTO_OCCURRENCEDRIVEN' .
-            }
-        }
-   """
-   .
-   
-ex:Entity a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-        SELECT ?this
-        WHERE {
-            ?this a ex:packagedElement .
-            ?this a ex:Class .
-            ?this ex:name ?entityName . 
-
-            # no pset or qset
-            FILTER NOT EXISTS {
-                ?comment ex:containedIn ?this .
-
-                {
-                    ?comment ex:body 'PSET_TYPEDRIVENOVERRIDE' .
-                } UNION {
-                    ?comment ex:body 'PSET_TYPEDRIVENONLY' .
-                } UNION {
-                    ?comment ex:body 'PSET_OCCURRENCEDRIVEN' .
-                } UNION {
-                    ?comment ex:body 'PSET_TYPEDRIVENONLY' .
-                } UNION {
-                    ?comment ex:body 'QTO_TYPEDRIVENONLY' .
-                } UNION {
-                    ?comment ex:body 'QTO_TYPEDRIVENOVERRIDE' .
-                } UNION {
-                    ?comment ex:body 'QTO_OCCURRENCEDRIVEN' .
+            WHERE {
+                ?comment ex:containedIn ?this ;
+                         ex:body ?psetKind .
+                VALUES ?psetKind {
+                    "PSET_TYPEDRIVENOVERRIDE"
+                    "PSET_PERFORMANCEDRIVEN"
+                    "PSET_OCCURRENCEDRIVEN"
+                    "PSET_TYPEDRIVENONLY"
                 }
             }
-            
-            # no select
-            FILTER NOT EXISTS {
-                {
-                    ?dep a ex:Dependency .
-                    ?dep ex:client ?this .
+        """ ;
+    ] ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:order 0 ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            CONSTRUCT {
+                ?this a ex:QuantitySet .
+            }
+            WHERE {
+                ?comment ex:containedIn ?this ;
+                         ex:body ?qtoKind .
+                VALUES ?qtoKind {
+                    "QTO_TYPEDRIVENONLY"
+                    "QTO_TYPEDRIVENOVERRIDE"
+                    "QTO_OCCURRENCEDRIVEN"
                 }
             }
-            
-            # no base types
-            FILTER NOT EXISTS {
-                ?this ex:containedIn* ?package .
-                ?package ex:name "base" .
+        """ ;
+    ] ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:order 1 ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            CONSTRUCT {
+                ?this a ex:Select .
             }
+            WHERE {
+                ?this a ex:packagedElement ;
+                      ex:name ?resourceName .
 
-            # no table value
-            FILTER NOT EXISTS {
-                ?this rdfs:subClassOf/ex:name 'PropertyTableValueBase' .
-            }
-            
-            # no predefined type item
-            filter (!regex(?entityName, "\\\\.")) .
-        }
-    """
-    .
-    
-ex:LeafEntity a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
+                ?dep a ex:Dependency ;
+                     ex:client ?this .
 
-        SELECT ?this
-        WHERE {
-            ?this a ex:packagedElement .
-            ?this a ex:Class .
-            ?this ex:name ?entityName . 
-
-            # no pset or qset
-            FILTER NOT EXISTS {
-                ?comment ex:containedIn ?this .
-
-                {
-                    ?comment ex:body 'PSET_TYPEDRIVENOVERRIDE' .
-                } UNION {
-                    ?comment ex:body 'PSET_TYPEDRIVENONLY' .
-                } UNION {
-                    ?comment ex:body 'PSET_OCCURRENCEDRIVEN' .
-                } UNION {
-                    ?comment ex:body 'PSET_TYPEDRIVENONLY' .
-                } UNION {
-                    ?comment ex:body 'QTO_TYPEDRIVENONLY' .
-                } UNION {
-                    ?comment ex:body 'QTO_TYPEDRIVENOVERRIDE' .
-                } UNION {
-                    ?comment ex:body 'QTO_OCCURRENCEDRIVEN' .
+                FILTER NOT EXISTS {
+                    VALUES ?setType { ex:PropertySet ex:QuantitySet }
+                    ?this a ?setType .
                 }
             }
-            
-            # no select
-            FILTER NOT EXISTS {
-                {
-                    ?dep a ex:Dependency .
-                    ?dep ex:client ?this .
+        """ ;
+    ] ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:order 2 ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            CONSTRUCT {
+                ?this a ex:Entity .
+            }
+            WHERE {
+                ?this a ex:packagedElement ;
+                      ex:name ?entityName .
+
+                FILTER NOT EXISTS {
+                    VALUES ?setType { ex:PropertySet ex:QuantitySet }
+                    ?this a ?setType .
+                }
+                FILTER NOT EXISTS {
+                    ?this a ex:Select .
+                }
+                FILTER NOT EXISTS {
+                    ?this ex:containedIn* ?package .
+                    ?package ex:name "base" .
+                }
+                FILTER NOT EXISTS {
+                    ?this rdfs:subClassOf/ex:name "PropertyTableValueBase" .
+                }
+                FILTER (!regex(str(?entityName), "\\\\.")) .
+            }
+        """ ;
+    ]
+    .
+
+ex:InferPropertySetTypes a sh:NodeShape ;
+    sh:targetClass ex:PropertySet ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            CONSTRUCT {
+                ?prop a ex:PropertySetProperty .
+            }
+            WHERE {
+                ?prop a ex:Property ;
+                      ex:containedIn ?this .
+            }
+        """ ;
+    ] ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            CONSTRUCT {
+                ?dep a ex:PropertySetAssociation .
+            }
+            WHERE {
+                ?dep a ex:Dependency ;
+                     ex:client ?this .
+            }
+        """ ;
+    ]
+    .
+
+ex:InferQuantitySetTypes a sh:NodeShape ;
+    sh:targetClass ex:QuantitySet ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            CONSTRUCT {
+                ?prop a ex:QuantitySetQuantity .
+            }
+            WHERE {
+                ?prop a ex:Property ;
+                      ex:containedIn ?this .
+            }
+        """ ;
+    ] ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            CONSTRUCT {
+                ?dep a ex:QuantitySetAssociation .
+            }
+            WHERE {
+                ?dep a ex:Dependency ;
+                     ex:client ?this .
+            }
+        """ ;
+    ]
+    .
+
+ex:InferLeafEntityTypes a sh:NodeShape ;
+    sh:targetClass ex:Entity ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            CONSTRUCT {
+                ?this a ex:LeafEntity .
+            }
+            WHERE {
+                FILTER NOT EXISTS {
+                    ?subtype rdfs:subClassOf ?this .
                 }
             }
-            
-            # no base types
-            FILTER NOT EXISTS {
-                ?this ex:containedIn* ?package .
-                ?package ex:name "base" .
+        """ ;
+    ] ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            CONSTRUCT {
+                ?this a ex:SubtypeOfIfcTypeObjectWithPredefinedTypeAttribute .
             }
-            
-            # no predefined type item
-            filter (!regex(?entityName, "\\\\.")) .
-            
-            FILTER NOT EXISTS {
-                ?subtype rdfs:subClassOf ?this .
+            WHERE {
+                ?this rdfs:subClassOf*/ex:name "IfcTypeObject" .
+                ?attr a ex:ownedAttribute ;
+                      ex:containedIn ?this ;
+                      ex:name "PredefinedType" .
             }
-        }
-    """
+        """ ;
+    ]
     .
 
-ex:LeafObject a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
+ex:InferLeafObjectTypes a sh:NodeShape ;
+    sh:targetClass ex:LeafEntity ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            CONSTRUCT {
+                ?this a ex:LeafObject .
+            }
+            WHERE {
+                ?this rdfs:subClassOf*/ex:name "IfcObject" .
+            }
+        """ ;
+    ]
+    .
 
-        SELECT ?this
-        WHERE {
-            ?this a ex:packagedElement .
-            ?this a ex:Class .
-            ?this ex:name ?entityName . 
+ex:InferEnumerationTypes a sh:NodeShape ;
+    sh:targetClass ex:Enumeration ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            CONSTRUCT {
+                ?this a ex:Enum .
+            }
+            WHERE {
+                ?this ex:name ?resourceName .
+                FILTER (!regex(str(?resourceName), "^PEnum_")) .
+            }
+        """ ;
+    ]
+    .
 
-            # no pset or qset
-            FILTER NOT EXISTS {
-                ?comment ex:containedIn ?this .
+ex:InferEnumLiteralTypes a sh:NodeShape ;
+    sh:targetClass ex:Enum ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            CONSTRUCT {
+                ?literal a ex:EnumLiteral .
+            }
+            WHERE {
+                ?literal ex:containedIn ?this ;
+                         ex:name ?itemName .
+            }
+        """ ;
+    ]
+    .
 
-                {
-                    ?comment ex:body 'PSET_TYPEDRIVENOVERRIDE' .
-                } UNION {
-                    ?comment ex:body 'PSET_TYPEDRIVENONLY' .
-                } UNION {
-                    ?comment ex:body 'PSET_OCCURRENCEDRIVEN' .
-                } UNION {
-                    ?comment ex:body 'PSET_TYPEDRIVENONLY' .
-                } UNION {
-                    ?comment ex:body 'QTO_TYPEDRIVENONLY' .
-                } UNION {
-                    ?comment ex:body 'QTO_TYPEDRIVENOVERRIDE' .
-                } UNION {
-                    ?comment ex:body 'QTO_OCCURRENCEDRIVEN' .
+ex:InferDataTypeTypes a sh:NodeShape ;
+    sh:targetClass ex:DataType ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            CONSTRUCT {
+                ?this a ex:SimpleType .
+            }
+            WHERE {
+                ?this a ex:packagedElement ;
+                      ex:name ?resourceName .
+
+                FILTER NOT EXISTS {
+                    ?this ex:containedIn* ?package .
+                    ?package ex:name "base" .
                 }
             }
-            
-            # no select
-            FILTER NOT EXISTS {
-                {
-                    ?dep a ex:Dependency .
-                    ?dep ex:client ?this .
-                }
-            }
-            
-            # no base types
-            FILTER NOT EXISTS {
-                ?this ex:containedIn* ?package .
-                ?package ex:name "base" .
-            }
-            
-            # no predefined type item
-            filter (!regex(?entityName, "\\\\.")) .
-            
-            FILTER NOT EXISTS {
-                ?subtype rdfs:subClassOf ?this .
-            }
-            
-            ?this rdfs:subClassOf*/ex:name "IfcObject" .
-        }
-    """
+        """ ;
+    ]
     .
 
-ex:Select a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-
-        SELECT ?this
-        WHERE {
-            ?this a ex:packagedElement .
-            ?this a ex:Class .
-            ?this ex:name ?resourceName . 
-
-            ?dep a ex:Dependency .
-            ?dep ex:client ?this .
-        }
-    """
-    .
-ex:Enum a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-
-        SELECT ?this
-        WHERE {
-            ?this a ex:Enumeration .
-            ?this ex:name ?resourceName . 
-
-            filter (!regex(?resourceName, "^PEnum_")) .
-        }
-    """
-    .
-    
-ex:EnumLiteral a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-
-        SELECT ?this
-        WHERE {
-            ?this a ex:ownedLiteral .
-            ?this ex:containedIn ?enum .
-            ?this ex:name ?itemName .
-
-            ?enum a ex:Enumeration .
-            ?enum ex:name ?resourceName . 
-
-            filter (!regex(?resourceName, "^PEnum_")) .
-        }
-    """
-    .
-    
-ex:SimpleType a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-
-        SELECT ?this
-        WHERE {
-            ?this a ex:packagedElement .
-            ?this a ex:DataType .
-            ?this ex:name ?resourceName .
-        }
-    """
-    .
-    
-ex:PropertySetAssociation a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-
-        SELECT ?this
-        WHERE {
-            ?this a ex:Dependency .
-            ?this ex:client/ex:name ?psetName .
-            filter (regex(?psetName, "^Pset_")) .
-        }
-    """
-    .
-    
-ex:QuantitySetAssociation a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-
-        SELECT ?this
-        WHERE {
-            ?this a ex:Dependency .
-            ?this ex:client/ex:name ?psetName .
-            filter (regex(?psetName, "^Qto_")) .
-        }
-    """
-    .
-
-
-ex:PropertyOrQuantitySetAssociation a sh:SPARQLTarget;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-        PREFIX custom: <http://www.sparxsystems.com/profiles/thecustomprofile/1.0/>
-
-        SELECT ?this
-        WHERE {
-            ?this a ex:Dependency .
-            ?this ex:client/ex:name ?psetName .
-            filter (regex(?psetName, "^Pset_") || regex(?psetName, "^Qto_")) .
-        }
-    """
-    .
-
-ex:hasIfcObjectOrPredefinedType a sh:SPARQLTarget;
+ex:hasIfcObjectOrPredefinedType a sh:SPARQLConstraint ;
     sh:message "The association '{?assocName}' in package '{?packageName}' establishes an invalid relationship to '{?applicableName}'" ;
     sh:select """
         PREFIX ex:  <http://example.org/ifc43Shapes/>
@@ -453,22 +297,8 @@ ex:hasIfcObjectOrPredefinedType a sh:SPARQLTarget;
             }
             
             FILTER NOT EXISTS {
-                ?comment ex:containedIn ?applicable .
-                {
-                    ?comment ex:body 'PSET_TYPEDRIVENOVERRIDE' .
-                } UNION {
-                    ?comment ex:body 'PSET_TYPEDRIVENONLY' .
-                } UNION {
-                    ?comment ex:body 'PSET_OCCURRENCEDRIVEN' .
-                } UNION {
-                    ?comment ex:body 'PSET_TYPEDRIVENONLY' .
-                } UNION {
-                    ?comment ex:body 'QTO_TYPEDRIVENONLY' .
-                } UNION {
-                    ?comment ex:body 'QTO_TYPEDRIVENOVERRIDE' .
-                } UNION {
-                    ?comment ex:body 'QTO_OCCURRENCEDRIVEN' .
-                }
+                VALUES ?setType { ex:PropertySet ex:QuantitySet }
+                ?applicable a ?setType .
             }
         }
     """
@@ -487,8 +317,8 @@ ex:hasApplicableClass a sh:SPARQLConstraint ;
             ?this ex:name ?psetName . 
             
             FILTER NOT EXISTS {
-                ?dep a ex:Dependency .
-                ?dep ex:client/ex:name ?this .
+                ?dep a ex:Dependency ;
+                     ex:client ?this .
             }
         }
     """
@@ -530,11 +360,13 @@ ex:hasResourceDefinition a sh:SPARQLConstraint ;
             ?this ex:name ?resourceName .
             ?this ex:containedIn ?package .
             ?package ex:name ?packageName .
+            BIND(REPLACE(STR(?resourceName), "[-_][A-Z]?\\\\[[^\\\\]]+\\\\]$", "") AS ?documentedResourceName)
             
             FILTER NOT EXISTS {
                 ?doc a ex:MarkdownResourceDefinition .
-                ?doc ex:hasHeading ?resourceName .
+                ?doc ex:hasHeading ?docHeading .
                 ?doc ex:hasFilename ?filenameParts .
+                FILTER(STR(?docHeading) = ?documentedResourceName) .
                 
                 ?filenameParts rdf:rest*/rdf:first ?packageName .
             }
@@ -599,17 +431,7 @@ ex:hasProperty a sh:SPARQLConstraint;
                 ?prop a ex:Property .
                 ?prop ex:containedIn ?pset .
                 ?prop ex:name ?propName .
-                
-                ?comment ex:containedIn ?pset .
-                {
-                    ?comment ex:body 'PSET_TYPEDRIVENOVERRIDE' .
-                } UNION {
-                    ?comment ex:body 'PSET_PERFORMANCEDRIVEN' .
-                } UNION {
-                    ?comment ex:body 'PSET_OCCURRENCEDRIVEN' .
-                } UNION {
-                    ?comment ex:body 'PSET_TYPEDRIVENONLY' .
-                }
+                ?pset a ex:PropertySet .
             }
         }
         GROUP BY ?this
@@ -648,25 +470,6 @@ ex:hasPredefinedType a sh:SPARQLConstraint ;
                 ?attr ex:name "PredefinedType" .
                 ?attr ex:containedIn ?this .
             }
-        }
-    """
-    .
-
-ex:SubtypeOfIfcTypeObjectWithPredefinedTypeAttribute a sh:SPARQLConstraint;
-    sh:select """
-        PREFIX ex:  <http://example.org/ifc43Shapes/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX xmi: <http://schema.omg.org/spec/XMI/2.1/>
-        PREFIX custom: <http://www.sparxsystems.com/profiles/thecustomprofile/1.0/>
-        
-        SELECT ?this
-        WHERE {
-            ?this rdfs:subClassOf*/ex:name "IfcTypeObject" .
-
-            ?attr a ex:ownedAttribute .
-            ?attr ex:containedIn ?this .
-            ?attr ex:name "PredefinedType" .
         }
     """
     .
@@ -737,23 +540,13 @@ ex:Fail a sh:SPARQLConstraint ;
     """
     .
 
-ex:PsetApplicability a sh:NodeShape ;
-    sh:target ex:PropertySet;
-    sh:sparql ex:hasApplicableClass
-    .
-    
-ex:QtoApplicability a sh:NodeShape ;
-    sh:target ex:QuantitySet;
+ex:PropertyOrQuantitySetApplicability a sh:NodeShape ;
+    sh:targetClass ex:PropertySet, ex:QuantitySet ;
     sh:sparql ex:hasApplicableClass
     .
 
-ex:DefinitionForProperty a sh:NodeShape ;
-    sh:target ex:PropertySetProperty;
-    sh:sparql ex:hasDefinition
-    .
-
-ex:DefinitionForQuantity a sh:NodeShape ;
-    sh:target ex:QuantitySetQuantity;
+ex:DefinitionForPropertyOrQuantity a sh:NodeShape ;
+    sh:targetClass ex:PropertySetProperty, ex:QuantitySetQuantity ;
     sh:sparql ex:hasDefinition
     .
 
@@ -762,62 +555,32 @@ ex:PropertyForDefinition a sh:NodeShape ;
     sh:sparql ex:hasProperty
     .
 
-ex:DefinitionForPropertySet a sh:NodeShape ;
-    sh:target ex:PropertySet;
+ex:DefinitionForResource a sh:NodeShape ;
+    sh:targetClass ex:PropertySet, ex:QuantitySet, ex:Entity, ex:Select, ex:Enum, ex:SimpleType;
     sh:sparql ex:hasResourceDefinition
     .
 
-ex:DefinitionForEntity a sh:NodeShape ;
-    sh:target ex:Entity ;
-    sh:sparql ex:hasResourceDefinition
-    .
-
-ex:DefinitionForSelect a sh:NodeShape ;
-    sh:target ex:Select ;
-    sh:sparql ex:hasResourceDefinition
-    .
-    
-ex:DefinitionForEnum a sh:NodeShape ;
-    sh:target ex:Enum ;
-    sh:sparql ex:hasResourceDefinition
-    .
-    
 ex:DefinitionForEnumLiteral a sh:NodeShape ;
-    sh:target ex:EnumLiteral ;
+    sh:targetClass ex:EnumLiteral ;
     sh:sparql ex:hasEnumLiteralDefinition
-    .
-    
-ex:DefinitionForSimpleType a sh:NodeShape ;
-    sh:target ex:SimpleType ;
-    sh:sparql ex:hasResourceDefinition
-    .
-  
-ex:DefinitionForQuantitySet a sh:NodeShape ;
-    sh:target ex:QuantitySet;
-    sh:sparql ex:hasResourceDefinition
     .
 
 ex:IfcObjectAssociationForPropertySetAssoc a sh:NodeShape ;
-    sh:target ex:PropertySetAssociation;
-    sh:sparql ex:hasIfcObjectOrPredefinedType
-    .
-
-ex:IfcObjectAssociationForQuantitySetAssoc a sh:NodeShape ;
-    sh:target ex:QuantitySetAssociation;
+    sh:targetClass ex:PropertySetAssociation, ex:QuantitySetAssociation;
     sh:sparql ex:hasIfcObjectOrPredefinedType
     .
 
 ex:LeafEntityHasPredefinedType a sh:NodeShape ;
-    sh:target ex:LeafObject;
+    sh:targetClass ex:LeafObject;
     sh:sparql ex:hasPredefinedType
     .
 
 ex:LeafEntityIsNotAbstract a sh:NodeShape ;
-    sh:target ex:LeafEntity;
+    sh:targetClass ex:LeafEntity;
     sh:sparql ex:isNotAbstract
     .
 
 ex:TypeObjectPredefinedTypeMandatory a sh:NodeShape ;
-    sh:target ex:SubtypeOfIfcTypeObjectWithPredefinedTypeAttribute;
+    sh:targetClass ex:SubtypeOfIfcTypeObjectWithPredefinedTypeAttribute;
     sh:sparql ex:hasMandatoryPredefinedType
     .
