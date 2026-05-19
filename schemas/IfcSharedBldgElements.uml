@@ -3438,5 +3438,200 @@ OR
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_StairFlightBaseQuantities_IfcStairFlight" client="cl_Qto_StairFlightBaseQuantities" supplier="cl_IfcStairFlight"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_WallBaseQuantities_IfcWall" client="cl_Qto_WallBaseQuantities" supplier="cl_IfcWall"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_WindowBaseQuantities_IfcWindow" client="cl_Qto_WindowBaseQuantities" supplier="cl_IfcWindow"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcArchElementTypeEnum" name="IfcArchElementTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcArchElementTypeEnum_SEGMENT" name="SEGMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcArchElementTypeEnum_LINING" name="LINING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcArchElementTypeEnum_STEELRIB" name="STEELRIB"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcArchElementTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcArchElementTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcArchElement" name="IfcArchElement">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcArchElement_gen_IfcBuiltElement">
+        <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuiltElement"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcArchElement_PredefinedType" name="PredefinedType" type="en_IfcArchElementTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcArchElement_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcArchElement_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcArchElementType" name="IfcArchElementType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcArchElementType_gen_IfcBuiltElementType">
+        <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuiltElementType"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcArchElementType_PredefinedType" name="PredefinedType" type="en_IfcArchElementTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcArchElementType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcArchElementType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcArchElementTypeEnum_SEGMENT" name="IfcArchElementTypeEnum.SEGMENT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcArchElementTypeEnum_SEGMENT_gen_IfcArchElement" general="cl_IfcArchElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcArchElementTypeEnum_SEGMENT_gen_IfcArchElementType" general="cl_IfcArchElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcArchElementTypeEnum_LINING" name="IfcArchElementTypeEnum.LINING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcArchElementTypeEnum_LINING_gen_IfcArchElement" general="cl_IfcArchElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcArchElementTypeEnum_LINING_gen_IfcArchElementType" general="cl_IfcArchElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcArchElementTypeEnum_STEELRIB" name="IfcArchElementTypeEnum.STEELRIB">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcArchElementTypeEnum_STEELRIB_gen_IfcArchElement" general="cl_IfcArchElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcArchElementTypeEnum_STEELRIB_gen_IfcArchElementType" general="cl_IfcArchElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcArchElementTypeEnum_USERDEFINED" name="IfcArchElementTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcArchElementTypeEnum_USERDEFINED_gen_IfcArchElement" general="cl_IfcArchElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcArchElementTypeEnum_USERDEFINED_gen_IfcArchElementType" general="cl_IfcArchElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcArchElementTypeEnum_NOTDEFINED" name="IfcArchElementTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcArchElementTypeEnum_NOTDEFINED_gen_IfcArchElement" general="cl_IfcArchElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcArchElementTypeEnum_NOTDEFINED_gen_IfcArchElementType" general="cl_IfcArchElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ArchElementTypeSegment" name="Pset_ArchElementTypeSegment">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ArchElementTypeSegment_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementTypeSegment_LongitudinalJointConnections" name="LongitudinalJointConnections">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementTypeSegment_LongitudinalJointConnections_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementTypeSegment_LongitudinalJointConnections_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementTypeSegment_LongitudinalJointType" name="LongitudinalJointType" type="en_PEnum_SegmentJointType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementTypeSegment_LongitudinalJointType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementTypeSegment_LongitudinalJointType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementTypeSegment_Mountings" name="Mountings">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementTypeSegment_Mountings_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementTypeSegment_Mountings_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementTypeSegment_RadialJointConnections" name="RadialJointConnections">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementTypeSegment_RadialJointConnections_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementTypeSegment_RadialJointConnections_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementTypeSegment_RadialJointType" name="RadialJointType" type="en_PEnum_SegmentJointType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementTypeSegment_RadialJointType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementTypeSegment_RadialJointType_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SegmentJointType" name="PEnum_SegmentJointType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_Flat joint connecting 2 rings segments or arches." name="Flat joint connecting 2 rings segments or arches."/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_Joint of type Tongue-Groove connecting 2 rings segments or arches." name="Joint of type Tongue-Groove connecting 2 rings segments or arches."/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_Joint of type Convex-Convex connecting 2 rings segments or arches." name="Joint of type Convex-Convex connecting 2 rings segments or arches."/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_Joint of type Concave-Convex connecting 2 rings segments or arches." name="Joint of type Concave-Convex connecting 2 rings segments or arches."/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_Value has not been specified." name="Value has not been specified."/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_Value is unknown." name="Value is unknown."/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_User Defined" name="User Defined"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ArchElementTypeSegment_IfcArchElementTypeEnum.SEGMENT" client="cl_Pset_ArchElementTypeSegment" supplier="cl_IfcArchElementTypeEnum_SEGMENT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ArchElementCommon" name="Pset_ArchElementCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ArchElementCommon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementCommon_CentroidRadius" name="CentroidRadius">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementCommon_CentroidRadius_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementCommon_CentroidRadius_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementCommon_InnerRadius" name="InnerRadius">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementCommon_InnerRadius_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementCommon_InnerRadius_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementCommon_IsLoadBearing" name="IsLoadBearing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementCommon_IsLoadBearing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementCommon_IsLoadBearing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementCommon_OuterRadius" name="OuterRadius">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementCommon_OuterRadius_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementCommon_OuterRadius_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementCommon_Thickness" name="Thickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementCommon_Thickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementCommon_Thickness_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ArchElementCommon_IfcArchElement" client="cl_Pset_ArchElementCommon" supplier="cl_IfcArchElement"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ArchElementTypeSteelRib" name="Pset_ArchElementTypeSteelRib">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ArchElementTypeSteelRib_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementTypeSteelRib_ApertureAngle" name="ApertureAngle">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementTypeSteelRib_ApertureAngle_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementTypeSteelRib_ApertureAngle_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementTypeSteelRib_BoltLength" name="BoltLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementTypeSteelRib_BoltLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementTypeSteelRib_BoltLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementTypeSteelRib_BoltType" name="BoltType" type="en_PEnum_BoltType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementTypeSteelRib_BoltType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementTypeSteelRib_BoltType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementTypeSteelRib_CorrosionTreatmentBolt" name="CorrosionTreatmentBolt">
+        <type xmi:type="uml:Enumeration" href="IfcSharedComponentElements.uml#en_PEnum_ElementComponentCorrosionTreatment"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementTypeSteelRib_CorrosionTreatmentBolt_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementTypeSteelRib_CorrosionTreatmentBolt_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementTypeSteelRib_FootOfArches" name="FootOfArches">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementTypeSteelRib_FootOfArches_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementTypeSteelRib_FootOfArches_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementTypeSteelRib_LongitudinalConnections" name="LongitudinalConnections">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementTypeSteelRib_LongitudinalConnections_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementTypeSteelRib_LongitudinalConnections_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementTypeSteelRib_LongitudinalSpacing" name="LongitudinalSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementTypeSteelRib_LongitudinalSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementTypeSteelRib_LongitudinalSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ArchElementTypeSteelRib_ReticularArchType" name="ReticularArchType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ArchElementTypeSteelRib_ReticularArchType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ArchElementTypeSteelRib_ReticularArchType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_BoltType" name="PEnum_BoltType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_Value is unkown" name="Value is unkown"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_Value has not been specified" name="Value has not been specified"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_User Defined" name="User Defined"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ArchElementTypeSteelRib_IfcArchElementTypeEnum.STEELRIB" client="cl_Pset_ArchElementTypeSteelRib" supplier="cl_IfcArchElementTypeEnum_STEELRIB"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ArchElementBaseQuantities" name="Qto_ArchElementBaseQuantities">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ArchElementBaseQuantities_comment_0">
+        <body>QTO_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ArchElementBaseQuantities_CrossSectionArea" name="CrossSectionArea">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcAreaMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ArchElementBaseQuantities_CrossSectionArea_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ArchElementBaseQuantities_CrossSectionArea_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ArchElementBaseQuantities_InnerSurfaceArea" name="InnerSurfaceArea">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcAreaMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ArchElementBaseQuantities_InnerSurfaceArea_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ArchElementBaseQuantities_InnerSurfaceArea_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ArchElementBaseQuantities_Length" name="Length">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ArchElementBaseQuantities_Length_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ArchElementBaseQuantities_Length_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ArchElementBaseQuantities_OuterSurfaceArea" name="OuterSurfaceArea">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcAreaMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ArchElementBaseQuantities_OuterSurfaceArea_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ArchElementBaseQuantities_OuterSurfaceArea_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ArchElementBaseQuantities_Volume" name="Volume">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ArchElementBaseQuantities_Volume_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ArchElementBaseQuantities_Volume_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ArchElementBaseQuantities_IfcArchElement" client="cl_Qto_ArchElementBaseQuantities" supplier="cl_IfcArchElement"/>
   </packagedElement>
 </uml:Model>
