@@ -326,24 +326,36 @@ jobs:
         env:
           UML_FILES: ${{ steps.diff.outputs.uml_files }}
         run: |
-          if ! echo "$UML_FILES" | grep -q "propertytypes.uml"; then
-            echo "propertytypes.uml not in diff -- skipping PEnum check"
+          # Scan ALL modified schemas/*.uml for new PEnums, not just propertytypes.uml.
+          # express_to_xmi.py routes PEnums to whichever UML hosts the using Pset
+          # (e.g. IfcSharedBldgElements.uml for TM16); the previous narrow check let
+          # TM16-A's USERDEFINED literal slip past the gate. See
+          # local/two-pr-package-workflow.md §10 Q6 for the routing design question.
+          uml_in_diff=$(echo "$UML_FILES" | grep -E '^schemas/.*\.uml$' || true)
+          if [ -z "$uml_in_diff" ]; then
+            echo "no schemas/*.uml in diff -- skipping PEnum check"
             exit 0
           fi
           fail=0
-          new_penums=$(git diff "$BASE_REF"...HEAD -- schemas/propertytypes.uml 2>/dev/null | \
-            grep -E '^\+.*<packagedElement.*xmi:type="uml:Enumeration".*name="PEnum_[A-Za-z0-9_]+"' | \
-            sed -E 's/.*name="(PEnum_[A-Za-z0-9_]+)".*/\1/' | sort -u)
+          new_penums=""
+          while read -r umlfile; do
+            [ -z "$umlfile" ] && continue
+            found=$(git diff "$BASE_REF"...HEAD -- "$umlfile" 2>/dev/null | \
+              grep -E '^\+.*<packagedElement.*xmi:type="uml:Enumeration".*name="PEnum_[A-Za-z0-9_]+"' | \
+              sed -E 's/.*name="(PEnum_[A-Za-z0-9_]+)".*/\1|'"$umlfile"'/' | sort -u)
+            new_penums="$new_penums"$'\n'"$found"
+          done <<< "$uml_in_diff"
+          new_penums=$(echo "$new_penums" | grep -v '^$' | sort -u)
           if [ -z "$new_penums" ]; then
-            echo "No new PEnums detected -- skipping convention check"
+            echo "No new PEnums detected in any schemas/*.uml -- skipping convention check"
             exit 0
           fi
-          while read -r p; do
+          while IFS='|' read -r p umlfile; do
             [ -z "$p" ] && continue
-            literals=$(python3 - "$p" <<'PY'
+            literals=$(python3 - "$p" "$umlfile" <<'PY'
           import sys, xml.etree.ElementTree as ET
-          name = sys.argv[1]
-          tree = ET.parse('schemas/propertytypes.uml')
+          name, umlfile = sys.argv[1], sys.argv[2]
+          tree = ET.parse(umlfile)
           for pe in tree.getroot().iter():
               if pe.get('name') == name and pe.get('{http://www.omg.org/spec/XMI/20131001}type') == 'uml:Enumeration':
                   lits = [l.get('name') for l in pe.findall('ownedLiteral')]
@@ -353,13 +365,13 @@ jobs:
           )
             for bad in USERDEFINED NOTDEFINED UNKNOWN; do
               if echo "$literals" | grep -qw "$bad"; then
-                echo "::error::PEnum $p contains forbidden value '$bad'. Use OTHER/NOTKNOWN/UNSET instead."
+                echo "::error::PEnum $p (in $umlfile) contains forbidden value '$bad'. Use OTHER/NOTKNOWN/UNSET instead."
                 fail=1
               fi
             done
             tail3=$(echo "$literals" | awk -F',' '{print $(NF-2)","$(NF-1)","$NF}')
             if [ "$tail3" != "OTHER,NOTKNOWN,UNSET" ]; then
-              echo "::error::PEnum $p does not end with OTHER,NOTKNOWN,UNSET (got tail: $tail3)."
+              echo "::error::PEnum $p (in $umlfile) does not end with OTHER,NOTKNOWN,UNSET (got tail: $tail3)."
               fail=1
             fi
           done <<< "$new_penums"
