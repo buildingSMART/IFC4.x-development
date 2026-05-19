@@ -1,452 +1,450 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcActorResource" name="IfcActorResource">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcActorResource" name="IfcActorResource">
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActorRole" name="IfcActorRole">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcActorRole_Role" name="Role" isOrdered="false" type="en_IfcRoleEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5124" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5125" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcActorRole_UserDefinedRole" name="UserDefinedRole" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5126" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5127" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcActorRole_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5128" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5129" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcActorRole_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_5130" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>(Role &lt;&gt; IfcRoleEnum.USERDEFINED) OR
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcActorResource" name="IfcActorResource" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcActorResource" name="IfcActorResource">
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActorRole" name="IfcActorRole">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcActorRole_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcActorRole_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>(Role &lt;&gt; IfcRoleEnum.USERDEFINED) OR
 ((Role = IfcRoleEnum.USERDEFINED) AND
   EXISTS(SELF.UserDefinedRole))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAddress" name="IfcAddress" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAddress_Purpose" name="Purpose" isOrdered="false" type="en_IfcAddressTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5131" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5132" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAddress_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5133" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5134" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAddress_UserDefinedPurpose" name="UserDefinedPurpose" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5135" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5136" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcAddress_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_5137" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>(NOT(EXISTS(Purpose))) OR
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcActorRole_Role" name="Role" type="en_IfcRoleEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcActorRole_Role_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcActorRole_Role_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcActorRole_UserDefinedRole" name="UserDefinedRole">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcActorRole_UserDefinedRole_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcActorRole_UserDefinedRole_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcActorRole_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcActorRole_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcActorRole_Description_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAddress" name="IfcAddress" isAbstract="true">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcAddress_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcAddress_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>(NOT(EXISTS(Purpose))) OR
 ((Purpose &lt;&gt; IfcAddressTypeEnum.USERDEFINED) OR
 ((Purpose = IfcAddressTypeEnum.USERDEFINED) AND
   EXISTS(SELF.UserDefinedPurpose)))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcAddressTypeEnum" name="IfcAddressTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5138" name="DISTRIBUTIONPOINT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5139" name="HOME"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5140" name="OFFICE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5141" name="SITE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5142" name="USERDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcOrganization" name="IfcOrganization">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganization_Identification" name="Identification" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5143" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5144" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganization_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5145" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5146" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganization_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5147" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5148" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganization_Roles" name="Roles_L[1:?]" isOrdered="false" association="as_IfcOrganization_Roles" type="cl_IfcActorRole">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5149" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5150" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganization_Addresses" name="Addresses_L[1:?]" isOrdered="false" association="as_IfcOrganization_Addresses" type="cl_IfcAddress">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5151" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5152" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPerson" name="IfcPerson">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_Identification" name="Identification" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5153" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5154" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_FamilyName" name="FamilyName" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5155" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5156" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_GivenName" name="GivenName" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5157" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5158" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_MiddleNames" name="MiddleNames_L[1:?]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5159" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5160" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_PrefixTitles" name="PrefixTitles_L[1:?]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5161" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5162" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_SuffixTitles" name="SuffixTitles_L[1:?]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5163" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5164" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_Roles" name="Roles_L[1:?]" isOrdered="false" association="as_IfcPerson_Roles" type="cl_IfcActorRole">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5165" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5166" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_Addresses" name="Addresses_L[1:?]" isOrdered="false" association="as_IfcPerson_Addresses" type="cl_IfcAddress">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5167" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5168" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPerson_IdentifiablePerson" name="IdentifiablePerson">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_5169" name="IdentifiablePerson">
-            <language>EXPRESS_WHERE</language>
-            <body>EXISTS(Identification) OR EXISTS(FamilyName) OR EXISTS(GivenName)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPerson_ValidSetOfNames" name="ValidSetOfNames">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_5170" name="ValidSetOfNames">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT EXISTS(MiddleNames) OR EXISTS(FamilyName) OR EXISTS(GivenName)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPersonAndOrganization" name="IfcPersonAndOrganization">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPersonAndOrganization_ThePerson" name="ThePerson" isOrdered="false" association="as_IfcPersonAndOrganization_ThePerson" type="cl_IfcPerson">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5171" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5172" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPersonAndOrganization_TheOrganization" name="TheOrganization" isOrdered="false" association="as_IfcPersonAndOrganization_TheOrganization" type="cl_IfcOrganization">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5173" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5174" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPersonAndOrganization_Roles" name="Roles_L[1:?]" isOrdered="false" association="as_IfcPersonAndOrganization_Roles" type="cl_IfcActorRole">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5175" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5176" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcRoleEnum" name="IfcRoleEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5177" name="ARCHITECT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5178" name="BUILDINGOPERATOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5179" name="BUILDINGOWNER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5180" name="CIVILENGINEER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5181" name="CLIENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5182" name="COMMISSIONINGENGINEER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5183" name="CONSTRUCTIONMANAGER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5184" name="CONSULTANT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5185" name="CONTRACTOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5186" name="COSTENGINEER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5187" name="ELECTRICALENGINEER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5188" name="ENGINEER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5189" name="FACILITIESMANAGER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5190" name="FIELDCONSTRUCTIONMANAGER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5191" name="MANUFACTURER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5192" name="MECHANICALENGINEER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5193" name="OWNER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5194" name="PROJECTMANAGER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5195" name="RESELLER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5196" name="STRUCTURALENGINEER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5197" name="SUBCONTRACTOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5198" name="SUPPLIER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5199" name="USERDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcActorSelect" name="IfcActorSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_5200" client="un_IfcActorSelect" supplier="cl_IfcOrganization"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_5201" client="un_IfcActorSelect" supplier="cl_IfcPerson"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_5202" client="un_IfcActorSelect" supplier="cl_IfcPersonAndOrganization"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcOrganizationRelationship" name="IfcOrganizationRelationship">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_5203">
-          <general xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcResourceLevelRelationship"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganizationRelationship_RelatingOrganization" name="RelatingOrganization" isOrdered="false" association="as_IfcOrganizationRelationship_RelatingOrganization" type="cl_IfcOrganization">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5204" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5205" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganizationRelationship_RelatedOrganizations" name="RelatedOrganizations_S[1:?]" isOrdered="false" association="as_IfcOrganizationRelationship_RelatedOrganizations" type="cl_IfcOrganization">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5206" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5207" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPostalAddress" name="IfcPostalAddress">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_5208">
-          <body>DEPRECATED</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_5209" general="cl_IfcAddress"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_InternalLocation" name="InternalLocation" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5210" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5211" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_AddressLines" name="AddressLines_L[1:?]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5212" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5213" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_PostalBox" name="PostalBox" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5214" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5215" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_Town" name="Town" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5216" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5217" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_Region" name="Region" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5218" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5219" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_PostalCode" name="PostalCode" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5220" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5221" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_Country" name="Country" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5222" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5223" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPostalAddress_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_5224" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>EXISTS (InternalLocation) OR 
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAddress_Purpose" name="Purpose" type="en_IfcAddressTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAddress_Purpose_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAddress_Purpose_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAddress_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAddress_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAddress_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAddress_UserDefinedPurpose" name="UserDefinedPurpose">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAddress_UserDefinedPurpose_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAddress_UserDefinedPurpose_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcAddressTypeEnum" name="IfcAddressTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAddressTypeEnum_DISTRIBUTIONPOINT" name="DISTRIBUTIONPOINT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAddressTypeEnum_HOME" name="HOME"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAddressTypeEnum_OFFICE" name="OFFICE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAddressTypeEnum_SITE" name="SITE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAddressTypeEnum_USERDEFINED" name="USERDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcOrganization" name="IfcOrganization">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganization_Identification" name="Identification">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcOrganization_Identification_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcOrganization_Identification_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganization_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcOrganization_Name_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcOrganization_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganization_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcOrganization_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcOrganization_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganization_Roles" name="Roles_L[1:?]" type="cl_IfcActorRole" association="as_IfcOrganization_Roles">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcOrganization_Roles_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcOrganization_Roles_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganization_Addresses" name="Addresses_L[1:?]" type="cl_IfcAddress" association="as_IfcOrganization_Addresses">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcOrganization_Addresses_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcOrganization_Addresses_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPerson" name="IfcPerson">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPerson_IdentifiablePerson" name="IdentifiablePerson">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPerson_IdentifiablePerson" name="IdentifiablePerson">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS(Identification) OR EXISTS(FamilyName) OR EXISTS(GivenName)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPerson_ValidSetOfNames" name="ValidSetOfNames">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPerson_ValidSetOfNames" name="ValidSetOfNames">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT EXISTS(MiddleNames) OR EXISTS(FamilyName) OR EXISTS(GivenName)</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_Identification" name="Identification">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPerson_Identification_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPerson_Identification_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_FamilyName" name="FamilyName">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPerson_FamilyName_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPerson_FamilyName_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_GivenName" name="GivenName">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPerson_GivenName_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPerson_GivenName_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_MiddleNames" name="MiddleNames_L[1:?]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPerson_MiddleNames_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPerson_MiddleNames_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_PrefixTitles" name="PrefixTitles_L[1:?]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPerson_PrefixTitles_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPerson_PrefixTitles_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_SuffixTitles" name="SuffixTitles_L[1:?]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPerson_SuffixTitles_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPerson_SuffixTitles_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_Roles" name="Roles_L[1:?]" type="cl_IfcActorRole" association="as_IfcPerson_Roles">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPerson_Roles_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPerson_Roles_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerson_Addresses" name="Addresses_L[1:?]" type="cl_IfcAddress" association="as_IfcPerson_Addresses">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPerson_Addresses_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPerson_Addresses_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPersonAndOrganization" name="IfcPersonAndOrganization">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPersonAndOrganization_ThePerson" name="ThePerson" type="cl_IfcPerson" association="as_IfcPersonAndOrganization_ThePerson">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPersonAndOrganization_ThePerson_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPersonAndOrganization_ThePerson_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPersonAndOrganization_TheOrganization" name="TheOrganization" type="cl_IfcOrganization" association="as_IfcPersonAndOrganization_TheOrganization">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPersonAndOrganization_TheOrganization_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPersonAndOrganization_TheOrganization_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPersonAndOrganization_Roles" name="Roles_L[1:?]" type="cl_IfcActorRole" association="as_IfcPersonAndOrganization_Roles">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPersonAndOrganization_Roles_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPersonAndOrganization_Roles_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcRoleEnum" name="IfcRoleEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_ARCHITECT" name="ARCHITECT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_BUILDINGOPERATOR" name="BUILDINGOPERATOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_BUILDINGOWNER" name="BUILDINGOWNER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_CIVILENGINEER" name="CIVILENGINEER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_CLIENT" name="CLIENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_COMMISSIONINGENGINEER" name="COMMISSIONINGENGINEER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_CONSTRUCTIONMANAGER" name="CONSTRUCTIONMANAGER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_CONSULTANT" name="CONSULTANT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_CONTRACTOR" name="CONTRACTOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_COSTENGINEER" name="COSTENGINEER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_ELECTRICALENGINEER" name="ELECTRICALENGINEER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_ENGINEER" name="ENGINEER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_FACILITIESMANAGER" name="FACILITIESMANAGER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_FIELDCONSTRUCTIONMANAGER" name="FIELDCONSTRUCTIONMANAGER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_MANUFACTURER" name="MANUFACTURER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_MECHANICALENGINEER" name="MECHANICALENGINEER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_OWNER" name="OWNER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_PROJECTMANAGER" name="PROJECTMANAGER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_RESELLER" name="RESELLER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_STRUCTURALENGINEER" name="STRUCTURALENGINEER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_SUBCONTRACTOR" name="SUBCONTRACTOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_SUPPLIER" name="SUPPLIER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRoleEnum_USERDEFINED" name="USERDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcActorSelect" name="IfcActorSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcActorSelect_IfcOrganization" client="un_IfcActorSelect" supplier="cl_IfcOrganization"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcActorSelect_IfcPerson" client="un_IfcActorSelect" supplier="cl_IfcPerson"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcActorSelect_IfcPersonAndOrganization" client="un_IfcActorSelect" supplier="cl_IfcPersonAndOrganization"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcOrganizationRelationship" name="IfcOrganizationRelationship">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcOrganizationRelationship_gen_IfcResourceLevelRelationship">
+        <general xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcResourceLevelRelationship"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganizationRelationship_RelatingOrganization" name="RelatingOrganization" type="cl_IfcOrganization" association="as_IfcOrganizationRelationship_RelatingOrganization">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcOrganizationRelationship_RelatingOrganization_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcOrganizationRelationship_RelatingOrganization_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcOrganizationRelationship_RelatedOrganizations" name="RelatedOrganizations_S[1:?]" type="cl_IfcOrganization" association="as_IfcOrganizationRelationship_RelatedOrganizations">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcOrganizationRelationship_RelatedOrganizations_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcOrganizationRelationship_RelatedOrganizations_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPostalAddress" name="IfcPostalAddress">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_IfcPostalAddress_comment_0">
+        <body>DEPRECATED</body>
+      </ownedComment>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPostalAddress_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPostalAddress_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS (InternalLocation) OR 
 EXISTS (AddressLines) OR
 EXISTS (PostalBox) OR
 EXISTS (PostalCode) OR
 EXISTS (Town) OR 
 EXISTS (Region) OR  
 EXISTS (Country)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTelecomAddress" name="IfcTelecomAddress">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_5225">
-          <body>DEPRECATED</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_5226" general="cl_IfcAddress"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTelecomAddress_TelephoneNumbers" name="TelephoneNumbers_L[1:?]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5227" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5228" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTelecomAddress_FacsimileNumbers" name="FacsimileNumbers_L[1:?]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5229" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5230" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTelecomAddress_PagerNumber" name="PagerNumber" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5231" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5232" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTelecomAddress_ElectronicMailAddresses" name="ElectronicMailAddresses_L[1:?]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5233" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5234" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTelecomAddress_WWWHomePageURL" name="WWWHomePageURL" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5235" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5236" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTelecomAddress_MessagingIDs" name="MessagingIDs_L[1:?]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5237" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5238" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcTelecomAddress_MinimumDataProvided" name="MinimumDataProvided">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_5239" name="MinimumDataProvided">
-            <language>EXPRESS_WHERE</language>
-            <body>EXISTS (TelephoneNumbers) OR
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPostalAddress_gen_IfcAddress" general="cl_IfcAddress"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_InternalLocation" name="InternalLocation">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPostalAddress_InternalLocation_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPostalAddress_InternalLocation_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_AddressLines" name="AddressLines_L[1:?]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPostalAddress_AddressLines_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPostalAddress_AddressLines_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_PostalBox" name="PostalBox">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPostalAddress_PostalBox_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPostalAddress_PostalBox_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_Town" name="Town">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPostalAddress_Town_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPostalAddress_Town_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_Region" name="Region">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPostalAddress_Region_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPostalAddress_Region_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_PostalCode" name="PostalCode">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPostalAddress_PostalCode_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPostalAddress_PostalCode_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPostalAddress_Country" name="Country">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPostalAddress_Country_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPostalAddress_Country_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTelecomAddress" name="IfcTelecomAddress">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_IfcTelecomAddress_comment_0">
+        <body>DEPRECATED</body>
+      </ownedComment>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcTelecomAddress_MinimumDataProvided" name="MinimumDataProvided">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcTelecomAddress_MinimumDataProvided" name="MinimumDataProvided">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS (TelephoneNumbers) OR
 EXISTS (FacsimileNumbers) OR 
 EXISTS (PagerNumber) OR
 EXISTS (ElectronicMailAddresses) OR 
 EXISTS (WWWHomePageURL) OR
 EXISTS (MessagingIDs)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganization_Roles" name="Roles" memberEnd="at_IfcOrganization_Roles end_442">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_442" name="" association="as_IfcOrganization_Roles" type="cl_IfcOrganization">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5240" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5241" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganization_Addresses" name="Addresses" memberEnd="at_IfcOrganization_Addresses end_444">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_444" name="INV_OfOrganization_S[0:?]" association="as_IfcOrganization_Addresses" type="cl_IfcOrganization">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5242" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5243" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganizationRelationship_RelatingOrganization" name="RelatingOrganization" memberEnd="at_IfcOrganizationRelationship_RelatingOrganization end_446">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_446" name="INV_Relates_S[0:?]" association="as_IfcOrganizationRelationship_RelatingOrganization" type="cl_IfcOrganizationRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5244" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5245" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganizationRelationship_RelatedOrganizations" name="RelatedOrganizations" memberEnd="at_IfcOrganizationRelationship_RelatedOrganizations end_448">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_448" name="INV_IsRelatedBy_S[0:?]" association="as_IfcOrganizationRelationship_RelatedOrganizations" type="cl_IfcOrganizationRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5246" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5247" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPerson_Roles" name="Roles" memberEnd="at_IfcPerson_Roles end_470">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_470" name="" association="as_IfcPerson_Roles" type="cl_IfcPerson">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5248" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5249" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPerson_Addresses" name="Addresses" memberEnd="at_IfcPerson_Addresses end_472">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_472" name="INV_OfPerson_S[0:?]" association="as_IfcPerson_Addresses" type="cl_IfcPerson">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5250" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5251" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPersonAndOrganization_ThePerson" name="ThePerson" memberEnd="at_IfcPersonAndOrganization_ThePerson end_474">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_474" name="INV_EngagedIn_S[0:?]" association="as_IfcPersonAndOrganization_ThePerson" type="cl_IfcPersonAndOrganization">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5252" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5253" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPersonAndOrganization_TheOrganization" name="TheOrganization" memberEnd="at_IfcPersonAndOrganization_TheOrganization end_476">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_476" name="INV_Engages_S[0:?]" association="as_IfcPersonAndOrganization_TheOrganization" type="cl_IfcPersonAndOrganization">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5254" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5255" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPersonAndOrganization_Roles" name="Roles" memberEnd="at_IfcPersonAndOrganization_Roles end_478">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_478" name="" association="as_IfcPersonAndOrganization_Roles" type="cl_IfcPersonAndOrganization">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5256" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5257" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_Address" name="Pset_Address">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_5258">
-          <body>PSET_OCCURRENCEDRIVEN</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_Purpose" name="Purpose" isOrdered="false" type="en_PEnum_AddressType">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5259" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5260" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5261" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5262" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_UserDefinedPurpose" name="UserDefinedPurpose" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5263" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5264" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_InternalLocation" name="InternalLocation" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5265" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5266" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_AddressLines" name="AddressLines" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5267" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5268" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_PostalBox" name="PostalBox" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5269" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5270" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_Town" name="Town" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5271" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5272" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_Region" name="Region" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5273" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5274" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_PostalCode" name="PostalCode" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5275" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5276" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_Country" name="Country" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5277" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5278" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_TelephoneNumbers" name="TelephoneNumbers" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5279" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5280" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_FacsimileNumbers" name="FacsimileNumbers" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5281" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5282" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_PagerNumber" name="PagerNumber" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5283" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5284" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_ElectronicMailAddresses" name="ElectronicMailAddresses" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5285" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5286" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_WWWHomePageURL" name="WWWHomePageURL" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5287" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5288" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_MessagingIDs" name="MessagingIDs" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_5289" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_5290" value="*"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_AddressType" name="PEnum_AddressType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5291" name="DISTRIBUTIONPOINT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5292" name="HOME"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5293" name="OFFICE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5294" name="SITE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5295" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5296" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_5297" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_5298" client="cl_Pset_Address">
-        <supplier xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcActor"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_5299" client="cl_Pset_Address">
-        <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuilding"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_5300" client="cl_Pset_Address">
-        <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSite"/>
-      </packagedElement>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTelecomAddress_gen_IfcAddress" general="cl_IfcAddress"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTelecomAddress_TelephoneNumbers" name="TelephoneNumbers_L[1:?]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTelecomAddress_TelephoneNumbers_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTelecomAddress_TelephoneNumbers_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTelecomAddress_FacsimileNumbers" name="FacsimileNumbers_L[1:?]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTelecomAddress_FacsimileNumbers_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTelecomAddress_FacsimileNumbers_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTelecomAddress_PagerNumber" name="PagerNumber">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTelecomAddress_PagerNumber_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTelecomAddress_PagerNumber_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTelecomAddress_ElectronicMailAddresses" name="ElectronicMailAddresses_L[1:?]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTelecomAddress_ElectronicMailAddresses_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTelecomAddress_ElectronicMailAddresses_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTelecomAddress_WWWHomePageURL" name="WWWHomePageURL">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTelecomAddress_WWWHomePageURL_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTelecomAddress_WWWHomePageURL_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTelecomAddress_MessagingIDs" name="MessagingIDs_L[1:?]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTelecomAddress_MessagingIDs_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTelecomAddress_MessagingIDs_upper" value="1"/>
+      </ownedAttribute>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganization_Roles" name="Roles" memberEnd="at_IfcOrganization_Roles as_IfcOrganization_Roles_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOrganization_Roles_target_end" name="" type="cl_IfcOrganization" association="as_IfcOrganization_Roles">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOrganization_Roles_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOrganization_Roles_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganization_Addresses" name="Addresses" memberEnd="at_IfcOrganization_Addresses as_IfcOrganization_Addresses_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOrganization_Addresses_target_end" name="INV_OfOrganization_S[0:?]" type="cl_IfcOrganization" association="as_IfcOrganization_Addresses">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOrganization_Addresses_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOrganization_Addresses_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPerson_Roles" name="Roles" memberEnd="at_IfcPerson_Roles as_IfcPerson_Roles_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPerson_Roles_target_end" name="" type="cl_IfcPerson" association="as_IfcPerson_Roles">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPerson_Roles_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPerson_Roles_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPerson_Addresses" name="Addresses" memberEnd="at_IfcPerson_Addresses as_IfcPerson_Addresses_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPerson_Addresses_target_end" name="INV_OfPerson_S[0:?]" type="cl_IfcPerson" association="as_IfcPerson_Addresses">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPerson_Addresses_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPerson_Addresses_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPersonAndOrganization_ThePerson" name="ThePerson" memberEnd="at_IfcPersonAndOrganization_ThePerson as_IfcPersonAndOrganization_ThePerson_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPersonAndOrganization_ThePerson_target_end" name="INV_EngagedIn_S[0:?]" type="cl_IfcPersonAndOrganization" association="as_IfcPersonAndOrganization_ThePerson">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPersonAndOrganization_ThePerson_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPersonAndOrganization_ThePerson_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPersonAndOrganization_TheOrganization" name="TheOrganization" memberEnd="at_IfcPersonAndOrganization_TheOrganization as_IfcPersonAndOrganization_TheOrganization_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPersonAndOrganization_TheOrganization_target_end" name="INV_Engages_S[0:?]" type="cl_IfcPersonAndOrganization" association="as_IfcPersonAndOrganization_TheOrganization">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPersonAndOrganization_TheOrganization_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPersonAndOrganization_TheOrganization_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPersonAndOrganization_Roles" name="Roles" memberEnd="at_IfcPersonAndOrganization_Roles as_IfcPersonAndOrganization_Roles_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPersonAndOrganization_Roles_target_end" name="" type="cl_IfcPersonAndOrganization" association="as_IfcPersonAndOrganization_Roles">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPersonAndOrganization_Roles_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPersonAndOrganization_Roles_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganizationRelationship_RelatingOrganization" name="RelatingOrganization" memberEnd="at_IfcOrganizationRelationship_RelatingOrganization as_IfcOrganizationRelationship_RelatingOrganization_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOrganizationRelationship_RelatingOrganization_target_end" name="INV_Relates_S[0:?]" type="cl_IfcOrganizationRelationship" association="as_IfcOrganizationRelationship_RelatingOrganization">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOrganizationRelationship_RelatingOrganization_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOrganizationRelationship_RelatingOrganization_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganizationRelationship_RelatedOrganizations" name="RelatedOrganizations" memberEnd="at_IfcOrganizationRelationship_RelatedOrganizations as_IfcOrganizationRelationship_RelatedOrganizations_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOrganizationRelationship_RelatedOrganizations_target_end" name="INV_IsRelatedBy_S[0:?]" type="cl_IfcOrganizationRelationship" association="as_IfcOrganizationRelationship_RelatedOrganizations">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOrganizationRelationship_RelatedOrganizations_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOrganizationRelationship_RelatedOrganizations_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_Address" name="Pset_Address">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_Address_comment_0">
+        <body>PSET_OCCURRENCEDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_Purpose" name="Purpose" type="en_PEnum_AddressType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_Purpose_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_Purpose_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_UserDefinedPurpose" name="UserDefinedPurpose">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_UserDefinedPurpose_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_UserDefinedPurpose_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_InternalLocation" name="InternalLocation">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_InternalLocation_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_InternalLocation_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_AddressLines" name="AddressLines">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_AddressLines_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_AddressLines_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_PostalBox" name="PostalBox">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_PostalBox_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_PostalBox_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_Town" name="Town">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_Town_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_Town_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_Region" name="Region">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_Region_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_Region_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_PostalCode" name="PostalCode">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_PostalCode_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_PostalCode_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_Country" name="Country">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_Country_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_Country_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_TelephoneNumbers" name="TelephoneNumbers">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_TelephoneNumbers_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_TelephoneNumbers_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_FacsimileNumbers" name="FacsimileNumbers">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_FacsimileNumbers_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_FacsimileNumbers_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_PagerNumber" name="PagerNumber">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_PagerNumber_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_PagerNumber_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_ElectronicMailAddresses" name="ElectronicMailAddresses">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_ElectronicMailAddresses_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_ElectronicMailAddresses_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_WWWHomePageURL" name="WWWHomePageURL">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_WWWHomePageURL_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_WWWHomePageURL_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Address_MessagingIDs" name="MessagingIDs">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Address_MessagingIDs_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Address_MessagingIDs_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_AddressType" name="PEnum_AddressType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AddressType_DISTRIBUTIONPOINT" name="DISTRIBUTIONPOINT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AddressType_HOME" name="HOME"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AddressType_OFFICE" name="OFFICE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AddressType_SITE" name="SITE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AddressType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AddressType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AddressType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Address_IfcActor" client="cl_Pset_Address">
+      <supplier xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcActor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Address_IfcBuilding" client="cl_Pset_Address">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuilding"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Address_IfcSite" client="cl_Pset_Address">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSite"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

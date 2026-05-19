@@ -1,542 +1,540 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcConstructionMgmtDomain" name="IfcConstructionMgmtDomain">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcConstructionMgmtDomain" name="IfcConstructionMgmtDomain">
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcConstructionEquipmentResourceTypeEnum" name="IfcConstructionEquipmentResourceTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16875" name="DEMOLISHING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16876" name="EARTHMOVING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16877" name="ERECTING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16878" name="HEATING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16879" name="LIGHTING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16880" name="PAVING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16881" name="PUMPING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16882" name="TRANSPORTING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16883" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16884" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcConstructionMaterialResourceTypeEnum" name="IfcConstructionMaterialResourceTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16885" name="AGGREGATES"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16886" name="CONCRETE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16887" name="DRYWALL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16888" name="FUEL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16889" name="GYPSUM"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16890" name="MASONRY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16891" name="METAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16892" name="PLASTIC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16893" name="WOOD"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16894" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16895" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcConstructionProductResourceTypeEnum" name="IfcConstructionProductResourceTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16896" name="ASSEMBLY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16897" name="FORMWORK"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16898" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16899" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcCrewResourceTypeEnum" name="IfcCrewResourceTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16900" name="OFFICE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16901" name="SITE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16902" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16903" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcLaborResourceTypeEnum" name="IfcLaborResourceTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16904" name="ADMINISTRATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16905" name="CARPENTRY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16906" name="CLEANING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16907" name="CONCRETE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16908" name="DRYWALL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16909" name="ELECTRIC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16910" name="FINISHING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16911" name="FLOORING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16912" name="GENERAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16913" name="HVAC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16914" name="LANDSCAPING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16915" name="MASONRY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16916" name="PAINTING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16917" name="PAVING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16918" name="PLUMBING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16919" name="ROOFING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16920" name="SITEGRADING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16921" name="STEELWORK"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16922" name="SURVEYING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16923" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16924" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcSubContractResourceTypeEnum" name="IfcSubContractResourceTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16925" name="PURCHASE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16926" name="WORK"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16927" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16928" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionResource" name="IfcConstructionResource" isAbstract="true">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16929">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcResource"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionResource_Usage" name="Usage" isOrdered="false" association="as_IfcConstructionResource_Usage">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcResourceTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16930" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16931" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionResource_BaseCosts" name="BaseCosts_L[1:?]" isOrdered="false" association="as_IfcConstructionResource_BaseCosts">
-          <type xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcAppliedValue"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16932" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16933" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionResource_BaseQuantity" name="BaseQuantity" isOrdered="false" association="as_IfcConstructionResource_BaseQuantity">
-          <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcPhysicalQuantity"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16934" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16935" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionResourceType" name="IfcConstructionResourceType" isAbstract="true">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16936">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcTypeResource"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionResourceType_BaseCosts" name="BaseCosts_L[1:?]" isOrdered="false" association="as_IfcConstructionResourceType_BaseCosts">
-          <type xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcAppliedValue"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16937" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16938" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionResourceType_BaseQuantity" name="BaseQuantity" isOrdered="false" association="as_IfcConstructionResourceType_BaseQuantity">
-          <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcPhysicalQuantity"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16939" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16940" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResource" name="IfcConstructionEquipmentResource">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16941" general="cl_IfcConstructionResource"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionEquipmentResource_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcConstructionEquipmentResourceTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16942" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16943" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceType" name="IfcConstructionEquipmentResourceType">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16944" general="cl_IfcConstructionResourceType"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionEquipmentResourceType_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcConstructionEquipmentResourceTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16945" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16946" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResource" name="IfcConstructionMaterialResource">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16947" general="cl_IfcConstructionResource"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionMaterialResource_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcConstructionMaterialResourceTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16948" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16949" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceType" name="IfcConstructionMaterialResourceType">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16950" general="cl_IfcConstructionResourceType"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionMaterialResourceType_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcConstructionMaterialResourceTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16951" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16952" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionProductResource" name="IfcConstructionProductResource">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16953" general="cl_IfcConstructionResource"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionProductResource_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcConstructionProductResourceTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16954" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16955" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionProductResourceType" name="IfcConstructionProductResourceType">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16956" general="cl_IfcConstructionResourceType"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionProductResourceType_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcConstructionProductResourceTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16957" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16958" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCrewResource" name="IfcCrewResource">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16959" general="cl_IfcConstructionResource"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCrewResource_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcCrewResourceTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16960" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16961" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCrewResourceType" name="IfcCrewResourceType">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16962" general="cl_IfcConstructionResourceType"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCrewResourceType_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcCrewResourceTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16963" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16964" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResource" name="IfcLaborResource">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16965" general="cl_IfcConstructionResource"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLaborResource_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcLaborResourceTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16966" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16967" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceType" name="IfcLaborResourceType">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16968" general="cl_IfcConstructionResourceType"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLaborResourceType_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcLaborResourceTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16969" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16970" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSubContractResource" name="IfcSubContractResource">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16971" general="cl_IfcConstructionResource"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSubContractResource_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcSubContractResourceTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16972" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16973" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSubContractResourceType" name="IfcSubContractResourceType">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16974" general="cl_IfcConstructionResourceType"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSubContractResourceType_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcSubContractResourceTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16975" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16976" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_DEMOLISHING" name="IfcConstructionEquipmentResourceTypeEnum.DEMOLISHING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16977" general="cl_IfcConstructionEquipmentResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16978" general="cl_IfcConstructionEquipmentResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_EARTHMOVING" name="IfcConstructionEquipmentResourceTypeEnum.EARTHMOVING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16979" general="cl_IfcConstructionEquipmentResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16980" general="cl_IfcConstructionEquipmentResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_ERECTING" name="IfcConstructionEquipmentResourceTypeEnum.ERECTING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16981" general="cl_IfcConstructionEquipmentResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16982" general="cl_IfcConstructionEquipmentResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_HEATING" name="IfcConstructionEquipmentResourceTypeEnum.HEATING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16983" general="cl_IfcConstructionEquipmentResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16984" general="cl_IfcConstructionEquipmentResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_LIGHTING" name="IfcConstructionEquipmentResourceTypeEnum.LIGHTING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16985" general="cl_IfcConstructionEquipmentResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16986" general="cl_IfcConstructionEquipmentResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_PAVING" name="IfcConstructionEquipmentResourceTypeEnum.PAVING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16987" general="cl_IfcConstructionEquipmentResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16988" general="cl_IfcConstructionEquipmentResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_PUMPING" name="IfcConstructionEquipmentResourceTypeEnum.PUMPING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16989" general="cl_IfcConstructionEquipmentResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16990" general="cl_IfcConstructionEquipmentResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_TRANSPORTING" name="IfcConstructionEquipmentResourceTypeEnum.TRANSPORTING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16991" general="cl_IfcConstructionEquipmentResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16992" general="cl_IfcConstructionEquipmentResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_USERDEFINED" name="IfcConstructionEquipmentResourceTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16993" general="cl_IfcConstructionEquipmentResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16994" general="cl_IfcConstructionEquipmentResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_NOTDEFINED" name="IfcConstructionEquipmentResourceTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16995" general="cl_IfcConstructionEquipmentResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16996" general="cl_IfcConstructionEquipmentResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_AGGREGATES" name="IfcConstructionMaterialResourceTypeEnum.AGGREGATES">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16997" general="cl_IfcConstructionMaterialResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16998" general="cl_IfcConstructionMaterialResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_CONCRETE" name="IfcConstructionMaterialResourceTypeEnum.CONCRETE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16999" general="cl_IfcConstructionMaterialResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17000" general="cl_IfcConstructionMaterialResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_DRYWALL" name="IfcConstructionMaterialResourceTypeEnum.DRYWALL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17001" general="cl_IfcConstructionMaterialResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17002" general="cl_IfcConstructionMaterialResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_FUEL" name="IfcConstructionMaterialResourceTypeEnum.FUEL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17003" general="cl_IfcConstructionMaterialResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17004" general="cl_IfcConstructionMaterialResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_GYPSUM" name="IfcConstructionMaterialResourceTypeEnum.GYPSUM">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17005" general="cl_IfcConstructionMaterialResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17006" general="cl_IfcConstructionMaterialResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_MASONRY" name="IfcConstructionMaterialResourceTypeEnum.MASONRY">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17007" general="cl_IfcConstructionMaterialResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17008" general="cl_IfcConstructionMaterialResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_METAL" name="IfcConstructionMaterialResourceTypeEnum.METAL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17009" general="cl_IfcConstructionMaterialResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17010" general="cl_IfcConstructionMaterialResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_PLASTIC" name="IfcConstructionMaterialResourceTypeEnum.PLASTIC">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17011" general="cl_IfcConstructionMaterialResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17012" general="cl_IfcConstructionMaterialResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_WOOD" name="IfcConstructionMaterialResourceTypeEnum.WOOD">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17013" general="cl_IfcConstructionMaterialResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17014" general="cl_IfcConstructionMaterialResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_USERDEFINED" name="IfcConstructionMaterialResourceTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17015" general="cl_IfcConstructionMaterialResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17016" general="cl_IfcConstructionMaterialResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_NOTDEFINED" name="IfcConstructionMaterialResourceTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17017" general="cl_IfcConstructionMaterialResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17018" general="cl_IfcConstructionMaterialResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionProductResourceTypeEnum_ASSEMBLY" name="IfcConstructionProductResourceTypeEnum.ASSEMBLY">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17019" general="cl_IfcConstructionProductResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17020" general="cl_IfcConstructionProductResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionProductResourceTypeEnum_FORMWORK" name="IfcConstructionProductResourceTypeEnum.FORMWORK">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17021" general="cl_IfcConstructionProductResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17022" general="cl_IfcConstructionProductResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionProductResourceTypeEnum_USERDEFINED" name="IfcConstructionProductResourceTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17023" general="cl_IfcConstructionProductResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17024" general="cl_IfcConstructionProductResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionProductResourceTypeEnum_NOTDEFINED" name="IfcConstructionProductResourceTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17025" general="cl_IfcConstructionProductResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17026" general="cl_IfcConstructionProductResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResource_Usage" name="Usage" memberEnd="at_IfcConstructionResource_Usage end_150">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_150" name="" association="as_IfcConstructionResource_Usage" type="cl_IfcConstructionResource">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17027" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17028" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResource_BaseCosts" name="BaseCosts" memberEnd="at_IfcConstructionResource_BaseCosts end_152">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_152" name="" association="as_IfcConstructionResource_BaseCosts" type="cl_IfcConstructionResource">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17029" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17030" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResource_BaseQuantity" name="BaseQuantity" memberEnd="at_IfcConstructionResource_BaseQuantity end_154">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_154" name="" association="as_IfcConstructionResource_BaseQuantity" type="cl_IfcConstructionResource">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17031" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17032" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResourceType_BaseCosts" name="BaseCosts" memberEnd="at_IfcConstructionResourceType_BaseCosts end_156">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_156" name="" association="as_IfcConstructionResourceType_BaseCosts" type="cl_IfcConstructionResourceType">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17033" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17034" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResourceType_BaseQuantity" name="BaseQuantity" memberEnd="at_IfcConstructionResourceType_BaseQuantity end_158">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_158" name="" association="as_IfcConstructionResourceType_BaseQuantity" type="cl_IfcConstructionResourceType">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17035" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17036" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCrewResourceTypeEnum_OFFICE" name="IfcCrewResourceTypeEnum.OFFICE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17037" general="cl_IfcCrewResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17038" general="cl_IfcCrewResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCrewResourceTypeEnum_SITE" name="IfcCrewResourceTypeEnum.SITE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17039" general="cl_IfcCrewResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17040" general="cl_IfcCrewResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCrewResourceTypeEnum_USERDEFINED" name="IfcCrewResourceTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17041" general="cl_IfcCrewResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17042" general="cl_IfcCrewResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCrewResourceTypeEnum_NOTDEFINED" name="IfcCrewResourceTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17043" general="cl_IfcCrewResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17044" general="cl_IfcCrewResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_ADMINISTRATION" name="IfcLaborResourceTypeEnum.ADMINISTRATION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17045" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17046" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_CARPENTRY" name="IfcLaborResourceTypeEnum.CARPENTRY">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17047" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17048" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_CLEANING" name="IfcLaborResourceTypeEnum.CLEANING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17049" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17050" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_CONCRETE" name="IfcLaborResourceTypeEnum.CONCRETE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17051" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17052" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_DRYWALL" name="IfcLaborResourceTypeEnum.DRYWALL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17053" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17054" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_ELECTRIC" name="IfcLaborResourceTypeEnum.ELECTRIC">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17055" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17056" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_FINISHING" name="IfcLaborResourceTypeEnum.FINISHING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17057" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17058" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_FLOORING" name="IfcLaborResourceTypeEnum.FLOORING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17059" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17060" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_GENERAL" name="IfcLaborResourceTypeEnum.GENERAL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17061" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17062" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_HVAC" name="IfcLaborResourceTypeEnum.HVAC">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17063" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17064" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_LANDSCAPING" name="IfcLaborResourceTypeEnum.LANDSCAPING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17065" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17066" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_MASONRY" name="IfcLaborResourceTypeEnum.MASONRY">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17067" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17068" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_PAINTING" name="IfcLaborResourceTypeEnum.PAINTING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17069" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17070" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_PAVING" name="IfcLaborResourceTypeEnum.PAVING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17071" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17072" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_PLUMBING" name="IfcLaborResourceTypeEnum.PLUMBING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17073" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17074" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_ROOFING" name="IfcLaborResourceTypeEnum.ROOFING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17075" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17076" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_SITEGRADING" name="IfcLaborResourceTypeEnum.SITEGRADING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17077" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17078" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_STEELWORK" name="IfcLaborResourceTypeEnum.STEELWORK">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17079" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17080" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_SURVEYING" name="IfcLaborResourceTypeEnum.SURVEYING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17081" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17082" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_USERDEFINED" name="IfcLaborResourceTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17083" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17084" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_NOTDEFINED" name="IfcLaborResourceTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17085" general="cl_IfcLaborResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17086" general="cl_IfcLaborResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSubContractResourceTypeEnum_PURCHASE" name="IfcSubContractResourceTypeEnum.PURCHASE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17087" general="cl_IfcSubContractResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17088" general="cl_IfcSubContractResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSubContractResourceTypeEnum_WORK" name="IfcSubContractResourceTypeEnum.WORK">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17089" general="cl_IfcSubContractResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17090" general="cl_IfcSubContractResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSubContractResourceTypeEnum_USERDEFINED" name="IfcSubContractResourceTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17091" general="cl_IfcSubContractResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17092" general="cl_IfcSubContractResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSubContractResourceTypeEnum_NOTDEFINED" name="IfcSubContractResourceTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17093" general="cl_IfcSubContractResource"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_17094" general="cl_IfcSubContractResourceType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ConstructionResource" name="Pset_ConstructionResource">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_17095">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_ScheduleWorkProgression" name="ScheduleWorkProgression" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17096" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17097" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_ActualWorkTime" name="ActualWorkTime" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17098" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17099" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_RemainingWorkProgression" name="RemainingWorkProgression" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17100" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17101" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_ScheduleCost" name="ScheduleCost" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17102" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17103" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_ActualCost" name="ActualCost" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17104" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17105" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_RemainingCost" name="RemainingCost" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17106" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17107" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_ScheduleCompletion" name="ScheduleCompletion" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17108" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17109" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_ActualCompletion" name="ActualCompletion" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17110" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17111" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ConstructionEquipmentResourceBaseQuantities" name="Qto_ConstructionEquipmentResourceBaseQuantities">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_17112">
-          <body>QTO_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ConstructionEquipmentResourceBaseQuantities_UsageTime" name="UsageTime" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17113" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17114" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ConstructionEquipmentResourceBaseQuantities_OperatingTime" name="OperatingTime" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17115" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17116" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ConstructionMaterialResourceBaseQuantities" name="Qto_ConstructionMaterialResourceBaseQuantities">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_17117">
-          <body>QTO_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_GrossVolume" name="GrossVolume" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17118" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17119" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_NetVolume" name="NetVolume" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17120" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17121" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_GrossWeight" name="GrossWeight" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityWeight"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17122" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17123" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_NetWeight" name="NetWeight" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityWeight"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17124" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17125" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_LaborResourceBaseQuantities" name="Qto_LaborResourceBaseQuantities">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_17126">
-          <body>QTO_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_LaborResourceBaseQuantities_StandardWork" name="StandardWork" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17127" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17128" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_LaborResourceBaseQuantities_OvertimeWork" name="OvertimeWork" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_17129" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_17130" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_17131" client="cl_Pset_ConstructionResource" supplier="cl_IfcConstructionResource"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_17132" client="cl_Qto_ConstructionEquipmentResourceBaseQuantities" supplier="cl_IfcConstructionEquipmentResource"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_17133" client="cl_Qto_ConstructionMaterialResourceBaseQuantities" supplier="cl_IfcConstructionMaterialResource"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_17134" client="cl_Qto_LaborResourceBaseQuantities" supplier="cl_IfcLaborResource"/>
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcConstructionMgmtDomain" name="IfcConstructionMgmtDomain" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcConstructionMgmtDomain" name="IfcConstructionMgmtDomain">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcConstructionEquipmentResourceTypeEnum" name="IfcConstructionEquipmentResourceTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionEquipmentResourceTypeEnum_DEMOLISHING" name="DEMOLISHING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionEquipmentResourceTypeEnum_EARTHMOVING" name="EARTHMOVING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionEquipmentResourceTypeEnum_ERECTING" name="ERECTING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionEquipmentResourceTypeEnum_HEATING" name="HEATING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionEquipmentResourceTypeEnum_LIGHTING" name="LIGHTING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionEquipmentResourceTypeEnum_PAVING" name="PAVING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionEquipmentResourceTypeEnum_PUMPING" name="PUMPING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionEquipmentResourceTypeEnum_TRANSPORTING" name="TRANSPORTING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionEquipmentResourceTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionEquipmentResourceTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcConstructionMaterialResourceTypeEnum" name="IfcConstructionMaterialResourceTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionMaterialResourceTypeEnum_AGGREGATES" name="AGGREGATES"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionMaterialResourceTypeEnum_CONCRETE" name="CONCRETE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionMaterialResourceTypeEnum_DRYWALL" name="DRYWALL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionMaterialResourceTypeEnum_FUEL" name="FUEL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionMaterialResourceTypeEnum_GYPSUM" name="GYPSUM"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionMaterialResourceTypeEnum_MASONRY" name="MASONRY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionMaterialResourceTypeEnum_METAL" name="METAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionMaterialResourceTypeEnum_PLASTIC" name="PLASTIC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionMaterialResourceTypeEnum_WOOD" name="WOOD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionMaterialResourceTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionMaterialResourceTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcConstructionProductResourceTypeEnum" name="IfcConstructionProductResourceTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionProductResourceTypeEnum_ASSEMBLY" name="ASSEMBLY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionProductResourceTypeEnum_FORMWORK" name="FORMWORK"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionProductResourceTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcConstructionProductResourceTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcCrewResourceTypeEnum" name="IfcCrewResourceTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCrewResourceTypeEnum_OFFICE" name="OFFICE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCrewResourceTypeEnum_SITE" name="SITE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCrewResourceTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCrewResourceTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcLaborResourceTypeEnum" name="IfcLaborResourceTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_ADMINISTRATION" name="ADMINISTRATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_CARPENTRY" name="CARPENTRY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_CLEANING" name="CLEANING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_CONCRETE" name="CONCRETE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_DRYWALL" name="DRYWALL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_ELECTRIC" name="ELECTRIC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_FINISHING" name="FINISHING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_FLOORING" name="FLOORING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_GENERAL" name="GENERAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_HVAC" name="HVAC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_LANDSCAPING" name="LANDSCAPING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_MASONRY" name="MASONRY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_PAINTING" name="PAINTING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_PAVING" name="PAVING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_PLUMBING" name="PLUMBING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_ROOFING" name="ROOFING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_SITEGRADING" name="SITEGRADING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_STEELWORK" name="STEELWORK"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_SURVEYING" name="SURVEYING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLaborResourceTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcSubContractResourceTypeEnum" name="IfcSubContractResourceTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSubContractResourceTypeEnum_PURCHASE" name="PURCHASE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSubContractResourceTypeEnum_WORK" name="WORK"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSubContractResourceTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSubContractResourceTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionResource" name="IfcConstructionResource" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionResource_gen_IfcResource">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcResource"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionResource_Usage" name="Usage" association="as_IfcConstructionResource_Usage">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcResourceTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConstructionResource_Usage_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConstructionResource_Usage_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionResource_BaseCosts" name="BaseCosts_L[1:?]" association="as_IfcConstructionResource_BaseCosts">
+        <type xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcAppliedValue"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConstructionResource_BaseCosts_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConstructionResource_BaseCosts_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionResource_BaseQuantity" name="BaseQuantity" association="as_IfcConstructionResource_BaseQuantity">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcPhysicalQuantity"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConstructionResource_BaseQuantity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConstructionResource_BaseQuantity_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionResourceType" name="IfcConstructionResourceType" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionResourceType_gen_IfcTypeResource">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcTypeResource"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionResourceType_BaseCosts" name="BaseCosts_L[1:?]" association="as_IfcConstructionResourceType_BaseCosts">
+        <type xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcAppliedValue"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConstructionResourceType_BaseCosts_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConstructionResourceType_BaseCosts_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionResourceType_BaseQuantity" name="BaseQuantity" association="as_IfcConstructionResourceType_BaseQuantity">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcPhysicalQuantity"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConstructionResourceType_BaseQuantity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConstructionResourceType_BaseQuantity_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResource" name="IfcConstructionEquipmentResource">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResource_gen_IfcConstructionResource" general="cl_IfcConstructionResource"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionEquipmentResource_PredefinedType" name="PredefinedType" type="en_IfcConstructionEquipmentResourceTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConstructionEquipmentResource_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConstructionEquipmentResource_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceType" name="IfcConstructionEquipmentResourceType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceType_gen_IfcConstructionResourceType" general="cl_IfcConstructionResourceType"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionEquipmentResourceType_PredefinedType" name="PredefinedType" type="en_IfcConstructionEquipmentResourceTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConstructionEquipmentResourceType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConstructionEquipmentResourceType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResource" name="IfcConstructionMaterialResource">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResource_gen_IfcConstructionResource" general="cl_IfcConstructionResource"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionMaterialResource_PredefinedType" name="PredefinedType" type="en_IfcConstructionMaterialResourceTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConstructionMaterialResource_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConstructionMaterialResource_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceType" name="IfcConstructionMaterialResourceType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceType_gen_IfcConstructionResourceType" general="cl_IfcConstructionResourceType"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionMaterialResourceType_PredefinedType" name="PredefinedType" type="en_IfcConstructionMaterialResourceTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConstructionMaterialResourceType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConstructionMaterialResourceType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionProductResource" name="IfcConstructionProductResource">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionProductResource_gen_IfcConstructionResource" general="cl_IfcConstructionResource"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionProductResource_PredefinedType" name="PredefinedType" type="en_IfcConstructionProductResourceTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConstructionProductResource_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConstructionProductResource_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionProductResourceType" name="IfcConstructionProductResourceType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionProductResourceType_gen_IfcConstructionResourceType" general="cl_IfcConstructionResourceType"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConstructionProductResourceType_PredefinedType" name="PredefinedType" type="en_IfcConstructionProductResourceTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConstructionProductResourceType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConstructionProductResourceType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCrewResource" name="IfcCrewResource">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCrewResource_gen_IfcConstructionResource" general="cl_IfcConstructionResource"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCrewResource_PredefinedType" name="PredefinedType" type="en_IfcCrewResourceTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCrewResource_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCrewResource_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCrewResourceType" name="IfcCrewResourceType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCrewResourceType_gen_IfcConstructionResourceType" general="cl_IfcConstructionResourceType"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCrewResourceType_PredefinedType" name="PredefinedType" type="en_IfcCrewResourceTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCrewResourceType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCrewResourceType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResource" name="IfcLaborResource">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResource_gen_IfcConstructionResource" general="cl_IfcConstructionResource"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLaborResource_PredefinedType" name="PredefinedType" type="en_IfcLaborResourceTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLaborResource_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLaborResource_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceType" name="IfcLaborResourceType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceType_gen_IfcConstructionResourceType" general="cl_IfcConstructionResourceType"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLaborResourceType_PredefinedType" name="PredefinedType" type="en_IfcLaborResourceTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLaborResourceType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLaborResourceType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSubContractResource" name="IfcSubContractResource">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSubContractResource_gen_IfcConstructionResource" general="cl_IfcConstructionResource"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSubContractResource_PredefinedType" name="PredefinedType" type="en_IfcSubContractResourceTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSubContractResource_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSubContractResource_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSubContractResourceType" name="IfcSubContractResourceType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSubContractResourceType_gen_IfcConstructionResourceType" general="cl_IfcConstructionResourceType"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSubContractResourceType_PredefinedType" name="PredefinedType" type="en_IfcSubContractResourceTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSubContractResourceType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSubContractResourceType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResource_Usage" name="Usage" memberEnd="at_IfcConstructionResource_Usage as_IfcConstructionResource_Usage_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResource_Usage_target_end" name="" type="cl_IfcConstructionResource" association="as_IfcConstructionResource_Usage">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResource_Usage_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResource_Usage_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResource_BaseCosts" name="BaseCosts" memberEnd="at_IfcConstructionResource_BaseCosts as_IfcConstructionResource_BaseCosts_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResource_BaseCosts_target_end" name="" type="cl_IfcConstructionResource" association="as_IfcConstructionResource_BaseCosts">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResource_BaseCosts_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResource_BaseCosts_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResource_BaseQuantity" name="BaseQuantity" memberEnd="at_IfcConstructionResource_BaseQuantity as_IfcConstructionResource_BaseQuantity_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResource_BaseQuantity_target_end" name="" type="cl_IfcConstructionResource" association="as_IfcConstructionResource_BaseQuantity">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResource_BaseQuantity_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResource_BaseQuantity_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResourceType_BaseCosts" name="BaseCosts" memberEnd="at_IfcConstructionResourceType_BaseCosts as_IfcConstructionResourceType_BaseCosts_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResourceType_BaseCosts_target_end" name="" type="cl_IfcConstructionResourceType" association="as_IfcConstructionResourceType_BaseCosts">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResourceType_BaseCosts_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResourceType_BaseCosts_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResourceType_BaseQuantity" name="BaseQuantity" memberEnd="at_IfcConstructionResourceType_BaseQuantity as_IfcConstructionResourceType_BaseQuantity_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResourceType_BaseQuantity_target_end" name="" type="cl_IfcConstructionResourceType" association="as_IfcConstructionResourceType_BaseQuantity">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResourceType_BaseQuantity_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResourceType_BaseQuantity_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_DEMOLISHING" name="IfcConstructionEquipmentResourceTypeEnum.DEMOLISHING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_DEMOLISHING_gen_IfcConstructionEquipmentResource" general="cl_IfcConstructionEquipmentResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_DEMOLISHING_gen_IfcConstructionEquipmentResourceType" general="cl_IfcConstructionEquipmentResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_EARTHMOVING" name="IfcConstructionEquipmentResourceTypeEnum.EARTHMOVING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_EARTHMOVING_gen_IfcConstructionEquipmentResource" general="cl_IfcConstructionEquipmentResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_EARTHMOVING_gen_IfcConstructionEquipmentResourceType" general="cl_IfcConstructionEquipmentResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_ERECTING" name="IfcConstructionEquipmentResourceTypeEnum.ERECTING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_ERECTING_gen_IfcConstructionEquipmentResource" general="cl_IfcConstructionEquipmentResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_ERECTING_gen_IfcConstructionEquipmentResourceType" general="cl_IfcConstructionEquipmentResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_HEATING" name="IfcConstructionEquipmentResourceTypeEnum.HEATING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_HEATING_gen_IfcConstructionEquipmentResource" general="cl_IfcConstructionEquipmentResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_HEATING_gen_IfcConstructionEquipmentResourceType" general="cl_IfcConstructionEquipmentResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_LIGHTING" name="IfcConstructionEquipmentResourceTypeEnum.LIGHTING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_LIGHTING_gen_IfcConstructionEquipmentResource" general="cl_IfcConstructionEquipmentResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_LIGHTING_gen_IfcConstructionEquipmentResourceType" general="cl_IfcConstructionEquipmentResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_PAVING" name="IfcConstructionEquipmentResourceTypeEnum.PAVING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_PAVING_gen_IfcConstructionEquipmentResource" general="cl_IfcConstructionEquipmentResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_PAVING_gen_IfcConstructionEquipmentResourceType" general="cl_IfcConstructionEquipmentResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_PUMPING" name="IfcConstructionEquipmentResourceTypeEnum.PUMPING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_PUMPING_gen_IfcConstructionEquipmentResource" general="cl_IfcConstructionEquipmentResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_PUMPING_gen_IfcConstructionEquipmentResourceType" general="cl_IfcConstructionEquipmentResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_TRANSPORTING" name="IfcConstructionEquipmentResourceTypeEnum.TRANSPORTING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_TRANSPORTING_gen_IfcConstructionEquipmentResource" general="cl_IfcConstructionEquipmentResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_TRANSPORTING_gen_IfcConstructionEquipmentResourceType" general="cl_IfcConstructionEquipmentResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_USERDEFINED" name="IfcConstructionEquipmentResourceTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_USERDEFINED_gen_IfcConstructionEquipmentResource" general="cl_IfcConstructionEquipmentResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_USERDEFINED_gen_IfcConstructionEquipmentResourceType" general="cl_IfcConstructionEquipmentResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_NOTDEFINED" name="IfcConstructionEquipmentResourceTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_NOTDEFINED_gen_IfcConstructionEquipmentResource" general="cl_IfcConstructionEquipmentResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_NOTDEFINED_gen_IfcConstructionEquipmentResourceType" general="cl_IfcConstructionEquipmentResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_AGGREGATES" name="IfcConstructionMaterialResourceTypeEnum.AGGREGATES">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_AGGREGATES_gen_IfcConstructionMaterialResource" general="cl_IfcConstructionMaterialResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_AGGREGATES_gen_IfcConstructionMaterialResourceType" general="cl_IfcConstructionMaterialResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_CONCRETE" name="IfcConstructionMaterialResourceTypeEnum.CONCRETE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_CONCRETE_gen_IfcConstructionMaterialResource" general="cl_IfcConstructionMaterialResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_CONCRETE_gen_IfcConstructionMaterialResourceType" general="cl_IfcConstructionMaterialResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_DRYWALL" name="IfcConstructionMaterialResourceTypeEnum.DRYWALL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_DRYWALL_gen_IfcConstructionMaterialResource" general="cl_IfcConstructionMaterialResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_DRYWALL_gen_IfcConstructionMaterialResourceType" general="cl_IfcConstructionMaterialResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_FUEL" name="IfcConstructionMaterialResourceTypeEnum.FUEL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_FUEL_gen_IfcConstructionMaterialResource" general="cl_IfcConstructionMaterialResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_FUEL_gen_IfcConstructionMaterialResourceType" general="cl_IfcConstructionMaterialResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_GYPSUM" name="IfcConstructionMaterialResourceTypeEnum.GYPSUM">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_GYPSUM_gen_IfcConstructionMaterialResource" general="cl_IfcConstructionMaterialResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_GYPSUM_gen_IfcConstructionMaterialResourceType" general="cl_IfcConstructionMaterialResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_MASONRY" name="IfcConstructionMaterialResourceTypeEnum.MASONRY">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_MASONRY_gen_IfcConstructionMaterialResource" general="cl_IfcConstructionMaterialResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_MASONRY_gen_IfcConstructionMaterialResourceType" general="cl_IfcConstructionMaterialResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_METAL" name="IfcConstructionMaterialResourceTypeEnum.METAL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_METAL_gen_IfcConstructionMaterialResource" general="cl_IfcConstructionMaterialResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_METAL_gen_IfcConstructionMaterialResourceType" general="cl_IfcConstructionMaterialResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_PLASTIC" name="IfcConstructionMaterialResourceTypeEnum.PLASTIC">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_PLASTIC_gen_IfcConstructionMaterialResource" general="cl_IfcConstructionMaterialResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_PLASTIC_gen_IfcConstructionMaterialResourceType" general="cl_IfcConstructionMaterialResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_WOOD" name="IfcConstructionMaterialResourceTypeEnum.WOOD">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_WOOD_gen_IfcConstructionMaterialResource" general="cl_IfcConstructionMaterialResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_WOOD_gen_IfcConstructionMaterialResourceType" general="cl_IfcConstructionMaterialResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_USERDEFINED" name="IfcConstructionMaterialResourceTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_USERDEFINED_gen_IfcConstructionMaterialResource" general="cl_IfcConstructionMaterialResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_USERDEFINED_gen_IfcConstructionMaterialResourceType" general="cl_IfcConstructionMaterialResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_NOTDEFINED" name="IfcConstructionMaterialResourceTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_NOTDEFINED_gen_IfcConstructionMaterialResource" general="cl_IfcConstructionMaterialResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionMaterialResourceTypeEnum_NOTDEFINED_gen_IfcConstructionMaterialResourceType" general="cl_IfcConstructionMaterialResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionProductResourceTypeEnum_ASSEMBLY" name="IfcConstructionProductResourceTypeEnum.ASSEMBLY">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionProductResourceTypeEnum_ASSEMBLY_gen_IfcConstructionProductResource" general="cl_IfcConstructionProductResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionProductResourceTypeEnum_ASSEMBLY_gen_IfcConstructionProductResourceType" general="cl_IfcConstructionProductResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionProductResourceTypeEnum_FORMWORK" name="IfcConstructionProductResourceTypeEnum.FORMWORK">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionProductResourceTypeEnum_FORMWORK_gen_IfcConstructionProductResource" general="cl_IfcConstructionProductResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionProductResourceTypeEnum_FORMWORK_gen_IfcConstructionProductResourceType" general="cl_IfcConstructionProductResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionProductResourceTypeEnum_USERDEFINED" name="IfcConstructionProductResourceTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionProductResourceTypeEnum_USERDEFINED_gen_IfcConstructionProductResource" general="cl_IfcConstructionProductResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionProductResourceTypeEnum_USERDEFINED_gen_IfcConstructionProductResourceType" general="cl_IfcConstructionProductResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionProductResourceTypeEnum_NOTDEFINED" name="IfcConstructionProductResourceTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionProductResourceTypeEnum_NOTDEFINED_gen_IfcConstructionProductResource" general="cl_IfcConstructionProductResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionProductResourceTypeEnum_NOTDEFINED_gen_IfcConstructionProductResourceType" general="cl_IfcConstructionProductResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCrewResourceTypeEnum_OFFICE" name="IfcCrewResourceTypeEnum.OFFICE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCrewResourceTypeEnum_OFFICE_gen_IfcCrewResource" general="cl_IfcCrewResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCrewResourceTypeEnum_OFFICE_gen_IfcCrewResourceType" general="cl_IfcCrewResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCrewResourceTypeEnum_SITE" name="IfcCrewResourceTypeEnum.SITE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCrewResourceTypeEnum_SITE_gen_IfcCrewResource" general="cl_IfcCrewResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCrewResourceTypeEnum_SITE_gen_IfcCrewResourceType" general="cl_IfcCrewResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCrewResourceTypeEnum_USERDEFINED" name="IfcCrewResourceTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCrewResourceTypeEnum_USERDEFINED_gen_IfcCrewResource" general="cl_IfcCrewResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCrewResourceTypeEnum_USERDEFINED_gen_IfcCrewResourceType" general="cl_IfcCrewResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCrewResourceTypeEnum_NOTDEFINED" name="IfcCrewResourceTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCrewResourceTypeEnum_NOTDEFINED_gen_IfcCrewResource" general="cl_IfcCrewResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCrewResourceTypeEnum_NOTDEFINED_gen_IfcCrewResourceType" general="cl_IfcCrewResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_ADMINISTRATION" name="IfcLaborResourceTypeEnum.ADMINISTRATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_ADMINISTRATION_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_ADMINISTRATION_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_CARPENTRY" name="IfcLaborResourceTypeEnum.CARPENTRY">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_CARPENTRY_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_CARPENTRY_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_CLEANING" name="IfcLaborResourceTypeEnum.CLEANING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_CLEANING_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_CLEANING_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_CONCRETE" name="IfcLaborResourceTypeEnum.CONCRETE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_CONCRETE_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_CONCRETE_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_DRYWALL" name="IfcLaborResourceTypeEnum.DRYWALL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_DRYWALL_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_DRYWALL_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_ELECTRIC" name="IfcLaborResourceTypeEnum.ELECTRIC">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_ELECTRIC_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_ELECTRIC_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_FINISHING" name="IfcLaborResourceTypeEnum.FINISHING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_FINISHING_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_FINISHING_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_FLOORING" name="IfcLaborResourceTypeEnum.FLOORING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_FLOORING_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_FLOORING_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_GENERAL" name="IfcLaborResourceTypeEnum.GENERAL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_GENERAL_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_GENERAL_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_HVAC" name="IfcLaborResourceTypeEnum.HVAC">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_HVAC_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_HVAC_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_LANDSCAPING" name="IfcLaborResourceTypeEnum.LANDSCAPING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_LANDSCAPING_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_LANDSCAPING_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_MASONRY" name="IfcLaborResourceTypeEnum.MASONRY">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_MASONRY_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_MASONRY_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_PAINTING" name="IfcLaborResourceTypeEnum.PAINTING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_PAINTING_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_PAINTING_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_PAVING" name="IfcLaborResourceTypeEnum.PAVING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_PAVING_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_PAVING_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_PLUMBING" name="IfcLaborResourceTypeEnum.PLUMBING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_PLUMBING_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_PLUMBING_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_ROOFING" name="IfcLaborResourceTypeEnum.ROOFING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_ROOFING_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_ROOFING_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_SITEGRADING" name="IfcLaborResourceTypeEnum.SITEGRADING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_SITEGRADING_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_SITEGRADING_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_STEELWORK" name="IfcLaborResourceTypeEnum.STEELWORK">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_STEELWORK_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_STEELWORK_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_SURVEYING" name="IfcLaborResourceTypeEnum.SURVEYING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_SURVEYING_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_SURVEYING_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_USERDEFINED" name="IfcLaborResourceTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_USERDEFINED_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_USERDEFINED_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLaborResourceTypeEnum_NOTDEFINED" name="IfcLaborResourceTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_NOTDEFINED_gen_IfcLaborResource" general="cl_IfcLaborResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLaborResourceTypeEnum_NOTDEFINED_gen_IfcLaborResourceType" general="cl_IfcLaborResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSubContractResourceTypeEnum_PURCHASE" name="IfcSubContractResourceTypeEnum.PURCHASE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSubContractResourceTypeEnum_PURCHASE_gen_IfcSubContractResource" general="cl_IfcSubContractResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSubContractResourceTypeEnum_PURCHASE_gen_IfcSubContractResourceType" general="cl_IfcSubContractResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSubContractResourceTypeEnum_WORK" name="IfcSubContractResourceTypeEnum.WORK">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSubContractResourceTypeEnum_WORK_gen_IfcSubContractResource" general="cl_IfcSubContractResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSubContractResourceTypeEnum_WORK_gen_IfcSubContractResourceType" general="cl_IfcSubContractResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSubContractResourceTypeEnum_USERDEFINED" name="IfcSubContractResourceTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSubContractResourceTypeEnum_USERDEFINED_gen_IfcSubContractResource" general="cl_IfcSubContractResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSubContractResourceTypeEnum_USERDEFINED_gen_IfcSubContractResourceType" general="cl_IfcSubContractResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSubContractResourceTypeEnum_NOTDEFINED" name="IfcSubContractResourceTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSubContractResourceTypeEnum_NOTDEFINED_gen_IfcSubContractResource" general="cl_IfcSubContractResource"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSubContractResourceTypeEnum_NOTDEFINED_gen_IfcSubContractResourceType" general="cl_IfcSubContractResourceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ConstructionResource" name="Pset_ConstructionResource">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ConstructionResource_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_ScheduleWorkProgression" name="ScheduleWorkProgression">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ConstructionResource_ScheduleWorkProgression_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ConstructionResource_ScheduleWorkProgression_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_ActualWorkTime" name="ActualWorkTime">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ConstructionResource_ActualWorkTime_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ConstructionResource_ActualWorkTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_RemainingWorkProgression" name="RemainingWorkProgression">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ConstructionResource_RemainingWorkProgression_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ConstructionResource_RemainingWorkProgression_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_ScheduleCost" name="ScheduleCost">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ConstructionResource_ScheduleCost_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ConstructionResource_ScheduleCost_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_ActualCost" name="ActualCost">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ConstructionResource_ActualCost_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ConstructionResource_ActualCost_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_RemainingCost" name="RemainingCost">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ConstructionResource_RemainingCost_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ConstructionResource_RemainingCost_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_ScheduleCompletion" name="ScheduleCompletion">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ConstructionResource_ScheduleCompletion_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ConstructionResource_ScheduleCompletion_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ConstructionResource_ActualCompletion" name="ActualCompletion">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ConstructionResource_ActualCompletion_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ConstructionResource_ActualCompletion_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConstructionResource_IfcConstructionResource" client="cl_Pset_ConstructionResource" supplier="cl_IfcConstructionResource"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ConstructionEquipmentResourceBaseQuantities" name="Qto_ConstructionEquipmentResourceBaseQuantities">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ConstructionEquipmentResourceBaseQuantities_comment_0">
+        <body>QTO_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ConstructionEquipmentResourceBaseQuantities_UsageTime" name="UsageTime">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ConstructionEquipmentResourceBaseQuantities_UsageTime_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ConstructionEquipmentResourceBaseQuantities_UsageTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ConstructionEquipmentResourceBaseQuantities_OperatingTime" name="OperatingTime">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ConstructionEquipmentResourceBaseQuantities_OperatingTime_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ConstructionEquipmentResourceBaseQuantities_OperatingTime_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ConstructionEquipmentResourceBaseQuantities_IfcConstructionEquipmentResource" client="cl_Qto_ConstructionEquipmentResourceBaseQuantities" supplier="cl_IfcConstructionEquipmentResource"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ConstructionMaterialResourceBaseQuantities" name="Qto_ConstructionMaterialResourceBaseQuantities">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ConstructionMaterialResourceBaseQuantities_comment_0">
+        <body>QTO_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_GrossVolume" name="GrossVolume">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_GrossVolume_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_GrossVolume_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_NetVolume" name="NetVolume">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_NetVolume_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_NetVolume_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_GrossWeight" name="GrossWeight">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityWeight"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_GrossWeight_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_GrossWeight_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_NetWeight" name="NetWeight">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityWeight"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_NetWeight_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_NetWeight_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ConstructionMaterialResourceBaseQuantities_IfcConstructionMaterialResource" client="cl_Qto_ConstructionMaterialResourceBaseQuantities" supplier="cl_IfcConstructionMaterialResource"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_LaborResourceBaseQuantities" name="Qto_LaborResourceBaseQuantities">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_LaborResourceBaseQuantities_comment_0">
+        <body>QTO_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_LaborResourceBaseQuantities_StandardWork" name="StandardWork">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_LaborResourceBaseQuantities_StandardWork_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_LaborResourceBaseQuantities_StandardWork_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_LaborResourceBaseQuantities_OvertimeWork" name="OvertimeWork">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_LaborResourceBaseQuantities_OvertimeWork_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_LaborResourceBaseQuantities_OvertimeWork_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_LaborResourceBaseQuantities_IfcLaborResource" client="cl_Qto_LaborResourceBaseQuantities" supplier="cl_IfcLaborResource"/>
+  </packagedElement>
+</uml:Model>

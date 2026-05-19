@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcGeometricConstraintResource" name="IfcGeometricConstraintResource">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcGeometricConstraintResource" name="IfcGeometricConstraintResource">
-      <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcCorrectLocalPlacement" name="IfcCorrectLocalPlacement">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_3005" name="IfcCorrectLocalPlacement">
-          <language>EXPRESS_FUNCTION</language>
-          <body>FUNCTION IfcCorrectLocalPlacement
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcGeometricConstraintResource" name="IfcGeometricConstraintResource" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcGeometricConstraintResource" name="IfcGeometricConstraintResource">
+    <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcCorrectLocalPlacement" name="IfcCorrectLocalPlacement">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcCorrectLocalPlacement_expr" name="IfcCorrectLocalPlacement">
+        <language>EXPRESS_FUNCTION</language>
+        <body>FUNCTION IfcCorrectLocalPlacement
   (AxisPlacement:IfcAxis2Placement; 
    RelPlacement : IfcObjectPlacement):LOGICAL;
 
@@ -32,502 +31,501 @@
 
 END_FUNCTION;
 </body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcAlignmentCantSegmentTypeEnum" name="IfcAlignmentCantSegmentTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3006" name="BLOSSCURVE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3007" name="CONSTANTCANT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3008" name="COSINECURVE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3009" name="HELMERTCURVE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3010" name="LINEARTRANSITION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3011" name="SINECURVE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3012" name="VIENNESEBEND"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcAlignmentHorizontalSegmentTypeEnum" name="IfcAlignmentHorizontalSegmentTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3013" name="BLOSSCURVE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3014" name="CIRCULARARC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3015" name="CLOTHOID"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3016" name="COSINECURVE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3017" name="CUBIC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3018" name="HELMERTCURVE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3019" name="LINE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3020" name="SINECURVE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3021" name="VIENNESEBEND"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentParameterSegment" name="IfcAlignmentParameterSegment" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentParameterSegment_StartTag" name="StartTag" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3022" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3023" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentParameterSegment_EndTag" name="EndTag" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3024" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3025" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcAlignmentVerticalSegmentTypeEnum" name="IfcAlignmentVerticalSegmentTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3026" name="CIRCULARARC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3027" name="CLOTHOID"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3028" name="CONSTANTGRADIENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_3029" name="PARABOLICARC"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConnectionGeometry" name="IfcConnectionGeometry" isAbstract="true"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGridAxis" name="IfcGridAxis">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGridAxis_AxisTag" name="AxisTag" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3030" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3031" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGridAxis_AxisCurve" name="AxisCurve" isOrdered="false" association="as_IfcGridAxis_AxisCurve">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcCurve"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3032" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3033" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGridAxis_SameSense" name="SameSense" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3034" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3035" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGridAxis_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_3036" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>AxisCurve.Dim = 2</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGridAxis_WR2" name="WR2">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_3037" name="WR2">
-            <language>EXPRESS_WHERE</language>
-            <body>(SIZEOF(PartOfU) = 1) XOR (SIZEOF(PartOfV) = 1) XOR (SIZEOF(PartOfW) = 1)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcObjectPlacement" name="IfcObjectPlacement" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcObjectPlacement_PlacementRelTo" name="PlacementRelTo" isOrdered="false" association="as_IfcObjectPlacement_PlacementRelTo" type="cl_IfcObjectPlacement">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3038" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3039" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcVirtualGridIntersection" name="IfcVirtualGridIntersection">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcVirtualGridIntersection_IntersectingAxes" name="IntersectingAxes_LU[2:2]" isOrdered="false" association="as_IfcVirtualGridIntersection_IntersectingAxes" type="cl_IfcGridAxis">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3040" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3041" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcVirtualGridIntersection_OffsetDistances" name="OffsetDistances_L[2:3]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3042" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3043" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegment" name="IfcAlignmentCantSegment">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3044" general="cl_IfcAlignmentParameterSegment"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_StartDistAlong" name="StartDistAlong" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3045" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3046" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_HorizontalLength" name="HorizontalLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3047" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3048" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_StartCantLeft" name="StartCantLeft" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3049" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3050" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_EndCantLeft" name="EndCantLeft" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3051" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3052" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_StartCantRight" name="StartCantRight" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3053" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3054" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_EndCantRight" name="EndCantRight" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3055" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3056" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcAlignmentCantSegmentTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3057" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3058" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegment" name="IfcAlignmentHorizontalSegment">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3059" general="cl_IfcAlignmentParameterSegment"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_StartPoint" name="StartPoint" isOrdered="false" association="as_IfcAlignmentHorizontalSegment_StartPoint">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcCartesianPoint"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3060" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3061" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_StartDirection" name="StartDirection" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3062" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3063" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_StartRadiusOfCurvature" name="StartRadiusOfCurvature" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3064" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3065" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_EndRadiusOfCurvature" name="EndRadiusOfCurvature" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3066" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3067" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_SegmentLength" name="SegmentLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3068" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3069" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_GravityCenterLineHeight" name="GravityCenterLineHeight" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3070" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3071" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcAlignmentHorizontalSegmentTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3072" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3073" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentVerticalSegment" name="IfcAlignmentVerticalSegment">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3074" general="cl_IfcAlignmentParameterSegment"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_StartDistAlong" name="StartDistAlong" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3075" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3076" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_HorizontalLength" name="HorizontalLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3077" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3078" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_StartHeight" name="StartHeight" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3079" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3080" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_StartGradient" name="StartGradient" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3081" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3082" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_EndGradient" name="EndGradient" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3083" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3084" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_RadiusOfCurvature" name="RadiusOfCurvature" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3085" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3086" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcAlignmentVerticalSegmentTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3087" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3088" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConnectionCurveGeometry" name="IfcConnectionCurveGeometry">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3089" general="cl_IfcConnectionGeometry"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionCurveGeometry_CurveOnRelatingElement" name="CurveOnRelatingElement" isOrdered="false" association="as_IfcConnectionCurveGeometry_CurveOnRelatingElement" type="un_IfcCurveOrEdgeCurve">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3090" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3091" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionCurveGeometry_CurveOnRelatedElement" name="CurveOnRelatedElement" isOrdered="false" association="as_IfcConnectionCurveGeometry_CurveOnRelatedElement" type="un_IfcCurveOrEdgeCurve">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3092" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3093" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConnectionPointGeometry" name="IfcConnectionPointGeometry">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3094" general="cl_IfcConnectionGeometry"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionPointGeometry_PointOnRelatingElement" name="PointOnRelatingElement" isOrdered="false" association="as_IfcConnectionPointGeometry_PointOnRelatingElement" type="un_IfcPointOrVertexPoint">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3095" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3096" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionPointGeometry_PointOnRelatedElement" name="PointOnRelatedElement" isOrdered="false" association="as_IfcConnectionPointGeometry_PointOnRelatedElement" type="un_IfcPointOrVertexPoint">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3097" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3098" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConnectionSurfaceGeometry" name="IfcConnectionSurfaceGeometry">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3099" general="cl_IfcConnectionGeometry"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement" name="SurfaceOnRelatingElement" isOrdered="false" association="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement" type="un_IfcSurfaceOrFaceSurface">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3100" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3101" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement" name="SurfaceOnRelatedElement" isOrdered="false" association="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement" type="un_IfcSurfaceOrFaceSurface">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3102" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3103" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConnectionVolumeGeometry" name="IfcConnectionVolumeGeometry">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3104" general="cl_IfcConnectionGeometry"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionVolumeGeometry_VolumeOnRelatingElement" name="VolumeOnRelatingElement" isOrdered="false" association="as_IfcConnectionVolumeGeometry_VolumeOnRelatingElement" type="un_IfcSolidOrShell">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3105" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3106" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionVolumeGeometry_VolumeOnRelatedElement" name="VolumeOnRelatedElement" isOrdered="false" association="as_IfcConnectionVolumeGeometry_VolumeOnRelatedElement" type="un_IfcSolidOrShell">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3107" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3108" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGridPlacement" name="IfcGridPlacement">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3109" general="cl_IfcObjectPlacement"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGridPlacement_PlacementLocation" name="PlacementLocation" isOrdered="false" association="as_IfcGridPlacement_PlacementLocation" type="cl_IfcVirtualGridIntersection">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3110" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3111" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGridPlacement_PlacementRefDirection" name="PlacementRefDirection" isOrdered="false" association="as_IfcGridPlacement_PlacementRefDirection" type="un_IfcGridPlacementDirectionSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3112" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3113" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLinearPlacement" name="IfcLinearPlacement">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3114" general="cl_IfcObjectPlacement"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLinearPlacement_RelativePlacement" name="RelativePlacement" isOrdered="false" association="as_IfcLinearPlacement_RelativePlacement">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcAxis2PlacementLinear"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3115" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3116" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLinearPlacement_CartesianPosition" name="CartesianPosition" isOrdered="false" association="as_IfcLinearPlacement_CartesianPosition">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcAxis2Placement3D"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3117" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3118" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLocalPlacement" name="IfcLocalPlacement">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3119" general="cl_IfcObjectPlacement"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLocalPlacement_RelativePlacement" name="RelativePlacement" isOrdered="false" association="as_IfcLocalPlacement_RelativePlacement">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#un_IfcAxis2Placement"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3120" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3121" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcLocalPlacement_WR21" name="WR21">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_3122" name="WR21">
-            <language>EXPRESS_WHERE</language>
-            <body>IfcCorrectLocalPlacement(RelativePlacement, PlacementRelTo)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConnectionPointEccentricity" name="IfcConnectionPointEccentricity">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3123" general="cl_IfcConnectionPointGeometry"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionPointEccentricity_EccentricityInX" name="EccentricityInX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3124" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3125" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionPointEccentricity_EccentricityInY" name="EccentricityInY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3126" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3127" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionPointEccentricity_EccentricityInZ" name="EccentricityInZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3128" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3129" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcGridPlacementDirectionSelect" name="IfcGridPlacementDirectionSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_3130" client="un_IfcGridPlacementDirectionSelect">
-        <supplier xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcDirection"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_3131" client="un_IfcGridPlacementDirectionSelect" supplier="cl_IfcVirtualGridIntersection"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcCurveOrEdgeCurve" name="IfcCurveOrEdgeCurve"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_3132" client="un_IfcCurveOrEdgeCurve">
-        <supplier xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcBoundedCurve"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_3133" client="un_IfcCurveOrEdgeCurve">
-        <supplier xmi:type="uml:Class" href="IfcTopologyResource.uml#cl_IfcEdgeCurve"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcPointOrVertexPoint" name="IfcPointOrVertexPoint"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_3134" client="un_IfcPointOrVertexPoint">
-        <supplier xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcPoint"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_3135" client="un_IfcPointOrVertexPoint">
-        <supplier xmi:type="uml:Class" href="IfcTopologyResource.uml#cl_IfcVertexPoint"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcSolidOrShell" name="IfcSolidOrShell"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_3136" client="un_IfcSolidOrShell">
-        <supplier xmi:type="uml:Class" href="IfcTopologyResource.uml#cl_IfcClosedShell"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_3137" client="un_IfcSolidOrShell">
-        <supplier xmi:type="uml:Class" href="IfcGeometricModelResource.uml#cl_IfcSolidModel"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcSurfaceOrFaceSurface" name="IfcSurfaceOrFaceSurface"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_3138" client="un_IfcSurfaceOrFaceSurface">
-        <supplier xmi:type="uml:Class" href="IfcGeometricModelResource.uml#cl_IfcFaceBasedSurfaceModel"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_3139" client="un_IfcSurfaceOrFaceSurface">
-        <supplier xmi:type="uml:Class" href="IfcTopologyResource.uml#cl_IfcFaceSurface"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_3140" client="un_IfcSurfaceOrFaceSurface">
-        <supplier xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcSurface"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_BLOSSCURVE" name="IfcAlignmentCantSegmentTypeEnum.BLOSSCURVE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3141" general="cl_IfcAlignmentCantSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_CONSTANTCANT" name="IfcAlignmentCantSegmentTypeEnum.CONSTANTCANT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3142" general="cl_IfcAlignmentCantSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_COSINECURVE" name="IfcAlignmentCantSegmentTypeEnum.COSINECURVE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3143" general="cl_IfcAlignmentCantSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_HELMERTCURVE" name="IfcAlignmentCantSegmentTypeEnum.HELMERTCURVE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3144" general="cl_IfcAlignmentCantSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_LINEARTRANSITION" name="IfcAlignmentCantSegmentTypeEnum.LINEARTRANSITION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3145" general="cl_IfcAlignmentCantSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_SINECURVE" name="IfcAlignmentCantSegmentTypeEnum.SINECURVE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3146" general="cl_IfcAlignmentCantSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_VIENNESEBEND" name="IfcAlignmentCantSegmentTypeEnum.VIENNESEBEND">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3147" general="cl_IfcAlignmentCantSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAlignmentHorizontalSegment_StartPoint" name="StartPoint" memberEnd="at_IfcAlignmentHorizontalSegment_StartPoint end_6">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_6" name="" association="as_IfcAlignmentHorizontalSegment_StartPoint" type="cl_IfcAlignmentHorizontalSegment">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3148" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3149" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_BLOSSCURVE" name="IfcAlignmentHorizontalSegmentTypeEnum.BLOSSCURVE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3150" general="cl_IfcAlignmentHorizontalSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_CIRCULARARC" name="IfcAlignmentHorizontalSegmentTypeEnum.CIRCULARARC">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3151" general="cl_IfcAlignmentHorizontalSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_CLOTHOID" name="IfcAlignmentHorizontalSegmentTypeEnum.CLOTHOID">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3152" general="cl_IfcAlignmentHorizontalSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_COSINECURVE" name="IfcAlignmentHorizontalSegmentTypeEnum.COSINECURVE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3153" general="cl_IfcAlignmentHorizontalSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_CUBIC" name="IfcAlignmentHorizontalSegmentTypeEnum.CUBIC">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3154" general="cl_IfcAlignmentHorizontalSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_HELMERTCURVE" name="IfcAlignmentHorizontalSegmentTypeEnum.HELMERTCURVE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3155" general="cl_IfcAlignmentHorizontalSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_LINE" name="IfcAlignmentHorizontalSegmentTypeEnum.LINE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3156" general="cl_IfcAlignmentHorizontalSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_SINECURVE" name="IfcAlignmentHorizontalSegmentTypeEnum.SINECURVE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3157" general="cl_IfcAlignmentHorizontalSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_VIENNESEBEND" name="IfcAlignmentHorizontalSegmentTypeEnum.VIENNESEBEND">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3158" general="cl_IfcAlignmentHorizontalSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_CIRCULARARC" name="IfcAlignmentVerticalSegmentTypeEnum.CIRCULARARC">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3159" general="cl_IfcAlignmentVerticalSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_CLOTHOID" name="IfcAlignmentVerticalSegmentTypeEnum.CLOTHOID">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3160" general="cl_IfcAlignmentVerticalSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_CONSTANTGRADIENT" name="IfcAlignmentVerticalSegmentTypeEnum.CONSTANTGRADIENT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3161" general="cl_IfcAlignmentVerticalSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_PARABOLICARC" name="IfcAlignmentVerticalSegmentTypeEnum.PARABOLICARC">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_3162" general="cl_IfcAlignmentVerticalSegment"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionCurveGeometry_CurveOnRelatingElement" name="CurveOnRelatingElement" memberEnd="at_IfcConnectionCurveGeometry_CurveOnRelatingElement end_132">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_132" name="" association="as_IfcConnectionCurveGeometry_CurveOnRelatingElement" type="cl_IfcConnectionCurveGeometry">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3163" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3164" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionCurveGeometry_CurveOnRelatedElement" name="CurveOnRelatedElement" memberEnd="at_IfcConnectionCurveGeometry_CurveOnRelatedElement end_134">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_134" name="" association="as_IfcConnectionCurveGeometry_CurveOnRelatedElement" type="cl_IfcConnectionCurveGeometry">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3165" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3166" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionPointGeometry_PointOnRelatingElement" name="PointOnRelatingElement" memberEnd="at_IfcConnectionPointGeometry_PointOnRelatingElement end_136">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_136" name="" association="as_IfcConnectionPointGeometry_PointOnRelatingElement" type="cl_IfcConnectionPointGeometry">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3167" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3168" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionPointGeometry_PointOnRelatedElement" name="PointOnRelatedElement" memberEnd="at_IfcConnectionPointGeometry_PointOnRelatedElement end_138">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_138" name="" association="as_IfcConnectionPointGeometry_PointOnRelatedElement" type="cl_IfcConnectionPointGeometry">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3169" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3170" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement" name="SurfaceOnRelatingElement" memberEnd="at_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement end_140">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_140" name="" association="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement" type="cl_IfcConnectionSurfaceGeometry">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3171" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3172" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement" name="SurfaceOnRelatedElement" memberEnd="at_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement end_142">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_142" name="" association="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement" type="cl_IfcConnectionSurfaceGeometry">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3173" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3174" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionVolumeGeometry_VolumeOnRelatingElement" name="VolumeOnRelatingElement" memberEnd="at_IfcConnectionVolumeGeometry_VolumeOnRelatingElement end_144">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_144" name="" association="as_IfcConnectionVolumeGeometry_VolumeOnRelatingElement" type="cl_IfcConnectionVolumeGeometry">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3175" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3176" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionVolumeGeometry_VolumeOnRelatedElement" name="VolumeOnRelatedElement" memberEnd="at_IfcConnectionVolumeGeometry_VolumeOnRelatedElement end_146">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_146" name="" association="as_IfcConnectionVolumeGeometry_VolumeOnRelatedElement" type="cl_IfcConnectionVolumeGeometry">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3177" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3178" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGridAxis_AxisCurve" name="AxisCurve" memberEnd="at_IfcGridAxis_AxisCurve end_312">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_312" name="" association="as_IfcGridAxis_AxisCurve" type="cl_IfcGridAxis">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3179" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3180" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGridPlacement_PlacementLocation" name="PlacementLocation" memberEnd="at_IfcGridPlacement_PlacementLocation end_314">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_314" name="" association="as_IfcGridPlacement_PlacementLocation" type="cl_IfcGridPlacement">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3181" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3182" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGridPlacement_PlacementRefDirection" name="PlacementRefDirection" memberEnd="at_IfcGridPlacement_PlacementRefDirection end_316">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_316" name="" association="as_IfcGridPlacement_PlacementRefDirection" type="cl_IfcGridPlacement">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3183" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3184" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLinearPlacement_RelativePlacement" name="RelativePlacement" memberEnd="at_IfcLinearPlacement_RelativePlacement end_372">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_372" name="" association="as_IfcLinearPlacement_RelativePlacement" type="cl_IfcLinearPlacement">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3185" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3186" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLinearPlacement_CartesianPosition" name="CartesianPosition" memberEnd="at_IfcLinearPlacement_CartesianPosition end_374">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_374" name="" association="as_IfcLinearPlacement_CartesianPosition" type="cl_IfcLinearPlacement">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3187" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3188" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLocalPlacement_RelativePlacement" name="RelativePlacement" memberEnd="at_IfcLocalPlacement_RelativePlacement end_376">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_376" name="" association="as_IfcLocalPlacement_RelativePlacement" type="cl_IfcLocalPlacement">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3189" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3190" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcObjectPlacement_PlacementRelTo" name="PlacementRelTo" memberEnd="at_IfcObjectPlacement_PlacementRelTo end_432">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_432" name="INV_ReferencedByPlacements_S[0:?]" association="as_IfcObjectPlacement_PlacementRelTo" type="cl_IfcObjectPlacement">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3191" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3192" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcVirtualGridIntersection_IntersectingAxes" name="IntersectingAxes" memberEnd="at_IfcVirtualGridIntersection_IntersectingAxes end_960">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_960" name="INV_HasIntersections_S[0:?]" association="as_IfcVirtualGridIntersection_IntersectingAxes" type="cl_IfcVirtualGridIntersection">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_3193" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_3194" value="1"/>
-        </ownedEnd>
-      </packagedElement>
+      </specification>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcAlignmentCantSegmentTypeEnum" name="IfcAlignmentCantSegmentTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentCantSegmentTypeEnum_BLOSSCURVE" name="BLOSSCURVE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentCantSegmentTypeEnum_CONSTANTCANT" name="CONSTANTCANT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentCantSegmentTypeEnum_COSINECURVE" name="COSINECURVE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentCantSegmentTypeEnum_HELMERTCURVE" name="HELMERTCURVE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentCantSegmentTypeEnum_LINEARTRANSITION" name="LINEARTRANSITION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentCantSegmentTypeEnum_SINECURVE" name="SINECURVE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentCantSegmentTypeEnum_VIENNESEBEND" name="VIENNESEBEND"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcAlignmentHorizontalSegmentTypeEnum" name="IfcAlignmentHorizontalSegmentTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentHorizontalSegmentTypeEnum_BLOSSCURVE" name="BLOSSCURVE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentHorizontalSegmentTypeEnum_CIRCULARARC" name="CIRCULARARC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentHorizontalSegmentTypeEnum_CLOTHOID" name="CLOTHOID"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentHorizontalSegmentTypeEnum_COSINECURVE" name="COSINECURVE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentHorizontalSegmentTypeEnum_CUBIC" name="CUBIC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentHorizontalSegmentTypeEnum_HELMERTCURVE" name="HELMERTCURVE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentHorizontalSegmentTypeEnum_LINE" name="LINE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentHorizontalSegmentTypeEnum_SINECURVE" name="SINECURVE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentHorizontalSegmentTypeEnum_VIENNESEBEND" name="VIENNESEBEND"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentParameterSegment" name="IfcAlignmentParameterSegment" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentParameterSegment_StartTag" name="StartTag">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentParameterSegment_StartTag_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentParameterSegment_StartTag_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentParameterSegment_EndTag" name="EndTag">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentParameterSegment_EndTag_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentParameterSegment_EndTag_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcAlignmentVerticalSegmentTypeEnum" name="IfcAlignmentVerticalSegmentTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentVerticalSegmentTypeEnum_CIRCULARARC" name="CIRCULARARC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentVerticalSegmentTypeEnum_CLOTHOID" name="CLOTHOID"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentVerticalSegmentTypeEnum_CONSTANTGRADIENT" name="CONSTANTGRADIENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentVerticalSegmentTypeEnum_PARABOLICARC" name="PARABOLICARC"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConnectionGeometry" name="IfcConnectionGeometry" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGridAxis" name="IfcGridAxis">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGridAxis_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcGridAxis_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>AxisCurve.Dim = 2</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGridAxis_WR2" name="WR2">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcGridAxis_WR2" name="WR2">
+          <language>EXPRESS_WHERE</language>
+          <body>(SIZEOF(PartOfU) = 1) XOR (SIZEOF(PartOfV) = 1) XOR (SIZEOF(PartOfW) = 1)</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGridAxis_AxisTag" name="AxisTag">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGridAxis_AxisTag_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGridAxis_AxisTag_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGridAxis_AxisCurve" name="AxisCurve" association="as_IfcGridAxis_AxisCurve">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcCurve"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGridAxis_AxisCurve_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGridAxis_AxisCurve_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGridAxis_SameSense" name="SameSense">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGridAxis_SameSense_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGridAxis_SameSense_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcObjectPlacement" name="IfcObjectPlacement" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcObjectPlacement_PlacementRelTo" name="PlacementRelTo" type="cl_IfcObjectPlacement" association="as_IfcObjectPlacement_PlacementRelTo">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcObjectPlacement_PlacementRelTo_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcObjectPlacement_PlacementRelTo_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcVirtualGridIntersection" name="IfcVirtualGridIntersection">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcVirtualGridIntersection_IntersectingAxes" name="IntersectingAxes_LU[2:2]" type="cl_IfcGridAxis" association="as_IfcVirtualGridIntersection_IntersectingAxes">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcVirtualGridIntersection_IntersectingAxes_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcVirtualGridIntersection_IntersectingAxes_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcVirtualGridIntersection_OffsetDistances" name="OffsetDistances_L[2:3]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcVirtualGridIntersection_OffsetDistances_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcVirtualGridIntersection_OffsetDistances_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegment" name="IfcAlignmentCantSegment">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentCantSegment_gen_IfcAlignmentParameterSegment" general="cl_IfcAlignmentParameterSegment"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_StartDistAlong" name="StartDistAlong">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentCantSegment_StartDistAlong_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentCantSegment_StartDistAlong_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_HorizontalLength" name="HorizontalLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentCantSegment_HorizontalLength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentCantSegment_HorizontalLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_StartCantLeft" name="StartCantLeft">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentCantSegment_StartCantLeft_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentCantSegment_StartCantLeft_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_EndCantLeft" name="EndCantLeft">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentCantSegment_EndCantLeft_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentCantSegment_EndCantLeft_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_StartCantRight" name="StartCantRight">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentCantSegment_StartCantRight_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentCantSegment_StartCantRight_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_EndCantRight" name="EndCantRight">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentCantSegment_EndCantRight_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentCantSegment_EndCantRight_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentCantSegment_PredefinedType" name="PredefinedType" type="en_IfcAlignmentCantSegmentTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentCantSegment_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentCantSegment_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegment" name="IfcAlignmentHorizontalSegment">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentHorizontalSegment_gen_IfcAlignmentParameterSegment" general="cl_IfcAlignmentParameterSegment"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_StartPoint" name="StartPoint" association="as_IfcAlignmentHorizontalSegment_StartPoint">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcCartesianPoint"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentHorizontalSegment_StartPoint_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentHorizontalSegment_StartPoint_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_StartDirection" name="StartDirection">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentHorizontalSegment_StartDirection_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentHorizontalSegment_StartDirection_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_StartRadiusOfCurvature" name="StartRadiusOfCurvature">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentHorizontalSegment_StartRadiusOfCurvature_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentHorizontalSegment_StartRadiusOfCurvature_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_EndRadiusOfCurvature" name="EndRadiusOfCurvature">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentHorizontalSegment_EndRadiusOfCurvature_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentHorizontalSegment_EndRadiusOfCurvature_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_SegmentLength" name="SegmentLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentHorizontalSegment_SegmentLength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentHorizontalSegment_SegmentLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_GravityCenterLineHeight" name="GravityCenterLineHeight">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentHorizontalSegment_GravityCenterLineHeight_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentHorizontalSegment_GravityCenterLineHeight_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentHorizontalSegment_PredefinedType" name="PredefinedType" type="en_IfcAlignmentHorizontalSegmentTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentHorizontalSegment_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentHorizontalSegment_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentVerticalSegment" name="IfcAlignmentVerticalSegment">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentVerticalSegment_gen_IfcAlignmentParameterSegment" general="cl_IfcAlignmentParameterSegment"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_StartDistAlong" name="StartDistAlong">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentVerticalSegment_StartDistAlong_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentVerticalSegment_StartDistAlong_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_HorizontalLength" name="HorizontalLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentVerticalSegment_HorizontalLength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentVerticalSegment_HorizontalLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_StartHeight" name="StartHeight">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentVerticalSegment_StartHeight_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentVerticalSegment_StartHeight_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_StartGradient" name="StartGradient">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentVerticalSegment_StartGradient_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentVerticalSegment_StartGradient_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_EndGradient" name="EndGradient">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentVerticalSegment_EndGradient_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentVerticalSegment_EndGradient_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_RadiusOfCurvature" name="RadiusOfCurvature">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentVerticalSegment_RadiusOfCurvature_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentVerticalSegment_RadiusOfCurvature_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignmentVerticalSegment_PredefinedType" name="PredefinedType" type="en_IfcAlignmentVerticalSegmentTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignmentVerticalSegment_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAlignmentVerticalSegment_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConnectionCurveGeometry" name="IfcConnectionCurveGeometry">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConnectionCurveGeometry_gen_IfcConnectionGeometry" general="cl_IfcConnectionGeometry"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionCurveGeometry_CurveOnRelatingElement" name="CurveOnRelatingElement" type="un_IfcCurveOrEdgeCurve" association="as_IfcConnectionCurveGeometry_CurveOnRelatingElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConnectionCurveGeometry_CurveOnRelatingElement_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConnectionCurveGeometry_CurveOnRelatingElement_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionCurveGeometry_CurveOnRelatedElement" name="CurveOnRelatedElement" type="un_IfcCurveOrEdgeCurve" association="as_IfcConnectionCurveGeometry_CurveOnRelatedElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConnectionCurveGeometry_CurveOnRelatedElement_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConnectionCurveGeometry_CurveOnRelatedElement_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConnectionPointGeometry" name="IfcConnectionPointGeometry">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConnectionPointGeometry_gen_IfcConnectionGeometry" general="cl_IfcConnectionGeometry"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionPointGeometry_PointOnRelatingElement" name="PointOnRelatingElement" type="un_IfcPointOrVertexPoint" association="as_IfcConnectionPointGeometry_PointOnRelatingElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConnectionPointGeometry_PointOnRelatingElement_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConnectionPointGeometry_PointOnRelatingElement_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionPointGeometry_PointOnRelatedElement" name="PointOnRelatedElement" type="un_IfcPointOrVertexPoint" association="as_IfcConnectionPointGeometry_PointOnRelatedElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConnectionPointGeometry_PointOnRelatedElement_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConnectionPointGeometry_PointOnRelatedElement_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConnectionSurfaceGeometry" name="IfcConnectionSurfaceGeometry">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConnectionSurfaceGeometry_gen_IfcConnectionGeometry" general="cl_IfcConnectionGeometry"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement" name="SurfaceOnRelatingElement" type="un_IfcSurfaceOrFaceSurface" association="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement" name="SurfaceOnRelatedElement" type="un_IfcSurfaceOrFaceSurface" association="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConnectionVolumeGeometry" name="IfcConnectionVolumeGeometry">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConnectionVolumeGeometry_gen_IfcConnectionGeometry" general="cl_IfcConnectionGeometry"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionVolumeGeometry_VolumeOnRelatingElement" name="VolumeOnRelatingElement" type="un_IfcSolidOrShell" association="as_IfcConnectionVolumeGeometry_VolumeOnRelatingElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConnectionVolumeGeometry_VolumeOnRelatingElement_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConnectionVolumeGeometry_VolumeOnRelatingElement_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionVolumeGeometry_VolumeOnRelatedElement" name="VolumeOnRelatedElement" type="un_IfcSolidOrShell" association="as_IfcConnectionVolumeGeometry_VolumeOnRelatedElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConnectionVolumeGeometry_VolumeOnRelatedElement_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConnectionVolumeGeometry_VolumeOnRelatedElement_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGridPlacement" name="IfcGridPlacement">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGridPlacement_gen_IfcObjectPlacement" general="cl_IfcObjectPlacement"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGridPlacement_PlacementLocation" name="PlacementLocation" type="cl_IfcVirtualGridIntersection" association="as_IfcGridPlacement_PlacementLocation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGridPlacement_PlacementLocation_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGridPlacement_PlacementLocation_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGridPlacement_PlacementRefDirection" name="PlacementRefDirection" type="un_IfcGridPlacementDirectionSelect" association="as_IfcGridPlacement_PlacementRefDirection">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGridPlacement_PlacementRefDirection_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGridPlacement_PlacementRefDirection_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLinearPlacement" name="IfcLinearPlacement">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLinearPlacement_gen_IfcObjectPlacement" general="cl_IfcObjectPlacement"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLinearPlacement_RelativePlacement" name="RelativePlacement" association="as_IfcLinearPlacement_RelativePlacement">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcAxis2PlacementLinear"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLinearPlacement_RelativePlacement_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLinearPlacement_RelativePlacement_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLinearPlacement_CartesianPosition" name="CartesianPosition" association="as_IfcLinearPlacement_CartesianPosition">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcAxis2Placement3D"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLinearPlacement_CartesianPosition_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLinearPlacement_CartesianPosition_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLocalPlacement" name="IfcLocalPlacement">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcLocalPlacement_WR21" name="WR21">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcLocalPlacement_WR21" name="WR21">
+          <language>EXPRESS_WHERE</language>
+          <body>IfcCorrectLocalPlacement(RelativePlacement, PlacementRelTo)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLocalPlacement_gen_IfcObjectPlacement" general="cl_IfcObjectPlacement"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLocalPlacement_RelativePlacement" name="RelativePlacement" association="as_IfcLocalPlacement_RelativePlacement">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#un_IfcAxis2Placement"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLocalPlacement_RelativePlacement_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLocalPlacement_RelativePlacement_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConnectionPointEccentricity" name="IfcConnectionPointEccentricity">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConnectionPointEccentricity_gen_IfcConnectionPointGeometry" general="cl_IfcConnectionPointGeometry"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionPointEccentricity_EccentricityInX" name="EccentricityInX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConnectionPointEccentricity_EccentricityInX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConnectionPointEccentricity_EccentricityInX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionPointEccentricity_EccentricityInY" name="EccentricityInY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConnectionPointEccentricity_EccentricityInY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConnectionPointEccentricity_EccentricityInY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConnectionPointEccentricity_EccentricityInZ" name="EccentricityInZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConnectionPointEccentricity_EccentricityInZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConnectionPointEccentricity_EccentricityInZ_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcGridPlacementDirectionSelect" name="IfcGridPlacementDirectionSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcGridPlacementDirectionSelect_IfcDirection" client="un_IfcGridPlacementDirectionSelect">
+      <supplier xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcDirection"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcGridPlacementDirectionSelect_IfcVirtualGridIntersection" client="un_IfcGridPlacementDirectionSelect" supplier="cl_IfcVirtualGridIntersection"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcCurveOrEdgeCurve" name="IfcCurveOrEdgeCurve"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcCurveOrEdgeCurve_IfcBoundedCurve" client="un_IfcCurveOrEdgeCurve">
+      <supplier xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcBoundedCurve"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcCurveOrEdgeCurve_IfcEdgeCurve" client="un_IfcCurveOrEdgeCurve">
+      <supplier xmi:type="uml:Class" href="IfcTopologyResource.uml#cl_IfcEdgeCurve"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcPointOrVertexPoint" name="IfcPointOrVertexPoint"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcPointOrVertexPoint_IfcPoint" client="un_IfcPointOrVertexPoint">
+      <supplier xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcPoint"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcPointOrVertexPoint_IfcVertexPoint" client="un_IfcPointOrVertexPoint">
+      <supplier xmi:type="uml:Class" href="IfcTopologyResource.uml#cl_IfcVertexPoint"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcSolidOrShell" name="IfcSolidOrShell"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSolidOrShell_IfcClosedShell" client="un_IfcSolidOrShell">
+      <supplier xmi:type="uml:Class" href="IfcTopologyResource.uml#cl_IfcClosedShell"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSolidOrShell_IfcSolidModel" client="un_IfcSolidOrShell">
+      <supplier xmi:type="uml:Class" href="IfcGeometricModelResource.uml#cl_IfcSolidModel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcSurfaceOrFaceSurface" name="IfcSurfaceOrFaceSurface"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSurfaceOrFaceSurface_IfcFaceBasedSurfaceModel" client="un_IfcSurfaceOrFaceSurface">
+      <supplier xmi:type="uml:Class" href="IfcGeometricModelResource.uml#cl_IfcFaceBasedSurfaceModel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSurfaceOrFaceSurface_IfcFaceSurface" client="un_IfcSurfaceOrFaceSurface">
+      <supplier xmi:type="uml:Class" href="IfcTopologyResource.uml#cl_IfcFaceSurface"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSurfaceOrFaceSurface_IfcSurface" client="un_IfcSurfaceOrFaceSurface">
+      <supplier xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcSurface"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGridAxis_AxisCurve" name="AxisCurve" memberEnd="at_IfcGridAxis_AxisCurve as_IfcGridAxis_AxisCurve_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcGridAxis_AxisCurve_target_end" name="" type="cl_IfcGridAxis" association="as_IfcGridAxis_AxisCurve">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcGridAxis_AxisCurve_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcGridAxis_AxisCurve_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcObjectPlacement_PlacementRelTo" name="PlacementRelTo" memberEnd="at_IfcObjectPlacement_PlacementRelTo as_IfcObjectPlacement_PlacementRelTo_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcObjectPlacement_PlacementRelTo_target_end" name="INV_ReferencedByPlacements_S[0:?]" type="cl_IfcObjectPlacement" association="as_IfcObjectPlacement_PlacementRelTo">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcObjectPlacement_PlacementRelTo_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcObjectPlacement_PlacementRelTo_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcVirtualGridIntersection_IntersectingAxes" name="IntersectingAxes" memberEnd="at_IfcVirtualGridIntersection_IntersectingAxes as_IfcVirtualGridIntersection_IntersectingAxes_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcVirtualGridIntersection_IntersectingAxes_target_end" name="INV_HasIntersections_S[0:?]" type="cl_IfcVirtualGridIntersection" association="as_IfcVirtualGridIntersection_IntersectingAxes">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcVirtualGridIntersection_IntersectingAxes_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcVirtualGridIntersection_IntersectingAxes_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_BLOSSCURVE" name="IfcAlignmentCantSegmentTypeEnum.BLOSSCURVE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_BLOSSCURVE_gen_IfcAlignmentCantSegment" general="cl_IfcAlignmentCantSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_CONSTANTCANT" name="IfcAlignmentCantSegmentTypeEnum.CONSTANTCANT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_CONSTANTCANT_gen_IfcAlignmentCantSegment" general="cl_IfcAlignmentCantSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_COSINECURVE" name="IfcAlignmentCantSegmentTypeEnum.COSINECURVE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_COSINECURVE_gen_IfcAlignmentCantSegment" general="cl_IfcAlignmentCantSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_HELMERTCURVE" name="IfcAlignmentCantSegmentTypeEnum.HELMERTCURVE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_HELMERTCURVE_gen_IfcAlignmentCantSegment" general="cl_IfcAlignmentCantSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_LINEARTRANSITION" name="IfcAlignmentCantSegmentTypeEnum.LINEARTRANSITION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_LINEARTRANSITION_gen_IfcAlignmentCantSegment" general="cl_IfcAlignmentCantSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_SINECURVE" name="IfcAlignmentCantSegmentTypeEnum.SINECURVE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_SINECURVE_gen_IfcAlignmentCantSegment" general="cl_IfcAlignmentCantSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_VIENNESEBEND" name="IfcAlignmentCantSegmentTypeEnum.VIENNESEBEND">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_VIENNESEBEND_gen_IfcAlignmentCantSegment" general="cl_IfcAlignmentCantSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAlignmentHorizontalSegment_StartPoint" name="StartPoint" memberEnd="at_IfcAlignmentHorizontalSegment_StartPoint as_IfcAlignmentHorizontalSegment_StartPoint_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAlignmentHorizontalSegment_StartPoint_target_end" name="" type="cl_IfcAlignmentHorizontalSegment" association="as_IfcAlignmentHorizontalSegment_StartPoint">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAlignmentHorizontalSegment_StartPoint_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAlignmentHorizontalSegment_StartPoint_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_BLOSSCURVE" name="IfcAlignmentHorizontalSegmentTypeEnum.BLOSSCURVE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_BLOSSCURVE_gen_IfcAlignmentHorizontalSegment" general="cl_IfcAlignmentHorizontalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_CIRCULARARC" name="IfcAlignmentHorizontalSegmentTypeEnum.CIRCULARARC">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_CIRCULARARC_gen_IfcAlignmentHorizontalSegment" general="cl_IfcAlignmentHorizontalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_CLOTHOID" name="IfcAlignmentHorizontalSegmentTypeEnum.CLOTHOID">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_CLOTHOID_gen_IfcAlignmentHorizontalSegment" general="cl_IfcAlignmentHorizontalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_COSINECURVE" name="IfcAlignmentHorizontalSegmentTypeEnum.COSINECURVE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_COSINECURVE_gen_IfcAlignmentHorizontalSegment" general="cl_IfcAlignmentHorizontalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_CUBIC" name="IfcAlignmentHorizontalSegmentTypeEnum.CUBIC">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_CUBIC_gen_IfcAlignmentHorizontalSegment" general="cl_IfcAlignmentHorizontalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_HELMERTCURVE" name="IfcAlignmentHorizontalSegmentTypeEnum.HELMERTCURVE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_HELMERTCURVE_gen_IfcAlignmentHorizontalSegment" general="cl_IfcAlignmentHorizontalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_LINE" name="IfcAlignmentHorizontalSegmentTypeEnum.LINE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_LINE_gen_IfcAlignmentHorizontalSegment" general="cl_IfcAlignmentHorizontalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_SINECURVE" name="IfcAlignmentHorizontalSegmentTypeEnum.SINECURVE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_SINECURVE_gen_IfcAlignmentHorizontalSegment" general="cl_IfcAlignmentHorizontalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_VIENNESEBEND" name="IfcAlignmentHorizontalSegmentTypeEnum.VIENNESEBEND">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_VIENNESEBEND_gen_IfcAlignmentHorizontalSegment" general="cl_IfcAlignmentHorizontalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_CIRCULARARC" name="IfcAlignmentVerticalSegmentTypeEnum.CIRCULARARC">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_CIRCULARARC_gen_IfcAlignmentVerticalSegment" general="cl_IfcAlignmentVerticalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_CLOTHOID" name="IfcAlignmentVerticalSegmentTypeEnum.CLOTHOID">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_CLOTHOID_gen_IfcAlignmentVerticalSegment" general="cl_IfcAlignmentVerticalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_CONSTANTGRADIENT" name="IfcAlignmentVerticalSegmentTypeEnum.CONSTANTGRADIENT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_CONSTANTGRADIENT_gen_IfcAlignmentVerticalSegment" general="cl_IfcAlignmentVerticalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_PARABOLICARC" name="IfcAlignmentVerticalSegmentTypeEnum.PARABOLICARC">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_PARABOLICARC_gen_IfcAlignmentVerticalSegment" general="cl_IfcAlignmentVerticalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionCurveGeometry_CurveOnRelatingElement" name="CurveOnRelatingElement" memberEnd="at_IfcConnectionCurveGeometry_CurveOnRelatingElement as_IfcConnectionCurveGeometry_CurveOnRelatingElement_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConnectionCurveGeometry_CurveOnRelatingElement_target_end" name="" type="cl_IfcConnectionCurveGeometry" association="as_IfcConnectionCurveGeometry_CurveOnRelatingElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConnectionCurveGeometry_CurveOnRelatingElement_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConnectionCurveGeometry_CurveOnRelatingElement_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionCurveGeometry_CurveOnRelatedElement" name="CurveOnRelatedElement" memberEnd="at_IfcConnectionCurveGeometry_CurveOnRelatedElement as_IfcConnectionCurveGeometry_CurveOnRelatedElement_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConnectionCurveGeometry_CurveOnRelatedElement_target_end" name="" type="cl_IfcConnectionCurveGeometry" association="as_IfcConnectionCurveGeometry_CurveOnRelatedElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConnectionCurveGeometry_CurveOnRelatedElement_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConnectionCurveGeometry_CurveOnRelatedElement_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionPointGeometry_PointOnRelatingElement" name="PointOnRelatingElement" memberEnd="at_IfcConnectionPointGeometry_PointOnRelatingElement as_IfcConnectionPointGeometry_PointOnRelatingElement_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConnectionPointGeometry_PointOnRelatingElement_target_end" name="" type="cl_IfcConnectionPointGeometry" association="as_IfcConnectionPointGeometry_PointOnRelatingElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConnectionPointGeometry_PointOnRelatingElement_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConnectionPointGeometry_PointOnRelatingElement_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionPointGeometry_PointOnRelatedElement" name="PointOnRelatedElement" memberEnd="at_IfcConnectionPointGeometry_PointOnRelatedElement as_IfcConnectionPointGeometry_PointOnRelatedElement_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConnectionPointGeometry_PointOnRelatedElement_target_end" name="" type="cl_IfcConnectionPointGeometry" association="as_IfcConnectionPointGeometry_PointOnRelatedElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConnectionPointGeometry_PointOnRelatedElement_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConnectionPointGeometry_PointOnRelatedElement_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement" name="SurfaceOnRelatingElement" memberEnd="at_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement as_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement_target_end" name="" type="cl_IfcConnectionSurfaceGeometry" association="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatingElement_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement" name="SurfaceOnRelatedElement" memberEnd="at_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement as_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement_target_end" name="" type="cl_IfcConnectionSurfaceGeometry" association="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConnectionSurfaceGeometry_SurfaceOnRelatedElement_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionVolumeGeometry_VolumeOnRelatingElement" name="VolumeOnRelatingElement" memberEnd="at_IfcConnectionVolumeGeometry_VolumeOnRelatingElement as_IfcConnectionVolumeGeometry_VolumeOnRelatingElement_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConnectionVolumeGeometry_VolumeOnRelatingElement_target_end" name="" type="cl_IfcConnectionVolumeGeometry" association="as_IfcConnectionVolumeGeometry_VolumeOnRelatingElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConnectionVolumeGeometry_VolumeOnRelatingElement_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConnectionVolumeGeometry_VolumeOnRelatingElement_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionVolumeGeometry_VolumeOnRelatedElement" name="VolumeOnRelatedElement" memberEnd="at_IfcConnectionVolumeGeometry_VolumeOnRelatedElement as_IfcConnectionVolumeGeometry_VolumeOnRelatedElement_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConnectionVolumeGeometry_VolumeOnRelatedElement_target_end" name="" type="cl_IfcConnectionVolumeGeometry" association="as_IfcConnectionVolumeGeometry_VolumeOnRelatedElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConnectionVolumeGeometry_VolumeOnRelatedElement_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConnectionVolumeGeometry_VolumeOnRelatedElement_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGridPlacement_PlacementLocation" name="PlacementLocation" memberEnd="at_IfcGridPlacement_PlacementLocation as_IfcGridPlacement_PlacementLocation_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcGridPlacement_PlacementLocation_target_end" name="" type="cl_IfcGridPlacement" association="as_IfcGridPlacement_PlacementLocation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcGridPlacement_PlacementLocation_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcGridPlacement_PlacementLocation_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGridPlacement_PlacementRefDirection" name="PlacementRefDirection" memberEnd="at_IfcGridPlacement_PlacementRefDirection as_IfcGridPlacement_PlacementRefDirection_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcGridPlacement_PlacementRefDirection_target_end" name="" type="cl_IfcGridPlacement" association="as_IfcGridPlacement_PlacementRefDirection">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcGridPlacement_PlacementRefDirection_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcGridPlacement_PlacementRefDirection_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLinearPlacement_RelativePlacement" name="RelativePlacement" memberEnd="at_IfcLinearPlacement_RelativePlacement as_IfcLinearPlacement_RelativePlacement_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLinearPlacement_RelativePlacement_target_end" name="" type="cl_IfcLinearPlacement" association="as_IfcLinearPlacement_RelativePlacement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLinearPlacement_RelativePlacement_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLinearPlacement_RelativePlacement_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLinearPlacement_CartesianPosition" name="CartesianPosition" memberEnd="at_IfcLinearPlacement_CartesianPosition as_IfcLinearPlacement_CartesianPosition_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLinearPlacement_CartesianPosition_target_end" name="" type="cl_IfcLinearPlacement" association="as_IfcLinearPlacement_CartesianPosition">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLinearPlacement_CartesianPosition_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLinearPlacement_CartesianPosition_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLocalPlacement_RelativePlacement" name="RelativePlacement" memberEnd="at_IfcLocalPlacement_RelativePlacement as_IfcLocalPlacement_RelativePlacement_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLocalPlacement_RelativePlacement_target_end" name="" type="cl_IfcLocalPlacement" association="as_IfcLocalPlacement_RelativePlacement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLocalPlacement_RelativePlacement_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLocalPlacement_RelativePlacement_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

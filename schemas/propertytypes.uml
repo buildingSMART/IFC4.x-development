@@ -1,317 +1,315 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_propertytypes" name="propertytypes">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_propertytypes" name="propertytypes">
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ElementStatus" name="PEnum_ElementStatus">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24645" name="DEMOLISH"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24646" name="EXISTING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24647" name="NEW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24648" name="TEMPORARY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24649" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24650" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24651" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_EnergySource" name="PEnum_EnergySource">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24652" name="COAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24653" name="COAL_PULVERIZED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24654" name="ELECTRICITY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24655" name="GAS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24656" name="OIL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24657" name="PROPANE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24658" name="WOOD"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24659" name="WOOD_CHIP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24660" name="WOOD_PELLET"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24661" name="WOOD_PULVERIZED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24662" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24663" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24664" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_FiberColour" name="PEnum_FiberColour">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24665" name="AQUA"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24666" name="BLACK"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24667" name="BLUE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24668" name="BROWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24669" name="GREEN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24670" name="ORANGE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24671" name="RED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24672" name="ROSE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24673" name="SLATE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24674" name="VIOLET"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24675" name="WHITE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24676" name="YELLOW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24677" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24678" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24679" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_FiberType" name="PEnum_FiberType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24680" name="BEND_INSENSITIVEFIBER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24681" name="CUTOFFSHIFTEDFIBER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24682" name="DISPERSIONSHIFTEDFIBER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24683" name="LOWWATERPEAKFIBER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24684" name="NON_ZERODISPERSIONSHIFTEDFIBER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24685" name="OM1"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24686" name="OM2"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24687" name="OM3"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24688" name="OM4"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24689" name="OM5"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24690" name="STANDARDSINGLEMODEFIBER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24691" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24692" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24693" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_RelativePosition" name="PEnum_RelativePosition">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24694" name="LEFT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24695" name="MIDDLE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24696" name="RIGHT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24697" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24698" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24699" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_InputOutputSignalType" name="PEnum_InputOutputSignalType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24700" name="CURRENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24701" name="VOLTAGE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24702" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24703" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24704" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_RefrigerantClass" name="PEnum_RefrigerantClass">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24705" name="AMMONIA"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24706" name="CFC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24707" name="CO2"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24708" name="H2O"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24709" name="HCFC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24710" name="HFC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24711" name="HYDROCARBONS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24712" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24713" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24714" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_AssemblyPlace" name="PEnum_AssemblyPlace">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24715" name="FACTORY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24716" name="OFFSITE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24717" name="SITE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24718" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24719" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24720" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_FireDamperActuationType" name="PEnum_FireDamperActuationType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24721" name="GRAVITY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24722" name="SPRING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24723" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24724" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24725" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_FireDamperClosureRating" name="PEnum_FireDamperClosureRating">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24726" name="DYNAMIC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24727" name="STATIC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24728" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24729" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24730" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SerialInterfaceType" name="PEnum_SerialInterfaceType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24731" name="RS_232"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24732" name="RS_422"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24733" name="RS_485"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24734" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24735" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24736" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ConductorFunctionEnum" name="PEnum_ConductorFunctionEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24737" name="NEUTRAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24738" name="PHASE_L1"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24739" name="PHASE_L2"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24740" name="PHASE_L3"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24741" name="PROTECTIVEEARTH"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24742" name="PROTECTIVEEARTHNEUTRAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24743" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24744" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24745" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SectionType" name="PEnum_SectionType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24746" name="CLOSED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24747" name="OPEN"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_AssetRating" name="PEnum_AssetRating">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24748" name="HIGH"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24749" name="LOW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24750" name="MODERATE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24751" name="VERYHIGH"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24752" name="VERYLOW"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_UnitConnectionType" name="PEnum_UnitConnectionType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24753" name="CHAIN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24754" name="MIXED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24755" name="RING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24756" name="STAR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24757" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24758" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24759" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PriorityType" name="PEnum_PriorityType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24760" name="HIGH"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24761" name="LOW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24762" name="MEDIUM"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24763" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24764" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24765" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_VoltageLevels" name="PEnum_VoltageLevels">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24766" name="U1000"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24767" name="U230"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24768" name="U400"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24769" name="U440"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24770" name="U525"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24771" name="U690"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24772" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24773" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24774" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_AdjustmentValueType" name="PEnum_AdjustmentValueType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24775" name="LIST"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24776" name="RANGE"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SignalIndicatorType" name="PEnum_SignalIndicatorType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24777" name="DEPARTUREINDICATOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24778" name="DEPARTUREROUTEINDICATOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24779" name="DERAILINDICATOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24780" name="ROLLINGSTOCKSTOPINDICATOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24781" name="ROUTEINDICATOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24782" name="SHUNTINGINDICATOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24783" name="SWITCHINDICATOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24784" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24785" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24786" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_RiskRating" name="PEnum_RiskRating">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24787" name="CONSIDERABLE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24788" name="CRITICAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24789" name="HIGH"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24790" name="INSIGNIFICANT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24791" name="LOW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24792" name="MODERATE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24793" name="SOME"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24794" name="VERYHIGH"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24795" name="VERYLOW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24796" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24797" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24798" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SanitaryMounting" name="PEnum_SanitaryMounting">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24799" name="BACKTOWALL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24800" name="COUNTERTOP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24801" name="PEDESTAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24802" name="WALLHUNG"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24803" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24804" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24805" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_DataCollectionType" name="PEnum_DataCollectionType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24806" name="AUTOMATICANDCONTINUOUS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24807" name="MANUALANDSINGLE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24808" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24809" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24810" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SideType" name="PEnum_SideType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24811" name="BOTH"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24812" name="LEFT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24813" name="RIGHT"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SwitchingDeviceDimmerSwitchType" name="PEnum_SwitchingDeviceDimmerSwitchType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24814" name="ROCKER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24815" name="SELECTOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24816" name="TWIST"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24817" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24818" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24819" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SwitchUsage" name="PEnum_SwitchUsage">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24820" name="EMERGENCY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24821" name="GUARD"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24822" name="LIMIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24823" name="START"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24824" name="STOP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24825" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24826" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24827" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SwitchActivation" name="PEnum_SwitchActivation">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24828" name="ACTUATOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24829" name="FOOT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24830" name="HAND"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24831" name="PROXIMITY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24832" name="SOUND"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24833" name="TWOHAND"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24834" name="WIRE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24835" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24836" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24837" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_FurniturePanelType" name="PEnum_FurniturePanelType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24838" name="ACOUSTICAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24839" name="DOOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24840" name="ENDS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24841" name="GLAZED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24842" name="HORZ_SEG"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24843" name="MONOLITHIC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24844" name="OPEN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24845" name="SCREEN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24846" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24847" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24848" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_TankPatternType" name="PEnum_TankPatternType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24849" name="HORIZONTALCYLINDER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24850" name="RECTANGULAR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24851" name="VERTICALCYLINDER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24852" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24853" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24854" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_EndShapeType" name="PEnum_EndShapeType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24855" name="CONCAVECONVEX"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24856" name="CONCAVEFLAT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24857" name="CONVEXCONVEX"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24858" name="FLATCONVEX"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24859" name="FLATFLAT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24860" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24861" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24862" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_TrapType" name="PEnum_TrapType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24863" name="NONE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24864" name="P_TRAP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24865" name="Q_TRAP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24866" name="S_TRAP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24867" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24868" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24869" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_GullyType" name="PEnum_GullyType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24870" name="BACKINLET"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24871" name="VERTICAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24872" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24873" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24874" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_BackInletPatternType" name="PEnum_BackInletPatternType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24875" name="1"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24876" name="12"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24877" name="123"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24878" name="1234"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24879" name="124"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24880" name="13"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24881" name="134"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24882" name="14"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24883" name="2"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24884" name="23"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24885" name="234"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24886" name="24"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24887" name="3"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24888" name="34"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24889" name="4"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_24890" name="NONE"/>
-      </packagedElement>
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_propertytypes" name="propertytypes" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_propertytypes" name="propertytypes">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ElementStatus" name="PEnum_ElementStatus">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementStatus_DEMOLISH" name="DEMOLISH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementStatus_EXISTING" name="EXISTING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementStatus_NEW" name="NEW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementStatus_TEMPORARY" name="TEMPORARY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementStatus_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementStatus_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementStatus_UNSET" name="UNSET"/>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_EnergySource" name="PEnum_EnergySource">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EnergySource_COAL" name="COAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EnergySource_COAL_PULVERIZED" name="COAL_PULVERIZED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EnergySource_ELECTRICITY" name="ELECTRICITY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EnergySource_GAS" name="GAS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EnergySource_OIL" name="OIL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EnergySource_PROPANE" name="PROPANE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EnergySource_WOOD" name="WOOD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EnergySource_WOOD_CHIP" name="WOOD_CHIP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EnergySource_WOOD_PELLET" name="WOOD_PELLET"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EnergySource_WOOD_PULVERIZED" name="WOOD_PULVERIZED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EnergySource_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EnergySource_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EnergySource_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_FiberColour" name="PEnum_FiberColour">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_AQUA" name="AQUA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_BLACK" name="BLACK"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_BLUE" name="BLUE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_BROWN" name="BROWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_GREEN" name="GREEN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_ORANGE" name="ORANGE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_RED" name="RED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_ROSE" name="ROSE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_SLATE" name="SLATE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_VIOLET" name="VIOLET"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_WHITE" name="WHITE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_YELLOW" name="YELLOW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberColour_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_FiberType" name="PEnum_FiberType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_BEND_INSENSITIVEFIBER" name="BEND_INSENSITIVEFIBER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_CUTOFFSHIFTEDFIBER" name="CUTOFFSHIFTEDFIBER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_DISPERSIONSHIFTEDFIBER" name="DISPERSIONSHIFTEDFIBER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_LOWWATERPEAKFIBER" name="LOWWATERPEAKFIBER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_NON_ZERODISPERSIONSHIFTEDFIBER" name="NON_ZERODISPERSIONSHIFTEDFIBER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_OM1" name="OM1"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_OM2" name="OM2"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_OM3" name="OM3"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_OM4" name="OM4"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_OM5" name="OM5"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_STANDARDSINGLEMODEFIBER" name="STANDARDSINGLEMODEFIBER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_RelativePosition" name="PEnum_RelativePosition">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RelativePosition_LEFT" name="LEFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RelativePosition_MIDDLE" name="MIDDLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RelativePosition_RIGHT" name="RIGHT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RelativePosition_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RelativePosition_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RelativePosition_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_InputOutputSignalType" name="PEnum_InputOutputSignalType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InputOutputSignalType_CURRENT" name="CURRENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InputOutputSignalType_VOLTAGE" name="VOLTAGE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InputOutputSignalType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InputOutputSignalType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InputOutputSignalType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_RefrigerantClass" name="PEnum_RefrigerantClass">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RefrigerantClass_AMMONIA" name="AMMONIA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RefrigerantClass_CFC" name="CFC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RefrigerantClass_CO2" name="CO2"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RefrigerantClass_H2O" name="H2O"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RefrigerantClass_HCFC" name="HCFC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RefrigerantClass_HFC" name="HFC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RefrigerantClass_HYDROCARBONS" name="HYDROCARBONS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RefrigerantClass_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RefrigerantClass_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RefrigerantClass_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_AssemblyPlace" name="PEnum_AssemblyPlace">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AssemblyPlace_FACTORY" name="FACTORY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AssemblyPlace_OFFSITE" name="OFFSITE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AssemblyPlace_SITE" name="SITE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AssemblyPlace_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AssemblyPlace_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AssemblyPlace_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_FireDamperActuationType" name="PEnum_FireDamperActuationType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FireDamperActuationType_GRAVITY" name="GRAVITY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FireDamperActuationType_SPRING" name="SPRING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FireDamperActuationType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FireDamperActuationType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FireDamperActuationType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_FireDamperClosureRating" name="PEnum_FireDamperClosureRating">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FireDamperClosureRating_DYNAMIC" name="DYNAMIC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FireDamperClosureRating_STATIC" name="STATIC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FireDamperClosureRating_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FireDamperClosureRating_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FireDamperClosureRating_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SerialInterfaceType" name="PEnum_SerialInterfaceType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SerialInterfaceType_RS_232" name="RS_232"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SerialInterfaceType_RS_422" name="RS_422"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SerialInterfaceType_RS_485" name="RS_485"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SerialInterfaceType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SerialInterfaceType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SerialInterfaceType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ConductorFunctionEnum" name="PEnum_ConductorFunctionEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ConductorFunctionEnum_NEUTRAL" name="NEUTRAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ConductorFunctionEnum_PHASE_L1" name="PHASE_L1"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ConductorFunctionEnum_PHASE_L2" name="PHASE_L2"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ConductorFunctionEnum_PHASE_L3" name="PHASE_L3"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ConductorFunctionEnum_PROTECTIVEEARTH" name="PROTECTIVEEARTH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ConductorFunctionEnum_PROTECTIVEEARTHNEUTRAL" name="PROTECTIVEEARTHNEUTRAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ConductorFunctionEnum_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ConductorFunctionEnum_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ConductorFunctionEnum_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SectionType" name="PEnum_SectionType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SectionType_CLOSED" name="CLOSED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SectionType_OPEN" name="OPEN"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_AssetRating" name="PEnum_AssetRating">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AssetRating_HIGH" name="HIGH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AssetRating_LOW" name="LOW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AssetRating_MODERATE" name="MODERATE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AssetRating_VERYHIGH" name="VERYHIGH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AssetRating_VERYLOW" name="VERYLOW"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_UnitConnectionType" name="PEnum_UnitConnectionType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UnitConnectionType_CHAIN" name="CHAIN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UnitConnectionType_MIXED" name="MIXED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UnitConnectionType_RING" name="RING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UnitConnectionType_STAR" name="STAR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UnitConnectionType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UnitConnectionType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UnitConnectionType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PriorityType" name="PEnum_PriorityType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PriorityType_HIGH" name="HIGH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PriorityType_LOW" name="LOW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PriorityType_MEDIUM" name="MEDIUM"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PriorityType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PriorityType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PriorityType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_VoltageLevels" name="PEnum_VoltageLevels">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_VoltageLevels_U1000" name="U1000"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_VoltageLevels_U230" name="U230"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_VoltageLevels_U400" name="U400"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_VoltageLevels_U440" name="U440"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_VoltageLevels_U525" name="U525"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_VoltageLevels_U690" name="U690"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_VoltageLevels_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_VoltageLevels_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_VoltageLevels_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_AdjustmentValueType" name="PEnum_AdjustmentValueType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AdjustmentValueType_LIST" name="LIST"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AdjustmentValueType_RANGE" name="RANGE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SignalIndicatorType" name="PEnum_SignalIndicatorType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SignalIndicatorType_DEPARTUREINDICATOR" name="DEPARTUREINDICATOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SignalIndicatorType_DEPARTUREROUTEINDICATOR" name="DEPARTUREROUTEINDICATOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SignalIndicatorType_DERAILINDICATOR" name="DERAILINDICATOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SignalIndicatorType_ROLLINGSTOCKSTOPINDICATOR" name="ROLLINGSTOCKSTOPINDICATOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SignalIndicatorType_ROUTEINDICATOR" name="ROUTEINDICATOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SignalIndicatorType_SHUNTINGINDICATOR" name="SHUNTINGINDICATOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SignalIndicatorType_SWITCHINDICATOR" name="SWITCHINDICATOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SignalIndicatorType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SignalIndicatorType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SignalIndicatorType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_RiskRating" name="PEnum_RiskRating">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskRating_CONSIDERABLE" name="CONSIDERABLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskRating_CRITICAL" name="CRITICAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskRating_HIGH" name="HIGH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskRating_INSIGNIFICANT" name="INSIGNIFICANT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskRating_LOW" name="LOW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskRating_MODERATE" name="MODERATE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskRating_SOME" name="SOME"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskRating_VERYHIGH" name="VERYHIGH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskRating_VERYLOW" name="VERYLOW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskRating_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskRating_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskRating_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SanitaryMounting" name="PEnum_SanitaryMounting">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SanitaryMounting_BACKTOWALL" name="BACKTOWALL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SanitaryMounting_COUNTERTOP" name="COUNTERTOP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SanitaryMounting_PEDESTAL" name="PEDESTAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SanitaryMounting_WALLHUNG" name="WALLHUNG"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SanitaryMounting_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SanitaryMounting_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SanitaryMounting_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_DataCollectionType" name="PEnum_DataCollectionType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DataCollectionType_AUTOMATICANDCONTINUOUS" name="AUTOMATICANDCONTINUOUS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DataCollectionType_MANUALANDSINGLE" name="MANUALANDSINGLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DataCollectionType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DataCollectionType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DataCollectionType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SideType" name="PEnum_SideType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SideType_BOTH" name="BOTH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SideType_LEFT" name="LEFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SideType_RIGHT" name="RIGHT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SwitchingDeviceDimmerSwitchType" name="PEnum_SwitchingDeviceDimmerSwitchType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchingDeviceDimmerSwitchType_ROCKER" name="ROCKER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchingDeviceDimmerSwitchType_SELECTOR" name="SELECTOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchingDeviceDimmerSwitchType_TWIST" name="TWIST"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchingDeviceDimmerSwitchType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchingDeviceDimmerSwitchType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchingDeviceDimmerSwitchType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SwitchUsage" name="PEnum_SwitchUsage">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchUsage_EMERGENCY" name="EMERGENCY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchUsage_GUARD" name="GUARD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchUsage_LIMIT" name="LIMIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchUsage_START" name="START"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchUsage_STOP" name="STOP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchUsage_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchUsage_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchUsage_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SwitchActivation" name="PEnum_SwitchActivation">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchActivation_ACTUATOR" name="ACTUATOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchActivation_FOOT" name="FOOT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchActivation_HAND" name="HAND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchActivation_PROXIMITY" name="PROXIMITY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchActivation_SOUND" name="SOUND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchActivation_TWOHAND" name="TWOHAND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchActivation_WIRE" name="WIRE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchActivation_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchActivation_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SwitchActivation_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_FurniturePanelType" name="PEnum_FurniturePanelType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FurniturePanelType_ACOUSTICAL" name="ACOUSTICAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FurniturePanelType_DOOR" name="DOOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FurniturePanelType_ENDS" name="ENDS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FurniturePanelType_GLAZED" name="GLAZED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FurniturePanelType_HORZ_SEG" name="HORZ_SEG"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FurniturePanelType_MONOLITHIC" name="MONOLITHIC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FurniturePanelType_OPEN" name="OPEN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FurniturePanelType_SCREEN" name="SCREEN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FurniturePanelType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FurniturePanelType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FurniturePanelType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_TankPatternType" name="PEnum_TankPatternType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TankPatternType_HORIZONTALCYLINDER" name="HORIZONTALCYLINDER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TankPatternType_RECTANGULAR" name="RECTANGULAR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TankPatternType_VERTICALCYLINDER" name="VERTICALCYLINDER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TankPatternType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TankPatternType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TankPatternType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_EndShapeType" name="PEnum_EndShapeType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EndShapeType_CONCAVECONVEX" name="CONCAVECONVEX"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EndShapeType_CONCAVEFLAT" name="CONCAVEFLAT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EndShapeType_CONVEXCONVEX" name="CONVEXCONVEX"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EndShapeType_FLATCONVEX" name="FLATCONVEX"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EndShapeType_FLATFLAT" name="FLATFLAT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EndShapeType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EndShapeType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EndShapeType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_TrapType" name="PEnum_TrapType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrapType_NONE" name="NONE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrapType_P_TRAP" name="P_TRAP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrapType_Q_TRAP" name="Q_TRAP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrapType_S_TRAP" name="S_TRAP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrapType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrapType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrapType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_GullyType" name="PEnum_GullyType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GullyType_BACKINLET" name="BACKINLET"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GullyType_VERTICAL" name="VERTICAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GullyType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GullyType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GullyType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_BackInletPatternType" name="PEnum_BackInletPatternType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_1" name="1"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_12" name="12"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_123" name="123"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_1234" name="1234"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_124" name="124"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_13" name="13"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_134" name="134"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_14" name="14"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_2" name="2"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_23" name="23"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_234" name="234"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_24" name="24"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_3" name="3"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_34" name="34"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_4" name="4"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackInletPatternType_NONE" name="NONE"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

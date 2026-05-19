@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcRepresentationResource" name="IfcRepresentationResource">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcRepresentationResource" name="IfcRepresentationResource">
-      <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcConvertDirectionInto2D" name="IfcConvertDirectionInto2D">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_1927" name="IfcConvertDirectionInto2D">
-          <language>EXPRESS_FUNCTION</language>
-          <body>FUNCTION IfcConvertDirectionInto2D
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcRepresentationResource" name="IfcRepresentationResource" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcRepresentationResource" name="IfcRepresentationResource">
+    <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcConvertDirectionInto2D" name="IfcConvertDirectionInto2D">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcConvertDirectionInto2D_expr" name="IfcConvertDirectionInto2D">
+        <language>EXPRESS_FUNCTION</language>
+        <body>FUNCTION IfcConvertDirectionInto2D
     (Direction : IfcDirection)
     : IfcDirection;
  
@@ -20,12 +19,12 @@
 
 END_FUNCTION;
 </body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcSameValidPrecision" name="IfcSameValidPrecision">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_1928" name="IfcSameValidPrecision">
-          <language>EXPRESS_FUNCTION</language>
-          <body>FUNCTION IfcSameValidPrecision
+      </specification>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcSameValidPrecision" name="IfcSameValidPrecision">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcSameValidPrecision_expr" name="IfcSameValidPrecision">
+        <language>EXPRESS_FUNCTION</language>
+        <body>FUNCTION IfcSameValidPrecision
    (Epsilon1, Epsilon2 : REAL) : LOGICAL ;
   LOCAL
     ValidEps1, ValidEps2 : REAL;
@@ -41,12 +40,12 @@ END_FUNCTION;
 
 END_FUNCTION;
 </body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcShapeRepresentationTypes" name="IfcShapeRepresentationTypes">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_1929" name="IfcShapeRepresentationTypes">
-          <language>EXPRESS_FUNCTION</language>
-          <body>FUNCTION IfcShapeRepresentationTypes
+      </specification>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcShapeRepresentationTypes" name="IfcShapeRepresentationTypes">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcShapeRepresentationTypes_expr" name="IfcShapeRepresentationTypes">
+        <language>EXPRESS_FUNCTION</language>
+        <body>FUNCTION IfcShapeRepresentationTypes
 (RepType : IfcLabel; Items : SET OF IfcRepresentationItem) : LOGICAL;
     
     LOCAL
@@ -268,12 +267,12 @@ END_FUNCTION;
 
 END_FUNCTION;
 </body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcTopologyRepresentationTypes" name="IfcTopologyRepresentationTypes">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_1930" name="IfcTopologyRepresentationTypes">
-          <language>EXPRESS_FUNCTION</language>
-          <body>FUNCTION IfcTopologyRepresentationTypes
+      </specification>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcTopologyRepresentationTypes" name="IfcTopologyRepresentationTypes">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcTopologyRepresentationTypes_expr" name="IfcTopologyRepresentationTypes">
+        <language>EXPRESS_FUNCTION</language>
+        <body>FUNCTION IfcTopologyRepresentationTypes
 (RepType : IfcLabel; Items : SET OF IfcRepresentationItem) : LOGICAL;
     
     LOCAL
@@ -314,12 +313,12 @@ END_FUNCTION;
 
 END_FUNCTION;
 </body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcRepresentationContextSameWCS" name="IfcRepresentationContextSameWCS">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_1931" name="IfcRepresentationContextSameWCS">
-          <language>EXPRESS_RULE</language>
-          <body>RULE IfcRepresentationContextSameWCS FOR
+      </specification>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcRepresentationContextSameWCS" name="IfcRepresentationContextSameWCS">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcRepresentationContextSameWCS_expr" name="IfcRepresentationContextSameWCS">
+        <language>EXPRESS_RULE</language>
+        <body>RULE IfcRepresentationContextSameWCS FOR
  (IfcGeometricRepresentationContext);
 LOCAL
   IsDifferent  : LOGICAL := FALSE;
@@ -345,656 +344,655 @@ END_LOCAL;
       WR1 : IsDifferent = FALSE;
 END_RULE;
 </body>
+      </specification>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCoordinateOperation" name="IfcCoordinateOperation" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCoordinateOperation_SourceCRS" name="SourceCRS" type="un_IfcCoordinateReferenceSystemSelect" association="as_IfcCoordinateOperation_SourceCRS">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCoordinateOperation_SourceCRS_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCoordinateOperation_SourceCRS_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCoordinateOperation_TargetCRS" name="TargetCRS" type="cl_IfcCoordinateReferenceSystem" association="as_IfcCoordinateOperation_TargetCRS">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCoordinateOperation_TargetCRS_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCoordinateOperation_TargetCRS_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCoordinateReferenceSystem" name="IfcCoordinateReferenceSystem" isAbstract="true">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCoordinateReferenceSystem_NameOrWKT" name="NameOrWKT">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcCoordinateReferenceSystem_NameOrWKT" name="NameOrWKT">
+          <language>EXPRESS_WHERE</language>
+          <body>(HIINDEX(WellKnownText) = 1) OR EXISTS(Name)</body>
         </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCoordinateOperation" name="IfcCoordinateOperation" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCoordinateOperation_SourceCRS" name="SourceCRS" isOrdered="false" association="as_IfcCoordinateOperation_SourceCRS" type="un_IfcCoordinateReferenceSystemSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1932" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1933" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCoordinateOperation_TargetCRS" name="TargetCRS" isOrdered="false" association="as_IfcCoordinateOperation_TargetCRS" type="cl_IfcCoordinateReferenceSystem">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1934" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1935" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCoordinateReferenceSystem" name="IfcCoordinateReferenceSystem" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCoordinateReferenceSystem_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1936" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1937" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCoordinateReferenceSystem_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1938" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1939" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCoordinateReferenceSystem_GeodeticDatum" name="GeodeticDatum" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1940" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1941" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCoordinateReferenceSystem_NameOrWKT" name="NameOrWKT">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_1942" name="NameOrWKT">
-            <language>EXPRESS_WHERE</language>
-            <body>(HIINDEX(WellKnownText) = 1) OR EXISTS(Name)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcGeometricProjectionEnum" name="IfcGeometricProjectionEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_1943" name="ELEVATION_VIEW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_1944" name="GRAPH_VIEW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_1945" name="MODEL_VIEW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_1946" name="PLAN_VIEW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_1947" name="REFLECTED_PLAN_VIEW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_1948" name="SECTION_VIEW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_1949" name="SKETCH_VIEW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_1950" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_1951" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcGlobalOrLocalEnum" name="IfcGlobalOrLocalEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_1952" name="GLOBAL_COORDS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_1953" name="LOCAL_COORDS"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProductRepresentation" name="IfcProductRepresentation" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProductRepresentation_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1954" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1955" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProductRepresentation_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1956" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1957" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProductRepresentation_Representations" name="Representations_L[1:?]" isOrdered="false" association="as_IfcProductRepresentation_Representations" type="cl_IfcRepresentation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1958" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1959" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRepresentation" name="IfcRepresentation" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRepresentation_ContextOfItems" name="ContextOfItems" isOrdered="false" association="as_IfcRepresentation_ContextOfItems" type="cl_IfcRepresentationContext">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1960" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1961" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRepresentation_RepresentationIdentifier" name="RepresentationIdentifier" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1962" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1963" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRepresentation_RepresentationType" name="RepresentationType" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1964" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1965" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRepresentation_Items" name="Items_S[1:?]" isOrdered="false" association="as_IfcRepresentation_Items">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcRepresentationItem"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1966" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1967" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRepresentationContext" name="IfcRepresentationContext" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRepresentationContext_ContextIdentifier" name="ContextIdentifier" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1968" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1969" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRepresentationContext_ContextType" name="ContextType" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1970" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1971" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcShapeAspect" name="IfcShapeAspect">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcShapeAspect_ShapeRepresentations" name="ShapeRepresentations_L[1:?]" isOrdered="false" association="as_IfcShapeAspect_ShapeRepresentations" type="cl_IfcShapeModel">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1972" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1973" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcShapeAspect_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1974" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1975" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcShapeAspect_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1976" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1977" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcShapeAspect_ProductDefinitional" name="ProductDefinitional" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLogical"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1978" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1979" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcShapeAspect_PartOfProductDefinitionShape" name="PartOfProductDefinitionShape" isOrdered="false" association="as_IfcShapeAspect_PartOfProductDefinitionShape" type="un_IfcProductRepresentationSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1980" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1981" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWellKnownText" name="IfcWellKnownText">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWellKnownText_WellKnownText" name="WellKnownText" isOrdered="false" type="dt_IfcWellKnownTextLiteral">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1982" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1983" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWellKnownText_CoordinateReferenceSystem" name="CoordinateReferenceSystem" isOrdered="false" association="as_IfcWellKnownText_CoordinateReferenceSystem" type="cl_IfcCoordinateReferenceSystem">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1984" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1985" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcWellKnownTextLiteral" name="IfcWellKnownTextLiteral">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_1986">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeographicCRS" name="IfcGeographicCRS">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_1987" general="cl_IfcCoordinateReferenceSystem"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeographicCRS_PrimeMeridian" name="PrimeMeridian" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1988" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1989" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeographicCRS_AngleUnit" name="AngleUnit" isOrdered="false" association="as_IfcGeographicCRS_AngleUnit">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcNamedUnit"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1990" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1991" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeographicCRS_HeightUnit" name="HeightUnit" isOrdered="false" association="as_IfcGeographicCRS_HeightUnit">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcNamedUnit"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1992" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1993" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeographicCRS_AngleUnitIsPlaneAngle" name="AngleUnitIsPlaneAngle">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_1994" name="AngleUnitIsPlaneAngle">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(EXISTS(SELF.AngleUnit)) OR (SELF.AngleUnit.UnitType=IfcUnitEnum.PLANEANGLEUNIT)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeographicCRS_HeightUnitIsLength" name="HeightUnitIsLength">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_1995" name="HeightUnitIsLength">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(EXISTS(SELF.HeightUnit)) OR (SELF.HeightUnit.UnitType=IfcUnitEnum.LENGTHUNIT)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeometricRepresentationContext" name="IfcGeometricRepresentationContext">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_1996" general="cl_IfcRepresentationContext"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationContext_CoordinateSpaceDimension" name="CoordinateSpaceDimension" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcGeometryResource.uml#dt_IfcDimensionCount"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1997" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_1998" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationContext_Precision" name="Precision" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_1999" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2000" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationContext_WorldCoordinateSystem" name="WorldCoordinateSystem" isOrdered="false" association="as_IfcGeometricRepresentationContext_WorldCoordinateSystem">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#un_IfcAxis2Placement"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2001" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2002" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationContext_TrueNorth" name="TrueNorth" isOrdered="false" association="as_IfcGeometricRepresentationContext_TrueNorth">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcDirection"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2003" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2004" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeometricRepresentationContext_North2D" name="North2D">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2005" name="North2D">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(EXISTS(TrueNorth)) OR (HIINDEX(TrueNorth.DirectionRatios) = 2)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMapConversion" name="IfcMapConversion">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2006" general="cl_IfcCoordinateOperation"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversion_Eastings" name="Eastings" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2007" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2008" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversion_Northings" name="Northings" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2009" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2010" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversion_OrthogonalHeight" name="OrthogonalHeight" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2011" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2012" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversion_XAxisAbscissa" name="XAxisAbscissa" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2013" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2014" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversion_XAxisOrdinate" name="XAxisOrdinate" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2015" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2016" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversion_Scale" name="Scale" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2017" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2018" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcMapConversion_TargetCRSOnlyProjected" name="TargetCRSOnlyProjected">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2019" name="TargetCRSOnlyProjected">
-            <language>EXPRESS_WHERE</language>
-            <body>'IFC4X3_ADD2.IFCPROJECTEDCRS' IN TYPEOF(SELF\IfcCoordinateOperation.TargetCRS)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMaterialDefinitionRepresentation" name="IfcMaterialDefinitionRepresentation">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2020" general="cl_IfcProductRepresentation"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMaterialDefinitionRepresentation_RepresentedMaterial" name="RepresentedMaterial" isOrdered="false" association="as_IfcMaterialDefinitionRepresentation_RepresentedMaterial">
-          <type xmi:type="uml:Class" href="IfcMaterialResource.uml#cl_IfcMaterial"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2021" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2022" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcMaterialDefinitionRepresentation_OnlyStyledRepresentations" name="OnlyStyledRepresentations">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2023" name="OnlyStyledRepresentations">
-            <language>EXPRESS_WHERE</language>
-            <body>SIZEOF(QUERY(temp &lt;* Representations | 
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCoordinateReferenceSystem_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCoordinateReferenceSystem_Name_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCoordinateReferenceSystem_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCoordinateReferenceSystem_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCoordinateReferenceSystem_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCoordinateReferenceSystem_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCoordinateReferenceSystem_GeodeticDatum" name="GeodeticDatum">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCoordinateReferenceSystem_GeodeticDatum_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCoordinateReferenceSystem_GeodeticDatum_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcGeometricProjectionEnum" name="IfcGeometricProjectionEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeometricProjectionEnum_ELEVATION_VIEW" name="ELEVATION_VIEW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeometricProjectionEnum_GRAPH_VIEW" name="GRAPH_VIEW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeometricProjectionEnum_MODEL_VIEW" name="MODEL_VIEW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeometricProjectionEnum_PLAN_VIEW" name="PLAN_VIEW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeometricProjectionEnum_REFLECTED_PLAN_VIEW" name="REFLECTED_PLAN_VIEW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeometricProjectionEnum_SECTION_VIEW" name="SECTION_VIEW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeometricProjectionEnum_SKETCH_VIEW" name="SKETCH_VIEW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeometricProjectionEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeometricProjectionEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcGlobalOrLocalEnum" name="IfcGlobalOrLocalEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGlobalOrLocalEnum_GLOBAL_COORDS" name="GLOBAL_COORDS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGlobalOrLocalEnum_LOCAL_COORDS" name="LOCAL_COORDS"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProductRepresentation" name="IfcProductRepresentation" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProductRepresentation_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcProductRepresentation_Name_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcProductRepresentation_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProductRepresentation_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcProductRepresentation_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcProductRepresentation_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProductRepresentation_Representations" name="Representations_L[1:?]" type="cl_IfcRepresentation" association="as_IfcProductRepresentation_Representations">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcProductRepresentation_Representations_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcProductRepresentation_Representations_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRepresentation" name="IfcRepresentation" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRepresentation_ContextOfItems" name="ContextOfItems" type="cl_IfcRepresentationContext" association="as_IfcRepresentation_ContextOfItems">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRepresentation_ContextOfItems_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRepresentation_ContextOfItems_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRepresentation_RepresentationIdentifier" name="RepresentationIdentifier">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRepresentation_RepresentationIdentifier_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRepresentation_RepresentationIdentifier_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRepresentation_RepresentationType" name="RepresentationType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRepresentation_RepresentationType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRepresentation_RepresentationType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRepresentation_Items" name="Items_S[1:?]" association="as_IfcRepresentation_Items">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcRepresentationItem"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRepresentation_Items_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRepresentation_Items_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRepresentationContext" name="IfcRepresentationContext" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRepresentationContext_ContextIdentifier" name="ContextIdentifier">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRepresentationContext_ContextIdentifier_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRepresentationContext_ContextIdentifier_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRepresentationContext_ContextType" name="ContextType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRepresentationContext_ContextType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRepresentationContext_ContextType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcShapeAspect" name="IfcShapeAspect">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcShapeAspect_ShapeRepresentations" name="ShapeRepresentations_L[1:?]" type="cl_IfcShapeModel" association="as_IfcShapeAspect_ShapeRepresentations">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcShapeAspect_ShapeRepresentations_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcShapeAspect_ShapeRepresentations_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcShapeAspect_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcShapeAspect_Name_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcShapeAspect_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcShapeAspect_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcShapeAspect_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcShapeAspect_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcShapeAspect_ProductDefinitional" name="ProductDefinitional">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLogical"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcShapeAspect_ProductDefinitional_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcShapeAspect_ProductDefinitional_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcShapeAspect_PartOfProductDefinitionShape" name="PartOfProductDefinitionShape" type="un_IfcProductRepresentationSelect" association="as_IfcShapeAspect_PartOfProductDefinitionShape">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcShapeAspect_PartOfProductDefinitionShape_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcShapeAspect_PartOfProductDefinitionShape_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWellKnownText" name="IfcWellKnownText">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWellKnownText_WellKnownText" name="WellKnownText" type="dt_IfcWellKnownTextLiteral">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWellKnownText_WellKnownText_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWellKnownText_WellKnownText_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWellKnownText_CoordinateReferenceSystem" name="CoordinateReferenceSystem" type="cl_IfcCoordinateReferenceSystem" association="as_IfcWellKnownText_CoordinateReferenceSystem">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWellKnownText_CoordinateReferenceSystem_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWellKnownText_CoordinateReferenceSystem_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcWellKnownTextLiteral" name="IfcWellKnownTextLiteral">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcWellKnownTextLiteral_gen_string">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeographicCRS" name="IfcGeographicCRS">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeographicCRS_AngleUnitIsPlaneAngle" name="AngleUnitIsPlaneAngle">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcGeographicCRS_AngleUnitIsPlaneAngle" name="AngleUnitIsPlaneAngle">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(EXISTS(SELF.AngleUnit)) OR (SELF.AngleUnit.UnitType=IfcUnitEnum.PLANEANGLEUNIT)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeographicCRS_HeightUnitIsLength" name="HeightUnitIsLength">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcGeographicCRS_HeightUnitIsLength" name="HeightUnitIsLength">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(EXISTS(SELF.HeightUnit)) OR (SELF.HeightUnit.UnitType=IfcUnitEnum.LENGTHUNIT)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeographicCRS_gen_IfcCoordinateReferenceSystem" general="cl_IfcCoordinateReferenceSystem"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeographicCRS_PrimeMeridian" name="PrimeMeridian">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeographicCRS_PrimeMeridian_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeographicCRS_PrimeMeridian_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeographicCRS_AngleUnit" name="AngleUnit" association="as_IfcGeographicCRS_AngleUnit">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcNamedUnit"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeographicCRS_AngleUnit_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeographicCRS_AngleUnit_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeographicCRS_HeightUnit" name="HeightUnit" association="as_IfcGeographicCRS_HeightUnit">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcNamedUnit"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeographicCRS_HeightUnit_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeographicCRS_HeightUnit_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeometricRepresentationContext" name="IfcGeometricRepresentationContext">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeometricRepresentationContext_North2D" name="North2D">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcGeometricRepresentationContext_North2D" name="North2D">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(EXISTS(TrueNorth)) OR (HIINDEX(TrueNorth.DirectionRatios) = 2)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeometricRepresentationContext_gen_IfcRepresentationContext" general="cl_IfcRepresentationContext"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationContext_CoordinateSpaceDimension" name="CoordinateSpaceDimension">
+        <type xmi:type="uml:DataType" href="IfcGeometryResource.uml#dt_IfcDimensionCount"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeometricRepresentationContext_CoordinateSpaceDimension_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeometricRepresentationContext_CoordinateSpaceDimension_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationContext_Precision" name="Precision">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeometricRepresentationContext_Precision_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeometricRepresentationContext_Precision_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationContext_WorldCoordinateSystem" name="WorldCoordinateSystem" association="as_IfcGeometricRepresentationContext_WorldCoordinateSystem">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#un_IfcAxis2Placement"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeometricRepresentationContext_WorldCoordinateSystem_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeometricRepresentationContext_WorldCoordinateSystem_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationContext_TrueNorth" name="TrueNorth" association="as_IfcGeometricRepresentationContext_TrueNorth">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcDirection"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeometricRepresentationContext_TrueNorth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeometricRepresentationContext_TrueNorth_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMapConversion" name="IfcMapConversion">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcMapConversion_TargetCRSOnlyProjected" name="TargetCRSOnlyProjected">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcMapConversion_TargetCRSOnlyProjected" name="TargetCRSOnlyProjected">
+          <language>EXPRESS_WHERE</language>
+          <body>'IFC4X3_ADD2.IFCPROJECTEDCRS' IN TYPEOF(SELF\IfcCoordinateOperation.TargetCRS)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMapConversion_gen_IfcCoordinateOperation" general="cl_IfcCoordinateOperation"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversion_Eastings" name="Eastings">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMapConversion_Eastings_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMapConversion_Eastings_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversion_Northings" name="Northings">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMapConversion_Northings_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMapConversion_Northings_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversion_OrthogonalHeight" name="OrthogonalHeight">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMapConversion_OrthogonalHeight_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMapConversion_OrthogonalHeight_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversion_XAxisAbscissa" name="XAxisAbscissa">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMapConversion_XAxisAbscissa_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMapConversion_XAxisAbscissa_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversion_XAxisOrdinate" name="XAxisOrdinate">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMapConversion_XAxisOrdinate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMapConversion_XAxisOrdinate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversion_Scale" name="Scale">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMapConversion_Scale_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMapConversion_Scale_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMaterialDefinitionRepresentation" name="IfcMaterialDefinitionRepresentation">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcMaterialDefinitionRepresentation_OnlyStyledRepresentations" name="OnlyStyledRepresentations">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcMaterialDefinitionRepresentation_OnlyStyledRepresentations" name="OnlyStyledRepresentations">
+          <language>EXPRESS_WHERE</language>
+          <body>SIZEOF(QUERY(temp &lt;* Representations | 
   (NOT('IFC4X3_ADD2.IFCSTYLEDREPRESENTATION' IN TYPEOF(temp)))
 )) = 0</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProductDefinitionShape" name="IfcProductDefinitionShape">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2024" general="cl_IfcProductRepresentation"/>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcProductDefinitionShape_OnlyShapeModel" name="OnlyShapeModel">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2025" name="OnlyShapeModel">
-            <language>EXPRESS_WHERE</language>
-            <body>SIZEOF(QUERY(temp &lt;* Representations | 
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMaterialDefinitionRepresentation_gen_IfcProductRepresentation" general="cl_IfcProductRepresentation"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMaterialDefinitionRepresentation_RepresentedMaterial" name="RepresentedMaterial" association="as_IfcMaterialDefinitionRepresentation_RepresentedMaterial">
+        <type xmi:type="uml:Class" href="IfcMaterialResource.uml#cl_IfcMaterial"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMaterialDefinitionRepresentation_RepresentedMaterial_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMaterialDefinitionRepresentation_RepresentedMaterial_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProductDefinitionShape" name="IfcProductDefinitionShape">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcProductDefinitionShape_OnlyShapeModel" name="OnlyShapeModel">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcProductDefinitionShape_OnlyShapeModel" name="OnlyShapeModel">
+          <language>EXPRESS_WHERE</language>
+          <body>SIZEOF(QUERY(temp &lt;* Representations | 
   (NOT('IFC4X3_ADD2.IFCSHAPEMODEL' IN TYPEOF(temp)))
 )) = 0</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectedCRS" name="IfcProjectedCRS">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2026" general="cl_IfcCoordinateReferenceSystem"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectedCRS_VerticalDatum" name="VerticalDatum" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2027" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2028" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectedCRS_MapProjection" name="MapProjection" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2029" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2030" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectedCRS_MapZone" name="MapZone" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2031" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2032" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectedCRS_MapUnit" name="MapUnit" isOrdered="false" association="as_IfcProjectedCRS_MapUnit">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcNamedUnit"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2033" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2034" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcProjectedCRS_MapUnitIsLength" name="MapUnitIsLength">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2035" name="MapUnitIsLength">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(EXISTS(SELF.MapUnit)) OR (SELF.MapUnit.UnitType = IfcUnitEnum.LENGTHUNIT)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRigidOperation" name="IfcRigidOperation">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2036" general="cl_IfcCoordinateOperation"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRigidOperation_FirstCoordinate" name="FirstCoordinate" isOrdered="false" association="as_IfcRigidOperation_FirstCoordinate">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#un_IfcMeasureValue"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2037" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2038" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRigidOperation_SecondCoordinate" name="SecondCoordinate" isOrdered="false" association="as_IfcRigidOperation_SecondCoordinate">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#un_IfcMeasureValue"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2039" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2040" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRigidOperation_Height" name="Height" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2041" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2042" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRigidOperation_SameCoordinateType" name="SameCoordinateType">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2043" name="SameCoordinateType">
-            <language>EXPRESS_WHERE</language>
-            <body>(('IFC4X3_ADD2.IFCLENGTHMEASURE' IN TYPEOF(FirstCoordinate)) AND ('IFC4X3_ADD2.IFCLENGTHMEASURE' IN TYPEOF(SecondCoordinate))) OR (('IFC4X3_ADD2.IFCPLANEANGLEMEASURE' IN TYPEOF(FirstCoordinate)) AND ('IFC4X3_ADD2.IFCPLANEANGLEMEASURE' IN TYPEOF(SecondCoordinate)))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcShapeModel" name="IfcShapeModel" isAbstract="true">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2044" general="cl_IfcRepresentation"/>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcShapeModel_WR11" name="WR11">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2045" name="WR11">
-            <language>EXPRESS_WHERE</language>
-            <body>(SIZEOF(SELF\IfcRepresentation.OfProductRepresentation) = 1) XOR 
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProductDefinitionShape_gen_IfcProductRepresentation" general="cl_IfcProductRepresentation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectedCRS" name="IfcProjectedCRS">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcProjectedCRS_MapUnitIsLength" name="MapUnitIsLength">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcProjectedCRS_MapUnitIsLength" name="MapUnitIsLength">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(EXISTS(SELF.MapUnit)) OR (SELF.MapUnit.UnitType = IfcUnitEnum.LENGTHUNIT)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProjectedCRS_gen_IfcCoordinateReferenceSystem" general="cl_IfcCoordinateReferenceSystem"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectedCRS_VerticalDatum" name="VerticalDatum">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcProjectedCRS_VerticalDatum_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcProjectedCRS_VerticalDatum_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectedCRS_MapProjection" name="MapProjection">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcProjectedCRS_MapProjection_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcProjectedCRS_MapProjection_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectedCRS_MapZone" name="MapZone">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcProjectedCRS_MapZone_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcProjectedCRS_MapZone_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectedCRS_MapUnit" name="MapUnit" association="as_IfcProjectedCRS_MapUnit">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcNamedUnit"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcProjectedCRS_MapUnit_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcProjectedCRS_MapUnit_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRigidOperation" name="IfcRigidOperation">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRigidOperation_SameCoordinateType" name="SameCoordinateType">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcRigidOperation_SameCoordinateType" name="SameCoordinateType">
+          <language>EXPRESS_WHERE</language>
+          <body>(('IFC4X3_ADD2.IFCLENGTHMEASURE' IN TYPEOF(FirstCoordinate)) AND ('IFC4X3_ADD2.IFCLENGTHMEASURE' IN TYPEOF(SecondCoordinate))) OR (('IFC4X3_ADD2.IFCPLANEANGLEMEASURE' IN TYPEOF(FirstCoordinate)) AND ('IFC4X3_ADD2.IFCPLANEANGLEMEASURE' IN TYPEOF(SecondCoordinate)))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRigidOperation_gen_IfcCoordinateOperation" general="cl_IfcCoordinateOperation"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRigidOperation_FirstCoordinate" name="FirstCoordinate" association="as_IfcRigidOperation_FirstCoordinate">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#un_IfcMeasureValue"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRigidOperation_FirstCoordinate_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRigidOperation_FirstCoordinate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRigidOperation_SecondCoordinate" name="SecondCoordinate" association="as_IfcRigidOperation_SecondCoordinate">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#un_IfcMeasureValue"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRigidOperation_SecondCoordinate_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRigidOperation_SecondCoordinate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRigidOperation_Height" name="Height">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRigidOperation_Height_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRigidOperation_Height_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcShapeModel" name="IfcShapeModel" isAbstract="true">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcShapeModel_WR11" name="WR11">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcShapeModel_WR11" name="WR11">
+          <language>EXPRESS_WHERE</language>
+          <body>(SIZEOF(SELF\IfcRepresentation.OfProductRepresentation) = 1) XOR 
 (SIZEOF(SELF\IfcRepresentation.RepresentationMap) = 1) XOR
 (SIZEOF(OfShapeAspect) = 1)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStyleModel" name="IfcStyleModel" isAbstract="true">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2046" general="cl_IfcRepresentation"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcCoordinateReferenceSystemSelect" name="IfcCoordinateReferenceSystemSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2047" client="un_IfcCoordinateReferenceSystemSelect" supplier="cl_IfcCoordinateReferenceSystem"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2048" client="un_IfcCoordinateReferenceSystemSelect" supplier="cl_IfcGeometricRepresentationContext"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeometricRepresentationSubContext" name="IfcGeometricRepresentationSubContext">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2049" general="cl_IfcGeometricRepresentationContext"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_ParentContext" name="ParentContext" isOrdered="false" association="as_IfcGeometricRepresentationSubContext_ParentContext" type="cl_IfcGeometricRepresentationContext">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2050" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2051" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_TargetScale" name="TargetScale" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2052" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2053" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_TargetView" name="TargetView" isOrdered="false" type="en_IfcGeometricProjectionEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2054" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2055" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_UserDefinedTargetView" name="UserDefinedTargetView" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2056" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2057" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_WorldCoordinateSystem" name="WorldCoordinateSystem" isOrdered="false" isDerived="true">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#un_IfcAxis2Placement"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2058" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2059" value="1"/>
-          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="expr_2060" name="WorldCoordinateSystem">
-            <language>EXPRESS</language>
-            <body>IfcAxis2Placement := ParentContext.WorldCoordinateSystem</body>
-          </defaultValue>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_CoordinateSpaceDimension" name="CoordinateSpaceDimension" isOrdered="false" isDerived="true">
-          <type xmi:type="uml:DataType" href="IfcGeometryResource.uml#dt_IfcDimensionCount"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2061" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2062" value="1"/>
-          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="expr_2063" name="CoordinateSpaceDimension">
-            <language>EXPRESS</language>
-            <body>IfcDimensionCount := ParentContext.CoordinateSpaceDimension</body>
-          </defaultValue>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_TrueNorth" name="TrueNorth" isOrdered="false" isDerived="true">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcDirection"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2064" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2065" value="1"/>
-          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="expr_2066" name="TrueNorth">
-            <language>EXPRESS</language>
-            <body>IfcDirection := NVL(ParentContext.TrueNorth, IfcConvertDirectionInto2D(SELF\IfcGeometricRepresentationContext.WorldCoordinateSystem.P[2]))</body>
-          </defaultValue>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_Precision" name="Precision" isOrdered="false" isDerived="true">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2067" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2068" value="1"/>
-          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="expr_2069" name="Precision">
-            <language>EXPRESS</language>
-            <body>IfcReal := NVL(ParentContext.Precision,1.E-5)</body>
-          </defaultValue>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeometricRepresentationSubContext_NoCoordOperation" name="NoCoordOperation">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2070" name="NoCoordOperation">
-            <language>EXPRESS_WHERE</language>
-            <body>SIZEOF(SELF\IfcGeometricRepresentationContext.HasCoordinateOperation) = 0</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeometricRepresentationSubContext_ParentNoSub" name="ParentNoSub">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2071" name="ParentNoSub">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT('IFC4X3_ADD2.IFCGEOMETRICREPRESENTATIONSUBCONTEXT' IN TYPEOF(ParentContext))</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeometricRepresentationSubContext_UserTargetProvided" name="UserTargetProvided">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2072" name="UserTargetProvided">
-            <language>EXPRESS_WHERE</language>
-            <body>(TargetView &lt;&gt; IfcGeometricProjectionEnum.USERDEFINED) OR 
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcShapeModel_gen_IfcRepresentation" general="cl_IfcRepresentation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStyleModel" name="IfcStyleModel" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStyleModel_gen_IfcRepresentation" general="cl_IfcRepresentation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcCoordinateReferenceSystemSelect" name="IfcCoordinateReferenceSystemSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcCoordinateReferenceSystemSelect_IfcCoordinateReferenceSystem" client="un_IfcCoordinateReferenceSystemSelect" supplier="cl_IfcCoordinateReferenceSystem"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcCoordinateReferenceSystemSelect_IfcGeometricRepresentationContext" client="un_IfcCoordinateReferenceSystemSelect" supplier="cl_IfcGeometricRepresentationContext"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeometricRepresentationSubContext" name="IfcGeometricRepresentationSubContext">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeometricRepresentationSubContext_NoCoordOperation" name="NoCoordOperation">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcGeometricRepresentationSubContext_NoCoordOperation" name="NoCoordOperation">
+          <language>EXPRESS_WHERE</language>
+          <body>SIZEOF(SELF\IfcGeometricRepresentationContext.HasCoordinateOperation) = 0</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeometricRepresentationSubContext_ParentNoSub" name="ParentNoSub">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcGeometricRepresentationSubContext_ParentNoSub" name="ParentNoSub">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT('IFC4X3_ADD2.IFCGEOMETRICREPRESENTATIONSUBCONTEXT' IN TYPEOF(ParentContext))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeometricRepresentationSubContext_UserTargetProvided" name="UserTargetProvided">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcGeometricRepresentationSubContext_UserTargetProvided" name="UserTargetProvided">
+          <language>EXPRESS_WHERE</language>
+          <body>(TargetView &lt;&gt; IfcGeometricProjectionEnum.USERDEFINED) OR 
 ((TargetView =  IfcGeometricProjectionEnum.USERDEFINED) AND EXISTS(UserDefinedTargetView))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMapConversionScaled" name="IfcMapConversionScaled">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2073" general="cl_IfcMapConversion"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversionScaled_FactorX" name="FactorX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2074" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2075" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversionScaled_FactorY" name="FactorY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2076" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2077" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversionScaled_FactorZ" name="FactorZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2078" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2079" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcProductRepresentationSelect" name="IfcProductRepresentationSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2080" client="un_IfcProductRepresentationSelect" supplier="cl_IfcProductDefinitionShape"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2081" client="un_IfcProductRepresentationSelect">
-        <supplier xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcRepresentationMap"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcShapeRepresentation" name="IfcShapeRepresentation">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2082" general="cl_IfcShapeModel"/>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcShapeRepresentation_CorrectContext" name="CorrectContext">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2083" name="CorrectContext">
-            <language>EXPRESS_WHERE</language>
-            <body>'IFC4X3_ADD2.IFCGEOMETRICREPRESENTATIONCONTEXT' 
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeometricRepresentationSubContext_gen_IfcGeometricRepresentationContext" general="cl_IfcGeometricRepresentationContext"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_ParentContext" name="ParentContext" type="cl_IfcGeometricRepresentationContext" association="as_IfcGeometricRepresentationSubContext_ParentContext">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeometricRepresentationSubContext_ParentContext_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeometricRepresentationSubContext_ParentContext_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_TargetScale" name="TargetScale">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeometricRepresentationSubContext_TargetScale_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeometricRepresentationSubContext_TargetScale_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_TargetView" name="TargetView" type="en_IfcGeometricProjectionEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeometricRepresentationSubContext_TargetView_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeometricRepresentationSubContext_TargetView_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_UserDefinedTargetView" name="UserDefinedTargetView">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeometricRepresentationSubContext_UserDefinedTargetView_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeometricRepresentationSubContext_UserDefinedTargetView_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_WorldCoordinateSystem" name="WorldCoordinateSystem" isDerived="true">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#un_IfcAxis2Placement"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeometricRepresentationSubContext_WorldCoordinateSystem_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeometricRepresentationSubContext_WorldCoordinateSystem_upper" value="1"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcGeometricRepresentationSubContext_WorldCoordinateSystem_expr" name="WorldCoordinateSystem">
+          <language>EXPRESS</language>
+          <body>IfcAxis2Placement := ParentContext.WorldCoordinateSystem</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_CoordinateSpaceDimension" name="CoordinateSpaceDimension" isDerived="true">
+        <type xmi:type="uml:DataType" href="IfcGeometryResource.uml#dt_IfcDimensionCount"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeometricRepresentationSubContext_CoordinateSpaceDimension_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeometricRepresentationSubContext_CoordinateSpaceDimension_upper" value="1"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcGeometricRepresentationSubContext_CoordinateSpaceDimension_expr" name="CoordinateSpaceDimension">
+          <language>EXPRESS</language>
+          <body>IfcDimensionCount := ParentContext.CoordinateSpaceDimension</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_TrueNorth" name="TrueNorth" isDerived="true">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcDirection"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeometricRepresentationSubContext_TrueNorth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeometricRepresentationSubContext_TrueNorth_upper" value="1"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcGeometricRepresentationSubContext_TrueNorth_expr" name="TrueNorth">
+          <language>EXPRESS</language>
+          <body>IfcDirection := NVL(ParentContext.TrueNorth, IfcConvertDirectionInto2D(SELF\IfcGeometricRepresentationContext.WorldCoordinateSystem.P[2]))</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeometricRepresentationSubContext_Precision" name="Precision" isDerived="true">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeometricRepresentationSubContext_Precision_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeometricRepresentationSubContext_Precision_upper" value="1"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcGeometricRepresentationSubContext_Precision_expr" name="Precision">
+          <language>EXPRESS</language>
+          <body>IfcReal := NVL(ParentContext.Precision,1.E-5)</body>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMapConversionScaled" name="IfcMapConversionScaled">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMapConversionScaled_gen_IfcMapConversion" general="cl_IfcMapConversion"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversionScaled_FactorX" name="FactorX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMapConversionScaled_FactorX_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMapConversionScaled_FactorX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversionScaled_FactorY" name="FactorY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMapConversionScaled_FactorY_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMapConversionScaled_FactorY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMapConversionScaled_FactorZ" name="FactorZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMapConversionScaled_FactorZ_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMapConversionScaled_FactorZ_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcProductRepresentationSelect" name="IfcProductRepresentationSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcProductRepresentationSelect_IfcProductDefinitionShape" client="un_IfcProductRepresentationSelect" supplier="cl_IfcProductDefinitionShape"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcProductRepresentationSelect_IfcRepresentationMap" client="un_IfcProductRepresentationSelect">
+      <supplier xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcRepresentationMap"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcShapeRepresentation" name="IfcShapeRepresentation">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcShapeRepresentation_CorrectContext" name="CorrectContext">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcShapeRepresentation_CorrectContext" name="CorrectContext">
+          <language>EXPRESS_WHERE</language>
+          <body>'IFC4X3_ADD2.IFCGEOMETRICREPRESENTATIONCONTEXT' 
 IN TYPEOF(SELF\IfcRepresentation.ContextOfItems)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcShapeRepresentation_CorrectItemsForType" name="CorrectItemsForType">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2084" name="CorrectItemsForType">
-            <language>EXPRESS_WHERE</language>
-            <body>IfcShapeRepresentationTypes(SELF\IfcRepresentation.RepresentationType, SELF\IfcRepresentation.Items)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcShapeRepresentation_HasRepresentationIdentifier" name="HasRepresentationIdentifier">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2085" name="HasRepresentationIdentifier">
-            <language>EXPRESS_WHERE</language>
-            <body>EXISTS(SELF\IfcRepresentation.RepresentationIdentifier)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcShapeRepresentation_HasRepresentationType" name="HasRepresentationType">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2086" name="HasRepresentationType">
-            <language>EXPRESS_WHERE</language>
-            <body>EXISTS(SELF\IfcRepresentation.RepresentationType)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcShapeRepresentation_NoTopologicalItem" name="NoTopologicalItem">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2087" name="NoTopologicalItem">
-            <language>EXPRESS_WHERE</language>
-            <body>SIZEOF(QUERY(temp &lt;* Items | 
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcShapeRepresentation_CorrectItemsForType" name="CorrectItemsForType">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcShapeRepresentation_CorrectItemsForType" name="CorrectItemsForType">
+          <language>EXPRESS_WHERE</language>
+          <body>IfcShapeRepresentationTypes(SELF\IfcRepresentation.RepresentationType, SELF\IfcRepresentation.Items)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcShapeRepresentation_HasRepresentationIdentifier" name="HasRepresentationIdentifier">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcShapeRepresentation_HasRepresentationIdentifier" name="HasRepresentationIdentifier">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS(SELF\IfcRepresentation.RepresentationIdentifier)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcShapeRepresentation_HasRepresentationType" name="HasRepresentationType">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcShapeRepresentation_HasRepresentationType" name="HasRepresentationType">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS(SELF\IfcRepresentation.RepresentationType)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcShapeRepresentation_NoTopologicalItem" name="NoTopologicalItem">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcShapeRepresentation_NoTopologicalItem" name="NoTopologicalItem">
+          <language>EXPRESS_WHERE</language>
+          <body>SIZEOF(QUERY(temp &lt;* Items | 
   ('IFC4X3_ADD2.IFCTOPOLOGICALREPRESENTATIONITEM' IN TYPEOF(temp))
     AND (NOT(SIZEOF(
       ['IFC4X3_ADD2.IFCVERTEXPOINT',
        'IFC4X3_ADD2.IFCEDGECURVE',
        'IFC4X3_ADD2.IFCFACESURFACE'] * TYPEOF(temp)) = 1))
 )) = 0</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStyledRepresentation" name="IfcStyledRepresentation">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2088" general="cl_IfcStyleModel"/>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStyledRepresentation_OnlyStyledItems" name="OnlyStyledItems">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2089" name="OnlyStyledItems">
-            <language>EXPRESS_WHERE</language>
-            <body>SIZEOF(QUERY(temp &lt;* SELF\IfcRepresentation.Items | 
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcShapeRepresentation_gen_IfcShapeModel" general="cl_IfcShapeModel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStyledRepresentation" name="IfcStyledRepresentation">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStyledRepresentation_OnlyStyledItems" name="OnlyStyledItems">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStyledRepresentation_OnlyStyledItems" name="OnlyStyledItems">
+          <language>EXPRESS_WHERE</language>
+          <body>SIZEOF(QUERY(temp &lt;* SELF\IfcRepresentation.Items | 
   (NOT('IFC4X3_ADD2.IFCSTYLEDITEM' IN TYPEOF(temp)))
 )) = 0</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTopologyRepresentation" name="IfcTopologyRepresentation">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2090" general="cl_IfcShapeModel"/>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcTopologyRepresentation_WR21" name="WR21">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2091" name="WR21">
-            <language>EXPRESS_WHERE</language>
-            <body>SIZEOF(QUERY(temp &lt;* SELF\IfcRepresentation.Items | 
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStyledRepresentation_gen_IfcStyleModel" general="cl_IfcStyleModel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTopologyRepresentation" name="IfcTopologyRepresentation">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcTopologyRepresentation_WR21" name="WR21">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcTopologyRepresentation_WR21" name="WR21">
+          <language>EXPRESS_WHERE</language>
+          <body>SIZEOF(QUERY(temp &lt;* SELF\IfcRepresentation.Items | 
   NOT('IFC4X3_ADD2.IFCTOPOLOGICALREPRESENTATIONITEM' IN TYPEOF(temp))
 )) = 0</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcTopologyRepresentation_WR22" name="WR22">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2092" name="WR22">
-            <language>EXPRESS_WHERE</language>
-            <body>EXISTS(SELF\IfcRepresentation.RepresentationType)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcTopologyRepresentation_WR23" name="WR23">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2093" name="WR23">
-            <language>EXPRESS_WHERE</language>
-            <body>IfcTopologyRepresentationTypes(SELF\IfcRepresentation.RepresentationType, SELF\IfcRepresentation.Items)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCoordinateOperation_SourceCRS" name="SourceCRS" memberEnd="at_IfcCoordinateOperation_SourceCRS end_166">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_166" name="" association="as_IfcCoordinateOperation_SourceCRS" type="cl_IfcCoordinateOperation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2094" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2095" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCoordinateOperation_TargetCRS" name="TargetCRS" memberEnd="at_IfcCoordinateOperation_TargetCRS end_168">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_168" name="" association="as_IfcCoordinateOperation_TargetCRS" type="cl_IfcCoordinateOperation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2096" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2097" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGeographicCRS_AngleUnit" name="AngleUnit" memberEnd="at_IfcGeographicCRS_AngleUnit end_290">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_290" name="" association="as_IfcGeographicCRS_AngleUnit" type="cl_IfcGeographicCRS">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2098" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2099" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGeographicCRS_HeightUnit" name="HeightUnit" memberEnd="at_IfcGeographicCRS_HeightUnit end_292">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_292" name="" association="as_IfcGeographicCRS_HeightUnit" type="cl_IfcGeographicCRS">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2100" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2101" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGeometricRepresentationContext_WorldCoordinateSystem" name="WorldCoordinateSystem" memberEnd="at_IfcGeometricRepresentationContext_WorldCoordinateSystem end_294">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_294" name="" association="as_IfcGeometricRepresentationContext_WorldCoordinateSystem" type="cl_IfcGeometricRepresentationContext">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2102" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2103" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGeometricRepresentationContext_TrueNorth" name="TrueNorth" memberEnd="at_IfcGeometricRepresentationContext_TrueNorth end_296">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_296" name="" association="as_IfcGeometricRepresentationContext_TrueNorth" type="cl_IfcGeometricRepresentationContext">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2104" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2105" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGeometricRepresentationSubContext_ParentContext" name="ParentContext" memberEnd="at_IfcGeometricRepresentationSubContext_ParentContext end_298">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_298" name="INV_HasSubContexts_S[0:?]" association="as_IfcGeometricRepresentationSubContext_ParentContext" type="cl_IfcGeometricRepresentationSubContext">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2106" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2107" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcMaterialDefinitionRepresentation_RepresentedMaterial" name="RepresentedMaterial" memberEnd="at_IfcMaterialDefinitionRepresentation_RepresentedMaterial end_392">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_392" name="INV_HasRepresentation_S[0:1]" association="as_IfcMaterialDefinitionRepresentation_RepresentedMaterial" type="cl_IfcMaterialDefinitionRepresentation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2108" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2109" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcProductRepresentation_Representations" name="Representations" memberEnd="at_IfcProductRepresentation_Representations end_516">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_516" name="INV_OfProductRepresentation_S[0:?]" association="as_IfcProductRepresentation_Representations" type="cl_IfcProductRepresentation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2110" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2111" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcProjectedCRS_MapUnit" name="MapUnit" memberEnd="at_IfcProjectedCRS_MapUnit end_520">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_520" name="" association="as_IfcProjectedCRS_MapUnit" type="cl_IfcProjectedCRS">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2112" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2113" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRepresentation_ContextOfItems" name="ContextOfItems" memberEnd="at_IfcRepresentation_ContextOfItems end_742">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_742" name="INV_RepresentationsInContext_S[0:?]" association="as_IfcRepresentation_ContextOfItems" type="cl_IfcRepresentation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2114" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2115" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRepresentation_Items" name="Items" memberEnd="at_IfcRepresentation_Items end_744">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_744" name="" association="as_IfcRepresentation_Items" type="cl_IfcRepresentation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2116" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2117" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRigidOperation_FirstCoordinate" name="FirstCoordinate" memberEnd="at_IfcRigidOperation_FirstCoordinate end_762">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_762" name="" association="as_IfcRigidOperation_FirstCoordinate" type="cl_IfcRigidOperation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2118" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2119" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRigidOperation_SecondCoordinate" name="SecondCoordinate" memberEnd="at_IfcRigidOperation_SecondCoordinate end_764">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_764" name="" association="as_IfcRigidOperation_SecondCoordinate" type="cl_IfcRigidOperation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2120" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2121" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcShapeAspect_ShapeRepresentations" name="ShapeRepresentations" memberEnd="at_IfcShapeAspect_ShapeRepresentations end_798">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_798" name="INV_OfShapeAspect_S[0:1]" association="as_IfcShapeAspect_ShapeRepresentations" type="cl_IfcShapeAspect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2122" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2123" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcShapeAspect_PartOfProductDefinitionShape" name="PartOfProductDefinitionShape" memberEnd="at_IfcShapeAspect_PartOfProductDefinitionShape end_800">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_800" name="" association="as_IfcShapeAspect_PartOfProductDefinitionShape" type="cl_IfcShapeAspect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2124" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2125" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWellKnownText_CoordinateReferenceSystem" name="CoordinateReferenceSystem" memberEnd="at_IfcWellKnownText_CoordinateReferenceSystem end_962">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_962" name="INV_WellKnownText_S[0:1]" association="as_IfcWellKnownText_CoordinateReferenceSystem" type="cl_IfcWellKnownText">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2126" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2127" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCoordinateReferenceSystem_HasCoordinateOperation" name="IfcCoordinateReferenceSystem_HasCoordinateOperation" memberEnd="end_999 end_1000">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_999" name="(SourceCRS)" association="as_IfcCoordinateReferenceSystem_HasCoordinateOperation" type="cl_IfcCoordinateReferenceSystem">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2128" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2129" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1000" name="INV_HasCoordinateOperation_S[0:1]" association="as_IfcCoordinateReferenceSystem_HasCoordinateOperation" type="cl_IfcCoordinateOperation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2130" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2131" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGeometricRepresentationContext_HasCoordinateOperation" name="IfcGeometricRepresentationContext_HasCoordinateOperation" memberEnd="end_1013 end_1014">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1013" name="(SourceCRS)" association="as_IfcGeometricRepresentationContext_HasCoordinateOperation" type="cl_IfcGeometricRepresentationContext">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2132" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2133" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1014" name="INV_HasCoordinateOperation_S[0:1]" association="as_IfcGeometricRepresentationContext_HasCoordinateOperation" type="cl_IfcCoordinateOperation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2134" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2135" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcProductDefinitionShape_HasShapeAspects" name="IfcProductDefinitionShape_HasShapeAspects" memberEnd="end_1045 end_1046">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1045" name="(PartOfProductDefinitionShape)" association="as_IfcProductDefinitionShape_HasShapeAspects" type="cl_IfcProductDefinitionShape">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2136" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2137" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1046" name="INV_HasShapeAspects_S[0:?]" association="as_IfcProductDefinitionShape_HasShapeAspects" type="cl_IfcShapeAspect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2138" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2139" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRepresentationMap_HasShapeAspects" name="IfcRepresentationMap_HasShapeAspects" memberEnd="end_1065 end_1066">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1065" name="(PartOfProductDefinitionShape)" association="as_IfcRepresentationMap_HasShapeAspects">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcRepresentationMap"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2140" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2141" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1066" name="INV_HasShapeAspects_S[0:?]" association="as_IfcRepresentationMap_HasShapeAspects" type="cl_IfcShapeAspect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2142" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2143" value="1"/>
-        </ownedEnd>
-      </packagedElement>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcTopologyRepresentation_WR22" name="WR22">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcTopologyRepresentation_WR22" name="WR22">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS(SELF\IfcRepresentation.RepresentationType)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcTopologyRepresentation_WR23" name="WR23">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcTopologyRepresentation_WR23" name="WR23">
+          <language>EXPRESS_WHERE</language>
+          <body>IfcTopologyRepresentationTypes(SELF\IfcRepresentation.RepresentationType, SELF\IfcRepresentation.Items)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTopologyRepresentation_gen_IfcShapeModel" general="cl_IfcShapeModel"/>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCoordinateOperation_SourceCRS" name="SourceCRS" memberEnd="at_IfcCoordinateOperation_SourceCRS as_IfcCoordinateOperation_SourceCRS_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCoordinateOperation_SourceCRS_target_end" name="" type="cl_IfcCoordinateOperation" association="as_IfcCoordinateOperation_SourceCRS">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCoordinateOperation_SourceCRS_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCoordinateOperation_SourceCRS_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCoordinateOperation_TargetCRS" name="TargetCRS" memberEnd="at_IfcCoordinateOperation_TargetCRS as_IfcCoordinateOperation_TargetCRS_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCoordinateOperation_TargetCRS_target_end" name="" type="cl_IfcCoordinateOperation" association="as_IfcCoordinateOperation_TargetCRS">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCoordinateOperation_TargetCRS_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCoordinateOperation_TargetCRS_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcProductRepresentation_Representations" name="Representations" memberEnd="at_IfcProductRepresentation_Representations as_IfcProductRepresentation_Representations_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcProductRepresentation_Representations_target_end" name="INV_OfProductRepresentation_S[0:?]" type="cl_IfcProductRepresentation" association="as_IfcProductRepresentation_Representations">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcProductRepresentation_Representations_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcProductRepresentation_Representations_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRepresentation_ContextOfItems" name="ContextOfItems" memberEnd="at_IfcRepresentation_ContextOfItems as_IfcRepresentation_ContextOfItems_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRepresentation_ContextOfItems_target_end" name="INV_RepresentationsInContext_S[0:?]" type="cl_IfcRepresentation" association="as_IfcRepresentation_ContextOfItems">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRepresentation_ContextOfItems_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRepresentation_ContextOfItems_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRepresentation_Items" name="Items" memberEnd="at_IfcRepresentation_Items as_IfcRepresentation_Items_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRepresentation_Items_target_end" name="" type="cl_IfcRepresentation" association="as_IfcRepresentation_Items">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRepresentation_Items_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRepresentation_Items_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcShapeAspect_ShapeRepresentations" name="ShapeRepresentations" memberEnd="at_IfcShapeAspect_ShapeRepresentations as_IfcShapeAspect_ShapeRepresentations_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcShapeAspect_ShapeRepresentations_target_end" name="INV_OfShapeAspect_S[0:1]" type="cl_IfcShapeAspect" association="as_IfcShapeAspect_ShapeRepresentations">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcShapeAspect_ShapeRepresentations_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcShapeAspect_ShapeRepresentations_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcShapeAspect_PartOfProductDefinitionShape" name="PartOfProductDefinitionShape" memberEnd="at_IfcShapeAspect_PartOfProductDefinitionShape as_IfcShapeAspect_PartOfProductDefinitionShape_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcShapeAspect_PartOfProductDefinitionShape_target_end" name="" type="cl_IfcShapeAspect" association="as_IfcShapeAspect_PartOfProductDefinitionShape">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcShapeAspect_PartOfProductDefinitionShape_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcShapeAspect_PartOfProductDefinitionShape_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWellKnownText_CoordinateReferenceSystem" name="CoordinateReferenceSystem" memberEnd="at_IfcWellKnownText_CoordinateReferenceSystem as_IfcWellKnownText_CoordinateReferenceSystem_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcWellKnownText_CoordinateReferenceSystem_target_end" name="INV_WellKnownText_S[0:1]" type="cl_IfcWellKnownText" association="as_IfcWellKnownText_CoordinateReferenceSystem">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcWellKnownText_CoordinateReferenceSystem_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcWellKnownText_CoordinateReferenceSystem_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGeographicCRS_AngleUnit" name="AngleUnit" memberEnd="at_IfcGeographicCRS_AngleUnit as_IfcGeographicCRS_AngleUnit_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcGeographicCRS_AngleUnit_target_end" name="" type="cl_IfcGeographicCRS" association="as_IfcGeographicCRS_AngleUnit">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcGeographicCRS_AngleUnit_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcGeographicCRS_AngleUnit_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGeographicCRS_HeightUnit" name="HeightUnit" memberEnd="at_IfcGeographicCRS_HeightUnit as_IfcGeographicCRS_HeightUnit_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcGeographicCRS_HeightUnit_target_end" name="" type="cl_IfcGeographicCRS" association="as_IfcGeographicCRS_HeightUnit">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcGeographicCRS_HeightUnit_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcGeographicCRS_HeightUnit_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGeometricRepresentationContext_WorldCoordinateSystem" name="WorldCoordinateSystem" memberEnd="at_IfcGeometricRepresentationContext_WorldCoordinateSystem as_IfcGeometricRepresentationContext_WorldCoordinateSystem_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcGeometricRepresentationContext_WorldCoordinateSystem_target_end" name="" type="cl_IfcGeometricRepresentationContext" association="as_IfcGeometricRepresentationContext_WorldCoordinateSystem">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcGeometricRepresentationContext_WorldCoordinateSystem_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcGeometricRepresentationContext_WorldCoordinateSystem_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGeometricRepresentationContext_TrueNorth" name="TrueNorth" memberEnd="at_IfcGeometricRepresentationContext_TrueNorth as_IfcGeometricRepresentationContext_TrueNorth_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcGeometricRepresentationContext_TrueNorth_target_end" name="" type="cl_IfcGeometricRepresentationContext" association="as_IfcGeometricRepresentationContext_TrueNorth">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcGeometricRepresentationContext_TrueNorth_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcGeometricRepresentationContext_TrueNorth_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcMaterialDefinitionRepresentation_RepresentedMaterial" name="RepresentedMaterial" memberEnd="at_IfcMaterialDefinitionRepresentation_RepresentedMaterial as_IfcMaterialDefinitionRepresentation_RepresentedMaterial_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcMaterialDefinitionRepresentation_RepresentedMaterial_target_end" name="INV_HasRepresentation_S[0:1]" type="cl_IfcMaterialDefinitionRepresentation" association="as_IfcMaterialDefinitionRepresentation_RepresentedMaterial">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcMaterialDefinitionRepresentation_RepresentedMaterial_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcMaterialDefinitionRepresentation_RepresentedMaterial_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcProjectedCRS_MapUnit" name="MapUnit" memberEnd="at_IfcProjectedCRS_MapUnit as_IfcProjectedCRS_MapUnit_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcProjectedCRS_MapUnit_target_end" name="" type="cl_IfcProjectedCRS" association="as_IfcProjectedCRS_MapUnit">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcProjectedCRS_MapUnit_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcProjectedCRS_MapUnit_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRigidOperation_FirstCoordinate" name="FirstCoordinate" memberEnd="at_IfcRigidOperation_FirstCoordinate as_IfcRigidOperation_FirstCoordinate_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRigidOperation_FirstCoordinate_target_end" name="" type="cl_IfcRigidOperation" association="as_IfcRigidOperation_FirstCoordinate">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRigidOperation_FirstCoordinate_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRigidOperation_FirstCoordinate_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRigidOperation_SecondCoordinate" name="SecondCoordinate" memberEnd="at_IfcRigidOperation_SecondCoordinate as_IfcRigidOperation_SecondCoordinate_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRigidOperation_SecondCoordinate_target_end" name="" type="cl_IfcRigidOperation" association="as_IfcRigidOperation_SecondCoordinate">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRigidOperation_SecondCoordinate_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRigidOperation_SecondCoordinate_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGeometricRepresentationSubContext_ParentContext" name="ParentContext" memberEnd="at_IfcGeometricRepresentationSubContext_ParentContext as_IfcGeometricRepresentationSubContext_ParentContext_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcGeometricRepresentationSubContext_ParentContext_target_end" name="INV_HasSubContexts_S[0:?]" type="cl_IfcGeometricRepresentationSubContext" association="as_IfcGeometricRepresentationSubContext_ParentContext">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcGeometricRepresentationSubContext_ParentContext_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcGeometricRepresentationSubContext_ParentContext_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCoordinateReferenceSystem_HasCoordinateOperation" name="IfcCoordinateReferenceSystem_HasCoordinateOperation" memberEnd="as_IfcCoordinateReferenceSystem_HasCoordinateOperation_source_end as_IfcCoordinateReferenceSystem_HasCoordinateOperation_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCoordinateReferenceSystem_HasCoordinateOperation_source_end" name="(SourceCRS)" type="cl_IfcCoordinateReferenceSystem" association="as_IfcCoordinateReferenceSystem_HasCoordinateOperation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCoordinateReferenceSystem_HasCoordinateOperation_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCoordinateReferenceSystem_HasCoordinateOperation_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCoordinateReferenceSystem_HasCoordinateOperation_target_end" name="INV_HasCoordinateOperation_S[0:1]" type="cl_IfcCoordinateOperation" association="as_IfcCoordinateReferenceSystem_HasCoordinateOperation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCoordinateReferenceSystem_HasCoordinateOperation_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCoordinateReferenceSystem_HasCoordinateOperation_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRepresentationMap_HasShapeAspects" name="IfcRepresentationMap_HasShapeAspects" memberEnd="as_IfcRepresentationMap_HasShapeAspects_source_end as_IfcRepresentationMap_HasShapeAspects_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRepresentationMap_HasShapeAspects_source_end" name="(PartOfProductDefinitionShape)" association="as_IfcRepresentationMap_HasShapeAspects">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcRepresentationMap"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRepresentationMap_HasShapeAspects_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRepresentationMap_HasShapeAspects_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRepresentationMap_HasShapeAspects_target_end" name="INV_HasShapeAspects_S[0:?]" type="cl_IfcShapeAspect" association="as_IfcRepresentationMap_HasShapeAspects">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRepresentationMap_HasShapeAspects_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRepresentationMap_HasShapeAspects_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGeometricRepresentationContext_HasCoordinateOperation" name="IfcGeometricRepresentationContext_HasCoordinateOperation" memberEnd="as_IfcGeometricRepresentationContext_HasCoordinateOperation_source_end as_IfcGeometricRepresentationContext_HasCoordinateOperation_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcGeometricRepresentationContext_HasCoordinateOperation_source_end" name="(SourceCRS)" type="cl_IfcGeometricRepresentationContext" association="as_IfcGeometricRepresentationContext_HasCoordinateOperation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcGeometricRepresentationContext_HasCoordinateOperation_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcGeometricRepresentationContext_HasCoordinateOperation_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcGeometricRepresentationContext_HasCoordinateOperation_target_end" name="INV_HasCoordinateOperation_S[0:1]" type="cl_IfcCoordinateOperation" association="as_IfcGeometricRepresentationContext_HasCoordinateOperation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcGeometricRepresentationContext_HasCoordinateOperation_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcGeometricRepresentationContext_HasCoordinateOperation_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcProductDefinitionShape_HasShapeAspects" name="IfcProductDefinitionShape_HasShapeAspects" memberEnd="as_IfcProductDefinitionShape_HasShapeAspects_source_end as_IfcProductDefinitionShape_HasShapeAspects_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcProductDefinitionShape_HasShapeAspects_source_end" name="(PartOfProductDefinitionShape)" type="cl_IfcProductDefinitionShape" association="as_IfcProductDefinitionShape_HasShapeAspects">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcProductDefinitionShape_HasShapeAspects_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcProductDefinitionShape_HasShapeAspects_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcProductDefinitionShape_HasShapeAspects_target_end" name="INV_HasShapeAspects_S[0:?]" type="cl_IfcShapeAspect" association="as_IfcProductDefinitionShape_HasShapeAspects">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcProductDefinitionShape_HasShapeAspects_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcProductDefinitionShape_HasShapeAspects_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

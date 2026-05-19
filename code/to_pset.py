@@ -5,6 +5,7 @@ import glob
 import html
 import json
 import subprocess
+import concurrent.futures
 
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
@@ -240,18 +241,21 @@ def compare(path1, path2, output):
         for p in set(fn2) - set(fn1):
             print("*", p, file=f)
             
-        for p in set(fn1) & set(fn2):
-            print(file=f)
+        def compare_one(p):
             print(p, file=sys.stderr)
-            data = subprocess.check_output([
+            return p, subprocess.check_output([
                 sys.executable,
-                os.path.join(os.path.dirname(__file__), "compare_pset.py"),
+                os.path.join(os.path.dirname(__file__), "generators/util/compare_pset.py"),
                 os.path.join(path1, p),
                 os.path.join(path2, p)])
-            if data:
-                print(p, file=f)
-                print("="*len(p), file=f)
-                print(data.decode('ascii'), file=f, flush=True)
+
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            for p, data in executor.map(compare_one, set(fn1) & set(fn2)):
+                print(file=f)
+                if data:
+                    print(p, file=f)
+                    print("="*len(p), file=f)
+                    print(data.decode('ascii'), file=f, flush=True)
             
             
 if __name__ == "__main__":

@@ -1,326 +1,324 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcPresentationOrganizationResource" name="IfcPresentationOrganizationResource">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcPresentationOrganizationResource" name="IfcPresentationOrganizationResource">
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcLightDistributionCurveEnum" name="IfcLightDistributionCurveEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21681" name="TYPE_A"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21682" name="TYPE_B"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21683" name="TYPE_C"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21684" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightDistributionData" name="IfcLightDistributionData">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightDistributionData_MainPlaneAngle" name="MainPlaneAngle" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21685" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21686" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightDistributionData_SecondaryPlaneAngle" name="SecondaryPlaneAngle_L[1:?]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21687" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21688" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightDistributionData_LuminousIntensity" name="LuminousIntensity_L[1:?]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLuminousIntensityDistributionMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21689" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21690" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcLightEmissionSourceEnum" name="IfcLightEmissionSourceEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21691" name="COMPACTFLUORESCENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21692" name="FLUORESCENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21693" name="HIGHPRESSUREMERCURY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21694" name="HIGHPRESSURESODIUM"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21695" name="LIGHTEMITTINGDIODE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21696" name="LOWPRESSURESODIUM"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21697" name="LOWVOLTAGEHALOGEN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21698" name="MAINVOLTAGEHALOGEN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21699" name="METALHALIDE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21700" name="TUNGSTENFILAMENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21701" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightIntensityDistribution" name="IfcLightIntensityDistribution">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightIntensityDistribution_LightDistributionCurve" name="LightDistributionCurve" isOrdered="false" type="en_IfcLightDistributionCurveEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21702" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21703" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightIntensityDistribution_DistributionData" name="DistributionData_L[1:?]" isOrdered="false" association="as_IfcLightIntensityDistribution_DistributionData" type="cl_IfcLightDistributionData">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21704" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21705" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPresentationLayerAssignment" name="IfcPresentationLayerAssignment">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerAssignment_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21706" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21707" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerAssignment_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21708" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21709" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerAssignment_AssignedItems" name="AssignedItems_S[1:?]" isOrdered="false" association="as_IfcPresentationLayerAssignment_AssignedItems" type="un_IfcLayeredItem">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21710" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21711" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerAssignment_Identifier" name="Identifier" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21712" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21713" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPresentationLayerAssignment_ApplicableItems" name="ApplicableItems">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_21714" name="ApplicableItems">
-            <language>EXPRESS_WHERE</language>
-            <body>SIZEOF(QUERY(temp &lt;* AssignedItems | (
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcPresentationOrganizationResource" name="IfcPresentationOrganizationResource" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcPresentationOrganizationResource" name="IfcPresentationOrganizationResource">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcLightDistributionCurveEnum" name="IfcLightDistributionCurveEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightDistributionCurveEnum_TYPE_A" name="TYPE_A"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightDistributionCurveEnum_TYPE_B" name="TYPE_B"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightDistributionCurveEnum_TYPE_C" name="TYPE_C"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightDistributionCurveEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightDistributionData" name="IfcLightDistributionData">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightDistributionData_MainPlaneAngle" name="MainPlaneAngle">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightDistributionData_MainPlaneAngle_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightDistributionData_MainPlaneAngle_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightDistributionData_SecondaryPlaneAngle" name="SecondaryPlaneAngle_L[1:?]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightDistributionData_SecondaryPlaneAngle_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightDistributionData_SecondaryPlaneAngle_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightDistributionData_LuminousIntensity" name="LuminousIntensity_L[1:?]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLuminousIntensityDistributionMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightDistributionData_LuminousIntensity_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightDistributionData_LuminousIntensity_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcLightEmissionSourceEnum" name="IfcLightEmissionSourceEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightEmissionSourceEnum_COMPACTFLUORESCENT" name="COMPACTFLUORESCENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightEmissionSourceEnum_FLUORESCENT" name="FLUORESCENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightEmissionSourceEnum_HIGHPRESSUREMERCURY" name="HIGHPRESSUREMERCURY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightEmissionSourceEnum_HIGHPRESSURESODIUM" name="HIGHPRESSURESODIUM"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightEmissionSourceEnum_LIGHTEMITTINGDIODE" name="LIGHTEMITTINGDIODE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightEmissionSourceEnum_LOWPRESSURESODIUM" name="LOWPRESSURESODIUM"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightEmissionSourceEnum_LOWVOLTAGEHALOGEN" name="LOWVOLTAGEHALOGEN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightEmissionSourceEnum_MAINVOLTAGEHALOGEN" name="MAINVOLTAGEHALOGEN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightEmissionSourceEnum_METALHALIDE" name="METALHALIDE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightEmissionSourceEnum_TUNGSTENFILAMENT" name="TUNGSTENFILAMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightEmissionSourceEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightIntensityDistribution" name="IfcLightIntensityDistribution">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightIntensityDistribution_LightDistributionCurve" name="LightDistributionCurve" type="en_IfcLightDistributionCurveEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightIntensityDistribution_LightDistributionCurve_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightIntensityDistribution_LightDistributionCurve_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightIntensityDistribution_DistributionData" name="DistributionData_L[1:?]" type="cl_IfcLightDistributionData" association="as_IfcLightIntensityDistribution_DistributionData">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightIntensityDistribution_DistributionData_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightIntensityDistribution_DistributionData_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPresentationLayerAssignment" name="IfcPresentationLayerAssignment">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPresentationLayerAssignment_ApplicableItems" name="ApplicableItems">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPresentationLayerAssignment_ApplicableItems" name="ApplicableItems">
+          <language>EXPRESS_WHERE</language>
+          <body>SIZEOF(QUERY(temp &lt;* AssignedItems | (
   SIZEOF(TYPEOF(temp) * [
     'IFC4X3_ADD2.IFCSHAPEREPRESENTATION',
     'IFC4X3_ADD2.IFCGEOMETRICREPRESENTATIONITEM',
     'IFC4X3_ADD2.IFCMAPPEDITEM']) = 1)
 )) = SIZEOF(AssignedItems)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcLayeredItem" name="IfcLayeredItem"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_21715" client="un_IfcLayeredItem">
-        <supplier xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcRepresentation"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_21716" client="un_IfcLayeredItem">
-        <supplier xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcRepresentationItem"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcLightDistributionDataSourceSelect" name="IfcLightDistributionDataSourceSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_21717" client="un_IfcLightDistributionDataSourceSelect">
-        <supplier xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcExternalReference"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_21718" client="un_IfcLightDistributionDataSourceSelect" supplier="cl_IfcLightIntensityDistribution"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPresentationLayerWithStyle" name="IfcPresentationLayerWithStyle">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_21719" general="cl_IfcPresentationLayerAssignment"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerWithStyle_LayerOn" name="LayerOn" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLogical"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21720" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21721" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerWithStyle_LayerFrozen" name="LayerFrozen" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLogical"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21722" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21723" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerWithStyle_LayerBlocked" name="LayerBlocked" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLogical"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21724" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21725" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerWithStyle_LayerStyles" name="LayerStyles_S[0:?]" isOrdered="false" association="as_IfcPresentationLayerWithStyle_LayerStyles">
-          <type xmi:type="uml:Class" href="IfcPresentationAppearanceResource.uml#cl_IfcPresentationStyle"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21726" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21727" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPresentationLayerWithStyle_ApplicableOnlyToItems" name="ApplicableOnlyToItems">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_21728" name="ApplicableOnlyToItems">
-            <language>EXPRESS_WHERE</language>
-            <body>SIZEOF(QUERY(temp &lt;* AssignedItems | (SIZEOF(TYPEOF(temp) * ['IFC4X3_ADD2.IfcGeometricRepresentationItem','IFC4X3_ADD2.IfcMappedItem']) &gt;= 1))) = SIZEOF(AssignedItems)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightSource" name="IfcLightSource" isAbstract="true">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_21729">
-          <general xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcGeometricRepresentationItem"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSource_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21730" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21731" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSource_LightColour" name="LightColour" isOrdered="false" association="as_IfcLightSource_LightColour">
-          <type xmi:type="uml:Class" href="IfcPresentationAppearanceResource.uml#cl_IfcColourRgb"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21732" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21733" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSource_AmbientIntensity" name="AmbientIntensity" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21734" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21735" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSource_Intensity" name="Intensity" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21736" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21737" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightSourceAmbient" name="IfcLightSourceAmbient">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_21738" general="cl_IfcLightSource"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightSourceDirectional" name="IfcLightSourceDirectional">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_21739" general="cl_IfcLightSource"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceDirectional_Orientation" name="Orientation" isOrdered="false" association="as_IfcLightSourceDirectional_Orientation">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcDirection"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21740" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21741" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightSourceGoniometric" name="IfcLightSourceGoniometric">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_21742" general="cl_IfcLightSource"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceGoniometric_Position" name="Position" isOrdered="false" association="as_IfcLightSourceGoniometric_Position">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcAxis2Placement3D"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21743" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21744" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceGoniometric_ColourAppearance" name="ColourAppearance" isOrdered="false" association="as_IfcLightSourceGoniometric_ColourAppearance">
-          <type xmi:type="uml:Class" href="IfcPresentationAppearanceResource.uml#cl_IfcColourRgb"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21745" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21746" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceGoniometric_ColourTemperature" name="ColourTemperature" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21747" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21748" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceGoniometric_LuminousFlux" name="LuminousFlux" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLuminousFluxMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21749" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21750" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceGoniometric_LightEmissionSource" name="LightEmissionSource" isOrdered="false" type="en_IfcLightEmissionSourceEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21751" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21752" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceGoniometric_LightDistributionDataSource" name="LightDistributionDataSource" isOrdered="false" association="as_IfcLightSourceGoniometric_LightDistributionDataSource" type="un_IfcLightDistributionDataSourceSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21753" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21754" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightSourcePositional" name="IfcLightSourcePositional">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_21755" general="cl_IfcLightSource"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourcePositional_Position" name="Position" isOrdered="false" association="as_IfcLightSourcePositional_Position">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcCartesianPoint"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21756" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21757" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourcePositional_Radius" name="Radius" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21758" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21759" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourcePositional_ConstantAttenuation" name="ConstantAttenuation" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21760" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21761" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourcePositional_DistanceAttenuation" name="DistanceAttenuation" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21762" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21763" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourcePositional_QuadricAttenuation" name="QuadricAttenuation" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21764" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21765" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightSourceSpot" name="IfcLightSourceSpot">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_21766" general="cl_IfcLightSourcePositional"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceSpot_Orientation" name="Orientation" isOrdered="false" association="as_IfcLightSourceSpot_Orientation">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcDirection"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21767" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21768" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceSpot_ConcentrationExponent" name="ConcentrationExponent" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21769" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21770" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceSpot_SpreadAngle" name="SpreadAngle" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositivePlaneAngleMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21771" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21772" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceSpot_BeamWidthAngle" name="BeamWidthAngle" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositivePlaneAngleMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21773" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21774" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightIntensityDistribution_DistributionData" name="DistributionData" memberEnd="at_IfcLightIntensityDistribution_DistributionData end_352">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_352" name="" association="as_IfcLightIntensityDistribution_DistributionData" type="cl_IfcLightIntensityDistribution">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21775" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21776" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSource_LightColour" name="LightColour" memberEnd="at_IfcLightSource_LightColour end_354">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_354" name="" association="as_IfcLightSource_LightColour" type="cl_IfcLightSource">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21777" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21778" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSourceDirectional_Orientation" name="Orientation" memberEnd="at_IfcLightSourceDirectional_Orientation end_356">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_356" name="" association="as_IfcLightSourceDirectional_Orientation" type="cl_IfcLightSourceDirectional">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21779" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21780" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSourceGoniometric_Position" name="Position" memberEnd="at_IfcLightSourceGoniometric_Position end_358">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_358" name="" association="as_IfcLightSourceGoniometric_Position" type="cl_IfcLightSourceGoniometric">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21781" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21782" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSourceGoniometric_ColourAppearance" name="ColourAppearance" memberEnd="at_IfcLightSourceGoniometric_ColourAppearance end_360">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_360" name="" association="as_IfcLightSourceGoniometric_ColourAppearance" type="cl_IfcLightSourceGoniometric">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21783" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21784" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSourceGoniometric_LightDistributionDataSource" name="LightDistributionDataSource" memberEnd="at_IfcLightSourceGoniometric_LightDistributionDataSource end_362">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_362" name="" association="as_IfcLightSourceGoniometric_LightDistributionDataSource" type="cl_IfcLightSourceGoniometric">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21785" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21786" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSourcePositional_Position" name="Position" memberEnd="at_IfcLightSourcePositional_Position end_364">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_364" name="" association="as_IfcLightSourcePositional_Position" type="cl_IfcLightSourcePositional">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21787" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21788" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSourceSpot_Orientation" name="Orientation" memberEnd="at_IfcLightSourceSpot_Orientation end_366">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_366" name="" association="as_IfcLightSourceSpot_Orientation" type="cl_IfcLightSourceSpot">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21789" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21790" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPresentationLayerAssignment_AssignedItems" name="AssignedItems" memberEnd="at_IfcPresentationLayerAssignment_AssignedItems end_508">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_508" name="" association="as_IfcPresentationLayerAssignment_AssignedItems" type="cl_IfcPresentationLayerAssignment">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21791" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21792" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPresentationLayerWithStyle_LayerStyles" name="LayerStyles" memberEnd="at_IfcPresentationLayerWithStyle_LayerStyles end_510">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_510" name="" association="as_IfcPresentationLayerWithStyle_LayerStyles" type="cl_IfcPresentationLayerWithStyle">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21793" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21794" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRepresentation_LayerAssignments" name="IfcRepresentation_LayerAssignments" memberEnd="end_1061 end_1062">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1061" name="(AssignedItems)" association="as_IfcRepresentation_LayerAssignments">
-          <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcRepresentation"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21795" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21796" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1062" name="INV_LayerAssignments_S[0:?]" association="as_IfcRepresentation_LayerAssignments" type="cl_IfcPresentationLayerAssignment">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21797" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21798" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRepresentationItem_LayerAssignment" name="IfcRepresentationItem_LayerAssignment" memberEnd="end_1063 end_1064">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1063" name="(AssignedItems)" association="as_IfcRepresentationItem_LayerAssignment">
-          <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcRepresentationItem"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21799" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21800" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1064" name="INV_LayerAssignment_S[0:1]" association="as_IfcRepresentationItem_LayerAssignment" type="cl_IfcPresentationLayerAssignment">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21801" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21802" value="1"/>
-        </ownedEnd>
-      </packagedElement>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerAssignment_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPresentationLayerAssignment_Name_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPresentationLayerAssignment_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerAssignment_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPresentationLayerAssignment_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPresentationLayerAssignment_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerAssignment_AssignedItems" name="AssignedItems_S[1:?]" type="un_IfcLayeredItem" association="as_IfcPresentationLayerAssignment_AssignedItems">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPresentationLayerAssignment_AssignedItems_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPresentationLayerAssignment_AssignedItems_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerAssignment_Identifier" name="Identifier">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPresentationLayerAssignment_Identifier_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPresentationLayerAssignment_Identifier_upper" value="1"/>
+      </ownedAttribute>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcLayeredItem" name="IfcLayeredItem"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcLayeredItem_IfcRepresentation" client="un_IfcLayeredItem">
+      <supplier xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcRepresentation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcLayeredItem_IfcRepresentationItem" client="un_IfcLayeredItem">
+      <supplier xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcRepresentationItem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcLightDistributionDataSourceSelect" name="IfcLightDistributionDataSourceSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcLightDistributionDataSourceSelect_IfcExternalReference" client="un_IfcLightDistributionDataSourceSelect">
+      <supplier xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcExternalReference"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcLightDistributionDataSourceSelect_IfcLightIntensityDistribution" client="un_IfcLightDistributionDataSourceSelect" supplier="cl_IfcLightIntensityDistribution"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPresentationLayerWithStyle" name="IfcPresentationLayerWithStyle">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPresentationLayerWithStyle_ApplicableOnlyToItems" name="ApplicableOnlyToItems">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPresentationLayerWithStyle_ApplicableOnlyToItems" name="ApplicableOnlyToItems">
+          <language>EXPRESS_WHERE</language>
+          <body>SIZEOF(QUERY(temp &lt;* AssignedItems | (SIZEOF(TYPEOF(temp) * ['IFC4X3_ADD2.IfcGeometricRepresentationItem','IFC4X3_ADD2.IfcMappedItem']) &gt;= 1))) = SIZEOF(AssignedItems)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPresentationLayerWithStyle_gen_IfcPresentationLayerAssignment" general="cl_IfcPresentationLayerAssignment"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerWithStyle_LayerOn" name="LayerOn">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLogical"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPresentationLayerWithStyle_LayerOn_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPresentationLayerWithStyle_LayerOn_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerWithStyle_LayerFrozen" name="LayerFrozen">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLogical"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPresentationLayerWithStyle_LayerFrozen_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPresentationLayerWithStyle_LayerFrozen_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerWithStyle_LayerBlocked" name="LayerBlocked">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLogical"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPresentationLayerWithStyle_LayerBlocked_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPresentationLayerWithStyle_LayerBlocked_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPresentationLayerWithStyle_LayerStyles" name="LayerStyles_S[0:?]" association="as_IfcPresentationLayerWithStyle_LayerStyles">
+        <type xmi:type="uml:Class" href="IfcPresentationAppearanceResource.uml#cl_IfcPresentationStyle"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPresentationLayerWithStyle_LayerStyles_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPresentationLayerWithStyle_LayerStyles_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightSource" name="IfcLightSource" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLightSource_gen_IfcGeometricRepresentationItem">
+        <general xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcGeometricRepresentationItem"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSource_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSource_Name_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSource_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSource_LightColour" name="LightColour" association="as_IfcLightSource_LightColour">
+        <type xmi:type="uml:Class" href="IfcPresentationAppearanceResource.uml#cl_IfcColourRgb"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSource_LightColour_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSource_LightColour_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSource_AmbientIntensity" name="AmbientIntensity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSource_AmbientIntensity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSource_AmbientIntensity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSource_Intensity" name="Intensity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSource_Intensity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSource_Intensity_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightSourceAmbient" name="IfcLightSourceAmbient">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLightSourceAmbient_gen_IfcLightSource" general="cl_IfcLightSource"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightSourceDirectional" name="IfcLightSourceDirectional">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLightSourceDirectional_gen_IfcLightSource" general="cl_IfcLightSource"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceDirectional_Orientation" name="Orientation" association="as_IfcLightSourceDirectional_Orientation">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcDirection"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourceDirectional_Orientation_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourceDirectional_Orientation_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightSourceGoniometric" name="IfcLightSourceGoniometric">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLightSourceGoniometric_gen_IfcLightSource" general="cl_IfcLightSource"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceGoniometric_Position" name="Position" association="as_IfcLightSourceGoniometric_Position">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcAxis2Placement3D"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourceGoniometric_Position_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourceGoniometric_Position_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceGoniometric_ColourAppearance" name="ColourAppearance" association="as_IfcLightSourceGoniometric_ColourAppearance">
+        <type xmi:type="uml:Class" href="IfcPresentationAppearanceResource.uml#cl_IfcColourRgb"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourceGoniometric_ColourAppearance_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourceGoniometric_ColourAppearance_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceGoniometric_ColourTemperature" name="ColourTemperature">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourceGoniometric_ColourTemperature_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourceGoniometric_ColourTemperature_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceGoniometric_LuminousFlux" name="LuminousFlux">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLuminousFluxMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourceGoniometric_LuminousFlux_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourceGoniometric_LuminousFlux_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceGoniometric_LightEmissionSource" name="LightEmissionSource" type="en_IfcLightEmissionSourceEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourceGoniometric_LightEmissionSource_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourceGoniometric_LightEmissionSource_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceGoniometric_LightDistributionDataSource" name="LightDistributionDataSource" type="un_IfcLightDistributionDataSourceSelect" association="as_IfcLightSourceGoniometric_LightDistributionDataSource">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourceGoniometric_LightDistributionDataSource_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourceGoniometric_LightDistributionDataSource_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightSourcePositional" name="IfcLightSourcePositional">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLightSourcePositional_gen_IfcLightSource" general="cl_IfcLightSource"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourcePositional_Position" name="Position" association="as_IfcLightSourcePositional_Position">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcCartesianPoint"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourcePositional_Position_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourcePositional_Position_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourcePositional_Radius" name="Radius">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourcePositional_Radius_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourcePositional_Radius_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourcePositional_ConstantAttenuation" name="ConstantAttenuation">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourcePositional_ConstantAttenuation_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourcePositional_ConstantAttenuation_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourcePositional_DistanceAttenuation" name="DistanceAttenuation">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourcePositional_DistanceAttenuation_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourcePositional_DistanceAttenuation_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourcePositional_QuadricAttenuation" name="QuadricAttenuation">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourcePositional_QuadricAttenuation_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourcePositional_QuadricAttenuation_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLightSourceSpot" name="IfcLightSourceSpot">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLightSourceSpot_gen_IfcLightSourcePositional" general="cl_IfcLightSourcePositional"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceSpot_Orientation" name="Orientation" association="as_IfcLightSourceSpot_Orientation">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcDirection"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourceSpot_Orientation_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourceSpot_Orientation_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceSpot_ConcentrationExponent" name="ConcentrationExponent">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourceSpot_ConcentrationExponent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourceSpot_ConcentrationExponent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceSpot_SpreadAngle" name="SpreadAngle">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositivePlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourceSpot_SpreadAngle_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourceSpot_SpreadAngle_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLightSourceSpot_BeamWidthAngle" name="BeamWidthAngle">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositivePlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLightSourceSpot_BeamWidthAngle_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLightSourceSpot_BeamWidthAngle_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightIntensityDistribution_DistributionData" name="DistributionData" memberEnd="at_IfcLightIntensityDistribution_DistributionData as_IfcLightIntensityDistribution_DistributionData_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLightIntensityDistribution_DistributionData_target_end" name="" type="cl_IfcLightIntensityDistribution" association="as_IfcLightIntensityDistribution_DistributionData">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLightIntensityDistribution_DistributionData_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLightIntensityDistribution_DistributionData_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPresentationLayerAssignment_AssignedItems" name="AssignedItems" memberEnd="at_IfcPresentationLayerAssignment_AssignedItems as_IfcPresentationLayerAssignment_AssignedItems_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPresentationLayerAssignment_AssignedItems_target_end" name="" type="cl_IfcPresentationLayerAssignment" association="as_IfcPresentationLayerAssignment_AssignedItems">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPresentationLayerAssignment_AssignedItems_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPresentationLayerAssignment_AssignedItems_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPresentationLayerWithStyle_LayerStyles" name="LayerStyles" memberEnd="at_IfcPresentationLayerWithStyle_LayerStyles as_IfcPresentationLayerWithStyle_LayerStyles_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPresentationLayerWithStyle_LayerStyles_target_end" name="" type="cl_IfcPresentationLayerWithStyle" association="as_IfcPresentationLayerWithStyle_LayerStyles">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPresentationLayerWithStyle_LayerStyles_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPresentationLayerWithStyle_LayerStyles_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSource_LightColour" name="LightColour" memberEnd="at_IfcLightSource_LightColour as_IfcLightSource_LightColour_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLightSource_LightColour_target_end" name="" type="cl_IfcLightSource" association="as_IfcLightSource_LightColour">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLightSource_LightColour_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLightSource_LightColour_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSourceDirectional_Orientation" name="Orientation" memberEnd="at_IfcLightSourceDirectional_Orientation as_IfcLightSourceDirectional_Orientation_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLightSourceDirectional_Orientation_target_end" name="" type="cl_IfcLightSourceDirectional" association="as_IfcLightSourceDirectional_Orientation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLightSourceDirectional_Orientation_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLightSourceDirectional_Orientation_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSourceGoniometric_Position" name="Position" memberEnd="at_IfcLightSourceGoniometric_Position as_IfcLightSourceGoniometric_Position_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLightSourceGoniometric_Position_target_end" name="" type="cl_IfcLightSourceGoniometric" association="as_IfcLightSourceGoniometric_Position">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLightSourceGoniometric_Position_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLightSourceGoniometric_Position_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSourceGoniometric_ColourAppearance" name="ColourAppearance" memberEnd="at_IfcLightSourceGoniometric_ColourAppearance as_IfcLightSourceGoniometric_ColourAppearance_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLightSourceGoniometric_ColourAppearance_target_end" name="" type="cl_IfcLightSourceGoniometric" association="as_IfcLightSourceGoniometric_ColourAppearance">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLightSourceGoniometric_ColourAppearance_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLightSourceGoniometric_ColourAppearance_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSourceGoniometric_LightDistributionDataSource" name="LightDistributionDataSource" memberEnd="at_IfcLightSourceGoniometric_LightDistributionDataSource as_IfcLightSourceGoniometric_LightDistributionDataSource_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLightSourceGoniometric_LightDistributionDataSource_target_end" name="" type="cl_IfcLightSourceGoniometric" association="as_IfcLightSourceGoniometric_LightDistributionDataSource">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLightSourceGoniometric_LightDistributionDataSource_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLightSourceGoniometric_LightDistributionDataSource_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSourcePositional_Position" name="Position" memberEnd="at_IfcLightSourcePositional_Position as_IfcLightSourcePositional_Position_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLightSourcePositional_Position_target_end" name="" type="cl_IfcLightSourcePositional" association="as_IfcLightSourcePositional_Position">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLightSourcePositional_Position_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLightSourcePositional_Position_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLightSourceSpot_Orientation" name="Orientation" memberEnd="at_IfcLightSourceSpot_Orientation as_IfcLightSourceSpot_Orientation_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLightSourceSpot_Orientation_target_end" name="" type="cl_IfcLightSourceSpot" association="as_IfcLightSourceSpot_Orientation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLightSourceSpot_Orientation_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLightSourceSpot_Orientation_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRepresentation_LayerAssignments" name="IfcRepresentation_LayerAssignments" memberEnd="as_IfcRepresentation_LayerAssignments_source_end as_IfcRepresentation_LayerAssignments_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRepresentation_LayerAssignments_source_end" name="(AssignedItems)" association="as_IfcRepresentation_LayerAssignments">
+        <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcRepresentation"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRepresentation_LayerAssignments_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRepresentation_LayerAssignments_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRepresentation_LayerAssignments_target_end" name="INV_LayerAssignments_S[0:?]" type="cl_IfcPresentationLayerAssignment" association="as_IfcRepresentation_LayerAssignments">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRepresentation_LayerAssignments_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRepresentation_LayerAssignments_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRepresentationItem_LayerAssignment" name="IfcRepresentationItem_LayerAssignment" memberEnd="as_IfcRepresentationItem_LayerAssignment_source_end as_IfcRepresentationItem_LayerAssignment_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRepresentationItem_LayerAssignment_source_end" name="(AssignedItems)" association="as_IfcRepresentationItem_LayerAssignment">
+        <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcRepresentationItem"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRepresentationItem_LayerAssignment_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRepresentationItem_LayerAssignment_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRepresentationItem_LayerAssignment_target_end" name="INV_LayerAssignment_S[0:1]" type="cl_IfcPresentationLayerAssignment" association="as_IfcRepresentationItem_LayerAssignment">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRepresentationItem_LayerAssignment_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRepresentationItem_LayerAssignment_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

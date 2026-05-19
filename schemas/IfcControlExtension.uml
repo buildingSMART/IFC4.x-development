@@ -1,68 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcControlExtension" name="IfcControlExtension">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcControlExtension" name="IfcControlExtension">
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcPerformanceHistoryTypeEnum" name="IfcPerformanceHistoryTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21803" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_21804" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRelAssociatesApproval" name="IfcRelAssociatesApproval">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_21805">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcRelAssociates"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelAssociatesApproval_RelatingApproval" name="RelatingApproval" isOrdered="false" association="as_IfcRelAssociatesApproval_RelatingApproval">
-          <type xmi:type="uml:Class" href="IfcApprovalResource.uml#cl_IfcApproval"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21806" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21807" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRelAssociatesConstraint" name="IfcRelAssociatesConstraint">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_21808">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcRelAssociates"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelAssociatesConstraint_Intent" name="Intent" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21809" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21810" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelAssociatesConstraint_RelatingConstraint" name="RelatingConstraint" isOrdered="false" association="as_IfcRelAssociatesConstraint_RelatingConstraint">
-          <type xmi:type="uml:Class" href="IfcConstraintResource.uml#cl_IfcConstraint"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21811" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21812" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPerformanceHistory" name="IfcPerformanceHistory">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_21813">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerformanceHistory_LifeCyclePhase" name="LifeCyclePhase" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21814" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21815" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerformanceHistory_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcPerformanceHistoryTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21816" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21817" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPerformanceHistoryTypeEnum_USERDEFINED" name="IfcPerformanceHistoryTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_21818" general="cl_IfcPerformanceHistory"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPerformanceHistoryTypeEnum_NOTDEFINED" name="IfcPerformanceHistoryTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_21819" general="cl_IfcPerformanceHistory"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelAssociatesApproval_RelatingApproval" name="RelatingApproval" memberEnd="at_IfcRelAssociatesApproval_RelatingApproval end_606">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_606" name="INV_ApprovedObjects_S[0:?]" association="as_IfcRelAssociatesApproval_RelatingApproval" type="cl_IfcRelAssociatesApproval">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21820" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21821" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelAssociatesConstraint_RelatingConstraint" name="RelatingConstraint" memberEnd="at_IfcRelAssociatesConstraint_RelatingConstraint end_610">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_610" name="" association="as_IfcRelAssociatesConstraint_RelatingConstraint" type="cl_IfcRelAssociatesConstraint">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_21822" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_21823" value="1"/>
-        </ownedEnd>
-      </packagedElement>
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcControlExtension" name="IfcControlExtension" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcControlExtension" name="IfcControlExtension">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcPerformanceHistoryTypeEnum" name="IfcPerformanceHistoryTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPerformanceHistoryTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPerformanceHistoryTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRelAssociatesApproval" name="IfcRelAssociatesApproval">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRelAssociatesApproval_gen_IfcRelAssociates">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcRelAssociates"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelAssociatesApproval_RelatingApproval" name="RelatingApproval" association="as_IfcRelAssociatesApproval_RelatingApproval">
+        <type xmi:type="uml:Class" href="IfcApprovalResource.uml#cl_IfcApproval"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRelAssociatesApproval_RelatingApproval_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRelAssociatesApproval_RelatingApproval_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRelAssociatesConstraint" name="IfcRelAssociatesConstraint">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRelAssociatesConstraint_gen_IfcRelAssociates">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcRelAssociates"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelAssociatesConstraint_Intent" name="Intent">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRelAssociatesConstraint_Intent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRelAssociatesConstraint_Intent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelAssociatesConstraint_RelatingConstraint" name="RelatingConstraint" association="as_IfcRelAssociatesConstraint_RelatingConstraint">
+        <type xmi:type="uml:Class" href="IfcConstraintResource.uml#cl_IfcConstraint"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRelAssociatesConstraint_RelatingConstraint_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRelAssociatesConstraint_RelatingConstraint_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPerformanceHistory" name="IfcPerformanceHistory">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPerformanceHistory_gen_IfcControl">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerformanceHistory_LifeCyclePhase" name="LifeCyclePhase">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPerformanceHistory_LifeCyclePhase_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPerformanceHistory_LifeCyclePhase_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPerformanceHistory_PredefinedType" name="PredefinedType" type="en_IfcPerformanceHistoryTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPerformanceHistory_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPerformanceHistory_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelAssociatesApproval_RelatingApproval" name="RelatingApproval" memberEnd="at_IfcRelAssociatesApproval_RelatingApproval as_IfcRelAssociatesApproval_RelatingApproval_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelAssociatesApproval_RelatingApproval_target_end" name="INV_ApprovedObjects_S[0:?]" type="cl_IfcRelAssociatesApproval" association="as_IfcRelAssociatesApproval_RelatingApproval">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelAssociatesApproval_RelatingApproval_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelAssociatesApproval_RelatingApproval_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelAssociatesConstraint_RelatingConstraint" name="RelatingConstraint" memberEnd="at_IfcRelAssociatesConstraint_RelatingConstraint as_IfcRelAssociatesConstraint_RelatingConstraint_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelAssociatesConstraint_RelatingConstraint_target_end" name="" type="cl_IfcRelAssociatesConstraint" association="as_IfcRelAssociatesConstraint_RelatingConstraint">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelAssociatesConstraint_RelatingConstraint_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelAssociatesConstraint_RelatingConstraint_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPerformanceHistoryTypeEnum_USERDEFINED" name="IfcPerformanceHistoryTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPerformanceHistoryTypeEnum_USERDEFINED_gen_IfcPerformanceHistory" general="cl_IfcPerformanceHistory"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPerformanceHistoryTypeEnum_NOTDEFINED" name="IfcPerformanceHistoryTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPerformanceHistoryTypeEnum_NOTDEFINED_gen_IfcPerformanceHistory" general="cl_IfcPerformanceHistory"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

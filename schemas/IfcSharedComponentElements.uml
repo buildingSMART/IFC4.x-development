@@ -1,812 +1,810 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcSharedComponentElements" name="IfcSharedComponentElements">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcSharedComponentElements" name="IfcSharedComponentElements">
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcBuildingElementPartTypeEnum" name="IfcBuildingElementPartTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15820" name="APRON"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15821" name="ARMOURUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15822" name="INSULATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15823" name="PRECASTPANEL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15824" name="SAFETYCAGE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15825" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15826" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDiscreteAccessoryTypeEnum" name="IfcDiscreteAccessoryTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15827" name="ANCHORPLATE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15828" name="BIRDPROTECTION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15829" name="BRACKET"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15830" name="CABLEARRANGER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15831" name="ELASTIC_CUSHION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15832" name="EXPANSION_JOINT_DEVICE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15833" name="FILLER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15834" name="FLASHING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15835" name="INSULATOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15836" name="LOCK"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15837" name="PANEL_STRENGTHENING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15838" name="POINTMACHINEMOUNTINGDEVICE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15839" name="POINT_MACHINE_LOCKING_DEVICE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15840" name="RAILBRACE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15841" name="RAILPAD"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15842" name="RAIL_LUBRICATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15843" name="RAIL_MECHANICAL_EQUIPMENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15844" name="SHOE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15845" name="SLIDINGCHAIR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15846" name="SOUNDABSORPTION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15847" name="TENSIONINGEQUIPMENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15848" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15849" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcFastenerTypeEnum" name="IfcFastenerTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15850" name="GLUE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15851" name="MORTAR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15852" name="WELD"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15853" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15854" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcMechanicalFastenerTypeEnum" name="IfcMechanicalFastenerTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15855" name="ANCHORBOLT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15856" name="BOLT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15857" name="CHAIN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15858" name="COUPLER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15859" name="DOWEL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15860" name="NAIL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15861" name="NAILPLATE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15862" name="RAILFASTENING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15863" name="RAILJOINT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15864" name="RIVET"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15865" name="ROPE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15866" name="SCREW"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15867" name="SHEARCONNECTOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15868" name="STAPLE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15869" name="STUDSHEARCONNECTOR"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15870" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15871" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcVibrationDamperTypeEnum" name="IfcVibrationDamperTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15872" name="AXIAL_YIELD"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15873" name="BENDING_YIELD"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15874" name="FRICTION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15875" name="RUBBER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15876" name="SHEAR_YIELD"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15877" name="VISCOUS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15878" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_15879" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementComponent" name="IfcElementComponent" isAbstract="true">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15880">
-          <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementComponentType" name="IfcElementComponentType" isAbstract="true">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15881">
-          <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementType"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPart" name="IfcBuildingElementPart">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15882" general="cl_IfcElementComponent"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBuildingElementPart_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcBuildingElementPartTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15883" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15884" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartType" name="IfcBuildingElementPartType">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15885" general="cl_IfcElementComponentType"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBuildingElementPartType_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcBuildingElementPartTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15886" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15887" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessory" name="IfcDiscreteAccessory">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15888" general="cl_IfcElementComponent"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDiscreteAccessory_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcDiscreteAccessoryTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15889" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15890" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryType" name="IfcDiscreteAccessoryType">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15891" general="cl_IfcElementComponentType"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDiscreteAccessoryType_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcDiscreteAccessoryTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15892" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15893" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastener" name="IfcFastener">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15894" general="cl_IfcElementComponent"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFastener_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcFastenerTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15895" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15896" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastenerType" name="IfcFastenerType">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15897" general="cl_IfcElementComponentType"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFastenerType_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcFastenerTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15898" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15899" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastener" name="IfcMechanicalFastener">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15900" general="cl_IfcElementComponent"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMechanicalFastener_NominalDiameter" name="NominalDiameter" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15901" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15902" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMechanicalFastener_NominalLength" name="NominalLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15903" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15904" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMechanicalFastener_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcMechanicalFastenerTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15905" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15906" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerType" name="IfcMechanicalFastenerType">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15907" general="cl_IfcElementComponentType"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMechanicalFastenerType_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcMechanicalFastenerTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15908" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15909" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMechanicalFastenerType_NominalDiameter" name="NominalDiameter" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15910" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15911" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMechanicalFastenerType_NominalLength" name="NominalLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15912" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15913" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_APRON" name="IfcBuildingElementPartTypeEnum.APRON">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15914" general="cl_IfcBuildingElementPart"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15915" general="cl_IfcBuildingElementPartType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_ARMOURUNIT" name="IfcBuildingElementPartTypeEnum.ARMOURUNIT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15916" general="cl_IfcBuildingElementPart"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15917" general="cl_IfcBuildingElementPartType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_INSULATION" name="IfcBuildingElementPartTypeEnum.INSULATION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15918" general="cl_IfcBuildingElementPart"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15919" general="cl_IfcBuildingElementPartType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_PRECASTPANEL" name="IfcBuildingElementPartTypeEnum.PRECASTPANEL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15920" general="cl_IfcBuildingElementPart"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15921" general="cl_IfcBuildingElementPartType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_SAFETYCAGE" name="IfcBuildingElementPartTypeEnum.SAFETYCAGE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15922" general="cl_IfcBuildingElementPart"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15923" general="cl_IfcBuildingElementPartType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_USERDEFINED" name="IfcBuildingElementPartTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15924" general="cl_IfcBuildingElementPart"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15925" general="cl_IfcBuildingElementPartType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_NOTDEFINED" name="IfcBuildingElementPartTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15926" general="cl_IfcBuildingElementPart"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15927" general="cl_IfcBuildingElementPartType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_ANCHORPLATE" name="IfcDiscreteAccessoryTypeEnum.ANCHORPLATE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15928" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15929" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_BIRDPROTECTION" name="IfcDiscreteAccessoryTypeEnum.BIRDPROTECTION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15930" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15931" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_BRACKET" name="IfcDiscreteAccessoryTypeEnum.BRACKET">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15932" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15933" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_CABLEARRANGER" name="IfcDiscreteAccessoryTypeEnum.CABLEARRANGER">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15934" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15935" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_ELASTIC_CUSHION" name="IfcDiscreteAccessoryTypeEnum.ELASTIC_CUSHION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15936" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15937" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_EXPANSION_JOINT_DEVICE" name="IfcDiscreteAccessoryTypeEnum.EXPANSION_JOINT_DEVICE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15938" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15939" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_FILLER" name="IfcDiscreteAccessoryTypeEnum.FILLER">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15940" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15941" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_FLASHING" name="IfcDiscreteAccessoryTypeEnum.FLASHING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15942" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15943" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_INSULATOR" name="IfcDiscreteAccessoryTypeEnum.INSULATOR">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15944" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15945" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_LOCK" name="IfcDiscreteAccessoryTypeEnum.LOCK">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15946" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15947" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_PANEL_STRENGTHENING" name="IfcDiscreteAccessoryTypeEnum.PANEL_STRENGTHENING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15948" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15949" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_POINTMACHINEMOUNTINGDEVICE" name="IfcDiscreteAccessoryTypeEnum.POINTMACHINEMOUNTINGDEVICE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15950" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15951" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_POINT_MACHINE_LOCKING_DEVICE" name="IfcDiscreteAccessoryTypeEnum.POINT_MACHINE_LOCKING_DEVICE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15952" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15953" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAILBRACE" name="IfcDiscreteAccessoryTypeEnum.RAILBRACE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15954" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15955" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAILPAD" name="IfcDiscreteAccessoryTypeEnum.RAILPAD">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15956" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15957" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAIL_LUBRICATION" name="IfcDiscreteAccessoryTypeEnum.RAIL_LUBRICATION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15958" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15959" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAIL_MECHANICAL_EQUIPMENT" name="IfcDiscreteAccessoryTypeEnum.RAIL_MECHANICAL_EQUIPMENT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15960" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15961" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_SHOE" name="IfcDiscreteAccessoryTypeEnum.SHOE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15962" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15963" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_SLIDINGCHAIR" name="IfcDiscreteAccessoryTypeEnum.SLIDINGCHAIR">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15964" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15965" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_SOUNDABSORPTION" name="IfcDiscreteAccessoryTypeEnum.SOUNDABSORPTION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15966" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15967" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_TENSIONINGEQUIPMENT" name="IfcDiscreteAccessoryTypeEnum.TENSIONINGEQUIPMENT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15968" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15969" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_USERDEFINED" name="IfcDiscreteAccessoryTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15970" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15971" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_NOTDEFINED" name="IfcDiscreteAccessoryTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15972" general="cl_IfcDiscreteAccessory"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15973" general="cl_IfcDiscreteAccessoryType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastenerTypeEnum_GLUE" name="IfcFastenerTypeEnum.GLUE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15974" general="cl_IfcFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15975" general="cl_IfcFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastenerTypeEnum_MORTAR" name="IfcFastenerTypeEnum.MORTAR">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15976" general="cl_IfcFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15977" general="cl_IfcFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastenerTypeEnum_WELD" name="IfcFastenerTypeEnum.WELD">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15978" general="cl_IfcFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15979" general="cl_IfcFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastenerTypeEnum_USERDEFINED" name="IfcFastenerTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15980" general="cl_IfcFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15981" general="cl_IfcFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastenerTypeEnum_NOTDEFINED" name="IfcFastenerTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15982" general="cl_IfcFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15983" general="cl_IfcFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_ANCHORBOLT" name="IfcMechanicalFastenerTypeEnum.ANCHORBOLT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15984" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15985" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_BOLT" name="IfcMechanicalFastenerTypeEnum.BOLT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15986" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15987" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_CHAIN" name="IfcMechanicalFastenerTypeEnum.CHAIN">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15988" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15989" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_COUPLER" name="IfcMechanicalFastenerTypeEnum.COUPLER">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15990" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15991" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_DOWEL" name="IfcMechanicalFastenerTypeEnum.DOWEL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15992" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15993" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_NAIL" name="IfcMechanicalFastenerTypeEnum.NAIL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15994" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15995" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_NAILPLATE" name="IfcMechanicalFastenerTypeEnum.NAILPLATE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15996" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15997" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_RAILFASTENING" name="IfcMechanicalFastenerTypeEnum.RAILFASTENING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15998" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15999" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_RAILJOINT" name="IfcMechanicalFastenerTypeEnum.RAILJOINT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16000" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16001" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_RIVET" name="IfcMechanicalFastenerTypeEnum.RIVET">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16002" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16003" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_ROPE" name="IfcMechanicalFastenerTypeEnum.ROPE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16004" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16005" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_SCREW" name="IfcMechanicalFastenerTypeEnum.SCREW">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16006" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16007" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_SHEARCONNECTOR" name="IfcMechanicalFastenerTypeEnum.SHEARCONNECTOR">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16008" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16009" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_STAPLE" name="IfcMechanicalFastenerTypeEnum.STAPLE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16010" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16011" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_STUDSHEARCONNECTOR" name="IfcMechanicalFastenerTypeEnum.STUDSHEARCONNECTOR">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16012" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16013" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_USERDEFINED" name="IfcMechanicalFastenerTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16014" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16015" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_NOTDEFINED" name="IfcMechanicalFastenerTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16016" general="cl_IfcMechanicalFastener"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_16017" general="cl_IfcMechanicalFastenerType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryColumnShoe" name="Pset_DiscreteAccessoryColumnShoe">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_16018">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeBasePlateThickness" name="ColumnShoeBasePlateThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16019" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16020" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeBasePlateWidth" name="ColumnShoeBasePlateWidth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16021" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16022" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeBasePlateDepth" name="ColumnShoeBasePlateDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16023" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16024" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeCasingHeight" name="ColumnShoeCasingHeight" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16025" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16026" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeCasingWidth" name="ColumnShoeCasingWidth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16027" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16028" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeCasingDepth" name="ColumnShoeCasingDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16029" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16030" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryCornerFixingPlate" name="Pset_DiscreteAccessoryCornerFixingPlate">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_16031">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateLength" name="CornerFixingPlateLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16032" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16033" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateThickness" name="CornerFixingPlateThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16034" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16035" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateFlangeWidthInPlaneZ" name="CornerFixingPlateFlangeWidthInPlaneZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16036" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16037" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateFlangeWidthInPlaneX" name="CornerFixingPlateFlangeWidthInPlaneX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16038" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16039" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryDiagonalTrussConnector" name="Pset_DiscreteAccessoryDiagonalTrussConnector">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_16040">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussHeight" name="DiagonalTrussHeight" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16041" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16042" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussLength" name="DiagonalTrussLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16043" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16044" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussCrossBarSpacing" name="DiagonalTrussCrossBarSpacing" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16045" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16046" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussBaseBarDiameter" name="DiagonalTrussBaseBarDiameter" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16047" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16048" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussSecondaryBarDiameter" name="DiagonalTrussSecondaryBarDiameter" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16049" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16050" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussCrossBarDiameter" name="DiagonalTrussCrossBarDiameter" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16051" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16052" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryEdgeFixingPlate" name="Pset_DiscreteAccessoryEdgeFixingPlate">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_16053">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateLength" name="EdgeFixingPlateLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16054" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16055" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateThickness" name="EdgeFixingPlateThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16056" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16057" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateFlangeWidthInPlaneZ" name="EdgeFixingPlateFlangeWidthInPlaneZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16058" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16059" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateFlangeWidthInPlaneX" name="EdgeFixingPlateFlangeWidthInPlaneX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16060" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16061" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryFixingSocket" name="Pset_DiscreteAccessoryFixingSocket">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_16062">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketTypeReference" name="FixingSocketTypeReference" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcExternalReference"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16063" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16064" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketHeight" name="FixingSocketHeight" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16065" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16066" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketThreadDiameter" name="FixingSocketThreadDiameter" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16067" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16068" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketThreadLength" name="FixingSocketThreadLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16069" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16070" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryLadderTrussConnector" name="Pset_DiscreteAccessoryLadderTrussConnector">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_16071">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussHeight" name="LadderTrussHeight" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16072" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16073" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussLength" name="LadderTrussLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16074" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16075" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussCrossBarSpacing" name="LadderTrussCrossBarSpacing" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16076" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16077" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussBaseBarDiameter" name="LadderTrussBaseBarDiameter" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16078" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16079" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussSecondaryBarDiameter" name="LadderTrussSecondaryBarDiameter" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16080" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16081" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussCrossBarDiameter" name="LadderTrussCrossBarDiameter" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16082" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16083" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryStandardFixingPlate" name="Pset_DiscreteAccessoryStandardFixingPlate">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_16084">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryStandardFixingPlate_StandardFixingPlateWidth" name="StandardFixingPlateWidth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16085" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16086" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryStandardFixingPlate_StandardFixingPlateDepth" name="StandardFixingPlateDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16087" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16088" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryStandardFixingPlate_StandardFixingPlateThickness" name="StandardFixingPlateThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16089" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16090" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryWireLoop" name="Pset_DiscreteAccessoryWireLoop">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_16091">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopBasePlateThickness" name="WireLoopBasePlateThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16092" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16093" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopBasePlateWidth" name="WireLoopBasePlateWidth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16094" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16095" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopBasePlateLength" name="WireLoopBasePlateLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16096" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16097" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireDiameter" name="WireDiameter" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16098" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16099" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireEmbeddingLength" name="WireEmbeddingLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16100" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16101" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopLength" name="WireLoopLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16102" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16103" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementComponentCommon" name="Pset_ElementComponentCommon">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_16104">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementComponentCommon_Reference" name="Reference" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16105" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16106" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementComponentCommon_Status" name="Status" isOrdered="false">
-          <type xmi:type="uml:Enumeration" href="propertytypes.uml#en_PEnum_ElementStatus"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16107" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16108" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementComponentCommon_DeliveryType" name="DeliveryType" isOrdered="false" type="en_PEnum_ElementComponentDeliveryType">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16109" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16110" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementComponentCommon_CorrosionTreatment" name="CorrosionTreatment" isOrdered="false" type="en_PEnum_ElementComponentCorrosionTreatment">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16111" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16112" value="*"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ElementComponentDeliveryType" name="PEnum_ElementComponentDeliveryType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16113" name="ATTACHED_FOR_DELIVERY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16114" name="CAST_IN_PLACE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16115" name="LOOSE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16116" name="PRECAST"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16117" name="WELDED_TO_STRUCTURE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16118" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ElementComponentCorrosionTreatment" name="PEnum_ElementComponentCorrosionTreatment">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16119" name="EPOXYCOATED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16120" name="GALVANISED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16121" name="NONE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16122" name="PAINTED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16123" name="STAINLESS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_16124" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FastenerWeld" name="Pset_FastenerWeld">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_16125">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Type1" name="Type1" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16126" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16127" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Type2" name="Type2" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16128" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16129" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Surface1" name="Surface1" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16130" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16131" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Surface2" name="Surface2" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16132" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16133" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Process" name="Process" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16134" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16135" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_ProcessName" name="ProcessName" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16136" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16137" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_NominalThroatThickness" name="NominalThroatThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16138" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16139" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_WeldWidth" name="WeldWidth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16140" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16141" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_WeldDiameter" name="WeldDiameter" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16142" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16143" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_WeldElementSpacing" name="WeldElementSpacing" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16144" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16145" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_WeldElementLength" name="WeldElementLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16146" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16147" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_NumberOfWeldElements" name="NumberOfWeldElements" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16148" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16149" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_DeepPenetrationThroatThickness" name="DeepPenetrationThroatThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16150" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16151" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_WeldLegLength" name="WeldLegLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16152" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16153" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Intermittent" name="Intermittent" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16154" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16155" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Staggered" name="Staggered" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16156" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16157" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalFastenerAnchorBolt" name="Pset_MechanicalFastenerAnchorBolt">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_16158">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltLength" name="AnchorBoltLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16159" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16160" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltDiameter" name="AnchorBoltDiameter" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16161" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16162" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltThreadLength" name="AnchorBoltThreadLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16163" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16164" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltProtrusionLength" name="AnchorBoltProtrusionLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16165" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16166" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalFastenerBolt" name="Pset_MechanicalFastenerBolt">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_16167">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_ThreadDiameter" name="ThreadDiameter" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16168" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16169" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_ThreadLength" name="ThreadLength" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16170" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16171" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_NutsCount" name="NutsCount" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16172" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16173" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_WashersCount" name="WashersCount" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16174" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16175" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_HeadShape" name="HeadShape" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16176" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16177" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_KeyShape" name="KeyShape" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16178" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16179" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_NutShape" name="NutShape" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16180" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16181" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_WasherShape" name="WasherShape" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_16182" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_16183" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_16184" client="cl_Pset_DiscreteAccessoryCornerFixingPlate" supplier="cl_IfcDiscreteAccessory"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_16185" client="cl_Pset_DiscreteAccessoryDiagonalTrussConnector" supplier="cl_IfcDiscreteAccessory"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_16186" client="cl_Pset_DiscreteAccessoryEdgeFixingPlate" supplier="cl_IfcDiscreteAccessory"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_16187" client="cl_Pset_DiscreteAccessoryFixingSocket" supplier="cl_IfcDiscreteAccessory"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_16188" client="cl_Pset_DiscreteAccessoryLadderTrussConnector" supplier="cl_IfcDiscreteAccessory"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_16189" client="cl_Pset_DiscreteAccessoryStandardFixingPlate" supplier="cl_IfcDiscreteAccessory"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_16190" client="cl_Pset_DiscreteAccessoryWireLoop" supplier="cl_IfcDiscreteAccessory"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_16191" client="cl_Pset_DiscreteAccessoryColumnShoe" supplier="cl_IfcDiscreteAccessoryTypeEnum_SHOE"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_16192" client="cl_Pset_ElementComponentCommon" supplier="cl_IfcElementComponent"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_16193" client="cl_Pset_FastenerWeld" supplier="cl_IfcFastenerTypeEnum_WELD"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_16194" client="cl_Pset_MechanicalFastenerAnchorBolt" supplier="cl_IfcMechanicalFastenerTypeEnum_ANCHORBOLT"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_16195" client="cl_Pset_MechanicalFastenerBolt" supplier="cl_IfcMechanicalFastenerTypeEnum_BOLT"/>
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcSharedComponentElements" name="IfcSharedComponentElements" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcSharedComponentElements" name="IfcSharedComponentElements">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcBuildingElementPartTypeEnum" name="IfcBuildingElementPartTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuildingElementPartTypeEnum_APRON" name="APRON"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuildingElementPartTypeEnum_ARMOURUNIT" name="ARMOURUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuildingElementPartTypeEnum_INSULATION" name="INSULATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuildingElementPartTypeEnum_PRECASTPANEL" name="PRECASTPANEL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuildingElementPartTypeEnum_SAFETYCAGE" name="SAFETYCAGE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuildingElementPartTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuildingElementPartTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDiscreteAccessoryTypeEnum" name="IfcDiscreteAccessoryTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_ANCHORPLATE" name="ANCHORPLATE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_BIRDPROTECTION" name="BIRDPROTECTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_BRACKET" name="BRACKET"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_CABLEARRANGER" name="CABLEARRANGER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_ELASTIC_CUSHION" name="ELASTIC_CUSHION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_EXPANSION_JOINT_DEVICE" name="EXPANSION_JOINT_DEVICE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_FILLER" name="FILLER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_FLASHING" name="FLASHING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_INSULATOR" name="INSULATOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_LOCK" name="LOCK"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_PANEL_STRENGTHENING" name="PANEL_STRENGTHENING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_POINTMACHINEMOUNTINGDEVICE" name="POINTMACHINEMOUNTINGDEVICE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_POINT_MACHINE_LOCKING_DEVICE" name="POINT_MACHINE_LOCKING_DEVICE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_RAILBRACE" name="RAILBRACE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_RAILPAD" name="RAILPAD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_RAIL_LUBRICATION" name="RAIL_LUBRICATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_RAIL_MECHANICAL_EQUIPMENT" name="RAIL_MECHANICAL_EQUIPMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_SHOE" name="SHOE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_SLIDINGCHAIR" name="SLIDINGCHAIR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_SOUNDABSORPTION" name="SOUNDABSORPTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_TENSIONINGEQUIPMENT" name="TENSIONINGEQUIPMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcFastenerTypeEnum" name="IfcFastenerTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFastenerTypeEnum_GLUE" name="GLUE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFastenerTypeEnum_MORTAR" name="MORTAR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFastenerTypeEnum_WELD" name="WELD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFastenerTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFastenerTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcMechanicalFastenerTypeEnum" name="IfcMechanicalFastenerTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_ANCHORBOLT" name="ANCHORBOLT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_BOLT" name="BOLT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_CHAIN" name="CHAIN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_COUPLER" name="COUPLER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_DOWEL" name="DOWEL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_NAIL" name="NAIL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_NAILPLATE" name="NAILPLATE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_RAILFASTENING" name="RAILFASTENING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_RAILJOINT" name="RAILJOINT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_RIVET" name="RIVET"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_ROPE" name="ROPE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_SCREW" name="SCREW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_SHEARCONNECTOR" name="SHEARCONNECTOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_STAPLE" name="STAPLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_STUDSHEARCONNECTOR" name="STUDSHEARCONNECTOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcMechanicalFastenerTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcVibrationDamperTypeEnum" name="IfcVibrationDamperTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcVibrationDamperTypeEnum_AXIAL_YIELD" name="AXIAL_YIELD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcVibrationDamperTypeEnum_BENDING_YIELD" name="BENDING_YIELD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcVibrationDamperTypeEnum_FRICTION" name="FRICTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcVibrationDamperTypeEnum_RUBBER" name="RUBBER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcVibrationDamperTypeEnum_SHEAR_YIELD" name="SHEAR_YIELD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcVibrationDamperTypeEnum_VISCOUS" name="VISCOUS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcVibrationDamperTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcVibrationDamperTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementComponent" name="IfcElementComponent" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementComponent_gen_IfcElement">
+        <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementComponentType" name="IfcElementComponentType" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementComponentType_gen_IfcElementType">
+        <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementType"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPart" name="IfcBuildingElementPart">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPart_gen_IfcElementComponent" general="cl_IfcElementComponent"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBuildingElementPart_PredefinedType" name="PredefinedType" type="en_IfcBuildingElementPartTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBuildingElementPart_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBuildingElementPart_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartType" name="IfcBuildingElementPartType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartType_gen_IfcElementComponentType" general="cl_IfcElementComponentType"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBuildingElementPartType_PredefinedType" name="PredefinedType" type="en_IfcBuildingElementPartTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBuildingElementPartType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBuildingElementPartType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessory" name="IfcDiscreteAccessory">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessory_gen_IfcElementComponent" general="cl_IfcElementComponent"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDiscreteAccessory_PredefinedType" name="PredefinedType" type="en_IfcDiscreteAccessoryTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDiscreteAccessory_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDiscreteAccessory_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryType" name="IfcDiscreteAccessoryType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryType_gen_IfcElementComponentType" general="cl_IfcElementComponentType"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDiscreteAccessoryType_PredefinedType" name="PredefinedType" type="en_IfcDiscreteAccessoryTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDiscreteAccessoryType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDiscreteAccessoryType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastener" name="IfcFastener">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFastener_gen_IfcElementComponent" general="cl_IfcElementComponent"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFastener_PredefinedType" name="PredefinedType" type="en_IfcFastenerTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcFastener_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcFastener_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastenerType" name="IfcFastenerType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFastenerType_gen_IfcElementComponentType" general="cl_IfcElementComponentType"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFastenerType_PredefinedType" name="PredefinedType" type="en_IfcFastenerTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcFastenerType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcFastenerType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastener" name="IfcMechanicalFastener">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastener_gen_IfcElementComponent" general="cl_IfcElementComponent"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMechanicalFastener_NominalDiameter" name="NominalDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMechanicalFastener_NominalDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMechanicalFastener_NominalDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMechanicalFastener_NominalLength" name="NominalLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMechanicalFastener_NominalLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMechanicalFastener_NominalLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMechanicalFastener_PredefinedType" name="PredefinedType" type="en_IfcMechanicalFastenerTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMechanicalFastener_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMechanicalFastener_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerType" name="IfcMechanicalFastenerType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerType_gen_IfcElementComponentType" general="cl_IfcElementComponentType"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMechanicalFastenerType_PredefinedType" name="PredefinedType" type="en_IfcMechanicalFastenerTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMechanicalFastenerType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMechanicalFastenerType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMechanicalFastenerType_NominalDiameter" name="NominalDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMechanicalFastenerType_NominalDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMechanicalFastenerType_NominalDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMechanicalFastenerType_NominalLength" name="NominalLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMechanicalFastenerType_NominalLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMechanicalFastenerType_NominalLength_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_APRON" name="IfcBuildingElementPartTypeEnum.APRON">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_APRON_gen_IfcBuildingElementPart" general="cl_IfcBuildingElementPart"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_APRON_gen_IfcBuildingElementPartType" general="cl_IfcBuildingElementPartType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_ARMOURUNIT" name="IfcBuildingElementPartTypeEnum.ARMOURUNIT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_ARMOURUNIT_gen_IfcBuildingElementPart" general="cl_IfcBuildingElementPart"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_ARMOURUNIT_gen_IfcBuildingElementPartType" general="cl_IfcBuildingElementPartType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_INSULATION" name="IfcBuildingElementPartTypeEnum.INSULATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_INSULATION_gen_IfcBuildingElementPart" general="cl_IfcBuildingElementPart"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_INSULATION_gen_IfcBuildingElementPartType" general="cl_IfcBuildingElementPartType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_PRECASTPANEL" name="IfcBuildingElementPartTypeEnum.PRECASTPANEL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_PRECASTPANEL_gen_IfcBuildingElementPart" general="cl_IfcBuildingElementPart"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_PRECASTPANEL_gen_IfcBuildingElementPartType" general="cl_IfcBuildingElementPartType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_SAFETYCAGE" name="IfcBuildingElementPartTypeEnum.SAFETYCAGE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_SAFETYCAGE_gen_IfcBuildingElementPart" general="cl_IfcBuildingElementPart"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_SAFETYCAGE_gen_IfcBuildingElementPartType" general="cl_IfcBuildingElementPartType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_USERDEFINED" name="IfcBuildingElementPartTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_USERDEFINED_gen_IfcBuildingElementPart" general="cl_IfcBuildingElementPart"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_USERDEFINED_gen_IfcBuildingElementPartType" general="cl_IfcBuildingElementPartType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingElementPartTypeEnum_NOTDEFINED" name="IfcBuildingElementPartTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_NOTDEFINED_gen_IfcBuildingElementPart" general="cl_IfcBuildingElementPart"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingElementPartTypeEnum_NOTDEFINED_gen_IfcBuildingElementPartType" general="cl_IfcBuildingElementPartType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_ANCHORPLATE" name="IfcDiscreteAccessoryTypeEnum.ANCHORPLATE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_ANCHORPLATE_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_ANCHORPLATE_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_BIRDPROTECTION" name="IfcDiscreteAccessoryTypeEnum.BIRDPROTECTION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_BIRDPROTECTION_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_BIRDPROTECTION_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_BRACKET" name="IfcDiscreteAccessoryTypeEnum.BRACKET">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_BRACKET_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_BRACKET_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_CABLEARRANGER" name="IfcDiscreteAccessoryTypeEnum.CABLEARRANGER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_CABLEARRANGER_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_CABLEARRANGER_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_ELASTIC_CUSHION" name="IfcDiscreteAccessoryTypeEnum.ELASTIC_CUSHION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_ELASTIC_CUSHION_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_ELASTIC_CUSHION_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_EXPANSION_JOINT_DEVICE" name="IfcDiscreteAccessoryTypeEnum.EXPANSION_JOINT_DEVICE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_EXPANSION_JOINT_DEVICE_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_EXPANSION_JOINT_DEVICE_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_FILLER" name="IfcDiscreteAccessoryTypeEnum.FILLER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_FILLER_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_FILLER_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_FLASHING" name="IfcDiscreteAccessoryTypeEnum.FLASHING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_FLASHING_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_FLASHING_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_INSULATOR" name="IfcDiscreteAccessoryTypeEnum.INSULATOR">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_INSULATOR_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_INSULATOR_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_LOCK" name="IfcDiscreteAccessoryTypeEnum.LOCK">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_LOCK_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_LOCK_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_PANEL_STRENGTHENING" name="IfcDiscreteAccessoryTypeEnum.PANEL_STRENGTHENING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_PANEL_STRENGTHENING_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_PANEL_STRENGTHENING_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_POINTMACHINEMOUNTINGDEVICE" name="IfcDiscreteAccessoryTypeEnum.POINTMACHINEMOUNTINGDEVICE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_POINTMACHINEMOUNTINGDEVICE_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_POINTMACHINEMOUNTINGDEVICE_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_POINT_MACHINE_LOCKING_DEVICE" name="IfcDiscreteAccessoryTypeEnum.POINT_MACHINE_LOCKING_DEVICE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_POINT_MACHINE_LOCKING_DEVICE_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_POINT_MACHINE_LOCKING_DEVICE_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAILBRACE" name="IfcDiscreteAccessoryTypeEnum.RAILBRACE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAILBRACE_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAILBRACE_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAILPAD" name="IfcDiscreteAccessoryTypeEnum.RAILPAD">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAILPAD_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAILPAD_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAIL_LUBRICATION" name="IfcDiscreteAccessoryTypeEnum.RAIL_LUBRICATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAIL_LUBRICATION_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAIL_LUBRICATION_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAIL_MECHANICAL_EQUIPMENT" name="IfcDiscreteAccessoryTypeEnum.RAIL_MECHANICAL_EQUIPMENT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAIL_MECHANICAL_EQUIPMENT_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_RAIL_MECHANICAL_EQUIPMENT_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_SHOE" name="IfcDiscreteAccessoryTypeEnum.SHOE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_SHOE_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_SHOE_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_SLIDINGCHAIR" name="IfcDiscreteAccessoryTypeEnum.SLIDINGCHAIR">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_SLIDINGCHAIR_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_SLIDINGCHAIR_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_SOUNDABSORPTION" name="IfcDiscreteAccessoryTypeEnum.SOUNDABSORPTION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_SOUNDABSORPTION_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_SOUNDABSORPTION_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_TENSIONINGEQUIPMENT" name="IfcDiscreteAccessoryTypeEnum.TENSIONINGEQUIPMENT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_TENSIONINGEQUIPMENT_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_TENSIONINGEQUIPMENT_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_USERDEFINED" name="IfcDiscreteAccessoryTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_USERDEFINED_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_USERDEFINED_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_NOTDEFINED" name="IfcDiscreteAccessoryTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_NOTDEFINED_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_NOTDEFINED_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastenerTypeEnum_GLUE" name="IfcFastenerTypeEnum.GLUE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFastenerTypeEnum_GLUE_gen_IfcFastener" general="cl_IfcFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFastenerTypeEnum_GLUE_gen_IfcFastenerType" general="cl_IfcFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastenerTypeEnum_MORTAR" name="IfcFastenerTypeEnum.MORTAR">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFastenerTypeEnum_MORTAR_gen_IfcFastener" general="cl_IfcFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFastenerTypeEnum_MORTAR_gen_IfcFastenerType" general="cl_IfcFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastenerTypeEnum_WELD" name="IfcFastenerTypeEnum.WELD">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFastenerTypeEnum_WELD_gen_IfcFastener" general="cl_IfcFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFastenerTypeEnum_WELD_gen_IfcFastenerType" general="cl_IfcFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastenerTypeEnum_USERDEFINED" name="IfcFastenerTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFastenerTypeEnum_USERDEFINED_gen_IfcFastener" general="cl_IfcFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFastenerTypeEnum_USERDEFINED_gen_IfcFastenerType" general="cl_IfcFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFastenerTypeEnum_NOTDEFINED" name="IfcFastenerTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFastenerTypeEnum_NOTDEFINED_gen_IfcFastener" general="cl_IfcFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFastenerTypeEnum_NOTDEFINED_gen_IfcFastenerType" general="cl_IfcFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_ANCHORBOLT" name="IfcMechanicalFastenerTypeEnum.ANCHORBOLT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_ANCHORBOLT_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_ANCHORBOLT_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_BOLT" name="IfcMechanicalFastenerTypeEnum.BOLT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_BOLT_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_BOLT_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_CHAIN" name="IfcMechanicalFastenerTypeEnum.CHAIN">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_CHAIN_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_CHAIN_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_COUPLER" name="IfcMechanicalFastenerTypeEnum.COUPLER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_COUPLER_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_COUPLER_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_DOWEL" name="IfcMechanicalFastenerTypeEnum.DOWEL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_DOWEL_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_DOWEL_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_NAIL" name="IfcMechanicalFastenerTypeEnum.NAIL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_NAIL_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_NAIL_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_NAILPLATE" name="IfcMechanicalFastenerTypeEnum.NAILPLATE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_NAILPLATE_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_NAILPLATE_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_RAILFASTENING" name="IfcMechanicalFastenerTypeEnum.RAILFASTENING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_RAILFASTENING_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_RAILFASTENING_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_RAILJOINT" name="IfcMechanicalFastenerTypeEnum.RAILJOINT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_RAILJOINT_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_RAILJOINT_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_RIVET" name="IfcMechanicalFastenerTypeEnum.RIVET">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_RIVET_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_RIVET_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_ROPE" name="IfcMechanicalFastenerTypeEnum.ROPE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_ROPE_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_ROPE_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_SCREW" name="IfcMechanicalFastenerTypeEnum.SCREW">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_SCREW_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_SCREW_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_SHEARCONNECTOR" name="IfcMechanicalFastenerTypeEnum.SHEARCONNECTOR">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_SHEARCONNECTOR_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_SHEARCONNECTOR_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_STAPLE" name="IfcMechanicalFastenerTypeEnum.STAPLE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_STAPLE_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_STAPLE_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_STUDSHEARCONNECTOR" name="IfcMechanicalFastenerTypeEnum.STUDSHEARCONNECTOR">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_STUDSHEARCONNECTOR_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_STUDSHEARCONNECTOR_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_USERDEFINED" name="IfcMechanicalFastenerTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_USERDEFINED_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_USERDEFINED_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMechanicalFastenerTypeEnum_NOTDEFINED" name="IfcMechanicalFastenerTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_NOTDEFINED_gen_IfcMechanicalFastener" general="cl_IfcMechanicalFastener"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMechanicalFastenerTypeEnum_NOTDEFINED_gen_IfcMechanicalFastenerType" general="cl_IfcMechanicalFastenerType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryColumnShoe" name="Pset_DiscreteAccessoryColumnShoe">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryColumnShoe_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeBasePlateThickness" name="ColumnShoeBasePlateThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeBasePlateThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeBasePlateThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeBasePlateWidth" name="ColumnShoeBasePlateWidth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeBasePlateWidth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeBasePlateWidth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeBasePlateDepth" name="ColumnShoeBasePlateDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeBasePlateDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeBasePlateDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeCasingHeight" name="ColumnShoeCasingHeight">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeCasingHeight_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeCasingHeight_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeCasingWidth" name="ColumnShoeCasingWidth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeCasingWidth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeCasingWidth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeCasingDepth" name="ColumnShoeCasingDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeCasingDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeCasingDepth_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryColumnShoe_IfcDiscreteAccessoryTypeEnum.SHOE" client="cl_Pset_DiscreteAccessoryColumnShoe" supplier="cl_IfcDiscreteAccessoryTypeEnum_SHOE"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryCornerFixingPlate" name="Pset_DiscreteAccessoryCornerFixingPlate">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryCornerFixingPlate_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateLength" name="CornerFixingPlateLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateThickness" name="CornerFixingPlateThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateFlangeWidthInPlaneZ" name="CornerFixingPlateFlangeWidthInPlaneZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateFlangeWidthInPlaneZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateFlangeWidthInPlaneZ_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateFlangeWidthInPlaneX" name="CornerFixingPlateFlangeWidthInPlaneX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateFlangeWidthInPlaneX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateFlangeWidthInPlaneX_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryCornerFixingPlate_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryCornerFixingPlate" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryDiagonalTrussConnector" name="Pset_DiscreteAccessoryDiagonalTrussConnector">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryDiagonalTrussConnector_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussHeight" name="DiagonalTrussHeight">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussHeight_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussHeight_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussLength" name="DiagonalTrussLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussCrossBarSpacing" name="DiagonalTrussCrossBarSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussCrossBarSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussCrossBarSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussBaseBarDiameter" name="DiagonalTrussBaseBarDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussBaseBarDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussBaseBarDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussSecondaryBarDiameter" name="DiagonalTrussSecondaryBarDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussSecondaryBarDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussSecondaryBarDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussCrossBarDiameter" name="DiagonalTrussCrossBarDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussCrossBarDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussCrossBarDiameter_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryDiagonalTrussConnector_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryDiagonalTrussConnector" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryEdgeFixingPlate" name="Pset_DiscreteAccessoryEdgeFixingPlate">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryEdgeFixingPlate_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateLength" name="EdgeFixingPlateLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateThickness" name="EdgeFixingPlateThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateFlangeWidthInPlaneZ" name="EdgeFixingPlateFlangeWidthInPlaneZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateFlangeWidthInPlaneZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateFlangeWidthInPlaneZ_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateFlangeWidthInPlaneX" name="EdgeFixingPlateFlangeWidthInPlaneX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateFlangeWidthInPlaneX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateFlangeWidthInPlaneX_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryEdgeFixingPlate_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryEdgeFixingPlate" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryFixingSocket" name="Pset_DiscreteAccessoryFixingSocket">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryFixingSocket_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketTypeReference" name="FixingSocketTypeReference">
+        <type xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcExternalReference"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketTypeReference_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketTypeReference_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketHeight" name="FixingSocketHeight">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketHeight_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketHeight_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketThreadDiameter" name="FixingSocketThreadDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketThreadDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketThreadDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketThreadLength" name="FixingSocketThreadLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketThreadLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketThreadLength_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryFixingSocket_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryFixingSocket" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryLadderTrussConnector" name="Pset_DiscreteAccessoryLadderTrussConnector">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryLadderTrussConnector_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussHeight" name="LadderTrussHeight">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussHeight_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussHeight_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussLength" name="LadderTrussLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussCrossBarSpacing" name="LadderTrussCrossBarSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussCrossBarSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussCrossBarSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussBaseBarDiameter" name="LadderTrussBaseBarDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussBaseBarDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussBaseBarDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussSecondaryBarDiameter" name="LadderTrussSecondaryBarDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussSecondaryBarDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussSecondaryBarDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussCrossBarDiameter" name="LadderTrussCrossBarDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussCrossBarDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussCrossBarDiameter_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryLadderTrussConnector_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryLadderTrussConnector" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryStandardFixingPlate" name="Pset_DiscreteAccessoryStandardFixingPlate">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryStandardFixingPlate_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryStandardFixingPlate_StandardFixingPlateWidth" name="StandardFixingPlateWidth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryStandardFixingPlate_StandardFixingPlateWidth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryStandardFixingPlate_StandardFixingPlateWidth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryStandardFixingPlate_StandardFixingPlateDepth" name="StandardFixingPlateDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryStandardFixingPlate_StandardFixingPlateDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryStandardFixingPlate_StandardFixingPlateDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryStandardFixingPlate_StandardFixingPlateThickness" name="StandardFixingPlateThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryStandardFixingPlate_StandardFixingPlateThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryStandardFixingPlate_StandardFixingPlateThickness_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryStandardFixingPlate_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryStandardFixingPlate" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryWireLoop" name="Pset_DiscreteAccessoryWireLoop">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryWireLoop_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopBasePlateThickness" name="WireLoopBasePlateThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopBasePlateThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopBasePlateThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopBasePlateWidth" name="WireLoopBasePlateWidth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopBasePlateWidth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopBasePlateWidth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopBasePlateLength" name="WireLoopBasePlateLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopBasePlateLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopBasePlateLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireDiameter" name="WireDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireEmbeddingLength" name="WireEmbeddingLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireEmbeddingLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireEmbeddingLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopLength" name="WireLoopLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopLength_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryWireLoop_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryWireLoop" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementComponentCommon" name="Pset_ElementComponentCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementComponentCommon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementComponentCommon_Reference" name="Reference">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementComponentCommon_Reference_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementComponentCommon_Reference_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementComponentCommon_Status" name="Status">
+        <type xmi:type="uml:Enumeration" href="propertytypes.uml#en_PEnum_ElementStatus"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementComponentCommon_Status_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementComponentCommon_Status_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementComponentCommon_DeliveryType" name="DeliveryType" type="en_PEnum_ElementComponentDeliveryType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementComponentCommon_DeliveryType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementComponentCommon_DeliveryType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementComponentCommon_CorrosionTreatment" name="CorrosionTreatment" type="en_PEnum_ElementComponentCorrosionTreatment">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementComponentCommon_CorrosionTreatment_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementComponentCommon_CorrosionTreatment_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ElementComponentDeliveryType" name="PEnum_ElementComponentDeliveryType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentDeliveryType_ATTACHED_FOR_DELIVERY" name="ATTACHED_FOR_DELIVERY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentDeliveryType_CAST_IN_PLACE" name="CAST_IN_PLACE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentDeliveryType_LOOSE" name="LOOSE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentDeliveryType_PRECAST" name="PRECAST"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentDeliveryType_WELDED_TO_STRUCTURE" name="WELDED_TO_STRUCTURE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentDeliveryType_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ElementComponentCorrosionTreatment" name="PEnum_ElementComponentCorrosionTreatment">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_EPOXYCOATED" name="EPOXYCOATED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_GALVANISED" name="GALVANISED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_NONE" name="NONE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_PAINTED" name="PAINTED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_STAINLESS" name="STAINLESS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementComponentCommon_IfcElementComponent" client="cl_Pset_ElementComponentCommon" supplier="cl_IfcElementComponent"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FastenerWeld" name="Pset_FastenerWeld">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FastenerWeld_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Type1" name="Type1">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_Type1_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_Type1_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Type2" name="Type2">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_Type2_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_Type2_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Surface1" name="Surface1">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_Surface1_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_Surface1_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Surface2" name="Surface2">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_Surface2_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_Surface2_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Process" name="Process">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_Process_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_Process_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_ProcessName" name="ProcessName">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_ProcessName_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_ProcessName_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_NominalThroatThickness" name="NominalThroatThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_NominalThroatThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_NominalThroatThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_WeldWidth" name="WeldWidth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_WeldWidth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_WeldWidth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_WeldDiameter" name="WeldDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_WeldDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_WeldDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_WeldElementSpacing" name="WeldElementSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_WeldElementSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_WeldElementSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_WeldElementLength" name="WeldElementLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_WeldElementLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_WeldElementLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_NumberOfWeldElements" name="NumberOfWeldElements">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_NumberOfWeldElements_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_NumberOfWeldElements_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_DeepPenetrationThroatThickness" name="DeepPenetrationThroatThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_DeepPenetrationThroatThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_DeepPenetrationThroatThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_WeldLegLength" name="WeldLegLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_WeldLegLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_WeldLegLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Intermittent" name="Intermittent">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_Intermittent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_Intermittent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FastenerWeld_Staggered" name="Staggered">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FastenerWeld_Staggered_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_Staggered_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FastenerWeld_IfcFastenerTypeEnum.WELD" client="cl_Pset_FastenerWeld" supplier="cl_IfcFastenerTypeEnum_WELD"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalFastenerAnchorBolt" name="Pset_MechanicalFastenerAnchorBolt">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalFastenerAnchorBolt_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltLength" name="AnchorBoltLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltDiameter" name="AnchorBoltDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltThreadLength" name="AnchorBoltThreadLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltThreadLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltThreadLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltProtrusionLength" name="AnchorBoltProtrusionLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltProtrusionLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltProtrusionLength_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalFastenerAnchorBolt_IfcMechanicalFastenerTypeEnum.ANCHORBOLT" client="cl_Pset_MechanicalFastenerAnchorBolt" supplier="cl_IfcMechanicalFastenerTypeEnum_ANCHORBOLT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalFastenerBolt" name="Pset_MechanicalFastenerBolt">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalFastenerBolt_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_ThreadDiameter" name="ThreadDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalFastenerBolt_ThreadDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerBolt_ThreadDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_ThreadLength" name="ThreadLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalFastenerBolt_ThreadLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerBolt_ThreadLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_NutsCount" name="NutsCount">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalFastenerBolt_NutsCount_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerBolt_NutsCount_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_WashersCount" name="WashersCount">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalFastenerBolt_WashersCount_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerBolt_WashersCount_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_HeadShape" name="HeadShape">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalFastenerBolt_HeadShape_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerBolt_HeadShape_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_KeyShape" name="KeyShape">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalFastenerBolt_KeyShape_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerBolt_KeyShape_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_NutShape" name="NutShape">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalFastenerBolt_NutShape_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerBolt_NutShape_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalFastenerBolt_WasherShape" name="WasherShape">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalFastenerBolt_WasherShape_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerBolt_WasherShape_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalFastenerBolt_IfcMechanicalFastenerTypeEnum.BOLT" client="cl_Pset_MechanicalFastenerBolt" supplier="cl_IfcMechanicalFastenerTypeEnum_BOLT"/>
+  </packagedElement>
+</uml:Model>

@@ -1,142 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcCostResource" name="IfcCostResource">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcCostResource" name="IfcCostResource">
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAppliedValue" name="IfcAppliedValue">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11334" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11335" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11336" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11337" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_AppliedValue" name="AppliedValue" isOrdered="false" association="as_IfcAppliedValue_AppliedValue" type="un_IfcAppliedValueSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11338" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11339" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_UnitBasis" name="UnitBasis" isOrdered="false" association="as_IfcAppliedValue_UnitBasis">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcMeasureWithUnit"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11340" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11341" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_ApplicableDate" name="ApplicableDate" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11342" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11343" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_FixedUntilDate" name="FixedUntilDate" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11344" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11345" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_Category" name="Category" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11346" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11347" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_Condition" name="Condition" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11348" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11349" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_ArithmeticOperator" name="ArithmeticOperator" isOrdered="false" type="en_IfcArithmeticOperatorEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11350" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11351" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_Components" name="Components_L[1:?]" isOrdered="false" association="as_IfcAppliedValue_Components" type="cl_IfcAppliedValue">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11352" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11353" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcArithmeticOperatorEnum" name="IfcArithmeticOperatorEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_11354" name="ADD"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_11355" name="DIVIDE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_11356" name="MODULO"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_11357" name="MULTIPLY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_11358" name="SUBTRACT"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostValue" name="IfcCostValue">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_11359" general="cl_IfcAppliedValue"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCurrencyRelationship" name="IfcCurrencyRelationship">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_11360">
-          <general xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcResourceLevelRelationship"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCurrencyRelationship_RelatingMonetaryUnit" name="RelatingMonetaryUnit" isOrdered="false" association="as_IfcCurrencyRelationship_RelatingMonetaryUnit">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcMonetaryUnit"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11361" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11362" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCurrencyRelationship_RelatedMonetaryUnit" name="RelatedMonetaryUnit" isOrdered="false" association="as_IfcCurrencyRelationship_RelatedMonetaryUnit">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcMonetaryUnit"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11363" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11364" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCurrencyRelationship_ExchangeRate" name="ExchangeRate" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11365" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11366" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCurrencyRelationship_RateDateTime" name="RateDateTime" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11367" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11368" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCurrencyRelationship_RateSource" name="RateSource" isOrdered="false" association="as_IfcCurrencyRelationship_RateSource">
-          <type xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcLibraryInformation"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11369" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11370" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcAppliedValueSelect" name="IfcAppliedValueSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_11371" client="un_IfcAppliedValueSelect">
-        <supplier xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcMeasureWithUnit"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_11372" client="un_IfcAppliedValueSelect">
-        <supplier xmi:type="uml:Class" href="IfcConstraintResource.uml#cl_IfcReference"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_11373" client="un_IfcAppliedValueSelect">
-        <supplier xmi:type="uml:Class" href="IfcMeasureResource.uml#un_IfcValue"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAppliedValue_AppliedValue" name="AppliedValue" memberEnd="at_IfcAppliedValue_AppliedValue end_16">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_16" name="" association="as_IfcAppliedValue_AppliedValue" type="cl_IfcAppliedValue">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11374" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11375" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAppliedValue_UnitBasis" name="UnitBasis" memberEnd="at_IfcAppliedValue_UnitBasis end_18">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_18" name="" association="as_IfcAppliedValue_UnitBasis" type="cl_IfcAppliedValue">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11376" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11377" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAppliedValue_Components" name="Components" memberEnd="at_IfcAppliedValue_Components end_20">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_20" name="" association="as_IfcAppliedValue_Components" type="cl_IfcAppliedValue">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11378" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11379" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCurrencyRelationship_RelatingMonetaryUnit" name="RelatingMonetaryUnit" memberEnd="at_IfcCurrencyRelationship_RelatingMonetaryUnit end_178">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_178" name="" association="as_IfcCurrencyRelationship_RelatingMonetaryUnit" type="cl_IfcCurrencyRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11380" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11381" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCurrencyRelationship_RelatedMonetaryUnit" name="RelatedMonetaryUnit" memberEnd="at_IfcCurrencyRelationship_RelatedMonetaryUnit end_180">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_180" name="" association="as_IfcCurrencyRelationship_RelatedMonetaryUnit" type="cl_IfcCurrencyRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11382" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11383" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCurrencyRelationship_RateSource" name="RateSource" memberEnd="at_IfcCurrencyRelationship_RateSource end_182">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_182" name="" association="as_IfcCurrencyRelationship_RateSource" type="cl_IfcCurrencyRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11384" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11385" value="1"/>
-        </ownedEnd>
-      </packagedElement>
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcCostResource" name="IfcCostResource" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcCostResource" name="IfcCostResource">
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAppliedValue" name="IfcAppliedValue">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAppliedValue_Name_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAppliedValue_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAppliedValue_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAppliedValue_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_AppliedValue" name="AppliedValue" type="un_IfcAppliedValueSelect" association="as_IfcAppliedValue_AppliedValue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAppliedValue_AppliedValue_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAppliedValue_AppliedValue_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_UnitBasis" name="UnitBasis" association="as_IfcAppliedValue_UnitBasis">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcMeasureWithUnit"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAppliedValue_UnitBasis_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAppliedValue_UnitBasis_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_ApplicableDate" name="ApplicableDate">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAppliedValue_ApplicableDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAppliedValue_ApplicableDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_FixedUntilDate" name="FixedUntilDate">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAppliedValue_FixedUntilDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAppliedValue_FixedUntilDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_Category" name="Category">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAppliedValue_Category_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAppliedValue_Category_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_Condition" name="Condition">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAppliedValue_Condition_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAppliedValue_Condition_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_ArithmeticOperator" name="ArithmeticOperator" type="en_IfcArithmeticOperatorEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAppliedValue_ArithmeticOperator_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAppliedValue_ArithmeticOperator_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAppliedValue_Components" name="Components_L[1:?]" type="cl_IfcAppliedValue" association="as_IfcAppliedValue_Components">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAppliedValue_Components_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAppliedValue_Components_upper" value="1"/>
+      </ownedAttribute>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcArithmeticOperatorEnum" name="IfcArithmeticOperatorEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcArithmeticOperatorEnum_ADD" name="ADD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcArithmeticOperatorEnum_DIVIDE" name="DIVIDE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcArithmeticOperatorEnum_MODULO" name="MODULO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcArithmeticOperatorEnum_MULTIPLY" name="MULTIPLY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcArithmeticOperatorEnum_SUBTRACT" name="SUBTRACT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostValue" name="IfcCostValue">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostValue_gen_IfcAppliedValue" general="cl_IfcAppliedValue"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCurrencyRelationship" name="IfcCurrencyRelationship">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCurrencyRelationship_gen_IfcResourceLevelRelationship">
+        <general xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcResourceLevelRelationship"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCurrencyRelationship_RelatingMonetaryUnit" name="RelatingMonetaryUnit" association="as_IfcCurrencyRelationship_RelatingMonetaryUnit">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcMonetaryUnit"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCurrencyRelationship_RelatingMonetaryUnit_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCurrencyRelationship_RelatingMonetaryUnit_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCurrencyRelationship_RelatedMonetaryUnit" name="RelatedMonetaryUnit" association="as_IfcCurrencyRelationship_RelatedMonetaryUnit">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcMonetaryUnit"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCurrencyRelationship_RelatedMonetaryUnit_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCurrencyRelationship_RelatedMonetaryUnit_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCurrencyRelationship_ExchangeRate" name="ExchangeRate">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCurrencyRelationship_ExchangeRate_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCurrencyRelationship_ExchangeRate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCurrencyRelationship_RateDateTime" name="RateDateTime">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCurrencyRelationship_RateDateTime_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCurrencyRelationship_RateDateTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCurrencyRelationship_RateSource" name="RateSource" association="as_IfcCurrencyRelationship_RateSource">
+        <type xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcLibraryInformation"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCurrencyRelationship_RateSource_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCurrencyRelationship_RateSource_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcAppliedValueSelect" name="IfcAppliedValueSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcAppliedValueSelect_IfcMeasureWithUnit" client="un_IfcAppliedValueSelect">
+      <supplier xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcMeasureWithUnit"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcAppliedValueSelect_IfcReference" client="un_IfcAppliedValueSelect">
+      <supplier xmi:type="uml:Class" href="IfcConstraintResource.uml#cl_IfcReference"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcAppliedValueSelect_IfcValue" client="un_IfcAppliedValueSelect">
+      <supplier xmi:type="uml:Class" href="IfcMeasureResource.uml#un_IfcValue"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAppliedValue_AppliedValue" name="AppliedValue" memberEnd="at_IfcAppliedValue_AppliedValue as_IfcAppliedValue_AppliedValue_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAppliedValue_AppliedValue_target_end" name="" type="cl_IfcAppliedValue" association="as_IfcAppliedValue_AppliedValue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAppliedValue_AppliedValue_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAppliedValue_AppliedValue_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAppliedValue_UnitBasis" name="UnitBasis" memberEnd="at_IfcAppliedValue_UnitBasis as_IfcAppliedValue_UnitBasis_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAppliedValue_UnitBasis_target_end" name="" type="cl_IfcAppliedValue" association="as_IfcAppliedValue_UnitBasis">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAppliedValue_UnitBasis_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAppliedValue_UnitBasis_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAppliedValue_Components" name="Components" memberEnd="at_IfcAppliedValue_Components as_IfcAppliedValue_Components_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAppliedValue_Components_target_end" name="" type="cl_IfcAppliedValue" association="as_IfcAppliedValue_Components">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAppliedValue_Components_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAppliedValue_Components_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCurrencyRelationship_RelatingMonetaryUnit" name="RelatingMonetaryUnit" memberEnd="at_IfcCurrencyRelationship_RelatingMonetaryUnit as_IfcCurrencyRelationship_RelatingMonetaryUnit_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCurrencyRelationship_RelatingMonetaryUnit_target_end" name="" type="cl_IfcCurrencyRelationship" association="as_IfcCurrencyRelationship_RelatingMonetaryUnit">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCurrencyRelationship_RelatingMonetaryUnit_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCurrencyRelationship_RelatingMonetaryUnit_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCurrencyRelationship_RelatedMonetaryUnit" name="RelatedMonetaryUnit" memberEnd="at_IfcCurrencyRelationship_RelatedMonetaryUnit as_IfcCurrencyRelationship_RelatedMonetaryUnit_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCurrencyRelationship_RelatedMonetaryUnit_target_end" name="" type="cl_IfcCurrencyRelationship" association="as_IfcCurrencyRelationship_RelatedMonetaryUnit">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCurrencyRelationship_RelatedMonetaryUnit_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCurrencyRelationship_RelatedMonetaryUnit_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCurrencyRelationship_RateSource" name="RateSource" memberEnd="at_IfcCurrencyRelationship_RateSource as_IfcCurrencyRelationship_RateSource_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCurrencyRelationship_RateSource_target_end" name="" type="cl_IfcCurrencyRelationship" association="as_IfcCurrencyRelationship_RateSource">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCurrencyRelationship_RateSource_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCurrencyRelationship_RateSource_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
