@@ -9,6 +9,8 @@ The nesting relationship _IfcRelNests_ is a special type of the general composit
 
 > EXAMPLE A series of _IfcDistributionPort_ entities can be nested within an _IfcDistributionElement_. They decompose the distribution element and have an implied order.
 
+> EXAMPLE A series of _IfcCableSegment_ entities can be nested within an _IfcCableCarrierSegment_.
+
 Decompositions imply a dependency, i.e. the definition of the whole depends on the definition of the parts and the parts depend on the existence of the whole. The behaviour that is implied from the dependency has to be established inside the applications.
 
 > HISTORY New entity in IFC2.0
