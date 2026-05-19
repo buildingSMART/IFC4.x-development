@@ -1,604 +1,602 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcProcessExtension" name="IfcProcessExtension">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcProcessExtension" name="IfcProcessExtension">
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcEventTriggerTypeEnum" name="IfcEventTriggerTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19934" name="EVENTCOMPLEX"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19935" name="EVENTMESSAGE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19936" name="EVENTRULE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19937" name="EVENTTIME"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19938" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19939" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcEventTypeEnum" name="IfcEventTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19940" name="ENDEVENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19941" name="INTERMEDIATEEVENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19942" name="STARTEVENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19943" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19944" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcProcedureTypeEnum" name="IfcProcedureTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19945" name="ADVICE_CAUTION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19946" name="ADVICE_NOTE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19947" name="ADVICE_WARNING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19948" name="CALIBRATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19949" name="DIAGNOSTIC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19950" name="SHUTDOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19951" name="STARTUP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19952" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19953" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcSequenceEnum" name="IfcSequenceEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19954" name="FINISH_FINISH"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19955" name="FINISH_START"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19956" name="START_FINISH"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19957" name="START_START"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19958" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19959" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcTaskTypeEnum" name="IfcTaskTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19960" name="ADJUSTMENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19961" name="ATTENDANCE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19962" name="CALIBRATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19963" name="CONSTRUCTION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19964" name="DEMOLITION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19965" name="DISMANTLE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19966" name="DISPOSAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19967" name="EMERGENCY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19968" name="INSPECTION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19969" name="INSTALLATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19970" name="LOGISTIC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19971" name="MAINTENANCE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19972" name="MOVE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19973" name="OPERATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19974" name="REMOVAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19975" name="RENOVATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19976" name="SAFETY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19977" name="SHUTDOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19978" name="STARTUP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19979" name="TESTING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19980" name="TROUBLESHOOTING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19981" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19982" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcWorkCalendarTypeEnum" name="IfcWorkCalendarTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19983" name="FIRSTSHIFT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19984" name="SECONDSHIFT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19985" name="THIRDSHIFT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19986" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19987" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcWorkPlanTypeEnum" name="IfcWorkPlanTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19988" name="ACTUAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19989" name="BASELINE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19990" name="PLANNED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19991" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19992" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcWorkScheduleTypeEnum" name="IfcWorkScheduleTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19993" name="ACTUAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19994" name="BASELINE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19995" name="PLANNED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19996" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19997" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRelSequence" name="IfcRelSequence">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19998">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcRelConnects"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelSequence_RelatingProcess" name="RelatingProcess" isOrdered="false" association="as_IfcRelSequence_RelatingProcess">
-          <type xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProcess"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19999" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20000" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelSequence_RelatedProcess" name="RelatedProcess" isOrdered="false" association="as_IfcRelSequence_RelatedProcess">
-          <type xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProcess"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20001" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20002" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelSequence_TimeLag" name="TimeLag" isOrdered="false" association="as_IfcRelSequence_TimeLag">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcLagTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20003" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20004" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelSequence_SequenceType" name="SequenceType" isOrdered="false" type="en_IfcSequenceEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20005" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20006" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelSequence_UserDefinedSequenceType" name="UserDefinedSequenceType" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20007" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20008" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRelSequence_AvoidInconsistentSequence" name="AvoidInconsistentSequence">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_20009" name="AvoidInconsistentSequence">
-            <language>EXPRESS_WHERE</language>
-            <body>RelatingProcess :&lt;&gt;: RelatedProcess</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRelSequence_CorrectSequenceType" name="CorrectSequenceType">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_20010" name="CorrectSequenceType">
-            <language>EXPRESS_WHERE</language>
-            <body>(SequenceType &lt;&gt; IfcSequenceEnum.USERDEFINED) OR ((SequenceType = IfcSequenceEnum.USERDEFINED) AND EXISTS(UserDefinedSequenceType))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEvent" name="IfcEvent">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20011">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProcess"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEvent_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcEventTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20012" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20013" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEvent_EventTriggerType" name="EventTriggerType" isOrdered="false" type="en_IfcEventTriggerTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20014" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20015" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEvent_UserDefinedEventTriggerType" name="UserDefinedEventTriggerType" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20016" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20017" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEvent_EventOccurenceTime" name="EventOccurenceTime" isOrdered="false" association="as_IfcEvent_EventOccurenceTime">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcEventTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20018" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20019" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcEvent_CorrectTypeAssigned" name="CorrectTypeAssigned">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_20020" name="CorrectTypeAssigned">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(EXISTS(EventTriggerType)) OR (EventTriggerType &lt;&gt; IfcEventTriggerTypeEnum.USERDEFINED) OR ((EventTriggerType = IfcEventTriggerTypeEnum.USERDEFINED) AND EXISTS(UserDefinedEventTriggerType))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventType" name="IfcEventType">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20021">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcTypeProcess"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventType_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcEventTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20022" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20023" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventType_EventTriggerType" name="EventTriggerType" isOrdered="false" type="en_IfcEventTriggerTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20024" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20025" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventType_UserDefinedEventTriggerType" name="UserDefinedEventTriggerType" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20026" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20027" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcEventType_CorrectEventTriggerType" name="CorrectEventTriggerType">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_20028" name="CorrectEventTriggerType">
-            <language>EXPRESS_WHERE</language>
-            <body>(EventTriggerType &lt;&gt; IfcEventTriggerTypeEnum.USERDEFINED) OR ((EventTriggerType = IfcEventTriggerTypeEnum.USERDEFINED) AND EXISTS(UserDefinedEventTriggerType))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedure" name="IfcProcedure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20029">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProcess"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProcedure_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcProcedureTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20030" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20031" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcProcedure_HasName" name="HasName">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_20032" name="HasName">
-            <language>EXPRESS_WHERE</language>
-            <body>EXISTS(SELF\IfcRoot.Name)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureType" name="IfcProcedureType">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20033">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcTypeProcess"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProcedureType_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcProcedureTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20034" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20035" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTask" name="IfcTask">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20036">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProcess"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTask_Status" name="Status" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20037" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20038" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTask_WorkMethod" name="WorkMethod" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20039" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20040" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTask_IsMilestone" name="IsMilestone" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20041" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20042" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTask_Priority" name="Priority" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20043" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20044" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTask_TaskTime" name="TaskTime" isOrdered="false" association="as_IfcTask_TaskTime">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTaskTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20045" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20046" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTask_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcTaskTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20047" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20048" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcTask_HasName" name="HasName">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_20049" name="HasName">
-            <language>EXPRESS_WHERE</language>
-            <body>EXISTS(SELF\IfcRoot.Name)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskType" name="IfcTaskType">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20050">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcTypeProcess"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskType_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcTaskTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20051" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20052" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskType_WorkMethod" name="WorkMethod" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20053" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20054" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkCalendar" name="IfcWorkCalendar">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20055">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkCalendar_WorkingTimes" name="WorkingTimes_S[1:?]" isOrdered="false" association="as_IfcWorkCalendar_WorkingTimes">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcWorkTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20056" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20057" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkCalendar_ExceptionTimes" name="ExceptionTimes_S[1:?]" isOrdered="false" association="as_IfcWorkCalendar_ExceptionTimes">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcWorkTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20058" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20059" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkCalendar_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcWorkCalendarTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20060" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20061" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkControl" name="IfcWorkControl" isAbstract="true">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20062">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_CreationDate" name="CreationDate" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20063" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20064" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_Creators" name="Creators_S[1:?]" isOrdered="false" association="as_IfcWorkControl_Creators">
-          <type xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcPerson"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20065" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20066" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_Purpose" name="Purpose" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20067" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20068" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_Duration" name="Duration" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20069" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20070" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_TotalFloat" name="TotalFloat" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20071" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20072" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_StartTime" name="StartTime" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20073" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20074" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_FinishTime" name="FinishTime" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20075" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20076" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkPlan" name="IfcWorkPlan">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20077" general="cl_IfcWorkControl"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkPlan_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcWorkPlanTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20078" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20079" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkSchedule" name="IfcWorkSchedule">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20080" general="cl_IfcWorkControl"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkSchedule_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcWorkScheduleTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20081" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20082" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcEvent_EventOccurenceTime" name="EventOccurenceTime" memberEnd="at_IfcEvent_EventOccurenceTime end_252">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_252" name="" association="as_IfcEvent_EventOccurenceTime" type="cl_IfcEvent">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20083" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20084" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventTypeEnum_ENDEVENT" name="IfcEventTypeEnum.ENDEVENT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20085" general="cl_IfcEvent"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20086" general="cl_IfcEventType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventTypeEnum_INTERMEDIATEEVENT" name="IfcEventTypeEnum.INTERMEDIATEEVENT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20087" general="cl_IfcEvent"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20088" general="cl_IfcEventType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventTypeEnum_STARTEVENT" name="IfcEventTypeEnum.STARTEVENT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20089" general="cl_IfcEvent"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20090" general="cl_IfcEventType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventTypeEnum_USERDEFINED" name="IfcEventTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20091" general="cl_IfcEvent"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20092" general="cl_IfcEventType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventTypeEnum_NOTDEFINED" name="IfcEventTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20093" general="cl_IfcEvent"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20094" general="cl_IfcEventType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_ADVICE_CAUTION" name="IfcProcedureTypeEnum.ADVICE_CAUTION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20095" general="cl_IfcProcedure"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20096" general="cl_IfcProcedureType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_ADVICE_NOTE" name="IfcProcedureTypeEnum.ADVICE_NOTE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20097" general="cl_IfcProcedure"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20098" general="cl_IfcProcedureType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_ADVICE_WARNING" name="IfcProcedureTypeEnum.ADVICE_WARNING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20099" general="cl_IfcProcedure"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20100" general="cl_IfcProcedureType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_CALIBRATION" name="IfcProcedureTypeEnum.CALIBRATION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20101" general="cl_IfcProcedure"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20102" general="cl_IfcProcedureType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_DIAGNOSTIC" name="IfcProcedureTypeEnum.DIAGNOSTIC">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20103" general="cl_IfcProcedure"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20104" general="cl_IfcProcedureType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_SHUTDOWN" name="IfcProcedureTypeEnum.SHUTDOWN">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20105" general="cl_IfcProcedure"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20106" general="cl_IfcProcedureType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_STARTUP" name="IfcProcedureTypeEnum.STARTUP">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20107" general="cl_IfcProcedure"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20108" general="cl_IfcProcedureType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_USERDEFINED" name="IfcProcedureTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20109" general="cl_IfcProcedure"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20110" general="cl_IfcProcedureType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_NOTDEFINED" name="IfcProcedureTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20111" general="cl_IfcProcedure"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20112" general="cl_IfcProcedureType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelSequence_RelatingProcess" name="RelatingProcess" memberEnd="at_IfcRelSequence_RelatingProcess end_718">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_718" name="INV_IsPredecessorTo_S[0:?]" association="as_IfcRelSequence_RelatingProcess" type="cl_IfcRelSequence">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20113" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20114" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelSequence_RelatedProcess" name="RelatedProcess" memberEnd="at_IfcRelSequence_RelatedProcess end_720">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_720" name="INV_IsSuccessorFrom_S[0:?]" association="as_IfcRelSequence_RelatedProcess" type="cl_IfcRelSequence">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20115" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20116" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelSequence_TimeLag" name="TimeLag" memberEnd="at_IfcRelSequence_TimeLag end_722">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_722" name="" association="as_IfcRelSequence_TimeLag" type="cl_IfcRelSequence">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20117" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20118" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcTask_TaskTime" name="TaskTime" memberEnd="at_IfcTask_TaskTime end_900">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_900" name="" association="as_IfcTask_TaskTime" type="cl_IfcTask">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20119" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20120" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_ADJUSTMENT" name="IfcTaskTypeEnum.ADJUSTMENT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20121" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20122" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_ATTENDANCE" name="IfcTaskTypeEnum.ATTENDANCE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20123" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20124" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_CALIBRATION" name="IfcTaskTypeEnum.CALIBRATION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20125" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20126" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_CONSTRUCTION" name="IfcTaskTypeEnum.CONSTRUCTION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20127" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20128" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_DEMOLITION" name="IfcTaskTypeEnum.DEMOLITION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20129" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20130" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_DISMANTLE" name="IfcTaskTypeEnum.DISMANTLE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20131" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20132" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_DISPOSAL" name="IfcTaskTypeEnum.DISPOSAL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20133" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20134" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_EMERGENCY" name="IfcTaskTypeEnum.EMERGENCY">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20135" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20136" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_INSPECTION" name="IfcTaskTypeEnum.INSPECTION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20137" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20138" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_INSTALLATION" name="IfcTaskTypeEnum.INSTALLATION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20139" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20140" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_LOGISTIC" name="IfcTaskTypeEnum.LOGISTIC">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20141" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20142" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_MAINTENANCE" name="IfcTaskTypeEnum.MAINTENANCE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20143" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20144" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_MOVE" name="IfcTaskTypeEnum.MOVE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20145" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20146" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_OPERATION" name="IfcTaskTypeEnum.OPERATION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20147" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20148" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_REMOVAL" name="IfcTaskTypeEnum.REMOVAL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20149" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20150" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_RENOVATION" name="IfcTaskTypeEnum.RENOVATION">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20151" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20152" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_SAFETY" name="IfcTaskTypeEnum.SAFETY">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20153" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20154" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_SHUTDOWN" name="IfcTaskTypeEnum.SHUTDOWN">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20155" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20156" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_STARTUP" name="IfcTaskTypeEnum.STARTUP">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20157" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20158" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_TESTING" name="IfcTaskTypeEnum.TESTING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20159" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20160" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_TROUBLESHOOTING" name="IfcTaskTypeEnum.TROUBLESHOOTING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20161" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20162" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_USERDEFINED" name="IfcTaskTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20163" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20164" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_NOTDEFINED" name="IfcTaskTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20165" general="cl_IfcTask"/>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20166" general="cl_IfcTaskType"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWorkCalendar_WorkingTimes" name="WorkingTimes" memberEnd="at_IfcWorkCalendar_WorkingTimes end_968">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_968" name="" association="as_IfcWorkCalendar_WorkingTimes" type="cl_IfcWorkCalendar">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20167" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20168" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWorkCalendar_ExceptionTimes" name="ExceptionTimes" memberEnd="at_IfcWorkCalendar_ExceptionTimes end_970">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_970" name="" association="as_IfcWorkCalendar_ExceptionTimes" type="cl_IfcWorkCalendar">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20169" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20170" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkCalendarTypeEnum_FIRSTSHIFT" name="IfcWorkCalendarTypeEnum.FIRSTSHIFT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20171" general="cl_IfcWorkCalendar"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkCalendarTypeEnum_SECONDSHIFT" name="IfcWorkCalendarTypeEnum.SECONDSHIFT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20172" general="cl_IfcWorkCalendar"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkCalendarTypeEnum_THIRDSHIFT" name="IfcWorkCalendarTypeEnum.THIRDSHIFT">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20173" general="cl_IfcWorkCalendar"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkCalendarTypeEnum_USERDEFINED" name="IfcWorkCalendarTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20174" general="cl_IfcWorkCalendar"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkCalendarTypeEnum_NOTDEFINED" name="IfcWorkCalendarTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20175" general="cl_IfcWorkCalendar"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWorkControl_Creators" name="Creators" memberEnd="at_IfcWorkControl_Creators end_972">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_972" name="" association="as_IfcWorkControl_Creators" type="cl_IfcWorkControl">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20176" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20177" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkPlanTypeEnum_ACTUAL" name="IfcWorkPlanTypeEnum.ACTUAL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20178" general="cl_IfcWorkPlan"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkPlanTypeEnum_BASELINE" name="IfcWorkPlanTypeEnum.BASELINE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20179" general="cl_IfcWorkPlan"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkPlanTypeEnum_PLANNED" name="IfcWorkPlanTypeEnum.PLANNED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20180" general="cl_IfcWorkPlan"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkPlanTypeEnum_USERDEFINED" name="IfcWorkPlanTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20181" general="cl_IfcWorkPlan"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkPlanTypeEnum_NOTDEFINED" name="IfcWorkPlanTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20182" general="cl_IfcWorkPlan"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkScheduleTypeEnum_ACTUAL" name="IfcWorkScheduleTypeEnum.ACTUAL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20183" general="cl_IfcWorkSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkScheduleTypeEnum_BASELINE" name="IfcWorkScheduleTypeEnum.BASELINE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20184" general="cl_IfcWorkSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkScheduleTypeEnum_PLANNED" name="IfcWorkScheduleTypeEnum.PLANNED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20185" general="cl_IfcWorkSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkScheduleTypeEnum_USERDEFINED" name="IfcWorkScheduleTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20186" general="cl_IfcWorkSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkScheduleTypeEnum_NOTDEFINED" name="IfcWorkScheduleTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_20187" general="cl_IfcWorkSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WorkControlCommon" name="Pset_WorkControlCommon">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_20188">
-          <body>PSET_OCCURRENCEDRIVEN</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WorkControlCommon_WorkStartTime" name="WorkStartTime" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20189" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20190" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WorkControlCommon_WorkFinishTime" name="WorkFinishTime" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20191" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20192" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WorkControlCommon_WorkDayDuration" name="WorkDayDuration" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20193" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20194" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WorkControlCommon_WorkWeekDuration" name="WorkWeekDuration" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20195" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20196" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WorkControlCommon_WorkMonthDuration" name="WorkMonthDuration" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_20197" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_20198" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_20199" client="cl_Pset_WorkControlCommon" supplier="cl_IfcWorkControl"/>
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcProcessExtension" name="IfcProcessExtension" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcProcessExtension" name="IfcProcessExtension">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcEventTriggerTypeEnum" name="IfcEventTriggerTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEventTriggerTypeEnum_EVENTCOMPLEX" name="EVENTCOMPLEX"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEventTriggerTypeEnum_EVENTMESSAGE" name="EVENTMESSAGE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEventTriggerTypeEnum_EVENTRULE" name="EVENTRULE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEventTriggerTypeEnum_EVENTTIME" name="EVENTTIME"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEventTriggerTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEventTriggerTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcEventTypeEnum" name="IfcEventTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEventTypeEnum_ENDEVENT" name="ENDEVENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEventTypeEnum_INTERMEDIATEEVENT" name="INTERMEDIATEEVENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEventTypeEnum_STARTEVENT" name="STARTEVENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEventTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEventTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcProcedureTypeEnum" name="IfcProcedureTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProcedureTypeEnum_ADVICE_CAUTION" name="ADVICE_CAUTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProcedureTypeEnum_ADVICE_NOTE" name="ADVICE_NOTE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProcedureTypeEnum_ADVICE_WARNING" name="ADVICE_WARNING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProcedureTypeEnum_CALIBRATION" name="CALIBRATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProcedureTypeEnum_DIAGNOSTIC" name="DIAGNOSTIC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProcedureTypeEnum_SHUTDOWN" name="SHUTDOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProcedureTypeEnum_STARTUP" name="STARTUP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProcedureTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProcedureTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcSequenceEnum" name="IfcSequenceEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSequenceEnum_FINISH_FINISH" name="FINISH_FINISH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSequenceEnum_FINISH_START" name="FINISH_START"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSequenceEnum_START_FINISH" name="START_FINISH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSequenceEnum_START_START" name="START_START"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSequenceEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSequenceEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcTaskTypeEnum" name="IfcTaskTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_ADJUSTMENT" name="ADJUSTMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_ATTENDANCE" name="ATTENDANCE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_CALIBRATION" name="CALIBRATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_CONSTRUCTION" name="CONSTRUCTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_DEMOLITION" name="DEMOLITION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_DISMANTLE" name="DISMANTLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_DISPOSAL" name="DISPOSAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_EMERGENCY" name="EMERGENCY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_INSPECTION" name="INSPECTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_INSTALLATION" name="INSTALLATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_LOGISTIC" name="LOGISTIC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_MAINTENANCE" name="MAINTENANCE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_MOVE" name="MOVE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_OPERATION" name="OPERATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_REMOVAL" name="REMOVAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_RENOVATION" name="RENOVATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_SAFETY" name="SAFETY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_SHUTDOWN" name="SHUTDOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_STARTUP" name="STARTUP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_TESTING" name="TESTING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_TROUBLESHOOTING" name="TROUBLESHOOTING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcWorkCalendarTypeEnum" name="IfcWorkCalendarTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkCalendarTypeEnum_FIRSTSHIFT" name="FIRSTSHIFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkCalendarTypeEnum_SECONDSHIFT" name="SECONDSHIFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkCalendarTypeEnum_THIRDSHIFT" name="THIRDSHIFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkCalendarTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkCalendarTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcWorkPlanTypeEnum" name="IfcWorkPlanTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkPlanTypeEnum_ACTUAL" name="ACTUAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkPlanTypeEnum_BASELINE" name="BASELINE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkPlanTypeEnum_PLANNED" name="PLANNED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkPlanTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkPlanTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcWorkScheduleTypeEnum" name="IfcWorkScheduleTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkScheduleTypeEnum_ACTUAL" name="ACTUAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkScheduleTypeEnum_BASELINE" name="BASELINE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkScheduleTypeEnum_PLANNED" name="PLANNED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkScheduleTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWorkScheduleTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRelSequence" name="IfcRelSequence">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRelSequence_AvoidInconsistentSequence" name="AvoidInconsistentSequence">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcRelSequence_AvoidInconsistentSequence" name="AvoidInconsistentSequence">
+          <language>EXPRESS_WHERE</language>
+          <body>RelatingProcess :&lt;&gt;: RelatedProcess</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRelSequence_CorrectSequenceType" name="CorrectSequenceType">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcRelSequence_CorrectSequenceType" name="CorrectSequenceType">
+          <language>EXPRESS_WHERE</language>
+          <body>(SequenceType &lt;&gt; IfcSequenceEnum.USERDEFINED) OR ((SequenceType = IfcSequenceEnum.USERDEFINED) AND EXISTS(UserDefinedSequenceType))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRelSequence_gen_IfcRelConnects">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcRelConnects"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelSequence_RelatingProcess" name="RelatingProcess" association="as_IfcRelSequence_RelatingProcess">
+        <type xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProcess"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRelSequence_RelatingProcess_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRelSequence_RelatingProcess_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelSequence_RelatedProcess" name="RelatedProcess" association="as_IfcRelSequence_RelatedProcess">
+        <type xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProcess"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRelSequence_RelatedProcess_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRelSequence_RelatedProcess_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelSequence_TimeLag" name="TimeLag" association="as_IfcRelSequence_TimeLag">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcLagTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRelSequence_TimeLag_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRelSequence_TimeLag_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelSequence_SequenceType" name="SequenceType" type="en_IfcSequenceEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRelSequence_SequenceType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRelSequence_SequenceType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRelSequence_UserDefinedSequenceType" name="UserDefinedSequenceType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRelSequence_UserDefinedSequenceType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRelSequence_UserDefinedSequenceType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEvent" name="IfcEvent">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcEvent_CorrectTypeAssigned" name="CorrectTypeAssigned">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcEvent_CorrectTypeAssigned" name="CorrectTypeAssigned">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(EXISTS(EventTriggerType)) OR (EventTriggerType &lt;&gt; IfcEventTriggerTypeEnum.USERDEFINED) OR ((EventTriggerType = IfcEventTriggerTypeEnum.USERDEFINED) AND EXISTS(UserDefinedEventTriggerType))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEvent_gen_IfcProcess">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProcess"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEvent_PredefinedType" name="PredefinedType" type="en_IfcEventTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcEvent_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcEvent_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEvent_EventTriggerType" name="EventTriggerType" type="en_IfcEventTriggerTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcEvent_EventTriggerType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcEvent_EventTriggerType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEvent_UserDefinedEventTriggerType" name="UserDefinedEventTriggerType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcEvent_UserDefinedEventTriggerType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcEvent_UserDefinedEventTriggerType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEvent_EventOccurenceTime" name="EventOccurenceTime" association="as_IfcEvent_EventOccurenceTime">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcEventTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcEvent_EventOccurenceTime_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcEvent_EventOccurenceTime_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventType" name="IfcEventType">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcEventType_CorrectEventTriggerType" name="CorrectEventTriggerType">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcEventType_CorrectEventTriggerType" name="CorrectEventTriggerType">
+          <language>EXPRESS_WHERE</language>
+          <body>(EventTriggerType &lt;&gt; IfcEventTriggerTypeEnum.USERDEFINED) OR ((EventTriggerType = IfcEventTriggerTypeEnum.USERDEFINED) AND EXISTS(UserDefinedEventTriggerType))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEventType_gen_IfcTypeProcess">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcTypeProcess"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventType_PredefinedType" name="PredefinedType" type="en_IfcEventTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcEventType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcEventType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventType_EventTriggerType" name="EventTriggerType" type="en_IfcEventTriggerTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcEventType_EventTriggerType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcEventType_EventTriggerType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventType_UserDefinedEventTriggerType" name="UserDefinedEventTriggerType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcEventType_UserDefinedEventTriggerType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcEventType_UserDefinedEventTriggerType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedure" name="IfcProcedure">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcProcedure_HasName" name="HasName">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcProcedure_HasName" name="HasName">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS(SELF\IfcRoot.Name)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedure_gen_IfcProcess">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProcess"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProcedure_PredefinedType" name="PredefinedType" type="en_IfcProcedureTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcProcedure_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcProcedure_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureType" name="IfcProcedureType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureType_gen_IfcTypeProcess">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcTypeProcess"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProcedureType_PredefinedType" name="PredefinedType" type="en_IfcProcedureTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcProcedureType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcProcedureType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTask" name="IfcTask">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcTask_HasName" name="HasName">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcTask_HasName" name="HasName">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS(SELF\IfcRoot.Name)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTask_gen_IfcProcess">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProcess"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTask_Status" name="Status">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTask_Status_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTask_Status_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTask_WorkMethod" name="WorkMethod">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTask_WorkMethod_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTask_WorkMethod_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTask_IsMilestone" name="IsMilestone">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTask_IsMilestone_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTask_IsMilestone_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTask_Priority" name="Priority">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTask_Priority_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTask_Priority_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTask_TaskTime" name="TaskTime" association="as_IfcTask_TaskTime">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTaskTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTask_TaskTime_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTask_TaskTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTask_PredefinedType" name="PredefinedType" type="en_IfcTaskTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTask_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTask_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskType" name="IfcTaskType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskType_gen_IfcTypeProcess">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcTypeProcess"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskType_PredefinedType" name="PredefinedType" type="en_IfcTaskTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskType_WorkMethod" name="WorkMethod">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskType_WorkMethod_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskType_WorkMethod_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkCalendar" name="IfcWorkCalendar">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkCalendar_gen_IfcControl">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkCalendar_WorkingTimes" name="WorkingTimes_S[1:?]" association="as_IfcWorkCalendar_WorkingTimes">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcWorkTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkCalendar_WorkingTimes_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkCalendar_WorkingTimes_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkCalendar_ExceptionTimes" name="ExceptionTimes_S[1:?]" association="as_IfcWorkCalendar_ExceptionTimes">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcWorkTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkCalendar_ExceptionTimes_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkCalendar_ExceptionTimes_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkCalendar_PredefinedType" name="PredefinedType" type="en_IfcWorkCalendarTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkCalendar_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkCalendar_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkControl" name="IfcWorkControl" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkControl_gen_IfcControl">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_CreationDate" name="CreationDate">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkControl_CreationDate_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkControl_CreationDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_Creators" name="Creators_S[1:?]" association="as_IfcWorkControl_Creators">
+        <type xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcPerson"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkControl_Creators_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkControl_Creators_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_Purpose" name="Purpose">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkControl_Purpose_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkControl_Purpose_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_Duration" name="Duration">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkControl_Duration_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkControl_Duration_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_TotalFloat" name="TotalFloat">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkControl_TotalFloat_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkControl_TotalFloat_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_StartTime" name="StartTime">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkControl_StartTime_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkControl_StartTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkControl_FinishTime" name="FinishTime">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkControl_FinishTime_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkControl_FinishTime_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkPlan" name="IfcWorkPlan">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkPlan_gen_IfcWorkControl" general="cl_IfcWorkControl"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkPlan_PredefinedType" name="PredefinedType" type="en_IfcWorkPlanTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkPlan_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkPlan_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkSchedule" name="IfcWorkSchedule">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkSchedule_gen_IfcWorkControl" general="cl_IfcWorkControl"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkSchedule_PredefinedType" name="PredefinedType" type="en_IfcWorkScheduleTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkSchedule_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkSchedule_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelSequence_RelatingProcess" name="RelatingProcess" memberEnd="at_IfcRelSequence_RelatingProcess as_IfcRelSequence_RelatingProcess_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelSequence_RelatingProcess_target_end" name="INV_IsPredecessorTo_S[0:?]" type="cl_IfcRelSequence" association="as_IfcRelSequence_RelatingProcess">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelSequence_RelatingProcess_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelSequence_RelatingProcess_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelSequence_RelatedProcess" name="RelatedProcess" memberEnd="at_IfcRelSequence_RelatedProcess as_IfcRelSequence_RelatedProcess_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelSequence_RelatedProcess_target_end" name="INV_IsSuccessorFrom_S[0:?]" type="cl_IfcRelSequence" association="as_IfcRelSequence_RelatedProcess">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelSequence_RelatedProcess_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelSequence_RelatedProcess_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelSequence_TimeLag" name="TimeLag" memberEnd="at_IfcRelSequence_TimeLag as_IfcRelSequence_TimeLag_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelSequence_TimeLag_target_end" name="" type="cl_IfcRelSequence" association="as_IfcRelSequence_TimeLag">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelSequence_TimeLag_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelSequence_TimeLag_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcEvent_EventOccurenceTime" name="EventOccurenceTime" memberEnd="at_IfcEvent_EventOccurenceTime as_IfcEvent_EventOccurenceTime_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcEvent_EventOccurenceTime_target_end" name="" type="cl_IfcEvent" association="as_IfcEvent_EventOccurenceTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcEvent_EventOccurenceTime_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcEvent_EventOccurenceTime_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventTypeEnum_ENDEVENT" name="IfcEventTypeEnum.ENDEVENT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEventTypeEnum_ENDEVENT_gen_IfcEvent" general="cl_IfcEvent"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEventTypeEnum_ENDEVENT_gen_IfcEventType" general="cl_IfcEventType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventTypeEnum_INTERMEDIATEEVENT" name="IfcEventTypeEnum.INTERMEDIATEEVENT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEventTypeEnum_INTERMEDIATEEVENT_gen_IfcEvent" general="cl_IfcEvent"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEventTypeEnum_INTERMEDIATEEVENT_gen_IfcEventType" general="cl_IfcEventType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventTypeEnum_STARTEVENT" name="IfcEventTypeEnum.STARTEVENT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEventTypeEnum_STARTEVENT_gen_IfcEvent" general="cl_IfcEvent"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEventTypeEnum_STARTEVENT_gen_IfcEventType" general="cl_IfcEventType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventTypeEnum_USERDEFINED" name="IfcEventTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEventTypeEnum_USERDEFINED_gen_IfcEvent" general="cl_IfcEvent"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEventTypeEnum_USERDEFINED_gen_IfcEventType" general="cl_IfcEventType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventTypeEnum_NOTDEFINED" name="IfcEventTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEventTypeEnum_NOTDEFINED_gen_IfcEvent" general="cl_IfcEvent"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEventTypeEnum_NOTDEFINED_gen_IfcEventType" general="cl_IfcEventType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_ADVICE_CAUTION" name="IfcProcedureTypeEnum.ADVICE_CAUTION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_ADVICE_CAUTION_gen_IfcProcedure" general="cl_IfcProcedure"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_ADVICE_CAUTION_gen_IfcProcedureType" general="cl_IfcProcedureType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_ADVICE_NOTE" name="IfcProcedureTypeEnum.ADVICE_NOTE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_ADVICE_NOTE_gen_IfcProcedure" general="cl_IfcProcedure"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_ADVICE_NOTE_gen_IfcProcedureType" general="cl_IfcProcedureType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_ADVICE_WARNING" name="IfcProcedureTypeEnum.ADVICE_WARNING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_ADVICE_WARNING_gen_IfcProcedure" general="cl_IfcProcedure"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_ADVICE_WARNING_gen_IfcProcedureType" general="cl_IfcProcedureType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_CALIBRATION" name="IfcProcedureTypeEnum.CALIBRATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_CALIBRATION_gen_IfcProcedure" general="cl_IfcProcedure"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_CALIBRATION_gen_IfcProcedureType" general="cl_IfcProcedureType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_DIAGNOSTIC" name="IfcProcedureTypeEnum.DIAGNOSTIC">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_DIAGNOSTIC_gen_IfcProcedure" general="cl_IfcProcedure"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_DIAGNOSTIC_gen_IfcProcedureType" general="cl_IfcProcedureType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_SHUTDOWN" name="IfcProcedureTypeEnum.SHUTDOWN">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_SHUTDOWN_gen_IfcProcedure" general="cl_IfcProcedure"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_SHUTDOWN_gen_IfcProcedureType" general="cl_IfcProcedureType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_STARTUP" name="IfcProcedureTypeEnum.STARTUP">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_STARTUP_gen_IfcProcedure" general="cl_IfcProcedure"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_STARTUP_gen_IfcProcedureType" general="cl_IfcProcedureType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_USERDEFINED" name="IfcProcedureTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_USERDEFINED_gen_IfcProcedure" general="cl_IfcProcedure"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_USERDEFINED_gen_IfcProcedureType" general="cl_IfcProcedureType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProcedureTypeEnum_NOTDEFINED" name="IfcProcedureTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_NOTDEFINED_gen_IfcProcedure" general="cl_IfcProcedure"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProcedureTypeEnum_NOTDEFINED_gen_IfcProcedureType" general="cl_IfcProcedureType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcTask_TaskTime" name="TaskTime" memberEnd="at_IfcTask_TaskTime as_IfcTask_TaskTime_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcTask_TaskTime_target_end" name="" type="cl_IfcTask" association="as_IfcTask_TaskTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcTask_TaskTime_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcTask_TaskTime_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_ADJUSTMENT" name="IfcTaskTypeEnum.ADJUSTMENT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_ADJUSTMENT_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_ADJUSTMENT_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_ATTENDANCE" name="IfcTaskTypeEnum.ATTENDANCE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_ATTENDANCE_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_ATTENDANCE_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_CALIBRATION" name="IfcTaskTypeEnum.CALIBRATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_CALIBRATION_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_CALIBRATION_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_CONSTRUCTION" name="IfcTaskTypeEnum.CONSTRUCTION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_CONSTRUCTION_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_CONSTRUCTION_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_DEMOLITION" name="IfcTaskTypeEnum.DEMOLITION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_DEMOLITION_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_DEMOLITION_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_DISMANTLE" name="IfcTaskTypeEnum.DISMANTLE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_DISMANTLE_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_DISMANTLE_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_DISPOSAL" name="IfcTaskTypeEnum.DISPOSAL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_DISPOSAL_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_DISPOSAL_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_EMERGENCY" name="IfcTaskTypeEnum.EMERGENCY">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_EMERGENCY_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_EMERGENCY_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_INSPECTION" name="IfcTaskTypeEnum.INSPECTION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_INSPECTION_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_INSPECTION_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_INSTALLATION" name="IfcTaskTypeEnum.INSTALLATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_INSTALLATION_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_INSTALLATION_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_LOGISTIC" name="IfcTaskTypeEnum.LOGISTIC">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_LOGISTIC_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_LOGISTIC_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_MAINTENANCE" name="IfcTaskTypeEnum.MAINTENANCE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_MAINTENANCE_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_MAINTENANCE_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_MOVE" name="IfcTaskTypeEnum.MOVE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_MOVE_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_MOVE_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_OPERATION" name="IfcTaskTypeEnum.OPERATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_OPERATION_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_OPERATION_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_REMOVAL" name="IfcTaskTypeEnum.REMOVAL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_REMOVAL_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_REMOVAL_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_RENOVATION" name="IfcTaskTypeEnum.RENOVATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_RENOVATION_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_RENOVATION_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_SAFETY" name="IfcTaskTypeEnum.SAFETY">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_SAFETY_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_SAFETY_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_SHUTDOWN" name="IfcTaskTypeEnum.SHUTDOWN">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_SHUTDOWN_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_SHUTDOWN_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_STARTUP" name="IfcTaskTypeEnum.STARTUP">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_STARTUP_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_STARTUP_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_TESTING" name="IfcTaskTypeEnum.TESTING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_TESTING_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_TESTING_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_TROUBLESHOOTING" name="IfcTaskTypeEnum.TROUBLESHOOTING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_TROUBLESHOOTING_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_TROUBLESHOOTING_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_USERDEFINED" name="IfcTaskTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_USERDEFINED_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_USERDEFINED_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTypeEnum_NOTDEFINED" name="IfcTaskTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_NOTDEFINED_gen_IfcTask" general="cl_IfcTask"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTypeEnum_NOTDEFINED_gen_IfcTaskType" general="cl_IfcTaskType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWorkCalendar_WorkingTimes" name="WorkingTimes" memberEnd="at_IfcWorkCalendar_WorkingTimes as_IfcWorkCalendar_WorkingTimes_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcWorkCalendar_WorkingTimes_target_end" name="" type="cl_IfcWorkCalendar" association="as_IfcWorkCalendar_WorkingTimes">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcWorkCalendar_WorkingTimes_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcWorkCalendar_WorkingTimes_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWorkCalendar_ExceptionTimes" name="ExceptionTimes" memberEnd="at_IfcWorkCalendar_ExceptionTimes as_IfcWorkCalendar_ExceptionTimes_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcWorkCalendar_ExceptionTimes_target_end" name="" type="cl_IfcWorkCalendar" association="as_IfcWorkCalendar_ExceptionTimes">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcWorkCalendar_ExceptionTimes_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcWorkCalendar_ExceptionTimes_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkCalendarTypeEnum_FIRSTSHIFT" name="IfcWorkCalendarTypeEnum.FIRSTSHIFT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkCalendarTypeEnum_FIRSTSHIFT_gen_IfcWorkCalendar" general="cl_IfcWorkCalendar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkCalendarTypeEnum_SECONDSHIFT" name="IfcWorkCalendarTypeEnum.SECONDSHIFT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkCalendarTypeEnum_SECONDSHIFT_gen_IfcWorkCalendar" general="cl_IfcWorkCalendar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkCalendarTypeEnum_THIRDSHIFT" name="IfcWorkCalendarTypeEnum.THIRDSHIFT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkCalendarTypeEnum_THIRDSHIFT_gen_IfcWorkCalendar" general="cl_IfcWorkCalendar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkCalendarTypeEnum_USERDEFINED" name="IfcWorkCalendarTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkCalendarTypeEnum_USERDEFINED_gen_IfcWorkCalendar" general="cl_IfcWorkCalendar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkCalendarTypeEnum_NOTDEFINED" name="IfcWorkCalendarTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkCalendarTypeEnum_NOTDEFINED_gen_IfcWorkCalendar" general="cl_IfcWorkCalendar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWorkControl_Creators" name="Creators" memberEnd="at_IfcWorkControl_Creators as_IfcWorkControl_Creators_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcWorkControl_Creators_target_end" name="" type="cl_IfcWorkControl" association="as_IfcWorkControl_Creators">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcWorkControl_Creators_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcWorkControl_Creators_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkPlanTypeEnum_ACTUAL" name="IfcWorkPlanTypeEnum.ACTUAL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkPlanTypeEnum_ACTUAL_gen_IfcWorkPlan" general="cl_IfcWorkPlan"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkPlanTypeEnum_BASELINE" name="IfcWorkPlanTypeEnum.BASELINE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkPlanTypeEnum_BASELINE_gen_IfcWorkPlan" general="cl_IfcWorkPlan"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkPlanTypeEnum_PLANNED" name="IfcWorkPlanTypeEnum.PLANNED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkPlanTypeEnum_PLANNED_gen_IfcWorkPlan" general="cl_IfcWorkPlan"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkPlanTypeEnum_USERDEFINED" name="IfcWorkPlanTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkPlanTypeEnum_USERDEFINED_gen_IfcWorkPlan" general="cl_IfcWorkPlan"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkPlanTypeEnum_NOTDEFINED" name="IfcWorkPlanTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkPlanTypeEnum_NOTDEFINED_gen_IfcWorkPlan" general="cl_IfcWorkPlan"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkScheduleTypeEnum_ACTUAL" name="IfcWorkScheduleTypeEnum.ACTUAL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkScheduleTypeEnum_ACTUAL_gen_IfcWorkSchedule" general="cl_IfcWorkSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkScheduleTypeEnum_BASELINE" name="IfcWorkScheduleTypeEnum.BASELINE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkScheduleTypeEnum_BASELINE_gen_IfcWorkSchedule" general="cl_IfcWorkSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkScheduleTypeEnum_PLANNED" name="IfcWorkScheduleTypeEnum.PLANNED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkScheduleTypeEnum_PLANNED_gen_IfcWorkSchedule" general="cl_IfcWorkSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkScheduleTypeEnum_USERDEFINED" name="IfcWorkScheduleTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkScheduleTypeEnum_USERDEFINED_gen_IfcWorkSchedule" general="cl_IfcWorkSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkScheduleTypeEnum_NOTDEFINED" name="IfcWorkScheduleTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkScheduleTypeEnum_NOTDEFINED_gen_IfcWorkSchedule" general="cl_IfcWorkSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WorkControlCommon" name="Pset_WorkControlCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WorkControlCommon_comment_0">
+        <body>PSET_OCCURRENCEDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WorkControlCommon_WorkStartTime" name="WorkStartTime">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WorkControlCommon_WorkStartTime_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WorkControlCommon_WorkStartTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WorkControlCommon_WorkFinishTime" name="WorkFinishTime">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WorkControlCommon_WorkFinishTime_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WorkControlCommon_WorkFinishTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WorkControlCommon_WorkDayDuration" name="WorkDayDuration">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WorkControlCommon_WorkDayDuration_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WorkControlCommon_WorkDayDuration_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WorkControlCommon_WorkWeekDuration" name="WorkWeekDuration">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WorkControlCommon_WorkWeekDuration_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WorkControlCommon_WorkWeekDuration_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WorkControlCommon_WorkMonthDuration" name="WorkMonthDuration">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WorkControlCommon_WorkMonthDuration_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WorkControlCommon_WorkMonthDuration_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WorkControlCommon_IfcWorkControl" client="cl_Pset_WorkControlCommon" supplier="cl_IfcWorkControl"/>
+  </packagedElement>
+</uml:Model>

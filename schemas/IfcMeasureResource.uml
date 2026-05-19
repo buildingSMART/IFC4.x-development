@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcMeasureResource" name="IfcMeasureResource">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcMeasureResource" name="IfcMeasureResource">
-      <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcCorrectDimensions" name="IfcCorrectDimensions">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2144" name="IfcCorrectDimensions">
-          <language>EXPRESS_FUNCTION</language>
-          <body>FUNCTION IfcCorrectDimensions
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcMeasureResource" name="IfcMeasureResource" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcMeasureResource" name="IfcMeasureResource">
+    <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcCorrectDimensions" name="IfcCorrectDimensions">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcCorrectDimensions_expr" name="IfcCorrectDimensions">
+        <language>EXPRESS_FUNCTION</language>
+        <body>FUNCTION IfcCorrectDimensions
 (m   : IfcUnitEnum; Dim : IfcDimensionalExponents) : LOGICAL;  
 CASE m OF
   LENGTHUNIT : IF
@@ -161,12 +160,12 @@ END_CASE;
 
 END_FUNCTION;
 </body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcCorrectUnitAssignment" name="IfcCorrectUnitAssignment">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2145" name="IfcCorrectUnitAssignment">
-          <language>EXPRESS_FUNCTION</language>
-          <body>FUNCTION IfcCorrectUnitAssignment
+      </specification>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcCorrectUnitAssignment" name="IfcCorrectUnitAssignment">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcCorrectUnitAssignment_expr" name="IfcCorrectUnitAssignment">
+        <language>EXPRESS_FUNCTION</language>
+        <body>FUNCTION IfcCorrectUnitAssignment
   (Units : SET [1:?] OF IfcUnit)
    : LOGICAL;
 
@@ -195,12 +194,12 @@ END_FUNCTION;
 
 END_FUNCTION;
 </body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcDeriveDimensionalExponents" name="IfcDeriveDimensionalExponents">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2146" name="IfcDeriveDimensionalExponents">
-          <language>EXPRESS_FUNCTION</language>
-          <body>FUNCTION IfcDeriveDimensionalExponents
+      </specification>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcDeriveDimensionalExponents" name="IfcDeriveDimensionalExponents">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcDeriveDimensionalExponents_expr" name="IfcDeriveDimensionalExponents">
+        <language>EXPRESS_FUNCTION</language>
+        <body>FUNCTION IfcDeriveDimensionalExponents
     (UnitElements : SET [1:?] OF IfcDerivedUnitElement)
     : IfcDimensionalExponents;  
     LOCAL
@@ -234,12 +233,12 @@ END_FUNCTION;
 
 END_FUNCTION;
 </body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcDimensionsForSIUnit" name="IfcDimensionsForSIUnit">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2147" name="IfcDimensionsForSIUnit">
-          <language>EXPRESS_FUNCTION</language>
-          <body>FUNCTION IfcDimensionsForSIUnit
+      </specification>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcDimensionsForSIUnit" name="IfcDimensionsForSIUnit">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcDimensionsForSIUnit_expr" name="IfcDimensionsForSIUnit">
+        <language>EXPRESS_FUNCTION</language>
+        <body>FUNCTION IfcDimensionsForSIUnit
 (n : IfcSIUnitName )     : IfcDimensionalExponents;
   CASE n OF
     METRE          : RETURN (IfcDimensionalExponents
@@ -308,1087 +307,1086 @@ END_FUNCTION;
 
 END_FUNCTION;
 </body>
+      </specification>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcAbsorbedDoseMeasure" name="IfcAbsorbedDoseMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcAbsorbedDoseMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcAccelerationMeasure" name="IfcAccelerationMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcAccelerationMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcAmountOfSubstanceMeasure" name="IfcAmountOfSubstanceMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcAmountOfSubstanceMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcAngularVelocityMeasure" name="IfcAngularVelocityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcAngularVelocityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcAreaDensityMeasure" name="IfcAreaDensityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcAreaDensityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcAreaMeasure" name="IfcAreaMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcAreaMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcBinary" name="IfcBinary">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcBinary_gen_binary">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_binary"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcBoolean" name="IfcBoolean">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcBoolean_gen_boolean">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_boolean"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcComplexNumber" name="IfcComplexNumber_A[1:2]">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcComplexNumber_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcCompoundPlaneAngleMeasure" name="IfcCompoundPlaneAngleMeasure_L[3:4]">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCompoundPlaneAngleMeasure_L[3:4]_MinutesInRange" name="MinutesInRange">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcCompoundPlaneAngleMeasure_MinutesInRange" name="MinutesInRange">
+          <language>EXPRESS_WHERE</language>
+          <body>ABS(SELF[2]) &lt; 60</body>
         </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcAbsorbedDoseMeasure" name="IfcAbsorbedDoseMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2148">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcAccelerationMeasure" name="IfcAccelerationMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2149">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcAmountOfSubstanceMeasure" name="IfcAmountOfSubstanceMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2150">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcAngularVelocityMeasure" name="IfcAngularVelocityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2151">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcAreaDensityMeasure" name="IfcAreaDensityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2152">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcAreaMeasure" name="IfcAreaMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2153">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcBinary" name="IfcBinary">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2154">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_binary"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcBoolean" name="IfcBoolean">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2155">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_boolean"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcComplexNumber" name="IfcComplexNumber_A[1:2]">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2156">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcCompoundPlaneAngleMeasure" name="IfcCompoundPlaneAngleMeasure_L[3:4]">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2157">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-        </generalization>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCompoundPlaneAngleMeasure_L[3:4]_MinutesInRange" name="MinutesInRange">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2158" name="MinutesInRange">
-            <language>EXPRESS_WHERE</language>
-            <body>ABS(SELF[2]) &lt; 60</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCompoundPlaneAngleMeasure_L[3:4]_SecondsInRange" name="SecondsInRange">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2159" name="SecondsInRange">
-            <language>EXPRESS_WHERE</language>
-            <body>ABS(SELF[3]) &lt; 60</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCompoundPlaneAngleMeasure_L[3:4]_MicrosecondsInRange" name="MicrosecondsInRange">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2160" name="MicrosecondsInRange">
-            <language>EXPRESS_WHERE</language>
-            <body>(SIZEOF(SELF) = 3) OR (ABS(SELF[4]) &lt; 1000000)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCompoundPlaneAngleMeasure_L[3:4]_ConsistentSign" name="ConsistentSign">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2161" name="ConsistentSign">
-            <language>EXPRESS_WHERE</language>
-            <body>((SELF[1] &gt;= 0) AND (SELF[2] &gt;= 0) AND (SELF[3] &gt;= 0) AND ((SIZEOF(SELF) = 3) OR (SELF[4] &gt;= 0)))
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCompoundPlaneAngleMeasure_L[3:4]_SecondsInRange" name="SecondsInRange">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcCompoundPlaneAngleMeasure_SecondsInRange" name="SecondsInRange">
+          <language>EXPRESS_WHERE</language>
+          <body>ABS(SELF[3]) &lt; 60</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCompoundPlaneAngleMeasure_L[3:4]_MicrosecondsInRange" name="MicrosecondsInRange">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcCompoundPlaneAngleMeasure_MicrosecondsInRange" name="MicrosecondsInRange">
+          <language>EXPRESS_WHERE</language>
+          <body>(SIZEOF(SELF) = 3) OR (ABS(SELF[4]) &lt; 1000000)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCompoundPlaneAngleMeasure_L[3:4]_ConsistentSign" name="ConsistentSign">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcCompoundPlaneAngleMeasure_ConsistentSign" name="ConsistentSign">
+          <language>EXPRESS_WHERE</language>
+          <body>((SELF[1] &gt;= 0) AND (SELF[2] &gt;= 0) AND (SELF[3] &gt;= 0) AND ((SIZEOF(SELF) = 3) OR (SELF[4] &gt;= 0)))
 OR
 ((SELF[1] &lt;= 0) AND (SELF[2] &lt;= 0) AND (SELF[3] &lt;= 0) AND ((SIZEOF(SELF) = 3) OR (SELF[4] &lt;= 0)))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcContextDependentMeasure" name="IfcContextDependentMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2162">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcCountMeasure" name="IfcCountMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2163">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcCurvatureMeasure" name="IfcCurvatureMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2164">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDerivedUnit" name="IfcDerivedUnit">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnit_Elements" name="Elements_S[1:?]" isOrdered="false" association="as_IfcDerivedUnit_Elements" type="cl_IfcDerivedUnitElement">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2165" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2166" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnit_UnitType" name="UnitType" isOrdered="false" type="en_IfcDerivedUnitEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2167" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2168" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnit_UserDefinedType" name="UserDefinedType" isOrdered="false" type="dt_IfcLabel">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2169" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2170" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnit_Name" name="Name" isOrdered="false" type="dt_IfcLabel">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2171" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2172" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnit_Dimensions" name="Dimensions" isOrdered="false" isDerived="true" type="cl_IfcDimensionalExponents">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2173" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2174" value="1"/>
-          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="expr_2175" name="Dimensions">
-            <language>EXPRESS</language>
-            <body>IfcDimensionalExponents := IfcDeriveDimensionalExponents(Elements)</body>
-          </defaultValue>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDerivedUnit_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2176" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>(SIZEOF (Elements) &gt; 1) OR ((SIZEOF (Elements) = 1) AND (Elements[1].Exponent &lt;&gt; 1 ))</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDerivedUnit_WR2" name="WR2">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2177" name="WR2">
-            <language>EXPRESS_WHERE</language>
-            <body>(UnitType &lt;&gt; IfcDerivedUnitEnum.USERDEFINED) OR
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcCompoundPlaneAngleMeasure_gen_integer">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcContextDependentMeasure" name="IfcContextDependentMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcContextDependentMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcCountMeasure" name="IfcCountMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcCountMeasure_gen_integer">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcCurvatureMeasure" name="IfcCurvatureMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcCurvatureMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDerivedUnit" name="IfcDerivedUnit">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDerivedUnit_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcDerivedUnit_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>(SIZEOF (Elements) &gt; 1) OR ((SIZEOF (Elements) = 1) AND (Elements[1].Exponent &lt;&gt; 1 ))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDerivedUnit_WR2" name="WR2">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcDerivedUnit_WR2" name="WR2">
+          <language>EXPRESS_WHERE</language>
+          <body>(UnitType &lt;&gt; IfcDerivedUnitEnum.USERDEFINED) OR
 ((UnitType = IfcDerivedUnitEnum.USERDEFINED) AND 
  (EXISTS(SELF.UserDefinedType)))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDerivedUnitElement" name="IfcDerivedUnitElement">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnitElement_Unit" name="Unit" isOrdered="false" association="as_IfcDerivedUnitElement_Unit" type="cl_IfcNamedUnit">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2178" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2179" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnitElement_Exponent" name="Exponent" isOrdered="false">
-          <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2180" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2181" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDerivedUnitEnum" name="IfcDerivedUnitEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2182" name="ACCELERATIONUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2183" name="ANGULARVELOCITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2184" name="AREADENSITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2185" name="COMPOUNDPLANEANGLEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2186" name="CURVATUREUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2187" name="DYNAMICVISCOSITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2188" name="HEATFLUXDENSITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2189" name="HEATINGVALUEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2190" name="INTEGERCOUNTRATEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2191" name="IONCONCENTRATIONUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2192" name="ISOTHERMALMOISTURECAPACITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2193" name="KINEMATICVISCOSITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2194" name="LINEARFORCEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2195" name="LINEARMOMENTUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2196" name="LINEARSTIFFNESSUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2197" name="LINEARVELOCITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2198" name="LUMINOUSINTENSITYDISTRIBUTIONUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2199" name="MASSDENSITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2200" name="MASSFLOWRATEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2201" name="MASSPERLENGTHUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2202" name="MODULUSOFELASTICITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2203" name="MODULUSOFLINEARSUBGRADEREACTIONUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2204" name="MODULUSOFROTATIONALSUBGRADEREACTIONUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2205" name="MODULUSOFSUBGRADEREACTIONUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2206" name="MOISTUREDIFFUSIVITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2207" name="MOLECULARWEIGHTUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2208" name="MOMENTOFINERTIAUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2209" name="PHUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2210" name="PLANARFORCEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2211" name="ROTATIONALFREQUENCYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2212" name="ROTATIONALMASSUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2213" name="ROTATIONALSTIFFNESSUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2214" name="SECTIONAREAINTEGRALUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2215" name="SECTIONMODULUSUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2216" name="SHEARMODULUSUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2217" name="SOUNDPOWERLEVELUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2218" name="SOUNDPOWERUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2219" name="SOUNDPRESSURELEVELUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2220" name="SOUNDPRESSUREUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2221" name="SPECIFICHEATCAPACITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2222" name="TEMPERATUREGRADIENTUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2223" name="TEMPERATURERATEOFCHANGEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2224" name="THERMALADMITTANCEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2225" name="THERMALCONDUCTANCEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2226" name="THERMALEXPANSIONCOEFFICIENTUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2227" name="THERMALRESISTANCEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2228" name="THERMALTRANSMITTANCEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2229" name="TORQUEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2230" name="VAPORPERMEABILITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2231" name="VOLUMETRICFLOWRATEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2232" name="WARPINGCONSTANTUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2233" name="WARPINGMOMENTUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2234" name="USERDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDescriptiveMeasure" name="IfcDescriptiveMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2235">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDimensionalExponents" name="IfcDimensionalExponents">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_LengthExponent" name="LengthExponent" isOrdered="false">
-          <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2236" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2237" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_MassExponent" name="MassExponent" isOrdered="false">
-          <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2238" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2239" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_TimeExponent" name="TimeExponent" isOrdered="false">
-          <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2240" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2241" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_ElectricCurrentExponent" name="ElectricCurrentExponent" isOrdered="false">
-          <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2242" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2243" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_ThermodynamicTemperatureExponent" name="ThermodynamicTemperatureExponent" isOrdered="false">
-          <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2244" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2245" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_AmountOfSubstanceExponent" name="AmountOfSubstanceExponent" isOrdered="false">
-          <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2246" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2247" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_LuminousIntensityExponent" name="LuminousIntensityExponent" isOrdered="false">
-          <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2248" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2249" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDoseEquivalentMeasure" name="IfcDoseEquivalentMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2250">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDynamicViscosityMeasure" name="IfcDynamicViscosityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2251">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcElectricCapacitanceMeasure" name="IfcElectricCapacitanceMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2252">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcElectricChargeMeasure" name="IfcElectricChargeMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2253">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcElectricConductanceMeasure" name="IfcElectricConductanceMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2254">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcElectricCurrentMeasure" name="IfcElectricCurrentMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2255">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcElectricResistanceMeasure" name="IfcElectricResistanceMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2256">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcElectricVoltageMeasure" name="IfcElectricVoltageMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2257">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcEnergyMeasure" name="IfcEnergyMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2258">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcForceMeasure" name="IfcForceMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2259">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcFrequencyMeasure" name="IfcFrequencyMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2260">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcHeatFluxDensityMeasure" name="IfcHeatFluxDensityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2261">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcHeatingValueMeasure" name="IfcHeatingValueMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2262">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcHeatingValueMeasure_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2263" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>SELF &gt; 0.</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcIdentifier" name="IfcIdentifier">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2264">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
-        </generalization>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcIdentifier_strlen" name="strlen">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2265" name="strlen">
-            <language>OCL</language>
-            <body>self.size() &lt;= 255</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcIlluminanceMeasure" name="IfcIlluminanceMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2266">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcInductanceMeasure" name="IfcInductanceMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2267">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcInteger" name="IfcInteger">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2268">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcIntegerCountRateMeasure" name="IfcIntegerCountRateMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2269">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcIonConcentrationMeasure" name="IfcIonConcentrationMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2270">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcIsothermalMoistureCapacityMeasure" name="IfcIsothermalMoistureCapacityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2271">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcKinematicViscosityMeasure" name="IfcKinematicViscosityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2272">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLabel" name="IfcLabel">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2273">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
-        </generalization>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcLabel_strlen" name="strlen">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2274" name="strlen">
-            <language>OCL</language>
-            <body>self.size() &lt;= 255</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLengthMeasure" name="IfcLengthMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2275">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLinearForceMeasure" name="IfcLinearForceMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2276">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLinearMomentMeasure" name="IfcLinearMomentMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2277">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLinearStiffnessMeasure" name="IfcLinearStiffnessMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2278">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLinearVelocityMeasure" name="IfcLinearVelocityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2279">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLogical" name="IfcLogical">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2280">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_logical"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLuminousFluxMeasure" name="IfcLuminousFluxMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2281">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLuminousIntensityDistributionMeasure" name="IfcLuminousIntensityDistributionMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2282">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLuminousIntensityMeasure" name="IfcLuminousIntensityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2283">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMagneticFluxDensityMeasure" name="IfcMagneticFluxDensityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2284">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMagneticFluxMeasure" name="IfcMagneticFluxMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2285">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMassDensityMeasure" name="IfcMassDensityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2286">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMassFlowRateMeasure" name="IfcMassFlowRateMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2287">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMassMeasure" name="IfcMassMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2288">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMassPerLengthMeasure" name="IfcMassPerLengthMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2289">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMeasureWithUnit" name="IfcMeasureWithUnit">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMeasureWithUnit_ValueComponent" name="ValueComponent" isOrdered="false" association="as_IfcMeasureWithUnit_ValueComponent" type="un_IfcValue">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2290" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2291" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMeasureWithUnit_UnitComponent" name="UnitComponent" isOrdered="false" association="as_IfcMeasureWithUnit_UnitComponent" type="un_IfcUnit">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2292" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2293" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcModulusOfElasticityMeasure" name="IfcModulusOfElasticityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2294">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcModulusOfLinearSubgradeReactionMeasure" name="IfcModulusOfLinearSubgradeReactionMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2295">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcModulusOfRotationalSubgradeReactionMeasure" name="IfcModulusOfRotationalSubgradeReactionMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2296">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcModulusOfSubgradeReactionMeasure" name="IfcModulusOfSubgradeReactionMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2297">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMoistureDiffusivityMeasure" name="IfcMoistureDiffusivityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2298">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMolecularWeightMeasure" name="IfcMolecularWeightMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2299">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMomentOfInertiaMeasure" name="IfcMomentOfInertiaMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2300">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMonetaryMeasure" name="IfcMonetaryMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2301">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMonetaryUnit" name="IfcMonetaryUnit">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMonetaryUnit_Currency" name="Currency" isOrdered="false" type="dt_IfcLabel">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2302" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2303" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcNamedUnit" name="IfcNamedUnit" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcNamedUnit_Dimensions" name="Dimensions" isOrdered="false" association="as_IfcNamedUnit_Dimensions" type="cl_IfcDimensionalExponents">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2304" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2305" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcNamedUnit_UnitType" name="UnitType" isOrdered="false" type="en_IfcUnitEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2306" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2307" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcNamedUnit_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2308" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>IfcCorrectDimensions (SELF.UnitType, SELF.Dimensions)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcNumericMeasure" name="IfcNumericMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2309">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_number"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPHMeasure" name="IfcPHMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2310">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPHMeasure_WR21" name="WR21">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2311" name="WR21">
-            <language>EXPRESS_WHERE</language>
-            <body>{0.0 &lt;= SELF &lt;= 14.0}</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcParameterValue" name="IfcParameterValue">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2312">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPlanarForceMeasure" name="IfcPlanarForceMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2313">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPlaneAngleMeasure" name="IfcPlaneAngleMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2314">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPowerMeasure" name="IfcPowerMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2315">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPressureMeasure" name="IfcPressureMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2316">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcRadioActivityMeasure" name="IfcRadioActivityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2317">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcRatioMeasure" name="IfcRatioMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2318">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcReal" name="IfcReal">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2319">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcRotationalFrequencyMeasure" name="IfcRotationalFrequencyMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2320">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcRotationalMassMeasure" name="IfcRotationalMassMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2321">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcRotationalStiffnessMeasure" name="IfcRotationalStiffnessMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2322">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcSIPrefix" name="IfcSIPrefix">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2323" name="ATTO"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2324" name="CENTI"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2325" name="DECA"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2326" name="DECI"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2327" name="EXA"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2328" name="FEMTO"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2329" name="GIGA"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2330" name="HECTO"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2331" name="KILO"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2332" name="MEGA"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2333" name="MICRO"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2334" name="MILLI"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2335" name="NANO"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2336" name="PETA"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2337" name="PICO"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2338" name="TERA"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcSIUnitName" name="IfcSIUnitName">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2339" name="AMPERE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2340" name="BECQUEREL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2341" name="CANDELA"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2342" name="COULOMB"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2343" name="CUBIC_METRE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2344" name="DEGREE_CELSIUS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2345" name="FARAD"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2346" name="GRAM"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2347" name="GRAY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2348" name="HENRY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2349" name="HERTZ"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2350" name="JOULE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2351" name="KELVIN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2352" name="LUMEN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2353" name="LUX"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2354" name="METRE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2355" name="MOLE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2356" name="NEWTON"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2357" name="OHM"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2358" name="PASCAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2359" name="RADIAN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2360" name="SECOND"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2361" name="SIEMENS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2362" name="SIEVERT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2363" name="SQUARE_METRE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2364" name="STERADIAN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2365" name="TESLA"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2366" name="VOLT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2367" name="WATT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2368" name="WEBER"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSectionModulusMeasure" name="IfcSectionModulusMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2369">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSectionalAreaIntegralMeasure" name="IfcSectionalAreaIntegralMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2370">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcShearModulusMeasure" name="IfcShearModulusMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2371">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSolidAngleMeasure" name="IfcSolidAngleMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2372">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSoundPowerLevelMeasure" name="IfcSoundPowerLevelMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2373">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSoundPowerMeasure" name="IfcSoundPowerMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2374">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSoundPressureLevelMeasure" name="IfcSoundPressureLevelMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2375">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSoundPressureMeasure" name="IfcSoundPressureMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2376">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSpecificHeatCapacityMeasure" name="IfcSpecificHeatCapacityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2377">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcTemperatureGradientMeasure" name="IfcTemperatureGradientMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2378">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcTemperatureRateOfChangeMeasure" name="IfcTemperatureRateOfChangeMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2379">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcText" name="IfcText">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2380">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcThermalAdmittanceMeasure" name="IfcThermalAdmittanceMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2381">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcThermalConductivityMeasure" name="IfcThermalConductivityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2382">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcThermalExpansionCoefficientMeasure" name="IfcThermalExpansionCoefficientMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2383">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcThermalResistanceMeasure" name="IfcThermalResistanceMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2384">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcThermalTransmittanceMeasure" name="IfcThermalTransmittanceMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2385">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcThermodynamicTemperatureMeasure" name="IfcThermodynamicTemperatureMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2386">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcTimeMeasure" name="IfcTimeMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2387">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcTorqueMeasure" name="IfcTorqueMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2388">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcURIReference" name="IfcURIReference">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2389">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcUnitAssignment" name="IfcUnitAssignment">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcUnitAssignment_Units" name="Units_S[1:?]" isOrdered="false" association="as_IfcUnitAssignment_Units" type="un_IfcUnit">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2390" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2391" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcUnitAssignment_WR01" name="WR01">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2392" name="WR01">
-            <language>EXPRESS_WHERE</language>
-            <body>IfcCorrectUnitAssignment(Units)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcUnitEnum" name="IfcUnitEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2393" name="ABSORBEDDOSEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2394" name="AMOUNTOFSUBSTANCEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2395" name="AREAUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2396" name="DOSEEQUIVALENTUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2397" name="ELECTRICCAPACITANCEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2398" name="ELECTRICCHARGEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2399" name="ELECTRICCONDUCTANCEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2400" name="ELECTRICCURRENTUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2401" name="ELECTRICRESISTANCEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2402" name="ELECTRICVOLTAGEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2403" name="ENERGYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2404" name="FORCEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2405" name="FREQUENCYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2406" name="ILLUMINANCEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2407" name="INDUCTANCEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2408" name="LENGTHUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2409" name="LUMINOUSFLUXUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2410" name="LUMINOUSINTENSITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2411" name="MAGNETICFLUXDENSITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2412" name="MAGNETICFLUXUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2413" name="MASSUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2414" name="PLANEANGLEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2415" name="POWERUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2416" name="PRESSUREUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2417" name="RADIOACTIVITYUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2418" name="SOLIDANGLEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2419" name="THERMODYNAMICTEMPERATUREUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2420" name="TIMEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2421" name="VOLUMEUNIT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_2422" name="USERDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcVaporPermeabilityMeasure" name="IfcVaporPermeabilityMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2423">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcVolumeMeasure" name="IfcVolumeMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2424">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcVolumetricFlowRateMeasure" name="IfcVolumetricFlowRateMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2425">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcWarpingConstantMeasure" name="IfcWarpingConstantMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2426">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcWarpingMomentMeasure" name="IfcWarpingMomentMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2427">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcContextDependentUnit" name="IfcContextDependentUnit">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2428" general="cl_IfcNamedUnit"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcContextDependentUnit_Name" name="Name" isOrdered="false" type="dt_IfcLabel">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2429" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2430" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConversionBasedUnit" name="IfcConversionBasedUnit">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2431" general="cl_IfcNamedUnit"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConversionBasedUnit_Name" name="Name" isOrdered="false" type="dt_IfcLabel">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2432" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2433" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConversionBasedUnit_ConversionFactor" name="ConversionFactor" isOrdered="false" association="as_IfcConversionBasedUnit_ConversionFactor" type="cl_IfcMeasureWithUnit">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2434" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2435" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcDerivedMeasureValue" name="IfcDerivedMeasureValue"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2436" client="un_IfcDerivedMeasureValue" supplier="dt_IfcAbsorbedDoseMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2437" client="un_IfcDerivedMeasureValue" supplier="dt_IfcAccelerationMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2438" client="un_IfcDerivedMeasureValue" supplier="dt_IfcAngularVelocityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2439" client="un_IfcDerivedMeasureValue" supplier="dt_IfcAreaDensityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2440" client="un_IfcDerivedMeasureValue" supplier="dt_IfcCompoundPlaneAngleMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2441" client="un_IfcDerivedMeasureValue" supplier="dt_IfcCurvatureMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2442" client="un_IfcDerivedMeasureValue" supplier="dt_IfcDoseEquivalentMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2443" client="un_IfcDerivedMeasureValue" supplier="dt_IfcDynamicViscosityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2444" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricCapacitanceMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2445" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricChargeMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2446" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricConductanceMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2447" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricResistanceMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2448" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricVoltageMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2449" client="un_IfcDerivedMeasureValue" supplier="dt_IfcEnergyMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2450" client="un_IfcDerivedMeasureValue" supplier="dt_IfcForceMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2451" client="un_IfcDerivedMeasureValue" supplier="dt_IfcFrequencyMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2452" client="un_IfcDerivedMeasureValue" supplier="dt_IfcHeatFluxDensityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2453" client="un_IfcDerivedMeasureValue" supplier="dt_IfcHeatingValueMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2454" client="un_IfcDerivedMeasureValue" supplier="dt_IfcIlluminanceMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2455" client="un_IfcDerivedMeasureValue" supplier="dt_IfcInductanceMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2456" client="un_IfcDerivedMeasureValue" supplier="dt_IfcIntegerCountRateMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2457" client="un_IfcDerivedMeasureValue" supplier="dt_IfcIonConcentrationMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2458" client="un_IfcDerivedMeasureValue" supplier="dt_IfcIsothermalMoistureCapacityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2459" client="un_IfcDerivedMeasureValue" supplier="dt_IfcKinematicViscosityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2460" client="un_IfcDerivedMeasureValue" supplier="dt_IfcLinearForceMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2461" client="un_IfcDerivedMeasureValue" supplier="dt_IfcLinearMomentMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2462" client="un_IfcDerivedMeasureValue" supplier="dt_IfcLinearStiffnessMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2463" client="un_IfcDerivedMeasureValue" supplier="dt_IfcLinearVelocityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2464" client="un_IfcDerivedMeasureValue" supplier="dt_IfcLuminousFluxMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2465" client="un_IfcDerivedMeasureValue" supplier="dt_IfcLuminousIntensityDistributionMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2466" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMagneticFluxDensityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2467" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMagneticFluxMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2468" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMassDensityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2469" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMassFlowRateMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2470" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMassPerLengthMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2471" client="un_IfcDerivedMeasureValue" supplier="dt_IfcModulusOfElasticityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2472" client="un_IfcDerivedMeasureValue" supplier="dt_IfcModulusOfLinearSubgradeReactionMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2473" client="un_IfcDerivedMeasureValue" supplier="dt_IfcModulusOfRotationalSubgradeReactionMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2474" client="un_IfcDerivedMeasureValue" supplier="dt_IfcModulusOfSubgradeReactionMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2475" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMoistureDiffusivityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2476" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMolecularWeightMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2477" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMomentOfInertiaMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2478" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMonetaryMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2479" client="un_IfcDerivedMeasureValue" supplier="dt_IfcPHMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2480" client="un_IfcDerivedMeasureValue" supplier="dt_IfcPlanarForceMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2481" client="un_IfcDerivedMeasureValue" supplier="dt_IfcPowerMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2482" client="un_IfcDerivedMeasureValue" supplier="dt_IfcPressureMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2483" client="un_IfcDerivedMeasureValue" supplier="dt_IfcRadioActivityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2484" client="un_IfcDerivedMeasureValue" supplier="dt_IfcRotationalFrequencyMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2485" client="un_IfcDerivedMeasureValue" supplier="dt_IfcRotationalMassMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2486" client="un_IfcDerivedMeasureValue" supplier="dt_IfcRotationalStiffnessMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2487" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSectionModulusMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2488" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSectionalAreaIntegralMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2489" client="un_IfcDerivedMeasureValue" supplier="dt_IfcShearModulusMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2490" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSoundPowerLevelMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2491" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSoundPowerMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2492" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSoundPressureLevelMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2493" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSoundPressureMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2494" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSpecificHeatCapacityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2495" client="un_IfcDerivedMeasureValue" supplier="dt_IfcTemperatureGradientMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2496" client="un_IfcDerivedMeasureValue" supplier="dt_IfcTemperatureRateOfChangeMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2497" client="un_IfcDerivedMeasureValue" supplier="dt_IfcThermalAdmittanceMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2498" client="un_IfcDerivedMeasureValue" supplier="dt_IfcThermalConductivityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2499" client="un_IfcDerivedMeasureValue" supplier="dt_IfcThermalExpansionCoefficientMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2500" client="un_IfcDerivedMeasureValue" supplier="dt_IfcThermalResistanceMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2501" client="un_IfcDerivedMeasureValue" supplier="dt_IfcThermalTransmittanceMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2502" client="un_IfcDerivedMeasureValue" supplier="dt_IfcTorqueMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2503" client="un_IfcDerivedMeasureValue" supplier="dt_IfcVaporPermeabilityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2504" client="un_IfcDerivedMeasureValue" supplier="dt_IfcVolumetricFlowRateMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2505" client="un_IfcDerivedMeasureValue" supplier="dt_IfcWarpingConstantMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2506" client="un_IfcDerivedMeasureValue" supplier="dt_IfcWarpingMomentMeasure"/>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcNonNegativeLengthMeasure" name="IfcNonNegativeLengthMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2507" general="dt_IfcLengthMeasure"/>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcNonNegativeLengthMeasure_NotNegative" name="NotNegative">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2508" name="NotNegative">
-            <language>EXPRESS_WHERE</language>
-            <body>SELF &gt;= 0.</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcNormalisedRatioMeasure" name="IfcNormalisedRatioMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2509" general="dt_IfcRatioMeasure"/>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcNormalisedRatioMeasure_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2510" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>{0.0 &lt;= SELF &lt;= 1.0}</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPositiveInteger" name="IfcPositiveInteger">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2511" general="dt_IfcInteger"/>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPositiveInteger_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2512" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>SELF &gt; 0</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPositiveLengthMeasure" name="IfcPositiveLengthMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2513" general="dt_IfcLengthMeasure"/>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPositiveLengthMeasure_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2514" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>SELF &gt; 0.</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPositivePlaneAngleMeasure" name="IfcPositivePlaneAngleMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2515" general="dt_IfcPlaneAngleMeasure"/>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPositivePlaneAngleMeasure_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2516" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>SELF &gt; 0.</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPositiveRatioMeasure" name="IfcPositiveRatioMeasure">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2517" general="dt_IfcRatioMeasure"/>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPositiveRatioMeasure_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_2518" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>SELF &gt; 0.</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSIUnit" name="IfcSIUnit">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2519" general="cl_IfcNamedUnit"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSIUnit_Prefix" name="Prefix" isOrdered="false" type="en_IfcSIPrefix">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2520" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2521" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSIUnit_Name" name="Name" isOrdered="false" type="en_IfcSIUnitName">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2522" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2523" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSIUnit_Dimensions" name="Dimensions" isOrdered="false" isDerived="true" type="cl_IfcDimensionalExponents">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2524" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2525" value="1"/>
-          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="expr_2526" name="Dimensions">
-            <language>EXPRESS</language>
-            <body>IfcDimensionalExponents := IfcDimensionsForSIUnit (SELF.Name)</body>
-          </defaultValue>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcUnit" name="IfcUnit"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2527" client="un_IfcUnit" supplier="cl_IfcDerivedUnit"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2528" client="un_IfcUnit" supplier="cl_IfcMonetaryUnit"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2529" client="un_IfcUnit" supplier="cl_IfcNamedUnit"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConversionBasedUnitWithOffset" name="IfcConversionBasedUnitWithOffset">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_2530" general="cl_IfcConversionBasedUnit"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConversionBasedUnitWithOffset_ConversionOffset" name="ConversionOffset" isOrdered="false" type="dt_IfcReal">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2531" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2532" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcMeasureValue" name="IfcMeasureValue"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2533" client="un_IfcMeasureValue" supplier="dt_IfcAmountOfSubstanceMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2534" client="un_IfcMeasureValue" supplier="dt_IfcAreaMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2535" client="un_IfcMeasureValue" supplier="dt_IfcComplexNumber"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2536" client="un_IfcMeasureValue" supplier="dt_IfcContextDependentMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2537" client="un_IfcMeasureValue" supplier="dt_IfcCountMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2538" client="un_IfcMeasureValue" supplier="dt_IfcDescriptiveMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2539" client="un_IfcMeasureValue" supplier="dt_IfcElectricCurrentMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2540" client="un_IfcMeasureValue" supplier="dt_IfcLengthMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2541" client="un_IfcMeasureValue" supplier="dt_IfcLuminousIntensityMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2542" client="un_IfcMeasureValue" supplier="dt_IfcMassMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2543" client="un_IfcMeasureValue" supplier="dt_IfcNonNegativeLengthMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2544" client="un_IfcMeasureValue" supplier="dt_IfcNormalisedRatioMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2545" client="un_IfcMeasureValue" supplier="dt_IfcNumericMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2546" client="un_IfcMeasureValue" supplier="dt_IfcParameterValue"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2547" client="un_IfcMeasureValue" supplier="dt_IfcPlaneAngleMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2548" client="un_IfcMeasureValue" supplier="dt_IfcPositiveLengthMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2549" client="un_IfcMeasureValue" supplier="dt_IfcPositivePlaneAngleMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2550" client="un_IfcMeasureValue" supplier="dt_IfcPositiveRatioMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2551" client="un_IfcMeasureValue" supplier="dt_IfcRatioMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2552" client="un_IfcMeasureValue" supplier="dt_IfcSolidAngleMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2553" client="un_IfcMeasureValue" supplier="dt_IfcThermodynamicTemperatureMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2554" client="un_IfcMeasureValue" supplier="dt_IfcTimeMeasure"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2555" client="un_IfcMeasureValue" supplier="dt_IfcVolumeMeasure"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcSimpleValue" name="IfcSimpleValue"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2556" client="un_IfcSimpleValue" supplier="dt_IfcBinary"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2557" client="un_IfcSimpleValue" supplier="dt_IfcBoolean"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2558" client="un_IfcSimpleValue">
-        <supplier xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2559" client="un_IfcSimpleValue">
-        <supplier xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2560" client="un_IfcSimpleValue">
-        <supplier xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2561" client="un_IfcSimpleValue" supplier="dt_IfcIdentifier"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2562" client="un_IfcSimpleValue" supplier="dt_IfcInteger"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2563" client="un_IfcSimpleValue" supplier="dt_IfcLabel"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2564" client="un_IfcSimpleValue" supplier="dt_IfcLogical"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2565" client="un_IfcSimpleValue" supplier="dt_IfcPositiveInteger"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2566" client="un_IfcSimpleValue" supplier="dt_IfcReal"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2567" client="un_IfcSimpleValue" supplier="dt_IfcText"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2568" client="un_IfcSimpleValue">
-        <supplier xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcTime"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2569" client="un_IfcSimpleValue">
-        <supplier xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcTimeStamp"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2570" client="un_IfcSimpleValue" supplier="dt_IfcURIReference"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcValue" name="IfcValue"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2571" client="un_IfcValue" supplier="un_IfcDerivedMeasureValue"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2572" client="un_IfcValue" supplier="un_IfcMeasureValue"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_2573" client="un_IfcValue" supplier="un_IfcSimpleValue"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConversionBasedUnit_ConversionFactor" name="ConversionFactor" memberEnd="at_IfcConversionBasedUnit_ConversionFactor end_164">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_164" name="" association="as_IfcConversionBasedUnit_ConversionFactor" type="cl_IfcConversionBasedUnit">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2574" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2575" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDerivedUnit_Elements" name="Elements" memberEnd="at_IfcDerivedUnit_Elements end_216">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_216" name="" association="as_IfcDerivedUnit_Elements" type="cl_IfcDerivedUnit">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2576" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2577" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDerivedUnitElement_Unit" name="Unit" memberEnd="at_IfcDerivedUnitElement_Unit end_218">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_218" name="" association="as_IfcDerivedUnitElement_Unit" type="cl_IfcDerivedUnitElement">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2578" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2579" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcMeasureWithUnit_ValueComponent" name="ValueComponent" memberEnd="at_IfcMeasureWithUnit_ValueComponent end_420">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_420" name="" association="as_IfcMeasureWithUnit_ValueComponent" type="cl_IfcMeasureWithUnit">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2580" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2581" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcMeasureWithUnit_UnitComponent" name="UnitComponent" memberEnd="at_IfcMeasureWithUnit_UnitComponent end_422">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_422" name="" association="as_IfcMeasureWithUnit_UnitComponent" type="cl_IfcMeasureWithUnit">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2582" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2583" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcNamedUnit_Dimensions" name="Dimensions" memberEnd="at_IfcNamedUnit_Dimensions end_428">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_428" name="" association="as_IfcNamedUnit_Dimensions" type="cl_IfcNamedUnit">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2584" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2585" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcUnitAssignment_Units" name="Units" memberEnd="at_IfcUnitAssignment_Units end_952">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_952" name="" association="as_IfcUnitAssignment_Units" type="cl_IfcUnitAssignment">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_2586" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_2587" value="1"/>
-        </ownedEnd>
-      </packagedElement>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnit_Elements" name="Elements_S[1:?]" type="cl_IfcDerivedUnitElement" association="as_IfcDerivedUnit_Elements">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDerivedUnit_Elements_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDerivedUnit_Elements_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnit_UnitType" name="UnitType" type="en_IfcDerivedUnitEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDerivedUnit_UnitType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDerivedUnit_UnitType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnit_UserDefinedType" name="UserDefinedType" type="dt_IfcLabel">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDerivedUnit_UserDefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDerivedUnit_UserDefinedType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnit_Name" name="Name" type="dt_IfcLabel">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDerivedUnit_Name_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDerivedUnit_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnit_Dimensions" name="Dimensions" isDerived="true" type="cl_IfcDimensionalExponents">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDerivedUnit_Dimensions_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDerivedUnit_Dimensions_upper" value="1"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcDerivedUnit_Dimensions_expr" name="Dimensions">
+          <language>EXPRESS</language>
+          <body>IfcDimensionalExponents := IfcDeriveDimensionalExponents(Elements)</body>
+        </defaultValue>
+      </ownedAttribute>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDerivedUnitElement" name="IfcDerivedUnitElement">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnitElement_Unit" name="Unit" type="cl_IfcNamedUnit" association="as_IfcDerivedUnitElement_Unit">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDerivedUnitElement_Unit_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDerivedUnitElement_Unit_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnitElement_Exponent" name="Exponent">
+        <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDerivedUnitElement_Exponent_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDerivedUnitElement_Exponent_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDerivedUnitEnum" name="IfcDerivedUnitEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_ACCELERATIONUNIT" name="ACCELERATIONUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_ANGULARVELOCITYUNIT" name="ANGULARVELOCITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_AREADENSITYUNIT" name="AREADENSITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_COMPOUNDPLANEANGLEUNIT" name="COMPOUNDPLANEANGLEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_CURVATUREUNIT" name="CURVATUREUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_DYNAMICVISCOSITYUNIT" name="DYNAMICVISCOSITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_HEATFLUXDENSITYUNIT" name="HEATFLUXDENSITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_HEATINGVALUEUNIT" name="HEATINGVALUEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_INTEGERCOUNTRATEUNIT" name="INTEGERCOUNTRATEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_IONCONCENTRATIONUNIT" name="IONCONCENTRATIONUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_ISOTHERMALMOISTURECAPACITYUNIT" name="ISOTHERMALMOISTURECAPACITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_KINEMATICVISCOSITYUNIT" name="KINEMATICVISCOSITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_LINEARFORCEUNIT" name="LINEARFORCEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_LINEARMOMENTUNIT" name="LINEARMOMENTUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_LINEARSTIFFNESSUNIT" name="LINEARSTIFFNESSUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_LINEARVELOCITYUNIT" name="LINEARVELOCITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_LUMINOUSINTENSITYDISTRIBUTIONUNIT" name="LUMINOUSINTENSITYDISTRIBUTIONUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_MASSDENSITYUNIT" name="MASSDENSITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_MASSFLOWRATEUNIT" name="MASSFLOWRATEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_MASSPERLENGTHUNIT" name="MASSPERLENGTHUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_MODULUSOFELASTICITYUNIT" name="MODULUSOFELASTICITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_MODULUSOFLINEARSUBGRADEREACTIONUNIT" name="MODULUSOFLINEARSUBGRADEREACTIONUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_MODULUSOFROTATIONALSUBGRADEREACTIONUNIT" name="MODULUSOFROTATIONALSUBGRADEREACTIONUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_MODULUSOFSUBGRADEREACTIONUNIT" name="MODULUSOFSUBGRADEREACTIONUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_MOISTUREDIFFUSIVITYUNIT" name="MOISTUREDIFFUSIVITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_MOLECULARWEIGHTUNIT" name="MOLECULARWEIGHTUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_MOMENTOFINERTIAUNIT" name="MOMENTOFINERTIAUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_PHUNIT" name="PHUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_PLANARFORCEUNIT" name="PLANARFORCEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_ROTATIONALFREQUENCYUNIT" name="ROTATIONALFREQUENCYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_ROTATIONALMASSUNIT" name="ROTATIONALMASSUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_ROTATIONALSTIFFNESSUNIT" name="ROTATIONALSTIFFNESSUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_SECTIONAREAINTEGRALUNIT" name="SECTIONAREAINTEGRALUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_SECTIONMODULUSUNIT" name="SECTIONMODULUSUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_SHEARMODULUSUNIT" name="SHEARMODULUSUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_SOUNDPOWERLEVELUNIT" name="SOUNDPOWERLEVELUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_SOUNDPOWERUNIT" name="SOUNDPOWERUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_SOUNDPRESSURELEVELUNIT" name="SOUNDPRESSURELEVELUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_SOUNDPRESSUREUNIT" name="SOUNDPRESSUREUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_SPECIFICHEATCAPACITYUNIT" name="SPECIFICHEATCAPACITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_TEMPERATUREGRADIENTUNIT" name="TEMPERATUREGRADIENTUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_TEMPERATURERATEOFCHANGEUNIT" name="TEMPERATURERATEOFCHANGEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_THERMALADMITTANCEUNIT" name="THERMALADMITTANCEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_THERMALCONDUCTANCEUNIT" name="THERMALCONDUCTANCEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_THERMALEXPANSIONCOEFFICIENTUNIT" name="THERMALEXPANSIONCOEFFICIENTUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_THERMALRESISTANCEUNIT" name="THERMALRESISTANCEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_THERMALTRANSMITTANCEUNIT" name="THERMALTRANSMITTANCEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_TORQUEUNIT" name="TORQUEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_VAPORPERMEABILITYUNIT" name="VAPORPERMEABILITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_VOLUMETRICFLOWRATEUNIT" name="VOLUMETRICFLOWRATEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_WARPINGCONSTANTUNIT" name="WARPINGCONSTANTUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_WARPINGMOMENTUNIT" name="WARPINGMOMENTUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_USERDEFINED" name="USERDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDescriptiveMeasure" name="IfcDescriptiveMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcDescriptiveMeasure_gen_string">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDimensionalExponents" name="IfcDimensionalExponents">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_LengthExponent" name="LengthExponent">
+        <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDimensionalExponents_LengthExponent_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDimensionalExponents_LengthExponent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_MassExponent" name="MassExponent">
+        <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDimensionalExponents_MassExponent_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDimensionalExponents_MassExponent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_TimeExponent" name="TimeExponent">
+        <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDimensionalExponents_TimeExponent_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDimensionalExponents_TimeExponent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_ElectricCurrentExponent" name="ElectricCurrentExponent">
+        <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDimensionalExponents_ElectricCurrentExponent_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDimensionalExponents_ElectricCurrentExponent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_ThermodynamicTemperatureExponent" name="ThermodynamicTemperatureExponent">
+        <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDimensionalExponents_ThermodynamicTemperatureExponent_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDimensionalExponents_ThermodynamicTemperatureExponent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_AmountOfSubstanceExponent" name="AmountOfSubstanceExponent">
+        <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDimensionalExponents_AmountOfSubstanceExponent_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDimensionalExponents_AmountOfSubstanceExponent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDimensionalExponents_LuminousIntensityExponent" name="LuminousIntensityExponent">
+        <type xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDimensionalExponents_LuminousIntensityExponent_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDimensionalExponents_LuminousIntensityExponent_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDoseEquivalentMeasure" name="IfcDoseEquivalentMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcDoseEquivalentMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDynamicViscosityMeasure" name="IfcDynamicViscosityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcDynamicViscosityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcElectricCapacitanceMeasure" name="IfcElectricCapacitanceMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcElectricCapacitanceMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcElectricChargeMeasure" name="IfcElectricChargeMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcElectricChargeMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcElectricConductanceMeasure" name="IfcElectricConductanceMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcElectricConductanceMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcElectricCurrentMeasure" name="IfcElectricCurrentMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcElectricCurrentMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcElectricResistanceMeasure" name="IfcElectricResistanceMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcElectricResistanceMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcElectricVoltageMeasure" name="IfcElectricVoltageMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcElectricVoltageMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcEnergyMeasure" name="IfcEnergyMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcEnergyMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcForceMeasure" name="IfcForceMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcForceMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcFrequencyMeasure" name="IfcFrequencyMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcFrequencyMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcHeatFluxDensityMeasure" name="IfcHeatFluxDensityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcHeatFluxDensityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcHeatingValueMeasure" name="IfcHeatingValueMeasure">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcHeatingValueMeasure_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcHeatingValueMeasure_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>SELF &gt; 0.</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcHeatingValueMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcIdentifier" name="IfcIdentifier">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcIdentifier_strlen" name="strlen">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcIdentifier_strlen" name="strlen">
+          <language>OCL</language>
+          <body>self.size() &lt;= 255</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcIdentifier_gen_string">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcIlluminanceMeasure" name="IfcIlluminanceMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcIlluminanceMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcInductanceMeasure" name="IfcInductanceMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcInductanceMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcInteger" name="IfcInteger">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcInteger_gen_integer">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcIntegerCountRateMeasure" name="IfcIntegerCountRateMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcIntegerCountRateMeasure_gen_integer">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcIonConcentrationMeasure" name="IfcIonConcentrationMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcIonConcentrationMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcIsothermalMoistureCapacityMeasure" name="IfcIsothermalMoistureCapacityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcIsothermalMoistureCapacityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcKinematicViscosityMeasure" name="IfcKinematicViscosityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcKinematicViscosityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLabel" name="IfcLabel">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcLabel_strlen" name="strlen">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcLabel_strlen" name="strlen">
+          <language>OCL</language>
+          <body>self.size() &lt;= 255</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcLabel_gen_string">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLengthMeasure" name="IfcLengthMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcLengthMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLinearForceMeasure" name="IfcLinearForceMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcLinearForceMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLinearMomentMeasure" name="IfcLinearMomentMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcLinearMomentMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLinearStiffnessMeasure" name="IfcLinearStiffnessMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcLinearStiffnessMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLinearVelocityMeasure" name="IfcLinearVelocityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcLinearVelocityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLogical" name="IfcLogical">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcLogical_gen_logical">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_logical"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLuminousFluxMeasure" name="IfcLuminousFluxMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcLuminousFluxMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLuminousIntensityDistributionMeasure" name="IfcLuminousIntensityDistributionMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcLuminousIntensityDistributionMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLuminousIntensityMeasure" name="IfcLuminousIntensityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcLuminousIntensityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMagneticFluxDensityMeasure" name="IfcMagneticFluxDensityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcMagneticFluxDensityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMagneticFluxMeasure" name="IfcMagneticFluxMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcMagneticFluxMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMassDensityMeasure" name="IfcMassDensityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcMassDensityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMassFlowRateMeasure" name="IfcMassFlowRateMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcMassFlowRateMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMassMeasure" name="IfcMassMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcMassMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMassPerLengthMeasure" name="IfcMassPerLengthMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcMassPerLengthMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMeasureWithUnit" name="IfcMeasureWithUnit">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMeasureWithUnit_ValueComponent" name="ValueComponent" type="un_IfcValue" association="as_IfcMeasureWithUnit_ValueComponent">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMeasureWithUnit_ValueComponent_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMeasureWithUnit_ValueComponent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMeasureWithUnit_UnitComponent" name="UnitComponent" type="un_IfcUnit" association="as_IfcMeasureWithUnit_UnitComponent">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMeasureWithUnit_UnitComponent_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMeasureWithUnit_UnitComponent_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcModulusOfElasticityMeasure" name="IfcModulusOfElasticityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcModulusOfElasticityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcModulusOfLinearSubgradeReactionMeasure" name="IfcModulusOfLinearSubgradeReactionMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcModulusOfLinearSubgradeReactionMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcModulusOfRotationalSubgradeReactionMeasure" name="IfcModulusOfRotationalSubgradeReactionMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcModulusOfRotationalSubgradeReactionMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcModulusOfSubgradeReactionMeasure" name="IfcModulusOfSubgradeReactionMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcModulusOfSubgradeReactionMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMoistureDiffusivityMeasure" name="IfcMoistureDiffusivityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcMoistureDiffusivityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMolecularWeightMeasure" name="IfcMolecularWeightMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcMolecularWeightMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMomentOfInertiaMeasure" name="IfcMomentOfInertiaMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcMomentOfInertiaMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMonetaryMeasure" name="IfcMonetaryMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcMonetaryMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMonetaryUnit" name="IfcMonetaryUnit">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcMonetaryUnit_Currency" name="Currency" type="dt_IfcLabel">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcMonetaryUnit_Currency_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMonetaryUnit_Currency_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcNamedUnit" name="IfcNamedUnit" isAbstract="true">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcNamedUnit_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcNamedUnit_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>IfcCorrectDimensions (SELF.UnitType, SELF.Dimensions)</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcNamedUnit_Dimensions" name="Dimensions" type="cl_IfcDimensionalExponents" association="as_IfcNamedUnit_Dimensions">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcNamedUnit_Dimensions_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcNamedUnit_Dimensions_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcNamedUnit_UnitType" name="UnitType" type="en_IfcUnitEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcNamedUnit_UnitType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcNamedUnit_UnitType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcNumericMeasure" name="IfcNumericMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcNumericMeasure_gen_number">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_number"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPHMeasure" name="IfcPHMeasure">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPHMeasure_WR21" name="WR21">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcPHMeasure_WR21" name="WR21">
+          <language>EXPRESS_WHERE</language>
+          <body>{0.0 &lt;= SELF &lt;= 14.0}</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcPHMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcParameterValue" name="IfcParameterValue">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcParameterValue_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPlanarForceMeasure" name="IfcPlanarForceMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcPlanarForceMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPlaneAngleMeasure" name="IfcPlaneAngleMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcPlaneAngleMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPowerMeasure" name="IfcPowerMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcPowerMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPressureMeasure" name="IfcPressureMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcPressureMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcRadioActivityMeasure" name="IfcRadioActivityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcRadioActivityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcRatioMeasure" name="IfcRatioMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcRatioMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcReal" name="IfcReal">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcReal_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcRotationalFrequencyMeasure" name="IfcRotationalFrequencyMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcRotationalFrequencyMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcRotationalMassMeasure" name="IfcRotationalMassMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcRotationalMassMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcRotationalStiffnessMeasure" name="IfcRotationalStiffnessMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcRotationalStiffnessMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcSIPrefix" name="IfcSIPrefix">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_ATTO" name="ATTO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_CENTI" name="CENTI"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_DECA" name="DECA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_DECI" name="DECI"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_EXA" name="EXA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_FEMTO" name="FEMTO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_GIGA" name="GIGA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_HECTO" name="HECTO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_KILO" name="KILO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_MEGA" name="MEGA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_MICRO" name="MICRO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_MILLI" name="MILLI"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_NANO" name="NANO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_PETA" name="PETA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_PICO" name="PICO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIPrefix_TERA" name="TERA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcSIUnitName" name="IfcSIUnitName">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_AMPERE" name="AMPERE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_BECQUEREL" name="BECQUEREL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_CANDELA" name="CANDELA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_COULOMB" name="COULOMB"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_CUBIC_METRE" name="CUBIC_METRE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_DEGREE_CELSIUS" name="DEGREE_CELSIUS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_FARAD" name="FARAD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_GRAM" name="GRAM"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_GRAY" name="GRAY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_HENRY" name="HENRY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_HERTZ" name="HERTZ"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_JOULE" name="JOULE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_KELVIN" name="KELVIN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_LUMEN" name="LUMEN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_LUX" name="LUX"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_METRE" name="METRE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_MOLE" name="MOLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_NEWTON" name="NEWTON"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_OHM" name="OHM"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_PASCAL" name="PASCAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_RADIAN" name="RADIAN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_SECOND" name="SECOND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_SIEMENS" name="SIEMENS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_SIEVERT" name="SIEVERT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_SQUARE_METRE" name="SQUARE_METRE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_STERADIAN" name="STERADIAN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_TESLA" name="TESLA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_VOLT" name="VOLT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_WATT" name="WATT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSIUnitName_WEBER" name="WEBER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSectionModulusMeasure" name="IfcSectionModulusMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcSectionModulusMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSectionalAreaIntegralMeasure" name="IfcSectionalAreaIntegralMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcSectionalAreaIntegralMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcShearModulusMeasure" name="IfcShearModulusMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcShearModulusMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSolidAngleMeasure" name="IfcSolidAngleMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcSolidAngleMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSoundPowerLevelMeasure" name="IfcSoundPowerLevelMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcSoundPowerLevelMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSoundPowerMeasure" name="IfcSoundPowerMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcSoundPowerMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSoundPressureLevelMeasure" name="IfcSoundPressureLevelMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcSoundPressureLevelMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSoundPressureMeasure" name="IfcSoundPressureMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcSoundPressureMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcSpecificHeatCapacityMeasure" name="IfcSpecificHeatCapacityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcSpecificHeatCapacityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcTemperatureGradientMeasure" name="IfcTemperatureGradientMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcTemperatureGradientMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcTemperatureRateOfChangeMeasure" name="IfcTemperatureRateOfChangeMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcTemperatureRateOfChangeMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcText" name="IfcText">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcText_gen_string">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcThermalAdmittanceMeasure" name="IfcThermalAdmittanceMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcThermalAdmittanceMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcThermalConductivityMeasure" name="IfcThermalConductivityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcThermalConductivityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcThermalExpansionCoefficientMeasure" name="IfcThermalExpansionCoefficientMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcThermalExpansionCoefficientMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcThermalResistanceMeasure" name="IfcThermalResistanceMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcThermalResistanceMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcThermalTransmittanceMeasure" name="IfcThermalTransmittanceMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcThermalTransmittanceMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcThermodynamicTemperatureMeasure" name="IfcThermodynamicTemperatureMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcThermodynamicTemperatureMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcTimeMeasure" name="IfcTimeMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcTimeMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcTorqueMeasure" name="IfcTorqueMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcTorqueMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcURIReference" name="IfcURIReference">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcURIReference_gen_string">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcUnitAssignment" name="IfcUnitAssignment">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcUnitAssignment_WR01" name="WR01">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcUnitAssignment_WR01" name="WR01">
+          <language>EXPRESS_WHERE</language>
+          <body>IfcCorrectUnitAssignment(Units)</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcUnitAssignment_Units" name="Units_S[1:?]" type="un_IfcUnit" association="as_IfcUnitAssignment_Units">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcUnitAssignment_Units_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcUnitAssignment_Units_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcUnitEnum" name="IfcUnitEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_ABSORBEDDOSEUNIT" name="ABSORBEDDOSEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_AMOUNTOFSUBSTANCEUNIT" name="AMOUNTOFSUBSTANCEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_AREAUNIT" name="AREAUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_DOSEEQUIVALENTUNIT" name="DOSEEQUIVALENTUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_ELECTRICCAPACITANCEUNIT" name="ELECTRICCAPACITANCEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_ELECTRICCHARGEUNIT" name="ELECTRICCHARGEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_ELECTRICCONDUCTANCEUNIT" name="ELECTRICCONDUCTANCEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_ELECTRICCURRENTUNIT" name="ELECTRICCURRENTUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_ELECTRICRESISTANCEUNIT" name="ELECTRICRESISTANCEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_ELECTRICVOLTAGEUNIT" name="ELECTRICVOLTAGEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_ENERGYUNIT" name="ENERGYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_FORCEUNIT" name="FORCEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_FREQUENCYUNIT" name="FREQUENCYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_ILLUMINANCEUNIT" name="ILLUMINANCEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_INDUCTANCEUNIT" name="INDUCTANCEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_LENGTHUNIT" name="LENGTHUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_LUMINOUSFLUXUNIT" name="LUMINOUSFLUXUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_LUMINOUSINTENSITYUNIT" name="LUMINOUSINTENSITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_MAGNETICFLUXDENSITYUNIT" name="MAGNETICFLUXDENSITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_MAGNETICFLUXUNIT" name="MAGNETICFLUXUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_MASSUNIT" name="MASSUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_PLANEANGLEUNIT" name="PLANEANGLEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_POWERUNIT" name="POWERUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_PRESSUREUNIT" name="PRESSUREUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_RADIOACTIVITYUNIT" name="RADIOACTIVITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_SOLIDANGLEUNIT" name="SOLIDANGLEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_THERMODYNAMICTEMPERATUREUNIT" name="THERMODYNAMICTEMPERATUREUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_TIMEUNIT" name="TIMEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_VOLUMEUNIT" name="VOLUMEUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcUnitEnum_USERDEFINED" name="USERDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcVaporPermeabilityMeasure" name="IfcVaporPermeabilityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcVaporPermeabilityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcVolumeMeasure" name="IfcVolumeMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcVolumeMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcVolumetricFlowRateMeasure" name="IfcVolumetricFlowRateMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcVolumetricFlowRateMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcWarpingConstantMeasure" name="IfcWarpingConstantMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcWarpingConstantMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcWarpingMomentMeasure" name="IfcWarpingMomentMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcWarpingMomentMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcContextDependentUnit" name="IfcContextDependentUnit">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcContextDependentUnit_gen_IfcNamedUnit" general="cl_IfcNamedUnit"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcContextDependentUnit_Name" name="Name" type="dt_IfcLabel">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcContextDependentUnit_Name_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcContextDependentUnit_Name_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConversionBasedUnit" name="IfcConversionBasedUnit">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConversionBasedUnit_gen_IfcNamedUnit" general="cl_IfcNamedUnit"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConversionBasedUnit_Name" name="Name" type="dt_IfcLabel">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConversionBasedUnit_Name_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConversionBasedUnit_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConversionBasedUnit_ConversionFactor" name="ConversionFactor" type="cl_IfcMeasureWithUnit" association="as_IfcConversionBasedUnit_ConversionFactor">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConversionBasedUnit_ConversionFactor_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConversionBasedUnit_ConversionFactor_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcDerivedMeasureValue" name="IfcDerivedMeasureValue"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcAbsorbedDoseMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcAbsorbedDoseMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcAccelerationMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcAccelerationMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcAngularVelocityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcAngularVelocityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcAreaDensityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcAreaDensityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcCompoundPlaneAngleMeasure_L[3:4]" client="un_IfcDerivedMeasureValue" supplier="dt_IfcCompoundPlaneAngleMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcCurvatureMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcCurvatureMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcDoseEquivalentMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcDoseEquivalentMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcDynamicViscosityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcDynamicViscosityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcElectricCapacitanceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricCapacitanceMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcElectricChargeMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricChargeMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcElectricConductanceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricConductanceMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcElectricResistanceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricResistanceMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcElectricVoltageMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricVoltageMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcEnergyMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcEnergyMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcForceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcForceMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcFrequencyMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcFrequencyMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcHeatFluxDensityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcHeatFluxDensityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcHeatingValueMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcHeatingValueMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcIlluminanceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcIlluminanceMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcInductanceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcInductanceMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcIntegerCountRateMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcIntegerCountRateMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcIonConcentrationMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcIonConcentrationMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcIsothermalMoistureCapacityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcIsothermalMoistureCapacityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcKinematicViscosityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcKinematicViscosityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcLinearForceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcLinearForceMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcLinearMomentMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcLinearMomentMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcLinearStiffnessMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcLinearStiffnessMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcLinearVelocityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcLinearVelocityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcLuminousFluxMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcLuminousFluxMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcLuminousIntensityDistributionMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcLuminousIntensityDistributionMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcMagneticFluxDensityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMagneticFluxDensityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcMagneticFluxMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMagneticFluxMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcMassDensityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMassDensityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcMassFlowRateMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMassFlowRateMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcMassPerLengthMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMassPerLengthMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcModulusOfElasticityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcModulusOfElasticityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcModulusOfLinearSubgradeReactionMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcModulusOfLinearSubgradeReactionMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcModulusOfRotationalSubgradeReactionMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcModulusOfRotationalSubgradeReactionMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcModulusOfSubgradeReactionMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcModulusOfSubgradeReactionMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcMoistureDiffusivityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMoistureDiffusivityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcMolecularWeightMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMolecularWeightMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcMomentOfInertiaMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMomentOfInertiaMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcMonetaryMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcMonetaryMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcPHMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcPHMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcPlanarForceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcPlanarForceMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcPowerMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcPowerMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcPressureMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcPressureMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcRadioActivityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcRadioActivityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcRotationalFrequencyMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcRotationalFrequencyMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcRotationalMassMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcRotationalMassMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcRotationalStiffnessMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcRotationalStiffnessMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcSectionModulusMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSectionModulusMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcSectionalAreaIntegralMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSectionalAreaIntegralMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcShearModulusMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcShearModulusMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcSoundPowerLevelMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSoundPowerLevelMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcSoundPowerMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSoundPowerMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcSoundPressureLevelMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSoundPressureLevelMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcSoundPressureMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSoundPressureMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcSpecificHeatCapacityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcSpecificHeatCapacityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcTemperatureGradientMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcTemperatureGradientMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcTemperatureRateOfChangeMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcTemperatureRateOfChangeMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcThermalAdmittanceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcThermalAdmittanceMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcThermalConductivityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcThermalConductivityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcThermalExpansionCoefficientMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcThermalExpansionCoefficientMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcThermalResistanceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcThermalResistanceMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcThermalTransmittanceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcThermalTransmittanceMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcTorqueMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcTorqueMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcVaporPermeabilityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcVaporPermeabilityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcVolumetricFlowRateMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcVolumetricFlowRateMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcWarpingConstantMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcWarpingConstantMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcWarpingMomentMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcWarpingMomentMeasure"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcNonNegativeLengthMeasure" name="IfcNonNegativeLengthMeasure">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcNonNegativeLengthMeasure_NotNegative" name="NotNegative">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcNonNegativeLengthMeasure_NotNegative" name="NotNegative">
+          <language>EXPRESS_WHERE</language>
+          <body>SELF &gt;= 0.</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcNonNegativeLengthMeasure_gen_IfcLengthMeasure" general="dt_IfcLengthMeasure"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcNormalisedRatioMeasure" name="IfcNormalisedRatioMeasure">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcNormalisedRatioMeasure_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcNormalisedRatioMeasure_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>{0.0 &lt;= SELF &lt;= 1.0}</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcNormalisedRatioMeasure_gen_IfcRatioMeasure" general="dt_IfcRatioMeasure"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPositiveInteger" name="IfcPositiveInteger">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPositiveInteger_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcPositiveInteger_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>SELF &gt; 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcPositiveInteger_gen_IfcInteger" general="dt_IfcInteger"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPositiveLengthMeasure" name="IfcPositiveLengthMeasure">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPositiveLengthMeasure_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcPositiveLengthMeasure_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>SELF &gt; 0.</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcPositiveLengthMeasure_gen_IfcLengthMeasure" general="dt_IfcLengthMeasure"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPositivePlaneAngleMeasure" name="IfcPositivePlaneAngleMeasure">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPositivePlaneAngleMeasure_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcPositivePlaneAngleMeasure_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>SELF &gt; 0.</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcPositivePlaneAngleMeasure_gen_IfcPlaneAngleMeasure" general="dt_IfcPlaneAngleMeasure"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcPositiveRatioMeasure" name="IfcPositiveRatioMeasure">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPositiveRatioMeasure_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcPositiveRatioMeasure_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>SELF &gt; 0.</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcPositiveRatioMeasure_gen_IfcRatioMeasure" general="dt_IfcRatioMeasure"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSIUnit" name="IfcSIUnit">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSIUnit_gen_IfcNamedUnit" general="cl_IfcNamedUnit"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSIUnit_Prefix" name="Prefix" type="en_IfcSIPrefix">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSIUnit_Prefix_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSIUnit_Prefix_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSIUnit_Name" name="Name" type="en_IfcSIUnitName">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSIUnit_Name_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSIUnit_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSIUnit_Dimensions" name="Dimensions" isDerived="true" type="cl_IfcDimensionalExponents">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSIUnit_Dimensions_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSIUnit_Dimensions_upper" value="1"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcSIUnit_Dimensions_expr" name="Dimensions">
+          <language>EXPRESS</language>
+          <body>IfcDimensionalExponents := IfcDimensionsForSIUnit (SELF.Name)</body>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcUnit" name="IfcUnit"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcUnit_IfcDerivedUnit" client="un_IfcUnit" supplier="cl_IfcDerivedUnit"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcUnit_IfcMonetaryUnit" client="un_IfcUnit" supplier="cl_IfcMonetaryUnit"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcUnit_IfcNamedUnit" client="un_IfcUnit" supplier="cl_IfcNamedUnit"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConversionBasedUnitWithOffset" name="IfcConversionBasedUnitWithOffset">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConversionBasedUnitWithOffset_gen_IfcConversionBasedUnit" general="cl_IfcConversionBasedUnit"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcConversionBasedUnitWithOffset_ConversionOffset" name="ConversionOffset" type="dt_IfcReal">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcConversionBasedUnitWithOffset_ConversionOffset_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcConversionBasedUnitWithOffset_ConversionOffset_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcMeasureValue" name="IfcMeasureValue"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcAmountOfSubstanceMeasure" client="un_IfcMeasureValue" supplier="dt_IfcAmountOfSubstanceMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcAreaMeasure" client="un_IfcMeasureValue" supplier="dt_IfcAreaMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcComplexNumber_A[1:2]" client="un_IfcMeasureValue" supplier="dt_IfcComplexNumber"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcContextDependentMeasure" client="un_IfcMeasureValue" supplier="dt_IfcContextDependentMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcCountMeasure" client="un_IfcMeasureValue" supplier="dt_IfcCountMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcDescriptiveMeasure" client="un_IfcMeasureValue" supplier="dt_IfcDescriptiveMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcElectricCurrentMeasure" client="un_IfcMeasureValue" supplier="dt_IfcElectricCurrentMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcLengthMeasure" client="un_IfcMeasureValue" supplier="dt_IfcLengthMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcLuminousIntensityMeasure" client="un_IfcMeasureValue" supplier="dt_IfcLuminousIntensityMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcMassMeasure" client="un_IfcMeasureValue" supplier="dt_IfcMassMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcNonNegativeLengthMeasure" client="un_IfcMeasureValue" supplier="dt_IfcNonNegativeLengthMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcNormalisedRatioMeasure" client="un_IfcMeasureValue" supplier="dt_IfcNormalisedRatioMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcNumericMeasure" client="un_IfcMeasureValue" supplier="dt_IfcNumericMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcParameterValue" client="un_IfcMeasureValue" supplier="dt_IfcParameterValue"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcPlaneAngleMeasure" client="un_IfcMeasureValue" supplier="dt_IfcPlaneAngleMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcPositiveLengthMeasure" client="un_IfcMeasureValue" supplier="dt_IfcPositiveLengthMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcPositivePlaneAngleMeasure" client="un_IfcMeasureValue" supplier="dt_IfcPositivePlaneAngleMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcPositiveRatioMeasure" client="un_IfcMeasureValue" supplier="dt_IfcPositiveRatioMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcRatioMeasure" client="un_IfcMeasureValue" supplier="dt_IfcRatioMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcSolidAngleMeasure" client="un_IfcMeasureValue" supplier="dt_IfcSolidAngleMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcThermodynamicTemperatureMeasure" client="un_IfcMeasureValue" supplier="dt_IfcThermodynamicTemperatureMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcTimeMeasure" client="un_IfcMeasureValue" supplier="dt_IfcTimeMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcMeasureValue_IfcVolumeMeasure" client="un_IfcMeasureValue" supplier="dt_IfcVolumeMeasure"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcSimpleValue" name="IfcSimpleValue"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcBinary" client="un_IfcSimpleValue" supplier="dt_IfcBinary"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcBoolean" client="un_IfcSimpleValue" supplier="dt_IfcBoolean"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcDate" client="un_IfcSimpleValue">
+      <supplier xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcDateTime" client="un_IfcSimpleValue">
+      <supplier xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcDuration" client="un_IfcSimpleValue">
+      <supplier xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcIdentifier" client="un_IfcSimpleValue" supplier="dt_IfcIdentifier"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcInteger" client="un_IfcSimpleValue" supplier="dt_IfcInteger"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcLabel" client="un_IfcSimpleValue" supplier="dt_IfcLabel"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcLogical" client="un_IfcSimpleValue" supplier="dt_IfcLogical"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcPositiveInteger" client="un_IfcSimpleValue" supplier="dt_IfcPositiveInteger"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcReal" client="un_IfcSimpleValue" supplier="dt_IfcReal"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcText" client="un_IfcSimpleValue" supplier="dt_IfcText"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcTime" client="un_IfcSimpleValue">
+      <supplier xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcTime"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcTimeStamp" client="un_IfcSimpleValue">
+      <supplier xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcTimeStamp"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSimpleValue_IfcURIReference" client="un_IfcSimpleValue" supplier="dt_IfcURIReference"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcValue" name="IfcValue"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcValue_IfcDerivedMeasureValue" client="un_IfcValue" supplier="un_IfcDerivedMeasureValue"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcValue_IfcMeasureValue" client="un_IfcValue" supplier="un_IfcMeasureValue"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcValue_IfcSimpleValue" client="un_IfcValue" supplier="un_IfcSimpleValue"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDerivedUnit_Elements" name="Elements" memberEnd="at_IfcDerivedUnit_Elements as_IfcDerivedUnit_Elements_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDerivedUnit_Elements_target_end" name="" type="cl_IfcDerivedUnit" association="as_IfcDerivedUnit_Elements">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDerivedUnit_Elements_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDerivedUnit_Elements_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDerivedUnitElement_Unit" name="Unit" memberEnd="at_IfcDerivedUnitElement_Unit as_IfcDerivedUnitElement_Unit_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDerivedUnitElement_Unit_target_end" name="" type="cl_IfcDerivedUnitElement" association="as_IfcDerivedUnitElement_Unit">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDerivedUnitElement_Unit_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDerivedUnitElement_Unit_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcMeasureWithUnit_ValueComponent" name="ValueComponent" memberEnd="at_IfcMeasureWithUnit_ValueComponent as_IfcMeasureWithUnit_ValueComponent_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcMeasureWithUnit_ValueComponent_target_end" name="" type="cl_IfcMeasureWithUnit" association="as_IfcMeasureWithUnit_ValueComponent">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcMeasureWithUnit_ValueComponent_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcMeasureWithUnit_ValueComponent_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcMeasureWithUnit_UnitComponent" name="UnitComponent" memberEnd="at_IfcMeasureWithUnit_UnitComponent as_IfcMeasureWithUnit_UnitComponent_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcMeasureWithUnit_UnitComponent_target_end" name="" type="cl_IfcMeasureWithUnit" association="as_IfcMeasureWithUnit_UnitComponent">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcMeasureWithUnit_UnitComponent_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcMeasureWithUnit_UnitComponent_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcNamedUnit_Dimensions" name="Dimensions" memberEnd="at_IfcNamedUnit_Dimensions as_IfcNamedUnit_Dimensions_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcNamedUnit_Dimensions_target_end" name="" type="cl_IfcNamedUnit" association="as_IfcNamedUnit_Dimensions">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcNamedUnit_Dimensions_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcNamedUnit_Dimensions_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcUnitAssignment_Units" name="Units" memberEnd="at_IfcUnitAssignment_Units as_IfcUnitAssignment_Units_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcUnitAssignment_Units_target_end" name="" type="cl_IfcUnitAssignment" association="as_IfcUnitAssignment_Units">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcUnitAssignment_Units_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcUnitAssignment_Units_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConversionBasedUnit_ConversionFactor" name="ConversionFactor" memberEnd="at_IfcConversionBasedUnit_ConversionFactor as_IfcConversionBasedUnit_ConversionFactor_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConversionBasedUnit_ConversionFactor_target_end" name="" type="cl_IfcConversionBasedUnit" association="as_IfcConversionBasedUnit_ConversionFactor">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConversionBasedUnit_ConversionFactor_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConversionBasedUnit_ConversionFactor_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

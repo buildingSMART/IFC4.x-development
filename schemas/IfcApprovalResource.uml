@@ -1,134 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcApprovalResource" name="IfcApprovalResource">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcApprovalResource" name="IfcApprovalResource">
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcApproval" name="IfcApproval">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_Identifier" name="Identifier" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11386" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11387" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11388" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11389" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11390" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11391" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_TimeOfApproval" name="TimeOfApproval" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11392" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11393" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_Status" name="Status" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11394" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11395" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_Level" name="Level" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11396" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11397" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_Qualifier" name="Qualifier" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11398" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11399" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_RequestingApproval" name="RequestingApproval" isOrdered="false" association="as_IfcApproval_RequestingApproval">
-          <type xmi:type="uml:Class" href="IfcActorResource.uml#un_IfcActorSelect"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11400" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11401" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_GivingApproval" name="GivingApproval" isOrdered="false" association="as_IfcApproval_GivingApproval">
-          <type xmi:type="uml:Class" href="IfcActorResource.uml#un_IfcActorSelect"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11402" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11403" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcApproval_HasIdentifierOrName" name="HasIdentifierOrName">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_11404" name="HasIdentifierOrName">
-            <language>EXPRESS_WHERE</language>
-            <body>EXISTS (Identifier) OR EXISTS (Name)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcApprovalRelationship" name="IfcApprovalRelationship">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_11405">
-          <general xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcResourceLevelRelationship"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApprovalRelationship_RelatingApproval" name="RelatingApproval" isOrdered="false" association="as_IfcApprovalRelationship_RelatingApproval" type="cl_IfcApproval">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11406" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11407" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApprovalRelationship_RelatedApprovals" name="RelatedApprovals_S[1:?]" isOrdered="false" association="as_IfcApprovalRelationship_RelatedApprovals" type="cl_IfcApproval">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11408" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11409" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcResourceApprovalRelationship" name="IfcResourceApprovalRelationship">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_11410">
-          <general xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcResourceLevelRelationship"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceApprovalRelationship_RelatedResourceObjects" name="RelatedResourceObjects_S[1:?]" isOrdered="false" association="as_IfcResourceApprovalRelationship_RelatedResourceObjects">
-          <type xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#un_IfcResourceObjectSelect"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11411" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11412" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceApprovalRelationship_RelatingApproval" name="RelatingApproval" isOrdered="false" association="as_IfcResourceApprovalRelationship_RelatingApproval" type="cl_IfcApproval">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11413" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11414" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcApproval_RequestingApproval" name="RequestingApproval" memberEnd="at_IfcApproval_RequestingApproval end_22">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_22" name="" association="as_IfcApproval_RequestingApproval" type="cl_IfcApproval">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11415" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11416" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcApproval_GivingApproval" name="GivingApproval" memberEnd="at_IfcApproval_GivingApproval end_24">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_24" name="" association="as_IfcApproval_GivingApproval" type="cl_IfcApproval">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11417" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11418" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcApprovalRelationship_RelatingApproval" name="RelatingApproval" memberEnd="at_IfcApprovalRelationship_RelatingApproval end_26">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_26" name="INV_Relates_S[0:?]" association="as_IfcApprovalRelationship_RelatingApproval" type="cl_IfcApprovalRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11419" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11420" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcApprovalRelationship_RelatedApprovals" name="RelatedApprovals" memberEnd="at_IfcApprovalRelationship_RelatedApprovals end_28">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_28" name="INV_IsRelatedWith_S[0:?]" association="as_IfcApprovalRelationship_RelatedApprovals" type="cl_IfcApprovalRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11421" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11422" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcResourceApprovalRelationship_RelatedResourceObjects" name="RelatedResourceObjects" memberEnd="at_IfcResourceApprovalRelationship_RelatedResourceObjects end_750">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_750" name="" association="as_IfcResourceApprovalRelationship_RelatedResourceObjects" type="cl_IfcResourceApprovalRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11423" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11424" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcResourceApprovalRelationship_RelatingApproval" name="RelatingApproval" memberEnd="at_IfcResourceApprovalRelationship_RelatingApproval end_752">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_752" name="INV_ApprovedResources_S[0:?]" association="as_IfcResourceApprovalRelationship_RelatingApproval" type="cl_IfcResourceApprovalRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11425" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11426" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcProperty_HasApprovals" name="IfcProperty_HasApprovals" memberEnd="end_1051 end_1052">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1051" name="(RelatedResourceObjects)" association="as_IfcProperty_HasApprovals">
-          <type xmi:type="uml:Class" href="IfcPropertyResource.uml#cl_IfcProperty"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11427" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11428" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1052" name="INV_HasApprovals_S[0:?]" association="as_IfcProperty_HasApprovals" type="cl_IfcResourceApprovalRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_11429" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_11430" value="1"/>
-        </ownedEnd>
-      </packagedElement>
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcApprovalResource" name="IfcApprovalResource" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcApprovalResource" name="IfcApprovalResource">
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcApproval" name="IfcApproval">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcApproval_HasIdentifierOrName" name="HasIdentifierOrName">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcApproval_HasIdentifierOrName" name="HasIdentifierOrName">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS (Identifier) OR EXISTS (Name)</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_Identifier" name="Identifier">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcApproval_Identifier_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcApproval_Identifier_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcApproval_Name_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcApproval_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcApproval_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcApproval_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_TimeOfApproval" name="TimeOfApproval">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcApproval_TimeOfApproval_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcApproval_TimeOfApproval_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_Status" name="Status">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcApproval_Status_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcApproval_Status_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_Level" name="Level">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcApproval_Level_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcApproval_Level_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_Qualifier" name="Qualifier">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcApproval_Qualifier_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcApproval_Qualifier_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_RequestingApproval" name="RequestingApproval" association="as_IfcApproval_RequestingApproval">
+        <type xmi:type="uml:Class" href="IfcActorResource.uml#un_IfcActorSelect"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcApproval_RequestingApproval_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcApproval_RequestingApproval_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApproval_GivingApproval" name="GivingApproval" association="as_IfcApproval_GivingApproval">
+        <type xmi:type="uml:Class" href="IfcActorResource.uml#un_IfcActorSelect"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcApproval_GivingApproval_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcApproval_GivingApproval_upper" value="1"/>
+      </ownedAttribute>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcApprovalRelationship" name="IfcApprovalRelationship">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcApprovalRelationship_gen_IfcResourceLevelRelationship">
+        <general xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcResourceLevelRelationship"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApprovalRelationship_RelatingApproval" name="RelatingApproval" type="cl_IfcApproval" association="as_IfcApprovalRelationship_RelatingApproval">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcApprovalRelationship_RelatingApproval_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcApprovalRelationship_RelatingApproval_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcApprovalRelationship_RelatedApprovals" name="RelatedApprovals_S[1:?]" type="cl_IfcApproval" association="as_IfcApprovalRelationship_RelatedApprovals">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcApprovalRelationship_RelatedApprovals_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcApprovalRelationship_RelatedApprovals_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcResourceApprovalRelationship" name="IfcResourceApprovalRelationship">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcResourceApprovalRelationship_gen_IfcResourceLevelRelationship">
+        <general xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcResourceLevelRelationship"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceApprovalRelationship_RelatedResourceObjects" name="RelatedResourceObjects_S[1:?]" association="as_IfcResourceApprovalRelationship_RelatedResourceObjects">
+        <type xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#un_IfcResourceObjectSelect"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceApprovalRelationship_RelatedResourceObjects_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceApprovalRelationship_RelatedResourceObjects_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceApprovalRelationship_RelatingApproval" name="RelatingApproval" type="cl_IfcApproval" association="as_IfcResourceApprovalRelationship_RelatingApproval">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceApprovalRelationship_RelatingApproval_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceApprovalRelationship_RelatingApproval_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcApproval_RequestingApproval" name="RequestingApproval" memberEnd="at_IfcApproval_RequestingApproval as_IfcApproval_RequestingApproval_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcApproval_RequestingApproval_target_end" name="" type="cl_IfcApproval" association="as_IfcApproval_RequestingApproval">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcApproval_RequestingApproval_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcApproval_RequestingApproval_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcApproval_GivingApproval" name="GivingApproval" memberEnd="at_IfcApproval_GivingApproval as_IfcApproval_GivingApproval_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcApproval_GivingApproval_target_end" name="" type="cl_IfcApproval" association="as_IfcApproval_GivingApproval">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcApproval_GivingApproval_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcApproval_GivingApproval_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcApprovalRelationship_RelatingApproval" name="RelatingApproval" memberEnd="at_IfcApprovalRelationship_RelatingApproval as_IfcApprovalRelationship_RelatingApproval_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcApprovalRelationship_RelatingApproval_target_end" name="INV_Relates_S[0:?]" type="cl_IfcApprovalRelationship" association="as_IfcApprovalRelationship_RelatingApproval">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcApprovalRelationship_RelatingApproval_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcApprovalRelationship_RelatingApproval_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcApprovalRelationship_RelatedApprovals" name="RelatedApprovals" memberEnd="at_IfcApprovalRelationship_RelatedApprovals as_IfcApprovalRelationship_RelatedApprovals_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcApprovalRelationship_RelatedApprovals_target_end" name="INV_IsRelatedWith_S[0:?]" type="cl_IfcApprovalRelationship" association="as_IfcApprovalRelationship_RelatedApprovals">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcApprovalRelationship_RelatedApprovals_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcApprovalRelationship_RelatedApprovals_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcResourceApprovalRelationship_RelatedResourceObjects" name="RelatedResourceObjects" memberEnd="at_IfcResourceApprovalRelationship_RelatedResourceObjects as_IfcResourceApprovalRelationship_RelatedResourceObjects_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcResourceApprovalRelationship_RelatedResourceObjects_target_end" name="" type="cl_IfcResourceApprovalRelationship" association="as_IfcResourceApprovalRelationship_RelatedResourceObjects">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcResourceApprovalRelationship_RelatedResourceObjects_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcResourceApprovalRelationship_RelatedResourceObjects_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcResourceApprovalRelationship_RelatingApproval" name="RelatingApproval" memberEnd="at_IfcResourceApprovalRelationship_RelatingApproval as_IfcResourceApprovalRelationship_RelatingApproval_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcResourceApprovalRelationship_RelatingApproval_target_end" name="INV_ApprovedResources_S[0:?]" type="cl_IfcResourceApprovalRelationship" association="as_IfcResourceApprovalRelationship_RelatingApproval">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcResourceApprovalRelationship_RelatingApproval_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcResourceApprovalRelationship_RelatingApproval_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcProperty_HasApprovals" name="IfcProperty_HasApprovals" memberEnd="as_IfcProperty_HasApprovals_source_end as_IfcProperty_HasApprovals_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcProperty_HasApprovals_source_end" name="(RelatedResourceObjects)" association="as_IfcProperty_HasApprovals">
+        <type xmi:type="uml:Class" href="IfcPropertyResource.uml#cl_IfcProperty"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcProperty_HasApprovals_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcProperty_HasApprovals_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcProperty_HasApprovals_target_end" name="INV_HasApprovals_S[0:?]" type="cl_IfcResourceApprovalRelationship" association="as_IfcProperty_HasApprovals">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcProperty_HasApprovals_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcProperty_HasApprovals_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

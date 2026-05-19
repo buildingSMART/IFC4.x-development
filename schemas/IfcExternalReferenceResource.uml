@@ -1,570 +1,568 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcExternalReferenceResource" name="IfcExternalReferenceResource">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcExternalReferenceResource" name="IfcExternalReferenceResource">
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDocumentConfidentialityEnum" name="IfcDocumentConfidentialityEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19433" name="CONFIDENTIAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19434" name="PERSONAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19435" name="PUBLIC"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19436" name="RESTRICTED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19437" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19438" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDocumentStatusEnum" name="IfcDocumentStatusEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19439" name="DRAFT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19440" name="FINAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19441" name="FINALDRAFT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19442" name="REVISION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19443" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcExternalInformation" name="IfcExternalInformation" isAbstract="true"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcExternalReference" name="IfcExternalReference" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcExternalReference_Location" name="Location" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19444" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19445" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcExternalReference_Identification" name="Identification" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19446" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19447" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcExternalReference_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19448" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19449" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcExternalReference_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_19450" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>EXISTS(Identification) OR EXISTS(Location) OR EXISTS(Name)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcResourceLevelRelationship" name="IfcResourceLevelRelationship" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceLevelRelationship_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19451" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19452" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceLevelRelationship_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19453" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19454" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcClassification" name="IfcClassification">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19455" general="cl_IfcExternalInformation"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_Source" name="Source" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19456" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19457" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_Edition" name="Edition" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19458" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19459" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_EditionDate" name="EditionDate" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19460" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19461" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19462" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19463" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19464" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19465" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_Specification" name="Specification" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19466" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19467" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_ReferenceTokens" name="ReferenceTokens_L[1:?]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19468" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19469" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcClassificationReference" name="IfcClassificationReference">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19470" general="cl_IfcExternalReference"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassificationReference_ReferencedSource" name="ReferencedSource" isOrdered="false" association="as_IfcClassificationReference_ReferencedSource" type="un_IfcClassificationReferenceSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19471" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19472" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassificationReference_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19473" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19474" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassificationReference_Sort" name="Sort" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19475" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19476" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDocumentInformation" name="IfcDocumentInformation">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19477" general="cl_IfcExternalInformation"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Identification" name="Identification" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19478" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19479" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19480" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19481" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19482" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19483" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Location" name="Location" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19484" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19485" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Purpose" name="Purpose" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19486" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19487" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_IntendedUse" name="IntendedUse" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19488" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19489" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Scope" name="Scope" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19490" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19491" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Revision" name="Revision" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19492" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19493" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_DocumentOwner" name="DocumentOwner" isOrdered="false" association="as_IfcDocumentInformation_DocumentOwner">
-          <type xmi:type="uml:Class" href="IfcActorResource.uml#un_IfcActorSelect"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19494" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19495" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Editors" name="Editors_S[1:?]" isOrdered="false" association="as_IfcDocumentInformation_Editors">
-          <type xmi:type="uml:Class" href="IfcActorResource.uml#un_IfcActorSelect"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19496" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19497" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_CreationTime" name="CreationTime" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19498" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19499" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_LastRevisionTime" name="LastRevisionTime" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19500" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19501" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_ElectronicFormat" name="ElectronicFormat" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19502" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19503" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_ValidFrom" name="ValidFrom" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19504" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19505" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_ValidUntil" name="ValidUntil" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19506" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19507" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Confidentiality" name="Confidentiality" isOrdered="false" type="en_IfcDocumentConfidentialityEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19508" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19509" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Status" name="Status" isOrdered="false" type="en_IfcDocumentStatusEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19510" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19511" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDocumentInformationRelationship" name="IfcDocumentInformationRelationship">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19512" general="cl_IfcResourceLevelRelationship"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformationRelationship_RelatingDocument" name="RelatingDocument" isOrdered="false" association="as_IfcDocumentInformationRelationship_RelatingDocument" type="cl_IfcDocumentInformation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19513" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19514" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformationRelationship_RelatedDocuments" name="RelatedDocuments_S[1:?]" isOrdered="false" association="as_IfcDocumentInformationRelationship_RelatedDocuments" type="cl_IfcDocumentInformation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19515" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19516" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformationRelationship_RelationshipType" name="RelationshipType" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19517" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19518" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDocumentReference" name="IfcDocumentReference">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19519" general="cl_IfcExternalReference"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentReference_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19520" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19521" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentReference_ReferencedDocument" name="ReferencedDocument" isOrdered="false" association="as_IfcDocumentReference_ReferencedDocument" type="cl_IfcDocumentInformation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19522" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19523" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDocumentReference_WR1" name="WR1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_19524" name="WR1">
-            <language>EXPRESS_WHERE</language>
-            <body>EXISTS(Name) XOR EXISTS(ReferencedDocument)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcExternalReferenceRelationship" name="IfcExternalReferenceRelationship">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19525" general="cl_IfcResourceLevelRelationship"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcExternalReferenceRelationship_RelatingReference" name="RelatingReference" isOrdered="false" association="as_IfcExternalReferenceRelationship_RelatingReference" type="cl_IfcExternalReference">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19526" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19527" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcExternalReferenceRelationship_RelatedResourceObjects" name="RelatedResourceObjects_S[1:?]" isOrdered="false" association="as_IfcExternalReferenceRelationship_RelatedResourceObjects" type="un_IfcResourceObjectSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19528" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19529" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLanguageId" name="IfcLanguageId">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19530">
-          <general xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLibraryInformation" name="IfcLibraryInformation">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19531" general="cl_IfcExternalInformation"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryInformation_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19532" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19533" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryInformation_Version" name="Version" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19534" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19535" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryInformation_Publisher" name="Publisher" isOrdered="false" association="as_IfcLibraryInformation_Publisher">
-          <type xmi:type="uml:Class" href="IfcActorResource.uml#un_IfcActorSelect"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19536" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19537" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryInformation_VersionDate" name="VersionDate" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19538" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19539" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryInformation_Location" name="Location" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19540" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19541" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryInformation_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19542" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19543" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLibraryReference" name="IfcLibraryReference">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19544" general="cl_IfcExternalReference"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryReference_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19545" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19546" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryReference_Language" name="Language" isOrdered="false" type="dt_IfcLanguageId">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19547" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19548" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryReference_ReferencedLibrary" name="ReferencedLibrary" isOrdered="false" association="as_IfcLibraryReference_ReferencedLibrary" type="cl_IfcLibraryInformation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19549" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19550" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcClassificationReferenceSelect" name="IfcClassificationReferenceSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19551" client="un_IfcClassificationReferenceSelect" supplier="cl_IfcClassification"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19552" client="un_IfcClassificationReferenceSelect" supplier="cl_IfcClassificationReference"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcClassificationSelect" name="IfcClassificationSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19553" client="un_IfcClassificationSelect" supplier="cl_IfcClassification"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19554" client="un_IfcClassificationSelect" supplier="cl_IfcClassificationReference"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcDocumentSelect" name="IfcDocumentSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19555" client="un_IfcDocumentSelect" supplier="cl_IfcDocumentInformation"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19556" client="un_IfcDocumentSelect" supplier="cl_IfcDocumentReference"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcLibrarySelect" name="IfcLibrarySelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19557" client="un_IfcLibrarySelect" supplier="cl_IfcLibraryInformation"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19558" client="un_IfcLibrarySelect" supplier="cl_IfcLibraryReference"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcResourceObjectSelect" name="IfcResourceObjectSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19559" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcActorRole"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19560" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcAppliedValue"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19561" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcApprovalResource.uml#cl_IfcApproval"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19562" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcConstraintResource.uml#cl_IfcConstraint"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19563" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcContextDependentUnit"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19564" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcConversionBasedUnit"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19565" client="un_IfcResourceObjectSelect" supplier="cl_IfcExternalInformation"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19566" client="un_IfcResourceObjectSelect" supplier="cl_IfcExternalReference"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19567" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcMaterialResource.uml#cl_IfcMaterialDefinition"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19568" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcOrganization"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19569" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcPerson"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19570" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcPersonAndOrganization"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19571" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcPhysicalQuantity"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19572" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcProfileResource.uml#cl_IfcProfileDef"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19573" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcPropertyResource.uml#cl_IfcPropertyAbstraction"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19574" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19575" client="un_IfcResourceObjectSelect">
-        <supplier xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcClassificationReference_ReferencedSource" name="ReferencedSource" memberEnd="at_IfcClassificationReference_ReferencedSource end_116">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_116" name="" association="as_IfcClassificationReference_ReferencedSource" type="cl_IfcClassificationReference">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19576" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19577" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDocumentInformation_DocumentOwner" name="DocumentOwner" memberEnd="at_IfcDocumentInformation_DocumentOwner end_226">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_226" name="" association="as_IfcDocumentInformation_DocumentOwner" type="cl_IfcDocumentInformation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19578" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19579" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDocumentInformation_Editors" name="Editors" memberEnd="at_IfcDocumentInformation_Editors end_228">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_228" name="" association="as_IfcDocumentInformation_Editors" type="cl_IfcDocumentInformation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19580" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19581" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDocumentInformationRelationship_RelatingDocument" name="RelatingDocument" memberEnd="at_IfcDocumentInformationRelationship_RelatingDocument end_230">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_230" name="INV_IsPointer_S[0:1]" association="as_IfcDocumentInformationRelationship_RelatingDocument" type="cl_IfcDocumentInformationRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19582" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19583" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDocumentInformationRelationship_RelatedDocuments" name="RelatedDocuments" memberEnd="at_IfcDocumentInformationRelationship_RelatedDocuments end_232">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_232" name="INV_IsPointedTo_S[0:?]" association="as_IfcDocumentInformationRelationship_RelatedDocuments" type="cl_IfcDocumentInformationRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19584" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19585" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDocumentReference_ReferencedDocument" name="ReferencedDocument" memberEnd="at_IfcDocumentReference_ReferencedDocument end_234">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_234" name="INV_HasDocumentReferences_S[0:?]" association="as_IfcDocumentReference_ReferencedDocument" type="cl_IfcDocumentReference">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19586" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19587" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcExternalReferenceRelationship_RelatingReference" name="RelatingReference" memberEnd="at_IfcExternalReferenceRelationship_RelatingReference end_256">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_256" name="INV_ExternalReferenceForResources_S[0:?]" association="as_IfcExternalReferenceRelationship_RelatingReference" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19588" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19589" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcExternalReferenceRelationship_RelatedResourceObjects" name="RelatedResourceObjects" memberEnd="at_IfcExternalReferenceRelationship_RelatedResourceObjects end_258">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_258" name="" association="as_IfcExternalReferenceRelationship_RelatedResourceObjects" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19590" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19591" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLibraryInformation_Publisher" name="Publisher" memberEnd="at_IfcLibraryInformation_Publisher end_348">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_348" name="" association="as_IfcLibraryInformation_Publisher" type="cl_IfcLibraryInformation">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19592" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19593" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLibraryReference_ReferencedLibrary" name="ReferencedLibrary" memberEnd="at_IfcLibraryReference_ReferencedLibrary end_350">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_350" name="INV_HasLibraryReferences_S[0:?]" association="as_IfcLibraryReference_ReferencedLibrary" type="cl_IfcLibraryReference">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19594" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19595" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcActorRole_HasExternalReference" name="IfcActorRole_HasExternalReference" memberEnd="end_975 end_976">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_975" name="(RelatedResourceObjects)" association="as_IfcActorRole_HasExternalReference">
-          <type xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcActorRole"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19596" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19597" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_976" name="INV_HasExternalReference_S[0:?]" association="as_IfcActorRole_HasExternalReference" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19598" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19599" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAppliedValue_HasExternalReference" name="IfcAppliedValue_HasExternalReference" memberEnd="end_979 end_980">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_979" name="(RelatedResourceObjects)" association="as_IfcAppliedValue_HasExternalReference">
-          <type xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcAppliedValue"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19600" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19601" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_980" name="INV_HasExternalReference_S[0:?]" association="as_IfcAppliedValue_HasExternalReference" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19602" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19603" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcApproval_HasExternalReferences" name="IfcApproval_HasExternalReferences" memberEnd="end_981 end_982">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_981" name="(RelatedResourceObjects)" association="as_IfcApproval_HasExternalReferences">
-          <type xmi:type="uml:Class" href="IfcApprovalResource.uml#cl_IfcApproval"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19604" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19605" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_982" name="INV_HasExternalReferences_S[0:?]" association="as_IfcApproval_HasExternalReferences" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19606" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19607" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcClassification_HasReferences" name="IfcClassification_HasReferences" memberEnd="end_985 end_986">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_985" name="(ReferencedSource)" association="as_IfcClassification_HasReferences" type="cl_IfcClassification">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19608" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19609" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_986" name="INV_HasReferences_S[0:?]" association="as_IfcClassification_HasReferences" type="cl_IfcClassificationReference">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19610" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19611" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcClassificationReference_HasReferences" name="IfcClassificationReference_HasReferences" memberEnd="end_989 end_990">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_989" name="(ReferencedSource)" association="as_IfcClassificationReference_HasReferences" type="cl_IfcClassificationReference">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19612" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19613" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_990" name="INV_HasReferences_S[0:?]" association="as_IfcClassificationReference_HasReferences" type="cl_IfcClassificationReference">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19614" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19615" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstraint_HasExternalReferences" name="IfcConstraint_HasExternalReferences" memberEnd="end_991 end_992">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_991" name="(RelatedResourceObjects)" association="as_IfcConstraint_HasExternalReferences">
-          <type xmi:type="uml:Class" href="IfcConstraintResource.uml#cl_IfcConstraint"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19616" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19617" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_992" name="INV_HasExternalReferences_S[0:?]" association="as_IfcConstraint_HasExternalReferences" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19618" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19619" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcContextDependentUnit_HasExternalReference" name="IfcContextDependentUnit_HasExternalReference" memberEnd="end_995 end_996">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_995" name="(RelatedResourceObjects)" association="as_IfcContextDependentUnit_HasExternalReference">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcContextDependentUnit"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19620" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19621" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_996" name="INV_HasExternalReference_S[0:?]" association="as_IfcContextDependentUnit_HasExternalReference" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19622" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19623" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConversionBasedUnit_HasExternalReference" name="IfcConversionBasedUnit_HasExternalReference" memberEnd="end_997 end_998">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_997" name="(RelatedResourceObjects)" association="as_IfcConversionBasedUnit_HasExternalReference">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcConversionBasedUnit"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19624" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19625" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_998" name="INV_HasExternalReference_S[0:?]" association="as_IfcConversionBasedUnit_HasExternalReference" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19626" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19627" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcMaterialDefinition_HasExternalReferences" name="IfcMaterialDefinition_HasExternalReferences" memberEnd="end_1023 end_1024">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1023" name="(RelatedResourceObjects)" association="as_IfcMaterialDefinition_HasExternalReferences">
-          <type xmi:type="uml:Class" href="IfcMaterialResource.uml#cl_IfcMaterialDefinition"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19628" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19629" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1024" name="INV_HasExternalReferences_S[0:?]" association="as_IfcMaterialDefinition_HasExternalReferences" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19630" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19631" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPhysicalQuantity_HasExternalReferences" name="IfcPhysicalQuantity_HasExternalReferences" memberEnd="end_1033 end_1034">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1033" name="(RelatedResourceObjects)" association="as_IfcPhysicalQuantity_HasExternalReferences">
-          <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcPhysicalQuantity"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19632" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19633" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1034" name="INV_HasExternalReferences_S[0:?]" association="as_IfcPhysicalQuantity_HasExternalReferences" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19634" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19635" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcProfileDef_HasExternalReference" name="IfcProfileDef_HasExternalReference" memberEnd="end_1047 end_1048">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1047" name="(RelatedResourceObjects)" association="as_IfcProfileDef_HasExternalReference">
-          <type xmi:type="uml:Class" href="IfcProfileResource.uml#cl_IfcProfileDef"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19636" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19637" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1048" name="INV_HasExternalReference_S[0:?]" association="as_IfcProfileDef_HasExternalReference" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19638" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19639" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPropertyAbstraction_HasExternalReferences" name="IfcPropertyAbstraction_HasExternalReferences" memberEnd="end_1053 end_1054">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1053" name="(RelatedResourceObjects)" association="as_IfcPropertyAbstraction_HasExternalReferences">
-          <type xmi:type="uml:Class" href="IfcPropertyResource.uml#cl_IfcPropertyAbstraction"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19640" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19641" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1054" name="INV_HasExternalReferences_S[0:?]" association="as_IfcPropertyAbstraction_HasExternalReferences" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19642" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19643" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcShapeAspect_HasExternalReferences" name="IfcShapeAspect_HasExternalReferences" memberEnd="end_1069 end_1070">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1069" name="(RelatedResourceObjects)" association="as_IfcShapeAspect_HasExternalReferences">
-          <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19644" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19645" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1070" name="INV_HasExternalReferences_S[0:?]" association="as_IfcShapeAspect_HasExternalReferences" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19646" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19647" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcTimeSeries_HasExternalReference" name="IfcTimeSeries_HasExternalReference" memberEnd="end_1081 end_1082">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1081" name="(RelatedResourceObjects)" association="as_IfcTimeSeries_HasExternalReference">
-          <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19648" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19649" value="1"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_1082" name="INV_HasExternalReference_S[1:?]" association="as_IfcTimeSeries_HasExternalReference" type="cl_IfcExternalReferenceRelationship">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19650" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19651" value="1"/>
-        </ownedEnd>
-      </packagedElement>
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcExternalReferenceResource" name="IfcExternalReferenceResource" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcExternalReferenceResource" name="IfcExternalReferenceResource">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDocumentConfidentialityEnum" name="IfcDocumentConfidentialityEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDocumentConfidentialityEnum_CONFIDENTIAL" name="CONFIDENTIAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDocumentConfidentialityEnum_PERSONAL" name="PERSONAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDocumentConfidentialityEnum_PUBLIC" name="PUBLIC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDocumentConfidentialityEnum_RESTRICTED" name="RESTRICTED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDocumentConfidentialityEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDocumentConfidentialityEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDocumentStatusEnum" name="IfcDocumentStatusEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDocumentStatusEnum_DRAFT" name="DRAFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDocumentStatusEnum_FINAL" name="FINAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDocumentStatusEnum_FINALDRAFT" name="FINALDRAFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDocumentStatusEnum_REVISION" name="REVISION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDocumentStatusEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcExternalInformation" name="IfcExternalInformation" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcExternalReference" name="IfcExternalReference" isAbstract="true">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcExternalReference_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcExternalReference_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS(Identification) OR EXISTS(Location) OR EXISTS(Name)</body>
+        </specification>
+      </ownedRule>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcExternalReference_Location" name="Location">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcExternalReference_Location_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcExternalReference_Location_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcExternalReference_Identification" name="Identification">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcExternalReference_Identification_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcExternalReference_Identification_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcExternalReference_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcExternalReference_Name_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcExternalReference_Name_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcResourceLevelRelationship" name="IfcResourceLevelRelationship" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceLevelRelationship_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceLevelRelationship_Name_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceLevelRelationship_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceLevelRelationship_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceLevelRelationship_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceLevelRelationship_Description_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcClassification" name="IfcClassification">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcClassification_gen_IfcExternalInformation" general="cl_IfcExternalInformation"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_Source" name="Source">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcClassification_Source_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcClassification_Source_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_Edition" name="Edition">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcClassification_Edition_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcClassification_Edition_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_EditionDate" name="EditionDate">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcClassification_EditionDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcClassification_EditionDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcClassification_Name_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcClassification_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcClassification_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcClassification_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_Specification" name="Specification">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcClassification_Specification_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcClassification_Specification_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassification_ReferenceTokens" name="ReferenceTokens_L[1:?]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcClassification_ReferenceTokens_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcClassification_ReferenceTokens_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcClassificationReference" name="IfcClassificationReference">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcClassificationReference_gen_IfcExternalReference" general="cl_IfcExternalReference"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassificationReference_ReferencedSource" name="ReferencedSource" type="un_IfcClassificationReferenceSelect" association="as_IfcClassificationReference_ReferencedSource">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcClassificationReference_ReferencedSource_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcClassificationReference_ReferencedSource_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassificationReference_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcClassificationReference_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcClassificationReference_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcClassificationReference_Sort" name="Sort">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcClassificationReference_Sort_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcClassificationReference_Sort_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDocumentInformation" name="IfcDocumentInformation">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDocumentInformation_gen_IfcExternalInformation" general="cl_IfcExternalInformation"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Identification" name="Identification">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_Identification_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_Identification_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_Name_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Location" name="Location">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_Location_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_Location_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Purpose" name="Purpose">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_Purpose_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_Purpose_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_IntendedUse" name="IntendedUse">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_IntendedUse_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_IntendedUse_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Scope" name="Scope">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_Scope_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_Scope_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Revision" name="Revision">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_Revision_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_Revision_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_DocumentOwner" name="DocumentOwner" association="as_IfcDocumentInformation_DocumentOwner">
+        <type xmi:type="uml:Class" href="IfcActorResource.uml#un_IfcActorSelect"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_DocumentOwner_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_DocumentOwner_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Editors" name="Editors_S[1:?]" association="as_IfcDocumentInformation_Editors">
+        <type xmi:type="uml:Class" href="IfcActorResource.uml#un_IfcActorSelect"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_Editors_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_Editors_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_CreationTime" name="CreationTime">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_CreationTime_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_CreationTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_LastRevisionTime" name="LastRevisionTime">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_LastRevisionTime_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_LastRevisionTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_ElectronicFormat" name="ElectronicFormat">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_ElectronicFormat_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_ElectronicFormat_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_ValidFrom" name="ValidFrom">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_ValidFrom_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_ValidFrom_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_ValidUntil" name="ValidUntil">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_ValidUntil_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_ValidUntil_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Confidentiality" name="Confidentiality" type="en_IfcDocumentConfidentialityEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_Confidentiality_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_Confidentiality_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformation_Status" name="Status" type="en_IfcDocumentStatusEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformation_Status_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformation_Status_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDocumentInformationRelationship" name="IfcDocumentInformationRelationship">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDocumentInformationRelationship_gen_IfcResourceLevelRelationship" general="cl_IfcResourceLevelRelationship"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformationRelationship_RelatingDocument" name="RelatingDocument" type="cl_IfcDocumentInformation" association="as_IfcDocumentInformationRelationship_RelatingDocument">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformationRelationship_RelatingDocument_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformationRelationship_RelatingDocument_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformationRelationship_RelatedDocuments" name="RelatedDocuments_S[1:?]" type="cl_IfcDocumentInformation" association="as_IfcDocumentInformationRelationship_RelatedDocuments">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformationRelationship_RelatedDocuments_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformationRelationship_RelatedDocuments_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentInformationRelationship_RelationshipType" name="RelationshipType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentInformationRelationship_RelationshipType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentInformationRelationship_RelationshipType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDocumentReference" name="IfcDocumentReference">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDocumentReference_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcDocumentReference_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS(Name) XOR EXISTS(ReferencedDocument)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDocumentReference_gen_IfcExternalReference" general="cl_IfcExternalReference"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentReference_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentReference_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentReference_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDocumentReference_ReferencedDocument" name="ReferencedDocument" type="cl_IfcDocumentInformation" association="as_IfcDocumentReference_ReferencedDocument">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDocumentReference_ReferencedDocument_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDocumentReference_ReferencedDocument_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcExternalReferenceRelationship" name="IfcExternalReferenceRelationship">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcExternalReferenceRelationship_gen_IfcResourceLevelRelationship" general="cl_IfcResourceLevelRelationship"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcExternalReferenceRelationship_RelatingReference" name="RelatingReference" type="cl_IfcExternalReference" association="as_IfcExternalReferenceRelationship_RelatingReference">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcExternalReferenceRelationship_RelatingReference_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcExternalReferenceRelationship_RelatingReference_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcExternalReferenceRelationship_RelatedResourceObjects" name="RelatedResourceObjects_S[1:?]" type="un_IfcResourceObjectSelect" association="as_IfcExternalReferenceRelationship_RelatedResourceObjects">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcExternalReferenceRelationship_RelatedResourceObjects_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcExternalReferenceRelationship_RelatedResourceObjects_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLanguageId" name="IfcLanguageId">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcLanguageId_gen_IfcIdentifier">
+        <general xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLibraryInformation" name="IfcLibraryInformation">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLibraryInformation_gen_IfcExternalInformation" general="cl_IfcExternalInformation"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryInformation_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLibraryInformation_Name_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLibraryInformation_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryInformation_Version" name="Version">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLibraryInformation_Version_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLibraryInformation_Version_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryInformation_Publisher" name="Publisher" association="as_IfcLibraryInformation_Publisher">
+        <type xmi:type="uml:Class" href="IfcActorResource.uml#un_IfcActorSelect"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLibraryInformation_Publisher_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLibraryInformation_Publisher_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryInformation_VersionDate" name="VersionDate">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLibraryInformation_VersionDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLibraryInformation_VersionDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryInformation_Location" name="Location">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLibraryInformation_Location_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLibraryInformation_Location_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryInformation_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLibraryInformation_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLibraryInformation_Description_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLibraryReference" name="IfcLibraryReference">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLibraryReference_gen_IfcExternalReference" general="cl_IfcExternalReference"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryReference_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLibraryReference_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLibraryReference_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryReference_Language" name="Language" type="dt_IfcLanguageId">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLibraryReference_Language_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLibraryReference_Language_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLibraryReference_ReferencedLibrary" name="ReferencedLibrary" type="cl_IfcLibraryInformation" association="as_IfcLibraryReference_ReferencedLibrary">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLibraryReference_ReferencedLibrary_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLibraryReference_ReferencedLibrary_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcClassificationReferenceSelect" name="IfcClassificationReferenceSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcClassificationReferenceSelect_IfcClassification" client="un_IfcClassificationReferenceSelect" supplier="cl_IfcClassification"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcClassificationReferenceSelect_IfcClassificationReference" client="un_IfcClassificationReferenceSelect" supplier="cl_IfcClassificationReference"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcClassificationSelect" name="IfcClassificationSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcClassificationSelect_IfcClassification" client="un_IfcClassificationSelect" supplier="cl_IfcClassification"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcClassificationSelect_IfcClassificationReference" client="un_IfcClassificationSelect" supplier="cl_IfcClassificationReference"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcDocumentSelect" name="IfcDocumentSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDocumentSelect_IfcDocumentInformation" client="un_IfcDocumentSelect" supplier="cl_IfcDocumentInformation"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDocumentSelect_IfcDocumentReference" client="un_IfcDocumentSelect" supplier="cl_IfcDocumentReference"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcLibrarySelect" name="IfcLibrarySelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcLibrarySelect_IfcLibraryInformation" client="un_IfcLibrarySelect" supplier="cl_IfcLibraryInformation"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcLibrarySelect_IfcLibraryReference" client="un_IfcLibrarySelect" supplier="cl_IfcLibraryReference"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcResourceObjectSelect" name="IfcResourceObjectSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcActorRole" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcActorRole"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcAppliedValue" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcAppliedValue"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcApproval" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcApprovalResource.uml#cl_IfcApproval"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcConstraint" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcConstraintResource.uml#cl_IfcConstraint"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcContextDependentUnit" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcContextDependentUnit"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcConversionBasedUnit" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcConversionBasedUnit"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcExternalInformation" client="un_IfcResourceObjectSelect" supplier="cl_IfcExternalInformation"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcExternalReference" client="un_IfcResourceObjectSelect" supplier="cl_IfcExternalReference"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcMaterialDefinition" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcMaterialResource.uml#cl_IfcMaterialDefinition"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcOrganization" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcOrganization"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcPerson" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcPerson"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcPersonAndOrganization" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcPersonAndOrganization"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcPhysicalQuantity" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcPhysicalQuantity"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcProfileDef" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcProfileResource.uml#cl_IfcProfileDef"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcPropertyAbstraction" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcPropertyResource.uml#cl_IfcPropertyAbstraction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcShapeAspect" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcResourceObjectSelect_IfcTimeSeries" client="un_IfcResourceObjectSelect">
+      <supplier xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcClassificationReference_ReferencedSource" name="ReferencedSource" memberEnd="at_IfcClassificationReference_ReferencedSource as_IfcClassificationReference_ReferencedSource_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcClassificationReference_ReferencedSource_target_end" name="" type="cl_IfcClassificationReference" association="as_IfcClassificationReference_ReferencedSource">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcClassificationReference_ReferencedSource_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcClassificationReference_ReferencedSource_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDocumentInformation_DocumentOwner" name="DocumentOwner" memberEnd="at_IfcDocumentInformation_DocumentOwner as_IfcDocumentInformation_DocumentOwner_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDocumentInformation_DocumentOwner_target_end" name="" type="cl_IfcDocumentInformation" association="as_IfcDocumentInformation_DocumentOwner">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDocumentInformation_DocumentOwner_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDocumentInformation_DocumentOwner_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDocumentInformation_Editors" name="Editors" memberEnd="at_IfcDocumentInformation_Editors as_IfcDocumentInformation_Editors_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDocumentInformation_Editors_target_end" name="" type="cl_IfcDocumentInformation" association="as_IfcDocumentInformation_Editors">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDocumentInformation_Editors_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDocumentInformation_Editors_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDocumentInformationRelationship_RelatingDocument" name="RelatingDocument" memberEnd="at_IfcDocumentInformationRelationship_RelatingDocument as_IfcDocumentInformationRelationship_RelatingDocument_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDocumentInformationRelationship_RelatingDocument_target_end" name="INV_IsPointer_S[0:1]" type="cl_IfcDocumentInformationRelationship" association="as_IfcDocumentInformationRelationship_RelatingDocument">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDocumentInformationRelationship_RelatingDocument_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDocumentInformationRelationship_RelatingDocument_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDocumentInformationRelationship_RelatedDocuments" name="RelatedDocuments" memberEnd="at_IfcDocumentInformationRelationship_RelatedDocuments as_IfcDocumentInformationRelationship_RelatedDocuments_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDocumentInformationRelationship_RelatedDocuments_target_end" name="INV_IsPointedTo_S[0:?]" type="cl_IfcDocumentInformationRelationship" association="as_IfcDocumentInformationRelationship_RelatedDocuments">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDocumentInformationRelationship_RelatedDocuments_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDocumentInformationRelationship_RelatedDocuments_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDocumentReference_ReferencedDocument" name="ReferencedDocument" memberEnd="at_IfcDocumentReference_ReferencedDocument as_IfcDocumentReference_ReferencedDocument_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDocumentReference_ReferencedDocument_target_end" name="INV_HasDocumentReferences_S[0:?]" type="cl_IfcDocumentReference" association="as_IfcDocumentReference_ReferencedDocument">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDocumentReference_ReferencedDocument_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDocumentReference_ReferencedDocument_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcExternalReferenceRelationship_RelatingReference" name="RelatingReference" memberEnd="at_IfcExternalReferenceRelationship_RelatingReference as_IfcExternalReferenceRelationship_RelatingReference_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcExternalReferenceRelationship_RelatingReference_target_end" name="INV_ExternalReferenceForResources_S[0:?]" type="cl_IfcExternalReferenceRelationship" association="as_IfcExternalReferenceRelationship_RelatingReference">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcExternalReferenceRelationship_RelatingReference_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcExternalReferenceRelationship_RelatingReference_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcExternalReferenceRelationship_RelatedResourceObjects" name="RelatedResourceObjects" memberEnd="at_IfcExternalReferenceRelationship_RelatedResourceObjects as_IfcExternalReferenceRelationship_RelatedResourceObjects_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcExternalReferenceRelationship_RelatedResourceObjects_target_end" name="" type="cl_IfcExternalReferenceRelationship" association="as_IfcExternalReferenceRelationship_RelatedResourceObjects">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcExternalReferenceRelationship_RelatedResourceObjects_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcExternalReferenceRelationship_RelatedResourceObjects_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLibraryInformation_Publisher" name="Publisher" memberEnd="at_IfcLibraryInformation_Publisher as_IfcLibraryInformation_Publisher_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLibraryInformation_Publisher_target_end" name="" type="cl_IfcLibraryInformation" association="as_IfcLibraryInformation_Publisher">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLibraryInformation_Publisher_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLibraryInformation_Publisher_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLibraryReference_ReferencedLibrary" name="ReferencedLibrary" memberEnd="at_IfcLibraryReference_ReferencedLibrary as_IfcLibraryReference_ReferencedLibrary_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLibraryReference_ReferencedLibrary_target_end" name="INV_HasLibraryReferences_S[0:?]" type="cl_IfcLibraryReference" association="as_IfcLibraryReference_ReferencedLibrary">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLibraryReference_ReferencedLibrary_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLibraryReference_ReferencedLibrary_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcActorRole_HasExternalReference" name="IfcActorRole_HasExternalReference" memberEnd="as_IfcActorRole_HasExternalReference_source_end as_IfcActorRole_HasExternalReference_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcActorRole_HasExternalReference_source_end" name="(RelatedResourceObjects)" association="as_IfcActorRole_HasExternalReference">
+        <type xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcActorRole"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcActorRole_HasExternalReference_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcActorRole_HasExternalReference_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcActorRole_HasExternalReference_target_end" name="INV_HasExternalReference_S[0:?]" type="cl_IfcExternalReferenceRelationship" association="as_IfcActorRole_HasExternalReference">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcActorRole_HasExternalReference_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcActorRole_HasExternalReference_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAppliedValue_HasExternalReference" name="IfcAppliedValue_HasExternalReference" memberEnd="as_IfcAppliedValue_HasExternalReference_source_end as_IfcAppliedValue_HasExternalReference_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAppliedValue_HasExternalReference_source_end" name="(RelatedResourceObjects)" association="as_IfcAppliedValue_HasExternalReference">
+        <type xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcAppliedValue"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAppliedValue_HasExternalReference_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAppliedValue_HasExternalReference_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAppliedValue_HasExternalReference_target_end" name="INV_HasExternalReference_S[0:?]" type="cl_IfcExternalReferenceRelationship" association="as_IfcAppliedValue_HasExternalReference">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAppliedValue_HasExternalReference_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAppliedValue_HasExternalReference_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcApproval_HasExternalReferences" name="IfcApproval_HasExternalReferences" memberEnd="as_IfcApproval_HasExternalReferences_source_end as_IfcApproval_HasExternalReferences_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcApproval_HasExternalReferences_source_end" name="(RelatedResourceObjects)" association="as_IfcApproval_HasExternalReferences">
+        <type xmi:type="uml:Class" href="IfcApprovalResource.uml#cl_IfcApproval"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcApproval_HasExternalReferences_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcApproval_HasExternalReferences_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcApproval_HasExternalReferences_target_end" name="INV_HasExternalReferences_S[0:?]" type="cl_IfcExternalReferenceRelationship" association="as_IfcApproval_HasExternalReferences">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcApproval_HasExternalReferences_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcApproval_HasExternalReferences_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstraint_HasExternalReferences" name="IfcConstraint_HasExternalReferences" memberEnd="as_IfcConstraint_HasExternalReferences_source_end as_IfcConstraint_HasExternalReferences_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstraint_HasExternalReferences_source_end" name="(RelatedResourceObjects)" association="as_IfcConstraint_HasExternalReferences">
+        <type xmi:type="uml:Class" href="IfcConstraintResource.uml#cl_IfcConstraint"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstraint_HasExternalReferences_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstraint_HasExternalReferences_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstraint_HasExternalReferences_target_end" name="INV_HasExternalReferences_S[0:?]" type="cl_IfcExternalReferenceRelationship" association="as_IfcConstraint_HasExternalReferences">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstraint_HasExternalReferences_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstraint_HasExternalReferences_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcMaterialDefinition_HasExternalReferences" name="IfcMaterialDefinition_HasExternalReferences" memberEnd="as_IfcMaterialDefinition_HasExternalReferences_source_end as_IfcMaterialDefinition_HasExternalReferences_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcMaterialDefinition_HasExternalReferences_source_end" name="(RelatedResourceObjects)" association="as_IfcMaterialDefinition_HasExternalReferences">
+        <type xmi:type="uml:Class" href="IfcMaterialResource.uml#cl_IfcMaterialDefinition"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcMaterialDefinition_HasExternalReferences_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcMaterialDefinition_HasExternalReferences_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcMaterialDefinition_HasExternalReferences_target_end" name="INV_HasExternalReferences_S[0:?]" type="cl_IfcExternalReferenceRelationship" association="as_IfcMaterialDefinition_HasExternalReferences">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcMaterialDefinition_HasExternalReferences_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcMaterialDefinition_HasExternalReferences_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPhysicalQuantity_HasExternalReferences" name="IfcPhysicalQuantity_HasExternalReferences" memberEnd="as_IfcPhysicalQuantity_HasExternalReferences_source_end as_IfcPhysicalQuantity_HasExternalReferences_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPhysicalQuantity_HasExternalReferences_source_end" name="(RelatedResourceObjects)" association="as_IfcPhysicalQuantity_HasExternalReferences">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcPhysicalQuantity"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPhysicalQuantity_HasExternalReferences_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPhysicalQuantity_HasExternalReferences_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPhysicalQuantity_HasExternalReferences_target_end" name="INV_HasExternalReferences_S[0:?]" type="cl_IfcExternalReferenceRelationship" association="as_IfcPhysicalQuantity_HasExternalReferences">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPhysicalQuantity_HasExternalReferences_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPhysicalQuantity_HasExternalReferences_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcProfileDef_HasExternalReference" name="IfcProfileDef_HasExternalReference" memberEnd="as_IfcProfileDef_HasExternalReference_source_end as_IfcProfileDef_HasExternalReference_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcProfileDef_HasExternalReference_source_end" name="(RelatedResourceObjects)" association="as_IfcProfileDef_HasExternalReference">
+        <type xmi:type="uml:Class" href="IfcProfileResource.uml#cl_IfcProfileDef"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcProfileDef_HasExternalReference_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcProfileDef_HasExternalReference_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcProfileDef_HasExternalReference_target_end" name="INV_HasExternalReference_S[0:?]" type="cl_IfcExternalReferenceRelationship" association="as_IfcProfileDef_HasExternalReference">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcProfileDef_HasExternalReference_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcProfileDef_HasExternalReference_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPropertyAbstraction_HasExternalReferences" name="IfcPropertyAbstraction_HasExternalReferences" memberEnd="as_IfcPropertyAbstraction_HasExternalReferences_source_end as_IfcPropertyAbstraction_HasExternalReferences_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPropertyAbstraction_HasExternalReferences_source_end" name="(RelatedResourceObjects)" association="as_IfcPropertyAbstraction_HasExternalReferences">
+        <type xmi:type="uml:Class" href="IfcPropertyResource.uml#cl_IfcPropertyAbstraction"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPropertyAbstraction_HasExternalReferences_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPropertyAbstraction_HasExternalReferences_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPropertyAbstraction_HasExternalReferences_target_end" name="INV_HasExternalReferences_S[0:?]" type="cl_IfcExternalReferenceRelationship" association="as_IfcPropertyAbstraction_HasExternalReferences">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPropertyAbstraction_HasExternalReferences_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPropertyAbstraction_HasExternalReferences_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcShapeAspect_HasExternalReferences" name="IfcShapeAspect_HasExternalReferences" memberEnd="as_IfcShapeAspect_HasExternalReferences_source_end as_IfcShapeAspect_HasExternalReferences_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcShapeAspect_HasExternalReferences_source_end" name="(RelatedResourceObjects)" association="as_IfcShapeAspect_HasExternalReferences">
+        <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcShapeAspect_HasExternalReferences_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcShapeAspect_HasExternalReferences_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcShapeAspect_HasExternalReferences_target_end" name="INV_HasExternalReferences_S[0:?]" type="cl_IfcExternalReferenceRelationship" association="as_IfcShapeAspect_HasExternalReferences">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcShapeAspect_HasExternalReferences_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcShapeAspect_HasExternalReferences_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcTimeSeries_HasExternalReference" name="IfcTimeSeries_HasExternalReference" memberEnd="as_IfcTimeSeries_HasExternalReference_source_end as_IfcTimeSeries_HasExternalReference_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcTimeSeries_HasExternalReference_source_end" name="(RelatedResourceObjects)" association="as_IfcTimeSeries_HasExternalReference">
+        <type xmi:type="uml:Class" href="IfcDateTimeResource.uml#cl_IfcTimeSeries"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcTimeSeries_HasExternalReference_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcTimeSeries_HasExternalReference_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcTimeSeries_HasExternalReference_target_end" name="INV_HasExternalReference_S[1:?]" type="cl_IfcExternalReferenceRelationship" association="as_IfcTimeSeries_HasExternalReference">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcTimeSeries_HasExternalReference_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcTimeSeries_HasExternalReference_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcClassification_HasReferences" name="IfcClassification_HasReferences" memberEnd="as_IfcClassification_HasReferences_source_end as_IfcClassification_HasReferences_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcClassification_HasReferences_source_end" name="(ReferencedSource)" type="cl_IfcClassification" association="as_IfcClassification_HasReferences">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcClassification_HasReferences_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcClassification_HasReferences_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcClassification_HasReferences_target_end" name="INV_HasReferences_S[0:?]" type="cl_IfcClassificationReference" association="as_IfcClassification_HasReferences">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcClassification_HasReferences_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcClassification_HasReferences_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcClassificationReference_HasReferences" name="IfcClassificationReference_HasReferences" memberEnd="as_IfcClassificationReference_HasReferences_source_end as_IfcClassificationReference_HasReferences_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcClassificationReference_HasReferences_source_end" name="(ReferencedSource)" type="cl_IfcClassificationReference" association="as_IfcClassificationReference_HasReferences">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcClassificationReference_HasReferences_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcClassificationReference_HasReferences_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcClassificationReference_HasReferences_target_end" name="INV_HasReferences_S[0:?]" type="cl_IfcClassificationReference" association="as_IfcClassificationReference_HasReferences">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcClassificationReference_HasReferences_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcClassificationReference_HasReferences_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcContextDependentUnit_HasExternalReference" name="IfcContextDependentUnit_HasExternalReference" memberEnd="as_IfcContextDependentUnit_HasExternalReference_source_end as_IfcContextDependentUnit_HasExternalReference_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcContextDependentUnit_HasExternalReference_source_end" name="(RelatedResourceObjects)" association="as_IfcContextDependentUnit_HasExternalReference">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcContextDependentUnit"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcContextDependentUnit_HasExternalReference_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcContextDependentUnit_HasExternalReference_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcContextDependentUnit_HasExternalReference_target_end" name="INV_HasExternalReference_S[0:?]" type="cl_IfcExternalReferenceRelationship" association="as_IfcContextDependentUnit_HasExternalReference">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcContextDependentUnit_HasExternalReference_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcContextDependentUnit_HasExternalReference_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConversionBasedUnit_HasExternalReference" name="IfcConversionBasedUnit_HasExternalReference" memberEnd="as_IfcConversionBasedUnit_HasExternalReference_source_end as_IfcConversionBasedUnit_HasExternalReference_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConversionBasedUnit_HasExternalReference_source_end" name="(RelatedResourceObjects)" association="as_IfcConversionBasedUnit_HasExternalReference">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcConversionBasedUnit"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConversionBasedUnit_HasExternalReference_source_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConversionBasedUnit_HasExternalReference_source_end_upper" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConversionBasedUnit_HasExternalReference_target_end" name="INV_HasExternalReference_S[0:?]" type="cl_IfcExternalReferenceRelationship" association="as_IfcConversionBasedUnit_HasExternalReference">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConversionBasedUnit_HasExternalReference_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConversionBasedUnit_HasExternalReference_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

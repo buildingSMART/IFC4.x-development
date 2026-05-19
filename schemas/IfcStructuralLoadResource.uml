@@ -1,524 +1,522 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcStructuralLoadResource" name="IfcStructuralLoadResource">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcStructuralLoadResource" name="IfcStructuralLoadResource">
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoundaryCondition" name="IfcBoundaryCondition" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryCondition_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15634" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15635" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralConnectionCondition" name="IfcStructuralConnectionCondition" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralConnectionCondition_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15636" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15637" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoad" name="IfcStructuralLoad" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoad_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15638" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15639" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoundaryEdgeCondition" name="IfcBoundaryEdgeCondition">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15640" general="cl_IfcBoundaryCondition"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX" name="TranslationalStiffnessByLengthX" isOrdered="false" association="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX" type="un_IfcModulusOfTranslationalSubgradeReactionSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15641" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15642" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY" name="TranslationalStiffnessByLengthY" isOrdered="false" association="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY" type="un_IfcModulusOfTranslationalSubgradeReactionSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15643" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15644" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ" name="TranslationalStiffnessByLengthZ" isOrdered="false" association="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ" type="un_IfcModulusOfTranslationalSubgradeReactionSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15645" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15646" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX" name="RotationalStiffnessByLengthX" isOrdered="false" association="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX" type="un_IfcModulusOfRotationalSubgradeReactionSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15647" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15648" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY" name="RotationalStiffnessByLengthY" isOrdered="false" association="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY" type="un_IfcModulusOfRotationalSubgradeReactionSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15649" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15650" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ" name="RotationalStiffnessByLengthZ" isOrdered="false" association="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ" type="un_IfcModulusOfRotationalSubgradeReactionSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15651" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15652" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoundaryFaceCondition" name="IfcBoundaryFaceCondition">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15653" general="cl_IfcBoundaryCondition"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX" name="TranslationalStiffnessByAreaX" isOrdered="false" association="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX" type="un_IfcModulusOfSubgradeReactionSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15654" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15655" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY" name="TranslationalStiffnessByAreaY" isOrdered="false" association="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY" type="un_IfcModulusOfSubgradeReactionSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15656" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15657" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ" name="TranslationalStiffnessByAreaZ" isOrdered="false" association="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ" type="un_IfcModulusOfSubgradeReactionSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15658" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15659" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoundaryNodeCondition" name="IfcBoundaryNodeCondition">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15660" general="cl_IfcBoundaryCondition"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeCondition_TranslationalStiffnessX" name="TranslationalStiffnessX" isOrdered="false" association="as_IfcBoundaryNodeCondition_TranslationalStiffnessX" type="un_IfcTranslationalStiffnessSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15661" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15662" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeCondition_TranslationalStiffnessY" name="TranslationalStiffnessY" isOrdered="false" association="as_IfcBoundaryNodeCondition_TranslationalStiffnessY" type="un_IfcTranslationalStiffnessSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15663" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15664" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeCondition_TranslationalStiffnessZ" name="TranslationalStiffnessZ" isOrdered="false" association="as_IfcBoundaryNodeCondition_TranslationalStiffnessZ" type="un_IfcTranslationalStiffnessSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15665" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15666" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeCondition_RotationalStiffnessX" name="RotationalStiffnessX" isOrdered="false" association="as_IfcBoundaryNodeCondition_RotationalStiffnessX" type="un_IfcRotationalStiffnessSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15667" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15668" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeCondition_RotationalStiffnessY" name="RotationalStiffnessY" isOrdered="false" association="as_IfcBoundaryNodeCondition_RotationalStiffnessY" type="un_IfcRotationalStiffnessSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15669" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15670" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeCondition_RotationalStiffnessZ" name="RotationalStiffnessZ" isOrdered="false" association="as_IfcBoundaryNodeCondition_RotationalStiffnessZ" type="un_IfcRotationalStiffnessSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15671" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15672" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFailureConnectionCondition" name="IfcFailureConnectionCondition">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15673" general="cl_IfcStructuralConnectionCondition"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFailureConnectionCondition_TensionFailureX" name="TensionFailureX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15674" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15675" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFailureConnectionCondition_TensionFailureY" name="TensionFailureY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15676" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15677" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFailureConnectionCondition_TensionFailureZ" name="TensionFailureZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15678" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15679" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFailureConnectionCondition_CompressionFailureX" name="CompressionFailureX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15680" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15681" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFailureConnectionCondition_CompressionFailureY" name="CompressionFailureY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15682" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15683" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFailureConnectionCondition_CompressionFailureZ" name="CompressionFailureZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15684" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15685" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcModulusOfRotationalSubgradeReactionSelect" name="IfcModulusOfRotationalSubgradeReactionSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_15686" client="un_IfcModulusOfRotationalSubgradeReactionSelect">
-        <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_15687" client="un_IfcModulusOfRotationalSubgradeReactionSelect">
-        <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfRotationalSubgradeReactionMeasure"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcModulusOfSubgradeReactionSelect" name="IfcModulusOfSubgradeReactionSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_15688" client="un_IfcModulusOfSubgradeReactionSelect">
-        <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_15689" client="un_IfcModulusOfSubgradeReactionSelect">
-        <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfSubgradeReactionMeasure"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcModulusOfTranslationalSubgradeReactionSelect" name="IfcModulusOfTranslationalSubgradeReactionSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_15690" client="un_IfcModulusOfTranslationalSubgradeReactionSelect">
-        <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_15691" client="un_IfcModulusOfTranslationalSubgradeReactionSelect">
-        <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfLinearSubgradeReactionMeasure"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcRotationalStiffnessSelect" name="IfcRotationalStiffnessSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_15692" client="un_IfcRotationalStiffnessSelect">
-        <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_15693" client="un_IfcRotationalStiffnessSelect">
-        <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRotationalStiffnessMeasure"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSlippageConnectionCondition" name="IfcSlippageConnectionCondition">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15694" general="cl_IfcStructuralConnectionCondition"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSlippageConnectionCondition_SlippageX" name="SlippageX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15695" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15696" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSlippageConnectionCondition_SlippageY" name="SlippageY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15697" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15698" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSlippageConnectionCondition_SlippageZ" name="SlippageZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15699" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15700" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadConfiguration" name="IfcStructuralLoadConfiguration">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15701" general="cl_IfcStructuralLoad"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadConfiguration_Values" name="Values_L[1:?]" isOrdered="false" association="as_IfcStructuralLoadConfiguration_Values" type="cl_IfcStructuralLoadOrResult">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15702" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15703" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadConfiguration_Locations" name="Locations_LU[1:?]_L[1:2]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15704" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15705" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStructuralLoadConfiguration_ValidListSize" name="ValidListSize">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_15706" name="ValidListSize">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT EXISTS(Locations) OR (SIZEOF(Locations) = SIZEOF(Values))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadOrResult" name="IfcStructuralLoadOrResult" isAbstract="true">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15707" general="cl_IfcStructuralLoad"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcTranslationalStiffnessSelect" name="IfcTranslationalStiffnessSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_15708" client="un_IfcTranslationalStiffnessSelect">
-        <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_15709" client="un_IfcTranslationalStiffnessSelect">
-        <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearStiffnessMeasure"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcWarpingStiffnessSelect" name="IfcWarpingStiffnessSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_15710" client="un_IfcWarpingStiffnessSelect">
-        <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_15711" client="un_IfcWarpingStiffnessSelect">
-        <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcWarpingMomentMeasure"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoundaryNodeConditionWarping" name="IfcBoundaryNodeConditionWarping">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15712" general="cl_IfcBoundaryNodeCondition"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeConditionWarping_WarpingStiffness" name="WarpingStiffness" isOrdered="false" association="as_IfcBoundaryNodeConditionWarping_WarpingStiffness" type="un_IfcWarpingStiffnessSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15713" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15714" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadStatic" name="IfcStructuralLoadStatic" isAbstract="true">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15715" general="cl_IfcStructuralLoadOrResult"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSurfaceReinforcementArea" name="IfcSurfaceReinforcementArea">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15716" general="cl_IfcStructuralLoadOrResult"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurfaceReinforcementArea_SurfaceReinforcement1" name="SurfaceReinforcement1_L[2:3]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15717" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15718" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurfaceReinforcementArea_SurfaceReinforcement2" name="SurfaceReinforcement2_L[2:3]" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15719" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15720" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurfaceReinforcementArea_ShearReinforcement" name="ShearReinforcement" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15721" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15722" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSurfaceReinforcementArea_NonnegativeArea1" name="NonnegativeArea1">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_15723" name="NonnegativeArea1">
-            <language>EXPRESS_WHERE</language>
-            <body>(NOT EXISTS(SurfaceReinforcement1)) OR (
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcStructuralLoadResource" name="IfcStructuralLoadResource" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcStructuralLoadResource" name="IfcStructuralLoadResource">
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoundaryCondition" name="IfcBoundaryCondition" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryCondition_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryCondition_Name_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryCondition_Name_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralConnectionCondition" name="IfcStructuralConnectionCondition" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralConnectionCondition_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralConnectionCondition_Name_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralConnectionCondition_Name_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoad" name="IfcStructuralLoad" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoad_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoad_Name_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoad_Name_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoundaryEdgeCondition" name="IfcBoundaryEdgeCondition">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBoundaryEdgeCondition_gen_IfcBoundaryCondition" general="cl_IfcBoundaryCondition"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX" name="TranslationalStiffnessByLengthX" type="un_IfcModulusOfTranslationalSubgradeReactionSelect" association="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY" name="TranslationalStiffnessByLengthY" type="un_IfcModulusOfTranslationalSubgradeReactionSelect" association="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ" name="TranslationalStiffnessByLengthZ" type="un_IfcModulusOfTranslationalSubgradeReactionSelect" association="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX" name="RotationalStiffnessByLengthX" type="un_IfcModulusOfRotationalSubgradeReactionSelect" association="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY" name="RotationalStiffnessByLengthY" type="un_IfcModulusOfRotationalSubgradeReactionSelect" association="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ" name="RotationalStiffnessByLengthZ" type="un_IfcModulusOfRotationalSubgradeReactionSelect" association="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoundaryFaceCondition" name="IfcBoundaryFaceCondition">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBoundaryFaceCondition_gen_IfcBoundaryCondition" general="cl_IfcBoundaryCondition"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX" name="TranslationalStiffnessByAreaX" type="un_IfcModulusOfSubgradeReactionSelect" association="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY" name="TranslationalStiffnessByAreaY" type="un_IfcModulusOfSubgradeReactionSelect" association="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ" name="TranslationalStiffnessByAreaZ" type="un_IfcModulusOfSubgradeReactionSelect" association="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoundaryNodeCondition" name="IfcBoundaryNodeCondition">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBoundaryNodeCondition_gen_IfcBoundaryCondition" general="cl_IfcBoundaryCondition"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeCondition_TranslationalStiffnessX" name="TranslationalStiffnessX" type="un_IfcTranslationalStiffnessSelect" association="as_IfcBoundaryNodeCondition_TranslationalStiffnessX">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryNodeCondition_TranslationalStiffnessX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryNodeCondition_TranslationalStiffnessX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeCondition_TranslationalStiffnessY" name="TranslationalStiffnessY" type="un_IfcTranslationalStiffnessSelect" association="as_IfcBoundaryNodeCondition_TranslationalStiffnessY">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryNodeCondition_TranslationalStiffnessY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryNodeCondition_TranslationalStiffnessY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeCondition_TranslationalStiffnessZ" name="TranslationalStiffnessZ" type="un_IfcTranslationalStiffnessSelect" association="as_IfcBoundaryNodeCondition_TranslationalStiffnessZ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryNodeCondition_TranslationalStiffnessZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryNodeCondition_TranslationalStiffnessZ_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeCondition_RotationalStiffnessX" name="RotationalStiffnessX" type="un_IfcRotationalStiffnessSelect" association="as_IfcBoundaryNodeCondition_RotationalStiffnessX">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryNodeCondition_RotationalStiffnessX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryNodeCondition_RotationalStiffnessX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeCondition_RotationalStiffnessY" name="RotationalStiffnessY" type="un_IfcRotationalStiffnessSelect" association="as_IfcBoundaryNodeCondition_RotationalStiffnessY">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryNodeCondition_RotationalStiffnessY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryNodeCondition_RotationalStiffnessY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeCondition_RotationalStiffnessZ" name="RotationalStiffnessZ" type="un_IfcRotationalStiffnessSelect" association="as_IfcBoundaryNodeCondition_RotationalStiffnessZ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryNodeCondition_RotationalStiffnessZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryNodeCondition_RotationalStiffnessZ_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFailureConnectionCondition" name="IfcFailureConnectionCondition">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFailureConnectionCondition_gen_IfcStructuralConnectionCondition" general="cl_IfcStructuralConnectionCondition"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFailureConnectionCondition_TensionFailureX" name="TensionFailureX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcFailureConnectionCondition_TensionFailureX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcFailureConnectionCondition_TensionFailureX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFailureConnectionCondition_TensionFailureY" name="TensionFailureY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcFailureConnectionCondition_TensionFailureY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcFailureConnectionCondition_TensionFailureY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFailureConnectionCondition_TensionFailureZ" name="TensionFailureZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcFailureConnectionCondition_TensionFailureZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcFailureConnectionCondition_TensionFailureZ_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFailureConnectionCondition_CompressionFailureX" name="CompressionFailureX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcFailureConnectionCondition_CompressionFailureX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcFailureConnectionCondition_CompressionFailureX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFailureConnectionCondition_CompressionFailureY" name="CompressionFailureY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcFailureConnectionCondition_CompressionFailureY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcFailureConnectionCondition_CompressionFailureY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFailureConnectionCondition_CompressionFailureZ" name="CompressionFailureZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcFailureConnectionCondition_CompressionFailureZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcFailureConnectionCondition_CompressionFailureZ_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcModulusOfRotationalSubgradeReactionSelect" name="IfcModulusOfRotationalSubgradeReactionSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcModulusOfRotationalSubgradeReactionSelect_IfcBoolean" client="un_IfcModulusOfRotationalSubgradeReactionSelect">
+      <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcModulusOfRotationalSubgradeReactionSelect_IfcModulusOfRotationalSubgradeReactionMeasure" client="un_IfcModulusOfRotationalSubgradeReactionSelect">
+      <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfRotationalSubgradeReactionMeasure"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcModulusOfSubgradeReactionSelect" name="IfcModulusOfSubgradeReactionSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcModulusOfSubgradeReactionSelect_IfcBoolean" client="un_IfcModulusOfSubgradeReactionSelect">
+      <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcModulusOfSubgradeReactionSelect_IfcModulusOfSubgradeReactionMeasure" client="un_IfcModulusOfSubgradeReactionSelect">
+      <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfSubgradeReactionMeasure"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcModulusOfTranslationalSubgradeReactionSelect" name="IfcModulusOfTranslationalSubgradeReactionSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcModulusOfTranslationalSubgradeReactionSelect_IfcBoolean" client="un_IfcModulusOfTranslationalSubgradeReactionSelect">
+      <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcModulusOfTranslationalSubgradeReactionSelect_IfcModulusOfLinearSubgradeReactionMeasure" client="un_IfcModulusOfTranslationalSubgradeReactionSelect">
+      <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfLinearSubgradeReactionMeasure"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcRotationalStiffnessSelect" name="IfcRotationalStiffnessSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcRotationalStiffnessSelect_IfcBoolean" client="un_IfcRotationalStiffnessSelect">
+      <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcRotationalStiffnessSelect_IfcRotationalStiffnessMeasure" client="un_IfcRotationalStiffnessSelect">
+      <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRotationalStiffnessMeasure"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSlippageConnectionCondition" name="IfcSlippageConnectionCondition">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSlippageConnectionCondition_gen_IfcStructuralConnectionCondition" general="cl_IfcStructuralConnectionCondition"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSlippageConnectionCondition_SlippageX" name="SlippageX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSlippageConnectionCondition_SlippageX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSlippageConnectionCondition_SlippageX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSlippageConnectionCondition_SlippageY" name="SlippageY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSlippageConnectionCondition_SlippageY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSlippageConnectionCondition_SlippageY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSlippageConnectionCondition_SlippageZ" name="SlippageZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSlippageConnectionCondition_SlippageZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSlippageConnectionCondition_SlippageZ_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadConfiguration" name="IfcStructuralLoadConfiguration">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStructuralLoadConfiguration_ValidListSize" name="ValidListSize">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStructuralLoadConfiguration_ValidListSize" name="ValidListSize">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT EXISTS(Locations) OR (SIZEOF(Locations) = SIZEOF(Values))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralLoadConfiguration_gen_IfcStructuralLoad" general="cl_IfcStructuralLoad"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadConfiguration_Values" name="Values_L[1:?]" type="cl_IfcStructuralLoadOrResult" association="as_IfcStructuralLoadConfiguration_Values">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadConfiguration_Values_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadConfiguration_Values_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadConfiguration_Locations" name="Locations_LU[1:?]_L[1:2]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadConfiguration_Locations_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadConfiguration_Locations_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadOrResult" name="IfcStructuralLoadOrResult" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralLoadOrResult_gen_IfcStructuralLoad" general="cl_IfcStructuralLoad"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcTranslationalStiffnessSelect" name="IfcTranslationalStiffnessSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcTranslationalStiffnessSelect_IfcBoolean" client="un_IfcTranslationalStiffnessSelect">
+      <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcTranslationalStiffnessSelect_IfcLinearStiffnessMeasure" client="un_IfcTranslationalStiffnessSelect">
+      <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearStiffnessMeasure"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcWarpingStiffnessSelect" name="IfcWarpingStiffnessSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcWarpingStiffnessSelect_IfcBoolean" client="un_IfcWarpingStiffnessSelect">
+      <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcWarpingStiffnessSelect_IfcWarpingMomentMeasure" client="un_IfcWarpingStiffnessSelect">
+      <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcWarpingMomentMeasure"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoundaryNodeConditionWarping" name="IfcBoundaryNodeConditionWarping">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBoundaryNodeConditionWarping_gen_IfcBoundaryNodeCondition" general="cl_IfcBoundaryNodeCondition"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoundaryNodeConditionWarping_WarpingStiffness" name="WarpingStiffness" type="un_IfcWarpingStiffnessSelect" association="as_IfcBoundaryNodeConditionWarping_WarpingStiffness">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoundaryNodeConditionWarping_WarpingStiffness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoundaryNodeConditionWarping_WarpingStiffness_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadStatic" name="IfcStructuralLoadStatic" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralLoadStatic_gen_IfcStructuralLoadOrResult" general="cl_IfcStructuralLoadOrResult"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSurfaceReinforcementArea" name="IfcSurfaceReinforcementArea">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSurfaceReinforcementArea_NonnegativeArea1" name="NonnegativeArea1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcSurfaceReinforcementArea_NonnegativeArea1" name="NonnegativeArea1">
+          <language>EXPRESS_WHERE</language>
+          <body>(NOT EXISTS(SurfaceReinforcement1)) OR (
     (SurfaceReinforcement1[1] &gt;= 0.) AND
     (SurfaceReinforcement1[2] &gt;= 0.) AND
     ((SIZEOF(SurfaceReinforcement1) = 1) OR (SurfaceReinforcement1[1] &gt;= 0.))
 )</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSurfaceReinforcementArea_NonnegativeArea2" name="NonnegativeArea2">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_15724" name="NonnegativeArea2">
-            <language>EXPRESS_WHERE</language>
-            <body>(NOT EXISTS(SurfaceReinforcement2)) OR (
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSurfaceReinforcementArea_NonnegativeArea2" name="NonnegativeArea2">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcSurfaceReinforcementArea_NonnegativeArea2" name="NonnegativeArea2">
+          <language>EXPRESS_WHERE</language>
+          <body>(NOT EXISTS(SurfaceReinforcement2)) OR (
     (SurfaceReinforcement2[1] &gt;= 0.) AND
     (SurfaceReinforcement2[2] &gt;= 0.) AND
     ((SIZEOF(SurfaceReinforcement2) = 1) OR (SurfaceReinforcement2[1] &gt;= 0.))
 )</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSurfaceReinforcementArea_NonnegativeArea3" name="NonnegativeArea3">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_15725" name="NonnegativeArea3">
-            <language>EXPRESS_WHERE</language>
-            <body>(NOT EXISTS(ShearReinforcement)) OR (ShearReinforcement &gt;= 0.)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSurfaceReinforcementArea_SurfaceAndOrShearAreaSpecified" name="SurfaceAndOrShearAreaSpecified">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_15726" name="SurfaceAndOrShearAreaSpecified">
-            <language>EXPRESS_WHERE</language>
-            <body>EXISTS(SurfaceReinforcement1) OR EXISTS(SurfaceReinforcement2) OR EXISTS(ShearReinforcement)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadLinearForce" name="IfcStructuralLoadLinearForce">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15727" general="cl_IfcStructuralLoadStatic"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadLinearForce_LinearForceX" name="LinearForceX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15728" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15729" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadLinearForce_LinearForceY" name="LinearForceY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15730" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15731" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadLinearForce_LinearForceZ" name="LinearForceZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15732" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15733" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadLinearForce_LinearMomentX" name="LinearMomentX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearMomentMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15734" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15735" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadLinearForce_LinearMomentY" name="LinearMomentY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearMomentMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15736" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15737" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadLinearForce_LinearMomentZ" name="LinearMomentZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearMomentMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15738" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15739" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadPlanarForce" name="IfcStructuralLoadPlanarForce">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15740" general="cl_IfcStructuralLoadStatic"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadPlanarForce_PlanarForceX" name="PlanarForceX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlanarForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15741" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15742" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadPlanarForce_PlanarForceY" name="PlanarForceY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlanarForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15743" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15744" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadPlanarForce_PlanarForceZ" name="PlanarForceZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlanarForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15745" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15746" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadSingleDisplacement" name="IfcStructuralLoadSingleDisplacement">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15747" general="cl_IfcStructuralLoadStatic"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacement_DisplacementX" name="DisplacementX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15748" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15749" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacement_DisplacementY" name="DisplacementY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15750" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15751" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacement_DisplacementZ" name="DisplacementZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15752" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15753" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRX" name="RotationalDisplacementRX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15754" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15755" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRY" name="RotationalDisplacementRY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15756" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15757" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRZ" name="RotationalDisplacementRZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15758" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15759" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadSingleForce" name="IfcStructuralLoadSingleForce">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15760" general="cl_IfcStructuralLoadStatic"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForce_ForceX" name="ForceX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15761" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15762" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForce_ForceY" name="ForceY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15763" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15764" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForce_ForceZ" name="ForceZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15765" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15766" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForce_MomentX" name="MomentX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTorqueMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15767" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15768" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForce_MomentY" name="MomentY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTorqueMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15769" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15770" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForce_MomentZ" name="MomentZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTorqueMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15771" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15772" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadTemperature" name="IfcStructuralLoadTemperature">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15773" general="cl_IfcStructuralLoadStatic"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadTemperature_DeltaTConstant" name="DeltaTConstant" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15774" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15775" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadTemperature_DeltaTY" name="DeltaTY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15776" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15777" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadTemperature_DeltaTZ" name="DeltaTZ" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15778" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15779" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadSingleDisplacementDistortion" name="IfcStructuralLoadSingleDisplacementDistortion">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15780" general="cl_IfcStructuralLoadSingleDisplacement"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacementDistortion_Distortion" name="Distortion" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCurvatureMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15781" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15782" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadSingleForceWarping" name="IfcStructuralLoadSingleForceWarping">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_15783" general="cl_IfcStructuralLoadSingleForce"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForceWarping_WarpingMoment" name="WarpingMoment" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcWarpingMomentMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15784" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15785" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX" name="TranslationalStiffnessByLengthX" memberEnd="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX end_66">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_66" name="" association="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX" type="cl_IfcBoundaryEdgeCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15786" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15787" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY" name="TranslationalStiffnessByLengthY" memberEnd="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY end_68">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_68" name="" association="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY" type="cl_IfcBoundaryEdgeCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15788" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15789" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ" name="TranslationalStiffnessByLengthZ" memberEnd="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ end_70">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_70" name="" association="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ" type="cl_IfcBoundaryEdgeCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15790" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15791" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX" name="RotationalStiffnessByLengthX" memberEnd="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX end_72">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_72" name="" association="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX" type="cl_IfcBoundaryEdgeCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15792" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15793" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY" name="RotationalStiffnessByLengthY" memberEnd="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY end_74">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_74" name="" association="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY" type="cl_IfcBoundaryEdgeCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15794" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15795" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ" name="RotationalStiffnessByLengthZ" memberEnd="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ end_76">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_76" name="" association="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ" type="cl_IfcBoundaryEdgeCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15796" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15797" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX" name="TranslationalStiffnessByAreaX" memberEnd="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX end_78">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_78" name="" association="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX" type="cl_IfcBoundaryFaceCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15798" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15799" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY" name="TranslationalStiffnessByAreaY" memberEnd="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY end_80">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_80" name="" association="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY" type="cl_IfcBoundaryFaceCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15800" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15801" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ" name="TranslationalStiffnessByAreaZ" memberEnd="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ end_82">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_82" name="" association="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ" type="cl_IfcBoundaryFaceCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15802" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15803" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessX" name="TranslationalStiffnessX" memberEnd="at_IfcBoundaryNodeCondition_TranslationalStiffnessX end_84">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_84" name="" association="as_IfcBoundaryNodeCondition_TranslationalStiffnessX" type="cl_IfcBoundaryNodeCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15804" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15805" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessY" name="TranslationalStiffnessY" memberEnd="at_IfcBoundaryNodeCondition_TranslationalStiffnessY end_86">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_86" name="" association="as_IfcBoundaryNodeCondition_TranslationalStiffnessY" type="cl_IfcBoundaryNodeCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15806" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15807" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessZ" name="TranslationalStiffnessZ" memberEnd="at_IfcBoundaryNodeCondition_TranslationalStiffnessZ end_88">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_88" name="" association="as_IfcBoundaryNodeCondition_TranslationalStiffnessZ" type="cl_IfcBoundaryNodeCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15808" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15809" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessX" name="RotationalStiffnessX" memberEnd="at_IfcBoundaryNodeCondition_RotationalStiffnessX end_90">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_90" name="" association="as_IfcBoundaryNodeCondition_RotationalStiffnessX" type="cl_IfcBoundaryNodeCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15810" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15811" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessY" name="RotationalStiffnessY" memberEnd="at_IfcBoundaryNodeCondition_RotationalStiffnessY end_92">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_92" name="" association="as_IfcBoundaryNodeCondition_RotationalStiffnessY" type="cl_IfcBoundaryNodeCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15812" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15813" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessZ" name="RotationalStiffnessZ" memberEnd="at_IfcBoundaryNodeCondition_RotationalStiffnessZ end_94">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_94" name="" association="as_IfcBoundaryNodeCondition_RotationalStiffnessZ" type="cl_IfcBoundaryNodeCondition">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15814" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15815" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeConditionWarping_WarpingStiffness" name="WarpingStiffness" memberEnd="at_IfcBoundaryNodeConditionWarping_WarpingStiffness end_96">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_96" name="" association="as_IfcBoundaryNodeConditionWarping_WarpingStiffness" type="cl_IfcBoundaryNodeConditionWarping">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15816" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15817" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcStructuralLoadConfiguration_Values" name="Values" memberEnd="at_IfcStructuralLoadConfiguration_Values end_830">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_830" name="" association="as_IfcStructuralLoadConfiguration_Values" type="cl_IfcStructuralLoadConfiguration">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_15818" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_15819" value="1"/>
-        </ownedEnd>
-      </packagedElement>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSurfaceReinforcementArea_NonnegativeArea3" name="NonnegativeArea3">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcSurfaceReinforcementArea_NonnegativeArea3" name="NonnegativeArea3">
+          <language>EXPRESS_WHERE</language>
+          <body>(NOT EXISTS(ShearReinforcement)) OR (ShearReinforcement &gt;= 0.)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSurfaceReinforcementArea_SurfaceAndOrShearAreaSpecified" name="SurfaceAndOrShearAreaSpecified">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcSurfaceReinforcementArea_SurfaceAndOrShearAreaSpecified" name="SurfaceAndOrShearAreaSpecified">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS(SurfaceReinforcement1) OR EXISTS(SurfaceReinforcement2) OR EXISTS(ShearReinforcement)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSurfaceReinforcementArea_gen_IfcStructuralLoadOrResult" general="cl_IfcStructuralLoadOrResult"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurfaceReinforcementArea_SurfaceReinforcement1" name="SurfaceReinforcement1_L[2:3]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSurfaceReinforcementArea_SurfaceReinforcement1_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSurfaceReinforcementArea_SurfaceReinforcement1_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurfaceReinforcementArea_SurfaceReinforcement2" name="SurfaceReinforcement2_L[2:3]">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSurfaceReinforcementArea_SurfaceReinforcement2_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSurfaceReinforcementArea_SurfaceReinforcement2_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurfaceReinforcementArea_ShearReinforcement" name="ShearReinforcement">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSurfaceReinforcementArea_ShearReinforcement_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSurfaceReinforcementArea_ShearReinforcement_upper" value="1"/>
+      </ownedAttribute>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadLinearForce" name="IfcStructuralLoadLinearForce">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralLoadLinearForce_gen_IfcStructuralLoadStatic" general="cl_IfcStructuralLoadStatic"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadLinearForce_LinearForceX" name="LinearForceX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadLinearForce_LinearForceX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadLinearForce_LinearForceX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadLinearForce_LinearForceY" name="LinearForceY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadLinearForce_LinearForceY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadLinearForce_LinearForceY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadLinearForce_LinearForceZ" name="LinearForceZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadLinearForce_LinearForceZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadLinearForce_LinearForceZ_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadLinearForce_LinearMomentX" name="LinearMomentX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearMomentMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadLinearForce_LinearMomentX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadLinearForce_LinearMomentX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadLinearForce_LinearMomentY" name="LinearMomentY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearMomentMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadLinearForce_LinearMomentY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadLinearForce_LinearMomentY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadLinearForce_LinearMomentZ" name="LinearMomentZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearMomentMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadLinearForce_LinearMomentZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadLinearForce_LinearMomentZ_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadPlanarForce" name="IfcStructuralLoadPlanarForce">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralLoadPlanarForce_gen_IfcStructuralLoadStatic" general="cl_IfcStructuralLoadStatic"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadPlanarForce_PlanarForceX" name="PlanarForceX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlanarForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadPlanarForce_PlanarForceX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadPlanarForce_PlanarForceX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadPlanarForce_PlanarForceY" name="PlanarForceY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlanarForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadPlanarForce_PlanarForceY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadPlanarForce_PlanarForceY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadPlanarForce_PlanarForceZ" name="PlanarForceZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlanarForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadPlanarForce_PlanarForceZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadPlanarForce_PlanarForceZ_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadSingleDisplacement" name="IfcStructuralLoadSingleDisplacement">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralLoadSingleDisplacement_gen_IfcStructuralLoadStatic" general="cl_IfcStructuralLoadStatic"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacement_DisplacementX" name="DisplacementX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleDisplacement_DisplacementX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleDisplacement_DisplacementX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacement_DisplacementY" name="DisplacementY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleDisplacement_DisplacementY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleDisplacement_DisplacementY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacement_DisplacementZ" name="DisplacementZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleDisplacement_DisplacementZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleDisplacement_DisplacementZ_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRX" name="RotationalDisplacementRX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRY" name="RotationalDisplacementRY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRZ" name="RotationalDisplacementRZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleDisplacement_RotationalDisplacementRZ_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadSingleForce" name="IfcStructuralLoadSingleForce">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralLoadSingleForce_gen_IfcStructuralLoadStatic" general="cl_IfcStructuralLoadStatic"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForce_ForceX" name="ForceX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleForce_ForceX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleForce_ForceX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForce_ForceY" name="ForceY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleForce_ForceY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleForce_ForceY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForce_ForceZ" name="ForceZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleForce_ForceZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleForce_ForceZ_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForce_MomentX" name="MomentX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTorqueMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleForce_MomentX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleForce_MomentX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForce_MomentY" name="MomentY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTorqueMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleForce_MomentY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleForce_MomentY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForce_MomentZ" name="MomentZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTorqueMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleForce_MomentZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleForce_MomentZ_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadTemperature" name="IfcStructuralLoadTemperature">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralLoadTemperature_gen_IfcStructuralLoadStatic" general="cl_IfcStructuralLoadStatic"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadTemperature_DeltaTConstant" name="DeltaTConstant">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadTemperature_DeltaTConstant_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadTemperature_DeltaTConstant_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadTemperature_DeltaTY" name="DeltaTY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadTemperature_DeltaTY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadTemperature_DeltaTY_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadTemperature_DeltaTZ" name="DeltaTZ">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadTemperature_DeltaTZ_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadTemperature_DeltaTZ_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadSingleDisplacementDistortion" name="IfcStructuralLoadSingleDisplacementDistortion">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralLoadSingleDisplacementDistortion_gen_IfcStructuralLoadSingleDisplacement" general="cl_IfcStructuralLoadSingleDisplacement"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleDisplacementDistortion_Distortion" name="Distortion">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCurvatureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleDisplacementDistortion_Distortion_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleDisplacementDistortion_Distortion_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralLoadSingleForceWarping" name="IfcStructuralLoadSingleForceWarping">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralLoadSingleForceWarping_gen_IfcStructuralLoadSingleForce" general="cl_IfcStructuralLoadSingleForce"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcStructuralLoadSingleForceWarping_WarpingMoment" name="WarpingMoment">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcWarpingMomentMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcStructuralLoadSingleForceWarping_WarpingMoment_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcStructuralLoadSingleForceWarping_WarpingMoment_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX" name="TranslationalStiffnessByLengthX" memberEnd="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX_target_end" name="" type="cl_IfcBoundaryEdgeCondition" association="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthX_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY" name="TranslationalStiffnessByLengthY" memberEnd="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY_target_end" name="" type="cl_IfcBoundaryEdgeCondition" association="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthY_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ" name="TranslationalStiffnessByLengthZ" memberEnd="at_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ_target_end" name="" type="cl_IfcBoundaryEdgeCondition" association="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryEdgeCondition_TranslationalStiffnessByLengthZ_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX" name="RotationalStiffnessByLengthX" memberEnd="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX_target_end" name="" type="cl_IfcBoundaryEdgeCondition" association="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthX_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY" name="RotationalStiffnessByLengthY" memberEnd="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY_target_end" name="" type="cl_IfcBoundaryEdgeCondition" association="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthY_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ" name="RotationalStiffnessByLengthZ" memberEnd="at_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ_target_end" name="" type="cl_IfcBoundaryEdgeCondition" association="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryEdgeCondition_RotationalStiffnessByLengthZ_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX" name="TranslationalStiffnessByAreaX" memberEnd="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX_target_end" name="" type="cl_IfcBoundaryFaceCondition" association="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaX_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY" name="TranslationalStiffnessByAreaY" memberEnd="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY_target_end" name="" type="cl_IfcBoundaryFaceCondition" association="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaY_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ" name="TranslationalStiffnessByAreaZ" memberEnd="at_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ_target_end" name="" type="cl_IfcBoundaryFaceCondition" association="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryFaceCondition_TranslationalStiffnessByAreaZ_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessX" name="TranslationalStiffnessX" memberEnd="at_IfcBoundaryNodeCondition_TranslationalStiffnessX as_IfcBoundaryNodeCondition_TranslationalStiffnessX_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessX_target_end" name="" type="cl_IfcBoundaryNodeCondition" association="as_IfcBoundaryNodeCondition_TranslationalStiffnessX">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessX_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessX_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessY" name="TranslationalStiffnessY" memberEnd="at_IfcBoundaryNodeCondition_TranslationalStiffnessY as_IfcBoundaryNodeCondition_TranslationalStiffnessY_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessY_target_end" name="" type="cl_IfcBoundaryNodeCondition" association="as_IfcBoundaryNodeCondition_TranslationalStiffnessY">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessY_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessY_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessZ" name="TranslationalStiffnessZ" memberEnd="at_IfcBoundaryNodeCondition_TranslationalStiffnessZ as_IfcBoundaryNodeCondition_TranslationalStiffnessZ_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessZ_target_end" name="" type="cl_IfcBoundaryNodeCondition" association="as_IfcBoundaryNodeCondition_TranslationalStiffnessZ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessZ_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryNodeCondition_TranslationalStiffnessZ_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessX" name="RotationalStiffnessX" memberEnd="at_IfcBoundaryNodeCondition_RotationalStiffnessX as_IfcBoundaryNodeCondition_RotationalStiffnessX_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessX_target_end" name="" type="cl_IfcBoundaryNodeCondition" association="as_IfcBoundaryNodeCondition_RotationalStiffnessX">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessX_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessX_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessY" name="RotationalStiffnessY" memberEnd="at_IfcBoundaryNodeCondition_RotationalStiffnessY as_IfcBoundaryNodeCondition_RotationalStiffnessY_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessY_target_end" name="" type="cl_IfcBoundaryNodeCondition" association="as_IfcBoundaryNodeCondition_RotationalStiffnessY">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessY_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessY_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessZ" name="RotationalStiffnessZ" memberEnd="at_IfcBoundaryNodeCondition_RotationalStiffnessZ as_IfcBoundaryNodeCondition_RotationalStiffnessZ_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessZ_target_end" name="" type="cl_IfcBoundaryNodeCondition" association="as_IfcBoundaryNodeCondition_RotationalStiffnessZ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessZ_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryNodeCondition_RotationalStiffnessZ_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcStructuralLoadConfiguration_Values" name="Values" memberEnd="at_IfcStructuralLoadConfiguration_Values as_IfcStructuralLoadConfiguration_Values_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcStructuralLoadConfiguration_Values_target_end" name="" type="cl_IfcStructuralLoadConfiguration" association="as_IfcStructuralLoadConfiguration_Values">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcStructuralLoadConfiguration_Values_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcStructuralLoadConfiguration_Values_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcBoundaryNodeConditionWarping_WarpingStiffness" name="WarpingStiffness" memberEnd="at_IfcBoundaryNodeConditionWarping_WarpingStiffness as_IfcBoundaryNodeConditionWarping_WarpingStiffness_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcBoundaryNodeConditionWarping_WarpingStiffness_target_end" name="" type="cl_IfcBoundaryNodeConditionWarping" association="as_IfcBoundaryNodeConditionWarping_WarpingStiffness">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcBoundaryNodeConditionWarping_WarpingStiffness_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcBoundaryNodeConditionWarping_WarpingStiffness_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

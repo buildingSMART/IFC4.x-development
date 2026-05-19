@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcQuantityResource" name="IfcQuantityResource">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcQuantityResource" name="IfcQuantityResource">
-      <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcUniqueQuantityNames" name="IfcUniqueQuantityNames">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4554" name="IfcUniqueQuantityNames">
-          <language>EXPRESS_FUNCTION</language>
-          <body>FUNCTION IfcUniqueQuantityNames
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcQuantityResource" name="IfcQuantityResource" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcQuantityResource" name="IfcQuantityResource">
+    <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcUniqueQuantityNames" name="IfcUniqueQuantityNames">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcUniqueQuantityNames_expr" name="IfcUniqueQuantityNames">
+        <language>EXPRESS_FUNCTION</language>
+        <body>FUNCTION IfcUniqueQuantityNames
 (Properties : SET [1:?] OF IfcPhysicalQuantity)
 :LOGICAL;
 
@@ -20,236 +19,235 @@ RETURN (SIZEOF(Names) = SIZEOF(Properties));
 
 END_FUNCTION;
 </body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPhysicalQuantity" name="IfcPhysicalQuantity" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalQuantity_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4555" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4556" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalQuantity_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4557" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4558" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPhysicalComplexQuantity" name="IfcPhysicalComplexQuantity">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4559" general="cl_IfcPhysicalQuantity"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalComplexQuantity_HasQuantities" name="HasQuantities_S[1:?]" isOrdered="false" association="as_IfcPhysicalComplexQuantity_HasQuantities" type="cl_IfcPhysicalQuantity">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4560" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4561" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalComplexQuantity_Discrimination" name="Discrimination" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4562" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4563" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalComplexQuantity_Quality" name="Quality" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4564" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4565" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalComplexQuantity_Usage" name="Usage" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4566" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4567" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPhysicalComplexQuantity_NoSelfReference" name="NoSelfReference">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4568" name="NoSelfReference">
-            <language>EXPRESS_WHERE</language>
-            <body>SIZEOF(QUERY(temp &lt;* HasQuantities | SELF :=: temp)) = 0</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPhysicalComplexQuantity_UniqueQuantityNames" name="UniqueQuantityNames">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4569" name="UniqueQuantityNames">
-            <language>EXPRESS_WHERE</language>
-            <body>IfcUniqueQuantityNames(HasQuantities)</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPhysicalSimpleQuantity" name="IfcPhysicalSimpleQuantity" isAbstract="true">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4570" general="cl_IfcPhysicalQuantity"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalSimpleQuantity_Unit" name="Unit" isOrdered="false" association="as_IfcPhysicalSimpleQuantity_Unit">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcNamedUnit"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4571" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4572" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityArea" name="IfcQuantityArea">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4573" general="cl_IfcPhysicalSimpleQuantity"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityArea_AreaValue" name="AreaValue" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcAreaMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4574" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4575" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityArea_Formula" name="Formula" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4576" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4577" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityArea_WR21" name="WR21">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4578" name="WR21">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
-   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.AREAUNIT)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityArea_WR22" name="WR22">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4579" name="WR22">
-            <language>EXPRESS_WHERE</language>
-            <body>AreaValue &gt;= 0.</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityCount" name="IfcQuantityCount">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4580" general="cl_IfcPhysicalSimpleQuantity"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityCount_CountValue" name="CountValue" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4581" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4582" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityCount_Formula" name="Formula" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4583" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4584" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityCount_WR21" name="WR21">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4585" name="WR21">
-            <language>EXPRESS_WHERE</language>
-            <body>CountValue &gt;= 0</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityLength" name="IfcQuantityLength">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4586" general="cl_IfcPhysicalSimpleQuantity"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityLength_LengthValue" name="LengthValue" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4587" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4588" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityLength_Formula" name="Formula" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4589" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4590" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityLength_WR21" name="WR21">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4591" name="WR21">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
-   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.LENGTHUNIT)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityLength_WR22" name="WR22">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4592" name="WR22">
-            <language>EXPRESS_WHERE</language>
-            <body>LengthValue &gt;= 0.</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityNumber" name="IfcQuantityNumber">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4593" general="cl_IfcPhysicalSimpleQuantity"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityNumber_NumberValue" name="NumberValue" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNumericMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4594" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4595" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityNumber_Formula" name="Formula" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4596" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4597" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityTime" name="IfcQuantityTime">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4598" general="cl_IfcPhysicalSimpleQuantity"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityTime_TimeValue" name="TimeValue" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTimeMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4599" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4600" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityTime_Formula" name="Formula" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4601" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4602" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityTime_WR21" name="WR21">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4603" name="WR21">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
-   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.TIMEUNIT)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityTime_WR22" name="WR22">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4604" name="WR22">
-            <language>EXPRESS_WHERE</language>
-            <body>TimeValue &gt;= 0.</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityVolume" name="IfcQuantityVolume">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4605" general="cl_IfcPhysicalSimpleQuantity"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityVolume_VolumeValue" name="VolumeValue" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcVolumeMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4606" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4607" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityVolume_Formula" name="Formula" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4608" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4609" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityVolume_WR21" name="WR21">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4610" name="WR21">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
-   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.VOLUMEUNIT)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityVolume_WR22" name="WR22">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4611" name="WR22">
-            <language>EXPRESS_WHERE</language>
-            <body>VolumeValue &gt;= 0.</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityWeight" name="IfcQuantityWeight">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4612" general="cl_IfcPhysicalSimpleQuantity"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityWeight_WeightValue" name="WeightValue" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMassMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4613" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4614" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityWeight_Formula" name="Formula" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4615" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4616" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityWeight_WR21" name="WR21">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4617" name="WR21">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
-   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.MASSUNIT)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityWeight_WR22" name="WR22">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_4618" name="WR22">
-            <language>EXPRESS_WHERE</language>
-            <body>WeightValue &gt;= 0.</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPhysicalComplexQuantity_HasQuantities" name="HasQuantities" memberEnd="at_IfcPhysicalComplexQuantity_HasQuantities end_480">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_480" name="INV_PartOfComplex_S[0:1]" association="as_IfcPhysicalComplexQuantity_HasQuantities" type="cl_IfcPhysicalComplexQuantity">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4619" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4620" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPhysicalSimpleQuantity_Unit" name="Unit" memberEnd="at_IfcPhysicalSimpleQuantity_Unit end_482">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_482" name="" association="as_IfcPhysicalSimpleQuantity_Unit" type="cl_IfcPhysicalSimpleQuantity">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4621" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4622" value="1"/>
-        </ownedEnd>
-      </packagedElement>
+      </specification>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPhysicalQuantity" name="IfcPhysicalQuantity" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalQuantity_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPhysicalQuantity_Name_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPhysicalQuantity_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalQuantity_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPhysicalQuantity_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPhysicalQuantity_Description_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPhysicalComplexQuantity" name="IfcPhysicalComplexQuantity">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPhysicalComplexQuantity_NoSelfReference" name="NoSelfReference">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPhysicalComplexQuantity_NoSelfReference" name="NoSelfReference">
+          <language>EXPRESS_WHERE</language>
+          <body>SIZEOF(QUERY(temp &lt;* HasQuantities | SELF :=: temp)) = 0</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPhysicalComplexQuantity_UniqueQuantityNames" name="UniqueQuantityNames">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPhysicalComplexQuantity_UniqueQuantityNames" name="UniqueQuantityNames">
+          <language>EXPRESS_WHERE</language>
+          <body>IfcUniqueQuantityNames(HasQuantities)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPhysicalComplexQuantity_gen_IfcPhysicalQuantity" general="cl_IfcPhysicalQuantity"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalComplexQuantity_HasQuantities" name="HasQuantities_S[1:?]" type="cl_IfcPhysicalQuantity" association="as_IfcPhysicalComplexQuantity_HasQuantities">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPhysicalComplexQuantity_HasQuantities_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPhysicalComplexQuantity_HasQuantities_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalComplexQuantity_Discrimination" name="Discrimination">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPhysicalComplexQuantity_Discrimination_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPhysicalComplexQuantity_Discrimination_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalComplexQuantity_Quality" name="Quality">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPhysicalComplexQuantity_Quality_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPhysicalComplexQuantity_Quality_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalComplexQuantity_Usage" name="Usage">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPhysicalComplexQuantity_Usage_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPhysicalComplexQuantity_Usage_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPhysicalSimpleQuantity" name="IfcPhysicalSimpleQuantity" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPhysicalSimpleQuantity_gen_IfcPhysicalQuantity" general="cl_IfcPhysicalQuantity"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPhysicalSimpleQuantity_Unit" name="Unit" association="as_IfcPhysicalSimpleQuantity_Unit">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#cl_IfcNamedUnit"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPhysicalSimpleQuantity_Unit_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPhysicalSimpleQuantity_Unit_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityArea" name="IfcQuantityArea">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityArea_WR21" name="WR21">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityArea_WR21" name="WR21">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.AREAUNIT)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityArea_WR22" name="WR22">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityArea_WR22" name="WR22">
+          <language>EXPRESS_WHERE</language>
+          <body>AreaValue &gt;= 0.</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcQuantityArea_gen_IfcPhysicalSimpleQuantity" general="cl_IfcPhysicalSimpleQuantity"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityArea_AreaValue" name="AreaValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcAreaMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityArea_AreaValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityArea_AreaValue_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityArea_Formula" name="Formula">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityArea_Formula_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityArea_Formula_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityCount" name="IfcQuantityCount">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityCount_WR21" name="WR21">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityCount_WR21" name="WR21">
+          <language>EXPRESS_WHERE</language>
+          <body>CountValue &gt;= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcQuantityCount_gen_IfcPhysicalSimpleQuantity" general="cl_IfcPhysicalSimpleQuantity"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityCount_CountValue" name="CountValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityCount_CountValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityCount_CountValue_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityCount_Formula" name="Formula">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityCount_Formula_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityCount_Formula_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityLength" name="IfcQuantityLength">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityLength_WR21" name="WR21">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityLength_WR21" name="WR21">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.LENGTHUNIT)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityLength_WR22" name="WR22">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityLength_WR22" name="WR22">
+          <language>EXPRESS_WHERE</language>
+          <body>LengthValue &gt;= 0.</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcQuantityLength_gen_IfcPhysicalSimpleQuantity" general="cl_IfcPhysicalSimpleQuantity"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityLength_LengthValue" name="LengthValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityLength_LengthValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityLength_LengthValue_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityLength_Formula" name="Formula">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityLength_Formula_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityLength_Formula_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityNumber" name="IfcQuantityNumber">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcQuantityNumber_gen_IfcPhysicalSimpleQuantity" general="cl_IfcPhysicalSimpleQuantity"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityNumber_NumberValue" name="NumberValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNumericMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityNumber_NumberValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityNumber_NumberValue_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityNumber_Formula" name="Formula">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityNumber_Formula_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityNumber_Formula_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityTime" name="IfcQuantityTime">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityTime_WR21" name="WR21">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityTime_WR21" name="WR21">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.TIMEUNIT)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityTime_WR22" name="WR22">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityTime_WR22" name="WR22">
+          <language>EXPRESS_WHERE</language>
+          <body>TimeValue &gt;= 0.</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcQuantityTime_gen_IfcPhysicalSimpleQuantity" general="cl_IfcPhysicalSimpleQuantity"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityTime_TimeValue" name="TimeValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTimeMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityTime_TimeValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityTime_TimeValue_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityTime_Formula" name="Formula">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityTime_Formula_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityTime_Formula_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityVolume" name="IfcQuantityVolume">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityVolume_WR21" name="WR21">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityVolume_WR21" name="WR21">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.VOLUMEUNIT)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityVolume_WR22" name="WR22">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityVolume_WR22" name="WR22">
+          <language>EXPRESS_WHERE</language>
+          <body>VolumeValue &gt;= 0.</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcQuantityVolume_gen_IfcPhysicalSimpleQuantity" general="cl_IfcPhysicalSimpleQuantity"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityVolume_VolumeValue" name="VolumeValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcVolumeMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityVolume_VolumeValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityVolume_VolumeValue_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityVolume_Formula" name="Formula">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityVolume_Formula_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityVolume_Formula_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcQuantityWeight" name="IfcQuantityWeight">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityWeight_WR21" name="WR21">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityWeight_WR21" name="WR21">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.MASSUNIT)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityWeight_WR22" name="WR22">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityWeight_WR22" name="WR22">
+          <language>EXPRESS_WHERE</language>
+          <body>WeightValue &gt;= 0.</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcQuantityWeight_gen_IfcPhysicalSimpleQuantity" general="cl_IfcPhysicalSimpleQuantity"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityWeight_WeightValue" name="WeightValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMassMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityWeight_WeightValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityWeight_WeightValue_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcQuantityWeight_Formula" name="Formula">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcQuantityWeight_Formula_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcQuantityWeight_Formula_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPhysicalComplexQuantity_HasQuantities" name="HasQuantities" memberEnd="at_IfcPhysicalComplexQuantity_HasQuantities as_IfcPhysicalComplexQuantity_HasQuantities_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPhysicalComplexQuantity_HasQuantities_target_end" name="INV_PartOfComplex_S[0:1]" type="cl_IfcPhysicalComplexQuantity" association="as_IfcPhysicalComplexQuantity_HasQuantities">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPhysicalComplexQuantity_HasQuantities_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPhysicalComplexQuantity_HasQuantities_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPhysicalSimpleQuantity_Unit" name="Unit" memberEnd="at_IfcPhysicalSimpleQuantity_Unit as_IfcPhysicalSimpleQuantity_Unit_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPhysicalSimpleQuantity_Unit_target_end" name="" type="cl_IfcPhysicalSimpleQuantity" association="as_IfcPhysicalSimpleQuantity_Unit">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPhysicalSimpleQuantity_Unit_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPhysicalSimpleQuantity_Unit_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

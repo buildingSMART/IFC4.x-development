@@ -1,453 +1,451 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcSharedMgmtElements" name="IfcSharedMgmtElements">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcSharedMgmtElements" name="IfcSharedMgmtElements">
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcActionRequestTypeEnum" name="IfcActionRequestTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4623" name="EMAIL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4624" name="FAX"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4625" name="PHONE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4626" name="POST"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4627" name="VERBAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4628" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4629" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcCostItemTypeEnum" name="IfcCostItemTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4630" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4631" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcCostScheduleTypeEnum" name="IfcCostScheduleTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4632" name="BUDGET"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4633" name="COSTPLAN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4634" name="ESTIMATE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4635" name="PRICEDBILLOFQUANTITIES"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4636" name="SCHEDULEOFRATES"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4637" name="TENDER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4638" name="UNPRICEDBILLOFQUANTITIES"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4639" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4640" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcPermitTypeEnum" name="IfcPermitTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4641" name="ACCESS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4642" name="BUILDING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4643" name="WORK"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4644" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4645" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcProjectOrderTypeEnum" name="IfcProjectOrderTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4646" name="CHANGEORDER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4647" name="MAINTENANCEWORKORDER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4648" name="MOVEORDER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4649" name="PURCHASEORDER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4650" name="WORKORDER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4651" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4652" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequest" name="IfcActionRequest">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4653">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcActionRequest_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcActionRequestTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4654" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4655" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcActionRequest_Status" name="Status" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4656" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4657" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcActionRequest_LongDescription" name="LongDescription" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4658" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4659" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostItem" name="IfcCostItem">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4660">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostItem_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcCostItemTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4661" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4662" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostItem_CostValues" name="CostValues_L[1:?]" isOrdered="false" association="as_IfcCostItem_CostValues">
-          <type xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcCostValue"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4663" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4664" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostItem_CostQuantities" name="CostQuantities_L[1:?]" isOrdered="false" association="as_IfcCostItem_CostQuantities">
-          <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcPhysicalQuantity"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4665" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4666" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostSchedule" name="IfcCostSchedule">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4667">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostSchedule_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcCostScheduleTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4668" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4669" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostSchedule_Status" name="Status" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4670" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4671" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostSchedule_SubmittedOn" name="SubmittedOn" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4672" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4673" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostSchedule_UpdateDate" name="UpdateDate" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4674" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4675" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermit" name="IfcPermit">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4676">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermit_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcPermitTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4677" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4678" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermit_Status" name="Status" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4679" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4680" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermit_LongDescription" name="LongDescription" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4681" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4682" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrder" name="IfcProjectOrder">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4683">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectOrder_PredefinedType" name="PredefinedType" isOrdered="false" type="en_IfcProjectOrderTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4684" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4685" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectOrder_Status" name="Status" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4686" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4687" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectOrder_LongDescription" name="LongDescription" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4688" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4689" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_EMAIL" name="IfcActionRequestTypeEnum.EMAIL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4690" general="cl_IfcActionRequest"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_FAX" name="IfcActionRequestTypeEnum.FAX">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4691" general="cl_IfcActionRequest"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_PHONE" name="IfcActionRequestTypeEnum.PHONE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4692" general="cl_IfcActionRequest"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_POST" name="IfcActionRequestTypeEnum.POST">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4693" general="cl_IfcActionRequest"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_VERBAL" name="IfcActionRequestTypeEnum.VERBAL">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4694" general="cl_IfcActionRequest"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_USERDEFINED" name="IfcActionRequestTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4695" general="cl_IfcActionRequest"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_NOTDEFINED" name="IfcActionRequestTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4696" general="cl_IfcActionRequest"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCostItem_CostValues" name="CostValues" memberEnd="at_IfcCostItem_CostValues end_170">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_170" name="" association="as_IfcCostItem_CostValues" type="cl_IfcCostItem">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4697" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4698" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCostItem_CostQuantities" name="CostQuantities" memberEnd="at_IfcCostItem_CostQuantities end_172">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_172" name="" association="as_IfcCostItem_CostQuantities" type="cl_IfcCostItem">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4699" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4700" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostItemTypeEnum_USERDEFINED" name="IfcCostItemTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4701" general="cl_IfcCostItem"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostItemTypeEnum_NOTDEFINED" name="IfcCostItemTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4702" general="cl_IfcCostItem"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_BUDGET" name="IfcCostScheduleTypeEnum.BUDGET">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4703" general="cl_IfcCostSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_COSTPLAN" name="IfcCostScheduleTypeEnum.COSTPLAN">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4704" general="cl_IfcCostSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_ESTIMATE" name="IfcCostScheduleTypeEnum.ESTIMATE">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4705" general="cl_IfcCostSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_PRICEDBILLOFQUANTITIES" name="IfcCostScheduleTypeEnum.PRICEDBILLOFQUANTITIES">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4706" general="cl_IfcCostSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_SCHEDULEOFRATES" name="IfcCostScheduleTypeEnum.SCHEDULEOFRATES">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4707" general="cl_IfcCostSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_TENDER" name="IfcCostScheduleTypeEnum.TENDER">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4708" general="cl_IfcCostSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_UNPRICEDBILLOFQUANTITIES" name="IfcCostScheduleTypeEnum.UNPRICEDBILLOFQUANTITIES">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4709" general="cl_IfcCostSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_USERDEFINED" name="IfcCostScheduleTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4710" general="cl_IfcCostSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_NOTDEFINED" name="IfcCostScheduleTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4711" general="cl_IfcCostSchedule"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermitTypeEnum_ACCESS" name="IfcPermitTypeEnum.ACCESS">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4712" general="cl_IfcPermit"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermitTypeEnum_BUILDING" name="IfcPermitTypeEnum.BUILDING">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4713" general="cl_IfcPermit"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermitTypeEnum_WORK" name="IfcPermitTypeEnum.WORK">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4714" general="cl_IfcPermit"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermitTypeEnum_USERDEFINED" name="IfcPermitTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4715" general="cl_IfcPermit"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermitTypeEnum_NOTDEFINED" name="IfcPermitTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4716" general="cl_IfcPermit"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_CHANGEORDER" name="IfcProjectOrderTypeEnum.CHANGEORDER">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4717" general="cl_IfcProjectOrder"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_MAINTENANCEWORKORDER" name="IfcProjectOrderTypeEnum.MAINTENANCEWORKORDER">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4718" general="cl_IfcProjectOrder"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_MOVEORDER" name="IfcProjectOrderTypeEnum.MOVEORDER">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4719" general="cl_IfcProjectOrder"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_PURCHASEORDER" name="IfcProjectOrderTypeEnum.PURCHASEORDER">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4720" general="cl_IfcProjectOrder"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_WORKORDER" name="IfcProjectOrderTypeEnum.WORKORDER">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4721" general="cl_IfcProjectOrder"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_USERDEFINED" name="IfcProjectOrderTypeEnum.USERDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4722" general="cl_IfcProjectOrder"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_NOTDEFINED" name="IfcProjectOrderTypeEnum.NOTDEFINED">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_4723" general="cl_IfcProjectOrder"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ActionRequest" name="Pset_ActionRequest">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_4724">
-          <body>PSET_OCCURRENCEDRIVEN</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ActionRequest_RequestSourceLabel" name="RequestSourceLabel" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4725" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4726" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ActionRequest_RequestSourceName" name="RequestSourceName" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcPerson"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4727" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4728" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ActionRequest_RequestComments" name="RequestComments" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4729" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4730" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PackingInstructions" name="Pset_PackingInstructions">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_4731">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PackingInstructions_PackingCareType" name="PackingCareType" isOrdered="false" type="en_PEnum_PackingCareType">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4732" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4733" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PackingInstructions_WrappingMaterial" name="WrappingMaterial" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcMaterialResource.uml#cl_IfcMaterialDefinition"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4734" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4735" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PackingInstructions_ContainerMaterial" name="ContainerMaterial" isOrdered="false">
-          <type xmi:type="uml:Class" href="IfcMaterialResource.uml#cl_IfcMaterialDefinition"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4736" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4737" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PackingInstructions_SpecialInstructions" name="SpecialInstructions" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4738" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4739" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PackingCareType" name="PEnum_PackingCareType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4740" name="FRAGILE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4741" name="HANDLEWITHCARE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4742" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4743" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4744" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_Permit" name="Pset_Permit">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_4745">
-          <body>PSET_OCCURRENCEDRIVEN</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Permit_EscortRequirement" name="EscortRequirement" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4746" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4747" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Permit_StartDate" name="StartDate" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4748" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4749" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Permit_EndDate" name="EndDate" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4750" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4751" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Permit_SpecialRequirements" name="SpecialRequirements" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4752" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4753" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderChangeOrder" name="Pset_ProjectOrderChangeOrder">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_4754">
-          <body>PSET_OCCURRENCEDRIVEN</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderChangeOrder_ReasonForChange" name="ReasonForChange" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4755" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4756" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderChangeOrder_BudgetSource" name="BudgetSource" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4757" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4758" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderMaintenanceWorkOrder" name="Pset_ProjectOrderMaintenanceWorkOrder">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_4759">
-          <body>PSET_OCCURRENCEDRIVEN</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_ProductDescription" name="ProductDescription" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4760" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4761" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_WorkTypeRequested" name="WorkTypeRequested" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4762" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4763" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_ContractualType" name="ContractualType" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4764" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4765" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_IfNotAccomplished" name="IfNotAccomplished" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4766" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4767" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_MaintenanceType" name="MaintenanceType" isOrdered="false" type="en_PEnum_MaintenanceType">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4768" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4769" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_FaultPriorityType" name="FaultPriorityType" isOrdered="false">
-          <type xmi:type="uml:Enumeration" href="propertytypes.uml#en_PEnum_PriorityType"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4770" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4771" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_LocationPriorityType" name="LocationPriorityType" isOrdered="false">
-          <type xmi:type="uml:Enumeration" href="propertytypes.uml#en_PEnum_PriorityType"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4772" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4773" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_ScheduledFrequency" name="ScheduledFrequency" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTimeMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4774" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4775" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_MaintenanceType" name="PEnum_MaintenanceType">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4776" name="CONDITIONBASED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4777" name="CORRECTIVE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4778" name="PLANNEDCORRECTIVE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4779" name="SCHEDULED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4780" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4781" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_4782" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderMoveOrder" name="Pset_ProjectOrderMoveOrder">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_4783">
-          <body>PSET_OCCURRENCEDRIVEN</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMoveOrder_SpecialInstructions" name="SpecialInstructions" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4784" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4785" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderPurchaseOrder" name="Pset_ProjectOrderPurchaseOrder">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_4786">
-          <body>PSET_OCCURRENCEDRIVEN</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderPurchaseOrder_IsFOB" name="IsFOB" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4787" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4788" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderPurchaseOrder_ShipMethod" name="ShipMethod" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4789" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4790" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderWorkOrder" name="Pset_ProjectOrderWorkOrder">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_4791">
-          <body>PSET_OCCURRENCEDRIVEN</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderWorkOrder_ProductDescription" name="ProductDescription" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4792" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4793" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderWorkOrder_WorkTypeRequested" name="WorkTypeRequested" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4794" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4795" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderWorkOrder_ContractualType" name="ContractualType" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4796" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4797" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderWorkOrder_IfNotAccomplished" name="IfNotAccomplished" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_4798" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_4799" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_4800" client="cl_Pset_ActionRequest" supplier="cl_IfcActionRequest"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_4801" client="cl_Pset_Permit" supplier="cl_IfcPermit"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_4802" client="cl_Pset_ProjectOrderChangeOrder" supplier="cl_IfcProjectOrderTypeEnum_CHANGEORDER"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_4803" client="cl_Pset_ProjectOrderMaintenanceWorkOrder" supplier="cl_IfcProjectOrderTypeEnum_MAINTENANCEWORKORDER"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_4804" client="cl_Pset_ProjectOrderMoveOrder" supplier="cl_IfcProjectOrderTypeEnum_MOVEORDER"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_4805" client="cl_Pset_ProjectOrderPurchaseOrder" supplier="cl_IfcProjectOrderTypeEnum_PURCHASEORDER"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_4806" client="cl_Pset_ProjectOrderWorkOrder" supplier="cl_IfcProjectOrderTypeEnum_WORKORDER"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_4807" client="cl_Pset_PackingInstructions">
-        <supplier xmi:type="uml:Class" href="IfcProcessExtension.uml#cl_IfcTaskTypeEnum_MOVE"/>
-      </packagedElement>
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcSharedMgmtElements" name="IfcSharedMgmtElements" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcSharedMgmtElements" name="IfcSharedMgmtElements">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcActionRequestTypeEnum" name="IfcActionRequestTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcActionRequestTypeEnum_EMAIL" name="EMAIL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcActionRequestTypeEnum_FAX" name="FAX"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcActionRequestTypeEnum_PHONE" name="PHONE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcActionRequestTypeEnum_POST" name="POST"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcActionRequestTypeEnum_VERBAL" name="VERBAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcActionRequestTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcActionRequestTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcCostItemTypeEnum" name="IfcCostItemTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCostItemTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCostItemTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcCostScheduleTypeEnum" name="IfcCostScheduleTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCostScheduleTypeEnum_BUDGET" name="BUDGET"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCostScheduleTypeEnum_COSTPLAN" name="COSTPLAN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCostScheduleTypeEnum_ESTIMATE" name="ESTIMATE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCostScheduleTypeEnum_PRICEDBILLOFQUANTITIES" name="PRICEDBILLOFQUANTITIES"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCostScheduleTypeEnum_SCHEDULEOFRATES" name="SCHEDULEOFRATES"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCostScheduleTypeEnum_TENDER" name="TENDER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCostScheduleTypeEnum_UNPRICEDBILLOFQUANTITIES" name="UNPRICEDBILLOFQUANTITIES"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCostScheduleTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCostScheduleTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcPermitTypeEnum" name="IfcPermitTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPermitTypeEnum_ACCESS" name="ACCESS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPermitTypeEnum_BUILDING" name="BUILDING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPermitTypeEnum_WORK" name="WORK"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPermitTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPermitTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcProjectOrderTypeEnum" name="IfcProjectOrderTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProjectOrderTypeEnum_CHANGEORDER" name="CHANGEORDER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProjectOrderTypeEnum_MAINTENANCEWORKORDER" name="MAINTENANCEWORKORDER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProjectOrderTypeEnum_MOVEORDER" name="MOVEORDER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProjectOrderTypeEnum_PURCHASEORDER" name="PURCHASEORDER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProjectOrderTypeEnum_WORKORDER" name="WORKORDER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProjectOrderTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcProjectOrderTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequest" name="IfcActionRequest">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcActionRequest_gen_IfcControl">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcActionRequest_PredefinedType" name="PredefinedType" type="en_IfcActionRequestTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcActionRequest_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcActionRequest_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcActionRequest_Status" name="Status">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcActionRequest_Status_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcActionRequest_Status_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcActionRequest_LongDescription" name="LongDescription">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcActionRequest_LongDescription_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcActionRequest_LongDescription_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostItem" name="IfcCostItem">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostItem_gen_IfcControl">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostItem_PredefinedType" name="PredefinedType" type="en_IfcCostItemTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCostItem_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCostItem_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostItem_CostValues" name="CostValues_L[1:?]" association="as_IfcCostItem_CostValues">
+        <type xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcCostValue"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCostItem_CostValues_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCostItem_CostValues_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostItem_CostQuantities" name="CostQuantities_L[1:?]" association="as_IfcCostItem_CostQuantities">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcPhysicalQuantity"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCostItem_CostQuantities_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCostItem_CostQuantities_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostSchedule" name="IfcCostSchedule">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostSchedule_gen_IfcControl">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostSchedule_PredefinedType" name="PredefinedType" type="en_IfcCostScheduleTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCostSchedule_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCostSchedule_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostSchedule_Status" name="Status">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCostSchedule_Status_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCostSchedule_Status_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostSchedule_SubmittedOn" name="SubmittedOn">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCostSchedule_SubmittedOn_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCostSchedule_SubmittedOn_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCostSchedule_UpdateDate" name="UpdateDate">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCostSchedule_UpdateDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCostSchedule_UpdateDate_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermit" name="IfcPermit">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPermit_gen_IfcControl">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermit_PredefinedType" name="PredefinedType" type="en_IfcPermitTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPermit_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPermit_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermit_Status" name="Status">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPermit_Status_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPermit_Status_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermit_LongDescription" name="LongDescription">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPermit_LongDescription_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPermit_LongDescription_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrder" name="IfcProjectOrder">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProjectOrder_gen_IfcControl">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcControl"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectOrder_PredefinedType" name="PredefinedType" type="en_IfcProjectOrderTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcProjectOrder_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcProjectOrder_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectOrder_Status" name="Status">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcProjectOrder_Status_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcProjectOrder_Status_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProjectOrder_LongDescription" name="LongDescription">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcProjectOrder_LongDescription_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcProjectOrder_LongDescription_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_EMAIL" name="IfcActionRequestTypeEnum.EMAIL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcActionRequestTypeEnum_EMAIL_gen_IfcActionRequest" general="cl_IfcActionRequest"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_FAX" name="IfcActionRequestTypeEnum.FAX">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcActionRequestTypeEnum_FAX_gen_IfcActionRequest" general="cl_IfcActionRequest"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_PHONE" name="IfcActionRequestTypeEnum.PHONE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcActionRequestTypeEnum_PHONE_gen_IfcActionRequest" general="cl_IfcActionRequest"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_POST" name="IfcActionRequestTypeEnum.POST">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcActionRequestTypeEnum_POST_gen_IfcActionRequest" general="cl_IfcActionRequest"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_VERBAL" name="IfcActionRequestTypeEnum.VERBAL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcActionRequestTypeEnum_VERBAL_gen_IfcActionRequest" general="cl_IfcActionRequest"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_USERDEFINED" name="IfcActionRequestTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcActionRequestTypeEnum_USERDEFINED_gen_IfcActionRequest" general="cl_IfcActionRequest"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_NOTDEFINED" name="IfcActionRequestTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcActionRequestTypeEnum_NOTDEFINED_gen_IfcActionRequest" general="cl_IfcActionRequest"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCostItem_CostValues" name="CostValues" memberEnd="at_IfcCostItem_CostValues as_IfcCostItem_CostValues_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCostItem_CostValues_target_end" name="" type="cl_IfcCostItem" association="as_IfcCostItem_CostValues">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCostItem_CostValues_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCostItem_CostValues_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCostItem_CostQuantities" name="CostQuantities" memberEnd="at_IfcCostItem_CostQuantities as_IfcCostItem_CostQuantities_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCostItem_CostQuantities_target_end" name="" type="cl_IfcCostItem" association="as_IfcCostItem_CostQuantities">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCostItem_CostQuantities_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCostItem_CostQuantities_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostItemTypeEnum_USERDEFINED" name="IfcCostItemTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostItemTypeEnum_USERDEFINED_gen_IfcCostItem" general="cl_IfcCostItem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostItemTypeEnum_NOTDEFINED" name="IfcCostItemTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostItemTypeEnum_NOTDEFINED_gen_IfcCostItem" general="cl_IfcCostItem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_BUDGET" name="IfcCostScheduleTypeEnum.BUDGET">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostScheduleTypeEnum_BUDGET_gen_IfcCostSchedule" general="cl_IfcCostSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_COSTPLAN" name="IfcCostScheduleTypeEnum.COSTPLAN">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostScheduleTypeEnum_COSTPLAN_gen_IfcCostSchedule" general="cl_IfcCostSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_ESTIMATE" name="IfcCostScheduleTypeEnum.ESTIMATE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostScheduleTypeEnum_ESTIMATE_gen_IfcCostSchedule" general="cl_IfcCostSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_PRICEDBILLOFQUANTITIES" name="IfcCostScheduleTypeEnum.PRICEDBILLOFQUANTITIES">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostScheduleTypeEnum_PRICEDBILLOFQUANTITIES_gen_IfcCostSchedule" general="cl_IfcCostSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_SCHEDULEOFRATES" name="IfcCostScheduleTypeEnum.SCHEDULEOFRATES">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostScheduleTypeEnum_SCHEDULEOFRATES_gen_IfcCostSchedule" general="cl_IfcCostSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_TENDER" name="IfcCostScheduleTypeEnum.TENDER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostScheduleTypeEnum_TENDER_gen_IfcCostSchedule" general="cl_IfcCostSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_UNPRICEDBILLOFQUANTITIES" name="IfcCostScheduleTypeEnum.UNPRICEDBILLOFQUANTITIES">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostScheduleTypeEnum_UNPRICEDBILLOFQUANTITIES_gen_IfcCostSchedule" general="cl_IfcCostSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_USERDEFINED" name="IfcCostScheduleTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostScheduleTypeEnum_USERDEFINED_gen_IfcCostSchedule" general="cl_IfcCostSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostScheduleTypeEnum_NOTDEFINED" name="IfcCostScheduleTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostScheduleTypeEnum_NOTDEFINED_gen_IfcCostSchedule" general="cl_IfcCostSchedule"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermitTypeEnum_ACCESS" name="IfcPermitTypeEnum.ACCESS">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPermitTypeEnum_ACCESS_gen_IfcPermit" general="cl_IfcPermit"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermitTypeEnum_BUILDING" name="IfcPermitTypeEnum.BUILDING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPermitTypeEnum_BUILDING_gen_IfcPermit" general="cl_IfcPermit"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermitTypeEnum_WORK" name="IfcPermitTypeEnum.WORK">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPermitTypeEnum_WORK_gen_IfcPermit" general="cl_IfcPermit"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermitTypeEnum_USERDEFINED" name="IfcPermitTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPermitTypeEnum_USERDEFINED_gen_IfcPermit" general="cl_IfcPermit"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermitTypeEnum_NOTDEFINED" name="IfcPermitTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPermitTypeEnum_NOTDEFINED_gen_IfcPermit" general="cl_IfcPermit"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_CHANGEORDER" name="IfcProjectOrderTypeEnum.CHANGEORDER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProjectOrderTypeEnum_CHANGEORDER_gen_IfcProjectOrder" general="cl_IfcProjectOrder"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_MAINTENANCEWORKORDER" name="IfcProjectOrderTypeEnum.MAINTENANCEWORKORDER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProjectOrderTypeEnum_MAINTENANCEWORKORDER_gen_IfcProjectOrder" general="cl_IfcProjectOrder"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_MOVEORDER" name="IfcProjectOrderTypeEnum.MOVEORDER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProjectOrderTypeEnum_MOVEORDER_gen_IfcProjectOrder" general="cl_IfcProjectOrder"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_PURCHASEORDER" name="IfcProjectOrderTypeEnum.PURCHASEORDER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProjectOrderTypeEnum_PURCHASEORDER_gen_IfcProjectOrder" general="cl_IfcProjectOrder"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_WORKORDER" name="IfcProjectOrderTypeEnum.WORKORDER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProjectOrderTypeEnum_WORKORDER_gen_IfcProjectOrder" general="cl_IfcProjectOrder"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_USERDEFINED" name="IfcProjectOrderTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProjectOrderTypeEnum_USERDEFINED_gen_IfcProjectOrder" general="cl_IfcProjectOrder"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProjectOrderTypeEnum_NOTDEFINED" name="IfcProjectOrderTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcProjectOrderTypeEnum_NOTDEFINED_gen_IfcProjectOrder" general="cl_IfcProjectOrder"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ActionRequest" name="Pset_ActionRequest">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ActionRequest_comment_0">
+        <body>PSET_OCCURRENCEDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ActionRequest_RequestSourceLabel" name="RequestSourceLabel">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ActionRequest_RequestSourceLabel_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ActionRequest_RequestSourceLabel_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ActionRequest_RequestSourceName" name="RequestSourceName">
+        <type xmi:type="uml:Class" href="IfcActorResource.uml#cl_IfcPerson"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ActionRequest_RequestSourceName_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ActionRequest_RequestSourceName_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ActionRequest_RequestComments" name="RequestComments">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ActionRequest_RequestComments_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ActionRequest_RequestComments_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ActionRequest_IfcActionRequest" client="cl_Pset_ActionRequest" supplier="cl_IfcActionRequest"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PackingInstructions" name="Pset_PackingInstructions">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PackingInstructions_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PackingInstructions_PackingCareType" name="PackingCareType" type="en_PEnum_PackingCareType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PackingInstructions_PackingCareType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PackingInstructions_PackingCareType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PackingInstructions_WrappingMaterial" name="WrappingMaterial">
+        <type xmi:type="uml:Class" href="IfcMaterialResource.uml#cl_IfcMaterialDefinition"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PackingInstructions_WrappingMaterial_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PackingInstructions_WrappingMaterial_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PackingInstructions_ContainerMaterial" name="ContainerMaterial">
+        <type xmi:type="uml:Class" href="IfcMaterialResource.uml#cl_IfcMaterialDefinition"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PackingInstructions_ContainerMaterial_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PackingInstructions_ContainerMaterial_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PackingInstructions_SpecialInstructions" name="SpecialInstructions">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PackingInstructions_SpecialInstructions_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PackingInstructions_SpecialInstructions_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PackingCareType" name="PEnum_PackingCareType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PackingCareType_FRAGILE" name="FRAGILE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PackingCareType_HANDLEWITHCARE" name="HANDLEWITHCARE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PackingCareType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PackingCareType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PackingCareType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PackingInstructions_IfcTaskTypeEnum.MOVE" client="cl_Pset_PackingInstructions">
+      <supplier xmi:type="uml:Class" href="IfcProcessExtension.uml#cl_IfcTaskTypeEnum_MOVE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_Permit" name="Pset_Permit">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_Permit_comment_0">
+        <body>PSET_OCCURRENCEDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Permit_EscortRequirement" name="EscortRequirement">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Permit_EscortRequirement_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Permit_EscortRequirement_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Permit_StartDate" name="StartDate">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Permit_StartDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Permit_StartDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Permit_EndDate" name="EndDate">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Permit_EndDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Permit_EndDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_Permit_SpecialRequirements" name="SpecialRequirements">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Permit_SpecialRequirements_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Permit_SpecialRequirements_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Permit_IfcPermit" client="cl_Pset_Permit" supplier="cl_IfcPermit"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderChangeOrder" name="Pset_ProjectOrderChangeOrder">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProjectOrderChangeOrder_comment_0">
+        <body>PSET_OCCURRENCEDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderChangeOrder_ReasonForChange" name="ReasonForChange">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderChangeOrder_ReasonForChange_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderChangeOrder_ReasonForChange_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderChangeOrder_BudgetSource" name="BudgetSource">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderChangeOrder_BudgetSource_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderChangeOrder_BudgetSource_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderChangeOrder_IfcProjectOrderTypeEnum.CHANGEORDER" client="cl_Pset_ProjectOrderChangeOrder" supplier="cl_IfcProjectOrderTypeEnum_CHANGEORDER"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderMaintenanceWorkOrder" name="Pset_ProjectOrderMaintenanceWorkOrder">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProjectOrderMaintenanceWorkOrder_comment_0">
+        <body>PSET_OCCURRENCEDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_ProductDescription" name="ProductDescription">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_ProductDescription_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_ProductDescription_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_WorkTypeRequested" name="WorkTypeRequested">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_WorkTypeRequested_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_WorkTypeRequested_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_ContractualType" name="ContractualType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_ContractualType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_ContractualType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_IfNotAccomplished" name="IfNotAccomplished">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_IfNotAccomplished_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_IfNotAccomplished_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_MaintenanceType" name="MaintenanceType" type="en_PEnum_MaintenanceType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_MaintenanceType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_MaintenanceType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_FaultPriorityType" name="FaultPriorityType">
+        <type xmi:type="uml:Enumeration" href="propertytypes.uml#en_PEnum_PriorityType"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_FaultPriorityType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_FaultPriorityType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_LocationPriorityType" name="LocationPriorityType">
+        <type xmi:type="uml:Enumeration" href="propertytypes.uml#en_PEnum_PriorityType"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_LocationPriorityType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_LocationPriorityType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_ScheduledFrequency" name="ScheduledFrequency">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTimeMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_ScheduledFrequency_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderMaintenanceWorkOrder_ScheduledFrequency_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_MaintenanceType" name="PEnum_MaintenanceType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MaintenanceType_CONDITIONBASED" name="CONDITIONBASED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MaintenanceType_CORRECTIVE" name="CORRECTIVE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MaintenanceType_PLANNEDCORRECTIVE" name="PLANNEDCORRECTIVE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MaintenanceType_SCHEDULED" name="SCHEDULED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MaintenanceType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MaintenanceType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MaintenanceType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderMaintenanceWorkOrder_IfcProjectOrderTypeEnum.MAINTENANCEWORKORDER" client="cl_Pset_ProjectOrderMaintenanceWorkOrder" supplier="cl_IfcProjectOrderTypeEnum_MAINTENANCEWORKORDER"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderMoveOrder" name="Pset_ProjectOrderMoveOrder">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProjectOrderMoveOrder_comment_0">
+        <body>PSET_OCCURRENCEDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderMoveOrder_SpecialInstructions" name="SpecialInstructions">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderMoveOrder_SpecialInstructions_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderMoveOrder_SpecialInstructions_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderMoveOrder_IfcProjectOrderTypeEnum.MOVEORDER" client="cl_Pset_ProjectOrderMoveOrder" supplier="cl_IfcProjectOrderTypeEnum_MOVEORDER"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderPurchaseOrder" name="Pset_ProjectOrderPurchaseOrder">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProjectOrderPurchaseOrder_comment_0">
+        <body>PSET_OCCURRENCEDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderPurchaseOrder_IsFOB" name="IsFOB">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderPurchaseOrder_IsFOB_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderPurchaseOrder_IsFOB_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderPurchaseOrder_ShipMethod" name="ShipMethod">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderPurchaseOrder_ShipMethod_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderPurchaseOrder_ShipMethod_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderPurchaseOrder_IfcProjectOrderTypeEnum.PURCHASEORDER" client="cl_Pset_ProjectOrderPurchaseOrder" supplier="cl_IfcProjectOrderTypeEnum_PURCHASEORDER"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderWorkOrder" name="Pset_ProjectOrderWorkOrder">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProjectOrderWorkOrder_comment_0">
+        <body>PSET_OCCURRENCEDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderWorkOrder_ProductDescription" name="ProductDescription">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderWorkOrder_ProductDescription_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderWorkOrder_ProductDescription_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderWorkOrder_WorkTypeRequested" name="WorkTypeRequested">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderWorkOrder_WorkTypeRequested_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderWorkOrder_WorkTypeRequested_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderWorkOrder_ContractualType" name="ContractualType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderWorkOrder_ContractualType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderWorkOrder_ContractualType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectOrderWorkOrder_IfNotAccomplished" name="IfNotAccomplished">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectOrderWorkOrder_IfNotAccomplished_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderWorkOrder_IfNotAccomplished_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderWorkOrder_IfcProjectOrderTypeEnum.WORKORDER" client="cl_Pset_ProjectOrderWorkOrder" supplier="cl_IfcProjectOrderTypeEnum_WORKORDER"/>
+  </packagedElement>
+</uml:Model>

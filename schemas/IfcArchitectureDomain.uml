@@ -1,679 +1,677 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcArchitectureDomain" name="IfcArchitectureDomain">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcArchitectureDomain" name="IfcArchitectureDomain">
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDoorPanelOperationEnum" name="IfcDoorPanelOperationEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19652" name="DOUBLE_ACTING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19653" name="FIXEDPANEL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19654" name="FOLDING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19655" name="REVOLVING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19656" name="ROLLINGUP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19657" name="SLIDING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19658" name="SWINGING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19659" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19660" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDoorPanelPositionEnum" name="IfcDoorPanelPositionEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19661" name="LEFT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19662" name="MIDDLE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19663" name="RIGHT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19664" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcPermeableCoveringOperationEnum" name="IfcPermeableCoveringOperationEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19665" name="GRILL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19666" name="LOUVER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19667" name="SCREEN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19668" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19669" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcWindowPanelOperationEnum" name="IfcWindowPanelOperationEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19670" name="BOTTOMHUNG"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19671" name="FIXEDCASEMENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19672" name="OTHEROPERATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19673" name="PIVOTHORIZONTAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19674" name="PIVOTVERTICAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19675" name="REMOVABLECASEMENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19676" name="SIDEHUNGLEFTHAND"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19677" name="SIDEHUNGRIGHTHAND"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19678" name="SLIDINGHORIZONTAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19679" name="SLIDINGVERTICAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19680" name="TILTANDTURNLEFTHAND"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19681" name="TILTANDTURNRIGHTHAND"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19682" name="TOPHUNG"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19683" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcWindowPanelPositionEnum" name="IfcWindowPanelPositionEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19684" name="BOTTOM"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19685" name="LEFT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19686" name="MIDDLE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19687" name="RIGHT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19688" name="TOP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19689" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDoorLiningProperties" name="IfcDoorLiningProperties">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_19690">
-          <body>DEPRECATED</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19691">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcPreDefinedPropertySet"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_LiningDepth" name="LiningDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19692" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19693" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_LiningThickness" name="LiningThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19694" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19695" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_ThresholdDepth" name="ThresholdDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19696" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19697" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_ThresholdThickness" name="ThresholdThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19698" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19699" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_TransomThickness" name="TransomThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19700" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19701" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_TransomOffset" name="TransomOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19702" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19703" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_LiningOffset" name="LiningOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19704" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19705" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_ThresholdOffset" name="ThresholdOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19706" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19707" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_CasingThickness" name="CasingThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19708" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19709" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_CasingDepth" name="CasingDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19710" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19711" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_ShapeAspectStyle" name="ShapeAspectStyle" isOrdered="false" association="as_IfcDoorLiningProperties_ShapeAspectStyle">
-          <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19712" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19713" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_LiningToPanelOffsetX" name="LiningToPanelOffsetX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19714" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19715" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_LiningToPanelOffsetY" name="LiningToPanelOffsetY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19716" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19717" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDoorLiningProperties_WR31" name="WR31">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_19718" name="WR31">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(EXISTS(LiningDepth) AND NOT(EXISTS(LiningThickness)))</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDoorLiningProperties_WR32" name="WR32">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_19719" name="WR32">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(EXISTS(ThresholdDepth) AND NOT(EXISTS(ThresholdThickness)))</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDoorLiningProperties_WR33" name="WR33">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_19720" name="WR33">
-            <language>EXPRESS_WHERE</language>
-            <body>(EXISTS(TransomOffset) AND EXISTS(TransomThickness)) XOR
-(NOT(EXISTS(TransomOffset)) AND NOT(EXISTS(TransomThickness)))</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDoorLiningProperties_WR34" name="WR34">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_19721" name="WR34">
-            <language>EXPRESS_WHERE</language>
-            <body>(EXISTS(CasingDepth) AND EXISTS(CasingThickness)) XOR
-(NOT(EXISTS(CasingDepth)) AND NOT(EXISTS(CasingThickness)))</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDoorLiningProperties_WR35" name="WR35">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_19722" name="WR35">
-            <language>EXPRESS_WHERE</language>
-            <body>(EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) 
-AND 
-('IFC4X3_ADD2.IFCDOORTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDoorPanelProperties" name="IfcDoorPanelProperties">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_19723">
-          <body>DEPRECATED</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19724">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcPreDefinedPropertySet"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorPanelProperties_PanelDepth" name="PanelDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19725" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19726" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorPanelProperties_PanelOperation" name="PanelOperation" isOrdered="false" type="en_IfcDoorPanelOperationEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19727" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19728" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorPanelProperties_PanelWidth" name="PanelWidth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19729" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19730" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorPanelProperties_PanelPosition" name="PanelPosition" isOrdered="false" type="en_IfcDoorPanelPositionEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19731" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19732" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorPanelProperties_ShapeAspectStyle" name="ShapeAspectStyle" isOrdered="false" association="as_IfcDoorPanelProperties_ShapeAspectStyle">
-          <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19733" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19734" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDoorPanelProperties_ApplicableToType" name="ApplicableToType">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_19735" name="ApplicableToType">
-            <language>EXPRESS_WHERE</language>
-            <body>(EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) 
-AND 
-('IFC4X3_ADD2.IFCDOORTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermeableCoveringProperties" name="IfcPermeableCoveringProperties">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_19736">
-          <body>DEPRECATED</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19737">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcPreDefinedPropertySet"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermeableCoveringProperties_OperationType" name="OperationType" isOrdered="false" type="en_IfcPermeableCoveringOperationEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19738" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19739" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermeableCoveringProperties_PanelPosition" name="PanelPosition" isOrdered="false" type="en_IfcWindowPanelPositionEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19740" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19741" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermeableCoveringProperties_FrameDepth" name="FrameDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19742" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19743" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermeableCoveringProperties_FrameThickness" name="FrameThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19744" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19745" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermeableCoveringProperties_ShapeAspectStyle" name="ShapeAspectStyle" isOrdered="false" association="as_IfcPermeableCoveringProperties_ShapeAspectStyle">
-          <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19746" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19747" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWindowLiningProperties" name="IfcWindowLiningProperties">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_19748">
-          <body>DEPRECATED</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19749">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcPreDefinedPropertySet"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_LiningDepth" name="LiningDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19750" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19751" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_LiningThickness" name="LiningThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19752" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19753" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_TransomThickness" name="TransomThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19754" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19755" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_MullionThickness" name="MullionThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19756" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19757" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_FirstTransomOffset" name="FirstTransomOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19758" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19759" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_SecondTransomOffset" name="SecondTransomOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19760" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19761" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_FirstMullionOffset" name="FirstMullionOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19762" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19763" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_SecondMullionOffset" name="SecondMullionOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19764" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19765" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_ShapeAspectStyle" name="ShapeAspectStyle" isOrdered="false" association="as_IfcWindowLiningProperties_ShapeAspectStyle">
-          <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19766" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19767" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_LiningOffset" name="LiningOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19768" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19769" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_LiningToPanelOffsetX" name="LiningToPanelOffsetX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19770" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19771" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_LiningToPanelOffsetY" name="LiningToPanelOffsetY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19772" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19773" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcWindowLiningProperties_WR31" name="WR31">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_19774" name="WR31">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(EXISTS(LiningDepth) AND NOT(EXISTS(LiningThickness)))</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcWindowLiningProperties_WR32" name="WR32">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_19775" name="WR32">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(NOT(EXISTS(FirstTransomOffset)) AND EXISTS(SecondTransomOffset))</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcWindowLiningProperties_WR33" name="WR33">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_19776" name="WR33">
-            <language>EXPRESS_WHERE</language>
-            <body>NOT(NOT(EXISTS(FirstMullionOffset)) AND EXISTS(SecondMullionOffset))</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcWindowLiningProperties_WR34" name="WR34">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_19777" name="WR34">
-            <language>EXPRESS_WHERE</language>
-            <body>(EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) 
-AND 
-('IFC4X3_ADD2.IFCWINDOWTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWindowPanelProperties" name="IfcWindowPanelProperties">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_19778">
-          <body>DEPRECATED</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_19779">
-          <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcPreDefinedPropertySet"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowPanelProperties_OperationType" name="OperationType" isOrdered="false" type="en_IfcWindowPanelOperationEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19780" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19781" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowPanelProperties_PanelPosition" name="PanelPosition" isOrdered="false" type="en_IfcWindowPanelPositionEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19782" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19783" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowPanelProperties_FrameDepth" name="FrameDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19784" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19785" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowPanelProperties_FrameThickness" name="FrameThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19786" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19787" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowPanelProperties_ShapeAspectStyle" name="ShapeAspectStyle" isOrdered="false" association="as_IfcWindowPanelProperties_ShapeAspectStyle">
-          <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19788" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19789" value="1"/>
-        </ownedAttribute>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcWindowPanelProperties_ApplicableToType" name="ApplicableToType">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_19790" name="ApplicableToType">
-            <language>EXPRESS_WHERE</language>
-            <body>(EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) 
-AND 
-('IFC4X3_ADD2.IFCWINDOWTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDoorLiningProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcDoorLiningProperties_ShapeAspectStyle end_236">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_236" name="" association="as_IfcDoorLiningProperties_ShapeAspectStyle" type="cl_IfcDoorLiningProperties">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19791" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19792" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDoorPanelProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcDoorPanelProperties_ShapeAspectStyle end_238">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_238" name="" association="as_IfcDoorPanelProperties_ShapeAspectStyle" type="cl_IfcDoorPanelProperties">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19793" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19794" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPermeableCoveringProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcPermeableCoveringProperties_ShapeAspectStyle end_468">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_468" name="" association="as_IfcPermeableCoveringProperties_ShapeAspectStyle" type="cl_IfcPermeableCoveringProperties">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19795" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19796" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWindowLiningProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcWindowLiningProperties_ShapeAspectStyle end_964">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_964" name="" association="as_IfcWindowLiningProperties_ShapeAspectStyle" type="cl_IfcWindowLiningProperties">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19797" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19798" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWindowPanelProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcWindowPanelProperties_ShapeAspectStyle end_966">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_966" name="" association="as_IfcWindowPanelProperties_ShapeAspectStyle" type="cl_IfcWindowPanelProperties">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19799" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19800" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DoorLiningProperties" name="Pset_DoorLiningProperties">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_19801">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_LiningDepth" name="LiningDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19802" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19803" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_LiningThickness" name="LiningThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19804" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19805" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_ThresholdDepth" name="ThresholdDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19806" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19807" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_ThresholdThickness" name="ThresholdThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19808" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19809" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_TransomThickness" name="TransomThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19810" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19811" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_TransomOffset" name="TransomOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19812" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19813" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_LiningOffset" name="LiningOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19814" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19815" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_ThresholdOffset" name="ThresholdOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19816" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19817" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_CasingThickness" name="CasingThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19818" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19819" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_CasingDepth" name="CasingDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19820" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19821" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_LiningToPanelOffsetX" name="LiningToPanelOffsetX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19822" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19823" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_LiningToPanelOffsetY" name="LiningToPanelOffsetY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19824" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19825" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DoorPanelProperties" name="Pset_DoorPanelProperties">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_19826">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorPanelProperties_PanelDepth" name="PanelDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19827" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19828" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorPanelProperties_PanelOperation" name="PanelOperation" isOrdered="false" type="en_PEnum_DoorPanelOperationEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19829" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19830" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorPanelProperties_PanelWidth" name="PanelWidth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19831" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19832" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorPanelProperties_PanelPosition" name="PanelPosition" isOrdered="false" type="en_PEnum_DoorPanelPositionEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19833" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19834" value="*"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_DoorPanelOperationEnum" name="PEnum_DoorPanelOperationEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19835" name="DOUBLE_ACTING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19836" name="FIXEDPANEL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19837" name="FOLDING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19838" name="REVOLVING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19839" name="ROLLINGUP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19840" name="SLIDING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19841" name="SWINGING"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19842" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19843" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19844" name="UNSET"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19845" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_DoorPanelPositionEnum" name="PEnum_DoorPanelPositionEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19846" name="LEFT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19847" name="MIDDLE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19848" name="RIGHT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19849" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19850" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19851" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PermeableCoveringProperties" name="Pset_PermeableCoveringProperties">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_19852">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PermeableCoveringProperties_OperationType" name="OperationType" isOrdered="false" type="en_PEnum_PermeableCoveringOperationEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19853" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19854" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PermeableCoveringProperties_PanelPosition" name="PanelPosition" isOrdered="false" type="en_PEnum_WindowPanelPositionEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19855" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19856" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PermeableCoveringProperties_FrameDepth" name="FrameDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19857" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19858" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PermeableCoveringProperties_FrameThickness" name="FrameThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19859" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19860" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PermeableCoveringOperationEnum" name="PEnum_PermeableCoveringOperationEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19861" name="GRILL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19862" name="LOUVER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19863" name="SCREEN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19864" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19865" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19866" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_WindowPanelPositionEnum" name="PEnum_WindowPanelPositionEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19867" name="BOTTOM"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19868" name="LEFT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19869" name="MIDDLE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19870" name="RIGHT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19871" name="TOP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19872" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19873" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19874" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WindowLiningProperties" name="Pset_WindowLiningProperties">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_19875">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_LiningDepth" name="LiningDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19876" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19877" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_LiningThickness" name="LiningThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19878" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19879" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_TransomThickness" name="TransomThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19880" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19881" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_MullionThickness" name="MullionThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19882" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19883" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_FirstTransomOffset" name="FirstTransomOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19884" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19885" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_SecondTransomOffset" name="SecondTransomOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19886" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19887" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_FirstMullionOffset" name="FirstMullionOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19888" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19889" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_SecondMullionOffset" name="SecondMullionOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19890" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19891" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_LiningOffset" name="LiningOffset" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19892" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19893" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_LiningToPanelOffsetX" name="LiningToPanelOffsetX" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19894" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19895" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_LiningToPanelOffsetY" name="LiningToPanelOffsetY" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19896" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19897" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WindowPanelProperties" name="Pset_WindowPanelProperties">
-        <ownedComment xmi:type="uml:Comment" xmi:id="comment_19898">
-          <body>PSET_TYPEDRIVENOVERRIDE</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowPanelProperties_OperationType" name="OperationType" isOrdered="false" type="en_PEnum_WindowPanelOperationEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19899" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19900" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowPanelProperties_PanelPosition" name="PanelPosition" isOrdered="false" type="en_PEnum_WindowPanelPositionEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19901" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19902" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowPanelProperties_FrameDepth" name="FrameDepth" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19903" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19904" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowPanelProperties_FrameThickness" name="FrameThickness" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_19905" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_19906" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_WindowPanelOperationEnum" name="PEnum_WindowPanelOperationEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19907" name="BOTTOMHUNG"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19908" name="FIXEDCASEMENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19909" name="OTHEROPERATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19910" name="PIVOTHORIZONTAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19911" name="PIVOTVERTICAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19912" name="REMOVABLECASEMENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19913" name="SIDEHUNGLEFTHAND"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19914" name="SIDEHUNGRIGHTHAND"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19915" name="SLIDINGHORIZONTAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19916" name="SLIDINGVERTICAL"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19917" name="TILTANDTURNLEFTHAND"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19918" name="TILTANDTURNRIGHTHAND"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19919" name="TOPHUNG"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19920" name="OTHER"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19921" name="NOTKNOWN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_19922" name="UNSET"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19923" client="cl_Pset_DoorLiningProperties">
-        <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoor"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19924" client="cl_Pset_DoorLiningProperties">
-        <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19925" client="cl_Pset_DoorPanelProperties">
-        <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoor"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19926" client="cl_Pset_DoorPanelProperties">
-        <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcPlate"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19927" client="cl_Pset_PermeableCoveringProperties">
-        <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoor"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19928" client="cl_Pset_PermeableCoveringProperties">
-        <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19929" client="cl_Pset_PermeableCoveringProperties">
-        <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWindow"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19930" client="cl_Pset_WindowLiningProperties">
-        <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19931" client="cl_Pset_WindowLiningProperties">
-        <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWindow"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19932" client="cl_Pset_WindowPanelProperties">
-        <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcPlate"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_19933" client="cl_Pset_WindowPanelProperties">
-        <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWindow"/>
-      </packagedElement>
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcArchitectureDomain" name="IfcArchitectureDomain" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcArchitectureDomain" name="IfcArchitectureDomain">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDoorPanelOperationEnum" name="IfcDoorPanelOperationEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDoorPanelOperationEnum_DOUBLE_ACTING" name="DOUBLE_ACTING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDoorPanelOperationEnum_FIXEDPANEL" name="FIXEDPANEL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDoorPanelOperationEnum_FOLDING" name="FOLDING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDoorPanelOperationEnum_REVOLVING" name="REVOLVING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDoorPanelOperationEnum_ROLLINGUP" name="ROLLINGUP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDoorPanelOperationEnum_SLIDING" name="SLIDING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDoorPanelOperationEnum_SWINGING" name="SWINGING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDoorPanelOperationEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDoorPanelOperationEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDoorPanelPositionEnum" name="IfcDoorPanelPositionEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDoorPanelPositionEnum_LEFT" name="LEFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDoorPanelPositionEnum_MIDDLE" name="MIDDLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDoorPanelPositionEnum_RIGHT" name="RIGHT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDoorPanelPositionEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcPermeableCoveringOperationEnum" name="IfcPermeableCoveringOperationEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPermeableCoveringOperationEnum_GRILL" name="GRILL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPermeableCoveringOperationEnum_LOUVER" name="LOUVER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPermeableCoveringOperationEnum_SCREEN" name="SCREEN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPermeableCoveringOperationEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPermeableCoveringOperationEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcWindowPanelOperationEnum" name="IfcWindowPanelOperationEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_BOTTOMHUNG" name="BOTTOMHUNG"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_FIXEDCASEMENT" name="FIXEDCASEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_OTHEROPERATION" name="OTHEROPERATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_PIVOTHORIZONTAL" name="PIVOTHORIZONTAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_PIVOTVERTICAL" name="PIVOTVERTICAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_REMOVABLECASEMENT" name="REMOVABLECASEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_SIDEHUNGLEFTHAND" name="SIDEHUNGLEFTHAND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_SIDEHUNGRIGHTHAND" name="SIDEHUNGRIGHTHAND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_SLIDINGHORIZONTAL" name="SLIDINGHORIZONTAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_SLIDINGVERTICAL" name="SLIDINGVERTICAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_TILTANDTURNLEFTHAND" name="TILTANDTURNLEFTHAND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_TILTANDTURNRIGHTHAND" name="TILTANDTURNRIGHTHAND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_TOPHUNG" name="TOPHUNG"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelOperationEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcWindowPanelPositionEnum" name="IfcWindowPanelPositionEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelPositionEnum_BOTTOM" name="BOTTOM"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelPositionEnum_LEFT" name="LEFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelPositionEnum_MIDDLE" name="MIDDLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelPositionEnum_RIGHT" name="RIGHT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelPositionEnum_TOP" name="TOP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcWindowPanelPositionEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDoorLiningProperties" name="IfcDoorLiningProperties">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_IfcDoorLiningProperties_comment_0">
+        <body>DEPRECATED</body>
+      </ownedComment>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDoorLiningProperties_WR31" name="WR31">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcDoorLiningProperties_WR31" name="WR31">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(EXISTS(LiningDepth) AND NOT(EXISTS(LiningThickness)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDoorLiningProperties_WR32" name="WR32">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcDoorLiningProperties_WR32" name="WR32">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(EXISTS(ThresholdDepth) AND NOT(EXISTS(ThresholdThickness)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDoorLiningProperties_WR33" name="WR33">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcDoorLiningProperties_WR33" name="WR33">
+          <language>EXPRESS_WHERE</language>
+          <body>(EXISTS(TransomOffset) AND EXISTS(TransomThickness)) XOR
+(NOT(EXISTS(TransomOffset)) AND NOT(EXISTS(TransomThickness)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDoorLiningProperties_WR34" name="WR34">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcDoorLiningProperties_WR34" name="WR34">
+          <language>EXPRESS_WHERE</language>
+          <body>(EXISTS(CasingDepth) AND EXISTS(CasingThickness)) XOR
+(NOT(EXISTS(CasingDepth)) AND NOT(EXISTS(CasingThickness)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDoorLiningProperties_WR35" name="WR35">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcDoorLiningProperties_WR35" name="WR35">
+          <language>EXPRESS_WHERE</language>
+          <body>(EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) 
+AND 
+('IFC4X3_ADD2.IFCDOORTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDoorLiningProperties_gen_IfcPreDefinedPropertySet">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcPreDefinedPropertySet"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_LiningDepth" name="LiningDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorLiningProperties_LiningDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorLiningProperties_LiningDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_LiningThickness" name="LiningThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorLiningProperties_LiningThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorLiningProperties_LiningThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_ThresholdDepth" name="ThresholdDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorLiningProperties_ThresholdDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorLiningProperties_ThresholdDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_ThresholdThickness" name="ThresholdThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorLiningProperties_ThresholdThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorLiningProperties_ThresholdThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_TransomThickness" name="TransomThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorLiningProperties_TransomThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorLiningProperties_TransomThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_TransomOffset" name="TransomOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorLiningProperties_TransomOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorLiningProperties_TransomOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_LiningOffset" name="LiningOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorLiningProperties_LiningOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorLiningProperties_LiningOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_ThresholdOffset" name="ThresholdOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorLiningProperties_ThresholdOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorLiningProperties_ThresholdOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_CasingThickness" name="CasingThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorLiningProperties_CasingThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorLiningProperties_CasingThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_CasingDepth" name="CasingDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorLiningProperties_CasingDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorLiningProperties_CasingDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_ShapeAspectStyle" name="ShapeAspectStyle" association="as_IfcDoorLiningProperties_ShapeAspectStyle">
+        <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorLiningProperties_ShapeAspectStyle_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorLiningProperties_ShapeAspectStyle_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_LiningToPanelOffsetX" name="LiningToPanelOffsetX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorLiningProperties_LiningToPanelOffsetX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorLiningProperties_LiningToPanelOffsetX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorLiningProperties_LiningToPanelOffsetY" name="LiningToPanelOffsetY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorLiningProperties_LiningToPanelOffsetY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorLiningProperties_LiningToPanelOffsetY_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDoorPanelProperties" name="IfcDoorPanelProperties">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_IfcDoorPanelProperties_comment_0">
+        <body>DEPRECATED</body>
+      </ownedComment>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDoorPanelProperties_ApplicableToType" name="ApplicableToType">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcDoorPanelProperties_ApplicableToType" name="ApplicableToType">
+          <language>EXPRESS_WHERE</language>
+          <body>(EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) 
+AND 
+('IFC4X3_ADD2.IFCDOORTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDoorPanelProperties_gen_IfcPreDefinedPropertySet">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcPreDefinedPropertySet"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorPanelProperties_PanelDepth" name="PanelDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorPanelProperties_PanelDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorPanelProperties_PanelDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorPanelProperties_PanelOperation" name="PanelOperation" type="en_IfcDoorPanelOperationEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorPanelProperties_PanelOperation_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorPanelProperties_PanelOperation_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorPanelProperties_PanelWidth" name="PanelWidth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorPanelProperties_PanelWidth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorPanelProperties_PanelWidth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorPanelProperties_PanelPosition" name="PanelPosition" type="en_IfcDoorPanelPositionEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorPanelProperties_PanelPosition_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorPanelProperties_PanelPosition_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDoorPanelProperties_ShapeAspectStyle" name="ShapeAspectStyle" association="as_IfcDoorPanelProperties_ShapeAspectStyle">
+        <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDoorPanelProperties_ShapeAspectStyle_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDoorPanelProperties_ShapeAspectStyle_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPermeableCoveringProperties" name="IfcPermeableCoveringProperties">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_IfcPermeableCoveringProperties_comment_0">
+        <body>DEPRECATED</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPermeableCoveringProperties_gen_IfcPreDefinedPropertySet">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcPreDefinedPropertySet"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermeableCoveringProperties_OperationType" name="OperationType" type="en_IfcPermeableCoveringOperationEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPermeableCoveringProperties_OperationType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPermeableCoveringProperties_OperationType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermeableCoveringProperties_PanelPosition" name="PanelPosition" type="en_IfcWindowPanelPositionEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPermeableCoveringProperties_PanelPosition_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPermeableCoveringProperties_PanelPosition_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermeableCoveringProperties_FrameDepth" name="FrameDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPermeableCoveringProperties_FrameDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPermeableCoveringProperties_FrameDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermeableCoveringProperties_FrameThickness" name="FrameThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPermeableCoveringProperties_FrameThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPermeableCoveringProperties_FrameThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPermeableCoveringProperties_ShapeAspectStyle" name="ShapeAspectStyle" association="as_IfcPermeableCoveringProperties_ShapeAspectStyle">
+        <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPermeableCoveringProperties_ShapeAspectStyle_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPermeableCoveringProperties_ShapeAspectStyle_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWindowLiningProperties" name="IfcWindowLiningProperties">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_IfcWindowLiningProperties_comment_0">
+        <body>DEPRECATED</body>
+      </ownedComment>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcWindowLiningProperties_WR31" name="WR31">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcWindowLiningProperties_WR31" name="WR31">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(EXISTS(LiningDepth) AND NOT(EXISTS(LiningThickness)))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcWindowLiningProperties_WR32" name="WR32">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcWindowLiningProperties_WR32" name="WR32">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(NOT(EXISTS(FirstTransomOffset)) AND EXISTS(SecondTransomOffset))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcWindowLiningProperties_WR33" name="WR33">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcWindowLiningProperties_WR33" name="WR33">
+          <language>EXPRESS_WHERE</language>
+          <body>NOT(NOT(EXISTS(FirstMullionOffset)) AND EXISTS(SecondMullionOffset))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcWindowLiningProperties_WR34" name="WR34">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcWindowLiningProperties_WR34" name="WR34">
+          <language>EXPRESS_WHERE</language>
+          <body>(EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) 
+AND 
+('IFC4X3_ADD2.IFCWINDOWTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWindowLiningProperties_gen_IfcPreDefinedPropertySet">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcPreDefinedPropertySet"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_LiningDepth" name="LiningDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowLiningProperties_LiningDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowLiningProperties_LiningDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_LiningThickness" name="LiningThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowLiningProperties_LiningThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowLiningProperties_LiningThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_TransomThickness" name="TransomThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowLiningProperties_TransomThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowLiningProperties_TransomThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_MullionThickness" name="MullionThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowLiningProperties_MullionThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowLiningProperties_MullionThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_FirstTransomOffset" name="FirstTransomOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowLiningProperties_FirstTransomOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowLiningProperties_FirstTransomOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_SecondTransomOffset" name="SecondTransomOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowLiningProperties_SecondTransomOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowLiningProperties_SecondTransomOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_FirstMullionOffset" name="FirstMullionOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowLiningProperties_FirstMullionOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowLiningProperties_FirstMullionOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_SecondMullionOffset" name="SecondMullionOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowLiningProperties_SecondMullionOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowLiningProperties_SecondMullionOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_ShapeAspectStyle" name="ShapeAspectStyle" association="as_IfcWindowLiningProperties_ShapeAspectStyle">
+        <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowLiningProperties_ShapeAspectStyle_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowLiningProperties_ShapeAspectStyle_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_LiningOffset" name="LiningOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowLiningProperties_LiningOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowLiningProperties_LiningOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_LiningToPanelOffsetX" name="LiningToPanelOffsetX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowLiningProperties_LiningToPanelOffsetX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowLiningProperties_LiningToPanelOffsetX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowLiningProperties_LiningToPanelOffsetY" name="LiningToPanelOffsetY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowLiningProperties_LiningToPanelOffsetY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowLiningProperties_LiningToPanelOffsetY_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWindowPanelProperties" name="IfcWindowPanelProperties">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_IfcWindowPanelProperties_comment_0">
+        <body>DEPRECATED</body>
+      </ownedComment>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcWindowPanelProperties_ApplicableToType" name="ApplicableToType">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcWindowPanelProperties_ApplicableToType" name="ApplicableToType">
+          <language>EXPRESS_WHERE</language>
+          <body>(EXISTS(SELF\IfcPropertySetDefinition.DefinesType[1])) 
+AND 
+('IFC4X3_ADD2.IFCWINDOWTYPE' IN TYPEOF(SELF\IfcPropertySetDefinition.DefinesType[1]))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWindowPanelProperties_gen_IfcPreDefinedPropertySet">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcPreDefinedPropertySet"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowPanelProperties_OperationType" name="OperationType" type="en_IfcWindowPanelOperationEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowPanelProperties_OperationType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowPanelProperties_OperationType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowPanelProperties_PanelPosition" name="PanelPosition" type="en_IfcWindowPanelPositionEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowPanelProperties_PanelPosition_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowPanelProperties_PanelPosition_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowPanelProperties_FrameDepth" name="FrameDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowPanelProperties_FrameDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowPanelProperties_FrameDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowPanelProperties_FrameThickness" name="FrameThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowPanelProperties_FrameThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowPanelProperties_FrameThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWindowPanelProperties_ShapeAspectStyle" name="ShapeAspectStyle" association="as_IfcWindowPanelProperties_ShapeAspectStyle">
+        <type xmi:type="uml:Class" href="IfcRepresentationResource.uml#cl_IfcShapeAspect"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWindowPanelProperties_ShapeAspectStyle_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowPanelProperties_ShapeAspectStyle_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDoorLiningProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcDoorLiningProperties_ShapeAspectStyle as_IfcDoorLiningProperties_ShapeAspectStyle_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDoorLiningProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcDoorLiningProperties" association="as_IfcDoorLiningProperties_ShapeAspectStyle">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDoorLiningProperties_ShapeAspectStyle_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDoorLiningProperties_ShapeAspectStyle_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDoorPanelProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcDoorPanelProperties_ShapeAspectStyle as_IfcDoorPanelProperties_ShapeAspectStyle_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDoorPanelProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcDoorPanelProperties" association="as_IfcDoorPanelProperties_ShapeAspectStyle">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDoorPanelProperties_ShapeAspectStyle_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDoorPanelProperties_ShapeAspectStyle_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPermeableCoveringProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcPermeableCoveringProperties_ShapeAspectStyle as_IfcPermeableCoveringProperties_ShapeAspectStyle_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPermeableCoveringProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcPermeableCoveringProperties" association="as_IfcPermeableCoveringProperties_ShapeAspectStyle">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPermeableCoveringProperties_ShapeAspectStyle_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPermeableCoveringProperties_ShapeAspectStyle_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWindowLiningProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcWindowLiningProperties_ShapeAspectStyle as_IfcWindowLiningProperties_ShapeAspectStyle_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcWindowLiningProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcWindowLiningProperties" association="as_IfcWindowLiningProperties_ShapeAspectStyle">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcWindowLiningProperties_ShapeAspectStyle_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcWindowLiningProperties_ShapeAspectStyle_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWindowPanelProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcWindowPanelProperties_ShapeAspectStyle as_IfcWindowPanelProperties_ShapeAspectStyle_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcWindowPanelProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcWindowPanelProperties" association="as_IfcWindowPanelProperties_ShapeAspectStyle">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcWindowPanelProperties_ShapeAspectStyle_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcWindowPanelProperties_ShapeAspectStyle_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DoorLiningProperties" name="Pset_DoorLiningProperties">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DoorLiningProperties_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_LiningDepth" name="LiningDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorLiningProperties_LiningDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorLiningProperties_LiningDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_LiningThickness" name="LiningThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorLiningProperties_LiningThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorLiningProperties_LiningThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_ThresholdDepth" name="ThresholdDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorLiningProperties_ThresholdDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorLiningProperties_ThresholdDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_ThresholdThickness" name="ThresholdThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorLiningProperties_ThresholdThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorLiningProperties_ThresholdThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_TransomThickness" name="TransomThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorLiningProperties_TransomThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorLiningProperties_TransomThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_TransomOffset" name="TransomOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorLiningProperties_TransomOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorLiningProperties_TransomOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_LiningOffset" name="LiningOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorLiningProperties_LiningOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorLiningProperties_LiningOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_ThresholdOffset" name="ThresholdOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorLiningProperties_ThresholdOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorLiningProperties_ThresholdOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_CasingThickness" name="CasingThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorLiningProperties_CasingThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorLiningProperties_CasingThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_CasingDepth" name="CasingDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorLiningProperties_CasingDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorLiningProperties_CasingDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_LiningToPanelOffsetX" name="LiningToPanelOffsetX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorLiningProperties_LiningToPanelOffsetX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorLiningProperties_LiningToPanelOffsetX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorLiningProperties_LiningToPanelOffsetY" name="LiningToPanelOffsetY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorLiningProperties_LiningToPanelOffsetY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorLiningProperties_LiningToPanelOffsetY_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorLiningProperties_IfcDoor" client="cl_Pset_DoorLiningProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorLiningProperties_IfcMember" client="cl_Pset_DoorLiningProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DoorPanelProperties" name="Pset_DoorPanelProperties">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DoorPanelProperties_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorPanelProperties_PanelDepth" name="PanelDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorPanelProperties_PanelDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorPanelProperties_PanelDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorPanelProperties_PanelOperation" name="PanelOperation" type="en_PEnum_DoorPanelOperationEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorPanelProperties_PanelOperation_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorPanelProperties_PanelOperation_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorPanelProperties_PanelWidth" name="PanelWidth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorPanelProperties_PanelWidth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorPanelProperties_PanelWidth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DoorPanelProperties_PanelPosition" name="PanelPosition" type="en_PEnum_DoorPanelPositionEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DoorPanelProperties_PanelPosition_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorPanelProperties_PanelPosition_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_DoorPanelOperationEnum" name="PEnum_DoorPanelOperationEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelOperationEnum_DOUBLE_ACTING" name="DOUBLE_ACTING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelOperationEnum_FIXEDPANEL" name="FIXEDPANEL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelOperationEnum_FOLDING" name="FOLDING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelOperationEnum_REVOLVING" name="REVOLVING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelOperationEnum_ROLLINGUP" name="ROLLINGUP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelOperationEnum_SLIDING" name="SLIDING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelOperationEnum_SWINGING" name="SWINGING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelOperationEnum_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelOperationEnum_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelOperationEnum_UNSET" name="UNSET"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelOperationEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_DoorPanelPositionEnum" name="PEnum_DoorPanelPositionEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelPositionEnum_LEFT" name="LEFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelPositionEnum_MIDDLE" name="MIDDLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelPositionEnum_RIGHT" name="RIGHT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelPositionEnum_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelPositionEnum_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelPositionEnum_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorPanelProperties_IfcDoor" client="cl_Pset_DoorPanelProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorPanelProperties_IfcPlate" client="cl_Pset_DoorPanelProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcPlate"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PermeableCoveringProperties" name="Pset_PermeableCoveringProperties">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PermeableCoveringProperties_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PermeableCoveringProperties_OperationType" name="OperationType" type="en_PEnum_PermeableCoveringOperationEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PermeableCoveringProperties_OperationType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PermeableCoveringProperties_OperationType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PermeableCoveringProperties_PanelPosition" name="PanelPosition" type="en_PEnum_WindowPanelPositionEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PermeableCoveringProperties_PanelPosition_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PermeableCoveringProperties_PanelPosition_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PermeableCoveringProperties_FrameDepth" name="FrameDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PermeableCoveringProperties_FrameDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PermeableCoveringProperties_FrameDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PermeableCoveringProperties_FrameThickness" name="FrameThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PermeableCoveringProperties_FrameThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PermeableCoveringProperties_FrameThickness_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PermeableCoveringOperationEnum" name="PEnum_PermeableCoveringOperationEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PermeableCoveringOperationEnum_GRILL" name="GRILL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PermeableCoveringOperationEnum_LOUVER" name="LOUVER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PermeableCoveringOperationEnum_SCREEN" name="SCREEN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PermeableCoveringOperationEnum_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PermeableCoveringOperationEnum_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PermeableCoveringOperationEnum_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_WindowPanelPositionEnum" name="PEnum_WindowPanelPositionEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelPositionEnum_BOTTOM" name="BOTTOM"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelPositionEnum_LEFT" name="LEFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelPositionEnum_MIDDLE" name="MIDDLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelPositionEnum_RIGHT" name="RIGHT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelPositionEnum_TOP" name="TOP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelPositionEnum_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelPositionEnum_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelPositionEnum_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PermeableCoveringProperties_IfcDoor" client="cl_Pset_PermeableCoveringProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PermeableCoveringProperties_IfcMember" client="cl_Pset_PermeableCoveringProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PermeableCoveringProperties_IfcWindow" client="cl_Pset_PermeableCoveringProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWindow"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WindowLiningProperties" name="Pset_WindowLiningProperties">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WindowLiningProperties_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_LiningDepth" name="LiningDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowLiningProperties_LiningDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowLiningProperties_LiningDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_LiningThickness" name="LiningThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowLiningProperties_LiningThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowLiningProperties_LiningThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_TransomThickness" name="TransomThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowLiningProperties_TransomThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowLiningProperties_TransomThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_MullionThickness" name="MullionThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowLiningProperties_MullionThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowLiningProperties_MullionThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_FirstTransomOffset" name="FirstTransomOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowLiningProperties_FirstTransomOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowLiningProperties_FirstTransomOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_SecondTransomOffset" name="SecondTransomOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowLiningProperties_SecondTransomOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowLiningProperties_SecondTransomOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_FirstMullionOffset" name="FirstMullionOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowLiningProperties_FirstMullionOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowLiningProperties_FirstMullionOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_SecondMullionOffset" name="SecondMullionOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowLiningProperties_SecondMullionOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowLiningProperties_SecondMullionOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_LiningOffset" name="LiningOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowLiningProperties_LiningOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowLiningProperties_LiningOffset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_LiningToPanelOffsetX" name="LiningToPanelOffsetX">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowLiningProperties_LiningToPanelOffsetX_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowLiningProperties_LiningToPanelOffsetX_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowLiningProperties_LiningToPanelOffsetY" name="LiningToPanelOffsetY">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowLiningProperties_LiningToPanelOffsetY_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowLiningProperties_LiningToPanelOffsetY_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WindowLiningProperties_IfcMember" client="cl_Pset_WindowLiningProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WindowLiningProperties_IfcWindow" client="cl_Pset_WindowLiningProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWindow"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WindowPanelProperties" name="Pset_WindowPanelProperties">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WindowPanelProperties_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowPanelProperties_OperationType" name="OperationType" type="en_PEnum_WindowPanelOperationEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowPanelProperties_OperationType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowPanelProperties_OperationType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowPanelProperties_PanelPosition" name="PanelPosition" type="en_PEnum_WindowPanelPositionEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowPanelProperties_PanelPosition_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowPanelProperties_PanelPosition_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowPanelProperties_FrameDepth" name="FrameDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowPanelProperties_FrameDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowPanelProperties_FrameDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_WindowPanelProperties_FrameThickness" name="FrameThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_WindowPanelProperties_FrameThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowPanelProperties_FrameThickness_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_WindowPanelOperationEnum" name="PEnum_WindowPanelOperationEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_BOTTOMHUNG" name="BOTTOMHUNG"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_FIXEDCASEMENT" name="FIXEDCASEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_OTHEROPERATION" name="OTHEROPERATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_PIVOTHORIZONTAL" name="PIVOTHORIZONTAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_PIVOTVERTICAL" name="PIVOTVERTICAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_REMOVABLECASEMENT" name="REMOVABLECASEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_SIDEHUNGLEFTHAND" name="SIDEHUNGLEFTHAND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_SIDEHUNGRIGHTHAND" name="SIDEHUNGRIGHTHAND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_SLIDINGHORIZONTAL" name="SLIDINGHORIZONTAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_SLIDINGVERTICAL" name="SLIDINGVERTICAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_TILTANDTURNLEFTHAND" name="TILTANDTURNLEFTHAND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_TILTANDTURNRIGHTHAND" name="TILTANDTURNRIGHTHAND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_TOPHUNG" name="TOPHUNG"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WindowPanelProperties_IfcPlate" client="cl_Pset_WindowPanelProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcPlate"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WindowPanelProperties_IfcWindow" client="cl_Pset_WindowPanelProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWindow"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

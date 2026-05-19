@@ -1,487 +1,485 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
-  <uml:Model xmi:id="md_IfcDateTimeResource" name="IfcDateTimeResource">
-    <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcDateTimeResource" name="IfcDateTimeResource">
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDataOriginEnum" name="IfcDataOriginEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18374" name="MEASURED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18375" name="PREDICTED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18376" name="SIMULATED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18377" name="USERDEFINED"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18378" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDate" name="IfcDate">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18379">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDateTime" name="IfcDateTime">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18380">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDayInMonthNumber" name="IfcDayInMonthNumber">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18381">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-        </generalization>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDayInMonthNumber_ValidRange" name="ValidRange">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_18382" name="ValidRange">
-            <language>EXPRESS_WHERE</language>
-            <body>{1 &lt;= SELF &lt;= 31}</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDayInWeekNumber" name="IfcDayInWeekNumber">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18383">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-        </generalization>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDayInWeekNumber_ValidRange" name="ValidRange">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_18384" name="ValidRange">
-            <language>EXPRESS_WHERE</language>
-            <body>{1 &lt;= SELF &lt;= 7}</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDuration" name="IfcDuration">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18385">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcIrregularTimeSeriesValue" name="IfcIrregularTimeSeriesValue">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcIrregularTimeSeriesValue_TimeStamp" name="TimeStamp" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18386" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18387" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcIrregularTimeSeriesValue_ListValues" name="ListValues_L[1:?]" isOrdered="false" association="as_IfcIrregularTimeSeriesValue_ListValues">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#un_IfcValue"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18388" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18389" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMonthInYearNumber" name="IfcMonthInYearNumber">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18390">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-        </generalization>
-        <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcMonthInYearNumber_ValidRange" name="ValidRange">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="expr_18391" name="ValidRange">
-            <language>EXPRESS_WHERE</language>
-            <body>{1 &lt;= SELF &lt;= 12}</body>
-          </specification>
-        </ownedRule>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRecurrencePattern" name="IfcRecurrencePattern">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_RecurrenceType" name="RecurrenceType" isOrdered="false" type="en_IfcRecurrenceTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18392" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18393" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_DayComponent" name="DayComponent_S[1:?]" isOrdered="false" type="dt_IfcDayInMonthNumber">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18394" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18395" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_WeekdayComponent" name="WeekdayComponent_S[1:?]" isOrdered="false" type="dt_IfcDayInWeekNumber">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18396" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18397" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_MonthComponent" name="MonthComponent_S[1:?]" isOrdered="false" type="dt_IfcMonthInYearNumber">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18398" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18399" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_Position" name="Position" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18400" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18401" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_Interval" name="Interval" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18402" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18403" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_Occurrences" name="Occurrences" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18404" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18405" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_TimePeriods" name="TimePeriods_L[1:?]" isOrdered="false" association="as_IfcRecurrencePattern_TimePeriods" type="cl_IfcTimePeriod">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18406" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18407" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcRecurrenceTypeEnum" name="IfcRecurrenceTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18408" name="BY_DAY_COUNT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18409" name="BY_WEEKDAY_COUNT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18410" name="DAILY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18411" name="MONTHLY_BY_DAY_OF_MONTH"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18412" name="MONTHLY_BY_POSITION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18413" name="WEEKLY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18414" name="YEARLY_BY_DAY_OF_MONTH"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18415" name="YEARLY_BY_POSITION"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSchedulingTime" name="IfcSchedulingTime" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSchedulingTime_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18416" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18417" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSchedulingTime_DataOrigin" name="DataOrigin" isOrdered="false" type="en_IfcDataOriginEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18418" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18419" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSchedulingTime_UserDefinedDataOrigin" name="UserDefinedDataOrigin" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18420" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18421" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcTaskDurationEnum" name="IfcTaskDurationEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18422" name="ELAPSEDTIME"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18423" name="WORKTIME"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18424" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcTime" name="IfcTime">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18425">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTimePeriod" name="IfcTimePeriod">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimePeriod_StartTime" name="StartTime" isOrdered="false" type="dt_IfcTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18426" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18427" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimePeriod_EndTime" name="EndTime" isOrdered="false" type="dt_IfcTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18428" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18429" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTimeSeries" name="IfcTimeSeries" isAbstract="true">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_Name" name="Name" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18430" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18431" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_Description" name="Description" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18432" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18433" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_StartTime" name="StartTime" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18434" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18435" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_EndTime" name="EndTime" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18436" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18437" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_TimeSeriesDataType" name="TimeSeriesDataType" isOrdered="false" type="en_IfcTimeSeriesDataTypeEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18438" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18439" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_DataOrigin" name="DataOrigin" isOrdered="false" type="en_IfcDataOriginEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18440" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18441" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_UserDefinedDataOrigin" name="UserDefinedDataOrigin" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18442" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18443" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_Unit" name="Unit" isOrdered="false" association="as_IfcTimeSeries_Unit">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#un_IfcUnit"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18444" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18445" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcTimeSeriesDataTypeEnum" name="IfcTimeSeriesDataTypeEnum">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18446" name="CONTINUOUS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18447" name="DISCRETE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18448" name="DISCRETEBINARY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18449" name="PIECEWISEBINARY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18450" name="PIECEWISECONSTANT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18451" name="PIECEWISECONTINUOUS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="literal_18452" name="NOTDEFINED"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTimeSeriesValue" name="IfcTimeSeriesValue">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeriesValue_ListValues" name="ListValues_L[1:?]" isOrdered="false" association="as_IfcTimeSeriesValue_ListValues">
-          <type xmi:type="uml:Class" href="IfcMeasureResource.uml#un_IfcValue"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18453" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18454" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcTimeStamp" name="IfcTimeStamp">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18455">
-          <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
-        </generalization>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventTime" name="IfcEventTime">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18456" general="cl_IfcSchedulingTime"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventTime_ActualDate" name="ActualDate" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18457" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18458" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventTime_EarlyDate" name="EarlyDate" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18459" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18460" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventTime_LateDate" name="LateDate" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18461" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18462" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventTime_ScheduleDate" name="ScheduleDate" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18463" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18464" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcIrregularTimeSeries" name="IfcIrregularTimeSeries">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18465" general="cl_IfcTimeSeries"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcIrregularTimeSeries_Values" name="Values_L[1:?]" isOrdered="false" association="as_IfcIrregularTimeSeries_Values" type="cl_IfcIrregularTimeSeriesValue">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18466" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18467" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLagTime" name="IfcLagTime">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18468" general="cl_IfcSchedulingTime"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLagTime_LagValue" name="LagValue" isOrdered="false" association="as_IfcLagTime_LagValue" type="un_IfcTimeOrRatioSelect">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18469" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18470" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLagTime_DurationType" name="DurationType" isOrdered="false" type="en_IfcTaskDurationEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18471" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18472" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRegularTimeSeries" name="IfcRegularTimeSeries">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18473" general="cl_IfcTimeSeries"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRegularTimeSeries_TimeStep" name="TimeStep" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTimeMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18474" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18475" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRegularTimeSeries_Values" name="Values_L[1:?]" isOrdered="false" association="as_IfcRegularTimeSeries_Values" type="cl_IfcTimeSeriesValue">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18476" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18477" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcResourceTime" name="IfcResourceTime">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18478" general="cl_IfcSchedulingTime"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ScheduleWork" name="ScheduleWork" isOrdered="false" type="dt_IfcDuration">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18479" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18480" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ScheduleUsage" name="ScheduleUsage" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18481" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18482" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ScheduleStart" name="ScheduleStart" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18483" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18484" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ScheduleFinish" name="ScheduleFinish" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18485" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18486" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ScheduleContour" name="ScheduleContour" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18487" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18488" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_LevelingDelay" name="LevelingDelay" isOrdered="false" type="dt_IfcDuration">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18489" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18490" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_IsOverAllocated" name="IsOverAllocated" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18491" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18492" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_StatusTime" name="StatusTime" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18493" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18494" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ActualWork" name="ActualWork" isOrdered="false" type="dt_IfcDuration">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18495" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18496" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ActualUsage" name="ActualUsage" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18497" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18498" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ActualStart" name="ActualStart" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18499" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18500" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ActualFinish" name="ActualFinish" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18501" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18502" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_RemainingWork" name="RemainingWork" isOrdered="false" type="dt_IfcDuration">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18503" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18504" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_RemainingUsage" name="RemainingUsage" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18505" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18506" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_Completion" name="Completion" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18507" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18508" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTime" name="IfcTaskTime">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18509" general="cl_IfcSchedulingTime"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_DurationType" name="DurationType" isOrdered="false" type="en_IfcTaskDurationEnum">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18510" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18511" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_ScheduleDuration" name="ScheduleDuration" isOrdered="false" type="dt_IfcDuration">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18512" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18513" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_ScheduleStart" name="ScheduleStart" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18514" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18515" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_ScheduleFinish" name="ScheduleFinish" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18516" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18517" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_EarlyStart" name="EarlyStart" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18518" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18519" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_EarlyFinish" name="EarlyFinish" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18520" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18521" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_LateStart" name="LateStart" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18522" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18523" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_LateFinish" name="LateFinish" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18524" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18525" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_FreeFloat" name="FreeFloat" isOrdered="false" type="dt_IfcDuration">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18526" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18527" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_TotalFloat" name="TotalFloat" isOrdered="false" type="dt_IfcDuration">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18528" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18529" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_IsCritical" name="IsCritical" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18530" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18531" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_StatusTime" name="StatusTime" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18532" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18533" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_ActualDuration" name="ActualDuration" isOrdered="false" type="dt_IfcDuration">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18534" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18535" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_ActualStart" name="ActualStart" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18536" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18537" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_ActualFinish" name="ActualFinish" isOrdered="false" type="dt_IfcDateTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18538" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18539" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_RemainingTime" name="RemainingTime" isOrdered="false" type="dt_IfcDuration">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18540" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18541" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_Completion" name="Completion" isOrdered="false">
-          <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18542" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18543" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="un_IfcTimeOrRatioSelect" name="IfcTimeOrRatioSelect"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_18544" client="un_IfcTimeOrRatioSelect" supplier="dt_IfcDuration"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="dependency_18545" client="un_IfcTimeOrRatioSelect">
-        <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRatioMeasure"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkTime" name="IfcWorkTime">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18546" general="cl_IfcSchedulingTime"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkTime_RecurrencePattern" name="RecurrencePattern" isOrdered="false" association="as_IfcWorkTime_RecurrencePattern" type="cl_IfcRecurrencePattern">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18547" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18548" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkTime_StartDate" name="StartDate" isOrdered="false" type="dt_IfcDate">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18549" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18550" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkTime_FinishDate" name="FinishDate" isOrdered="false" type="dt_IfcDate">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18551" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18552" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTimeRecurring" name="IfcTaskTimeRecurring">
-        <generalization xmi:type="uml:Generalization" xmi:id="gen_18553" general="cl_IfcTaskTime"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTimeRecurring_Recurrence" name="Recurrence" isOrdered="false" association="as_IfcTaskTimeRecurring_Recurrence" type="cl_IfcRecurrencePattern">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18554" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18555" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcIrregularTimeSeries_Values" name="Values" memberEnd="at_IfcIrregularTimeSeries_Values end_342">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_342" name="" association="as_IfcIrregularTimeSeries_Values" type="cl_IfcIrregularTimeSeries">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18556" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18557" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcIrregularTimeSeriesValue_ListValues" name="ListValues" memberEnd="at_IfcIrregularTimeSeriesValue_ListValues end_344">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_344" name="" association="as_IfcIrregularTimeSeriesValue_ListValues" type="cl_IfcIrregularTimeSeriesValue">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18558" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18559" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLagTime_LagValue" name="LagValue" memberEnd="at_IfcLagTime_LagValue end_346">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_346" name="" association="as_IfcLagTime_LagValue" type="cl_IfcLagTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18560" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18561" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRecurrencePattern_TimePeriods" name="TimePeriods" memberEnd="at_IfcRecurrencePattern_TimePeriods end_566">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_566" name="" association="as_IfcRecurrencePattern_TimePeriods" type="cl_IfcRecurrencePattern">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18562" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18563" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRegularTimeSeries_Values" name="Values" memberEnd="at_IfcRegularTimeSeries_Values end_570">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_570" name="" association="as_IfcRegularTimeSeries_Values" type="cl_IfcRegularTimeSeries">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18564" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18565" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcTaskTimeRecurring_Recurrence" name="Recurrence" memberEnd="at_IfcTaskTimeRecurring_Recurrence end_902">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_902" name="" association="as_IfcTaskTimeRecurring_Recurrence" type="cl_IfcTaskTimeRecurring">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18566" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18567" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcTimeSeries_Unit" name="Unit" memberEnd="at_IfcTimeSeries_Unit end_938">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_938" name="" association="as_IfcTimeSeries_Unit" type="cl_IfcTimeSeries">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18568" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18569" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcTimeSeriesValue_ListValues" name="ListValues" memberEnd="at_IfcTimeSeriesValue_ListValues end_940">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_940" name="" association="as_IfcTimeSeriesValue_ListValues" type="cl_IfcTimeSeriesValue">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18570" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18571" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWorkTime_RecurrencePattern" name="RecurrencePattern" memberEnd="at_IfcWorkTime_RecurrencePattern end_974">
-        <ownedEnd xmi:type="uml:Property" xmi:id="end_974" name="" association="as_IfcWorkTime_RecurrencePattern" type="cl_IfcWorkTime">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="lower_18572" value="0"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="upper_18573" value="1"/>
-        </ownedEnd>
-      </packagedElement>
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcDateTimeResource" name="IfcDateTimeResource" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcDateTimeResource" name="IfcDateTimeResource">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcDataOriginEnum" name="IfcDataOriginEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDataOriginEnum_MEASURED" name="MEASURED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDataOriginEnum_PREDICTED" name="PREDICTED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDataOriginEnum_SIMULATED" name="SIMULATED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDataOriginEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDataOriginEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-  </uml:Model>
-</xmi:XMI>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDate" name="IfcDate">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcDate_gen_string">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDateTime" name="IfcDateTime">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcDateTime_gen_string">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDayInMonthNumber" name="IfcDayInMonthNumber">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDayInMonthNumber_ValidRange" name="ValidRange">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcDayInMonthNumber_ValidRange" name="ValidRange">
+          <language>EXPRESS_WHERE</language>
+          <body>{1 &lt;= SELF &lt;= 31}</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcDayInMonthNumber_gen_integer">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDayInWeekNumber" name="IfcDayInWeekNumber">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDayInWeekNumber_ValidRange" name="ValidRange">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcDayInWeekNumber_ValidRange" name="ValidRange">
+          <language>EXPRESS_WHERE</language>
+          <body>{1 &lt;= SELF &lt;= 7}</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcDayInWeekNumber_gen_integer">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcDuration" name="IfcDuration">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcDuration_gen_string">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcIrregularTimeSeriesValue" name="IfcIrregularTimeSeriesValue">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcIrregularTimeSeriesValue_TimeStamp" name="TimeStamp" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcIrregularTimeSeriesValue_TimeStamp_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcIrregularTimeSeriesValue_TimeStamp_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcIrregularTimeSeriesValue_ListValues" name="ListValues_L[1:?]" association="as_IfcIrregularTimeSeriesValue_ListValues">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#un_IfcValue"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcIrregularTimeSeriesValue_ListValues_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcIrregularTimeSeriesValue_ListValues_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcMonthInYearNumber" name="IfcMonthInYearNumber">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcMonthInYearNumber_ValidRange" name="ValidRange">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcMonthInYearNumber_ValidRange" name="ValidRange">
+          <language>EXPRESS_WHERE</language>
+          <body>{1 &lt;= SELF &lt;= 12}</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcMonthInYearNumber_gen_integer">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRecurrencePattern" name="IfcRecurrencePattern">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_RecurrenceType" name="RecurrenceType" type="en_IfcRecurrenceTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRecurrencePattern_RecurrenceType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRecurrencePattern_RecurrenceType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_DayComponent" name="DayComponent_S[1:?]" type="dt_IfcDayInMonthNumber">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRecurrencePattern_DayComponent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRecurrencePattern_DayComponent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_WeekdayComponent" name="WeekdayComponent_S[1:?]" type="dt_IfcDayInWeekNumber">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRecurrencePattern_WeekdayComponent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRecurrencePattern_WeekdayComponent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_MonthComponent" name="MonthComponent_S[1:?]" type="dt_IfcMonthInYearNumber">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRecurrencePattern_MonthComponent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRecurrencePattern_MonthComponent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_Position" name="Position">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRecurrencePattern_Position_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRecurrencePattern_Position_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_Interval" name="Interval">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRecurrencePattern_Interval_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRecurrencePattern_Interval_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_Occurrences" name="Occurrences">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRecurrencePattern_Occurrences_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRecurrencePattern_Occurrences_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRecurrencePattern_TimePeriods" name="TimePeriods_L[1:?]" type="cl_IfcTimePeriod" association="as_IfcRecurrencePattern_TimePeriods">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRecurrencePattern_TimePeriods_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRecurrencePattern_TimePeriods_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcRecurrenceTypeEnum" name="IfcRecurrenceTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRecurrenceTypeEnum_BY_DAY_COUNT" name="BY_DAY_COUNT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRecurrenceTypeEnum_BY_WEEKDAY_COUNT" name="BY_WEEKDAY_COUNT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRecurrenceTypeEnum_DAILY" name="DAILY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRecurrenceTypeEnum_MONTHLY_BY_DAY_OF_MONTH" name="MONTHLY_BY_DAY_OF_MONTH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRecurrenceTypeEnum_MONTHLY_BY_POSITION" name="MONTHLY_BY_POSITION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRecurrenceTypeEnum_WEEKLY" name="WEEKLY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRecurrenceTypeEnum_YEARLY_BY_DAY_OF_MONTH" name="YEARLY_BY_DAY_OF_MONTH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRecurrenceTypeEnum_YEARLY_BY_POSITION" name="YEARLY_BY_POSITION"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSchedulingTime" name="IfcSchedulingTime" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSchedulingTime_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSchedulingTime_Name_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSchedulingTime_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSchedulingTime_DataOrigin" name="DataOrigin" type="en_IfcDataOriginEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSchedulingTime_DataOrigin_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSchedulingTime_DataOrigin_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSchedulingTime_UserDefinedDataOrigin" name="UserDefinedDataOrigin">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSchedulingTime_UserDefinedDataOrigin_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSchedulingTime_UserDefinedDataOrigin_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcTaskDurationEnum" name="IfcTaskDurationEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskDurationEnum_ELAPSEDTIME" name="ELAPSEDTIME"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskDurationEnum_WORKTIME" name="WORKTIME"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTaskDurationEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcTime" name="IfcTime">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcTime_gen_string">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_string"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTimePeriod" name="IfcTimePeriod">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimePeriod_StartTime" name="StartTime" type="dt_IfcTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTimePeriod_StartTime_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTimePeriod_StartTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimePeriod_EndTime" name="EndTime" type="dt_IfcTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTimePeriod_EndTime_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTimePeriod_EndTime_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTimeSeries" name="IfcTimeSeries" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_Name" name="Name">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTimeSeries_Name_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTimeSeries_Name_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTimeSeries_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTimeSeries_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_StartTime" name="StartTime" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTimeSeries_StartTime_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTimeSeries_StartTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_EndTime" name="EndTime" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTimeSeries_EndTime_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTimeSeries_EndTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_TimeSeriesDataType" name="TimeSeriesDataType" type="en_IfcTimeSeriesDataTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTimeSeries_TimeSeriesDataType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTimeSeries_TimeSeriesDataType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_DataOrigin" name="DataOrigin" type="en_IfcDataOriginEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTimeSeries_DataOrigin_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTimeSeries_DataOrigin_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_UserDefinedDataOrigin" name="UserDefinedDataOrigin">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTimeSeries_UserDefinedDataOrigin_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTimeSeries_UserDefinedDataOrigin_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeries_Unit" name="Unit" association="as_IfcTimeSeries_Unit">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#un_IfcUnit"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTimeSeries_Unit_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTimeSeries_Unit_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcTimeSeriesDataTypeEnum" name="IfcTimeSeriesDataTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTimeSeriesDataTypeEnum_CONTINUOUS" name="CONTINUOUS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTimeSeriesDataTypeEnum_DISCRETE" name="DISCRETE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTimeSeriesDataTypeEnum_DISCRETEBINARY" name="DISCRETEBINARY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTimeSeriesDataTypeEnum_PIECEWISEBINARY" name="PIECEWISEBINARY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTimeSeriesDataTypeEnum_PIECEWISECONSTANT" name="PIECEWISECONSTANT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTimeSeriesDataTypeEnum_PIECEWISECONTINUOUS" name="PIECEWISECONTINUOUS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTimeSeriesDataTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTimeSeriesValue" name="IfcTimeSeriesValue">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTimeSeriesValue_ListValues" name="ListValues_L[1:?]" association="as_IfcTimeSeriesValue_ListValues">
+        <type xmi:type="uml:Class" href="IfcMeasureResource.uml#un_IfcValue"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTimeSeriesValue_ListValues_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTimeSeriesValue_ListValues_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcTimeStamp" name="IfcTimeStamp">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcTimeStamp_gen_integer">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_integer"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEventTime" name="IfcEventTime">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEventTime_gen_IfcSchedulingTime" general="cl_IfcSchedulingTime"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventTime_ActualDate" name="ActualDate" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcEventTime_ActualDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcEventTime_ActualDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventTime_EarlyDate" name="EarlyDate" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcEventTime_EarlyDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcEventTime_EarlyDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventTime_LateDate" name="LateDate" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcEventTime_LateDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcEventTime_LateDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEventTime_ScheduleDate" name="ScheduleDate" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcEventTime_ScheduleDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcEventTime_ScheduleDate_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcIrregularTimeSeries" name="IfcIrregularTimeSeries">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcIrregularTimeSeries_gen_IfcTimeSeries" general="cl_IfcTimeSeries"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcIrregularTimeSeries_Values" name="Values_L[1:?]" type="cl_IfcIrregularTimeSeriesValue" association="as_IfcIrregularTimeSeries_Values">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcIrregularTimeSeries_Values_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcIrregularTimeSeries_Values_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLagTime" name="IfcLagTime">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLagTime_gen_IfcSchedulingTime" general="cl_IfcSchedulingTime"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLagTime_LagValue" name="LagValue" type="un_IfcTimeOrRatioSelect" association="as_IfcLagTime_LagValue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLagTime_LagValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLagTime_LagValue_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLagTime_DurationType" name="DurationType" type="en_IfcTaskDurationEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLagTime_DurationType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLagTime_DurationType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRegularTimeSeries" name="IfcRegularTimeSeries">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRegularTimeSeries_gen_IfcTimeSeries" general="cl_IfcTimeSeries"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRegularTimeSeries_TimeStep" name="TimeStep">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTimeMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRegularTimeSeries_TimeStep_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRegularTimeSeries_TimeStep_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRegularTimeSeries_Values" name="Values_L[1:?]" type="cl_IfcTimeSeriesValue" association="as_IfcRegularTimeSeries_Values">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRegularTimeSeries_Values_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRegularTimeSeries_Values_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcResourceTime" name="IfcResourceTime">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcResourceTime_gen_IfcSchedulingTime" general="cl_IfcSchedulingTime"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ScheduleWork" name="ScheduleWork" type="dt_IfcDuration">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_ScheduleWork_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_ScheduleWork_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ScheduleUsage" name="ScheduleUsage">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_ScheduleUsage_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_ScheduleUsage_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ScheduleStart" name="ScheduleStart" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_ScheduleStart_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_ScheduleStart_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ScheduleFinish" name="ScheduleFinish" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_ScheduleFinish_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_ScheduleFinish_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ScheduleContour" name="ScheduleContour">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_ScheduleContour_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_ScheduleContour_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_LevelingDelay" name="LevelingDelay" type="dt_IfcDuration">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_LevelingDelay_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_LevelingDelay_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_IsOverAllocated" name="IsOverAllocated">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_IsOverAllocated_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_IsOverAllocated_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_StatusTime" name="StatusTime" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_StatusTime_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_StatusTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ActualWork" name="ActualWork" type="dt_IfcDuration">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_ActualWork_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_ActualWork_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ActualUsage" name="ActualUsage">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_ActualUsage_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_ActualUsage_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ActualStart" name="ActualStart" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_ActualStart_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_ActualStart_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_ActualFinish" name="ActualFinish" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_ActualFinish_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_ActualFinish_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_RemainingWork" name="RemainingWork" type="dt_IfcDuration">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_RemainingWork_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_RemainingWork_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_RemainingUsage" name="RemainingUsage">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_RemainingUsage_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_RemainingUsage_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcResourceTime_Completion" name="Completion">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcResourceTime_Completion_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcResourceTime_Completion_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTime" name="IfcTaskTime">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTime_gen_IfcSchedulingTime" general="cl_IfcSchedulingTime"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_DurationType" name="DurationType" type="en_IfcTaskDurationEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_DurationType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_DurationType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_ScheduleDuration" name="ScheduleDuration" type="dt_IfcDuration">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_ScheduleDuration_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_ScheduleDuration_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_ScheduleStart" name="ScheduleStart" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_ScheduleStart_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_ScheduleStart_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_ScheduleFinish" name="ScheduleFinish" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_ScheduleFinish_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_ScheduleFinish_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_EarlyStart" name="EarlyStart" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_EarlyStart_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_EarlyStart_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_EarlyFinish" name="EarlyFinish" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_EarlyFinish_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_EarlyFinish_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_LateStart" name="LateStart" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_LateStart_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_LateStart_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_LateFinish" name="LateFinish" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_LateFinish_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_LateFinish_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_FreeFloat" name="FreeFloat" type="dt_IfcDuration">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_FreeFloat_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_FreeFloat_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_TotalFloat" name="TotalFloat" type="dt_IfcDuration">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_TotalFloat_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_TotalFloat_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_IsCritical" name="IsCritical">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_IsCritical_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_IsCritical_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_StatusTime" name="StatusTime" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_StatusTime_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_StatusTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_ActualDuration" name="ActualDuration" type="dt_IfcDuration">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_ActualDuration_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_ActualDuration_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_ActualStart" name="ActualStart" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_ActualStart_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_ActualStart_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_ActualFinish" name="ActualFinish" type="dt_IfcDateTime">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_ActualFinish_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_ActualFinish_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_RemainingTime" name="RemainingTime" type="dt_IfcDuration">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_RemainingTime_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_RemainingTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTime_Completion" name="Completion">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTime_Completion_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTime_Completion_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcTimeOrRatioSelect" name="IfcTimeOrRatioSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcTimeOrRatioSelect_IfcDuration" client="un_IfcTimeOrRatioSelect" supplier="dt_IfcDuration"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcTimeOrRatioSelect_IfcRatioMeasure" client="un_IfcTimeOrRatioSelect">
+      <supplier xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRatioMeasure"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcWorkTime" name="IfcWorkTime">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWorkTime_gen_IfcSchedulingTime" general="cl_IfcSchedulingTime"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkTime_RecurrencePattern" name="RecurrencePattern" type="cl_IfcRecurrencePattern" association="as_IfcWorkTime_RecurrencePattern">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkTime_RecurrencePattern_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkTime_RecurrencePattern_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkTime_StartDate" name="StartDate" type="dt_IfcDate">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkTime_StartDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkTime_StartDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcWorkTime_FinishDate" name="FinishDate" type="dt_IfcDate">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcWorkTime_FinishDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWorkTime_FinishDate_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTaskTimeRecurring" name="IfcTaskTimeRecurring">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTaskTimeRecurring_gen_IfcTaskTime" general="cl_IfcTaskTime"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTaskTimeRecurring_Recurrence" name="Recurrence" type="cl_IfcRecurrencePattern" association="as_IfcTaskTimeRecurring_Recurrence">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTaskTimeRecurring_Recurrence_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTaskTimeRecurring_Recurrence_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcIrregularTimeSeriesValue_ListValues" name="ListValues" memberEnd="at_IfcIrregularTimeSeriesValue_ListValues as_IfcIrregularTimeSeriesValue_ListValues_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcIrregularTimeSeriesValue_ListValues_target_end" name="" type="cl_IfcIrregularTimeSeriesValue" association="as_IfcIrregularTimeSeriesValue_ListValues">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcIrregularTimeSeriesValue_ListValues_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcIrregularTimeSeriesValue_ListValues_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRecurrencePattern_TimePeriods" name="TimePeriods" memberEnd="at_IfcRecurrencePattern_TimePeriods as_IfcRecurrencePattern_TimePeriods_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRecurrencePattern_TimePeriods_target_end" name="" type="cl_IfcRecurrencePattern" association="as_IfcRecurrencePattern_TimePeriods">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRecurrencePattern_TimePeriods_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRecurrencePattern_TimePeriods_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcTimeSeries_Unit" name="Unit" memberEnd="at_IfcTimeSeries_Unit as_IfcTimeSeries_Unit_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcTimeSeries_Unit_target_end" name="" type="cl_IfcTimeSeries" association="as_IfcTimeSeries_Unit">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcTimeSeries_Unit_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcTimeSeries_Unit_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcTimeSeriesValue_ListValues" name="ListValues" memberEnd="at_IfcTimeSeriesValue_ListValues as_IfcTimeSeriesValue_ListValues_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcTimeSeriesValue_ListValues_target_end" name="" type="cl_IfcTimeSeriesValue" association="as_IfcTimeSeriesValue_ListValues">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcTimeSeriesValue_ListValues_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcTimeSeriesValue_ListValues_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcIrregularTimeSeries_Values" name="Values" memberEnd="at_IfcIrregularTimeSeries_Values as_IfcIrregularTimeSeries_Values_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcIrregularTimeSeries_Values_target_end" name="" type="cl_IfcIrregularTimeSeries" association="as_IfcIrregularTimeSeries_Values">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcIrregularTimeSeries_Values_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcIrregularTimeSeries_Values_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcLagTime_LagValue" name="LagValue" memberEnd="at_IfcLagTime_LagValue as_IfcLagTime_LagValue_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcLagTime_LagValue_target_end" name="" type="cl_IfcLagTime" association="as_IfcLagTime_LagValue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcLagTime_LagValue_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcLagTime_LagValue_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRegularTimeSeries_Values" name="Values" memberEnd="at_IfcRegularTimeSeries_Values as_IfcRegularTimeSeries_Values_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRegularTimeSeries_Values_target_end" name="" type="cl_IfcRegularTimeSeries" association="as_IfcRegularTimeSeries_Values">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRegularTimeSeries_Values_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRegularTimeSeries_Values_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWorkTime_RecurrencePattern" name="RecurrencePattern" memberEnd="at_IfcWorkTime_RecurrencePattern as_IfcWorkTime_RecurrencePattern_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcWorkTime_RecurrencePattern_target_end" name="" type="cl_IfcWorkTime" association="as_IfcWorkTime_RecurrencePattern">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcWorkTime_RecurrencePattern_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcWorkTime_RecurrencePattern_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcTaskTimeRecurring_Recurrence" name="Recurrence" memberEnd="at_IfcTaskTimeRecurring_Recurrence as_IfcTaskTimeRecurring_Recurrence_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcTaskTimeRecurring_Recurrence_target_end" name="" type="cl_IfcTaskTimeRecurring" association="as_IfcTaskTimeRecurring_Recurrence">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcTaskTimeRecurring_Recurrence_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcTaskTimeRecurring_Recurrence_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
