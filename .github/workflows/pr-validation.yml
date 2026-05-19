@@ -342,7 +342,7 @@ jobs:
             [ -z "$umlfile" ] && continue
             found=$(git diff "$BASE_REF"...HEAD -- "$umlfile" 2>/dev/null | \
               grep -E '^\+.*<packagedElement.*xmi:type="uml:Enumeration".*name="PEnum_[A-Za-z0-9_]+"' | \
-              sed -E 's/.*name="(PEnum_[A-Za-z0-9_]+)".*/\1|'"$umlfile"'/' | sort -u)
+              sed -E 's#.*name="(PEnum_[A-Za-z0-9_]+)".*#\1|'"$umlfile"'#' | sort -u)
             new_penums="$new_penums"$'\n'"$found"
           done <<< "$uml_in_diff"
           new_penums=$(echo "$new_penums" | grep -v '^$' | sort -u)
