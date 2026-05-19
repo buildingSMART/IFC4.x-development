@@ -326,11 +326,6 @@ jobs:
         env:
           UML_FILES: ${{ steps.diff.outputs.uml_files }}
         run: |
-          # Scan ALL modified schemas/*.uml for new PEnums, not just propertytypes.uml.
-          # express_to_xmi.py routes PEnums to whichever UML hosts the using Pset
-          # (e.g. IfcSharedBldgElements.uml for TM16); the previous narrow check let
-          # TM16-A's USERDEFINED literal slip past the gate. See
-          # local/two-pr-package-workflow.md §10 Q6 for the routing design question.
           uml_in_diff=$(echo "$UML_FILES" | grep -E '^schemas/.*\.uml$' || true)
           if [ -z "$uml_in_diff" ]; then
             echo "no schemas/*.uml in diff -- skipping PEnum check"
