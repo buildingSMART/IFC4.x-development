@@ -87,6 +87,198 @@ def _clean_doc_text(s):
     return "\n".join(lines)
 
 
+def _read_text_file(path):
+    if not path or not os.path.exists(path):
+        return None
+    try:
+        return Path(path).read_text(encoding="utf-8").strip()
+    except Exception:
+        return None
+
+
+def _glob_first(*parts):
+    hits = glob.glob(os.path.join(*parts))
+    return hits[0] if hits else None
+
+
+def _href_first_char(href):
+    return href[0].lower() if href else ""
+
+
+def load_short_def(spec_dir, name, kind):
+    """Read Documentation.md from the canonical IFC-Specification location.
+
+    kind ∈ {entity, pset, qto, enum, penum}.
+    PEnums embed their documentation inline in PropertyEnumerations/<x>/<name>.xml.
+    """
+    if not spec_dir:
+        return None
+    if kind == "penum":
+        path = _glob_first(
+            spec_dir, "IFC4x3", "PropertyEnumerations", "*", f"{name}.xml",
+        )
+        if not path:
+            return None
+        try:
+            doc = minidom.parse(path)
+        except Exception:
+            return None
+        for d in doc.getElementsByTagName("Documentation"):
+            txt = _clean_doc_text(_text_of(d))
+            if txt:
+                return txt
+        return None
+    subdir = {
+        "entity": "Entities",
+        "pset": "PropertySets",
+        "qto": "QuantitySets",
+        "enum": "Types",
+    }.get(kind)
+    if not subdir:
+        return None
+    path = _glob_first(
+        spec_dir, "IFC4x3", "Sections", "*", "Schemas", "*", subdir,
+        name, "Documentation.md",
+    )
+    return _read_text_file(path)
+
+
+def load_enum_literal_docs(spec_dir, enum_name):
+    """{literal_name: documentation} from DocEnumeration.xml → Constants/<x>/<href>.xml."""
+    if not spec_dir:
+        return {}
+    path = _glob_first(
+        spec_dir, "IFC4x3", "Sections", "*", "Schemas", "*", "Types",
+        enum_name, "DocEnumeration.xml",
+    )
+    if not path:
+        return {}
+    try:
+        doc = minidom.parse(path)
+    except Exception:
+        return {}
+    out = {}
+    for dc in doc.getElementsByTagName("DocConstant"):
+        href = dc.getAttribute("href")
+        if not href:
+            continue
+        const_path = os.path.join(
+            spec_dir, "IFC4x3", "Constants", _href_first_char(href), f"{href}.xml",
+        )
+        if not os.path.exists(const_path):
+            continue
+        try:
+            cdoc = minidom.parse(const_path)
+        except Exception:
+            continue
+        for c in cdoc.getElementsByTagName("DocConstant"):
+            nm = c.getAttribute("Name")
+            doc_children = _children_by_tag(c, "Documentation")
+            if nm and doc_children:
+                txt = _clean_doc_text(_text_of(doc_children[0]))
+                if txt:
+                    out[nm] = txt
+            break
+    return out
+
+
+def load_penum_literal_docs(spec_dir, penum_name):
+    """{literal_name: documentation} from PropertyEnumerations → PropertyConstants/<x>/<href>.xml."""
+    if not spec_dir:
+        return {}
+    path = _glob_first(
+        spec_dir, "IFC4x3", "PropertyEnumerations", "*", f"{penum_name}.xml",
+    )
+    if not path:
+        return {}
+    try:
+        doc = minidom.parse(path)
+    except Exception:
+        return {}
+    out = {}
+    for dc in doc.getElementsByTagName("DocPropertyConstant"):
+        href = dc.getAttribute("href")
+        if not href:
+            continue
+        const_path = os.path.join(
+            spec_dir, "IFC4x3", "PropertyConstants", _href_first_char(href), f"{href}.xml",
+        )
+        if not os.path.exists(const_path):
+            continue
+        try:
+            cdoc = minidom.parse(const_path)
+        except Exception:
+            continue
+        for c in cdoc.getElementsByTagName("DocPropertyConstant"):
+            nm = c.getAttribute("Name")
+            doc_children = _children_by_tag(c, "Documentation")
+            if nm and doc_children:
+                txt = _clean_doc_text(_text_of(doc_children[0]))
+                if txt:
+                    out[nm] = txt
+            break
+    return out
+
+
+def _load_member_docs(spec_dir, parent_xml_path, member_tag, member_dir, doc_xml_tag):
+    """Generic loader: parent_xml lists <member_tag href=...> → <member_dir>/<x>/<href>/Documentation.md.
+
+    Returns {name: documentation}. Name read from the per-member <doc_xml_tag> in the same folder.
+    """
+    if not parent_xml_path or not os.path.exists(parent_xml_path):
+        return {}
+    try:
+        doc = minidom.parse(parent_xml_path)
+    except Exception:
+        return {}
+    out = {}
+    for m in doc.getElementsByTagName(member_tag):
+        href = m.getAttribute("href")
+        if not href:
+            continue
+        member_folder = os.path.join(
+            spec_dir, "IFC4x3", member_dir, _href_first_char(href), href,
+        )
+        doc_md = os.path.join(member_folder, "Documentation.md")
+        doc_xml = os.path.join(member_folder, doc_xml_tag + ".xml")
+        if not (os.path.exists(doc_md) and os.path.exists(doc_xml)):
+            continue
+        try:
+            mdoc = minidom.parse(doc_xml)
+        except Exception:
+            continue
+        nm = None
+        for e in mdoc.getElementsByTagName(doc_xml_tag):
+            nm = e.getAttribute("Name")
+            break
+        txt = _read_text_file(doc_md)
+        if nm and txt:
+            out[nm] = txt
+    return out
+
+
+def load_pset_property_docs(spec_dir, pset_name):
+    """{property_name: documentation} from DocPropertySet.xml → Properties/<x>/<href>/Documentation.md."""
+    if not spec_dir:
+        return {}
+    path = _glob_first(
+        spec_dir, "IFC4x3", "Sections", "*", "Schemas", "*", "PropertySets",
+        pset_name, "DocPropertySet.xml",
+    )
+    return _load_member_docs(spec_dir, path, "DocProperty", "Properties", "DocProperty")
+
+
+def load_qto_quantity_docs(spec_dir, qto_name):
+    """{quantity_name: documentation} from DocQuantitySet.xml → Quantities/<x>/<href>/Documentation.md."""
+    if not spec_dir:
+        return {}
+    path = _glob_first(
+        spec_dir, "IFC4x3", "Sections", "*", "Schemas", "*", "QuantitySets",
+        qto_name, "DocQuantitySet.xml",
+    )
+    return _load_member_docs(spec_dir, path, "DocQuantity", "Quantities", "DocQuantity")
+
+
 def load_doc_entity(spec_dir, entity_name):
     """Return (attr_docs, rule_docs) dicts read from DocEntity.xml.
 
@@ -425,25 +617,28 @@ def _applicable_concepts(uml_dir, supertype_chain, max_results=12):
 
 
 def scaffold_entity(name, supertype, attrs, rules, applicable_concepts=None,
-                    attr_docs=None, rule_docs=None):
+                    attr_docs=None, rule_docs=None, short_def=None):
     """Build the .md scaffold body.
 
+    short_def: optional Documentation.md text (canonical short definition).
     attr_docs / rule_docs: optional dicts of prose harvested from
-    DocEntity.xml in the IFC-Specification repo. When a key is present, the
-    real prose replaces the FILL-IN placeholder. When absent, we try
-    convention-based synthesis (_synth_attr_doc / _synth_rule_doc) and only
-    fall back to the FILL-IN placeholder if that also returns None.
+    DocEntity.xml / DocPropertySet.xml / DocQuantitySet.xml + member-Documentation.md
+    in the IFC-Specification repo. When a key is present, the real prose
+    replaces the FILL-IN placeholder. When absent, we try convention-based
+    synthesis (_synth_attr_doc / _synth_rule_doc) and only fall back to the
+    FILL-IN placeholder if that also returns None.
     """
     attr_docs = attr_docs or {}
     rule_docs = rule_docs or {}
     lines = [f"# {name}", ""]
-    lines.append(
-        f"An _{name}_ represents <!-- FILL IN: short one-paragraph definition. "
-        f"Source: tunnel-team exec summary or equivalent. -->"
-    )
+    if short_def:
+        lines.append(short_def)
+    else:
+        lines.append(
+            f"An _{name}_ represents <!-- FILL IN: short one-paragraph definition. "
+            f"Source: tunnel-team exec summary or equivalent. -->"
+        )
     lines.append("<!-- end of short definition -->")
-    lines.append("")
-    lines.append("<!-- FILL IN: extended definition (background, usage notes, references). -->")
     lines.append("")
     if supertype:
         lines.append(
@@ -489,57 +684,22 @@ def scaffold_entity(name, supertype, attrs, rules, applicable_concepts=None,
                     )
             lines.append("")
 
-    lines.append("## Concepts")
-    lines.append("")
-    if applicable_concepts:
-        # Data-driven: detected from supertype chain via MVD CSV bindings
-        lines.append("<!-- Auto-detected from the supertype chain via MVD CSV bindings in")
-        lines.append("     schemas/mvd/GeneralUsage/*.csv. Each heading below is canonical and")
-        lines.append("     will be picked up by the HTML builder. Add entity-specific extras")
-        lines.append("     (e.g. Body SweptSolid Geometry, Axis 3D Geometry) by appending more")
-        lines.append("     ### <heading> sections that match a filename in mvd/GeneralUsage/. -->")
-        lines.append("")
-        for heading, inherited_from in applicable_concepts:
-            comment = ""
-            if inherited_from and inherited_from != name:
-                comment = f"  <!-- inherited from {inherited_from} -->"
-            lines.append(f"### {heading}{comment}")
-            lines.append("")
-    else:
-        # Fallback: emit the 4 most-common canonical headings as a guess
-        lines.append("<!-- The subsection headings below MUST match the canonical concept names")
-        lines.append("     from schemas/mvd/GeneralUsage/*.csv (189 total). The HTML builder")
-        lines.append("     drops non-matching headings silently.")
-        lines.append("")
-        lines.append("     This is the FALLBACK list (top-4 by frequency in upstream entity MDs).")
-        lines.append("     For accurate data-driven detection, run scaffold_md.py from a")
-        lines.append("     worktree where schemas/mvd/GeneralUsage/ is accessible. -->")
-        lines.append("")
-        lines.append("### Property Sets for Objects")
-        lines.append("")
-        lines.append("### Object Typing")
-        lines.append("")
-        lines.append("### Quantity Sets")
-        lines.append("")
-        lines.append("### Material Set")
-        lines.append("<!-- Default for most entities. For specific geometries, replace with:")
-        lines.append("       ### Material Profile Set Usage  — swept-profile (IfcBeam, IfcColumn,")
-        lines.append("                                          IfcArchElement, IfcMember, IfcPile)")
-        lines.append("       ### Material Layer Set Usage    — layered (IfcWall, IfcSlab, IfcRoof,")
-        lines.append("                                          IfcPlate, IfcCovering)")
-        lines.append("       ### Material Single             — uniform single material")
-        lines.append("       ### Material Constituent Set    — composite/non-uniform")
-        lines.append("     If material doesn't apply to this entity, delete this subsection. -->")
-        lines.append("")
-
+    # No '## Concepts' section emitted. For new entities (TM16+) without a
+    # DocModelView.xml entry, the HTML builder auto-fills Concept content via
+    # supertype-walk at render time. Explicit empty Concept headings would
+    # override that auto-fill with nothing — worse than omitting the section.
     return "\n".join(lines) + "\n"
 
 
-def scaffold_enum(name, literals):
+def scaffold_enum(name, literals, short_def=None, literal_docs=None):
+    literal_docs = literal_docs or {}
     lines = [f"# {name}", ""]
-    lines.append(
-        f"This enumeration defines the predefined types of <!-- FILL IN: which entity uses this enum -->."
-    )
+    if short_def:
+        lines.append(short_def)
+    else:
+        lines.append(
+            f"This enumeration defines the predefined types of <!-- FILL IN: which entity uses this enum -->."
+        )
     lines.append("<!-- end of short definition -->")
     lines.append("")
     lines.append("> HISTORY New enumeration in IFC 4.4.")
@@ -548,7 +708,10 @@ def scaffold_enum(name, literals):
     lines.append("")
     for lit in literals:
         lines.append(f"### {lit}")
-        lines.append(f"<!-- FILL IN: description of {lit}. -->")
+        if lit in literal_docs:
+            lines.append(literal_docs[lit])
+        else:
+            lines.append(f"<!-- FILL IN: description of {lit}. -->")
         lines.append("")
     return "\n".join(lines) + "\n"
 
@@ -618,18 +781,33 @@ def main():
 
         kind_xmi = el.getAttribute("xmi:type")
         if kind_xmi == "uml:Enumeration":
-            content = scaffold_enum(nm, _enum_literals(el))
             kind = "penum" if nm.startswith("PEnum_") else "enum"
+            short_def = load_short_def(args.ifc_spec_dir, nm, kind)
+            literal_docs = (
+                load_penum_literal_docs(args.ifc_spec_dir, nm)
+                if kind == "penum"
+                else load_enum_literal_docs(args.ifc_spec_dir, nm)
+            )
+            content = scaffold_enum(
+                nm, _enum_literals(el),
+                short_def=short_def, literal_docs=literal_docs,
+            )
         elif kind_xmi == "uml:Class":
+            kind = "qto" if nm.startswith("Qto_") else "pset" if nm.startswith("Pset_") else "entity"
             chain = _supertype_chain(nm, supertype_lookup)
             applicable = _applicable_concepts(uml_dir, chain)
-            attr_docs, rule_docs = load_doc_entity(args.ifc_spec_dir, nm)
-            if args.ifc_spec_dir and not (attr_docs or rule_docs):
-                # Useful diagnostic for the common "new entity, no DocEntity.xml"
-                # case — silent fallback would otherwise look identical to a
-                # bug. Not an error: convention-synthesis still runs.
+            short_def = load_short_def(args.ifc_spec_dir, nm, kind)
+            if kind == "pset":
+                attr_docs = load_pset_property_docs(args.ifc_spec_dir, nm)
+                rule_docs = {}
+            elif kind == "qto":
+                attr_docs = load_qto_quantity_docs(args.ifc_spec_dir, nm)
+                rule_docs = {}
+            else:
+                attr_docs, rule_docs = load_doc_entity(args.ifc_spec_dir, nm)
+            if args.ifc_spec_dir and not (short_def or attr_docs or rule_docs):
                 print(
-                    f"[info] {nm}: no DocEntity.xml under --ifc-spec-dir; "
+                    f"[info] {nm}: no prose found under --ifc-spec-dir; "
                     f"falling back to convention-based synthesis",
                     file=sys.stderr,
                 )
@@ -637,8 +815,8 @@ def main():
                 nm, _supertype_name(el), _own_attrs(el), _where_rules(el),
                 applicable_concepts=applicable,
                 attr_docs=attr_docs, rule_docs=rule_docs,
+                short_def=short_def,
             )
-            kind = "qto" if nm.startswith("Qto_") else "pset" if nm.startswith("Pset_") else "entity"
         else:
             print(f"[skip] {nm}: unsupported xmi:type {kind_xmi}", file=sys.stderr)
             skipped += 1
