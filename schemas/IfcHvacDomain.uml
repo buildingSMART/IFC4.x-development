@@ -1976,7 +1976,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_AirTerminalBoxPHistory_AirFlowCurve_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirTerminalBoxPHistory_IfcAirTerminalBox" client="cl_Pset_AirTerminalBoxPHistory" supplier="cl_IfcAirTerminalBox"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_AirTerminalBoxTypeCommon" name="Pset_AirTerminalBoxTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_AirTerminalBoxTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2084,7 +2083,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AirTerminalBoxReheatType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AirTerminalBoxReheatType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirTerminalBoxTypeCommon_IfcAirTerminalBox" client="cl_Pset_AirTerminalBoxTypeCommon" supplier="cl_IfcAirTerminalBox"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_AirTerminalOccurrence" name="Pset_AirTerminalOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_AirTerminalOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -2122,7 +2120,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AirTerminalLocation_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AirTerminalLocation_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirTerminalOccurrence_IfcAirTerminal" client="cl_Pset_AirTerminalOccurrence" supplier="cl_IfcAirTerminal"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_AirTerminalPHistory" name="Pset_AirTerminalPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_AirTerminalPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -2191,7 +2188,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLinearVelocityMeasureIfcLengthMeasure_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirTerminalPHistory_IfcAirTerminal" client="cl_Pset_AirTerminalPHistory" supplier="cl_IfcAirTerminal"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_AirTerminalTypeCommon" name="Pset_AirTerminalTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_AirTerminalTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2414,7 +2410,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcVolumetricFlowRateMeasureIfcPositiveRatioMeasure_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirTerminalTypeCommon_IfcAirTerminal" client="cl_Pset_AirTerminalTypeCommon" supplier="cl_IfcAirTerminal"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_AirToAirHeatRecoveryPHistory" name="Pset_AirToAirHeatRecoveryPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_AirToAirHeatRecoveryPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -2475,7 +2470,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_AirToAirHeatRecoveryPHistory_AirPressureDropCurves_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirToAirHeatRecoveryPHistory_IfcAirToAirHeatRecovery" client="cl_Pset_AirToAirHeatRecoveryPHistory" supplier="cl_IfcAirToAirHeatRecovery"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_AirToAirHeatRecoveryTypeCommon" name="Pset_AirToAirHeatRecoveryTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_AirToAirHeatRecoveryTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2531,7 +2525,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AirToAirHeatTransferHeatTransferType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AirToAirHeatTransferHeatTransferType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirToAirHeatRecoveryTypeCommon_IfcAirToAirHeatRecovery" client="cl_Pset_AirToAirHeatRecoveryTypeCommon" supplier="cl_IfcAirToAirHeatRecovery"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BoilerPHistory" name="Pset_BoilerPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BoilerPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -2582,7 +2575,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_BoilerPHistory_AuxiliaryEnergyConsumption_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BoilerPHistory_IfcBoiler" client="cl_Pset_BoilerPHistory" supplier="cl_IfcBoiler"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BoilerTypeCommon" name="Pset_BoilerTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BoilerTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2683,7 +2675,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositiveRatioMeasureIfcNormalisedRatioMeasure_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BoilerTypeCommon_IfcBoiler" client="cl_Pset_BoilerTypeCommon" supplier="cl_IfcBoiler"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BoilerTypeSteam" name="Pset_BoilerTypeSteam">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BoilerTypeSteam_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2732,7 +2723,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcThermodynamicTemperatureMeasureIfcEnergyMeasure_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BoilerTypeSteam_IfcBoilerTypeEnum.STEAM" client="cl_Pset_BoilerTypeSteam" supplier="cl_IfcBoilerTypeEnum_STEAM"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BoilerTypeWater" name="Pset_BoilerTypeWater">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BoilerTypeWater_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2746,7 +2736,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_BoilerTypeWater_HeatOutput_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BoilerTypeWater_IfcBoilerTypeEnum.WATER" client="cl_Pset_BoilerTypeWater" supplier="cl_IfcBoilerTypeEnum_WATER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BurnerTypeCommon" name="Pset_BurnerTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BurnerTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2767,7 +2756,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_BurnerTypeCommon_EnergySource_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BurnerTypeCommon_IfcBurner" client="cl_Pset_BurnerTypeCommon" supplier="cl_IfcBurner"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ChillerPHistory" name="Pset_ChillerPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ChillerPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -2788,7 +2776,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ChillerPHistory_CoefficientOfPerformance_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ChillerPHistory_IfcChiller" client="cl_Pset_ChillerPHistory" supplier="cl_IfcChiller"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ChillerTypeCommon" name="Pset_ChillerTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ChillerTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2876,7 +2863,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcThermodynamicTemperatureMeasureIfcReal_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ChillerTypeCommon_IfcChiller" client="cl_Pset_ChillerTypeCommon" supplier="cl_IfcChiller"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CoilOccurrence" name="Pset_CoilOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CoilOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -2887,7 +2873,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CoilOccurrence_HasSoundAttenuation_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoilOccurrence_IfcCoil" client="cl_Pset_CoilOccurrence" supplier="cl_IfcCoil"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CoilPHistory" name="Pset_CoilPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CoilPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -2913,7 +2898,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CoilPHistory_FaceVelocity_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoilPHistory_IfcCoil" client="cl_Pset_CoilPHistory" supplier="cl_IfcCoil"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CoilTypeCommon" name="Pset_CoilTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CoilTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2972,7 +2956,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CoilPlacementType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CoilPlacementType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoilTypeCommon_IfcCoil" client="cl_Pset_CoilTypeCommon" supplier="cl_IfcCoil"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CoilTypeHydronic" name="Pset_CoilTypeHydronic">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CoilTypeHydronic_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3094,7 +3077,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcVolumetricFlowRateMeasureIfcPressureMeasure_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoilTypeHydronic_IfcCoil" client="cl_Pset_CoilTypeHydronic" supplier="cl_IfcCoil"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CompressorPHistory" name="Pset_CompressorPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CompressorPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -3170,7 +3152,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CompressorPHistory_FullLoadRatio_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CompressorPHistory_IfcCompressor" client="cl_Pset_CompressorPHistory" supplier="cl_IfcCompressor"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CompressorTypeCommon" name="Pset_CompressorTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CompressorTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3243,7 +3224,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CompressorTypePowerSource_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CompressorTypePowerSource_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CompressorTypeCommon_IfcCompressor" client="cl_Pset_CompressorTypeCommon" supplier="cl_IfcCompressor"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CondenserPHistory" name="Pset_CondenserPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CondenserPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -3304,7 +3284,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CondenserPHistory_WaterFoulingResistance_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CondenserPHistory_IfcCondenser" client="cl_Pset_CondenserPHistory" supplier="cl_IfcCondenser"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CondenserTypeCommon" name="Pset_CondenserTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CondenserTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3355,7 +3334,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CondenserTypeCommon_NominalHeatTransferCoefficient_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CondenserTypeCommon_IfcCondenser" client="cl_Pset_CondenserTypeCommon" supplier="cl_IfcCondenser"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CooledBeamPHistory" name="Pset_CooledBeamPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CooledBeamPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -3426,7 +3404,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CooledBeamPHistory_ReturnWaterTemperatureHeating_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CooledBeamPHistory_IfcCooledBeam" client="cl_Pset_CooledBeamPHistory" supplier="cl_IfcCooledBeam"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CooledBeamPHistoryActive" name="Pset_CooledBeamPHistoryActive">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CooledBeamPHistoryActive_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -3447,7 +3424,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CooledBeamPHistoryActive_AirPressureDropCurves_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CooledBeamPHistoryActive_IfcCooledBeamTypeEnum.ACTIVE" client="cl_Pset_CooledBeamPHistoryActive" supplier="cl_IfcCooledBeamTypeEnum_ACTIVE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CooledBeamTypeActive" name="Pset_CooledBeamTypeActive">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CooledBeamTypeActive_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3491,7 +3467,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CooledBeamSupplyAirConnectionType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CooledBeamSupplyAirConnectionType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CooledBeamTypeActive_IfcCooledBeamTypeEnum.ACTIVE" client="cl_Pset_CooledBeamTypeActive" supplier="cl_IfcCooledBeamTypeEnum_ACTIVE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CooledBeamTypeCommon" name="Pset_CooledBeamTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CooledBeamTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3629,7 +3604,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CooledBeamIntegratedLightingType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CooledBeamIntegratedLightingType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CooledBeamTypeCommon_IfcCooledBeam" client="cl_Pset_CooledBeamTypeCommon" supplier="cl_IfcCooledBeam"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CoolingTowerPHistory" name="Pset_CoolingTowerPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CoolingTowerPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -3660,7 +3634,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CoolingTowerPHistory_Performance_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoolingTowerPHistory_IfcCoolingTower" client="cl_Pset_CoolingTowerPHistory" supplier="cl_IfcCoolingTower"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CoolingTowerTypeCommon" name="Pset_CoolingTowerTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CoolingTowerTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3781,7 +3754,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CoolingTowerControlStrategy_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CoolingTowerControlStrategy_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoolingTowerTypeCommon_IfcCoolingTower" client="cl_Pset_CoolingTowerTypeCommon" supplier="cl_IfcCoolingTower"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DamperOccurrence" name="Pset_DamperOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DamperOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -3797,7 +3769,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DamperSizingMethod_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DamperSizingMethod_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperOccurrence_IfcDamper" client="cl_Pset_DamperOccurrence" supplier="cl_IfcDamper"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DamperPHistory" name="Pset_DamperPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DamperPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -3833,7 +3804,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DamperPHistory_PressureLossCoefficient_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperPHistory_IfcDamper" client="cl_Pset_DamperPHistory" supplier="cl_IfcDamper"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DamperTypeCommon" name="Pset_DamperTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DamperTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4023,7 +3993,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcVolumetricFlowRateMeasureIfcSoundPressureMeasure_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperTypeCommon_IfcDamper" client="cl_Pset_DamperTypeCommon" supplier="cl_IfcDamper"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DamperTypeControlDamper" name="Pset_DamperTypeControlDamper">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DamperTypeControlDamper_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4048,7 +4017,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ControlDamperOperation_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ControlDamperOperation_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperTypeControlDamper_IfcDamperTypeEnum.CONTROLDAMPER" client="cl_Pset_DamperTypeControlDamper" supplier="cl_IfcDamperTypeEnum_CONTROLDAMPER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DamperTypeFireDamper" name="Pset_DamperTypeFireDamper">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DamperTypeFireDamper_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4074,7 +4042,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DamperTypeFireDamper_FusibleLinkTemperature_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperTypeFireDamper_IfcDamperTypeEnum.FIREDAMPER" client="cl_Pset_DamperTypeFireDamper" supplier="cl_IfcDamperTypeEnum_FIREDAMPER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DamperTypeFireSmokeDamper" name="Pset_DamperTypeFireSmokeDamper">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DamperTypeFireSmokeDamper_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4105,7 +4072,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DamperTypeFireSmokeDamper_FusibleLinkTemperature_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperTypeFireSmokeDamper_IfcDamperTypeEnum.FIRESMOKEDAMPER" client="cl_Pset_DamperTypeFireSmokeDamper" supplier="cl_IfcDamperTypeEnum_FIRESMOKEDAMPER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DamperTypeSmokeDamper" name="Pset_DamperTypeSmokeDamper">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DamperTypeSmokeDamper_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4116,7 +4082,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DamperTypeSmokeDamper_ControlType_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperTypeSmokeDamper_IfcDamperTypeEnum.SMOKEDAMPER" client="cl_Pset_DamperTypeSmokeDamper" supplier="cl_IfcDamperTypeEnum_SMOKEDAMPER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DuctFittingOccurrence" name="Pset_DuctFittingOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DuctFittingOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -4137,7 +4102,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DuctFittingOccurrence_Colour_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctFittingOccurrence_IfcDuctFitting" client="cl_Pset_DuctFittingOccurrence" supplier="cl_IfcDuctFitting"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DuctFittingPHistory" name="Pset_DuctFittingPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DuctFittingPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -4158,7 +4122,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DuctFittingPHistory_AirFlowLeakage_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctFittingPHistory_IfcDuctFitting" client="cl_Pset_DuctFittingPHistory" supplier="cl_IfcDuctFitting"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DuctFittingTypeCommon" name="Pset_DuctFittingTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DuctFittingTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4195,7 +4158,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DuctFittingTypeCommon_TemperatureRange_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctFittingTypeCommon_IfcDuctFitting" client="cl_Pset_DuctFittingTypeCommon" supplier="cl_IfcDuctFitting"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DuctSegmentOccurrence" name="Pset_DuctSegmentOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DuctSegmentOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -4216,7 +4178,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DuctSegmentOccurrence_Colour_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctSegmentOccurrence_IfcDuctSegment" client="cl_Pset_DuctSegmentOccurrence" supplier="cl_IfcDuctSegment"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DuctSegmentPHistory" name="Pset_DuctSegmentPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DuctSegmentPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -4242,7 +4203,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DuctSegmentPHistory_FluidFlowLeakage_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctSegmentPHistory_IfcDuctSegment" client="cl_Pset_DuctSegmentPHistory" supplier="cl_IfcDuctSegment"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DuctSegmentTypeCommon" name="Pset_DuctSegmentTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DuctSegmentTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4316,7 +4276,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DuctSegmentShape_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DuctSegmentShape_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctSegmentTypeCommon_IfcDuctSegment" client="cl_Pset_DuctSegmentTypeCommon" supplier="cl_IfcDuctSegment"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DuctSilencerPHistory" name="Pset_DuctSilencerPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DuctSilencerPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -4332,7 +4291,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DuctSilencerPHistory_AirPressureDropCurve_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctSilencerPHistory_IfcDuctSilencer" client="cl_Pset_DuctSilencerPHistory" supplier="cl_IfcDuctSilencer"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DuctSilencerTypeCommon" name="Pset_DuctSilencerTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DuctSilencerTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4392,7 +4350,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DuctSilencerTypeCommon_HasExteriorInsulation_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctSilencerTypeCommon_IfcDuctSilencer" client="cl_Pset_DuctSilencerTypeCommon" supplier="cl_IfcDuctSilencer"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementSize" name="Pset_ElementSize">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementSize_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4412,27 +4369,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementSize_NominalHeight_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementSize_NominalHeight_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcDistributionChamberElement" client="cl_Pset_ElementSize">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcDistributionChamberElement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcEnergyConversionDevice" client="cl_Pset_ElementSize">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcEnergyConversionDevice"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcFlowController" client="cl_Pset_ElementSize">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcFlowController"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcFlowMovingDevice" client="cl_Pset_ElementSize">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcFlowMovingDevice"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcFlowStorageDevice" client="cl_Pset_ElementSize">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcFlowStorageDevice"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcFlowTerminal" client="cl_Pset_ElementSize">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcFlowTerminal"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcFlowTreatmentDevice" client="cl_Pset_ElementSize">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcFlowTreatmentDevice"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_EngineTypeCommon" name="Pset_EngineTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_EngineTypeCommon_comment_0">
@@ -4466,7 +4402,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EngineEnergySource_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EngineEnergySource_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EngineTypeCommon_IfcEngine" client="cl_Pset_EngineTypeCommon" supplier="cl_IfcEngine"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_EvaporativeCoolerPHistory" name="Pset_EvaporativeCoolerPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_EvaporativeCoolerPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -4497,7 +4432,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EvaporativeCoolerPHistory_TotalHeatTransferRate_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EvaporativeCoolerPHistory_IfcEvaporativeCooler" client="cl_Pset_EvaporativeCoolerPHistory" supplier="cl_IfcEvaporativeCooler"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_EvaporativeCoolerTypeCommon" name="Pset_EvaporativeCoolerTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_EvaporativeCoolerTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4570,7 +4504,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcVolumetricFlowRateMeasureIfcReal_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EvaporativeCoolerTypeCommon_IfcEvaporativeCooler" client="cl_Pset_EvaporativeCoolerTypeCommon" supplier="cl_IfcEvaporativeCooler"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_EvaporatorPHistory" name="Pset_EvaporatorPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_EvaporatorPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -4631,7 +4564,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EvaporatorPHistory_WaterFoulingResistance_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EvaporatorPHistory_IfcEvaporator" client="cl_Pset_EvaporatorPHistory" supplier="cl_IfcEvaporator"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_EvaporatorTypeCommon" name="Pset_EvaporatorTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_EvaporatorTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4705,7 +4637,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EvaporatorCoolant_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EvaporatorCoolant_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EvaporatorTypeCommon_IfcEvaporator" client="cl_Pset_EvaporatorTypeCommon" supplier="cl_IfcEvaporator"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FanCentrifugal" name="Pset_FanCentrifugal">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FanCentrifugal_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4756,10 +4687,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CentrifugalFanArrangement_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CentrifugalFanArrangement_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanCentrifugal_IfcFanTypeEnum.CENTRIFUGALAIRFOIL" client="cl_Pset_FanCentrifugal" supplier="cl_IfcFanTypeEnum_CENTRIFUGALAIRFOIL"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanCentrifugal_IfcFanTypeEnum.CENTRIFUGALBACKWARDINCLINEDCURVED" client="cl_Pset_FanCentrifugal" supplier="cl_IfcFanTypeEnum_CENTRIFUGALBACKWARDINCLINEDCURVED"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanCentrifugal_IfcFanTypeEnum.CENTRIFUGALFORWARDCURVED" client="cl_Pset_FanCentrifugal" supplier="cl_IfcFanTypeEnum_CENTRIFUGALFORWARDCURVED"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanCentrifugal_IfcFanTypeEnum.CENTRIFUGALRADIAL" client="cl_Pset_FanCentrifugal" supplier="cl_IfcFanTypeEnum_CENTRIFUGALRADIAL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FanOccurrence" name="Pset_FanOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FanOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -4838,7 +4765,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FanMountingType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FanMountingType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanOccurrence_IfcFan" client="cl_Pset_FanOccurrence" supplier="cl_IfcFan"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FanPHistory" name="Pset_FanPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FanPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -4889,7 +4815,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FanPHistory_DrivePowerLoss_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanPHistory_IfcFan" client="cl_Pset_FanPHistory" supplier="cl_IfcFan"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FanTypeCommon" name="Pset_FanTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FanTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4992,7 +4917,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcVolumetricFlowRateMeasureIfcNormalisedRatioMeasure_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanTypeCommon_IfcFan" client="cl_Pset_FanTypeCommon" supplier="cl_IfcFan"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FilterPHistory" name="Pset_FilterPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FilterPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -5013,7 +4937,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FilterPHistory_ParticleMassHolding_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FilterPHistory_IfcFilter" client="cl_Pset_FilterPHistory" supplier="cl_IfcFilter"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FilterTypeAirParticleFilter" name="Pset_FilterTypeAirParticleFilter">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FilterTypeAirParticleFilter_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5109,7 +5032,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMassMeasureIfcReal_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FilterTypeAirParticleFilter_IfcFilterTypeEnum.AIRPARTICLEFILTER" client="cl_Pset_FilterTypeAirParticleFilter" supplier="cl_IfcFilterTypeEnum_AIRPARTICLEFILTER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FilterTypeCommon" name="Pset_FilterTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FilterTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5186,7 +5108,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FilterTypeCommon_NominalParticleGeometricStandardDeviation_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FilterTypeCommon_IfcFilter" client="cl_Pset_FilterTypeCommon" supplier="cl_IfcFilter"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FilterTypeCompressedAirFilter" name="Pset_FilterTypeCompressedAirFilter">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FilterTypeCompressedAirFilter_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5238,7 +5159,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositiveLengthMeasureIfcPositiveRatioMeasure_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FilterTypeCompressedAirFilter_IfcFilterTypeEnum.COMPRESSEDAIRFILTER" client="cl_Pset_FilterTypeCompressedAirFilter" supplier="cl_IfcFilterTypeEnum_COMPRESSEDAIRFILTER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FilterTypeWaterFilter" name="Pset_FilterTypeWaterFilter">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FilterTypeWaterFilter_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5258,7 +5178,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FilterWaterFilterType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FilterWaterFilterType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FilterTypeWaterFilter_IfcFilterTypeEnum.WATERFILTER" client="cl_Pset_FilterTypeWaterFilter" supplier="cl_IfcFilterTypeEnum_WATERFILTER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FittingBend" name="Pset_FittingBend">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FittingBend_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5274,11 +5193,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FittingBend_BendRadius_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingBend_IfcCableCarrierFittingTypeEnum.BEND" client="cl_Pset_FittingBend">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierFittingTypeEnum_BEND"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingBend_IfcDuctFittingTypeEnum.BEND" client="cl_Pset_FittingBend" supplier="cl_IfcDuctFittingTypeEnum_BEND"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingBend_IfcPipeFittingTypeEnum.BEND" client="cl_Pset_FittingBend" supplier="cl_IfcPipeFittingTypeEnum_BEND"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FittingJunction" name="Pset_FittingJunction">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FittingJunction_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5315,14 +5229,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FittingJunctionType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FittingJunctionType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingJunction_IfcCableFittingTypeEnum.JUNCTION" client="cl_Pset_FittingJunction">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableFittingTypeEnum_JUNCTION"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingJunction_IfcDuctFittingTypeEnum.JUNCTION" client="cl_Pset_FittingJunction" supplier="cl_IfcDuctFittingTypeEnum_JUNCTION"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingJunction_IfcPipeFittingTypeEnum.JUNCTION" client="cl_Pset_FittingJunction" supplier="cl_IfcPipeFittingTypeEnum_JUNCTION"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingJunction_IfcCableCarrierFittingTypeEnum.JUNCTION" client="cl_Pset_FittingJunction">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierFittingTypeEnum_JUNCTION"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FittingTransition" name="Pset_FittingTransition">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FittingTransition_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5343,14 +5249,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FittingTransition_EccentricityInZ_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingTransition_IfcCableFittingTypeEnum.TRANSITION" client="cl_Pset_FittingTransition">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableFittingTypeEnum_TRANSITION"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingTransition_IfcDuctFittingTypeEnum.TRANSITION" client="cl_Pset_FittingTransition" supplier="cl_IfcDuctFittingTypeEnum_TRANSITION"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingTransition_IfcPipeFittingTypeEnum.TRANSITION" client="cl_Pset_FittingTransition" supplier="cl_IfcPipeFittingTypeEnum_TRANSITION"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingTransition_IfcCableCarrierFittingTypeEnum.TRANSITION" client="cl_Pset_FittingTransition">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierFittingTypeEnum_TRANSITION"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FlowMeterOccurrence" name="Pset_FlowMeterOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FlowMeterOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -5368,7 +5266,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FlowMeterPurpose_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FlowMeterPurpose_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FlowMeterOccurrence_IfcFlowMeter" client="cl_Pset_FlowMeterOccurrence" supplier="cl_IfcFlowMeter"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FlowMeterTypeCommon" name="Pset_FlowMeterTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FlowMeterTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5400,7 +5297,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MeterReadOutType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MeterReadOutType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FlowMeterTypeCommon_IfcFlowMeter" client="cl_Pset_FlowMeterTypeCommon" supplier="cl_IfcFlowMeter"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FlowMeterTypeEnergyMeter" name="Pset_FlowMeterTypeEnergyMeter">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FlowMeterTypeEnergyMeter_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5421,7 +5317,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FlowMeterTypeEnergyMeter_MultipleTarriff_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FlowMeterTypeEnergyMeter_IfcFlowMeterTypeEnum.ENERGYMETER" client="cl_Pset_FlowMeterTypeEnergyMeter" supplier="cl_IfcFlowMeterTypeEnum_ENERGYMETER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FlowMeterTypeGasMeter" name="Pset_FlowMeterTypeGasMeter">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FlowMeterTypeGasMeter_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5455,7 +5350,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GasType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GasType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FlowMeterTypeGasMeter_IfcFlowMeterTypeEnum.GASMETER" client="cl_Pset_FlowMeterTypeGasMeter" supplier="cl_IfcFlowMeterTypeEnum_GASMETER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FlowMeterTypeOilMeter" name="Pset_FlowMeterTypeOilMeter">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FlowMeterTypeOilMeter_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5471,7 +5365,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FlowMeterTypeOilMeter_MaximumFlowRate_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FlowMeterTypeOilMeter_IfcFlowMeterTypeEnum.OILMETER" client="cl_Pset_FlowMeterTypeOilMeter" supplier="cl_IfcFlowMeterTypeEnum_OILMETER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FlowMeterTypeWaterMeter" name="Pset_FlowMeterTypeWaterMeter">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FlowMeterTypeWaterMeter_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5519,7 +5412,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackflowPreventerType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BackflowPreventerType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FlowMeterTypeWaterMeter_IfcFlowMeterTypeEnum.WATERMETER" client="cl_Pset_FlowMeterTypeWaterMeter" supplier="cl_IfcFlowMeterTypeEnum_WATERMETER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_HeatExchangerTypeCommon" name="Pset_HeatExchangerTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_HeatExchangerTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5548,7 +5440,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_HeatExchangerArrangement_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_HeatExchangerArrangement_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_HeatExchangerTypeCommon_IfcHeatExchanger" client="cl_Pset_HeatExchangerTypeCommon" supplier="cl_IfcHeatExchanger"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_HeatExchangerTypePlate" name="Pset_HeatExchangerTypePlate">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_HeatExchangerTypePlate_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5559,7 +5450,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_HeatExchangerTypePlate_NumberOfPlates_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_HeatExchangerTypePlate_IfcHeatExchangerTypeEnum.PLATE" client="cl_Pset_HeatExchangerTypePlate" supplier="cl_IfcHeatExchangerTypeEnum_PLATE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_HumidifierPHistory" name="Pset_HumidifierPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_HumidifierPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -5575,7 +5465,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_HumidifierPHistory_SaturationEfficiency_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_HumidifierPHistory_IfcHumidifier" client="cl_Pset_HumidifierPHistory" supplier="cl_IfcHumidifier"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_HumidifierTypeCommon" name="Pset_HumidifierTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_HumidifierTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5643,7 +5532,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_HumidifierInternalControl_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_HumidifierInternalControl_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_HumidifierTypeCommon_IfcHumidifier" client="cl_Pset_HumidifierTypeCommon" supplier="cl_IfcHumidifier"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MedicalDeviceTypeCommon" name="Pset_MedicalDeviceTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MedicalDeviceTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5659,7 +5547,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MedicalDeviceTypeCommon_Status_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MedicalDeviceTypeCommon_IfcMedicalDevice" client="cl_Pset_MedicalDeviceTypeCommon" supplier="cl_IfcMedicalDevice"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PipeConnectionFlanged" name="Pset_PipeConnectionFlanged">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PipeConnectionFlanged_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5705,7 +5592,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PipeConnectionFlanged_BoltholePitch_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeConnectionFlanged_IfcPipeSegment" client="cl_Pset_PipeConnectionFlanged" supplier="cl_IfcPipeSegment"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PipeFittingOccurrence" name="Pset_PipeFittingOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PipeFittingOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -5721,7 +5607,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PipeFittingOccurrence_Colour_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeFittingOccurrence_IfcPipeFitting" client="cl_Pset_PipeFittingOccurrence" supplier="cl_IfcPipeFitting"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PipeFittingPHistory" name="Pset_PipeFittingPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PipeFittingPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -5737,7 +5622,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PipeFittingPHistory_FlowrateLeakage_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeFittingPHistory_IfcPipeFitting" client="cl_Pset_PipeFittingPHistory" supplier="cl_IfcPipeFitting"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PipeFittingTypeCommon" name="Pset_PipeFittingTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PipeFittingTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5779,7 +5663,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PipeFittingTypeCommon_FittingLossFactor_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeFittingTypeCommon_IfcPipeFitting" client="cl_Pset_PipeFittingTypeCommon" supplier="cl_IfcPipeFitting"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PipeSegmentOccurrence" name="Pset_PipeSegmentOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PipeSegmentOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -5805,7 +5688,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PipeSegmentOccurrence_InvertElevation_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeSegmentOccurrence_IfcPipeSegment" client="cl_Pset_PipeSegmentOccurrence" supplier="cl_IfcPipeSegment"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PipeSegmentPHistory" name="Pset_PipeSegmentPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PipeSegmentPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -5821,7 +5703,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PipeSegmentPHistory_FluidFlowLeakage_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeSegmentPHistory_IfcPipeSegment" client="cl_Pset_PipeSegmentPHistory" supplier="cl_IfcPipeSegment"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PipeSegmentTypeCommon" name="Pset_PipeSegmentTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PipeSegmentTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5878,7 +5759,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PipeSegmentTypeCommon_Length_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeSegmentTypeCommon_IfcPipeSegment" client="cl_Pset_PipeSegmentTypeCommon" supplier="cl_IfcPipeSegment"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PipeSegmentTypeCulvert" name="Pset_PipeSegmentTypeCulvert">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PipeSegmentTypeCulvert_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5894,7 +5774,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PipeSegmentTypeCulvert_ClearDepth_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeSegmentTypeCulvert_IfcPipeSegmentTypeEnum.CULVERT" client="cl_Pset_PipeSegmentTypeCulvert" supplier="cl_IfcPipeSegmentTypeEnum_CULVERT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PipeSegmentTypeGutter" name="Pset_PipeSegmentTypeGutter">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PipeSegmentTypeGutter_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5937,7 +5816,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ComplementaryWorks_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ComplementaryWorks_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeSegmentTypeGutter_IfcPipeSegmentTypeEnum.GUTTER" client="cl_Pset_PipeSegmentTypeGutter" supplier="cl_IfcPipeSegmentTypeEnum_GUTTER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PumpOccurrence" name="Pset_PumpOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PumpOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -5972,7 +5850,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PumpDriveConnectionType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PumpDriveConnectionType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PumpOccurrence_IfcPump" client="cl_Pset_PumpOccurrence" supplier="cl_IfcPump"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PumpPHistory" name="Pset_PumpPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PumpPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -6008,7 +5885,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PumpPHistory_PowerHistory_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PumpPHistory_IfcPump" client="cl_Pset_PumpPHistory" supplier="cl_IfcPump"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PumpTypeCommon" name="Pset_PumpTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PumpTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6063,7 +5939,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PumpTypeCommon_NominalRotationSpeed_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PumpTypeCommon_IfcPump" client="cl_Pset_PumpTypeCommon" supplier="cl_IfcPump"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ShadingDevicePHistory" name="Pset_ShadingDevicePHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ShadingDevicePHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -6078,9 +5953,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ShadingDevicePHistory_Azimuth_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ShadingDevicePHistory_Azimuth_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ShadingDevicePHistory_IfcShadingDevice" client="cl_Pset_ShadingDevicePHistory">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcShadingDevice"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpaceHeaterPHistory" name="Pset_SpaceHeaterPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpaceHeaterPHistory_comment_0">
@@ -6147,7 +6019,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SpaceHeaterPHistory_HeatOutputRate_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceHeaterPHistory_IfcSpaceHeater" client="cl_Pset_SpaceHeaterPHistory" supplier="cl_IfcSpaceHeater"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpaceHeaterTypeCommon" name="Pset_SpaceHeaterTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpaceHeaterTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6245,7 +6116,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_HeatTransferMedium_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_HeatTransferMedium_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceHeaterTypeCommon_IfcSpaceHeater" client="cl_Pset_SpaceHeaterTypeCommon" supplier="cl_IfcSpaceHeater"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpaceHeaterTypeConvector" name="Pset_SpaceHeaterTypeConvector">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpaceHeaterTypeConvector_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6262,7 +6132,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SpaceHeaterConvectorType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SpaceHeaterConvectorType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceHeaterTypeConvector_IfcSpaceHeaterTypeEnum.CONVECTOR" client="cl_Pset_SpaceHeaterTypeConvector" supplier="cl_IfcSpaceHeaterTypeEnum_CONVECTOR"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpaceHeaterTypeRadiator" name="Pset_SpaceHeaterTypeRadiator">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpaceHeaterTypeRadiator_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6291,7 +6160,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SpaceHeaterRadiatorType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SpaceHeaterRadiatorType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceHeaterTypeRadiator_IfcSpaceHeaterTypeEnum.RADIATOR" client="cl_Pset_SpaceHeaterTypeRadiator" supplier="cl_IfcSpaceHeaterTypeEnum_RADIATOR"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpaceThermalPHistory" name="Pset_SpaceThermalPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpaceThermalPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -6327,9 +6195,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SpaceThermalPHistory_SpaceRelativeHumidity_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceThermalPHistory_IfcSpatialElement" client="cl_Pset_SpaceThermalPHistory">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialElement"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TankOccurrence" name="Pset_TankOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TankOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -6357,7 +6222,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TankComposition_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TankComposition_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TankOccurrence_IfcTank" client="cl_Pset_TankOccurrence" supplier="cl_IfcTank"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TankTypeCommon" name="Pset_TankTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TankTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6458,7 +6322,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TankStorageType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TankStorageType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TankTypeCommon_IfcTank" client="cl_Pset_TankTypeCommon" supplier="cl_IfcTank"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TankTypeExpansion" name="Pset_TankTypeExpansion">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TankTypeExpansion_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6479,7 +6342,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_TankTypeExpansion_ReliefValveSetting_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TankTypeExpansion_IfcTankTypeEnum.EXPANSION" client="cl_Pset_TankTypeExpansion" supplier="cl_IfcTankTypeEnum_EXPANSION"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TankTypePreformed" name="Pset_TankTypePreformed">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TankTypePreformed_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6505,7 +6367,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_TankTypePreformed_SecondCurvatureRadius_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TankTypePreformed_IfcTank" client="cl_Pset_TankTypePreformed" supplier="cl_IfcTank"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TankTypePressureVessel" name="Pset_TankTypePressureVessel">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TankTypePressureVessel_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6526,7 +6387,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_TankTypePressureVessel_ReliefValveSetting_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TankTypePressureVessel_IfcTankTypeEnum.PRESSUREVESSEL" client="cl_Pset_TankTypePressureVessel" supplier="cl_IfcTankTypeEnum_PRESSUREVESSEL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TankTypeSectional" name="Pset_TankTypeSectional">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TankTypeSectional_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6547,7 +6407,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_TankTypeSectional_SectionWidth_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TankTypeSectional_IfcTank" client="cl_Pset_TankTypeSectional" supplier="cl_IfcTank"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TubeBundleTypeCommon" name="Pset_TubeBundleTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TubeBundleTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6633,7 +6492,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_TubeBundleTypeCommon_HasTurbulator_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TubeBundleTypeCommon_IfcTubeBundle" client="cl_Pset_TubeBundleTypeCommon" supplier="cl_IfcTubeBundle"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TubeBundleTypeFinned" name="Pset_TubeBundleTypeFinned">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TubeBundleTypeFinned_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6679,7 +6537,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_TubeBundleTypeFinned_HasCoating_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TubeBundleTypeFinned_IfcTubeBundleTypeEnum.FINNED" client="cl_Pset_TubeBundleTypeFinned" supplier="cl_IfcTubeBundleTypeEnum_FINNED"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_UnitaryEquipmentTypeAirConditioningUnit" name="Pset_UnitaryEquipmentTypeAirConditioningUnit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_UnitaryEquipmentTypeAirConditioningUnit_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6730,7 +6587,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_UnitaryEquipmentTypeAirConditioningUnit_OutsideAirFlowrate_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UnitaryEquipmentTypeAirConditioningUnit_IfcUnitaryEquipmentTypeEnum.AIRCONDITIONINGUNIT" client="cl_Pset_UnitaryEquipmentTypeAirConditioningUnit" supplier="cl_IfcUnitaryEquipmentTypeEnum_AIRCONDITIONINGUNIT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_UnitaryEquipmentTypeAirHandler" name="Pset_UnitaryEquipmentTypeAirHandler">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_UnitaryEquipmentTypeAirHandler_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6763,7 +6619,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AirHandlerFanCoilArrangement_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AirHandlerFanCoilArrangement_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UnitaryEquipmentTypeAirHandler_IfcUnitaryEquipmentTypeEnum.AIRHANDLER" client="cl_Pset_UnitaryEquipmentTypeAirHandler" supplier="cl_IfcUnitaryEquipmentTypeEnum_AIRHANDLER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_UnitaryEquipmentTypeCommon" name="Pset_UnitaryEquipmentTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_UnitaryEquipmentTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6779,7 +6634,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_UnitaryEquipmentTypeCommon_Status_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UnitaryEquipmentTypeCommon_IfcUnitaryEquipment" client="cl_Pset_UnitaryEquipmentTypeCommon" supplier="cl_IfcUnitaryEquipment"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ValvePHistory" name="Pset_ValvePHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ValvePHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -6800,7 +6654,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ValvePHistory_MeasuredPressureDrop_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValvePHistory_IfcValve" client="cl_Pset_ValvePHistory" supplier="cl_IfcValve"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ValveTypeAirRelease" name="Pset_ValveTypeAirRelease">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ValveTypeAirRelease_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6811,7 +6664,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ValveTypeAirRelease_IsAutomatic_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeAirRelease_IfcValveTypeEnum.AIRRELEASE" client="cl_Pset_ValveTypeAirRelease" supplier="cl_IfcValveTypeEnum_AIRRELEASE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ValveTypeCommon" name="Pset_ValveTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ValveTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6905,7 +6757,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ValveMechanism_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ValveMechanism_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeCommon_IfcValve" client="cl_Pset_ValveTypeCommon" supplier="cl_IfcValve"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ValveTypeDrawOffCock" name="Pset_ValveTypeDrawOffCock">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ValveTypeDrawOffCock_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6916,7 +6767,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ValveTypeDrawOffCock_HasHoseUnion_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeDrawOffCock_IfcValveTypeEnum.DRAWOFFCOCK" client="cl_Pset_ValveTypeDrawOffCock" supplier="cl_IfcValveTypeEnum_DRAWOFFCOCK"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ValveTypeFaucet" name="Pset_ValveTypeFaucet">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ValveTypeFaucet_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6978,7 +6828,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaucetFunction_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaucetFunction_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeFaucet_IfcValveTypeEnum.FAUCET" client="cl_Pset_ValveTypeFaucet" supplier="cl_IfcValveTypeEnum_FAUCET"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ValveTypeFlushing" name="Pset_ValveTypeFlushing">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ValveTypeFlushing_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -6999,7 +6848,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ValveTypeFlushing_IsHighPressure_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeFlushing_IfcValveTypeEnum.FLUSHING" client="cl_Pset_ValveTypeFlushing" supplier="cl_IfcValveTypeEnum_FLUSHING"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ValveTypeGasTap" name="Pset_ValveTypeGasTap">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ValveTypeGasTap_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -7010,7 +6858,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ValveTypeGasTap_HasHoseUnion_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeGasTap_IfcValveTypeEnum.GASTAP" client="cl_Pset_ValveTypeGasTap" supplier="cl_IfcValveTypeEnum_GASTAP"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ValveTypeIsolating" name="Pset_ValveTypeIsolating">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ValveTypeIsolating_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -7032,7 +6879,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_IsolatingPurpose_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_IsolatingPurpose_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeIsolating_IfcValveTypeEnum.ISOLATING" client="cl_Pset_ValveTypeIsolating" supplier="cl_IfcValveTypeEnum_ISOLATING"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ValveTypeMixing" name="Pset_ValveTypeMixing">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ValveTypeMixing_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -7055,7 +6901,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MixingValveControl_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MixingValveControl_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeMixing_IfcValveTypeEnum.MIXING" client="cl_Pset_ValveTypeMixing" supplier="cl_IfcValveTypeEnum_MIXING"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ValveTypePressureReducing" name="Pset_ValveTypePressureReducing">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ValveTypePressureReducing_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -7071,7 +6916,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ValveTypePressureReducing_DownstreamPressure_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypePressureReducing_IfcValveTypeEnum.PRESSUREREDUCING" client="cl_Pset_ValveTypePressureReducing" supplier="cl_IfcValveTypeEnum_PRESSUREREDUCING"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ValveTypePressureRelief" name="Pset_ValveTypePressureRelief">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ValveTypePressureRelief_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -7082,7 +6926,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ValveTypePressureRelief_ReliefPressure_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypePressureRelief_IfcValveTypeEnum.PRESSURERELIEF" client="cl_Pset_ValveTypePressureRelief" supplier="cl_IfcValveTypeEnum_PRESSURERELIEF"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_VibrationIsolatorTypeCommon" name="Pset_VibrationIsolatorTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_VibrationIsolatorTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -7123,7 +6966,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_VibrationIsolatorTypeCommon_NominalHeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VibrationIsolatorTypeCommon_IfcVibrationIsolator" client="cl_Pset_VibrationIsolatorTypeCommon" supplier="cl_IfcVibrationIsolator"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_AirTerminalBaseQuantities" name="Qto_AirTerminalBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_AirTerminalBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7144,7 +6986,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_AirTerminalBaseQuantities_TotalSurfaceArea_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_AirTerminalBaseQuantities_IfcAirTerminal" client="cl_Qto_AirTerminalBaseQuantities" supplier="cl_IfcAirTerminal"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_AirTerminalBoxTypeBaseQuantities" name="Qto_AirTerminalBoxTypeBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_AirTerminalBoxTypeBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7155,7 +6996,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_AirTerminalBoxTypeBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_AirTerminalBoxTypeBaseQuantities_IfcAirTerminalBox" client="cl_Qto_AirTerminalBoxTypeBaseQuantities" supplier="cl_IfcAirTerminalBox"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_AirToAirHeatRecoveryBaseQuantities" name="Qto_AirToAirHeatRecoveryBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_AirToAirHeatRecoveryBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7166,7 +7006,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_AirToAirHeatRecoveryBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_AirToAirHeatRecoveryBaseQuantities_IfcAirToAirHeatRecovery" client="cl_Qto_AirToAirHeatRecoveryBaseQuantities" supplier="cl_IfcAirToAirHeatRecovery"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_BoilerBaseQuantities" name="Qto_BoilerBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_BoilerBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7187,7 +7026,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BoilerBaseQuantities_TotalSurfaceArea_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_BoilerBaseQuantities_IfcBoiler" client="cl_Qto_BoilerBaseQuantities" supplier="cl_IfcBoiler"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_BurnerBaseQuantities" name="Qto_BurnerBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_BurnerBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7198,7 +7036,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BurnerBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_BurnerBaseQuantities_IfcBurner" client="cl_Qto_BurnerBaseQuantities" supplier="cl_IfcBurner"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ChillerBaseQuantities" name="Qto_ChillerBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ChillerBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7209,7 +7046,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ChillerBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ChillerBaseQuantities_IfcChiller" client="cl_Qto_ChillerBaseQuantities" supplier="cl_IfcChiller"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_CoilBaseQuantities" name="Qto_CoilBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_CoilBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7220,7 +7056,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_CoilBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CoilBaseQuantities_IfcCoil" client="cl_Qto_CoilBaseQuantities" supplier="cl_IfcCoil"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_CompressorBaseQuantities" name="Qto_CompressorBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_CompressorBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7231,7 +7066,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_CompressorBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CompressorBaseQuantities_IfcCompressor" client="cl_Qto_CompressorBaseQuantities" supplier="cl_IfcCompressor"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_CondenserBaseQuantities" name="Qto_CondenserBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_CondenserBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7242,7 +7076,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_CondenserBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CondenserBaseQuantities_IfcCondenser" client="cl_Qto_CondenserBaseQuantities" supplier="cl_IfcCondenser"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_CooledBeamBaseQuantities" name="Qto_CooledBeamBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_CooledBeamBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7253,7 +7086,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_CooledBeamBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CooledBeamBaseQuantities_IfcCooledBeam" client="cl_Qto_CooledBeamBaseQuantities" supplier="cl_IfcCooledBeam"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_CoolingTowerBaseQuantities" name="Qto_CoolingTowerBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_CoolingTowerBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7264,7 +7096,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_CoolingTowerBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CoolingTowerBaseQuantities_IfcCoolingTower" client="cl_Qto_CoolingTowerBaseQuantities" supplier="cl_IfcCoolingTower"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_DamperBaseQuantities" name="Qto_DamperBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_DamperBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7275,7 +7106,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_DamperBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_DamperBaseQuantities_IfcDamper" client="cl_Qto_DamperBaseQuantities" supplier="cl_IfcDamper"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_DuctFittingBaseQuantities" name="Qto_DuctFittingBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_DuctFittingBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7306,7 +7136,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_DuctFittingBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_DuctFittingBaseQuantities_IfcDuctFitting" client="cl_Qto_DuctFittingBaseQuantities" supplier="cl_IfcDuctFitting"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_DuctSegmentBaseQuantities" name="Qto_DuctSegmentBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_DuctSegmentBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7337,7 +7166,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_DuctSegmentBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_DuctSegmentBaseQuantities_IfcDuctSegment" client="cl_Qto_DuctSegmentBaseQuantities" supplier="cl_IfcDuctSegment"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_DuctSilencerBaseQuantities" name="Qto_DuctSilencerBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_DuctSilencerBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7348,7 +7176,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_DuctSilencerBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_DuctSilencerBaseQuantities_IfcDuctSilencer" client="cl_Qto_DuctSilencerBaseQuantities" supplier="cl_IfcDuctSilencer"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_EvaporativeCoolerBaseQuantities" name="Qto_EvaporativeCoolerBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_EvaporativeCoolerBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7359,7 +7186,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_EvaporativeCoolerBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_EvaporativeCoolerBaseQuantities_IfcEvaporativeCooler" client="cl_Qto_EvaporativeCoolerBaseQuantities" supplier="cl_IfcEvaporativeCooler"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_EvaporatorBaseQuantities" name="Qto_EvaporatorBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_EvaporatorBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7370,7 +7196,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_EvaporatorBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_EvaporatorBaseQuantities_IfcEvaporator" client="cl_Qto_EvaporatorBaseQuantities" supplier="cl_IfcEvaporator"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_FanBaseQuantities" name="Qto_FanBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_FanBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7381,7 +7206,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_FanBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FanBaseQuantities_IfcFan" client="cl_Qto_FanBaseQuantities" supplier="cl_IfcFan"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_FilterBaseQuantities" name="Qto_FilterBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_FilterBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7392,7 +7216,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_FilterBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FilterBaseQuantities_IfcFilter" client="cl_Qto_FilterBaseQuantities" supplier="cl_IfcFilter"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_FlowMeterBaseQuantities" name="Qto_FlowMeterBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_FlowMeterBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7403,7 +7226,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_FlowMeterBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FlowMeterBaseQuantities_IfcFlowMeter" client="cl_Qto_FlowMeterBaseQuantities" supplier="cl_IfcFlowMeter"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_HeatExchangerBaseQuantities" name="Qto_HeatExchangerBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_HeatExchangerBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7414,7 +7236,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_HeatExchangerBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_HeatExchangerBaseQuantities_IfcHeatExchanger" client="cl_Qto_HeatExchangerBaseQuantities" supplier="cl_IfcHeatExchanger"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_HumidifierBaseQuantities" name="Qto_HumidifierBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_HumidifierBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7425,7 +7246,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_HumidifierBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_HumidifierBaseQuantities_IfcHumidifier" client="cl_Qto_HumidifierBaseQuantities" supplier="cl_IfcHumidifier"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_PipeFittingBaseQuantities" name="Qto_PipeFittingBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_PipeFittingBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7461,7 +7281,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_PipeFittingBaseQuantities_NetWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PipeFittingBaseQuantities_IfcPipeFitting" client="cl_Qto_PipeFittingBaseQuantities" supplier="cl_IfcPipeFitting"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_PipeSegmentBaseQuantities" name="Qto_PipeSegmentBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_PipeSegmentBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7502,7 +7321,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_PipeSegmentBaseQuantities_FootPrintArea_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PipeSegmentBaseQuantities_IfcPipeSegment" client="cl_Qto_PipeSegmentBaseQuantities" supplier="cl_IfcPipeSegment"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_PumpBaseQuantities" name="Qto_PumpBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_PumpBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7513,7 +7331,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_PumpBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PumpBaseQuantities_IfcPump" client="cl_Qto_PumpBaseQuantities" supplier="cl_IfcPump"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_SpaceHeaterBaseQuantities" name="Qto_SpaceHeaterBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_SpaceHeaterBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7534,7 +7351,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_SpaceHeaterBaseQuantities_NetWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SpaceHeaterBaseQuantities_IfcSpaceHeater" client="cl_Qto_SpaceHeaterBaseQuantities" supplier="cl_IfcSpaceHeater"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_TankBaseQuantities" name="Qto_TankBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_TankBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7555,7 +7371,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_TankBaseQuantities_TotalSurfaceArea_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_TankBaseQuantities_IfcTank" client="cl_Qto_TankBaseQuantities" supplier="cl_IfcTank"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_TubeBundleBaseQuantities" name="Qto_TubeBundleBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_TubeBundleBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7571,7 +7386,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_TubeBundleBaseQuantities_NetWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_TubeBundleBaseQuantities_IfcTubeBundle" client="cl_Qto_TubeBundleBaseQuantities" supplier="cl_IfcTubeBundle"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_UnitaryEquipmentBaseQuantities" name="Qto_UnitaryEquipmentBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_UnitaryEquipmentBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7582,7 +7396,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_UnitaryEquipmentBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_UnitaryEquipmentBaseQuantities_IfcUnitaryEquipment" client="cl_Qto_UnitaryEquipmentBaseQuantities" supplier="cl_IfcUnitaryEquipment"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ValveBaseQuantities" name="Qto_ValveBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ValveBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7593,7 +7406,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ValveBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ValveBaseQuantities_IfcValve" client="cl_Qto_ValveBaseQuantities" supplier="cl_IfcValve"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_VibrationIsolatorBaseQuantities" name="Qto_VibrationIsolatorBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_VibrationIsolatorBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -7604,6 +7416,194 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_VibrationIsolatorBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirTerminalBoxPHistory_IfcAirTerminalBox" client="cl_Pset_AirTerminalBoxPHistory" supplier="cl_IfcAirTerminalBox"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirTerminalBoxTypeCommon_IfcAirTerminalBox" client="cl_Pset_AirTerminalBoxTypeCommon" supplier="cl_IfcAirTerminalBox"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirTerminalOccurrence_IfcAirTerminal" client="cl_Pset_AirTerminalOccurrence" supplier="cl_IfcAirTerminal"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirTerminalPHistory_IfcAirTerminal" client="cl_Pset_AirTerminalPHistory" supplier="cl_IfcAirTerminal"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirTerminalTypeCommon_IfcAirTerminal" client="cl_Pset_AirTerminalTypeCommon" supplier="cl_IfcAirTerminal"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirToAirHeatRecoveryPHistory_IfcAirToAirHeatRecovery" client="cl_Pset_AirToAirHeatRecoveryPHistory" supplier="cl_IfcAirToAirHeatRecovery"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirToAirHeatRecoveryTypeCommon_IfcAirToAirHeatRecovery" client="cl_Pset_AirToAirHeatRecoveryTypeCommon" supplier="cl_IfcAirToAirHeatRecovery"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BoilerPHistory_IfcBoiler" client="cl_Pset_BoilerPHistory" supplier="cl_IfcBoiler"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BoilerTypeCommon_IfcBoiler" client="cl_Pset_BoilerTypeCommon" supplier="cl_IfcBoiler"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BoilerTypeSteam_IfcBoilerTypeEnum.STEAM" client="cl_Pset_BoilerTypeSteam" supplier="cl_IfcBoilerTypeEnum_STEAM"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BoilerTypeWater_IfcBoilerTypeEnum.WATER" client="cl_Pset_BoilerTypeWater" supplier="cl_IfcBoilerTypeEnum_WATER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BurnerTypeCommon_IfcBurner" client="cl_Pset_BurnerTypeCommon" supplier="cl_IfcBurner"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ChillerPHistory_IfcChiller" client="cl_Pset_ChillerPHistory" supplier="cl_IfcChiller"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ChillerTypeCommon_IfcChiller" client="cl_Pset_ChillerTypeCommon" supplier="cl_IfcChiller"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoilOccurrence_IfcCoil" client="cl_Pset_CoilOccurrence" supplier="cl_IfcCoil"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoilPHistory_IfcCoil" client="cl_Pset_CoilPHistory" supplier="cl_IfcCoil"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoilTypeCommon_IfcCoil" client="cl_Pset_CoilTypeCommon" supplier="cl_IfcCoil"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoilTypeHydronic_IfcCoil" client="cl_Pset_CoilTypeHydronic" supplier="cl_IfcCoil"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CompressorPHistory_IfcCompressor" client="cl_Pset_CompressorPHistory" supplier="cl_IfcCompressor"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CompressorTypeCommon_IfcCompressor" client="cl_Pset_CompressorTypeCommon" supplier="cl_IfcCompressor"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CondenserPHistory_IfcCondenser" client="cl_Pset_CondenserPHistory" supplier="cl_IfcCondenser"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CondenserTypeCommon_IfcCondenser" client="cl_Pset_CondenserTypeCommon" supplier="cl_IfcCondenser"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CooledBeamPHistory_IfcCooledBeam" client="cl_Pset_CooledBeamPHistory" supplier="cl_IfcCooledBeam"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CooledBeamPHistoryActive_IfcCooledBeamTypeEnum.ACTIVE" client="cl_Pset_CooledBeamPHistoryActive" supplier="cl_IfcCooledBeamTypeEnum_ACTIVE"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CooledBeamTypeActive_IfcCooledBeamTypeEnum.ACTIVE" client="cl_Pset_CooledBeamTypeActive" supplier="cl_IfcCooledBeamTypeEnum_ACTIVE"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CooledBeamTypeCommon_IfcCooledBeam" client="cl_Pset_CooledBeamTypeCommon" supplier="cl_IfcCooledBeam"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoolingTowerPHistory_IfcCoolingTower" client="cl_Pset_CoolingTowerPHistory" supplier="cl_IfcCoolingTower"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoolingTowerTypeCommon_IfcCoolingTower" client="cl_Pset_CoolingTowerTypeCommon" supplier="cl_IfcCoolingTower"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperOccurrence_IfcDamper" client="cl_Pset_DamperOccurrence" supplier="cl_IfcDamper"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperPHistory_IfcDamper" client="cl_Pset_DamperPHistory" supplier="cl_IfcDamper"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperTypeCommon_IfcDamper" client="cl_Pset_DamperTypeCommon" supplier="cl_IfcDamper"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperTypeControlDamper_IfcDamperTypeEnum.CONTROLDAMPER" client="cl_Pset_DamperTypeControlDamper" supplier="cl_IfcDamperTypeEnum_CONTROLDAMPER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperTypeFireDamper_IfcDamperTypeEnum.FIREDAMPER" client="cl_Pset_DamperTypeFireDamper" supplier="cl_IfcDamperTypeEnum_FIREDAMPER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperTypeFireSmokeDamper_IfcDamperTypeEnum.FIRESMOKEDAMPER" client="cl_Pset_DamperTypeFireSmokeDamper" supplier="cl_IfcDamperTypeEnum_FIRESMOKEDAMPER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DamperTypeSmokeDamper_IfcDamperTypeEnum.SMOKEDAMPER" client="cl_Pset_DamperTypeSmokeDamper" supplier="cl_IfcDamperTypeEnum_SMOKEDAMPER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctFittingOccurrence_IfcDuctFitting" client="cl_Pset_DuctFittingOccurrence" supplier="cl_IfcDuctFitting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctFittingPHistory_IfcDuctFitting" client="cl_Pset_DuctFittingPHistory" supplier="cl_IfcDuctFitting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctFittingTypeCommon_IfcDuctFitting" client="cl_Pset_DuctFittingTypeCommon" supplier="cl_IfcDuctFitting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctSegmentOccurrence_IfcDuctSegment" client="cl_Pset_DuctSegmentOccurrence" supplier="cl_IfcDuctSegment"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctSegmentPHistory_IfcDuctSegment" client="cl_Pset_DuctSegmentPHistory" supplier="cl_IfcDuctSegment"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctSegmentTypeCommon_IfcDuctSegment" client="cl_Pset_DuctSegmentTypeCommon" supplier="cl_IfcDuctSegment"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctSilencerPHistory_IfcDuctSilencer" client="cl_Pset_DuctSilencerPHistory" supplier="cl_IfcDuctSilencer"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DuctSilencerTypeCommon_IfcDuctSilencer" client="cl_Pset_DuctSilencerTypeCommon" supplier="cl_IfcDuctSilencer"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcDistributionChamberElement" client="cl_Pset_ElementSize">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcDistributionChamberElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcEnergyConversionDevice" client="cl_Pset_ElementSize">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcEnergyConversionDevice"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcFlowController" client="cl_Pset_ElementSize">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcFlowController"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcFlowMovingDevice" client="cl_Pset_ElementSize">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcFlowMovingDevice"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcFlowStorageDevice" client="cl_Pset_ElementSize">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcFlowStorageDevice"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcFlowTerminal" client="cl_Pset_ElementSize">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcFlowTerminal"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementSize_IfcFlowTreatmentDevice" client="cl_Pset_ElementSize">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcFlowTreatmentDevice"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EngineTypeCommon_IfcEngine" client="cl_Pset_EngineTypeCommon" supplier="cl_IfcEngine"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EvaporativeCoolerPHistory_IfcEvaporativeCooler" client="cl_Pset_EvaporativeCoolerPHistory" supplier="cl_IfcEvaporativeCooler"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EvaporativeCoolerTypeCommon_IfcEvaporativeCooler" client="cl_Pset_EvaporativeCoolerTypeCommon" supplier="cl_IfcEvaporativeCooler"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EvaporatorPHistory_IfcEvaporator" client="cl_Pset_EvaporatorPHistory" supplier="cl_IfcEvaporator"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EvaporatorTypeCommon_IfcEvaporator" client="cl_Pset_EvaporatorTypeCommon" supplier="cl_IfcEvaporator"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanCentrifugal_IfcFanTypeEnum.CENTRIFUGALAIRFOIL" client="cl_Pset_FanCentrifugal" supplier="cl_IfcFanTypeEnum_CENTRIFUGALAIRFOIL"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanCentrifugal_IfcFanTypeEnum.CENTRIFUGALBACKWARDINCLINEDCURVED" client="cl_Pset_FanCentrifugal" supplier="cl_IfcFanTypeEnum_CENTRIFUGALBACKWARDINCLINEDCURVED"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanCentrifugal_IfcFanTypeEnum.CENTRIFUGALFORWARDCURVED" client="cl_Pset_FanCentrifugal" supplier="cl_IfcFanTypeEnum_CENTRIFUGALFORWARDCURVED"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanCentrifugal_IfcFanTypeEnum.CENTRIFUGALRADIAL" client="cl_Pset_FanCentrifugal" supplier="cl_IfcFanTypeEnum_CENTRIFUGALRADIAL"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanOccurrence_IfcFan" client="cl_Pset_FanOccurrence" supplier="cl_IfcFan"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanPHistory_IfcFan" client="cl_Pset_FanPHistory" supplier="cl_IfcFan"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FanTypeCommon_IfcFan" client="cl_Pset_FanTypeCommon" supplier="cl_IfcFan"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FilterPHistory_IfcFilter" client="cl_Pset_FilterPHistory" supplier="cl_IfcFilter"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FilterTypeAirParticleFilter_IfcFilterTypeEnum.AIRPARTICLEFILTER" client="cl_Pset_FilterTypeAirParticleFilter" supplier="cl_IfcFilterTypeEnum_AIRPARTICLEFILTER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FilterTypeCommon_IfcFilter" client="cl_Pset_FilterTypeCommon" supplier="cl_IfcFilter"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FilterTypeCompressedAirFilter_IfcFilterTypeEnum.COMPRESSEDAIRFILTER" client="cl_Pset_FilterTypeCompressedAirFilter" supplier="cl_IfcFilterTypeEnum_COMPRESSEDAIRFILTER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FilterTypeWaterFilter_IfcFilterTypeEnum.WATERFILTER" client="cl_Pset_FilterTypeWaterFilter" supplier="cl_IfcFilterTypeEnum_WATERFILTER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingBend_IfcCableCarrierFittingTypeEnum.BEND" client="cl_Pset_FittingBend">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierFittingTypeEnum_BEND"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingBend_IfcDuctFittingTypeEnum.BEND" client="cl_Pset_FittingBend" supplier="cl_IfcDuctFittingTypeEnum_BEND"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingBend_IfcPipeFittingTypeEnum.BEND" client="cl_Pset_FittingBend" supplier="cl_IfcPipeFittingTypeEnum_BEND"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingJunction_IfcCableFittingTypeEnum.JUNCTION" client="cl_Pset_FittingJunction">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableFittingTypeEnum_JUNCTION"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingJunction_IfcDuctFittingTypeEnum.JUNCTION" client="cl_Pset_FittingJunction" supplier="cl_IfcDuctFittingTypeEnum_JUNCTION"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingJunction_IfcPipeFittingTypeEnum.JUNCTION" client="cl_Pset_FittingJunction" supplier="cl_IfcPipeFittingTypeEnum_JUNCTION"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingJunction_IfcCableCarrierFittingTypeEnum.JUNCTION" client="cl_Pset_FittingJunction">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierFittingTypeEnum_JUNCTION"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingTransition_IfcCableFittingTypeEnum.TRANSITION" client="cl_Pset_FittingTransition">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableFittingTypeEnum_TRANSITION"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingTransition_IfcDuctFittingTypeEnum.TRANSITION" client="cl_Pset_FittingTransition" supplier="cl_IfcDuctFittingTypeEnum_TRANSITION"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingTransition_IfcPipeFittingTypeEnum.TRANSITION" client="cl_Pset_FittingTransition" supplier="cl_IfcPipeFittingTypeEnum_TRANSITION"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FittingTransition_IfcCableCarrierFittingTypeEnum.TRANSITION" client="cl_Pset_FittingTransition">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierFittingTypeEnum_TRANSITION"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FlowMeterOccurrence_IfcFlowMeter" client="cl_Pset_FlowMeterOccurrence" supplier="cl_IfcFlowMeter"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FlowMeterTypeCommon_IfcFlowMeter" client="cl_Pset_FlowMeterTypeCommon" supplier="cl_IfcFlowMeter"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FlowMeterTypeEnergyMeter_IfcFlowMeterTypeEnum.ENERGYMETER" client="cl_Pset_FlowMeterTypeEnergyMeter" supplier="cl_IfcFlowMeterTypeEnum_ENERGYMETER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FlowMeterTypeGasMeter_IfcFlowMeterTypeEnum.GASMETER" client="cl_Pset_FlowMeterTypeGasMeter" supplier="cl_IfcFlowMeterTypeEnum_GASMETER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FlowMeterTypeOilMeter_IfcFlowMeterTypeEnum.OILMETER" client="cl_Pset_FlowMeterTypeOilMeter" supplier="cl_IfcFlowMeterTypeEnum_OILMETER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FlowMeterTypeWaterMeter_IfcFlowMeterTypeEnum.WATERMETER" client="cl_Pset_FlowMeterTypeWaterMeter" supplier="cl_IfcFlowMeterTypeEnum_WATERMETER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_HeatExchangerTypeCommon_IfcHeatExchanger" client="cl_Pset_HeatExchangerTypeCommon" supplier="cl_IfcHeatExchanger"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_HeatExchangerTypePlate_IfcHeatExchangerTypeEnum.PLATE" client="cl_Pset_HeatExchangerTypePlate" supplier="cl_IfcHeatExchangerTypeEnum_PLATE"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_HumidifierPHistory_IfcHumidifier" client="cl_Pset_HumidifierPHistory" supplier="cl_IfcHumidifier"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_HumidifierTypeCommon_IfcHumidifier" client="cl_Pset_HumidifierTypeCommon" supplier="cl_IfcHumidifier"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MedicalDeviceTypeCommon_IfcMedicalDevice" client="cl_Pset_MedicalDeviceTypeCommon" supplier="cl_IfcMedicalDevice"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeConnectionFlanged_IfcPipeSegment" client="cl_Pset_PipeConnectionFlanged" supplier="cl_IfcPipeSegment"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeFittingOccurrence_IfcPipeFitting" client="cl_Pset_PipeFittingOccurrence" supplier="cl_IfcPipeFitting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeFittingPHistory_IfcPipeFitting" client="cl_Pset_PipeFittingPHistory" supplier="cl_IfcPipeFitting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeFittingTypeCommon_IfcPipeFitting" client="cl_Pset_PipeFittingTypeCommon" supplier="cl_IfcPipeFitting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeSegmentOccurrence_IfcPipeSegment" client="cl_Pset_PipeSegmentOccurrence" supplier="cl_IfcPipeSegment"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeSegmentPHistory_IfcPipeSegment" client="cl_Pset_PipeSegmentPHistory" supplier="cl_IfcPipeSegment"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeSegmentTypeCommon_IfcPipeSegment" client="cl_Pset_PipeSegmentTypeCommon" supplier="cl_IfcPipeSegment"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeSegmentTypeCulvert_IfcPipeSegmentTypeEnum.CULVERT" client="cl_Pset_PipeSegmentTypeCulvert" supplier="cl_IfcPipeSegmentTypeEnum_CULVERT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PipeSegmentTypeGutter_IfcPipeSegmentTypeEnum.GUTTER" client="cl_Pset_PipeSegmentTypeGutter" supplier="cl_IfcPipeSegmentTypeEnum_GUTTER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PumpOccurrence_IfcPump" client="cl_Pset_PumpOccurrence" supplier="cl_IfcPump"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PumpPHistory_IfcPump" client="cl_Pset_PumpPHistory" supplier="cl_IfcPump"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PumpTypeCommon_IfcPump" client="cl_Pset_PumpTypeCommon" supplier="cl_IfcPump"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ShadingDevicePHistory_IfcShadingDevice" client="cl_Pset_ShadingDevicePHistory">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcShadingDevice"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceHeaterPHistory_IfcSpaceHeater" client="cl_Pset_SpaceHeaterPHistory" supplier="cl_IfcSpaceHeater"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceHeaterTypeCommon_IfcSpaceHeater" client="cl_Pset_SpaceHeaterTypeCommon" supplier="cl_IfcSpaceHeater"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceHeaterTypeConvector_IfcSpaceHeaterTypeEnum.CONVECTOR" client="cl_Pset_SpaceHeaterTypeConvector" supplier="cl_IfcSpaceHeaterTypeEnum_CONVECTOR"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceHeaterTypeRadiator_IfcSpaceHeaterTypeEnum.RADIATOR" client="cl_Pset_SpaceHeaterTypeRadiator" supplier="cl_IfcSpaceHeaterTypeEnum_RADIATOR"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceThermalPHistory_IfcSpatialElement" client="cl_Pset_SpaceThermalPHistory">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TankOccurrence_IfcTank" client="cl_Pset_TankOccurrence" supplier="cl_IfcTank"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TankTypeCommon_IfcTank" client="cl_Pset_TankTypeCommon" supplier="cl_IfcTank"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TankTypeExpansion_IfcTankTypeEnum.EXPANSION" client="cl_Pset_TankTypeExpansion" supplier="cl_IfcTankTypeEnum_EXPANSION"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TankTypePreformed_IfcTank" client="cl_Pset_TankTypePreformed" supplier="cl_IfcTank"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TankTypePressureVessel_IfcTankTypeEnum.PRESSUREVESSEL" client="cl_Pset_TankTypePressureVessel" supplier="cl_IfcTankTypeEnum_PRESSUREVESSEL"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TankTypeSectional_IfcTank" client="cl_Pset_TankTypeSectional" supplier="cl_IfcTank"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TubeBundleTypeCommon_IfcTubeBundle" client="cl_Pset_TubeBundleTypeCommon" supplier="cl_IfcTubeBundle"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TubeBundleTypeFinned_IfcTubeBundleTypeEnum.FINNED" client="cl_Pset_TubeBundleTypeFinned" supplier="cl_IfcTubeBundleTypeEnum_FINNED"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UnitaryEquipmentTypeAirConditioningUnit_IfcUnitaryEquipmentTypeEnum.AIRCONDITIONINGUNIT" client="cl_Pset_UnitaryEquipmentTypeAirConditioningUnit" supplier="cl_IfcUnitaryEquipmentTypeEnum_AIRCONDITIONINGUNIT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UnitaryEquipmentTypeAirHandler_IfcUnitaryEquipmentTypeEnum.AIRHANDLER" client="cl_Pset_UnitaryEquipmentTypeAirHandler" supplier="cl_IfcUnitaryEquipmentTypeEnum_AIRHANDLER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UnitaryEquipmentTypeCommon_IfcUnitaryEquipment" client="cl_Pset_UnitaryEquipmentTypeCommon" supplier="cl_IfcUnitaryEquipment"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValvePHistory_IfcValve" client="cl_Pset_ValvePHistory" supplier="cl_IfcValve"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeAirRelease_IfcValveTypeEnum.AIRRELEASE" client="cl_Pset_ValveTypeAirRelease" supplier="cl_IfcValveTypeEnum_AIRRELEASE"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeCommon_IfcValve" client="cl_Pset_ValveTypeCommon" supplier="cl_IfcValve"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeDrawOffCock_IfcValveTypeEnum.DRAWOFFCOCK" client="cl_Pset_ValveTypeDrawOffCock" supplier="cl_IfcValveTypeEnum_DRAWOFFCOCK"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeFaucet_IfcValveTypeEnum.FAUCET" client="cl_Pset_ValveTypeFaucet" supplier="cl_IfcValveTypeEnum_FAUCET"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeFlushing_IfcValveTypeEnum.FLUSHING" client="cl_Pset_ValveTypeFlushing" supplier="cl_IfcValveTypeEnum_FLUSHING"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeGasTap_IfcValveTypeEnum.GASTAP" client="cl_Pset_ValveTypeGasTap" supplier="cl_IfcValveTypeEnum_GASTAP"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeIsolating_IfcValveTypeEnum.ISOLATING" client="cl_Pset_ValveTypeIsolating" supplier="cl_IfcValveTypeEnum_ISOLATING"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypeMixing_IfcValveTypeEnum.MIXING" client="cl_Pset_ValveTypeMixing" supplier="cl_IfcValveTypeEnum_MIXING"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypePressureReducing_IfcValveTypeEnum.PRESSUREREDUCING" client="cl_Pset_ValveTypePressureReducing" supplier="cl_IfcValveTypeEnum_PRESSUREREDUCING"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ValveTypePressureRelief_IfcValveTypeEnum.PRESSURERELIEF" client="cl_Pset_ValveTypePressureRelief" supplier="cl_IfcValveTypeEnum_PRESSURERELIEF"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VibrationIsolatorTypeCommon_IfcVibrationIsolator" client="cl_Pset_VibrationIsolatorTypeCommon" supplier="cl_IfcVibrationIsolator"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_AirTerminalBaseQuantities_IfcAirTerminal" client="cl_Qto_AirTerminalBaseQuantities" supplier="cl_IfcAirTerminal"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_AirTerminalBoxTypeBaseQuantities_IfcAirTerminalBox" client="cl_Qto_AirTerminalBoxTypeBaseQuantities" supplier="cl_IfcAirTerminalBox"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_AirToAirHeatRecoveryBaseQuantities_IfcAirToAirHeatRecovery" client="cl_Qto_AirToAirHeatRecoveryBaseQuantities" supplier="cl_IfcAirToAirHeatRecovery"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_BoilerBaseQuantities_IfcBoiler" client="cl_Qto_BoilerBaseQuantities" supplier="cl_IfcBoiler"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_BurnerBaseQuantities_IfcBurner" client="cl_Qto_BurnerBaseQuantities" supplier="cl_IfcBurner"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ChillerBaseQuantities_IfcChiller" client="cl_Qto_ChillerBaseQuantities" supplier="cl_IfcChiller"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CoilBaseQuantities_IfcCoil" client="cl_Qto_CoilBaseQuantities" supplier="cl_IfcCoil"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CompressorBaseQuantities_IfcCompressor" client="cl_Qto_CompressorBaseQuantities" supplier="cl_IfcCompressor"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CondenserBaseQuantities_IfcCondenser" client="cl_Qto_CondenserBaseQuantities" supplier="cl_IfcCondenser"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CooledBeamBaseQuantities_IfcCooledBeam" client="cl_Qto_CooledBeamBaseQuantities" supplier="cl_IfcCooledBeam"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CoolingTowerBaseQuantities_IfcCoolingTower" client="cl_Qto_CoolingTowerBaseQuantities" supplier="cl_IfcCoolingTower"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_DamperBaseQuantities_IfcDamper" client="cl_Qto_DamperBaseQuantities" supplier="cl_IfcDamper"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_DuctFittingBaseQuantities_IfcDuctFitting" client="cl_Qto_DuctFittingBaseQuantities" supplier="cl_IfcDuctFitting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_DuctSegmentBaseQuantities_IfcDuctSegment" client="cl_Qto_DuctSegmentBaseQuantities" supplier="cl_IfcDuctSegment"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_DuctSilencerBaseQuantities_IfcDuctSilencer" client="cl_Qto_DuctSilencerBaseQuantities" supplier="cl_IfcDuctSilencer"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_EvaporativeCoolerBaseQuantities_IfcEvaporativeCooler" client="cl_Qto_EvaporativeCoolerBaseQuantities" supplier="cl_IfcEvaporativeCooler"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_EvaporatorBaseQuantities_IfcEvaporator" client="cl_Qto_EvaporatorBaseQuantities" supplier="cl_IfcEvaporator"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FanBaseQuantities_IfcFan" client="cl_Qto_FanBaseQuantities" supplier="cl_IfcFan"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FilterBaseQuantities_IfcFilter" client="cl_Qto_FilterBaseQuantities" supplier="cl_IfcFilter"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FlowMeterBaseQuantities_IfcFlowMeter" client="cl_Qto_FlowMeterBaseQuantities" supplier="cl_IfcFlowMeter"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_HeatExchangerBaseQuantities_IfcHeatExchanger" client="cl_Qto_HeatExchangerBaseQuantities" supplier="cl_IfcHeatExchanger"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_HumidifierBaseQuantities_IfcHumidifier" client="cl_Qto_HumidifierBaseQuantities" supplier="cl_IfcHumidifier"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PipeFittingBaseQuantities_IfcPipeFitting" client="cl_Qto_PipeFittingBaseQuantities" supplier="cl_IfcPipeFitting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PipeSegmentBaseQuantities_IfcPipeSegment" client="cl_Qto_PipeSegmentBaseQuantities" supplier="cl_IfcPipeSegment"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PumpBaseQuantities_IfcPump" client="cl_Qto_PumpBaseQuantities" supplier="cl_IfcPump"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SpaceHeaterBaseQuantities_IfcSpaceHeater" client="cl_Qto_SpaceHeaterBaseQuantities" supplier="cl_IfcSpaceHeater"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_TankBaseQuantities_IfcTank" client="cl_Qto_TankBaseQuantities" supplier="cl_IfcTank"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_TubeBundleBaseQuantities_IfcTubeBundle" client="cl_Qto_TubeBundleBaseQuantities" supplier="cl_IfcTubeBundle"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_UnitaryEquipmentBaseQuantities_IfcUnitaryEquipment" client="cl_Qto_UnitaryEquipmentBaseQuantities" supplier="cl_IfcUnitaryEquipment"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ValveBaseQuantities_IfcValve" client="cl_Qto_ValveBaseQuantities" supplier="cl_IfcValve"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_VibrationIsolatorBaseQuantities_IfcVibrationIsolator" client="cl_Qto_VibrationIsolatorBaseQuantities" supplier="cl_IfcVibrationIsolator"/>
   </packagedElement>
 </uml:Model>

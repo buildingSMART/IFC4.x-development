@@ -179,72 +179,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSystemFurnitureElementType_PredefinedType_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_OriginalValue" name="OriginalValue" memberEnd="at_IfcAsset_OriginalValue as_IfcAsset_OriginalValue_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_OriginalValue_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_OriginalValue">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_OriginalValue_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_OriginalValue_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_CurrentValue" name="CurrentValue" memberEnd="at_IfcAsset_CurrentValue as_IfcAsset_CurrentValue_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_CurrentValue_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_CurrentValue">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_CurrentValue_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_CurrentValue_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_TotalReplacementCost" name="TotalReplacementCost" memberEnd="at_IfcAsset_TotalReplacementCost as_IfcAsset_TotalReplacementCost_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_TotalReplacementCost_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_TotalReplacementCost">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_TotalReplacementCost_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_TotalReplacementCost_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_Owner" name="Owner" memberEnd="at_IfcAsset_Owner as_IfcAsset_Owner_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_Owner_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_Owner">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_Owner_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_Owner_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_User" name="User" memberEnd="at_IfcAsset_User as_IfcAsset_User_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_User_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_User">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_User_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_User_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_ResponsiblePerson" name="ResponsiblePerson" memberEnd="at_IfcAsset_ResponsiblePerson as_IfcAsset_ResponsiblePerson_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_ResponsiblePerson_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_ResponsiblePerson">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_ResponsiblePerson_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_ResponsiblePerson_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_DepreciatedValue" name="DepreciatedValue" memberEnd="at_IfcAsset_DepreciatedValue as_IfcAsset_DepreciatedValue_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_DepreciatedValue_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_DepreciatedValue">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_DepreciatedValue_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_DepreciatedValue_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcInventory_Jurisdiction" name="Jurisdiction" memberEnd="at_IfcInventory_Jurisdiction as_IfcInventory_Jurisdiction_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcInventory_Jurisdiction_target_end" name="" type="cl_IfcInventory" association="as_IfcInventory_Jurisdiction">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcInventory_Jurisdiction_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcInventory_Jurisdiction_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcInventory_ResponsiblePersons" name="ResponsiblePersons" memberEnd="at_IfcInventory_ResponsiblePersons as_IfcInventory_ResponsiblePersons_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcInventory_ResponsiblePersons_target_end" name="" type="cl_IfcInventory" association="as_IfcInventory_ResponsiblePersons">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcInventory_ResponsiblePersons_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcInventory_ResponsiblePersons_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcInventory_CurrentValue" name="CurrentValue" memberEnd="at_IfcInventory_CurrentValue as_IfcInventory_CurrentValue_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcInventory_CurrentValue_target_end" name="" type="cl_IfcInventory" association="as_IfcInventory_CurrentValue">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcInventory_CurrentValue_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcInventory_CurrentValue_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcInventory_OriginalValue" name="OriginalValue" memberEnd="at_IfcInventory_OriginalValue as_IfcInventory_OriginalValue_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcInventory_OriginalValue_target_end" name="" type="cl_IfcInventory" association="as_IfcInventory_OriginalValue">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcInventory_OriginalValue_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcInventory_OriginalValue_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcInventoryTypeEnum_ASSETINVENTORY" name="IfcInventoryTypeEnum.ASSETINVENTORY">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcInventoryTypeEnum_ASSETINVENTORY_gen_IfcInventory" general="cl_IfcInventory"/>
     </packagedElement>
@@ -395,7 +329,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AssetInsuranceType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AssetInsuranceType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Asset_IfcAsset" client="cl_Pset_Asset" supplier="cl_IfcAsset"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_Condition" name="Pset_Condition">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_Condition_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -441,13 +374,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Condition_AssessmentFrequency_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Condition_IfcAsset" client="cl_Pset_Condition" supplier="cl_IfcAsset"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Condition_IfcElement" client="cl_Pset_Condition">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Condition_IfcSystem" client="cl_Pset_Condition">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ConstructionAdministration" name="Pset_ConstructionAdministration">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ConstructionAdministration_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -467,9 +393,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ConstructionAdministration_SubmittalIdentifer_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ConstructionAdministration_SubmittalIdentifer_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConstructionAdministration_IfcElement" client="cl_Pset_ConstructionAdministration">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ConstructionOccurence" name="Pset_ConstructionOccurence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ConstructionOccurence_comment_0">
@@ -496,9 +419,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ConstructionOccurence_AssetIdentifier_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConstructionOccurence_IfcElement" client="cl_Pset_ConstructionOccurence">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FurnitureTypeChair" name="Pset_FurnitureTypeChair">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FurnitureTypeChair_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -519,7 +439,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FurnitureTypeChair_LowestSeatingHeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FurnitureTypeChair_IfcFurnitureTypeEnum.CHAIR" client="cl_Pset_FurnitureTypeChair" supplier="cl_IfcFurnitureTypeEnum_CHAIR"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FurnitureTypeCommon" name="Pset_FurnitureTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FurnitureTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -565,7 +484,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FurnitureTypeCommon_IsBuiltIn_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FurnitureTypeCommon_IfcFurniture" client="cl_Pset_FurnitureTypeCommon" supplier="cl_IfcFurniture"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FurnitureTypeDesk" name="Pset_FurnitureTypeDesk">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FurnitureTypeDesk_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -576,7 +494,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FurnitureTypeDesk_WorksurfaceArea_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FurnitureTypeDesk_IfcFurnitureTypeEnum.DESK" client="cl_Pset_FurnitureTypeDesk" supplier="cl_IfcFurnitureTypeEnum_DESK"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FurnitureTypeFileCabinet" name="Pset_FurnitureTypeFileCabinet">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FurnitureTypeFileCabinet_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -587,7 +504,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FurnitureTypeFileCabinet_WithLock_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FurnitureTypeFileCabinet_IfcFurnitureTypeEnum.FILECABINET" client="cl_Pset_FurnitureTypeFileCabinet" supplier="cl_IfcFurnitureTypeEnum_FILECABINET"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FurnitureTypeTable" name="Pset_FurnitureTypeTable">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FurnitureTypeTable_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -603,7 +519,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FurnitureTypeTable_NumberOfChairs_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FurnitureTypeTable_IfcFurnitureTypeEnum.TABLE" client="cl_Pset_FurnitureTypeTable" supplier="cl_IfcFurnitureTypeEnum_TABLE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaintenanceStrategy" name="Pset_MaintenanceStrategy">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaintenanceStrategy_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -646,13 +561,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AccidentResponse_URGENTINSPECTION" name="URGENTINSPECTION"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AccidentResponse_URGENTPROCEDURE" name="URGENTPROCEDURE"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceStrategy_IfcAsset" client="cl_Pset_MaintenanceStrategy" supplier="cl_IfcAsset"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceStrategy_IfcElement" client="cl_Pset_MaintenanceStrategy">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceStrategy_IfcSystem" client="cl_Pset_MaintenanceStrategy">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaintenanceTriggerCondition" name="Pset_MaintenanceTriggerCondition">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaintenanceTriggerCondition_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -677,13 +585,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaintenanceTriggerCondition_ConditionDisposalLevel_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaintenanceTriggerCondition_ConditionDisposalLevel_upper" value="*"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerCondition_IfcAsset" client="cl_Pset_MaintenanceTriggerCondition" supplier="cl_IfcAsset"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerCondition_IfcElement" client="cl_Pset_MaintenanceTriggerCondition">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerCondition_IfcSystem" client="cl_Pset_MaintenanceTriggerCondition">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaintenanceTriggerDuration" name="Pset_MaintenanceTriggerDuration">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaintenanceTriggerDuration_comment_0">
@@ -710,13 +611,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaintenanceTriggerDuration_DurationDisposalLevel_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerDuration_IfcAsset" client="cl_Pset_MaintenanceTriggerDuration" supplier="cl_IfcAsset"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerDuration_IfcElement" client="cl_Pset_MaintenanceTriggerDuration">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerDuration_IfcSystem" client="cl_Pset_MaintenanceTriggerDuration">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaintenanceTriggerPerformance" name="Pset_MaintenanceTriggerPerformance">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaintenanceTriggerPerformance_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -741,13 +635,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaintenanceTriggerPerformance_DisposalLevel_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaintenanceTriggerPerformance_DisposalLevel_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerPerformance_IfcAsset" client="cl_Pset_MaintenanceTriggerPerformance" supplier="cl_IfcAsset"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerPerformance_IfcElement" client="cl_Pset_MaintenanceTriggerPerformance">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerPerformance_IfcSystem" client="cl_Pset_MaintenanceTriggerPerformance">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ManufacturerOccurrence" name="Pset_ManufacturerOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ManufacturerOccurrence_comment_0">
@@ -783,9 +670,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ManufacturerOccurrence_ManufacturingDate_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ManufacturerOccurrence_ManufacturingDate_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ManufacturerOccurrence_IfcElement" client="cl_Pset_ManufacturerOccurrence">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ManufacturerTypeInformation" name="Pset_ManufacturerTypeInformation">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ManufacturerTypeInformation_comment_0">
@@ -841,9 +725,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ManufacturerTypeInformation_PerformanceCertificate_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ManufacturerTypeInformation_PerformanceCertificate_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ManufacturerTypeInformation_IfcElement" client="cl_Pset_ManufacturerTypeInformation">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PropertyAgreement" name="Pset_PropertyAgreement">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PropertyAgreement_comment_0">
@@ -916,9 +797,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PropertyAgreementType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PropertyAgreementType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PropertyAgreementType_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PropertyAgreement_IfcSpatialStructureElement" client="cl_Pset_PropertyAgreement">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialStructureElement"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_Risk" name="Pset_Risk">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_Risk_comment_0">
@@ -1055,21 +933,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RiskType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Risk_IfcGroup" client="cl_Pset_Risk">
-      <supplier xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcGroup"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Risk_IfcProcess" client="cl_Pset_Risk">
-      <supplier xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProcess"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Risk_IfcProduct" client="cl_Pset_Risk">
-      <supplier xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProduct"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Risk_IfcTypeProcess" client="cl_Pset_Risk">
-      <supplier xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcTypeProcess"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Risk_IfcTypeProduct" client="cl_Pset_Risk">
-      <supplier xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcTypeProduct"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ServiceLife" name="Pset_ServiceLife">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ServiceLife_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1087,9 +950,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ServiceLife_MeanTimeBetweenFailure_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ServiceLife_MeanTimeBetweenFailure_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ServiceLife_IfcElement" client="cl_Pset_ServiceLife">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ServiceLifeFactors" name="Pset_ServiceLifeFactors">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ServiceLifeFactors_comment_0">
@@ -1152,9 +1012,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ServiceLifeFactors_MaintenanceLevel_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ServiceLifeFactors_IfcSystem" client="cl_Pset_ServiceLifeFactors">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SystemFurnitureElementTypeCommon" name="Pset_SystemFurnitureElementTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SystemFurnitureElementTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1185,7 +1042,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SystemFurnitureElementTypeCommon_Finishing_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SystemFurnitureElementTypeCommon_IfcSystemFurnitureElement" client="cl_Pset_SystemFurnitureElementTypeCommon" supplier="cl_IfcSystemFurnitureElement"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SystemFurnitureElementTypePanel" name="Pset_SystemFurnitureElementTypePanel">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SystemFurnitureElementTypePanel_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1206,7 +1062,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SystemFurnitureElementTypePanel_NominalThickness_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SystemFurnitureElementTypePanel_IfcSystemFurnitureElementTypeEnum.PANEL" client="cl_Pset_SystemFurnitureElementTypePanel" supplier="cl_IfcSystemFurnitureElementTypeEnum_PANEL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SystemFurnitureElementTypeWorkSurface" name="Pset_SystemFurnitureElementTypeWorkSurface">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SystemFurnitureElementTypeWorkSurface_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1237,7 +1092,6 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SystemFurnitureElementTypeWorkSurface_ShapeDescription_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SystemFurnitureElementTypeWorkSurface_IfcSystemFurnitureElementTypeEnum.WORKSURFACE" client="cl_Pset_SystemFurnitureElementTypeWorkSurface" supplier="cl_IfcSystemFurnitureElementTypeEnum_WORKSURFACE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_Warranty" name="Pset_Warranty">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_Warranty_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1278,6 +1132,152 @@ OR EXISTS(SELF\IfcObject.ObjectType)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Warranty_Exclusions_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_OriginalValue" name="OriginalValue" memberEnd="at_IfcAsset_OriginalValue as_IfcAsset_OriginalValue_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_OriginalValue_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_OriginalValue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_OriginalValue_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_OriginalValue_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_CurrentValue" name="CurrentValue" memberEnd="at_IfcAsset_CurrentValue as_IfcAsset_CurrentValue_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_CurrentValue_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_CurrentValue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_CurrentValue_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_CurrentValue_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_TotalReplacementCost" name="TotalReplacementCost" memberEnd="at_IfcAsset_TotalReplacementCost as_IfcAsset_TotalReplacementCost_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_TotalReplacementCost_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_TotalReplacementCost">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_TotalReplacementCost_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_TotalReplacementCost_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_Owner" name="Owner" memberEnd="at_IfcAsset_Owner as_IfcAsset_Owner_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_Owner_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_Owner">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_Owner_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_Owner_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_User" name="User" memberEnd="at_IfcAsset_User as_IfcAsset_User_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_User_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_User">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_User_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_User_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_ResponsiblePerson" name="ResponsiblePerson" memberEnd="at_IfcAsset_ResponsiblePerson as_IfcAsset_ResponsiblePerson_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_ResponsiblePerson_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_ResponsiblePerson">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_ResponsiblePerson_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_ResponsiblePerson_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAsset_DepreciatedValue" name="DepreciatedValue" memberEnd="at_IfcAsset_DepreciatedValue as_IfcAsset_DepreciatedValue_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAsset_DepreciatedValue_target_end" name="" type="cl_IfcAsset" association="as_IfcAsset_DepreciatedValue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAsset_DepreciatedValue_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAsset_DepreciatedValue_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcInventory_Jurisdiction" name="Jurisdiction" memberEnd="at_IfcInventory_Jurisdiction as_IfcInventory_Jurisdiction_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcInventory_Jurisdiction_target_end" name="" type="cl_IfcInventory" association="as_IfcInventory_Jurisdiction">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcInventory_Jurisdiction_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcInventory_Jurisdiction_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcInventory_ResponsiblePersons" name="ResponsiblePersons" memberEnd="at_IfcInventory_ResponsiblePersons as_IfcInventory_ResponsiblePersons_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcInventory_ResponsiblePersons_target_end" name="" type="cl_IfcInventory" association="as_IfcInventory_ResponsiblePersons">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcInventory_ResponsiblePersons_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcInventory_ResponsiblePersons_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcInventory_CurrentValue" name="CurrentValue" memberEnd="at_IfcInventory_CurrentValue as_IfcInventory_CurrentValue_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcInventory_CurrentValue_target_end" name="" type="cl_IfcInventory" association="as_IfcInventory_CurrentValue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcInventory_CurrentValue_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcInventory_CurrentValue_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcInventory_OriginalValue" name="OriginalValue" memberEnd="at_IfcInventory_OriginalValue as_IfcInventory_OriginalValue_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcInventory_OriginalValue_target_end" name="" type="cl_IfcInventory" association="as_IfcInventory_OriginalValue">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcInventory_OriginalValue_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcInventory_OriginalValue_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Asset_IfcAsset" client="cl_Pset_Asset" supplier="cl_IfcAsset"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Condition_IfcAsset" client="cl_Pset_Condition" supplier="cl_IfcAsset"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Condition_IfcElement" client="cl_Pset_Condition">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Condition_IfcSystem" client="cl_Pset_Condition">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConstructionAdministration_IfcElement" client="cl_Pset_ConstructionAdministration">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConstructionOccurence_IfcElement" client="cl_Pset_ConstructionOccurence">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FurnitureTypeChair_IfcFurnitureTypeEnum.CHAIR" client="cl_Pset_FurnitureTypeChair" supplier="cl_IfcFurnitureTypeEnum_CHAIR"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FurnitureTypeCommon_IfcFurniture" client="cl_Pset_FurnitureTypeCommon" supplier="cl_IfcFurniture"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FurnitureTypeDesk_IfcFurnitureTypeEnum.DESK" client="cl_Pset_FurnitureTypeDesk" supplier="cl_IfcFurnitureTypeEnum_DESK"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FurnitureTypeFileCabinet_IfcFurnitureTypeEnum.FILECABINET" client="cl_Pset_FurnitureTypeFileCabinet" supplier="cl_IfcFurnitureTypeEnum_FILECABINET"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FurnitureTypeTable_IfcFurnitureTypeEnum.TABLE" client="cl_Pset_FurnitureTypeTable" supplier="cl_IfcFurnitureTypeEnum_TABLE"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceStrategy_IfcAsset" client="cl_Pset_MaintenanceStrategy" supplier="cl_IfcAsset"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceStrategy_IfcElement" client="cl_Pset_MaintenanceStrategy">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceStrategy_IfcSystem" client="cl_Pset_MaintenanceStrategy">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerCondition_IfcAsset" client="cl_Pset_MaintenanceTriggerCondition" supplier="cl_IfcAsset"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerCondition_IfcElement" client="cl_Pset_MaintenanceTriggerCondition">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerCondition_IfcSystem" client="cl_Pset_MaintenanceTriggerCondition">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerDuration_IfcAsset" client="cl_Pset_MaintenanceTriggerDuration" supplier="cl_IfcAsset"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerDuration_IfcElement" client="cl_Pset_MaintenanceTriggerDuration">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerDuration_IfcSystem" client="cl_Pset_MaintenanceTriggerDuration">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerPerformance_IfcAsset" client="cl_Pset_MaintenanceTriggerPerformance" supplier="cl_IfcAsset"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerPerformance_IfcElement" client="cl_Pset_MaintenanceTriggerPerformance">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaintenanceTriggerPerformance_IfcSystem" client="cl_Pset_MaintenanceTriggerPerformance">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ManufacturerOccurrence_IfcElement" client="cl_Pset_ManufacturerOccurrence">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ManufacturerTypeInformation_IfcElement" client="cl_Pset_ManufacturerTypeInformation">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PropertyAgreement_IfcSpatialStructureElement" client="cl_Pset_PropertyAgreement">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialStructureElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Risk_IfcGroup" client="cl_Pset_Risk">
+      <supplier xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcGroup"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Risk_IfcProcess" client="cl_Pset_Risk">
+      <supplier xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProcess"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Risk_IfcProduct" client="cl_Pset_Risk">
+      <supplier xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProduct"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Risk_IfcTypeProcess" client="cl_Pset_Risk">
+      <supplier xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcTypeProcess"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Risk_IfcTypeProduct" client="cl_Pset_Risk">
+      <supplier xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcTypeProduct"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ServiceLife_IfcElement" client="cl_Pset_ServiceLife">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ServiceLifeFactors_IfcSystem" client="cl_Pset_ServiceLifeFactors">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SystemFurnitureElementTypeCommon_IfcSystemFurnitureElement" client="cl_Pset_SystemFurnitureElementTypeCommon" supplier="cl_IfcSystemFurnitureElement"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SystemFurnitureElementTypePanel_IfcSystemFurnitureElementTypeEnum.PANEL" client="cl_Pset_SystemFurnitureElementTypePanel" supplier="cl_IfcSystemFurnitureElementTypeEnum_PANEL"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SystemFurnitureElementTypeWorkSurface_IfcSystemFurnitureElementTypeEnum.WORKSURFACE" client="cl_Pset_SystemFurnitureElementTypeWorkSurface" supplier="cl_IfcSystemFurnitureElementTypeEnum_WORKSURFACE"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Warranty_IfcElement" client="cl_Pset_Warranty">
       <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
     </packagedElement>

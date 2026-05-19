@@ -432,9 +432,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BerthMode_BOW" name="BOW"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BerthMode_STERN" name="STERN"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BerthCommon_IfcSpaceTypeEnum.BERTH" client="cl_Pset_BerthCommon">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpaceTypeEnum_BERTH"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BreakwaterCommon" name="Pset_BreakwaterCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BreakwaterCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -450,7 +447,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_BreakwaterCommon_Elevation_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BreakwaterCommon_IfcMarineFacilityTypeEnum.BREAKWATER" client="cl_Pset_BreakwaterCommon" supplier="cl_IfcMarineFacilityTypeEnum_BREAKWATER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CargoCommon" name="Pset_CargoCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CargoCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -480,9 +476,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ProcessDirection_IMPORT" name="IMPORT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ProcessDirection_TRANSFER" name="TRANSFER"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CargoCommon_IfcVehicleTypeEnum.CARGO" client="cl_Pset_CargoCommon">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_CARGO"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_EnergyRequirements" name="Pset_EnergyRequirements">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_EnergyRequirements_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -507,12 +500,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EnergyRequirements_EnergyConversionEfficiency_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EnergyRequirements_EnergyConversionEfficiency_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EnergyRequirements_IfcDistributionElement" client="cl_Pset_EnergyRequirements">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcDistributionElement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EnergyRequirements_IfcTransportationDevice" client="cl_Pset_EnergyRequirements">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcTransportationDevice"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FenderCommon" name="Pset_FenderCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FenderCommon_comment_0">
@@ -574,9 +561,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FenderType_CONE" name="CONE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FenderType_CYLINDER" name="CYLINDER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FenderType_PNEUMATIC" name="PNEUMATIC"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FenderCommon_IfcImpactProtectionDeviceTypeEnum.FENDER" client="cl_Pset_FenderCommon">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcImpactProtectionDeviceTypeEnum_FENDER"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FenderDesignCriteria" name="Pset_FenderDesignCriteria">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FenderDesignCriteria_comment_0">
@@ -642,9 +626,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AddedMassCoefficientMethod_SHIGERU_UEDA" name="SHIGERU_UEDA"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AddedMassCoefficientMethod_VASCO_COSTA" name="VASCO_COSTA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FenderDesignCriteria_IfcSpaceTypeEnum.BERTH" client="cl_Pset_FenderDesignCriteria">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpaceTypeEnum_BERTH"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GateHeadCommon" name="Pset_GateHeadCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GateHeadCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -655,7 +636,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GateHeadCommon_StructuralType_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GateHeadCommon_IfcMarinePartTypeEnum.GATEHEAD" client="cl_Pset_GateHeadCommon" supplier="cl_IfcMarinePartTypeEnum_GATEHEAD"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_JettyCommon" name="Pset_JettyCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_JettyCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -681,7 +661,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_JettyCommon_Elevation_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_JettyCommon_IfcMarineFacilityTypeEnum.JETTY" client="cl_Pset_JettyCommon" supplier="cl_IfcMarineFacilityTypeEnum_JETTY"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_JettyDesignCriteria" name="Pset_JettyDesignCriteria">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_JettyDesignCriteria_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -732,7 +711,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_JettyDesignCriteria_EquipmentLoading_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_JettyDesignCriteria_IfcMarineFacilityTypeEnum.JETTY" client="cl_Pset_JettyDesignCriteria" supplier="cl_IfcMarineFacilityTypeEnum_JETTY"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MarineFacilityTransportation" name="Pset_MarineFacilityTransportation">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MarineFacilityTransportation_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -753,7 +731,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MarineFacilityTransportation_BerthCargoWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MarineFacilityTransportation_IfcMarineFacility" client="cl_Pset_MarineFacilityTransportation" supplier="cl_IfcMarineFacility"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MarinePartChamberCommon" name="Pset_MarinePartChamberCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MarinePartChamberCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -769,7 +746,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MarinePartChamberCommon_StructuralType_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MarinePartChamberCommon_IfcMarinePartTypeEnum.CHAMBER" client="cl_Pset_MarinePartChamberCommon" supplier="cl_IfcMarinePartTypeEnum_CHAMBER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MarineVehicleCommon" name="Pset_MarineVehicleCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MarineVehicleCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -815,9 +791,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MarineVehicleCommon_LaneMeters_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MarineVehicleCommon_IfcVehicleTypeEnum.VEHICLEMARINE" client="cl_Pset_MarineVehicleCommon">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_VEHICLEMARINE"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MarineVehicleDesignCriteria" name="Pset_MarineVehicleDesignCriteria">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MarineVehicleDesignCriteria_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -832,9 +805,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MarineVehicleDesignCriteria_SoftnessCoefficient_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MarineVehicleDesignCriteria_SoftnessCoefficient_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MarineVehicleDesignCriteria_IfcVehicleTypeEnum.VEHICLEMARINE" client="cl_Pset_MarineVehicleDesignCriteria">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_VEHICLEMARINE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MooringDeviceCommon" name="Pset_MooringDeviceCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MooringDeviceCommon_comment_0">
@@ -884,7 +854,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AnchorageType_DRILLEDANDFIXED" name="DRILLEDANDFIXED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AnchorageType_THROUGHBOLTED" name="THROUGHBOLTED"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MooringDeviceCommon_IfcMooringDevice" client="cl_Pset_MooringDeviceCommon" supplier="cl_IfcMooringDevice"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_QuayCommon" name="Pset_QuayCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_QuayCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -910,7 +879,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_QuayCommon_Elevation_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_QuayCommon_IfcMarineFacilityTypeEnum.QUAY" client="cl_Pset_QuayCommon" supplier="cl_IfcMarineFacilityTypeEnum_QUAY"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_QuayDesignCriteria" name="Pset_QuayDesignCriteria">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_QuayDesignCriteria_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -961,7 +929,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_QuayDesignCriteria_EquipmentLoading_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_QuayDesignCriteria_IfcMarineFacilityTypeEnum.QUAY" client="cl_Pset_QuayDesignCriteria" supplier="cl_IfcMarineFacilityTypeEnum_QUAY"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RevetmentCommon" name="Pset_RevetmentCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RevetmentCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -977,7 +944,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_RevetmentCommon_Elevation_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RevetmentCommon_IfcMarineFacilityTypeEnum.REVETMENT" client="cl_Pset_RevetmentCommon" supplier="cl_IfcMarineFacilityTypeEnum_REVETMENT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ShipLockCommon" name="Pset_ShipLockCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ShipLockCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1003,7 +969,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ShipLockCommon_WaterDeliverySystemType_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ShipLockCommon_IfcMarineFacilityTypeEnum.SHIPLOCK" client="cl_Pset_ShipLockCommon" supplier="cl_IfcMarineFacilityTypeEnum_SHIPLOCK"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ShiplockComplex" name="Pset_ShiplockComplex">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ShiplockComplex_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1029,7 +994,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ShiplockComplex_LockMode_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ShiplockComplex_IfcMarineFacilityTypeEnum.SHIPLOCK" client="cl_Pset_ShiplockComplex" supplier="cl_IfcMarineFacilityTypeEnum_SHIPLOCK"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ShiplockDesignCriteria" name="Pset_ShiplockDesignCriteria">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ShiplockDesignCriteria_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1075,7 +1039,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ShiplockDesignCriteria_DownstreamFloodWaterLevel_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ShiplockDesignCriteria_IfcMarineFacilityTypeEnum.SHIPLOCK" client="cl_Pset_ShiplockDesignCriteria" supplier="cl_IfcMarineFacilityTypeEnum_SHIPLOCK"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ShipyardCommon" name="Pset_ShipyardCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ShipyardCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1086,7 +1049,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ShipyardCommon_PrimaryProductionType_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ShipyardCommon_IfcMarineFacilityTypeEnum.SHIPYARD" client="cl_Pset_ShipyardCommon" supplier="cl_IfcMarineFacilityTypeEnum_SHIPYARD"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SiteWeather" name="Pset_SiteWeather">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SiteWeather_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1101,9 +1063,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SiteWeather_MinAmbientTemp_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SiteWeather_MinAmbientTemp_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SiteWeather_IfcSite" client="cl_Pset_SiteWeather">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSite"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_VehicleAvailability" name="Pset_VehicleAvailability">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_VehicleAvailability_comment_0">
@@ -1124,21 +1083,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_VehicleAvailability_WeatherDowntime_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_VehicleAvailability_WeatherDowntime_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VehicleAvailability_IfcVehicleTypeEnum.ROLLINGSTOCK" client="cl_Pset_VehicleAvailability">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_ROLLINGSTOCK"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VehicleAvailability_IfcVehicleTypeEnum.VEHICLEAIR" client="cl_Pset_VehicleAvailability">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_VEHICLEAIR"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VehicleAvailability_IfcVehicleTypeEnum.VEHICLEMARINE" client="cl_Pset_VehicleAvailability">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_VEHICLEMARINE"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VehicleAvailability_IfcVehicleTypeEnum.VEHICLE" client="cl_Pset_VehicleAvailability">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_VEHICLE"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VehicleAvailability_IfcVehicleTypeEnum.VEHICLETRACKED" client="cl_Pset_VehicleAvailability">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_VEHICLETRACKED"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_VesselLineCommon" name="Pset_VesselLineCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_VesselLineCommon_comment_0">
@@ -1210,9 +1154,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_VesselLineCommon_TailStrength_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VesselLineCommon_IfcMechanicalFastenerTypeEnum.ROPE" client="cl_Pset_VesselLineCommon">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcMechanicalFastenerTypeEnum_ROPE"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_FacilityPartBaseQuantities" name="Qto_FacilityPartBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_FacilityPartBaseQuantities_comment_0">
         <body>QTO_OCCURRENCEDRIVEN</body>
@@ -1242,9 +1183,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_FacilityPartBaseQuantities_Volume_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_FacilityPartBaseQuantities_Volume_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FacilityPartBaseQuantities_IfcFacilityPart" client="cl_Qto_FacilityPartBaseQuantities">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcFacilityPart"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_MarineFacilityBaseQuantities" name="Qto_MarineFacilityBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_MarineFacilityBaseQuantities_comment_0">
@@ -1276,7 +1214,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_MarineFacilityBaseQuantities_Volume_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_MarineFacilityBaseQuantities_IfcMarineFacility" client="cl_Qto_MarineFacilityBaseQuantities" supplier="cl_IfcMarineFacility"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_VehicleBaseQuantities" name="Qto_VehicleBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_VehicleBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1297,6 +1234,69 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_VehicleBaseQuantities_Height_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BerthCommon_IfcSpaceTypeEnum.BERTH" client="cl_Pset_BerthCommon">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpaceTypeEnum_BERTH"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BreakwaterCommon_IfcMarineFacilityTypeEnum.BREAKWATER" client="cl_Pset_BreakwaterCommon" supplier="cl_IfcMarineFacilityTypeEnum_BREAKWATER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CargoCommon_IfcVehicleTypeEnum.CARGO" client="cl_Pset_CargoCommon">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_CARGO"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EnergyRequirements_IfcDistributionElement" client="cl_Pset_EnergyRequirements">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcDistributionElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EnergyRequirements_IfcTransportationDevice" client="cl_Pset_EnergyRequirements">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcTransportationDevice"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FenderCommon_IfcImpactProtectionDeviceTypeEnum.FENDER" client="cl_Pset_FenderCommon">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcImpactProtectionDeviceTypeEnum_FENDER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FenderDesignCriteria_IfcSpaceTypeEnum.BERTH" client="cl_Pset_FenderDesignCriteria">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpaceTypeEnum_BERTH"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GateHeadCommon_IfcMarinePartTypeEnum.GATEHEAD" client="cl_Pset_GateHeadCommon" supplier="cl_IfcMarinePartTypeEnum_GATEHEAD"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_JettyCommon_IfcMarineFacilityTypeEnum.JETTY" client="cl_Pset_JettyCommon" supplier="cl_IfcMarineFacilityTypeEnum_JETTY"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_JettyDesignCriteria_IfcMarineFacilityTypeEnum.JETTY" client="cl_Pset_JettyDesignCriteria" supplier="cl_IfcMarineFacilityTypeEnum_JETTY"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MarineFacilityTransportation_IfcMarineFacility" client="cl_Pset_MarineFacilityTransportation" supplier="cl_IfcMarineFacility"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MarinePartChamberCommon_IfcMarinePartTypeEnum.CHAMBER" client="cl_Pset_MarinePartChamberCommon" supplier="cl_IfcMarinePartTypeEnum_CHAMBER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MarineVehicleCommon_IfcVehicleTypeEnum.VEHICLEMARINE" client="cl_Pset_MarineVehicleCommon">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_VEHICLEMARINE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MarineVehicleDesignCriteria_IfcVehicleTypeEnum.VEHICLEMARINE" client="cl_Pset_MarineVehicleDesignCriteria">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_VEHICLEMARINE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MooringDeviceCommon_IfcMooringDevice" client="cl_Pset_MooringDeviceCommon" supplier="cl_IfcMooringDevice"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_QuayCommon_IfcMarineFacilityTypeEnum.QUAY" client="cl_Pset_QuayCommon" supplier="cl_IfcMarineFacilityTypeEnum_QUAY"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_QuayDesignCriteria_IfcMarineFacilityTypeEnum.QUAY" client="cl_Pset_QuayDesignCriteria" supplier="cl_IfcMarineFacilityTypeEnum_QUAY"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RevetmentCommon_IfcMarineFacilityTypeEnum.REVETMENT" client="cl_Pset_RevetmentCommon" supplier="cl_IfcMarineFacilityTypeEnum_REVETMENT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ShipLockCommon_IfcMarineFacilityTypeEnum.SHIPLOCK" client="cl_Pset_ShipLockCommon" supplier="cl_IfcMarineFacilityTypeEnum_SHIPLOCK"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ShiplockComplex_IfcMarineFacilityTypeEnum.SHIPLOCK" client="cl_Pset_ShiplockComplex" supplier="cl_IfcMarineFacilityTypeEnum_SHIPLOCK"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ShiplockDesignCriteria_IfcMarineFacilityTypeEnum.SHIPLOCK" client="cl_Pset_ShiplockDesignCriteria" supplier="cl_IfcMarineFacilityTypeEnum_SHIPLOCK"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ShipyardCommon_IfcMarineFacilityTypeEnum.SHIPYARD" client="cl_Pset_ShipyardCommon" supplier="cl_IfcMarineFacilityTypeEnum_SHIPYARD"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SiteWeather_IfcSite" client="cl_Pset_SiteWeather">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VehicleAvailability_IfcVehicleTypeEnum.ROLLINGSTOCK" client="cl_Pset_VehicleAvailability">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_ROLLINGSTOCK"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VehicleAvailability_IfcVehicleTypeEnum.VEHICLEAIR" client="cl_Pset_VehicleAvailability">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_VEHICLEAIR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VehicleAvailability_IfcVehicleTypeEnum.VEHICLEMARINE" client="cl_Pset_VehicleAvailability">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_VEHICLEMARINE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VehicleAvailability_IfcVehicleTypeEnum.VEHICLE" client="cl_Pset_VehicleAvailability">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_VEHICLE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VehicleAvailability_IfcVehicleTypeEnum.VEHICLETRACKED" client="cl_Pset_VehicleAvailability">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_VEHICLETRACKED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VesselLineCommon_IfcMechanicalFastenerTypeEnum.ROPE" client="cl_Pset_VesselLineCommon">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcMechanicalFastenerTypeEnum_ROPE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FacilityPartBaseQuantities_IfcFacilityPart" client="cl_Qto_FacilityPartBaseQuantities">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcFacilityPart"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_MarineFacilityBaseQuantities_IfcMarineFacility" client="cl_Qto_MarineFacilityBaseQuantities" supplier="cl_IfcMarineFacility"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_VehicleBaseQuantities_IfcVehicleTypeEnum.ROLLINGSTOCK" client="cl_Qto_VehicleBaseQuantities">
       <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcVehicleTypeEnum_ROLLINGSTOCK"/>
     </packagedElement>

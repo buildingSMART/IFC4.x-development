@@ -290,60 +290,6 @@ EXISTS (MessagingIDs)</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTelecomAddress_MessagingIDs_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganization_Roles" name="Roles" memberEnd="at_IfcOrganization_Roles as_IfcOrganization_Roles_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOrganization_Roles_target_end" name="" type="cl_IfcOrganization" association="as_IfcOrganization_Roles">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOrganization_Roles_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOrganization_Roles_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganization_Addresses" name="Addresses" memberEnd="at_IfcOrganization_Addresses as_IfcOrganization_Addresses_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOrganization_Addresses_target_end" name="INV_OfOrganization_S[0:?]" type="cl_IfcOrganization" association="as_IfcOrganization_Addresses">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOrganization_Addresses_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOrganization_Addresses_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPerson_Roles" name="Roles" memberEnd="at_IfcPerson_Roles as_IfcPerson_Roles_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPerson_Roles_target_end" name="" type="cl_IfcPerson" association="as_IfcPerson_Roles">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPerson_Roles_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPerson_Roles_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPerson_Addresses" name="Addresses" memberEnd="at_IfcPerson_Addresses as_IfcPerson_Addresses_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPerson_Addresses_target_end" name="INV_OfPerson_S[0:?]" type="cl_IfcPerson" association="as_IfcPerson_Addresses">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPerson_Addresses_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPerson_Addresses_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPersonAndOrganization_ThePerson" name="ThePerson" memberEnd="at_IfcPersonAndOrganization_ThePerson as_IfcPersonAndOrganization_ThePerson_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPersonAndOrganization_ThePerson_target_end" name="INV_EngagedIn_S[0:?]" type="cl_IfcPersonAndOrganization" association="as_IfcPersonAndOrganization_ThePerson">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPersonAndOrganization_ThePerson_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPersonAndOrganization_ThePerson_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPersonAndOrganization_TheOrganization" name="TheOrganization" memberEnd="at_IfcPersonAndOrganization_TheOrganization as_IfcPersonAndOrganization_TheOrganization_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPersonAndOrganization_TheOrganization_target_end" name="INV_Engages_S[0:?]" type="cl_IfcPersonAndOrganization" association="as_IfcPersonAndOrganization_TheOrganization">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPersonAndOrganization_TheOrganization_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPersonAndOrganization_TheOrganization_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPersonAndOrganization_Roles" name="Roles" memberEnd="at_IfcPersonAndOrganization_Roles as_IfcPersonAndOrganization_Roles_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPersonAndOrganization_Roles_target_end" name="" type="cl_IfcPersonAndOrganization" association="as_IfcPersonAndOrganization_Roles">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPersonAndOrganization_Roles_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPersonAndOrganization_Roles_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganizationRelationship_RelatingOrganization" name="RelatingOrganization" memberEnd="at_IfcOrganizationRelationship_RelatingOrganization as_IfcOrganizationRelationship_RelatingOrganization_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOrganizationRelationship_RelatingOrganization_target_end" name="INV_Relates_S[0:?]" type="cl_IfcOrganizationRelationship" association="as_IfcOrganizationRelationship_RelatingOrganization">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOrganizationRelationship_RelatingOrganization_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOrganizationRelationship_RelatingOrganization_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganizationRelationship_RelatedOrganizations" name="RelatedOrganizations" memberEnd="at_IfcOrganizationRelationship_RelatedOrganizations as_IfcOrganizationRelationship_RelatedOrganizations_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOrganizationRelationship_RelatedOrganizations_target_end" name="INV_IsRelatedBy_S[0:?]" type="cl_IfcOrganizationRelationship" association="as_IfcOrganizationRelationship_RelatedOrganizations">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOrganizationRelationship_RelatedOrganizations_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOrganizationRelationship_RelatedOrganizations_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_Address" name="Pset_Address">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_Address_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -436,6 +382,60 @@ EXISTS (MessagingIDs)</body>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AddressType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AddressType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AddressType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganization_Roles" name="Roles" memberEnd="at_IfcOrganization_Roles as_IfcOrganization_Roles_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOrganization_Roles_target_end" name="" type="cl_IfcOrganization" association="as_IfcOrganization_Roles">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOrganization_Roles_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOrganization_Roles_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganization_Addresses" name="Addresses" memberEnd="at_IfcOrganization_Addresses as_IfcOrganization_Addresses_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOrganization_Addresses_target_end" name="INV_OfOrganization_S[0:?]" type="cl_IfcOrganization" association="as_IfcOrganization_Addresses">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOrganization_Addresses_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOrganization_Addresses_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPerson_Roles" name="Roles" memberEnd="at_IfcPerson_Roles as_IfcPerson_Roles_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPerson_Roles_target_end" name="" type="cl_IfcPerson" association="as_IfcPerson_Roles">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPerson_Roles_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPerson_Roles_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPerson_Addresses" name="Addresses" memberEnd="at_IfcPerson_Addresses as_IfcPerson_Addresses_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPerson_Addresses_target_end" name="INV_OfPerson_S[0:?]" type="cl_IfcPerson" association="as_IfcPerson_Addresses">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPerson_Addresses_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPerson_Addresses_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPersonAndOrganization_ThePerson" name="ThePerson" memberEnd="at_IfcPersonAndOrganization_ThePerson as_IfcPersonAndOrganization_ThePerson_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPersonAndOrganization_ThePerson_target_end" name="INV_EngagedIn_S[0:?]" type="cl_IfcPersonAndOrganization" association="as_IfcPersonAndOrganization_ThePerson">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPersonAndOrganization_ThePerson_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPersonAndOrganization_ThePerson_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPersonAndOrganization_TheOrganization" name="TheOrganization" memberEnd="at_IfcPersonAndOrganization_TheOrganization as_IfcPersonAndOrganization_TheOrganization_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPersonAndOrganization_TheOrganization_target_end" name="INV_Engages_S[0:?]" type="cl_IfcPersonAndOrganization" association="as_IfcPersonAndOrganization_TheOrganization">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPersonAndOrganization_TheOrganization_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPersonAndOrganization_TheOrganization_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPersonAndOrganization_Roles" name="Roles" memberEnd="at_IfcPersonAndOrganization_Roles as_IfcPersonAndOrganization_Roles_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPersonAndOrganization_Roles_target_end" name="" type="cl_IfcPersonAndOrganization" association="as_IfcPersonAndOrganization_Roles">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPersonAndOrganization_Roles_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPersonAndOrganization_Roles_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganizationRelationship_RelatingOrganization" name="RelatingOrganization" memberEnd="at_IfcOrganizationRelationship_RelatingOrganization as_IfcOrganizationRelationship_RelatingOrganization_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOrganizationRelationship_RelatingOrganization_target_end" name="INV_Relates_S[0:?]" type="cl_IfcOrganizationRelationship" association="as_IfcOrganizationRelationship_RelatingOrganization">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOrganizationRelationship_RelatingOrganization_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOrganizationRelationship_RelatingOrganization_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOrganizationRelationship_RelatedOrganizations" name="RelatedOrganizations" memberEnd="at_IfcOrganizationRelationship_RelatedOrganizations as_IfcOrganizationRelationship_RelatedOrganizations_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOrganizationRelationship_RelatedOrganizations_target_end" name="INV_IsRelatedBy_S[0:?]" type="cl_IfcOrganizationRelationship" association="as_IfcOrganizationRelationship_RelatedOrganizations">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOrganizationRelationship_RelatedOrganizations_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOrganizationRelationship_RelatedOrganizations_target_end_upper" value="1"/>
+      </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Address_IfcActor" client="cl_Pset_Address">
       <supplier xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcActor"/>

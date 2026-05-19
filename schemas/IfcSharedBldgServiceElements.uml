@@ -210,18 +210,6 @@
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFlowTreatmentDeviceType" name="IfcFlowTreatmentDeviceType" isAbstract="true">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFlowTreatmentDeviceType_gen_IfcDistributionFlowElementType" general="cl_IfcDistributionFlowElementType"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelFlowControlElements_RelatedControlElements" name="RelatedControlElements" memberEnd="at_IfcRelFlowControlElements_RelatedControlElements as_IfcRelFlowControlElements_RelatedControlElements_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelFlowControlElements_RelatedControlElements_target_end" name="INV_AssignedToFlowElement_S[0:1]" type="cl_IfcRelFlowControlElements" association="as_IfcRelFlowControlElements_RelatedControlElements">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelFlowControlElements_RelatedControlElements_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelFlowControlElements_RelatedControlElements_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelFlowControlElements_RelatingFlowElement" name="RelatingFlowElement" memberEnd="at_IfcRelFlowControlElements_RelatingFlowElement as_IfcRelFlowControlElements_RelatingFlowElement_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelFlowControlElements_RelatingFlowElement_target_end" name="INV_HasControlElements_S[0:1]" type="cl_IfcRelFlowControlElements" association="as_IfcRelFlowControlElements_RelatingFlowElement">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelFlowControlElements_RelatingFlowElement_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelFlowControlElements_RelatingFlowElement_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDistributionPortTypeEnum_CABLE" name="IfcDistributionPortTypeEnum.CABLE">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDistributionPortTypeEnum_CABLE_gen_IfcDistributionPort" general="cl_IfcDistributionPort"/>
     </packagedElement>
@@ -538,15 +526,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AirSideSystemDistributionType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AirSideSystemDistributionType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirSideSystemInformation_IfcSpatialElement" client="cl_Pset_AirSideSystemInformation">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialElement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirSideSystemInformation_IfcSpatialZone" client="cl_Pset_AirSideSystemInformation">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialZone"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirSideSystemInformation_IfcZone" client="cl_Pset_AirSideSystemInformation">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcZone"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_DistributionPortGender" name="PEnum_DistributionPortGender">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DistributionPortGender_FEMALE" name="FEMALE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DistributionPortGender_MALE" name="MALE"/>
@@ -569,7 +548,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionChamberElementCommon_Status_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementCommon_IfcDistributionChamberElement" client="cl_Pset_DistributionChamberElementCommon" supplier="cl_IfcDistributionChamberElement"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionChamberElementTypeFormedDuct" name="Pset_DistributionChamberElementTypeFormedDuct">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionChamberElementTypeFormedDuct_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -605,7 +583,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionChamberElementTypeFormedDuct_CableDuctOccupancyRatio_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeFormedDuct_IfcDistributionChamberElementTypeEnum.FORMEDDUCT" client="cl_Pset_DistributionChamberElementTypeFormedDuct" supplier="cl_IfcDistributionChamberElementTypeEnum_FORMEDDUCT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionChamberElementTypeInspectionChamber" name="Pset_DistributionChamberElementTypeInspectionChamber">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionChamberElementTypeInspectionChamber_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -676,7 +653,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionChamberElementTypeInspectionChamber_AccessCoverLoadRating_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeInspectionChamber_IfcDistributionChamberElementTypeEnum.INSPECTIONCHAMBER" client="cl_Pset_DistributionChamberElementTypeInspectionChamber" supplier="cl_IfcDistributionChamberElementTypeEnum_INSPECTIONCHAMBER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionChamberElementTypeInspectionPit" name="Pset_DistributionChamberElementTypeInspectionPit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionChamberElementTypeInspectionPit_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -697,7 +673,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionChamberElementTypeInspectionPit_Depth_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeInspectionPit_IfcDistributionChamberElementTypeEnum.INSPECTIONPIT" client="cl_Pset_DistributionChamberElementTypeInspectionPit" supplier="cl_IfcDistributionChamberElementTypeEnum_INSPECTIONPIT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionChamberElementTypeManhole" name="Pset_DistributionChamberElementTypeManhole">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionChamberElementTypeManhole_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -808,7 +783,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TypeOfShaft_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TypeOfShaft_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeManhole_IfcDistributionChamberElementTypeEnum.MANHOLE" client="cl_Pset_DistributionChamberElementTypeManhole" supplier="cl_IfcDistributionChamberElementTypeEnum_MANHOLE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionChamberElementTypeMeterChamber" name="Pset_DistributionChamberElementTypeMeterChamber">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionChamberElementTypeMeterChamber_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -849,7 +823,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionChamberElementTypeMeterChamber_AccessCoverMaterial_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeMeterChamber_IfcDistributionChamberElementTypeEnum.METERCHAMBER" client="cl_Pset_DistributionChamberElementTypeMeterChamber" supplier="cl_IfcDistributionChamberElementTypeEnum_METERCHAMBER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionChamberElementTypeSump" name="Pset_DistributionChamberElementTypeSump">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionChamberElementTypeSump_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -870,7 +843,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionChamberElementTypeSump_SumpInvertLevel_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeSump_IfcDistributionChamberElementTypeEnum.SUMP" client="cl_Pset_DistributionChamberElementTypeSump" supplier="cl_IfcDistributionChamberElementTypeEnum_SUMP"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionChamberElementTypeTrench" name="Pset_DistributionChamberElementTypeTrench">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionChamberElementTypeTrench_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -891,7 +863,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionChamberElementTypeTrench_InvertLevel_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeTrench_IfcDistributionChamberElementTypeEnum.TRENCH" client="cl_Pset_DistributionChamberElementTypeTrench" supplier="cl_IfcDistributionChamberElementTypeEnum_TRENCH"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionChamberElementTypeValveChamber" name="Pset_DistributionChamberElementTypeValveChamber">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionChamberElementTypeValveChamber_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -932,7 +903,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionChamberElementTypeValveChamber_AccessCoverMaterial_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeValveChamber_IfcDistributionChamberElementTypeEnum.VALVECHAMBER" client="cl_Pset_DistributionChamberElementTypeValveChamber" supplier="cl_IfcDistributionChamberElementTypeEnum_VALVECHAMBER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionPortCommon" name="Pset_DistributionPortCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionPortCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -948,7 +918,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionPortCommon_ColourCode_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortCommon_IfcDistributionPort" client="cl_Pset_DistributionPortCommon" supplier="cl_IfcDistributionPort"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionPortPHistoryCable" name="Pset_DistributionPortPHistoryCable">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionPortPHistoryCable_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -994,7 +963,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionPortPHistoryCable_DataReceived_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortPHistoryCable_IfcDistributionPortTypeEnum.CABLE" client="cl_Pset_DistributionPortPHistoryCable" supplier="cl_IfcDistributionPortTypeEnum_CABLE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionPortPHistoryDuct" name="Pset_DistributionPortPHistoryDuct">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionPortPHistoryDuct_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -1035,7 +1003,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionPortPHistoryDuct_PressureHisotry_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortPHistoryDuct_IfcDistributionPortTypeEnum.DUCT" client="cl_Pset_DistributionPortPHistoryDuct" supplier="cl_IfcDistributionPortTypeEnum_DUCT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionPortPHistoryPipe" name="Pset_DistributionPortPHistoryPipe">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionPortPHistoryPipe_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -1056,7 +1023,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionPortPHistoryPipe_Flowrate_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortPHistoryPipe_IfcDistributionPortTypeEnum.PIPE" client="cl_Pset_DistributionPortPHistoryPipe" supplier="cl_IfcDistributionPortTypeEnum_PIPE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionPortTypeCable" name="Pset_DistributionPortTypeCable">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionPortTypeCable_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1145,7 +1111,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DistributionPortElectricalType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DistributionPortElectricalType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortTypeCable_IfcDistributionPortTypeEnum.CABLE" client="cl_Pset_DistributionPortTypeCable" supplier="cl_IfcDistributionPortTypeEnum_CABLE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionPortTypeDuct" name="Pset_DistributionPortTypeDuct">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionPortTypeDuct_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1234,7 +1199,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DuctConnectionType_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DuctConnectionType_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortTypeDuct_IfcDistributionPortTypeEnum.DUCT" client="cl_Pset_DistributionPortTypeDuct" supplier="cl_IfcDistributionPortTypeEnum_DUCT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionPortTypePipe" name="Pset_DistributionPortTypePipe">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionPortTypePipe_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1326,7 +1290,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PipeEndStyleTreatment_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PipeEndStyleTreatment_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortTypePipe_IfcDistributionPortTypeEnum.PIPE" client="cl_Pset_DistributionPortTypePipe" supplier="cl_IfcDistributionPortTypeEnum_PIPE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionSystemCommon" name="Pset_DistributionSystemCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionSystemCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1337,7 +1300,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionSystemCommon_Reference_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionSystemCommon_IfcDistributionSystem" client="cl_Pset_DistributionSystemCommon" supplier="cl_IfcDistributionSystem"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionSystemTypeElectrical" name="Pset_DistributionSystemTypeElectrical">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionSystemTypeElectrical_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1398,7 +1360,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DistributionSystemElectricalCategory_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DistributionSystemElectricalCategory_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionSystemTypeElectrical_IfcDistributionSystemEnum.ELECTRICAL" client="cl_Pset_DistributionSystemTypeElectrical" supplier="cl_IfcDistributionSystemEnum_ELECTRICAL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionSystemTypeVentilation" name="Pset_DistributionSystemTypeVentilation">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionSystemTypeVentilation_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1466,7 +1427,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DuctSizingMethod_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DuctSizingMethod_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionSystemTypeVentilation_IfcDistributionSystemEnum.VENTILATION" client="cl_Pset_DistributionSystemTypeVentilation" supplier="cl_IfcDistributionSystemEnum_VENTILATION"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_OutsideDesignCriteria" name="Pset_OutsideDesignCriteria">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_OutsideDesignCriteria_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1533,9 +1493,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BuildingThermalExposure_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BuildingThermalExposure_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_OutsideDesignCriteria_IfcBuilding" client="cl_Pset_OutsideDesignCriteria">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuilding"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SoundAttenuation" name="Pset_SoundAttenuation">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SoundAttenuation_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1562,9 +1519,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SoundScale_NC" name="NC"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SoundScale_NR" name="NR"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SoundAttenuation_IfcAnnotation" client="cl_Pset_SoundAttenuation">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcAnnotation"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SoundGeneration" name="Pset_SoundGeneration">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SoundGeneration_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1575,7 +1529,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SoundGeneration_SoundCurve_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SoundGeneration_IfcDistributionFlowElement" client="cl_Pset_SoundGeneration" supplier="cl_IfcDistributionFlowElement"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpaceAirHandlingDimensioning" name="Pset_SpaceAirHandlingDimensioning">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpaceAirHandlingDimensioning_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1645,9 +1598,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SpaceAirHandlingDimensioning_BoundaryAreaHeatLoss_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SpaceAirHandlingDimensioning_BoundaryAreaHeatLoss_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceAirHandlingDimensioning_IfcSpatialElement" client="cl_Pset_SpaceAirHandlingDimensioning">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialElement"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpaceThermalLoad" name="Pset_SpaceThermalLoad">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpaceThermalLoad_comment_0">
@@ -1766,9 +1716,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SpaceThermalLoad_TotalRadiantLoad_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceThermalLoad_IfcSpatialElement" client="cl_Pset_SpaceThermalLoad">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialElement"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpaceThermalLoadPHistory" name="Pset_SpaceThermalLoadPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpaceThermalLoadPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -1844,9 +1791,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SpaceThermalLoadPHistory_TotalRadiantLoadHistory_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceThermalLoadPHistory_IfcSpatialElement" client="cl_Pset_SpaceThermalLoadPHistory">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialElement"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ThermalLoad" name="Pset_ThermalLoad">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ThermalLoad_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1917,9 +1861,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ThermalLoad_LoadSafetyFactor_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ThermalLoad_IfcSpatialElement" client="cl_Pset_ThermalLoad">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialElement"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_UtilityConsumptionPHistory" name="Pset_UtilityConsumptionPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_UtilityConsumptionPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -1950,9 +1891,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_UtilityConsumptionPHistory_Steam_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UtilityConsumptionPHistory_IfcBuilding" client="cl_Pset_UtilityConsumptionPHistory">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuilding"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_DistributionChamberElementBaseQuantities" name="Qto_DistributionChamberElementBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_DistributionChamberElementBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1982,6 +1920,68 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_DistributionChamberElementBaseQuantities_Depth_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_DistributionChamberElementBaseQuantities_Depth_upper" value="1"/>
       </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelFlowControlElements_RelatedControlElements" name="RelatedControlElements" memberEnd="at_IfcRelFlowControlElements_RelatedControlElements as_IfcRelFlowControlElements_RelatedControlElements_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelFlowControlElements_RelatedControlElements_target_end" name="INV_AssignedToFlowElement_S[0:1]" type="cl_IfcRelFlowControlElements" association="as_IfcRelFlowControlElements_RelatedControlElements">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelFlowControlElements_RelatedControlElements_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelFlowControlElements_RelatedControlElements_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelFlowControlElements_RelatingFlowElement" name="RelatingFlowElement" memberEnd="at_IfcRelFlowControlElements_RelatingFlowElement as_IfcRelFlowControlElements_RelatingFlowElement_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelFlowControlElements_RelatingFlowElement_target_end" name="INV_HasControlElements_S[0:1]" type="cl_IfcRelFlowControlElements" association="as_IfcRelFlowControlElements_RelatingFlowElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelFlowControlElements_RelatingFlowElement_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelFlowControlElements_RelatingFlowElement_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirSideSystemInformation_IfcSpatialElement" client="cl_Pset_AirSideSystemInformation">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirSideSystemInformation_IfcSpatialZone" client="cl_Pset_AirSideSystemInformation">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialZone"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AirSideSystemInformation_IfcZone" client="cl_Pset_AirSideSystemInformation">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcZone"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementCommon_IfcDistributionChamberElement" client="cl_Pset_DistributionChamberElementCommon" supplier="cl_IfcDistributionChamberElement"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeFormedDuct_IfcDistributionChamberElementTypeEnum.FORMEDDUCT" client="cl_Pset_DistributionChamberElementTypeFormedDuct" supplier="cl_IfcDistributionChamberElementTypeEnum_FORMEDDUCT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeInspectionChamber_IfcDistributionChamberElementTypeEnum.INSPECTIONCHAMBER" client="cl_Pset_DistributionChamberElementTypeInspectionChamber" supplier="cl_IfcDistributionChamberElementTypeEnum_INSPECTIONCHAMBER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeInspectionPit_IfcDistributionChamberElementTypeEnum.INSPECTIONPIT" client="cl_Pset_DistributionChamberElementTypeInspectionPit" supplier="cl_IfcDistributionChamberElementTypeEnum_INSPECTIONPIT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeManhole_IfcDistributionChamberElementTypeEnum.MANHOLE" client="cl_Pset_DistributionChamberElementTypeManhole" supplier="cl_IfcDistributionChamberElementTypeEnum_MANHOLE"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeMeterChamber_IfcDistributionChamberElementTypeEnum.METERCHAMBER" client="cl_Pset_DistributionChamberElementTypeMeterChamber" supplier="cl_IfcDistributionChamberElementTypeEnum_METERCHAMBER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeSump_IfcDistributionChamberElementTypeEnum.SUMP" client="cl_Pset_DistributionChamberElementTypeSump" supplier="cl_IfcDistributionChamberElementTypeEnum_SUMP"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeTrench_IfcDistributionChamberElementTypeEnum.TRENCH" client="cl_Pset_DistributionChamberElementTypeTrench" supplier="cl_IfcDistributionChamberElementTypeEnum_TRENCH"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionChamberElementTypeValveChamber_IfcDistributionChamberElementTypeEnum.VALVECHAMBER" client="cl_Pset_DistributionChamberElementTypeValveChamber" supplier="cl_IfcDistributionChamberElementTypeEnum_VALVECHAMBER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortCommon_IfcDistributionPort" client="cl_Pset_DistributionPortCommon" supplier="cl_IfcDistributionPort"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortPHistoryCable_IfcDistributionPortTypeEnum.CABLE" client="cl_Pset_DistributionPortPHistoryCable" supplier="cl_IfcDistributionPortTypeEnum_CABLE"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortPHistoryDuct_IfcDistributionPortTypeEnum.DUCT" client="cl_Pset_DistributionPortPHistoryDuct" supplier="cl_IfcDistributionPortTypeEnum_DUCT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortPHistoryPipe_IfcDistributionPortTypeEnum.PIPE" client="cl_Pset_DistributionPortPHistoryPipe" supplier="cl_IfcDistributionPortTypeEnum_PIPE"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortTypeCable_IfcDistributionPortTypeEnum.CABLE" client="cl_Pset_DistributionPortTypeCable" supplier="cl_IfcDistributionPortTypeEnum_CABLE"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortTypeDuct_IfcDistributionPortTypeEnum.DUCT" client="cl_Pset_DistributionPortTypeDuct" supplier="cl_IfcDistributionPortTypeEnum_DUCT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionPortTypePipe_IfcDistributionPortTypeEnum.PIPE" client="cl_Pset_DistributionPortTypePipe" supplier="cl_IfcDistributionPortTypeEnum_PIPE"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionSystemCommon_IfcDistributionSystem" client="cl_Pset_DistributionSystemCommon" supplier="cl_IfcDistributionSystem"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionSystemTypeElectrical_IfcDistributionSystemEnum.ELECTRICAL" client="cl_Pset_DistributionSystemTypeElectrical" supplier="cl_IfcDistributionSystemEnum_ELECTRICAL"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionSystemTypeVentilation_IfcDistributionSystemEnum.VENTILATION" client="cl_Pset_DistributionSystemTypeVentilation" supplier="cl_IfcDistributionSystemEnum_VENTILATION"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_OutsideDesignCriteria_IfcBuilding" client="cl_Pset_OutsideDesignCriteria">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuilding"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SoundAttenuation_IfcAnnotation" client="cl_Pset_SoundAttenuation">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcAnnotation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SoundGeneration_IfcDistributionFlowElement" client="cl_Pset_SoundGeneration" supplier="cl_IfcDistributionFlowElement"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceAirHandlingDimensioning_IfcSpatialElement" client="cl_Pset_SpaceAirHandlingDimensioning">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceThermalLoad_IfcSpatialElement" client="cl_Pset_SpaceThermalLoad">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpaceThermalLoadPHistory_IfcSpatialElement" client="cl_Pset_SpaceThermalLoadPHistory">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ThermalLoad_IfcSpatialElement" client="cl_Pset_ThermalLoad">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UtilityConsumptionPHistory_IfcBuilding" client="cl_Pset_UtilityConsumptionPHistory">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuilding"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_DistributionChamberElementBaseQuantities_IfcDistributionChamberElement" client="cl_Qto_DistributionChamberElementBaseQuantities" supplier="cl_IfcDistributionChamberElement"/>
   </packagedElement>

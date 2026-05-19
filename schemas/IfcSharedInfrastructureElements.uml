@@ -451,7 +451,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoreholeState_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoreholeState_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BoreholeCommon_IfcBorehole" client="cl_Pset_BoreholeCommon" supplier="cl_IfcBorehole"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementKinematics" name="Pset_ElementKinematics">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementKinematics_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -520,9 +519,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTimeMeasureIfcLengthMeasure_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementKinematics_IfcElement" client="cl_Pset_ElementKinematics">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeotechnicalAssemblyCommon" name="Pset_GeotechnicalAssemblyCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeotechnicalAssemblyCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -563,7 +559,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_StrataAssemblyPurpose_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_StrataAssemblyPurpose_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeotechnicalAssemblyCommon_IfcGeotechnicalAssembly" client="cl_Pset_GeotechnicalAssemblyCommon" supplier="cl_IfcGeotechnicalAssembly"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeotechnicalStratumCommon" name="Pset_GeotechnicalStratumCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeotechnicalStratumCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -599,7 +594,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeotechnicalStratumCommon_Texture_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeotechnicalStratumCommon_IfcGeotechnicalStratum" client="cl_Pset_GeotechnicalStratumCommon" supplier="cl_IfcGeotechnicalStratum"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_LinearReferencingMethod" name="Pset_LinearReferencingMethod">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_LinearReferencingMethod_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -635,12 +629,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_LRMType_LRM_RELATIVE" name="LRM_RELATIVE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_LRMType_LRM_USERDEFINED" name="LRM_USERDEFINED"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_LinearReferencingMethod_IfcAlignment" client="cl_Pset_LinearReferencingMethod">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcAlignment"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_LinearReferencingMethod_IfcReferent" client="cl_Pset_LinearReferencingMethod">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcReferent"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ReferentCommon" name="Pset_ReferentCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ReferentCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -650,9 +638,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ReferentCommon_NameFormat_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ReferentCommon_NameFormat_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReferentCommon_IfcReferent" client="cl_Pset_ReferentCommon">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcReferent"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SignCommon" name="Pset_SignCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SignCommon_comment_0">
@@ -679,7 +664,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SignCommon_TactileMarking_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SignCommon_IfcSign" client="cl_Pset_SignCommon" supplier="cl_IfcSign"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SolidStratumCapacity" name="Pset_SolidStratumCapacity">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SolidStratumCapacity_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -750,7 +734,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SolidStratumCapacity_SwaveVelocity_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SolidStratumCapacity_IfcGeotechnicalStratumTypeEnum.SOLID" client="cl_Pset_SolidStratumCapacity" supplier="cl_IfcGeotechnicalStratumTypeEnum_SOLID"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SolidStratumComposition" name="Pset_SolidStratumComposition">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SolidStratumComposition_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -851,7 +834,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SoilCompositeFractions_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SoilCompositeFractions_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SolidStratumComposition_IfcGeotechnicalStratumTypeEnum.SOLID" client="cl_Pset_SolidStratumComposition" supplier="cl_IfcGeotechnicalStratumTypeEnum_SOLID"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_Stationing" name="Pset_Stationing">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_Stationing_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -871,9 +853,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_Stationing_HasIncreasingStation_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Stationing_HasIncreasingStation_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Stationing_IfcReferent" client="cl_Pset_Stationing">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcReferent"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WaterStratumCommon" name="Pset_WaterStratumCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WaterStratumCommon_comment_0">
@@ -910,7 +889,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WaterStratumCommon_WaveRange_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WaterStratumCommon_IfcGeotechnicalStratumTypeEnum.WATER" client="cl_Pset_WaterStratumCommon" supplier="cl_IfcGeotechnicalStratumTypeEnum_WATER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ArealStratumBaseQuantities" name="Qto_ArealStratumBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ArealStratumBaseQuantities_comment_0">
         <body>QTO_OCCURRENCEDRIVEN</body>
@@ -931,7 +909,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ArealStratumBaseQuantities_PlanLength_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ArealStratumBaseQuantities_IfcGeotechnicalStratum" client="cl_Qto_ArealStratumBaseQuantities" supplier="cl_IfcGeotechnicalStratum"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_CourseBaseQuantities" name="Qto_CourseBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_CourseBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -967,7 +944,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_CourseBaseQuantities_Weight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CourseBaseQuantities_IfcCourse" client="cl_Qto_CourseBaseQuantities" supplier="cl_IfcCourse"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_EarthworksCutBaseQuantities" name="Qto_EarthworksCutBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_EarthworksCutBaseQuantities_comment_0">
         <body>QTO_OCCURRENCEDRIVEN</body>
@@ -1003,7 +979,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_EarthworksCutBaseQuantities_Weight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_EarthworksCutBaseQuantities_IfcEarthworksCut" client="cl_Qto_EarthworksCutBaseQuantities" supplier="cl_IfcEarthworksCut"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_EarthworksFillBaseQuantities" name="Qto_EarthworksFillBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_EarthworksFillBaseQuantities_comment_0">
         <body>QTO_OCCURRENCEDRIVEN</body>
@@ -1034,7 +1009,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_EarthworksFillBaseQuantities_LooseVolume_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_EarthworksFillBaseQuantities_IfcEarthworksFill" client="cl_Qto_EarthworksFillBaseQuantities" supplier="cl_IfcEarthworksFill"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ImpactProtectionDeviceBaseQuantities" name="Qto_ImpactProtectionDeviceBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ImpactProtectionDeviceBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1044,9 +1018,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ImpactProtectionDeviceBaseQuantities_Weight_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ImpactProtectionDeviceBaseQuantities_Weight_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ImpactProtectionDeviceBaseQuantities_IfcImpactProtectionDevice" client="cl_Qto_ImpactProtectionDeviceBaseQuantities">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcImpactProtectionDevice"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_KerbBaseQuantities" name="Qto_KerbBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_KerbBaseQuantities_comment_0">
@@ -1083,9 +1054,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_KerbBaseQuantities_Weight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_KerbBaseQuantities_IfcKerb" client="cl_Qto_KerbBaseQuantities">
-      <supplier xmi:type="uml:Class" href="IfcRoadDomain.uml#cl_IfcKerb"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_LinearStratumBaseQuantities" name="Qto_LinearStratumBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_LinearStratumBaseQuantities_comment_0">
         <body>QTO_OCCURRENCEDRIVEN</body>
@@ -1101,7 +1069,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_LinearStratumBaseQuantities_Length_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_LinearStratumBaseQuantities_IfcGeotechnicalStratum" client="cl_Qto_LinearStratumBaseQuantities" supplier="cl_IfcGeotechnicalStratum"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_PavementBaseQuantities" name="Qto_PavementBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_PavementBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1142,7 +1109,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_PavementBaseQuantities_NetVolume_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PavementBaseQuantities_IfcPavement" client="cl_Qto_PavementBaseQuantities" supplier="cl_IfcPavement"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_PictorialSignQuantities" name="Qto_PictorialSignQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_PictorialSignQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1158,7 +1124,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_PictorialSignQuantities_SignArea_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PictorialSignQuantities_IfcSignTypeEnum.PICTORAL" client="cl_Qto_PictorialSignQuantities" supplier="cl_IfcSignTypeEnum_PICTORAL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ReinforcedSoilBaseQuantities" name="Qto_ReinforcedSoilBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ReinforcedSoilBaseQuantities_comment_0">
         <body>QTO_OCCURRENCEDRIVEN</body>
@@ -1189,7 +1154,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ReinforcedSoilBaseQuantities_Volume_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ReinforcedSoilBaseQuantities_IfcReinforcedSoil" client="cl_Qto_ReinforcedSoilBaseQuantities" supplier="cl_IfcReinforcedSoil"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_SignalBaseQuantities" name="Qto_SignalBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_SignalBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1200,7 +1164,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_SignalBaseQuantities_Weight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SignalBaseQuantities_IfcSignal" client="cl_Qto_SignalBaseQuantities" supplier="cl_IfcSignal"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_SignBaseQuantities" name="Qto_SignBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_SignBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1226,7 +1189,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_SignBaseQuantities_Weight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SignBaseQuantities_IfcSign" client="cl_Qto_SignBaseQuantities" supplier="cl_IfcSign"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_SurfaceFeatureBaseQuantities" name="Qto_SurfaceFeatureBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_SurfaceFeatureBaseQuantities_comment_0">
         <body>QTO_OCCURRENCEDRIVEN</body>
@@ -1241,9 +1203,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_SurfaceFeatureBaseQuantities_Length_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_SurfaceFeatureBaseQuantities_Length_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SurfaceFeatureBaseQuantities_IfcSurfaceFeature" client="cl_Qto_SurfaceFeatureBaseQuantities">
-      <supplier xmi:type="uml:Class" href="IfcStructuralElementsDomain.uml#cl_IfcSurfaceFeature"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_VolumetricStratumBaseQuantities" name="Qto_VolumetricStratumBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_VolumetricStratumBaseQuantities_comment_0">
@@ -1269,6 +1228,47 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_VolumetricStratumBaseQuantities_Volume_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_VolumetricStratumBaseQuantities_Volume_upper" value="1"/>
       </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BoreholeCommon_IfcBorehole" client="cl_Pset_BoreholeCommon" supplier="cl_IfcBorehole"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementKinematics_IfcElement" client="cl_Pset_ElementKinematics">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeotechnicalAssemblyCommon_IfcGeotechnicalAssembly" client="cl_Pset_GeotechnicalAssemblyCommon" supplier="cl_IfcGeotechnicalAssembly"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeotechnicalStratumCommon_IfcGeotechnicalStratum" client="cl_Pset_GeotechnicalStratumCommon" supplier="cl_IfcGeotechnicalStratum"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_LinearReferencingMethod_IfcAlignment" client="cl_Pset_LinearReferencingMethod">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcAlignment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_LinearReferencingMethod_IfcReferent" client="cl_Pset_LinearReferencingMethod">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcReferent"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReferentCommon_IfcReferent" client="cl_Pset_ReferentCommon">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcReferent"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SignCommon_IfcSign" client="cl_Pset_SignCommon" supplier="cl_IfcSign"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SolidStratumCapacity_IfcGeotechnicalStratumTypeEnum.SOLID" client="cl_Pset_SolidStratumCapacity" supplier="cl_IfcGeotechnicalStratumTypeEnum_SOLID"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SolidStratumComposition_IfcGeotechnicalStratumTypeEnum.SOLID" client="cl_Pset_SolidStratumComposition" supplier="cl_IfcGeotechnicalStratumTypeEnum_SOLID"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Stationing_IfcReferent" client="cl_Pset_Stationing">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcReferent"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WaterStratumCommon_IfcGeotechnicalStratumTypeEnum.WATER" client="cl_Pset_WaterStratumCommon" supplier="cl_IfcGeotechnicalStratumTypeEnum_WATER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ArealStratumBaseQuantities_IfcGeotechnicalStratum" client="cl_Qto_ArealStratumBaseQuantities" supplier="cl_IfcGeotechnicalStratum"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CourseBaseQuantities_IfcCourse" client="cl_Qto_CourseBaseQuantities" supplier="cl_IfcCourse"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_EarthworksCutBaseQuantities_IfcEarthworksCut" client="cl_Qto_EarthworksCutBaseQuantities" supplier="cl_IfcEarthworksCut"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_EarthworksFillBaseQuantities_IfcEarthworksFill" client="cl_Qto_EarthworksFillBaseQuantities" supplier="cl_IfcEarthworksFill"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ImpactProtectionDeviceBaseQuantities_IfcImpactProtectionDevice" client="cl_Qto_ImpactProtectionDeviceBaseQuantities">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcImpactProtectionDevice"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_KerbBaseQuantities_IfcKerb" client="cl_Qto_KerbBaseQuantities">
+      <supplier xmi:type="uml:Class" href="IfcRoadDomain.uml#cl_IfcKerb"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_LinearStratumBaseQuantities_IfcGeotechnicalStratum" client="cl_Qto_LinearStratumBaseQuantities" supplier="cl_IfcGeotechnicalStratum"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PavementBaseQuantities_IfcPavement" client="cl_Qto_PavementBaseQuantities" supplier="cl_IfcPavement"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PictorialSignQuantities_IfcSignTypeEnum.PICTORAL" client="cl_Qto_PictorialSignQuantities" supplier="cl_IfcSignTypeEnum_PICTORAL"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ReinforcedSoilBaseQuantities_IfcReinforcedSoil" client="cl_Qto_ReinforcedSoilBaseQuantities" supplier="cl_IfcReinforcedSoil"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SignalBaseQuantities_IfcSignal" client="cl_Qto_SignalBaseQuantities" supplier="cl_IfcSignal"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SignBaseQuantities_IfcSign" client="cl_Qto_SignBaseQuantities" supplier="cl_IfcSign"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SurfaceFeatureBaseQuantities_IfcSurfaceFeature" client="cl_Qto_SurfaceFeatureBaseQuantities">
+      <supplier xmi:type="uml:Class" href="IfcStructuralElementsDomain.uml#cl_IfcSurfaceFeature"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_VolumetricStratumBaseQuantities_IfcGeotechnicalStratum" client="cl_Qto_VolumetricStratumBaseQuantities" supplier="cl_IfcGeotechnicalStratum"/>
   </packagedElement>

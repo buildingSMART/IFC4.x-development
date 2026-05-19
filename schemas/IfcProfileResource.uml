@@ -847,84 +847,6 @@ IfcCartesianTransformationOperator2D()</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRoundedRectangleProfileDef_RoundingRadius_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcArbitraryClosedProfileDef_OuterCurve" name="OuterCurve" memberEnd="at_IfcArbitraryClosedProfileDef_OuterCurve as_IfcArbitraryClosedProfileDef_OuterCurve_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcArbitraryClosedProfileDef_OuterCurve_target_end" name="" type="cl_IfcArbitraryClosedProfileDef" association="as_IfcArbitraryClosedProfileDef_OuterCurve">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcArbitraryClosedProfileDef_OuterCurve_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcArbitraryClosedProfileDef_OuterCurve_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcArbitraryOpenProfileDef_Curve" name="Curve" memberEnd="at_IfcArbitraryOpenProfileDef_Curve as_IfcArbitraryOpenProfileDef_Curve_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcArbitraryOpenProfileDef_Curve_target_end" name="" type="cl_IfcArbitraryOpenProfileDef" association="as_IfcArbitraryOpenProfileDef_Curve">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcArbitraryOpenProfileDef_Curve_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcArbitraryOpenProfileDef_Curve_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCompositeProfileDef_Profiles" name="Profiles" memberEnd="at_IfcCompositeProfileDef_Profiles as_IfcCompositeProfileDef_Profiles_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCompositeProfileDef_Profiles_target_end" name="" type="cl_IfcCompositeProfileDef" association="as_IfcCompositeProfileDef_Profiles">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCompositeProfileDef_Profiles_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCompositeProfileDef_Profiles_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDerivedProfileDef_ParentProfile" name="ParentProfile" memberEnd="at_IfcDerivedProfileDef_ParentProfile as_IfcDerivedProfileDef_ParentProfile_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDerivedProfileDef_ParentProfile_target_end" name="" type="cl_IfcDerivedProfileDef" association="as_IfcDerivedProfileDef_ParentProfile">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDerivedProfileDef_ParentProfile_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDerivedProfileDef_ParentProfile_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDerivedProfileDef_Operator" name="Operator" memberEnd="at_IfcDerivedProfileDef_Operator as_IfcDerivedProfileDef_Operator_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDerivedProfileDef_Operator_target_end" name="" type="cl_IfcDerivedProfileDef" association="as_IfcDerivedProfileDef_Operator">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDerivedProfileDef_Operator_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDerivedProfileDef_Operator_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOpenCrossProfileDef_OffsetPoint" name="OffsetPoint" memberEnd="at_IfcOpenCrossProfileDef_OffsetPoint as_IfcOpenCrossProfileDef_OffsetPoint_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOpenCrossProfileDef_OffsetPoint_target_end" name="" type="cl_IfcOpenCrossProfileDef" association="as_IfcOpenCrossProfileDef_OffsetPoint">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOpenCrossProfileDef_OffsetPoint_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOpenCrossProfileDef_OffsetPoint_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcParameterizedProfileDef_Position" name="Position" memberEnd="at_IfcParameterizedProfileDef_Position as_IfcParameterizedProfileDef_Position_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcParameterizedProfileDef_Position_target_end" name="" type="cl_IfcParameterizedProfileDef" association="as_IfcParameterizedProfileDef_Position">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcParameterizedProfileDef_Position_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcParameterizedProfileDef_Position_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcArbitraryProfileDefWithVoids_InnerCurves" name="InnerCurves" memberEnd="at_IfcArbitraryProfileDefWithVoids_InnerCurves as_IfcArbitraryProfileDefWithVoids_InnerCurves_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcArbitraryProfileDefWithVoids_InnerCurves_target_end" name="" type="cl_IfcArbitraryProfileDefWithVoids" association="as_IfcArbitraryProfileDefWithVoids_InnerCurves">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcArbitraryProfileDefWithVoids_InnerCurves_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcArbitraryProfileDefWithVoids_InnerCurves_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcProfileProperties_ProfileDefinition" name="ProfileDefinition" memberEnd="at_IfcProfileProperties_ProfileDefinition as_IfcProfileProperties_ProfileDefinition_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcProfileProperties_ProfileDefinition_target_end" name="INV_HasProperties_S[0:?]" type="cl_IfcProfileProperties" association="as_IfcProfileProperties_ProfileDefinition">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcProfileProperties_ProfileDefinition_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcProfileProperties_ProfileDefinition_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcSectionProperties_StartProfile" name="StartProfile" memberEnd="at_IfcSectionProperties_StartProfile as_IfcSectionProperties_StartProfile_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcSectionProperties_StartProfile_target_end" name="" type="cl_IfcSectionProperties" association="as_IfcSectionProperties_StartProfile">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcSectionProperties_StartProfile_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcSectionProperties_StartProfile_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcSectionProperties_EndProfile" name="EndProfile" memberEnd="at_IfcSectionProperties_EndProfile as_IfcSectionProperties_EndProfile_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcSectionProperties_EndProfile_target_end" name="" type="cl_IfcSectionProperties" association="as_IfcSectionProperties_EndProfile">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcSectionProperties_EndProfile_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcSectionProperties_EndProfile_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcSectionReinforcementProperties_SectionDefinition" name="SectionDefinition" memberEnd="at_IfcSectionReinforcementProperties_SectionDefinition as_IfcSectionReinforcementProperties_SectionDefinition_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcSectionReinforcementProperties_SectionDefinition_target_end" name="" type="cl_IfcSectionReinforcementProperties" association="as_IfcSectionReinforcementProperties_SectionDefinition">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcSectionReinforcementProperties_SectionDefinition_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcSectionReinforcementProperties_SectionDefinition_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions" name="CrossSectionReinforcementDefinitions" memberEnd="at_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions as_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions_target_end" name="" type="cl_IfcSectionReinforcementProperties" association="as_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProfileArbitraryDoubleT" name="Pset_ProfileArbitraryDoubleT">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProfileArbitraryDoubleT_comment_0">
         <body>PSET_PROFILEDRIVEN</body>
@@ -1005,7 +927,6 @@ IfcCartesianTransformationOperator2D()</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProfileArbitraryDoubleT_StemTopFillet_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProfileArbitraryDoubleT_IfcArbitraryClosedProfileDef" client="cl_Pset_ProfileArbitraryDoubleT" supplier="cl_IfcArbitraryClosedProfileDef"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProfileArbitraryHollowCore" name="Pset_ProfileArbitraryHollowCore">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProfileArbitraryHollowCore_comment_0">
         <body>PSET_PROFILEDRIVEN</body>
@@ -1126,7 +1047,6 @@ IfcCartesianTransformationOperator2D()</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProfileArbitraryHollowCore_NumberOfCores_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProfileArbitraryHollowCore_IfcArbitraryProfileDefWithVoids" client="cl_Pset_ProfileArbitraryHollowCore" supplier="cl_IfcArbitraryProfileDefWithVoids"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProfileMechanical" name="Pset_ProfileMechanical">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProfileMechanical_comment_0">
         <body>PSET_PROFILEDRIVEN</body>
@@ -1257,6 +1177,86 @@ IfcCartesianTransformationOperator2D()</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProfileMechanical_PlasticShapeFactorZ_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcArbitraryClosedProfileDef_OuterCurve" name="OuterCurve" memberEnd="at_IfcArbitraryClosedProfileDef_OuterCurve as_IfcArbitraryClosedProfileDef_OuterCurve_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcArbitraryClosedProfileDef_OuterCurve_target_end" name="" type="cl_IfcArbitraryClosedProfileDef" association="as_IfcArbitraryClosedProfileDef_OuterCurve">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcArbitraryClosedProfileDef_OuterCurve_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcArbitraryClosedProfileDef_OuterCurve_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcArbitraryOpenProfileDef_Curve" name="Curve" memberEnd="at_IfcArbitraryOpenProfileDef_Curve as_IfcArbitraryOpenProfileDef_Curve_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcArbitraryOpenProfileDef_Curve_target_end" name="" type="cl_IfcArbitraryOpenProfileDef" association="as_IfcArbitraryOpenProfileDef_Curve">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcArbitraryOpenProfileDef_Curve_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcArbitraryOpenProfileDef_Curve_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCompositeProfileDef_Profiles" name="Profiles" memberEnd="at_IfcCompositeProfileDef_Profiles as_IfcCompositeProfileDef_Profiles_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCompositeProfileDef_Profiles_target_end" name="" type="cl_IfcCompositeProfileDef" association="as_IfcCompositeProfileDef_Profiles">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCompositeProfileDef_Profiles_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCompositeProfileDef_Profiles_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDerivedProfileDef_ParentProfile" name="ParentProfile" memberEnd="at_IfcDerivedProfileDef_ParentProfile as_IfcDerivedProfileDef_ParentProfile_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDerivedProfileDef_ParentProfile_target_end" name="" type="cl_IfcDerivedProfileDef" association="as_IfcDerivedProfileDef_ParentProfile">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDerivedProfileDef_ParentProfile_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDerivedProfileDef_ParentProfile_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDerivedProfileDef_Operator" name="Operator" memberEnd="at_IfcDerivedProfileDef_Operator as_IfcDerivedProfileDef_Operator_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDerivedProfileDef_Operator_target_end" name="" type="cl_IfcDerivedProfileDef" association="as_IfcDerivedProfileDef_Operator">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDerivedProfileDef_Operator_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDerivedProfileDef_Operator_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcOpenCrossProfileDef_OffsetPoint" name="OffsetPoint" memberEnd="at_IfcOpenCrossProfileDef_OffsetPoint as_IfcOpenCrossProfileDef_OffsetPoint_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcOpenCrossProfileDef_OffsetPoint_target_end" name="" type="cl_IfcOpenCrossProfileDef" association="as_IfcOpenCrossProfileDef_OffsetPoint">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcOpenCrossProfileDef_OffsetPoint_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcOpenCrossProfileDef_OffsetPoint_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcParameterizedProfileDef_Position" name="Position" memberEnd="at_IfcParameterizedProfileDef_Position as_IfcParameterizedProfileDef_Position_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcParameterizedProfileDef_Position_target_end" name="" type="cl_IfcParameterizedProfileDef" association="as_IfcParameterizedProfileDef_Position">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcParameterizedProfileDef_Position_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcParameterizedProfileDef_Position_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcArbitraryProfileDefWithVoids_InnerCurves" name="InnerCurves" memberEnd="at_IfcArbitraryProfileDefWithVoids_InnerCurves as_IfcArbitraryProfileDefWithVoids_InnerCurves_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcArbitraryProfileDefWithVoids_InnerCurves_target_end" name="" type="cl_IfcArbitraryProfileDefWithVoids" association="as_IfcArbitraryProfileDefWithVoids_InnerCurves">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcArbitraryProfileDefWithVoids_InnerCurves_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcArbitraryProfileDefWithVoids_InnerCurves_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcProfileProperties_ProfileDefinition" name="ProfileDefinition" memberEnd="at_IfcProfileProperties_ProfileDefinition as_IfcProfileProperties_ProfileDefinition_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcProfileProperties_ProfileDefinition_target_end" name="INV_HasProperties_S[0:?]" type="cl_IfcProfileProperties" association="as_IfcProfileProperties_ProfileDefinition">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcProfileProperties_ProfileDefinition_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcProfileProperties_ProfileDefinition_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcSectionProperties_StartProfile" name="StartProfile" memberEnd="at_IfcSectionProperties_StartProfile as_IfcSectionProperties_StartProfile_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcSectionProperties_StartProfile_target_end" name="" type="cl_IfcSectionProperties" association="as_IfcSectionProperties_StartProfile">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcSectionProperties_StartProfile_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcSectionProperties_StartProfile_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcSectionProperties_EndProfile" name="EndProfile" memberEnd="at_IfcSectionProperties_EndProfile as_IfcSectionProperties_EndProfile_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcSectionProperties_EndProfile_target_end" name="" type="cl_IfcSectionProperties" association="as_IfcSectionProperties_EndProfile">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcSectionProperties_EndProfile_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcSectionProperties_EndProfile_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcSectionReinforcementProperties_SectionDefinition" name="SectionDefinition" memberEnd="at_IfcSectionReinforcementProperties_SectionDefinition as_IfcSectionReinforcementProperties_SectionDefinition_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcSectionReinforcementProperties_SectionDefinition_target_end" name="" type="cl_IfcSectionReinforcementProperties" association="as_IfcSectionReinforcementProperties_SectionDefinition">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcSectionReinforcementProperties_SectionDefinition_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcSectionReinforcementProperties_SectionDefinition_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions" name="CrossSectionReinforcementDefinitions" memberEnd="at_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions as_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions_target_end" name="" type="cl_IfcSectionReinforcementProperties" association="as_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcSectionReinforcementProperties_CrossSectionReinforcementDefinitions_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProfileArbitraryDoubleT_IfcArbitraryClosedProfileDef" client="cl_Pset_ProfileArbitraryDoubleT" supplier="cl_IfcArbitraryClosedProfileDef"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProfileArbitraryHollowCore_IfcArbitraryProfileDefWithVoids" client="cl_Pset_ProfileArbitraryHollowCore" supplier="cl_IfcArbitraryProfileDefWithVoids"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProfileMechanical_IfcProfileDef" client="cl_Pset_ProfileMechanical" supplier="cl_IfcProfileDef"/>
   </packagedElement>
 </uml:Model>

@@ -44,6 +44,12 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPerformanceHistory_PredefinedType_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPerformanceHistoryTypeEnum_USERDEFINED" name="IfcPerformanceHistoryTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPerformanceHistoryTypeEnum_USERDEFINED_gen_IfcPerformanceHistory" general="cl_IfcPerformanceHistory"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPerformanceHistoryTypeEnum_NOTDEFINED" name="IfcPerformanceHistoryTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPerformanceHistoryTypeEnum_NOTDEFINED_gen_IfcPerformanceHistory" general="cl_IfcPerformanceHistory"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelAssociatesApproval_RelatingApproval" name="RelatingApproval" memberEnd="at_IfcRelAssociatesApproval_RelatingApproval as_IfcRelAssociatesApproval_RelatingApproval_target_end">
       <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelAssociatesApproval_RelatingApproval_target_end" name="INV_ApprovedObjects_S[0:?]" type="cl_IfcRelAssociatesApproval" association="as_IfcRelAssociatesApproval_RelatingApproval">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelAssociatesApproval_RelatingApproval_target_end_lower"/>
@@ -55,12 +61,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelAssociatesConstraint_RelatingConstraint_target_end_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelAssociatesConstraint_RelatingConstraint_target_end_upper" value="1"/>
       </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPerformanceHistoryTypeEnum_USERDEFINED" name="IfcPerformanceHistoryTypeEnum.USERDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPerformanceHistoryTypeEnum_USERDEFINED_gen_IfcPerformanceHistory" general="cl_IfcPerformanceHistory"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPerformanceHistoryTypeEnum_NOTDEFINED" name="IfcPerformanceHistoryTypeEnum.NOTDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPerformanceHistoryTypeEnum_NOTDEFINED_gen_IfcPerformanceHistory" general="cl_IfcPerformanceHistory"/>
     </packagedElement>
   </packagedElement>
 </uml:Model>

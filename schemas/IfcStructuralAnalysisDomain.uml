@@ -498,6 +498,182 @@
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceMemberVarying" name="IfcStructuralSurfaceMemberVarying">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceMemberVarying_gen_IfcStructuralSurfaceMember" general="cl_IfcStructuralSurfaceMember"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLoadGroupTypeEnum_LOAD_CASE" name="IfcLoadGroupTypeEnum.LOAD_CASE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLoadGroupTypeEnum_LOAD_CASE_gen_IfcStructuralLoadGroup" general="cl_IfcStructuralLoadGroup"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLoadGroupTypeEnum_LOAD_COMBINATION" name="IfcLoadGroupTypeEnum.LOAD_COMBINATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLoadGroupTypeEnum_LOAD_COMBINATION_gen_IfcStructuralLoadGroup" general="cl_IfcStructuralLoadGroup"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLoadGroupTypeEnum_LOAD_GROUP" name="IfcLoadGroupTypeEnum.LOAD_GROUP">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLoadGroupTypeEnum_LOAD_GROUP_gen_IfcStructuralLoadGroup" general="cl_IfcStructuralLoadGroup"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLoadGroupTypeEnum_USERDEFINED" name="IfcLoadGroupTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLoadGroupTypeEnum_USERDEFINED_gen_IfcStructuralLoadGroup" general="cl_IfcStructuralLoadGroup"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLoadGroupTypeEnum_NOTDEFINED" name="IfcLoadGroupTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLoadGroupTypeEnum_NOTDEFINED_gen_IfcStructuralLoadGroup" general="cl_IfcStructuralLoadGroup"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAnalysisModelTypeEnum_IN_PLANE_LOADING_2D" name="IfcAnalysisModelTypeEnum.IN_PLANE_LOADING_2D">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAnalysisModelTypeEnum_IN_PLANE_LOADING_2D_gen_IfcStructuralAnalysisModel" general="cl_IfcStructuralAnalysisModel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAnalysisModelTypeEnum_LOADING_3D" name="IfcAnalysisModelTypeEnum.LOADING_3D">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAnalysisModelTypeEnum_LOADING_3D_gen_IfcStructuralAnalysisModel" general="cl_IfcStructuralAnalysisModel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAnalysisModelTypeEnum_OUT_PLANE_LOADING_2D" name="IfcAnalysisModelTypeEnum.OUT_PLANE_LOADING_2D">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAnalysisModelTypeEnum_OUT_PLANE_LOADING_2D_gen_IfcStructuralAnalysisModel" general="cl_IfcStructuralAnalysisModel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAnalysisModelTypeEnum_USERDEFINED" name="IfcAnalysisModelTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAnalysisModelTypeEnum_USERDEFINED_gen_IfcStructuralAnalysisModel" general="cl_IfcStructuralAnalysisModel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAnalysisModelTypeEnum_NOTDEFINED" name="IfcAnalysisModelTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAnalysisModelTypeEnum_NOTDEFINED_gen_IfcStructuralAnalysisModel" general="cl_IfcStructuralAnalysisModel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_CONST" name="IfcStructuralCurveActivityTypeEnum.CONST">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_CONST_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_CONST_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_DISCRETE" name="IfcStructuralCurveActivityTypeEnum.DISCRETE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_DISCRETE_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_DISCRETE_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_EQUIDISTANT" name="IfcStructuralCurveActivityTypeEnum.EQUIDISTANT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_EQUIDISTANT_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_EQUIDISTANT_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_LINEAR" name="IfcStructuralCurveActivityTypeEnum.LINEAR">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_LINEAR_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_LINEAR_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_PARABOLA" name="IfcStructuralCurveActivityTypeEnum.PARABOLA">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_PARABOLA_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_PARABOLA_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_POLYGONAL" name="IfcStructuralCurveActivityTypeEnum.POLYGONAL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_POLYGONAL_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_POLYGONAL_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_SINUS" name="IfcStructuralCurveActivityTypeEnum.SINUS">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_SINUS_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_SINUS_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_USERDEFINED" name="IfcStructuralCurveActivityTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_USERDEFINED_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_USERDEFINED_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_NOTDEFINED" name="IfcStructuralCurveActivityTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_NOTDEFINED_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_NOTDEFINED_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_CABLE" name="IfcStructuralCurveMemberTypeEnum.CABLE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_CABLE_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_COMPRESSION_MEMBER" name="IfcStructuralCurveMemberTypeEnum.COMPRESSION_MEMBER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_COMPRESSION_MEMBER_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_PIN_JOINED_MEMBER" name="IfcStructuralCurveMemberTypeEnum.PIN_JOINED_MEMBER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_PIN_JOINED_MEMBER_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_RIGID_JOINED_MEMBER" name="IfcStructuralCurveMemberTypeEnum.RIGID_JOINED_MEMBER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_RIGID_JOINED_MEMBER_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_TENSION_MEMBER" name="IfcStructuralCurveMemberTypeEnum.TENSION_MEMBER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_TENSION_MEMBER_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_USERDEFINED" name="IfcStructuralCurveMemberTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_USERDEFINED_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_NOTDEFINED" name="IfcStructuralCurveMemberTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_NOTDEFINED_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_BILINEAR" name="IfcStructuralSurfaceActivityTypeEnum.BILINEAR">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_BILINEAR_gen_IfcStructuralSurfaceAction" general="cl_IfcStructuralSurfaceAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_BILINEAR_gen_IfcStructuralSurfaceReaction" general="cl_IfcStructuralSurfaceReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_CONST" name="IfcStructuralSurfaceActivityTypeEnum.CONST">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_CONST_gen_IfcStructuralSurfaceAction" general="cl_IfcStructuralSurfaceAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_CONST_gen_IfcStructuralSurfaceReaction" general="cl_IfcStructuralSurfaceReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_DISCRETE" name="IfcStructuralSurfaceActivityTypeEnum.DISCRETE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_DISCRETE_gen_IfcStructuralSurfaceAction" general="cl_IfcStructuralSurfaceAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_DISCRETE_gen_IfcStructuralSurfaceReaction" general="cl_IfcStructuralSurfaceReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_ISOCONTOUR" name="IfcStructuralSurfaceActivityTypeEnum.ISOCONTOUR">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_ISOCONTOUR_gen_IfcStructuralSurfaceAction" general="cl_IfcStructuralSurfaceAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_ISOCONTOUR_gen_IfcStructuralSurfaceReaction" general="cl_IfcStructuralSurfaceReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_USERDEFINED" name="IfcStructuralSurfaceActivityTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_USERDEFINED_gen_IfcStructuralSurfaceAction" general="cl_IfcStructuralSurfaceAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_USERDEFINED_gen_IfcStructuralSurfaceReaction" general="cl_IfcStructuralSurfaceReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_NOTDEFINED" name="IfcStructuralSurfaceActivityTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_NOTDEFINED_gen_IfcStructuralSurfaceAction" general="cl_IfcStructuralSurfaceAction"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_NOTDEFINED_gen_IfcStructuralSurfaceReaction" general="cl_IfcStructuralSurfaceReaction"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_BENDING_ELEMENT" name="IfcStructuralSurfaceMemberTypeEnum.BENDING_ELEMENT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_BENDING_ELEMENT_gen_IfcStructuralSurfaceMember" general="cl_IfcStructuralSurfaceMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_MEMBRANE_ELEMENT" name="IfcStructuralSurfaceMemberTypeEnum.MEMBRANE_ELEMENT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_MEMBRANE_ELEMENT_gen_IfcStructuralSurfaceMember" general="cl_IfcStructuralSurfaceMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_SHELL" name="IfcStructuralSurfaceMemberTypeEnum.SHELL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_SHELL_gen_IfcStructuralSurfaceMember" general="cl_IfcStructuralSurfaceMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_USERDEFINED" name="IfcStructuralSurfaceMemberTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_USERDEFINED_gen_IfcStructuralSurfaceMember" general="cl_IfcStructuralSurfaceMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_NOTDEFINED" name="IfcStructuralSurfaceMemberTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_NOTDEFINED_gen_IfcStructuralSurfaceMember" general="cl_IfcStructuralSurfaceMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_StructuralSurfaceMemberVaryingThickness" name="Pset_StructuralSurfaceMemberVaryingThickness">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_StructuralSurfaceMemberVaryingThickness_comment_0">
+        <body>PSET_OCCURRENCEDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness1" name="Thickness1">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness1_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness1_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location1Local" name="Location1Local">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location1Local_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location1Local_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location1Global" name="Location1Global">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location1Global_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location1Global_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness2" name="Thickness2">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness2_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness2_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location2Local" name="Location2Local">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location2Local_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location2Local_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location2Global" name="Location2Global">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location2Global_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location2Global_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness3" name="Thickness3">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness3_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness3_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location3Local" name="Location3Local">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location3Local_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location3Local_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location3Global" name="Location3Global">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location3Global_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location3Global_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelConnectsStructuralActivity_RelatingElement" name="RelatingElement" memberEnd="at_IfcRelConnectsStructuralActivity_RelatingElement as_IfcRelConnectsStructuralActivity_RelatingElement_target_end">
       <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelConnectsStructuralActivity_RelatingElement_target_end" name="" type="cl_IfcRelConnectsStructuralActivity" association="as_IfcRelConnectsStructuralActivity_RelatingElement">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelConnectsStructuralActivity_RelatingElement_target_end_lower"/>
@@ -552,21 +728,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcStructuralActivity_AppliedLoad_target_end_upper" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLoadGroupTypeEnum_LOAD_CASE" name="IfcLoadGroupTypeEnum.LOAD_CASE">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLoadGroupTypeEnum_LOAD_CASE_gen_IfcStructuralLoadGroup" general="cl_IfcStructuralLoadGroup"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLoadGroupTypeEnum_LOAD_COMBINATION" name="IfcLoadGroupTypeEnum.LOAD_COMBINATION">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLoadGroupTypeEnum_LOAD_COMBINATION_gen_IfcStructuralLoadGroup" general="cl_IfcStructuralLoadGroup"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLoadGroupTypeEnum_LOAD_GROUP" name="IfcLoadGroupTypeEnum.LOAD_GROUP">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLoadGroupTypeEnum_LOAD_GROUP_gen_IfcStructuralLoadGroup" general="cl_IfcStructuralLoadGroup"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLoadGroupTypeEnum_USERDEFINED" name="IfcLoadGroupTypeEnum.USERDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLoadGroupTypeEnum_USERDEFINED_gen_IfcStructuralLoadGroup" general="cl_IfcStructuralLoadGroup"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLoadGroupTypeEnum_NOTDEFINED" name="IfcLoadGroupTypeEnum.NOTDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLoadGroupTypeEnum_NOTDEFINED_gen_IfcStructuralLoadGroup" general="cl_IfcStructuralLoadGroup"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="as_IfcStructuralResultGroup_ResultForLoadGroup" name="ResultForLoadGroup" memberEnd="at_IfcStructuralResultGroup_ResultForLoadGroup as_IfcStructuralResultGroup_ResultForLoadGroup_target_end">
       <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcStructuralResultGroup_ResultForLoadGroup_target_end" name="INV_SourceOfResultGroup_S[0:1]" type="cl_IfcStructuralResultGroup" association="as_IfcStructuralResultGroup_ResultForLoadGroup">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcStructuralResultGroup_ResultForLoadGroup_target_end_lower"/>
@@ -597,62 +758,11 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcStructuralAnalysisModel_SharedPlacement_target_end_upper" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAnalysisModelTypeEnum_IN_PLANE_LOADING_2D" name="IfcAnalysisModelTypeEnum.IN_PLANE_LOADING_2D">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAnalysisModelTypeEnum_IN_PLANE_LOADING_2D_gen_IfcStructuralAnalysisModel" general="cl_IfcStructuralAnalysisModel"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAnalysisModelTypeEnum_LOADING_3D" name="IfcAnalysisModelTypeEnum.LOADING_3D">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAnalysisModelTypeEnum_LOADING_3D_gen_IfcStructuralAnalysisModel" general="cl_IfcStructuralAnalysisModel"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAnalysisModelTypeEnum_OUT_PLANE_LOADING_2D" name="IfcAnalysisModelTypeEnum.OUT_PLANE_LOADING_2D">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAnalysisModelTypeEnum_OUT_PLANE_LOADING_2D_gen_IfcStructuralAnalysisModel" general="cl_IfcStructuralAnalysisModel"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAnalysisModelTypeEnum_USERDEFINED" name="IfcAnalysisModelTypeEnum.USERDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAnalysisModelTypeEnum_USERDEFINED_gen_IfcStructuralAnalysisModel" general="cl_IfcStructuralAnalysisModel"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAnalysisModelTypeEnum_NOTDEFINED" name="IfcAnalysisModelTypeEnum.NOTDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAnalysisModelTypeEnum_NOTDEFINED_gen_IfcStructuralAnalysisModel" general="cl_IfcStructuralAnalysisModel"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="as_IfcStructuralConnection_AppliedCondition" name="AppliedCondition" memberEnd="at_IfcStructuralConnection_AppliedCondition as_IfcStructuralConnection_AppliedCondition_target_end">
       <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcStructuralConnection_AppliedCondition_target_end" name="" type="cl_IfcStructuralConnection" association="as_IfcStructuralConnection_AppliedCondition">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcStructuralConnection_AppliedCondition_target_end_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcStructuralConnection_AppliedCondition_target_end_upper" value="1"/>
       </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_CONST" name="IfcStructuralCurveActivityTypeEnum.CONST">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_CONST_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_CONST_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_DISCRETE" name="IfcStructuralCurveActivityTypeEnum.DISCRETE">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_DISCRETE_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_DISCRETE_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_EQUIDISTANT" name="IfcStructuralCurveActivityTypeEnum.EQUIDISTANT">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_EQUIDISTANT_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_EQUIDISTANT_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_LINEAR" name="IfcStructuralCurveActivityTypeEnum.LINEAR">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_LINEAR_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_LINEAR_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_PARABOLA" name="IfcStructuralCurveActivityTypeEnum.PARABOLA">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_PARABOLA_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_PARABOLA_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_POLYGONAL" name="IfcStructuralCurveActivityTypeEnum.POLYGONAL">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_POLYGONAL_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_POLYGONAL_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_SINUS" name="IfcStructuralCurveActivityTypeEnum.SINUS">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_SINUS_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_SINUS_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_USERDEFINED" name="IfcStructuralCurveActivityTypeEnum.USERDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_USERDEFINED_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_USERDEFINED_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_NOTDEFINED" name="IfcStructuralCurveActivityTypeEnum.NOTDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_NOTDEFINED_gen_IfcStructuralCurveAction" general="cl_IfcStructuralCurveAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveActivityTypeEnum_NOTDEFINED_gen_IfcStructuralCurveReaction" general="cl_IfcStructuralCurveReaction"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="as_IfcStructuralCurveConnection_AxisDirection" name="AxisDirection" memberEnd="at_IfcStructuralCurveConnection_AxisDirection as_IfcStructuralCurveConnection_AxisDirection_target_end">
       <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcStructuralCurveConnection_AxisDirection_target_end" name="" type="cl_IfcStructuralCurveConnection" association="as_IfcStructuralCurveConnection_AxisDirection">
@@ -666,71 +776,11 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcStructuralCurveMember_Axis_target_end_upper" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_CABLE" name="IfcStructuralCurveMemberTypeEnum.CABLE">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_CABLE_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_COMPRESSION_MEMBER" name="IfcStructuralCurveMemberTypeEnum.COMPRESSION_MEMBER">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_COMPRESSION_MEMBER_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_PIN_JOINED_MEMBER" name="IfcStructuralCurveMemberTypeEnum.PIN_JOINED_MEMBER">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_PIN_JOINED_MEMBER_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_RIGID_JOINED_MEMBER" name="IfcStructuralCurveMemberTypeEnum.RIGID_JOINED_MEMBER">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_RIGID_JOINED_MEMBER_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_TENSION_MEMBER" name="IfcStructuralCurveMemberTypeEnum.TENSION_MEMBER">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_TENSION_MEMBER_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_USERDEFINED" name="IfcStructuralCurveMemberTypeEnum.USERDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_USERDEFINED_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_NOTDEFINED" name="IfcStructuralCurveMemberTypeEnum.NOTDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMemberTypeEnum_NOTDEFINED_gen_IfcStructuralCurveMember" general="cl_IfcStructuralCurveMember"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="as_IfcStructuralPointConnection_ConditionCoordinateSystem" name="ConditionCoordinateSystem" memberEnd="at_IfcStructuralPointConnection_ConditionCoordinateSystem as_IfcStructuralPointConnection_ConditionCoordinateSystem_target_end">
       <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcStructuralPointConnection_ConditionCoordinateSystem_target_end" name="" type="cl_IfcStructuralPointConnection" association="as_IfcStructuralPointConnection_ConditionCoordinateSystem">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcStructuralPointConnection_ConditionCoordinateSystem_target_end_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcStructuralPointConnection_ConditionCoordinateSystem_target_end_upper" value="1"/>
       </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_BILINEAR" name="IfcStructuralSurfaceActivityTypeEnum.BILINEAR">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_BILINEAR_gen_IfcStructuralSurfaceAction" general="cl_IfcStructuralSurfaceAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_BILINEAR_gen_IfcStructuralSurfaceReaction" general="cl_IfcStructuralSurfaceReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_CONST" name="IfcStructuralSurfaceActivityTypeEnum.CONST">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_CONST_gen_IfcStructuralSurfaceAction" general="cl_IfcStructuralSurfaceAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_CONST_gen_IfcStructuralSurfaceReaction" general="cl_IfcStructuralSurfaceReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_DISCRETE" name="IfcStructuralSurfaceActivityTypeEnum.DISCRETE">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_DISCRETE_gen_IfcStructuralSurfaceAction" general="cl_IfcStructuralSurfaceAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_DISCRETE_gen_IfcStructuralSurfaceReaction" general="cl_IfcStructuralSurfaceReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_ISOCONTOUR" name="IfcStructuralSurfaceActivityTypeEnum.ISOCONTOUR">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_ISOCONTOUR_gen_IfcStructuralSurfaceAction" general="cl_IfcStructuralSurfaceAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_ISOCONTOUR_gen_IfcStructuralSurfaceReaction" general="cl_IfcStructuralSurfaceReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_USERDEFINED" name="IfcStructuralSurfaceActivityTypeEnum.USERDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_USERDEFINED_gen_IfcStructuralSurfaceAction" general="cl_IfcStructuralSurfaceAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_USERDEFINED_gen_IfcStructuralSurfaceReaction" general="cl_IfcStructuralSurfaceReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_NOTDEFINED" name="IfcStructuralSurfaceActivityTypeEnum.NOTDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_NOTDEFINED_gen_IfcStructuralSurfaceAction" general="cl_IfcStructuralSurfaceAction"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceActivityTypeEnum_NOTDEFINED_gen_IfcStructuralSurfaceReaction" general="cl_IfcStructuralSurfaceReaction"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_BENDING_ELEMENT" name="IfcStructuralSurfaceMemberTypeEnum.BENDING_ELEMENT">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_BENDING_ELEMENT_gen_IfcStructuralSurfaceMember" general="cl_IfcStructuralSurfaceMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_MEMBRANE_ELEMENT" name="IfcStructuralSurfaceMemberTypeEnum.MEMBRANE_ELEMENT">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_MEMBRANE_ELEMENT_gen_IfcStructuralSurfaceMember" general="cl_IfcStructuralSurfaceMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_SHELL" name="IfcStructuralSurfaceMemberTypeEnum.SHELL">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_SHELL_gen_IfcStructuralSurfaceMember" general="cl_IfcStructuralSurfaceMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_USERDEFINED" name="IfcStructuralSurfaceMemberTypeEnum.USERDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_USERDEFINED_gen_IfcStructuralSurfaceMember" general="cl_IfcStructuralSurfaceMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_NOTDEFINED" name="IfcStructuralSurfaceMemberTypeEnum.NOTDEFINED">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceMemberTypeEnum_NOTDEFINED_gen_IfcStructuralSurfaceMember" general="cl_IfcStructuralSurfaceMember"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="as_IfcStructuralItem_AssignedStructuralActivity" name="IfcStructuralItem_AssignedStructuralActivity" memberEnd="as_IfcStructuralItem_AssignedStructuralActivity_source_end as_IfcStructuralItem_AssignedStructuralActivity_target_end">
       <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcStructuralItem_AssignedStructuralActivity_source_end" name="(RelatingElement)" type="cl_IfcStructuralItem" association="as_IfcStructuralItem_AssignedStructuralActivity">
@@ -741,56 +791,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcStructuralItem_AssignedStructuralActivity_target_end_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcStructuralItem_AssignedStructuralActivity_target_end_upper" value="1"/>
       </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_StructuralSurfaceMemberVaryingThickness" name="Pset_StructuralSurfaceMemberVaryingThickness">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_StructuralSurfaceMemberVaryingThickness_comment_0">
-        <body>PSET_OCCURRENCEDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness1" name="Thickness1">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness1_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness1_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location1Local" name="Location1Local">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location1Local_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location1Local_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location1Global" name="Location1Global">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location1Global_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location1Global_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness2" name="Thickness2">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness2_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness2_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location2Local" name="Location2Local">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location2Local_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location2Local_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location2Global" name="Location2Global">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location2Global_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location2Global_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness3" name="Thickness3">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness3_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Thickness3_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location3Local" name="Location3Local">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location3Local_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location3Local_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location3Global" name="Location3Global">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location3Global_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StructuralSurfaceMemberVaryingThickness_Location3Global_upper" value="*"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_StructuralSurfaceMemberVaryingThickness_IfcStructuralSurfaceMemberVarying" client="cl_Pset_StructuralSurfaceMemberVaryingThickness" supplier="cl_IfcStructuralSurfaceMemberVarying"/>
   </packagedElement>

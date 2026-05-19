@@ -343,7 +343,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BreechingInletCouplingType_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BreechingInletCouplingType_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FireSuppressionTerminalTypeBreechingInlet_IfcFireSuppressionTerminalTypeEnum.BREECHINGINLET" client="cl_Pset_FireSuppressionTerminalTypeBreechingInlet" supplier="cl_IfcFireSuppressionTerminalTypeEnum_BREECHINGINLET"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FireSuppressionTerminalTypeCommon" name="Pset_FireSuppressionTerminalTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FireSuppressionTerminalTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -359,7 +358,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FireSuppressionTerminalTypeCommon_Status_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FireSuppressionTerminalTypeCommon_IfcFireSuppressionTerminal" client="cl_Pset_FireSuppressionTerminalTypeCommon" supplier="cl_IfcFireSuppressionTerminal"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FireSuppressionTerminalTypeFireHydrant" name="Pset_FireSuppressionTerminalTypeFireHydrant">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FireSuppressionTerminalTypeFireHydrant_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -421,7 +419,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FireHydrantType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FireHydrantType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FireSuppressionTerminalTypeFireHydrant_IfcFireSuppressionTerminalTypeEnum.FIREHYDRANT" client="cl_Pset_FireSuppressionTerminalTypeFireHydrant" supplier="cl_IfcFireSuppressionTerminalTypeEnum_FIREHYDRANT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FireSuppressionTerminalTypeHoseReel" name="Pset_FireSuppressionTerminalTypeHoseReel">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FireSuppressionTerminalTypeHoseReel_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -486,7 +483,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_HoseNozzleType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_HoseNozzleType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FireSuppressionTerminalTypeHoseReel_IfcFireSuppressionTerminalTypeEnum.HOSEREEL" client="cl_Pset_FireSuppressionTerminalTypeHoseReel" supplier="cl_IfcFireSuppressionTerminalTypeEnum_HOSEREEL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FireSuppressionTerminalTypeSprinkler" name="Pset_FireSuppressionTerminalTypeSprinkler">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FireSuppressionTerminalTypeSprinkler_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -584,7 +580,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SprinklerBulbLiquidColour_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SprinklerBulbLiquidColour_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FireSuppressionTerminalTypeSprinkler_IfcFireSuppressionTerminalTypeEnum.SPRINKLER" client="cl_Pset_FireSuppressionTerminalTypeSprinkler" supplier="cl_IfcFireSuppressionTerminalTypeEnum_SPRINKLER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_InterceptorTypeCommon" name="Pset_InterceptorTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_InterceptorTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -640,7 +635,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_InterceptorTypeCommon_VentilatingPipeSize_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_InterceptorTypeCommon_IfcInterceptor" client="cl_Pset_InterceptorTypeCommon" supplier="cl_IfcInterceptor"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SanitaryTerminalTypeBath" name="Pset_SanitaryTerminalTypeBath">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SanitaryTerminalTypeBath_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -672,7 +666,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BathType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BathType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeBath_IfcSanitaryTerminalTypeEnum.BATH" client="cl_Pset_SanitaryTerminalTypeBath" supplier="cl_IfcSanitaryTerminalTypeEnum_BATH"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SanitaryTerminalTypeBidet" name="Pset_SanitaryTerminalTypeBidet">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SanitaryTerminalTypeBidet_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -693,7 +686,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SanitaryTerminalTypeBidet_DrainSize_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeBidet_IfcSanitaryTerminalTypeEnum.BIDET" client="cl_Pset_SanitaryTerminalTypeBidet" supplier="cl_IfcSanitaryTerminalTypeEnum_BIDET"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SanitaryTerminalTypeCistern" name="Pset_SanitaryTerminalTypeCistern">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SanitaryTerminalTypeCistern_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -747,7 +739,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FlushType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FlushType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeCistern_IfcSanitaryTerminalTypeEnum.CISTERN" client="cl_Pset_SanitaryTerminalTypeCistern" supplier="cl_IfcSanitaryTerminalTypeEnum_CISTERN"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SanitaryTerminalTypeCommon" name="Pset_SanitaryTerminalTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SanitaryTerminalTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -783,7 +774,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SanitaryTerminalTypeCommon_Colour_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeCommon_IfcSanitaryTerminal" client="cl_Pset_SanitaryTerminalTypeCommon" supplier="cl_IfcSanitaryTerminal"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SanitaryTerminalTypeSanitaryFountain" name="Pset_SanitaryTerminalTypeSanitaryFountain">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SanitaryTerminalTypeSanitaryFountain_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -810,7 +800,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FountainType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FountainType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeSanitaryFountain_IfcSanitaryTerminalTypeEnum.SANITARYFOUNTAIN" client="cl_Pset_SanitaryTerminalTypeSanitaryFountain" supplier="cl_IfcSanitaryTerminalTypeEnum_SANITARYFOUNTAIN"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SanitaryTerminalTypeShower" name="Pset_SanitaryTerminalTypeShower">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SanitaryTerminalTypeShower_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -843,7 +832,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ShowerType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ShowerType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeShower_IfcSanitaryTerminalTypeEnum.SHOWER" client="cl_Pset_SanitaryTerminalTypeShower" supplier="cl_IfcSanitaryTerminalTypeEnum_SHOWER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SanitaryTerminalTypeSink" name="Pset_SanitaryTerminalTypeSink">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SanitaryTerminalTypeSink_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -892,7 +880,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SinkType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SinkType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeSink_IfcSanitaryTerminalTypeEnum.SINK" client="cl_Pset_SanitaryTerminalTypeSink" supplier="cl_IfcSanitaryTerminalTypeEnum_SINK"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SanitaryTerminalTypeToiletPan" name="Pset_SanitaryTerminalTypeToiletPan">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SanitaryTerminalTypeToiletPan_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -935,7 +922,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ToiletPanType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ToiletPanType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeToiletPan_IfcSanitaryTerminalTypeEnum.TOILETPAN" client="cl_Pset_SanitaryTerminalTypeToiletPan" supplier="cl_IfcSanitaryTerminalTypeEnum_TOILETPAN"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SanitaryTerminalTypeUrinal" name="Pset_SanitaryTerminalTypeUrinal">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SanitaryTerminalTypeUrinal_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -964,7 +950,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UrinalType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UrinalType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeUrinal_IfcSanitaryTerminalTypeEnum.URINAL" client="cl_Pset_SanitaryTerminalTypeUrinal" supplier="cl_IfcSanitaryTerminalTypeEnum_URINAL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SanitaryTerminalTypeWashHandBasin" name="Pset_SanitaryTerminalTypeWashHandBasin">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SanitaryTerminalTypeWashHandBasin_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1000,7 +985,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WashHandBasinType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WashHandBasinType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeWashHandBasin_IfcSanitaryTerminalTypeEnum.WASHHANDBASIN" client="cl_Pset_SanitaryTerminalTypeWashHandBasin" supplier="cl_IfcSanitaryTerminalTypeEnum_WASHHANDBASIN"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_StackTerminalTypeCommon" name="Pset_StackTerminalTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_StackTerminalTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1016,7 +1000,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StackTerminalTypeCommon_Status_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_StackTerminalTypeCommon_IfcStackTerminal" client="cl_Pset_StackTerminalTypeCommon" supplier="cl_IfcStackTerminal"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WasteTerminalTypeCommon" name="Pset_WasteTerminalTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WasteTerminalTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1032,7 +1015,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WasteTerminalTypeCommon_Status_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeCommon_IfcWasteTerminal" client="cl_Pset_WasteTerminalTypeCommon" supplier="cl_IfcWasteTerminal"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WasteTerminalTypeFloorTrap" name="Pset_WasteTerminalTypeFloorTrap">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WasteTerminalTypeFloorTrap_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1120,7 +1102,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InletPatternType_4" name="4"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InletPatternType_NONE" name="NONE"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeFloorTrap_IfcWasteTerminalTypeEnum.FLOORTRAP" client="cl_Pset_WasteTerminalTypeFloorTrap" supplier="cl_IfcWasteTerminalTypeEnum_FLOORTRAP"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WasteTerminalTypeFloorWaste" name="Pset_WasteTerminalTypeFloorWaste">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WasteTerminalTypeFloorWaste_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1156,7 +1137,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WasteTerminalTypeFloorWaste_CoverWidth_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeFloorWaste_IfcWasteTerminalTypeEnum.FLOORWASTE" client="cl_Pset_WasteTerminalTypeFloorWaste" supplier="cl_IfcWasteTerminalTypeEnum_FLOORWASTE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WasteTerminalTypeGullySump" name="Pset_WasteTerminalTypeGullySump">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WasteTerminalTypeGullySump_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1212,7 +1192,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WasteTerminalTypeGullySump_CoverWidth_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeGullySump_IfcWasteTerminalTypeEnum.GULLYSUMP" client="cl_Pset_WasteTerminalTypeGullySump" supplier="cl_IfcWasteTerminalTypeEnum_GULLYSUMP"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WasteTerminalTypeGullyTrap" name="Pset_WasteTerminalTypeGullyTrap">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WasteTerminalTypeGullyTrap_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1273,7 +1252,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WasteTerminalTypeGullyTrap_CoverWidth_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeGullyTrap_IfcWasteTerminalTypeEnum.GULLYTRAP" client="cl_Pset_WasteTerminalTypeGullyTrap" supplier="cl_IfcWasteTerminalTypeEnum_GULLYTRAP"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WasteTerminalTypeRoofDrain" name="Pset_WasteTerminalTypeRoofDrain">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WasteTerminalTypeRoofDrain_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1309,7 +1287,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WasteTerminalTypeRoofDrain_CoverWidth_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeRoofDrain_IfcWasteTerminalTypeEnum.ROOFDRAIN" client="cl_Pset_WasteTerminalTypeRoofDrain" supplier="cl_IfcWasteTerminalTypeEnum_ROOFDRAIN"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WasteTerminalTypeWasteDisposalUnit" name="Pset_WasteTerminalTypeWasteDisposalUnit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WasteTerminalTypeWasteDisposalUnit_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1330,7 +1307,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WasteTerminalTypeWasteDisposalUnit_NominalDepth_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeWasteDisposalUnit_IfcWasteTerminalTypeEnum.WASTEDISPOSALUNIT" client="cl_Pset_WasteTerminalTypeWasteDisposalUnit" supplier="cl_IfcWasteTerminalTypeEnum_WASTEDISPOSALUNIT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WasteTerminalTypeWasteTrap" name="Pset_WasteTerminalTypeWasteTrap">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WasteTerminalTypeWasteTrap_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1351,7 +1327,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WasteTerminalTypeWasteTrap_InletConnectionSize_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeWasteTrap_IfcWasteTerminalTypeEnum.WASTETRAP" client="cl_Pset_WasteTerminalTypeWasteTrap" supplier="cl_IfcWasteTerminalTypeEnum_WASTETRAP"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_FireSuppressionTerminalBaseQuantities" name="Qto_FireSuppressionTerminalBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_FireSuppressionTerminalBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1362,7 +1337,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_FireSuppressionTerminalBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FireSuppressionTerminalBaseQuantities_IfcFireSuppressionTerminal" client="cl_Qto_FireSuppressionTerminalBaseQuantities" supplier="cl_IfcFireSuppressionTerminal"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_InterceptorBaseQuantities" name="Qto_InterceptorBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_InterceptorBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1373,7 +1347,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_InterceptorBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_InterceptorBaseQuantities_IfcInterceptor" client="cl_Qto_InterceptorBaseQuantities" supplier="cl_IfcInterceptor"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_SanitaryTerminalBaseQuantities" name="Qto_SanitaryTerminalBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_SanitaryTerminalBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1384,7 +1357,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_SanitaryTerminalBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SanitaryTerminalBaseQuantities_IfcSanitaryTerminal" client="cl_Qto_SanitaryTerminalBaseQuantities" supplier="cl_IfcSanitaryTerminal"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_StackTerminalBaseQuantities" name="Qto_StackTerminalBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_StackTerminalBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1395,7 +1367,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_StackTerminalBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_StackTerminalBaseQuantities_IfcStackTerminal" client="cl_Qto_StackTerminalBaseQuantities" supplier="cl_IfcStackTerminal"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_WasteTerminalBaseQuantities" name="Qto_WasteTerminalBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_WasteTerminalBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1406,6 +1377,35 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_WasteTerminalBaseQuantities_GrossWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FireSuppressionTerminalTypeBreechingInlet_IfcFireSuppressionTerminalTypeEnum.BREECHINGINLET" client="cl_Pset_FireSuppressionTerminalTypeBreechingInlet" supplier="cl_IfcFireSuppressionTerminalTypeEnum_BREECHINGINLET"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FireSuppressionTerminalTypeCommon_IfcFireSuppressionTerminal" client="cl_Pset_FireSuppressionTerminalTypeCommon" supplier="cl_IfcFireSuppressionTerminal"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FireSuppressionTerminalTypeFireHydrant_IfcFireSuppressionTerminalTypeEnum.FIREHYDRANT" client="cl_Pset_FireSuppressionTerminalTypeFireHydrant" supplier="cl_IfcFireSuppressionTerminalTypeEnum_FIREHYDRANT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FireSuppressionTerminalTypeHoseReel_IfcFireSuppressionTerminalTypeEnum.HOSEREEL" client="cl_Pset_FireSuppressionTerminalTypeHoseReel" supplier="cl_IfcFireSuppressionTerminalTypeEnum_HOSEREEL"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FireSuppressionTerminalTypeSprinkler_IfcFireSuppressionTerminalTypeEnum.SPRINKLER" client="cl_Pset_FireSuppressionTerminalTypeSprinkler" supplier="cl_IfcFireSuppressionTerminalTypeEnum_SPRINKLER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_InterceptorTypeCommon_IfcInterceptor" client="cl_Pset_InterceptorTypeCommon" supplier="cl_IfcInterceptor"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeBath_IfcSanitaryTerminalTypeEnum.BATH" client="cl_Pset_SanitaryTerminalTypeBath" supplier="cl_IfcSanitaryTerminalTypeEnum_BATH"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeBidet_IfcSanitaryTerminalTypeEnum.BIDET" client="cl_Pset_SanitaryTerminalTypeBidet" supplier="cl_IfcSanitaryTerminalTypeEnum_BIDET"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeCistern_IfcSanitaryTerminalTypeEnum.CISTERN" client="cl_Pset_SanitaryTerminalTypeCistern" supplier="cl_IfcSanitaryTerminalTypeEnum_CISTERN"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeCommon_IfcSanitaryTerminal" client="cl_Pset_SanitaryTerminalTypeCommon" supplier="cl_IfcSanitaryTerminal"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeSanitaryFountain_IfcSanitaryTerminalTypeEnum.SANITARYFOUNTAIN" client="cl_Pset_SanitaryTerminalTypeSanitaryFountain" supplier="cl_IfcSanitaryTerminalTypeEnum_SANITARYFOUNTAIN"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeShower_IfcSanitaryTerminalTypeEnum.SHOWER" client="cl_Pset_SanitaryTerminalTypeShower" supplier="cl_IfcSanitaryTerminalTypeEnum_SHOWER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeSink_IfcSanitaryTerminalTypeEnum.SINK" client="cl_Pset_SanitaryTerminalTypeSink" supplier="cl_IfcSanitaryTerminalTypeEnum_SINK"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeToiletPan_IfcSanitaryTerminalTypeEnum.TOILETPAN" client="cl_Pset_SanitaryTerminalTypeToiletPan" supplier="cl_IfcSanitaryTerminalTypeEnum_TOILETPAN"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeUrinal_IfcSanitaryTerminalTypeEnum.URINAL" client="cl_Pset_SanitaryTerminalTypeUrinal" supplier="cl_IfcSanitaryTerminalTypeEnum_URINAL"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SanitaryTerminalTypeWashHandBasin_IfcSanitaryTerminalTypeEnum.WASHHANDBASIN" client="cl_Pset_SanitaryTerminalTypeWashHandBasin" supplier="cl_IfcSanitaryTerminalTypeEnum_WASHHANDBASIN"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_StackTerminalTypeCommon_IfcStackTerminal" client="cl_Pset_StackTerminalTypeCommon" supplier="cl_IfcStackTerminal"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeCommon_IfcWasteTerminal" client="cl_Pset_WasteTerminalTypeCommon" supplier="cl_IfcWasteTerminal"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeFloorTrap_IfcWasteTerminalTypeEnum.FLOORTRAP" client="cl_Pset_WasteTerminalTypeFloorTrap" supplier="cl_IfcWasteTerminalTypeEnum_FLOORTRAP"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeFloorWaste_IfcWasteTerminalTypeEnum.FLOORWASTE" client="cl_Pset_WasteTerminalTypeFloorWaste" supplier="cl_IfcWasteTerminalTypeEnum_FLOORWASTE"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeGullySump_IfcWasteTerminalTypeEnum.GULLYSUMP" client="cl_Pset_WasteTerminalTypeGullySump" supplier="cl_IfcWasteTerminalTypeEnum_GULLYSUMP"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeGullyTrap_IfcWasteTerminalTypeEnum.GULLYTRAP" client="cl_Pset_WasteTerminalTypeGullyTrap" supplier="cl_IfcWasteTerminalTypeEnum_GULLYTRAP"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeRoofDrain_IfcWasteTerminalTypeEnum.ROOFDRAIN" client="cl_Pset_WasteTerminalTypeRoofDrain" supplier="cl_IfcWasteTerminalTypeEnum_ROOFDRAIN"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeWasteDisposalUnit_IfcWasteTerminalTypeEnum.WASTEDISPOSALUNIT" client="cl_Pset_WasteTerminalTypeWasteDisposalUnit" supplier="cl_IfcWasteTerminalTypeEnum_WASTEDISPOSALUNIT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WasteTerminalTypeWasteTrap_IfcWasteTerminalTypeEnum.WASTETRAP" client="cl_Pset_WasteTerminalTypeWasteTrap" supplier="cl_IfcWasteTerminalTypeEnum_WASTETRAP"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FireSuppressionTerminalBaseQuantities_IfcFireSuppressionTerminal" client="cl_Qto_FireSuppressionTerminalBaseQuantities" supplier="cl_IfcFireSuppressionTerminal"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_InterceptorBaseQuantities_IfcInterceptor" client="cl_Qto_InterceptorBaseQuantities" supplier="cl_IfcInterceptor"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SanitaryTerminalBaseQuantities_IfcSanitaryTerminal" client="cl_Qto_SanitaryTerminalBaseQuantities" supplier="cl_IfcSanitaryTerminal"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_StackTerminalBaseQuantities_IfcStackTerminal" client="cl_Qto_StackTerminalBaseQuantities" supplier="cl_IfcStackTerminal"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_WasteTerminalBaseQuantities_IfcWasteTerminal" client="cl_Qto_WasteTerminalBaseQuantities" supplier="cl_IfcWasteTerminal"/>
   </packagedElement>
 </uml:Model>

@@ -360,6 +360,901 @@ END_FUNCTION;
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcMaterialProperties_Material_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialCombustion" name="Pset_MaterialCombustion">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialCombustion_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCombustion_SpecificHeatCapacity" name="SpecificHeatCapacity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcSpecificHeatCapacityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCombustion_SpecificHeatCapacity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCombustion_SpecificHeatCapacity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCombustion_N20Content" name="N20Content">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCombustion_N20Content_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCombustion_N20Content_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCombustion_COContent" name="COContent">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCombustion_COContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCombustion_COContent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCombustion_CO2Content" name="CO2Content">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCombustion_CO2Content_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCombustion_CO2Content_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialCommon" name="Pset_MaterialCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialCommon_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCommon_MolecularWeight" name="MolecularWeight">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMolecularWeightMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCommon_MolecularWeight_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCommon_MolecularWeight_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCommon_Porosity" name="Porosity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCommon_Porosity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCommon_Porosity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCommon_MassDensity" name="MassDensity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMassDensityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCommon_MassDensity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCommon_MassDensity_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialConcrete" name="Pset_MaterialConcrete">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialConcrete_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialConcrete_CompressiveStrength" name="CompressiveStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialConcrete_CompressiveStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialConcrete_CompressiveStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialConcrete_MaxAggregateSize" name="MaxAggregateSize">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialConcrete_MaxAggregateSize_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialConcrete_MaxAggregateSize_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialConcrete_AdmixturesDescription" name="AdmixturesDescription">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialConcrete_AdmixturesDescription_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialConcrete_AdmixturesDescription_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialConcrete_Workability" name="Workability">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialConcrete_Workability_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialConcrete_Workability_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialConcrete_WaterImpermeability" name="WaterImpermeability">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialConcrete_WaterImpermeability_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialConcrete_WaterImpermeability_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialConcrete_ProtectivePoreRatio" name="ProtectivePoreRatio">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialConcrete_ProtectivePoreRatio_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialConcrete_ProtectivePoreRatio_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialEnergy" name="Pset_MaterialEnergy">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialEnergy_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_ViscosityTemperatureDerivative" name="ViscosityTemperatureDerivative">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_ViscosityTemperatureDerivative_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_ViscosityTemperatureDerivative_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_MoistureCapacityThermalGradient" name="MoistureCapacityThermalGradient">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_MoistureCapacityThermalGradient_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_MoistureCapacityThermalGradient_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_ThermalConductivityTemperatureDerivative" name="ThermalConductivityTemperatureDerivative">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_ThermalConductivityTemperatureDerivative_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_ThermalConductivityTemperatureDerivative_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_SpecificHeatTemperatureDerivative" name="SpecificHeatTemperatureDerivative">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_SpecificHeatTemperatureDerivative_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_SpecificHeatTemperatureDerivative_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_VisibleRefractionIndex" name="VisibleRefractionIndex">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_VisibleRefractionIndex_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_VisibleRefractionIndex_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_SolarRefractionIndex" name="SolarRefractionIndex">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_SolarRefractionIndex_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_SolarRefractionIndex_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_GasPressure" name="GasPressure">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_GasPressure_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_GasPressure_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialFuel" name="Pset_MaterialFuel">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialFuel_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialFuel_CombustionTemperature" name="CombustionTemperature">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialFuel_CombustionTemperature_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialFuel_CombustionTemperature_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialFuel_CarbonContent" name="CarbonContent">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialFuel_CarbonContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialFuel_CarbonContent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialFuel_LowerHeatingValue" name="LowerHeatingValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcHeatingValueMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialFuel_LowerHeatingValue_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialFuel_LowerHeatingValue_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialFuel_HigherHeatingValue" name="HigherHeatingValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcHeatingValueMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialFuel_HigherHeatingValue_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialFuel_HigherHeatingValue_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialHygroscopic" name="Pset_MaterialHygroscopic">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialHygroscopic_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialHygroscopic_UpperVaporResistanceFactor" name="UpperVaporResistanceFactor">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialHygroscopic_UpperVaporResistanceFactor_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialHygroscopic_UpperVaporResistanceFactor_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialHygroscopic_LowerVaporResistanceFactor" name="LowerVaporResistanceFactor">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialHygroscopic_LowerVaporResistanceFactor_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialHygroscopic_LowerVaporResistanceFactor_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialHygroscopic_IsothermalMoistureCapacity" name="IsothermalMoistureCapacity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIsothermalMoistureCapacityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialHygroscopic_IsothermalMoistureCapacity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialHygroscopic_IsothermalMoistureCapacity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialHygroscopic_VaporPermeability" name="VaporPermeability">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcVaporPermeabilityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialHygroscopic_VaporPermeability_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialHygroscopic_VaporPermeability_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialHygroscopic_MoistureDiffusivity" name="MoistureDiffusivity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMoistureDiffusivityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialHygroscopic_MoistureDiffusivity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialHygroscopic_MoistureDiffusivity_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialMechanical" name="Pset_MaterialMechanical">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialMechanical_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialMechanical_DynamicViscosity" name="DynamicViscosity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcDynamicViscosityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialMechanical_DynamicViscosity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialMechanical_DynamicViscosity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialMechanical_YoungModulus" name="YoungModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialMechanical_YoungModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialMechanical_YoungModulus_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialMechanical_ShearModulus" name="ShearModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialMechanical_ShearModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialMechanical_ShearModulus_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialMechanical_PoissonRatio" name="PoissonRatio">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialMechanical_PoissonRatio_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialMechanical_PoissonRatio_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialMechanical_ThermalExpansionCoefficient" name="ThermalExpansionCoefficient">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermalExpansionCoefficientMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialMechanical_ThermalExpansionCoefficient_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialMechanical_ThermalExpansionCoefficient_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialOptical" name="Pset_MaterialOptical">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialOptical_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_VisibleTransmittance" name="VisibleTransmittance">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_VisibleTransmittance_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_VisibleTransmittance_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_SolarTransmittance" name="SolarTransmittance">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_SolarTransmittance_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_SolarTransmittance_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_ThermalIrTransmittance" name="ThermalIrTransmittance">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_ThermalIrTransmittance_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_ThermalIrTransmittance_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_ThermalIrEmissivityBack" name="ThermalIrEmissivityBack">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_ThermalIrEmissivityBack_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_ThermalIrEmissivityBack_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_ThermalIrEmissivityFront" name="ThermalIrEmissivityFront">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_ThermalIrEmissivityFront_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_ThermalIrEmissivityFront_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_VisibleReflectanceBack" name="VisibleReflectanceBack">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_VisibleReflectanceBack_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_VisibleReflectanceBack_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_VisibleReflectanceFront" name="VisibleReflectanceFront">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_VisibleReflectanceFront_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_VisibleReflectanceFront_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_SolarReflectanceBack" name="SolarReflectanceBack">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_SolarReflectanceBack_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_SolarReflectanceBack_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_SolarReflectanceFront" name="SolarReflectanceFront">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_SolarReflectanceFront_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_SolarReflectanceFront_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialSteel" name="Pset_MaterialSteel">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialSteel_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_YieldStress" name="YieldStress">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_YieldStress_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_YieldStress_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_UltimateStress" name="UltimateStress">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_UltimateStress_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_UltimateStress_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_UltimateStrain" name="UltimateStrain">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_UltimateStrain_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_UltimateStrain_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_HardeningModule" name="HardeningModule">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_HardeningModule_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_HardeningModule_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_ProportionalStress" name="ProportionalStress">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_ProportionalStress_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_ProportionalStress_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_PlasticStrain" name="PlasticStrain">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_PlasticStrain_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_PlasticStrain_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_Relaxations" name="Relaxations" type="cl_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_Relaxations_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_Relaxations_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_StructuralGrade" name="StructuralGrade">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_StructuralGrade_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_StructuralGrade_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure" name="IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_gen_PropertyTableValueBase">
+        <general xmi:type="uml:Class" href="ifc4x3_add2.uml#cl_PropertyTableValueBase"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_DefiningValue" name="DefiningValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_DefiningValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_DefiningValue_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_DefinedValue" name="DefinedValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_DefinedValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_DefinedValue_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialThermal" name="Pset_MaterialThermal">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialThermal_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialThermal_SpecificHeatCapacity" name="SpecificHeatCapacity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcSpecificHeatCapacityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialThermal_SpecificHeatCapacity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialThermal_SpecificHeatCapacity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialThermal_BoilingPoint" name="BoilingPoint">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialThermal_BoilingPoint_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialThermal_BoilingPoint_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialThermal_FreezingPoint" name="FreezingPoint">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialThermal_FreezingPoint_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialThermal_FreezingPoint_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialThermal_ThermalConductivity" name="ThermalConductivity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermalConductivityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialThermal_ThermalConductivity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialThermal_ThermalConductivity_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialWater" name="Pset_MaterialWater">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialWater_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_IsPotable" name="IsPotable">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_IsPotable_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_IsPotable_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_Hardness" name="Hardness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIonConcentrationMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_Hardness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_Hardness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_AlkalinityConcentration" name="AlkalinityConcentration">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIonConcentrationMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_AlkalinityConcentration_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_AlkalinityConcentration_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_AcidityConcentration" name="AcidityConcentration">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIonConcentrationMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_AcidityConcentration_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_AcidityConcentration_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_ImpuritiesContent" name="ImpuritiesContent">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_ImpuritiesContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_ImpuritiesContent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_DissolvedSolidsContent" name="DissolvedSolidsContent">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_DissolvedSolidsContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_DissolvedSolidsContent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_PHLevel" name="PHLevel">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPHMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_PHLevel_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_PHLevel_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialWood" name="Pset_MaterialWood">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialWood_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_Species" name="Species">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_Species_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_Species_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_StrengthGrade" name="StrengthGrade">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_StrengthGrade_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_StrengthGrade_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_AppearanceGrade" name="AppearanceGrade">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_AppearanceGrade_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_AppearanceGrade_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_Layup" name="Layup">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_Layup_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_Layup_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_Layers" name="Layers">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_Layers_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_Layers_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_Plies" name="Plies">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_Plies_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_Plies_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_MoistureContent" name="MoistureContent">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_MoistureContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_MoistureContent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_DimensionalChangeCoefficient" name="DimensionalChangeCoefficient">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_DimensionalChangeCoefficient_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_DimensionalChangeCoefficient_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_ThicknessSwelling" name="ThicknessSwelling">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_ThicknessSwelling_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_ThicknessSwelling_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialWoodBasedStructure" name="Pset_MaterialWoodBasedStructure">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialWoodBasedStructure_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWoodBasedStructure_ApplicableStructuralDesignMethod" name="ApplicableStructuralDesignMethod">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWoodBasedStructure_ApplicableStructuralDesignMethod_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWoodBasedStructure_ApplicableStructuralDesignMethod_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalBeamInPlane" name="Pset_MechanicalBeamInPlane">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalBeamInPlane_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulus" name="YoungModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulus_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusMin" name="YoungModulusMin">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusMin_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusMin_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusPerp" name="YoungModulusPerp">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusPerp_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusPerp_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusPerpMin" name="YoungModulusPerpMin">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusPerpMin_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusPerpMin_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_ShearModulus" name="ShearModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_ShearModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_ShearModulus_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_ShearModulusMin" name="ShearModulusMin">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_ShearModulusMin_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_ShearModulusMin_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_BendingStrength" name="BendingStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_BendingStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_BendingStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_TensileStrength" name="TensileStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_TensileStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_TensileStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_TensileStrengthPerp" name="TensileStrengthPerp">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_TensileStrengthPerp_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_TensileStrengthPerp_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_CompStrength" name="CompStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_CompStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_CompStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_CompStrengthPerp" name="CompStrengthPerp">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_CompStrengthPerp_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_CompStrengthPerp_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_RaisedCompStrengthPerp" name="RaisedCompStrengthPerp">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_RaisedCompStrengthPerp_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_RaisedCompStrengthPerp_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_ShearStrength" name="ShearStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_ShearStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_ShearStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_TorsionalStrength" name="TorsionalStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_TorsionalStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_TorsionalStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_ReferenceDepth" name="ReferenceDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_ReferenceDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_ReferenceDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_InstabilityFactors" name="InstabilityFactors" type="cl_IfcPositiveRatioMeasureIfcPositiveRatioMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_InstabilityFactors_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_InstabilityFactors_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPositiveRatioMeasureIfcPositiveRatioMeasure" name="IfcPositiveRatioMeasureIfcPositiveRatioMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_gen_PropertyTableValueBase">
+        <general xmi:type="uml:Class" href="ifc4x3_add2.uml#cl_PropertyTableValueBase"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_DefiningValue" name="DefiningValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_DefiningValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_DefiningValue_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_DefinedValue" name="DefinedValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_DefinedValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_DefinedValue_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalBeamInPlaneNegative" name="Pset_MechanicalBeamInPlaneNegative">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalBeamInPlaneNegative_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulus" name="YoungModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulus_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusMin" name="YoungModulusMin">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusMin_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusMin_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusPerp" name="YoungModulusPerp">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusPerp_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusPerp_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusPerpMin" name="YoungModulusPerpMin">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusPerpMin_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusPerpMin_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearModulus" name="ShearModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearModulus_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearModulusMin" name="ShearModulusMin">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearModulusMin_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearModulusMin_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_BendingStrength" name="BendingStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_BendingStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_BendingStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TensileStrength" name="TensileStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TensileStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TensileStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TensileStrengthPerp" name="TensileStrengthPerp">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TensileStrengthPerp_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TensileStrengthPerp_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_CompStrength" name="CompStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_CompStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_CompStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_CompStrengthPerp" name="CompStrengthPerp">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_CompStrengthPerp_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_CompStrengthPerp_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_RaisedCompStrengthPerp" name="RaisedCompStrengthPerp">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_RaisedCompStrengthPerp_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_RaisedCompStrengthPerp_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearStrength" name="ShearStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TorsionalStrength" name="TorsionalStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TorsionalStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TorsionalStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ReferenceDepth" name="ReferenceDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ReferenceDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ReferenceDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_InstabilityFactors" name="InstabilityFactors" type="cl_IfcPositiveRatioMeasureIfcPositiveRatioMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_InstabilityFactors_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_InstabilityFactors_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalBeamOutOfPlane" name="Pset_MechanicalBeamOutOfPlane">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalBeamOutOfPlane_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulus" name="YoungModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulus_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusMin" name="YoungModulusMin">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusMin_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusMin_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusPerp" name="YoungModulusPerp">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusPerp_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusPerp_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusPerpMin" name="YoungModulusPerpMin">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusPerpMin_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusPerpMin_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearModulus" name="ShearModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearModulus_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearModulusMin" name="ShearModulusMin">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearModulusMin_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearModulusMin_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_BendingStrength" name="BendingStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_BendingStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_BendingStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TensileStrength" name="TensileStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TensileStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TensileStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TensileStrengthPerp" name="TensileStrengthPerp">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TensileStrengthPerp_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TensileStrengthPerp_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_CompStrength" name="CompStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_CompStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_CompStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_CompStrengthPerp" name="CompStrengthPerp">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_CompStrengthPerp_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_CompStrengthPerp_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_RaisedCompStrengthPerp" name="RaisedCompStrengthPerp">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_RaisedCompStrengthPerp_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_RaisedCompStrengthPerp_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearStrength" name="ShearStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TorsionalStrength" name="TorsionalStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TorsionalStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TorsionalStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ReferenceDepth" name="ReferenceDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ReferenceDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ReferenceDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_InstabilityFactors" name="InstabilityFactors" type="cl_IfcPositiveRatioMeasureIfcPositiveRatioMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_InstabilityFactors_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_InstabilityFactors_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalPanelInPlane" name="Pset_MechanicalPanelInPlane">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalPanelInPlane_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusBending" name="YoungModulusBending" type="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusBending_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusBending_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusTension" name="YoungModulusTension" type="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusTension_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusTension_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusCompression" name="YoungModulusCompression">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusCompression_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusCompression_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_ShearModulus" name="ShearModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_ShearModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_ShearModulus_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_BendingStrength" name="BendingStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_BendingStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_BendingStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_CompressiveStrength" name="CompressiveStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_CompressiveStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_CompressiveStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_TensileStrength" name="TensileStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_TensileStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_TensileStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_ShearStrength" name="ShearStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_ShearStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_ShearStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_BearingStrength" name="BearingStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_BearingStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_BearingStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_RaisedCompressiveStrength" name="RaisedCompressiveStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_RaisedCompressiveStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_RaisedCompressiveStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_ReferenceDepth" name="ReferenceDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_ReferenceDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_ReferenceDepth_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure" name="IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_gen_PropertyTableValueBase">
+        <general xmi:type="uml:Class" href="ifc4x3_add2.uml#cl_PropertyTableValueBase"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_DefiningValue" name="DefiningValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositivePlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_DefiningValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_DefiningValue_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_DefinedValue" name="DefinedValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_DefinedValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_DefinedValue_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure" name="IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure_gen_PropertyTableValueBase">
+        <general xmi:type="uml:Class" href="ifc4x3_add2.uml#cl_PropertyTableValueBase"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPositivePlaneAngleMeasureIfcPressureMeasure_DefiningValue" name="DefiningValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositivePlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPositivePlaneAngleMeasureIfcPressureMeasure_DefiningValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositivePlaneAngleMeasureIfcPressureMeasure_DefiningValue_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPositivePlaneAngleMeasureIfcPressureMeasure_DefinedValue" name="DefinedValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPositivePlaneAngleMeasureIfcPressureMeasure_DefinedValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositivePlaneAngleMeasureIfcPressureMeasure_DefinedValue_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalPanelOutOfPlane" name="Pset_MechanicalPanelOutOfPlane">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalPanelOutOfPlane_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusBending" name="YoungModulusBending" type="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusBending_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusBending_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusTension" name="YoungModulusTension" type="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusTension_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusTension_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusCompression" name="YoungModulusCompression">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusCompression_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusCompression_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ShearModulus" name="ShearModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ShearModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ShearModulus_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_BendingStrength" name="BendingStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_BendingStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_BendingStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_CompressiveStrength" name="CompressiveStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_CompressiveStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_CompressiveStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_TensileStrength" name="TensileStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_TensileStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_TensileStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ShearStrength" name="ShearStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ShearStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ShearStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_BearingStrength" name="BearingStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_BearingStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_BearingStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_RaisedCompressiveStrength" name="RaisedCompressiveStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_RaisedCompressiveStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_RaisedCompressiveStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ReferenceDepth" name="ReferenceDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ReferenceDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ReferenceDepth_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalPanelOutOfPlaneNegative" name="Pset_MechanicalPanelOutOfPlaneNegative">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalPanelOutOfPlaneNegative_comment_0">
+        <body>PSET_MATERIALDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusBending" name="YoungModulusBending" type="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusBending_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusBending_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusTension" name="YoungModulusTension" type="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusTension_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusTension_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusCompression" name="YoungModulusCompression">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusCompression_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusCompression_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ShearModulus" name="ShearModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ShearModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ShearModulus_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_BendingStrength" name="BendingStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_BendingStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_BendingStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_CompressiveStrength" name="CompressiveStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_CompressiveStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_CompressiveStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_TensileStrength" name="TensileStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_TensileStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_TensileStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ShearStrength" name="ShearStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ShearStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ShearStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_BearingStrength" name="BearingStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_BearingStrength_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_BearingStrength_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_RaisedCompressiveStrength" name="RaisedCompressiveStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_RaisedCompressiveStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_RaisedCompressiveStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ReferenceDepth" name="ReferenceDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ReferenceDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ReferenceDepth_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="as_IfcMaterialClassificationRelationship_MaterialClassifications" name="MaterialClassifications" memberEnd="at_IfcMaterialClassificationRelationship_MaterialClassifications as_IfcMaterialClassificationRelationship_MaterialClassifications_target_end">
       <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcMaterialClassificationRelationship_MaterialClassifications_target_end" name="" type="cl_IfcMaterialClassificationRelationship" association="as_IfcMaterialClassificationRelationship_MaterialClassifications">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcMaterialClassificationRelationship_MaterialClassifications_target_end_lower"/>
@@ -462,919 +1357,24 @@ END_FUNCTION;
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcMaterialProperties_Material_target_end_upper" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialCombustion" name="Pset_MaterialCombustion">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialCombustion_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCombustion_SpecificHeatCapacity" name="SpecificHeatCapacity">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcSpecificHeatCapacityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCombustion_SpecificHeatCapacity_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCombustion_SpecificHeatCapacity_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCombustion_N20Content" name="N20Content">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCombustion_N20Content_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCombustion_N20Content_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCombustion_COContent" name="COContent">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCombustion_COContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCombustion_COContent_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCombustion_CO2Content" name="CO2Content">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCombustion_CO2Content_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCombustion_CO2Content_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialCombustion_IfcMaterial" client="cl_Pset_MaterialCombustion" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialCommon" name="Pset_MaterialCommon">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialCommon_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCommon_MolecularWeight" name="MolecularWeight">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMolecularWeightMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCommon_MolecularWeight_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCommon_MolecularWeight_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCommon_Porosity" name="Porosity">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCommon_Porosity_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCommon_Porosity_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialCommon_MassDensity" name="MassDensity">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMassDensityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialCommon_MassDensity_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialCommon_MassDensity_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialCommon_IfcMaterial" client="cl_Pset_MaterialCommon" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialConcrete" name="Pset_MaterialConcrete">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialConcrete_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialConcrete_CompressiveStrength" name="CompressiveStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialConcrete_CompressiveStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialConcrete_CompressiveStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialConcrete_MaxAggregateSize" name="MaxAggregateSize">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialConcrete_MaxAggregateSize_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialConcrete_MaxAggregateSize_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialConcrete_AdmixturesDescription" name="AdmixturesDescription">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialConcrete_AdmixturesDescription_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialConcrete_AdmixturesDescription_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialConcrete_Workability" name="Workability">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialConcrete_Workability_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialConcrete_Workability_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialConcrete_WaterImpermeability" name="WaterImpermeability">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialConcrete_WaterImpermeability_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialConcrete_WaterImpermeability_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialConcrete_ProtectivePoreRatio" name="ProtectivePoreRatio">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialConcrete_ProtectivePoreRatio_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialConcrete_ProtectivePoreRatio_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialConcrete_IfcMaterial" client="cl_Pset_MaterialConcrete" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialEnergy" name="Pset_MaterialEnergy">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialEnergy_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_ViscosityTemperatureDerivative" name="ViscosityTemperatureDerivative">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_ViscosityTemperatureDerivative_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_ViscosityTemperatureDerivative_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_MoistureCapacityThermalGradient" name="MoistureCapacityThermalGradient">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_MoistureCapacityThermalGradient_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_MoistureCapacityThermalGradient_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_ThermalConductivityTemperatureDerivative" name="ThermalConductivityTemperatureDerivative">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_ThermalConductivityTemperatureDerivative_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_ThermalConductivityTemperatureDerivative_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_SpecificHeatTemperatureDerivative" name="SpecificHeatTemperatureDerivative">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_SpecificHeatTemperatureDerivative_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_SpecificHeatTemperatureDerivative_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_VisibleRefractionIndex" name="VisibleRefractionIndex">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_VisibleRefractionIndex_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_VisibleRefractionIndex_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_SolarRefractionIndex" name="SolarRefractionIndex">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_SolarRefractionIndex_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_SolarRefractionIndex_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialEnergy_GasPressure" name="GasPressure">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialEnergy_GasPressure_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialEnergy_GasPressure_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialEnergy_IfcMaterial" client="cl_Pset_MaterialEnergy" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialFuel" name="Pset_MaterialFuel">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialFuel_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialFuel_CombustionTemperature" name="CombustionTemperature">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialFuel_CombustionTemperature_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialFuel_CombustionTemperature_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialFuel_CarbonContent" name="CarbonContent">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialFuel_CarbonContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialFuel_CarbonContent_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialFuel_LowerHeatingValue" name="LowerHeatingValue">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcHeatingValueMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialFuel_LowerHeatingValue_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialFuel_LowerHeatingValue_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialFuel_HigherHeatingValue" name="HigherHeatingValue">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcHeatingValueMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialFuel_HigherHeatingValue_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialFuel_HigherHeatingValue_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialFuel_IfcMaterial" client="cl_Pset_MaterialFuel" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialHygroscopic" name="Pset_MaterialHygroscopic">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialHygroscopic_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialHygroscopic_UpperVaporResistanceFactor" name="UpperVaporResistanceFactor">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialHygroscopic_UpperVaporResistanceFactor_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialHygroscopic_UpperVaporResistanceFactor_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialHygroscopic_LowerVaporResistanceFactor" name="LowerVaporResistanceFactor">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialHygroscopic_LowerVaporResistanceFactor_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialHygroscopic_LowerVaporResistanceFactor_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialHygroscopic_IsothermalMoistureCapacity" name="IsothermalMoistureCapacity">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIsothermalMoistureCapacityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialHygroscopic_IsothermalMoistureCapacity_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialHygroscopic_IsothermalMoistureCapacity_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialHygroscopic_VaporPermeability" name="VaporPermeability">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcVaporPermeabilityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialHygroscopic_VaporPermeability_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialHygroscopic_VaporPermeability_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialHygroscopic_MoistureDiffusivity" name="MoistureDiffusivity">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMoistureDiffusivityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialHygroscopic_MoistureDiffusivity_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialHygroscopic_MoistureDiffusivity_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialHygroscopic_IfcMaterial" client="cl_Pset_MaterialHygroscopic" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialMechanical" name="Pset_MaterialMechanical">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialMechanical_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialMechanical_DynamicViscosity" name="DynamicViscosity">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcDynamicViscosityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialMechanical_DynamicViscosity_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialMechanical_DynamicViscosity_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialMechanical_YoungModulus" name="YoungModulus">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialMechanical_YoungModulus_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialMechanical_YoungModulus_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialMechanical_ShearModulus" name="ShearModulus">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialMechanical_ShearModulus_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialMechanical_ShearModulus_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialMechanical_PoissonRatio" name="PoissonRatio">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialMechanical_PoissonRatio_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialMechanical_PoissonRatio_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialMechanical_ThermalExpansionCoefficient" name="ThermalExpansionCoefficient">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermalExpansionCoefficientMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialMechanical_ThermalExpansionCoefficient_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialMechanical_ThermalExpansionCoefficient_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialMechanical_IfcMaterial" client="cl_Pset_MaterialMechanical" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialOptical" name="Pset_MaterialOptical">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialOptical_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_VisibleTransmittance" name="VisibleTransmittance">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_VisibleTransmittance_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_VisibleTransmittance_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_SolarTransmittance" name="SolarTransmittance">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_SolarTransmittance_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_SolarTransmittance_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_ThermalIrTransmittance" name="ThermalIrTransmittance">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_ThermalIrTransmittance_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_ThermalIrTransmittance_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_ThermalIrEmissivityBack" name="ThermalIrEmissivityBack">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_ThermalIrEmissivityBack_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_ThermalIrEmissivityBack_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_ThermalIrEmissivityFront" name="ThermalIrEmissivityFront">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_ThermalIrEmissivityFront_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_ThermalIrEmissivityFront_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_VisibleReflectanceBack" name="VisibleReflectanceBack">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_VisibleReflectanceBack_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_VisibleReflectanceBack_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_VisibleReflectanceFront" name="VisibleReflectanceFront">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_VisibleReflectanceFront_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_VisibleReflectanceFront_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_SolarReflectanceBack" name="SolarReflectanceBack">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_SolarReflectanceBack_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_SolarReflectanceBack_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialOptical_SolarReflectanceFront" name="SolarReflectanceFront">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialOptical_SolarReflectanceFront_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialOptical_SolarReflectanceFront_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialOptical_IfcMaterial" client="cl_Pset_MaterialOptical" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialSteel" name="Pset_MaterialSteel">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialSteel_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_YieldStress" name="YieldStress">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_YieldStress_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_YieldStress_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_UltimateStress" name="UltimateStress">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_UltimateStress_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_UltimateStress_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_UltimateStrain" name="UltimateStrain">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_UltimateStrain_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_UltimateStrain_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_HardeningModule" name="HardeningModule">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_HardeningModule_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_HardeningModule_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_ProportionalStress" name="ProportionalStress">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_ProportionalStress_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_ProportionalStress_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_PlasticStrain" name="PlasticStrain">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_PlasticStrain_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_PlasticStrain_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_Relaxations" name="Relaxations" type="cl_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_Relaxations_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_Relaxations_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSteel_StructuralGrade" name="StructuralGrade">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSteel_StructuralGrade_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSteel_StructuralGrade_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure" name="IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_gen_PropertyTableValueBase">
-        <general xmi:type="uml:Class" href="ifc4x3_add2.uml#cl_PropertyTableValueBase"/>
-      </generalization>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_DefiningValue" name="DefiningValue">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_DefiningValue_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_DefiningValue_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_DefinedValue" name="DefinedValue">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_DefinedValue_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcNormalisedRatioMeasureIfcNormalisedRatioMeasure_DefinedValue_upper" value="*"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialSteel_IfcMaterial" client="cl_Pset_MaterialSteel" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialThermal" name="Pset_MaterialThermal">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialThermal_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialThermal_SpecificHeatCapacity" name="SpecificHeatCapacity">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcSpecificHeatCapacityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialThermal_SpecificHeatCapacity_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialThermal_SpecificHeatCapacity_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialThermal_BoilingPoint" name="BoilingPoint">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialThermal_BoilingPoint_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialThermal_BoilingPoint_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialThermal_FreezingPoint" name="FreezingPoint">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialThermal_FreezingPoint_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialThermal_FreezingPoint_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialThermal_ThermalConductivity" name="ThermalConductivity">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermalConductivityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialThermal_ThermalConductivity_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialThermal_ThermalConductivity_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialThermal_IfcMaterial" client="cl_Pset_MaterialThermal" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialWater" name="Pset_MaterialWater">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialWater_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_IsPotable" name="IsPotable">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_IsPotable_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_IsPotable_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_Hardness" name="Hardness">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIonConcentrationMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_Hardness_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_Hardness_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_AlkalinityConcentration" name="AlkalinityConcentration">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIonConcentrationMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_AlkalinityConcentration_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_AlkalinityConcentration_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_AcidityConcentration" name="AcidityConcentration">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIonConcentrationMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_AcidityConcentration_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_AcidityConcentration_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_ImpuritiesContent" name="ImpuritiesContent">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_ImpuritiesContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_ImpuritiesContent_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_DissolvedSolidsContent" name="DissolvedSolidsContent">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_DissolvedSolidsContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_DissolvedSolidsContent_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWater_PHLevel" name="PHLevel">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPHMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWater_PHLevel_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWater_PHLevel_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialWater_IfcMaterial" client="cl_Pset_MaterialWater" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialWood" name="Pset_MaterialWood">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialWood_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_Species" name="Species">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_Species_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_Species_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_StrengthGrade" name="StrengthGrade">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_StrengthGrade_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_StrengthGrade_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_AppearanceGrade" name="AppearanceGrade">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_AppearanceGrade_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_AppearanceGrade_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_Layup" name="Layup">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_Layup_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_Layup_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_Layers" name="Layers">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_Layers_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_Layers_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_Plies" name="Plies">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_Plies_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_Plies_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_MoistureContent" name="MoistureContent">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_MoistureContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_MoistureContent_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_DimensionalChangeCoefficient" name="DimensionalChangeCoefficient">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_DimensionalChangeCoefficient_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_DimensionalChangeCoefficient_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWood_ThicknessSwelling" name="ThicknessSwelling">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWood_ThicknessSwelling_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWood_ThicknessSwelling_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialWood_IfcMaterial" client="cl_Pset_MaterialWood" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialWoodBasedStructure" name="Pset_MaterialWoodBasedStructure">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialWoodBasedStructure_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialWoodBasedStructure_ApplicableStructuralDesignMethod" name="ApplicableStructuralDesignMethod">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialWoodBasedStructure_ApplicableStructuralDesignMethod_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialWoodBasedStructure_ApplicableStructuralDesignMethod_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialWoodBasedStructure_IfcMaterial" client="cl_Pset_MaterialWoodBasedStructure" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalBeamInPlane" name="Pset_MechanicalBeamInPlane">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalBeamInPlane_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulus" name="YoungModulus">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulus_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulus_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusMin" name="YoungModulusMin">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusMin_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusMin_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusPerp" name="YoungModulusPerp">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusPerp_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusPerp_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusPerpMin" name="YoungModulusPerpMin">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusPerpMin_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_YoungModulusPerpMin_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_ShearModulus" name="ShearModulus">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_ShearModulus_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_ShearModulus_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_ShearModulusMin" name="ShearModulusMin">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_ShearModulusMin_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_ShearModulusMin_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_BendingStrength" name="BendingStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_BendingStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_BendingStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_TensileStrength" name="TensileStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_TensileStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_TensileStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_TensileStrengthPerp" name="TensileStrengthPerp">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_TensileStrengthPerp_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_TensileStrengthPerp_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_CompStrength" name="CompStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_CompStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_CompStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_CompStrengthPerp" name="CompStrengthPerp">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_CompStrengthPerp_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_CompStrengthPerp_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_RaisedCompStrengthPerp" name="RaisedCompStrengthPerp">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_RaisedCompStrengthPerp_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_RaisedCompStrengthPerp_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_ShearStrength" name="ShearStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_ShearStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_ShearStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_TorsionalStrength" name="TorsionalStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_TorsionalStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_TorsionalStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_ReferenceDepth" name="ReferenceDepth">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_ReferenceDepth_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_ReferenceDepth_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlane_InstabilityFactors" name="InstabilityFactors" type="cl_IfcPositiveRatioMeasureIfcPositiveRatioMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlane_InstabilityFactors_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlane_InstabilityFactors_upper" value="*"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPositiveRatioMeasureIfcPositiveRatioMeasure" name="IfcPositiveRatioMeasureIfcPositiveRatioMeasure">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_gen_PropertyTableValueBase">
-        <general xmi:type="uml:Class" href="ifc4x3_add2.uml#cl_PropertyTableValueBase"/>
-      </generalization>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_DefiningValue" name="DefiningValue">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_DefiningValue_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_DefiningValue_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_DefinedValue" name="DefinedValue">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_DefinedValue_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositiveRatioMeasureIfcPositiveRatioMeasure_DefinedValue_upper" value="*"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalBeamInPlane_IfcMaterial" client="cl_Pset_MechanicalBeamInPlane" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalBeamInPlaneNegative" name="Pset_MechanicalBeamInPlaneNegative">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalBeamInPlaneNegative_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulus" name="YoungModulus">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulus_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulus_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusMin" name="YoungModulusMin">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusMin_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusMin_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusPerp" name="YoungModulusPerp">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusPerp_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusPerp_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusPerpMin" name="YoungModulusPerpMin">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusPerpMin_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_YoungModulusPerpMin_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearModulus" name="ShearModulus">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearModulus_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearModulus_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearModulusMin" name="ShearModulusMin">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearModulusMin_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearModulusMin_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_BendingStrength" name="BendingStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_BendingStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_BendingStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TensileStrength" name="TensileStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TensileStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TensileStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TensileStrengthPerp" name="TensileStrengthPerp">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TensileStrengthPerp_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TensileStrengthPerp_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_CompStrength" name="CompStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_CompStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_CompStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_CompStrengthPerp" name="CompStrengthPerp">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_CompStrengthPerp_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_CompStrengthPerp_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_RaisedCompStrengthPerp" name="RaisedCompStrengthPerp">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_RaisedCompStrengthPerp_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_RaisedCompStrengthPerp_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearStrength" name="ShearStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ShearStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TorsionalStrength" name="TorsionalStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TorsionalStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_TorsionalStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ReferenceDepth" name="ReferenceDepth">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ReferenceDepth_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_ReferenceDepth_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_InstabilityFactors" name="InstabilityFactors" type="cl_IfcPositiveRatioMeasureIfcPositiveRatioMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_InstabilityFactors_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamInPlaneNegative_InstabilityFactors_upper" value="*"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalBeamInPlaneNegative_IfcMaterial" client="cl_Pset_MechanicalBeamInPlaneNegative" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalBeamOutOfPlane" name="Pset_MechanicalBeamOutOfPlane">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalBeamOutOfPlane_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulus" name="YoungModulus">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulus_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulus_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusMin" name="YoungModulusMin">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusMin_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusMin_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusPerp" name="YoungModulusPerp">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusPerp_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusPerp_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusPerpMin" name="YoungModulusPerpMin">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusPerpMin_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_YoungModulusPerpMin_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearModulus" name="ShearModulus">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearModulus_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearModulus_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearModulusMin" name="ShearModulusMin">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearModulusMin_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearModulusMin_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_BendingStrength" name="BendingStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_BendingStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_BendingStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TensileStrength" name="TensileStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TensileStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TensileStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TensileStrengthPerp" name="TensileStrengthPerp">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TensileStrengthPerp_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TensileStrengthPerp_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_CompStrength" name="CompStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_CompStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_CompStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_CompStrengthPerp" name="CompStrengthPerp">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_CompStrengthPerp_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_CompStrengthPerp_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_RaisedCompStrengthPerp" name="RaisedCompStrengthPerp">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_RaisedCompStrengthPerp_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_RaisedCompStrengthPerp_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearStrength" name="ShearStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ShearStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TorsionalStrength" name="TorsionalStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TorsionalStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_TorsionalStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ReferenceDepth" name="ReferenceDepth">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ReferenceDepth_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_ReferenceDepth_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalBeamOutOfPlane_InstabilityFactors" name="InstabilityFactors" type="cl_IfcPositiveRatioMeasureIfcPositiveRatioMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalBeamOutOfPlane_InstabilityFactors_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalBeamOutOfPlane_InstabilityFactors_upper" value="*"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalBeamOutOfPlane_IfcMaterial" client="cl_Pset_MechanicalBeamOutOfPlane" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalPanelInPlane" name="Pset_MechanicalPanelInPlane">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalPanelInPlane_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusBending" name="YoungModulusBending" type="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusBending_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusBending_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusTension" name="YoungModulusTension" type="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusTension_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusTension_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusCompression" name="YoungModulusCompression">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusCompression_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_YoungModulusCompression_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_ShearModulus" name="ShearModulus">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_ShearModulus_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_ShearModulus_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_BendingStrength" name="BendingStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_BendingStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_BendingStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_CompressiveStrength" name="CompressiveStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_CompressiveStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_CompressiveStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_TensileStrength" name="TensileStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_TensileStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_TensileStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_ShearStrength" name="ShearStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_ShearStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_ShearStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_BearingStrength" name="BearingStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_BearingStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_BearingStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_RaisedCompressiveStrength" name="RaisedCompressiveStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_RaisedCompressiveStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_RaisedCompressiveStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelInPlane_ReferenceDepth" name="ReferenceDepth">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelInPlane_ReferenceDepth_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelInPlane_ReferenceDepth_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure" name="IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_gen_PropertyTableValueBase">
-        <general xmi:type="uml:Class" href="ifc4x3_add2.uml#cl_PropertyTableValueBase"/>
-      </generalization>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_DefiningValue" name="DefiningValue">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositivePlaneAngleMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_DefiningValue_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_DefiningValue_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_DefinedValue" name="DefinedValue">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_DefinedValue_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure_DefinedValue_upper" value="*"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure" name="IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure_gen_PropertyTableValueBase">
-        <general xmi:type="uml:Class" href="ifc4x3_add2.uml#cl_PropertyTableValueBase"/>
-      </generalization>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPositivePlaneAngleMeasureIfcPressureMeasure_DefiningValue" name="DefiningValue">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositivePlaneAngleMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPositivePlaneAngleMeasureIfcPressureMeasure_DefiningValue_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositivePlaneAngleMeasureIfcPressureMeasure_DefiningValue_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPositivePlaneAngleMeasureIfcPressureMeasure_DefinedValue" name="DefinedValue">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPositivePlaneAngleMeasureIfcPressureMeasure_DefinedValue_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPositivePlaneAngleMeasureIfcPressureMeasure_DefinedValue_upper" value="*"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalPanelInPlane_IfcMaterial" client="cl_Pset_MechanicalPanelInPlane" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalPanelOutOfPlane" name="Pset_MechanicalPanelOutOfPlane">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalPanelOutOfPlane_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusBending" name="YoungModulusBending" type="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusBending_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusBending_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusTension" name="YoungModulusTension" type="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusTension_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusTension_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusCompression" name="YoungModulusCompression">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusCompression_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_YoungModulusCompression_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ShearModulus" name="ShearModulus">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ShearModulus_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ShearModulus_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_BendingStrength" name="BendingStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_BendingStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_BendingStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_CompressiveStrength" name="CompressiveStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_CompressiveStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_CompressiveStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_TensileStrength" name="TensileStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_TensileStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_TensileStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ShearStrength" name="ShearStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ShearStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ShearStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_BearingStrength" name="BearingStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_BearingStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_BearingStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_RaisedCompressiveStrength" name="RaisedCompressiveStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_RaisedCompressiveStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_RaisedCompressiveStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ReferenceDepth" name="ReferenceDepth">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ReferenceDepth_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlane_ReferenceDepth_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalPanelOutOfPlane_IfcMaterial" client="cl_Pset_MechanicalPanelOutOfPlane" supplier="cl_IfcMaterial"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalPanelOutOfPlaneNegative" name="Pset_MechanicalPanelOutOfPlaneNegative">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalPanelOutOfPlaneNegative_comment_0">
-        <body>PSET_MATERIALDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusBending" name="YoungModulusBending" type="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusBending_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusBending_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusTension" name="YoungModulusTension" type="cl_IfcPositivePlaneAngleMeasureIfcModulusOfElasticityMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusTension_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusTension_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusCompression" name="YoungModulusCompression">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusCompression_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_YoungModulusCompression_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ShearModulus" name="ShearModulus">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ShearModulus_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ShearModulus_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_BendingStrength" name="BendingStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_BendingStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_BendingStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_CompressiveStrength" name="CompressiveStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_CompressiveStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_CompressiveStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_TensileStrength" name="TensileStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_TensileStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_TensileStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ShearStrength" name="ShearStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ShearStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ShearStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_BearingStrength" name="BearingStrength" type="cl_IfcPositivePlaneAngleMeasureIfcPressureMeasure">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_BearingStrength_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_BearingStrength_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_RaisedCompressiveStrength" name="RaisedCompressiveStrength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_RaisedCompressiveStrength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_RaisedCompressiveStrength_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ReferenceDepth" name="ReferenceDepth">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ReferenceDepth_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalPanelOutOfPlaneNegative_ReferenceDepth_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalPanelOutOfPlaneNegative_IfcMaterial" client="cl_Pset_MechanicalPanelOutOfPlaneNegative" supplier="cl_IfcMaterial"/>
   </packagedElement>
 </uml:Model>

@@ -162,18 +162,6 @@
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActionRequestTypeEnum_NOTDEFINED" name="IfcActionRequestTypeEnum.NOTDEFINED">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcActionRequestTypeEnum_NOTDEFINED_gen_IfcActionRequest" general="cl_IfcActionRequest"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCostItem_CostValues" name="CostValues" memberEnd="at_IfcCostItem_CostValues as_IfcCostItem_CostValues_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCostItem_CostValues_target_end" name="" type="cl_IfcCostItem" association="as_IfcCostItem_CostValues">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCostItem_CostValues_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCostItem_CostValues_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCostItem_CostQuantities" name="CostQuantities" memberEnd="at_IfcCostItem_CostQuantities as_IfcCostItem_CostQuantities_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCostItem_CostQuantities_target_end" name="" type="cl_IfcCostItem" association="as_IfcCostItem_CostQuantities">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCostItem_CostQuantities_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCostItem_CostQuantities_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCostItemTypeEnum_USERDEFINED" name="IfcCostItemTypeEnum.USERDEFINED">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCostItemTypeEnum_USERDEFINED_gen_IfcCostItem" general="cl_IfcCostItem"/>
     </packagedElement>
@@ -263,7 +251,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ActionRequest_RequestComments_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ActionRequest_IfcActionRequest" client="cl_Pset_ActionRequest" supplier="cl_IfcActionRequest"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PackingInstructions" name="Pset_PackingInstructions">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PackingInstructions_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -295,9 +282,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PackingCareType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PackingCareType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PackingInstructions_IfcTaskTypeEnum.MOVE" client="cl_Pset_PackingInstructions">
-      <supplier xmi:type="uml:Class" href="IfcProcessExtension.uml#cl_IfcTaskTypeEnum_MOVE"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_Permit" name="Pset_Permit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_Permit_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -323,7 +307,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Permit_SpecialRequirements_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Permit_IfcPermit" client="cl_Pset_Permit" supplier="cl_IfcPermit"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderChangeOrder" name="Pset_ProjectOrderChangeOrder">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProjectOrderChangeOrder_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -339,7 +322,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderChangeOrder_BudgetSource_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderChangeOrder_IfcProjectOrderTypeEnum.CHANGEORDER" client="cl_Pset_ProjectOrderChangeOrder" supplier="cl_IfcProjectOrderTypeEnum_CHANGEORDER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderMaintenanceWorkOrder" name="Pset_ProjectOrderMaintenanceWorkOrder">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProjectOrderMaintenanceWorkOrder_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -393,7 +375,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MaintenanceType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MaintenanceType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderMaintenanceWorkOrder_IfcProjectOrderTypeEnum.MAINTENANCEWORKORDER" client="cl_Pset_ProjectOrderMaintenanceWorkOrder" supplier="cl_IfcProjectOrderTypeEnum_MAINTENANCEWORKORDER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderMoveOrder" name="Pset_ProjectOrderMoveOrder">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProjectOrderMoveOrder_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -404,7 +385,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderMoveOrder_SpecialInstructions_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderMoveOrder_IfcProjectOrderTypeEnum.MOVEORDER" client="cl_Pset_ProjectOrderMoveOrder" supplier="cl_IfcProjectOrderTypeEnum_MOVEORDER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderPurchaseOrder" name="Pset_ProjectOrderPurchaseOrder">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProjectOrderPurchaseOrder_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -420,7 +400,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderPurchaseOrder_ShipMethod_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderPurchaseOrder_IfcProjectOrderTypeEnum.PURCHASEORDER" client="cl_Pset_ProjectOrderPurchaseOrder" supplier="cl_IfcProjectOrderTypeEnum_PURCHASEORDER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectOrderWorkOrder" name="Pset_ProjectOrderWorkOrder">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProjectOrderWorkOrder_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -446,6 +425,27 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectOrderWorkOrder_IfNotAccomplished_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCostItem_CostValues" name="CostValues" memberEnd="at_IfcCostItem_CostValues as_IfcCostItem_CostValues_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCostItem_CostValues_target_end" name="" type="cl_IfcCostItem" association="as_IfcCostItem_CostValues">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCostItem_CostValues_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCostItem_CostValues_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcCostItem_CostQuantities" name="CostQuantities" memberEnd="at_IfcCostItem_CostQuantities as_IfcCostItem_CostQuantities_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcCostItem_CostQuantities_target_end" name="" type="cl_IfcCostItem" association="as_IfcCostItem_CostQuantities">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcCostItem_CostQuantities_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcCostItem_CostQuantities_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ActionRequest_IfcActionRequest" client="cl_Pset_ActionRequest" supplier="cl_IfcActionRequest"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PackingInstructions_IfcTaskTypeEnum.MOVE" client="cl_Pset_PackingInstructions">
+      <supplier xmi:type="uml:Class" href="IfcProcessExtension.uml#cl_IfcTaskTypeEnum_MOVE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Permit_IfcPermit" client="cl_Pset_Permit" supplier="cl_IfcPermit"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderChangeOrder_IfcProjectOrderTypeEnum.CHANGEORDER" client="cl_Pset_ProjectOrderChangeOrder" supplier="cl_IfcProjectOrderTypeEnum_CHANGEORDER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderMaintenanceWorkOrder_IfcProjectOrderTypeEnum.MAINTENANCEWORKORDER" client="cl_Pset_ProjectOrderMaintenanceWorkOrder" supplier="cl_IfcProjectOrderTypeEnum_MAINTENANCEWORKORDER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderMoveOrder_IfcProjectOrderTypeEnum.MOVEORDER" client="cl_Pset_ProjectOrderMoveOrder" supplier="cl_IfcProjectOrderTypeEnum_MOVEORDER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderPurchaseOrder_IfcProjectOrderTypeEnum.PURCHASEORDER" client="cl_Pset_ProjectOrderPurchaseOrder" supplier="cl_IfcProjectOrderTypeEnum_PURCHASEORDER"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectOrderWorkOrder_IfcProjectOrderTypeEnum.WORKORDER" client="cl_Pset_ProjectOrderWorkOrder" supplier="cl_IfcProjectOrderTypeEnum_WORKORDER"/>
   </packagedElement>
 </uml:Model>

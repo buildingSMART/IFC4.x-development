@@ -186,36 +186,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSubContractResourceType_PredefinedType_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResource_Usage" name="Usage" memberEnd="at_IfcConstructionResource_Usage as_IfcConstructionResource_Usage_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResource_Usage_target_end" name="" type="cl_IfcConstructionResource" association="as_IfcConstructionResource_Usage">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResource_Usage_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResource_Usage_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResource_BaseCosts" name="BaseCosts" memberEnd="at_IfcConstructionResource_BaseCosts as_IfcConstructionResource_BaseCosts_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResource_BaseCosts_target_end" name="" type="cl_IfcConstructionResource" association="as_IfcConstructionResource_BaseCosts">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResource_BaseCosts_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResource_BaseCosts_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResource_BaseQuantity" name="BaseQuantity" memberEnd="at_IfcConstructionResource_BaseQuantity as_IfcConstructionResource_BaseQuantity_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResource_BaseQuantity_target_end" name="" type="cl_IfcConstructionResource" association="as_IfcConstructionResource_BaseQuantity">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResource_BaseQuantity_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResource_BaseQuantity_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResourceType_BaseCosts" name="BaseCosts" memberEnd="at_IfcConstructionResourceType_BaseCosts as_IfcConstructionResourceType_BaseCosts_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResourceType_BaseCosts_target_end" name="" type="cl_IfcConstructionResourceType" association="as_IfcConstructionResourceType_BaseCosts">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResourceType_BaseCosts_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResourceType_BaseCosts_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResourceType_BaseQuantity" name="BaseQuantity" memberEnd="at_IfcConstructionResourceType_BaseQuantity as_IfcConstructionResourceType_BaseQuantity_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResourceType_BaseQuantity_target_end" name="" type="cl_IfcConstructionResourceType" association="as_IfcConstructionResourceType_BaseQuantity">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResourceType_BaseQuantity_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResourceType_BaseQuantity_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_DEMOLISHING" name="IfcConstructionEquipmentResourceTypeEnum.DEMOLISHING">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_DEMOLISHING_gen_IfcConstructionEquipmentResource" general="cl_IfcConstructionEquipmentResource"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcConstructionEquipmentResourceTypeEnum_DEMOLISHING_gen_IfcConstructionEquipmentResourceType" general="cl_IfcConstructionEquipmentResourceType"/>
@@ -477,7 +447,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ConstructionResource_ActualCompletion_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConstructionResource_IfcConstructionResource" client="cl_Pset_ConstructionResource" supplier="cl_IfcConstructionResource"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ConstructionEquipmentResourceBaseQuantities" name="Qto_ConstructionEquipmentResourceBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ConstructionEquipmentResourceBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -493,7 +462,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ConstructionEquipmentResourceBaseQuantities_OperatingTime_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ConstructionEquipmentResourceBaseQuantities_IfcConstructionEquipmentResource" client="cl_Qto_ConstructionEquipmentResourceBaseQuantities" supplier="cl_IfcConstructionEquipmentResource"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ConstructionMaterialResourceBaseQuantities" name="Qto_ConstructionMaterialResourceBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ConstructionMaterialResourceBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -519,7 +487,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ConstructionMaterialResourceBaseQuantities_NetWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ConstructionMaterialResourceBaseQuantities_IfcConstructionMaterialResource" client="cl_Qto_ConstructionMaterialResourceBaseQuantities" supplier="cl_IfcConstructionMaterialResource"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_LaborResourceBaseQuantities" name="Qto_LaborResourceBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_LaborResourceBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -535,6 +502,39 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_LaborResourceBaseQuantities_OvertimeWork_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResource_Usage" name="Usage" memberEnd="at_IfcConstructionResource_Usage as_IfcConstructionResource_Usage_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResource_Usage_target_end" name="" type="cl_IfcConstructionResource" association="as_IfcConstructionResource_Usage">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResource_Usage_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResource_Usage_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResource_BaseCosts" name="BaseCosts" memberEnd="at_IfcConstructionResource_BaseCosts as_IfcConstructionResource_BaseCosts_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResource_BaseCosts_target_end" name="" type="cl_IfcConstructionResource" association="as_IfcConstructionResource_BaseCosts">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResource_BaseCosts_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResource_BaseCosts_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResource_BaseQuantity" name="BaseQuantity" memberEnd="at_IfcConstructionResource_BaseQuantity as_IfcConstructionResource_BaseQuantity_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResource_BaseQuantity_target_end" name="" type="cl_IfcConstructionResource" association="as_IfcConstructionResource_BaseQuantity">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResource_BaseQuantity_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResource_BaseQuantity_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResourceType_BaseCosts" name="BaseCosts" memberEnd="at_IfcConstructionResourceType_BaseCosts as_IfcConstructionResourceType_BaseCosts_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResourceType_BaseCosts_target_end" name="" type="cl_IfcConstructionResourceType" association="as_IfcConstructionResourceType_BaseCosts">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResourceType_BaseCosts_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResourceType_BaseCosts_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConstructionResourceType_BaseQuantity" name="BaseQuantity" memberEnd="at_IfcConstructionResourceType_BaseQuantity as_IfcConstructionResourceType_BaseQuantity_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConstructionResourceType_BaseQuantity_target_end" name="" type="cl_IfcConstructionResourceType" association="as_IfcConstructionResourceType_BaseQuantity">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConstructionResourceType_BaseQuantity_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConstructionResourceType_BaseQuantity_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConstructionResource_IfcConstructionResource" client="cl_Pset_ConstructionResource" supplier="cl_IfcConstructionResource"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ConstructionEquipmentResourceBaseQuantities_IfcConstructionEquipmentResource" client="cl_Qto_ConstructionEquipmentResourceBaseQuantities" supplier="cl_IfcConstructionEquipmentResource"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ConstructionMaterialResourceBaseQuantities_IfcConstructionMaterialResource" client="cl_Qto_ConstructionMaterialResourceBaseQuantities" supplier="cl_IfcConstructionMaterialResource"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_LaborResourceBaseQuantities_IfcLaborResource" client="cl_Qto_LaborResourceBaseQuantities" supplier="cl_IfcLaborResource"/>
   </packagedElement>
 </uml:Model>

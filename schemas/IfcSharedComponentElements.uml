@@ -400,7 +400,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryColumnShoe_ColumnShoeCasingDepth_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryColumnShoe_IfcDiscreteAccessoryTypeEnum.SHOE" client="cl_Pset_DiscreteAccessoryColumnShoe" supplier="cl_IfcDiscreteAccessoryTypeEnum_SHOE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryCornerFixingPlate" name="Pset_DiscreteAccessoryCornerFixingPlate">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryCornerFixingPlate_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -426,7 +425,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryCornerFixingPlate_CornerFixingPlateFlangeWidthInPlaneX_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryCornerFixingPlate_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryCornerFixingPlate" supplier="cl_IfcDiscreteAccessory"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryDiagonalTrussConnector" name="Pset_DiscreteAccessoryDiagonalTrussConnector">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryDiagonalTrussConnector_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -462,7 +460,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryDiagonalTrussConnector_DiagonalTrussCrossBarDiameter_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryDiagonalTrussConnector_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryDiagonalTrussConnector" supplier="cl_IfcDiscreteAccessory"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryEdgeFixingPlate" name="Pset_DiscreteAccessoryEdgeFixingPlate">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryEdgeFixingPlate_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -488,7 +485,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryEdgeFixingPlate_EdgeFixingPlateFlangeWidthInPlaneX_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryEdgeFixingPlate_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryEdgeFixingPlate" supplier="cl_IfcDiscreteAccessory"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryFixingSocket" name="Pset_DiscreteAccessoryFixingSocket">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryFixingSocket_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -514,7 +510,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryFixingSocket_FixingSocketThreadLength_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryFixingSocket_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryFixingSocket" supplier="cl_IfcDiscreteAccessory"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryLadderTrussConnector" name="Pset_DiscreteAccessoryLadderTrussConnector">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryLadderTrussConnector_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -550,7 +545,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryLadderTrussConnector_LadderTrussCrossBarDiameter_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryLadderTrussConnector_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryLadderTrussConnector" supplier="cl_IfcDiscreteAccessory"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryStandardFixingPlate" name="Pset_DiscreteAccessoryStandardFixingPlate">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryStandardFixingPlate_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -571,7 +565,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryStandardFixingPlate_StandardFixingPlateThickness_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryStandardFixingPlate_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryStandardFixingPlate" supplier="cl_IfcDiscreteAccessory"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryWireLoop" name="Pset_DiscreteAccessoryWireLoop">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryWireLoop_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -607,7 +600,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryWireLoop_WireLoopLength_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryWireLoop_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryWireLoop" supplier="cl_IfcDiscreteAccessory"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementComponentCommon" name="Pset_ElementComponentCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementComponentCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -647,7 +639,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_STAINLESS" name="STAINLESS"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementComponentCommon_IfcElementComponent" client="cl_Pset_ElementComponentCommon" supplier="cl_IfcElementComponent"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FastenerWeld" name="Pset_FastenerWeld">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FastenerWeld_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -733,7 +724,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerWeld_Staggered_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FastenerWeld_IfcFastenerTypeEnum.WELD" client="cl_Pset_FastenerWeld" supplier="cl_IfcFastenerTypeEnum_WELD"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalFastenerAnchorBolt" name="Pset_MechanicalFastenerAnchorBolt">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalFastenerAnchorBolt_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -759,7 +749,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerAnchorBolt_AnchorBoltProtrusionLength_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalFastenerAnchorBolt_IfcMechanicalFastenerTypeEnum.ANCHORBOLT" client="cl_Pset_MechanicalFastenerAnchorBolt" supplier="cl_IfcMechanicalFastenerTypeEnum_ANCHORBOLT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalFastenerBolt" name="Pset_MechanicalFastenerBolt">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalFastenerBolt_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -805,6 +794,17 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MechanicalFastenerBolt_WasherShape_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryColumnShoe_IfcDiscreteAccessoryTypeEnum.SHOE" client="cl_Pset_DiscreteAccessoryColumnShoe" supplier="cl_IfcDiscreteAccessoryTypeEnum_SHOE"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryCornerFixingPlate_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryCornerFixingPlate" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryDiagonalTrussConnector_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryDiagonalTrussConnector" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryEdgeFixingPlate_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryEdgeFixingPlate" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryFixingSocket_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryFixingSocket" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryLadderTrussConnector_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryLadderTrussConnector" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryStandardFixingPlate_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryStandardFixingPlate" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryWireLoop_IfcDiscreteAccessory" client="cl_Pset_DiscreteAccessoryWireLoop" supplier="cl_IfcDiscreteAccessory"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementComponentCommon_IfcElementComponent" client="cl_Pset_ElementComponentCommon" supplier="cl_IfcElementComponent"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FastenerWeld_IfcFastenerTypeEnum.WELD" client="cl_Pset_FastenerWeld" supplier="cl_IfcFastenerTypeEnum_WELD"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalFastenerAnchorBolt_IfcMechanicalFastenerTypeEnum.ANCHORBOLT" client="cl_Pset_MechanicalFastenerAnchorBolt" supplier="cl_IfcMechanicalFastenerTypeEnum_ANCHORBOLT"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalFastenerBolt_IfcMechanicalFastenerTypeEnum.BOLT" client="cl_Pset_MechanicalFastenerBolt" supplier="cl_IfcMechanicalFastenerTypeEnum_BOLT"/>
   </packagedElement>
 </uml:Model>

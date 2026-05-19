@@ -485,12 +485,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcVoidingFeature_PredefinedType_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions" name="ReinforcementSectionDefinitions" memberEnd="at_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions as_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions_target_end" name="" type="cl_IfcReinforcementDefinitionProperties" association="as_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFootingTypeEnum_CAISSON_FOUNDATION" name="IfcFootingTypeEnum.CAISSON_FOUNDATION">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFootingTypeEnum_CAISSON_FOUNDATION_gen_IfcFooting" general="cl_IfcFooting"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFootingTypeEnum_CAISSON_FOUNDATION_gen_IfcFootingType" general="cl_IfcFootingType"/>
@@ -650,12 +644,6 @@
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcReinforcingBarTypeEnum_NOTDEFINED_gen_IfcReinforcingBar" general="cl_IfcReinforcingBar"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcReinforcingBarTypeEnum_NOTDEFINED_gen_IfcReinforcingBarType" general="cl_IfcReinforcingBarType"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcReinforcingBarType_BendingParameters" name="BendingParameters" memberEnd="at_IfcReinforcingBarType_BendingParameters as_IfcReinforcingBarType_BendingParameters_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcReinforcingBarType_BendingParameters_target_end" name="" type="cl_IfcReinforcingBarType" association="as_IfcReinforcingBarType_BendingParameters">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcReinforcingBarType_BendingParameters_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcReinforcingBarType_BendingParameters_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcReinforcingMeshTypeEnum_USERDEFINED" name="IfcReinforcingMeshTypeEnum.USERDEFINED">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcReinforcingMeshTypeEnum_USERDEFINED_gen_IfcReinforcingMesh" general="cl_IfcReinforcingMesh"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcReinforcingMeshTypeEnum_USERDEFINED_gen_IfcReinforcingMeshType" general="cl_IfcReinforcingMeshType"/>
@@ -663,12 +651,6 @@
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcReinforcingMeshTypeEnum_NOTDEFINED" name="IfcReinforcingMeshTypeEnum.NOTDEFINED">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcReinforcingMeshTypeEnum_NOTDEFINED_gen_IfcReinforcingMesh" general="cl_IfcReinforcingMesh"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcReinforcingMeshTypeEnum_NOTDEFINED_gen_IfcReinforcingMeshType" general="cl_IfcReinforcingMeshType"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcReinforcingMeshType_BendingParameters" name="BendingParameters" memberEnd="at_IfcReinforcingMeshType_BendingParameters as_IfcReinforcingMeshType_BendingParameters_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcReinforcingMeshType_BendingParameters_target_end" name="" type="cl_IfcReinforcingMeshType" association="as_IfcReinforcingMeshType_BendingParameters">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcReinforcingMeshType_BendingParameters_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcReinforcingMeshType_BendingParameters_target_end_upper" value="1"/>
-      </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTendonTypeEnum_BAR" name="IfcTendonTypeEnum.BAR">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTendonTypeEnum_BAR_gen_IfcTendon" general="cl_IfcTendon"/>
@@ -844,53 +826,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ConcreteCastingMethod_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ConcreteCastingMethod_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcBeam" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBeam"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcBuildingElementProxy" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBuildingElementProxy"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcChimney" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcChimney"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcCivilElement" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcCivilElement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcColumn" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcColumn"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcFooting" client="cl_Pset_ConcreteElementGeneral" supplier="cl_IfcFooting"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcMember" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcPile" client="cl_Pset_ConcreteElementGeneral" supplier="cl_IfcPile"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcPlate" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcPlate"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcRailing" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRailing"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcRampFlight" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRampFlight"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcRamp" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRamp"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcRoof" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRoof"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcSlab" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlab"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcStairFlight" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcStairFlight"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcStair" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcStair"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcWall" client="cl_Pset_ConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWall"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FootingCommon" name="Pset_FootingCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FootingCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -911,7 +846,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FootingCommon_LoadBearing_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FootingCommon_IfcFooting" client="cl_Pset_FootingCommon" supplier="cl_IfcFooting"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PileCommon" name="Pset_PileCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PileCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -932,7 +866,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PileCommon_LoadBearing_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PileCommon_IfcPile" client="cl_Pset_PileCommon" supplier="cl_IfcPile"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PrecastConcreteElementFabrication" name="Pset_PrecastConcreteElementFabrication">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PrecastConcreteElementFabrication_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -972,50 +905,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PrecastConcreteElementFabrication_ActualErectionDate_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PrecastConcreteElementFabrication_ActualErectionDate_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcBeam" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBeam"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcBuildingElementProxy" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBuildingElementProxy"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcChimney" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcChimney"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcCivilElement" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcCivilElement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcColumn" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcColumn"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcFooting" client="cl_Pset_PrecastConcreteElementFabrication" supplier="cl_IfcFooting"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcMember" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcPile" client="cl_Pset_PrecastConcreteElementFabrication" supplier="cl_IfcPile"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcPlate" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcPlate"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcRampFlight" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRampFlight"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcRamp" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRamp"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcRoof" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRoof"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcSlab" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlab"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcStairFlight" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcStairFlight"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcStair" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcStair"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcWall" client="cl_Pset_PrecastConcreteElementFabrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWall"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PrecastConcreteElementGeneral" name="Pset_PrecastConcreteElementGeneral">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PrecastConcreteElementGeneral_comment_0">
@@ -1122,50 +1011,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PrecastConcreteElementGeneral_DesignLocationNumber_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcBeam" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBeam"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcBuildingElementProxy" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBuildingElementProxy"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcChimney" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcChimney"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcCivilElement" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcCivilElement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcColumn" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcColumn"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcFooting" client="cl_Pset_PrecastConcreteElementGeneral" supplier="cl_IfcFooting"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcMember" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcPile" client="cl_Pset_PrecastConcreteElementGeneral" supplier="cl_IfcPile"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcPlate" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcPlate"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcRampFlight" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRampFlight"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcRamp" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRamp"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcRoof" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRoof"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcSlab" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlab"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcStairFlight" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcStairFlight"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcStair" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcStair"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcWall" client="cl_Pset_PrecastConcreteElementGeneral">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWall"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PrecastSlab" name="Pset_PrecastSlab">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PrecastSlab_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1211,9 +1056,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PrecastSlab_NominalToppingThickness_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastSlab_IfcSlab" client="cl_Pset_PrecastSlab">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlab"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ReinforcementBarCountOfIndependentFooting" name="Pset_ReinforcementBarCountOfIndependentFooting">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ReinforcementBarCountOfIndependentFooting_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1249,7 +1091,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ReinforcementBarCountOfIndependentFooting_YDirectionUpperBarCount_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReinforcementBarCountOfIndependentFooting_IfcFooting" client="cl_Pset_ReinforcementBarCountOfIndependentFooting" supplier="cl_IfcFooting"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ReinforcementBarPitchOfBeam" name="Pset_ReinforcementBarPitchOfBeam">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ReinforcementBarPitchOfBeam_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1274,9 +1115,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ReinforcementBarPitchOfBeam_SpacingBarPitch_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ReinforcementBarPitchOfBeam_SpacingBarPitch_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReinforcementBarPitchOfBeam_IfcBeam" client="cl_Pset_ReinforcementBarPitchOfBeam">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBeam"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ReinforcementBarPitchOfColumn" name="Pset_ReinforcementBarPitchOfColumn">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ReinforcementBarPitchOfColumn_comment_0">
@@ -1329,9 +1167,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ReinforcementBarType_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ReinforcementBarType_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReinforcementBarPitchOfColumn_IfcColumn" client="cl_Pset_ReinforcementBarPitchOfColumn">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcColumn"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ReinforcementBarPitchOfContinuousFooting" name="Pset_ReinforcementBarPitchOfContinuousFooting">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ReinforcementBarPitchOfContinuousFooting_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1357,7 +1192,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ReinforcementBarPitchOfContinuousFooting_CrossingLowerBarPitch_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReinforcementBarPitchOfContinuousFooting_IfcFooting" client="cl_Pset_ReinforcementBarPitchOfContinuousFooting" supplier="cl_IfcFooting"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ReinforcementBarPitchOfSlab" name="Pset_ReinforcementBarPitchOfSlab">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ReinforcementBarPitchOfSlab_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1433,9 +1267,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ReinforcementBarPitchOfSlab_ShortInsideEndLowerBarPitch_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReinforcementBarPitchOfSlab_IfcSlab" client="cl_Pset_ReinforcementBarPitchOfSlab">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlab"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ReinforcementBarPitchOfWall" name="Pset_ReinforcementBarPitchOfWall">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ReinforcementBarPitchOfWall_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1477,9 +1308,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ReinforcementBarAllocationType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ReinforcementBarAllocationType_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ReinforcementBarAllocationType_NOTDEFINED" name="NOTDEFINED"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReinforcementBarPitchOfWall_IfcWall" client="cl_Pset_ReinforcementBarPitchOfWall">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWall"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_FootingBaseQuantities" name="Qto_FootingBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_FootingBaseQuantities_comment_0">
@@ -1536,7 +1364,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_FootingBaseQuantities_NetWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FootingBaseQuantities_IfcFooting" client="cl_Qto_FootingBaseQuantities" supplier="cl_IfcFooting"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_PileBaseQuantities" name="Qto_PileBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_PileBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1582,7 +1409,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_PileBaseQuantities_NetWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PileBaseQuantities_IfcPile" client="cl_Qto_PileBaseQuantities" supplier="cl_IfcPile"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ReinforcingElementBaseQuantities" name="Qto_ReinforcingElementBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ReinforcingElementBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -1603,6 +1429,180 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ReinforcingElementBaseQuantities_Weight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions" name="ReinforcementSectionDefinitions" memberEnd="at_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions as_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions_target_end" name="" type="cl_IfcReinforcementDefinitionProperties" association="as_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcReinforcementDefinitionProperties_ReinforcementSectionDefinitions_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcReinforcingBarType_BendingParameters" name="BendingParameters" memberEnd="at_IfcReinforcingBarType_BendingParameters as_IfcReinforcingBarType_BendingParameters_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcReinforcingBarType_BendingParameters_target_end" name="" type="cl_IfcReinforcingBarType" association="as_IfcReinforcingBarType_BendingParameters">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcReinforcingBarType_BendingParameters_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcReinforcingBarType_BendingParameters_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcReinforcingMeshType_BendingParameters" name="BendingParameters" memberEnd="at_IfcReinforcingMeshType_BendingParameters as_IfcReinforcingMeshType_BendingParameters_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcReinforcingMeshType_BendingParameters_target_end" name="" type="cl_IfcReinforcingMeshType" association="as_IfcReinforcingMeshType_BendingParameters">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcReinforcingMeshType_BendingParameters_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcReinforcingMeshType_BendingParameters_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcBeam" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBeam"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcBuildingElementProxy" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBuildingElementProxy"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcChimney" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcChimney"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcCivilElement" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcCivilElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcColumn" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcColumn"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcFooting" client="cl_Pset_ConcreteElementGeneral" supplier="cl_IfcFooting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcMember" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcPile" client="cl_Pset_ConcreteElementGeneral" supplier="cl_IfcPile"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcPlate" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcPlate"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcRailing" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRailing"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcRampFlight" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRampFlight"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcRamp" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRamp"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcRoof" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRoof"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcSlab" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlab"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcStairFlight" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcStairFlight"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcStair" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcStair"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcWall" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWall"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FootingCommon_IfcFooting" client="cl_Pset_FootingCommon" supplier="cl_IfcFooting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PileCommon_IfcPile" client="cl_Pset_PileCommon" supplier="cl_IfcPile"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcBeam" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBeam"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcBuildingElementProxy" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBuildingElementProxy"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcChimney" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcChimney"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcCivilElement" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcCivilElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcColumn" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcColumn"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcFooting" client="cl_Pset_PrecastConcreteElementFabrication" supplier="cl_IfcFooting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcMember" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcPile" client="cl_Pset_PrecastConcreteElementFabrication" supplier="cl_IfcPile"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcPlate" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcPlate"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcRampFlight" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRampFlight"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcRamp" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRamp"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcRoof" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRoof"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcSlab" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlab"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcStairFlight" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcStairFlight"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcStair" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcStair"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementFabrication_IfcWall" client="cl_Pset_PrecastConcreteElementFabrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWall"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcBeam" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBeam"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcBuildingElementProxy" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBuildingElementProxy"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcChimney" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcChimney"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcCivilElement" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcCivilElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcColumn" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcColumn"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcFooting" client="cl_Pset_PrecastConcreteElementGeneral" supplier="cl_IfcFooting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcMember" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcPile" client="cl_Pset_PrecastConcreteElementGeneral" supplier="cl_IfcPile"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcPlate" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcPlate"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcRampFlight" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRampFlight"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcRamp" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRamp"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcRoof" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcRoof"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcSlab" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlab"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcStairFlight" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcStairFlight"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcStair" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcStair"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastConcreteElementGeneral_IfcWall" client="cl_Pset_PrecastConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWall"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PrecastSlab_IfcSlab" client="cl_Pset_PrecastSlab">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlab"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReinforcementBarCountOfIndependentFooting_IfcFooting" client="cl_Pset_ReinforcementBarCountOfIndependentFooting" supplier="cl_IfcFooting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReinforcementBarPitchOfBeam_IfcBeam" client="cl_Pset_ReinforcementBarPitchOfBeam">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBeam"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReinforcementBarPitchOfColumn_IfcColumn" client="cl_Pset_ReinforcementBarPitchOfColumn">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcColumn"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReinforcementBarPitchOfContinuousFooting_IfcFooting" client="cl_Pset_ReinforcementBarPitchOfContinuousFooting" supplier="cl_IfcFooting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReinforcementBarPitchOfSlab_IfcSlab" client="cl_Pset_ReinforcementBarPitchOfSlab">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlab"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ReinforcementBarPitchOfWall_IfcWall" client="cl_Pset_ReinforcementBarPitchOfWall">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWall"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FootingBaseQuantities_IfcFooting" client="cl_Qto_FootingBaseQuantities" supplier="cl_IfcFooting"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PileBaseQuantities_IfcPile" client="cl_Qto_PileBaseQuantities" supplier="cl_IfcPile"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ReinforcingElementBaseQuantities_IfcReinforcingElement" client="cl_Qto_ReinforcingElementBaseQuantities" supplier="cl_IfcReinforcingElement"/>
   </packagedElement>
 </uml:Model>

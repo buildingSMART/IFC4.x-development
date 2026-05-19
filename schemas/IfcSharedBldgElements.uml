@@ -844,30 +844,6 @@ OR
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcWallStandardCase_gen_IfcWall" general="cl_IfcWall"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelCoversBldgElements_RelatingBuildingElement" name="RelatingBuildingElement" memberEnd="at_IfcRelCoversBldgElements_RelatingBuildingElement as_IfcRelCoversBldgElements_RelatingBuildingElement_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelCoversBldgElements_RelatingBuildingElement_target_end" name="INV_HasCoverings_S[0:?]" type="cl_IfcRelCoversBldgElements" association="as_IfcRelCoversBldgElements_RelatingBuildingElement">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelCoversBldgElements_RelatingBuildingElement_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelCoversBldgElements_RelatingBuildingElement_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelCoversBldgElements_RelatedCoverings" name="RelatedCoverings" memberEnd="at_IfcRelCoversBldgElements_RelatedCoverings as_IfcRelCoversBldgElements_RelatedCoverings_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelCoversBldgElements_RelatedCoverings_target_end" name="INV_CoversElements_S[0:1]" type="cl_IfcRelCoversBldgElements" association="as_IfcRelCoversBldgElements_RelatedCoverings">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelCoversBldgElements_RelatedCoverings_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelCoversBldgElements_RelatedCoverings_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelCoversSpaces_RelatingSpace" name="RelatingSpace" memberEnd="at_IfcRelCoversSpaces_RelatingSpace as_IfcRelCoversSpaces_RelatingSpace_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelCoversSpaces_RelatingSpace_target_end" name="INV_HasCoverings_S[0:?]" type="cl_IfcRelCoversSpaces" association="as_IfcRelCoversSpaces_RelatingSpace">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelCoversSpaces_RelatingSpace_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelCoversSpaces_RelatingSpace_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelCoversSpaces_RelatedCoverings" name="RelatedCoverings" memberEnd="at_IfcRelCoversSpaces_RelatedCoverings as_IfcRelCoversSpaces_RelatedCoverings_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelCoversSpaces_RelatedCoverings_target_end" name="INV_CoversSpaces_S[0:1]" type="cl_IfcRelCoversSpaces" association="as_IfcRelCoversSpaces_RelatedCoverings">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelCoversSpaces_RelatedCoverings_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelCoversSpaces_RelatedCoverings_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuildingSystemTypeEnum_FENESTRATION" name="IfcBuildingSystemTypeEnum.FENESTRATION">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuildingSystemTypeEnum_FENESTRATION_gen_IfcBuildingSystem" general="cl_IfcBuildingSystem"/>
     </packagedElement>
@@ -1686,7 +1662,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_BeamCommon_FireRating_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BeamCommon_IfcBeam" client="cl_Pset_BeamCommon" supplier="cl_IfcBeam"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BearingCommon" name="Pset_BearingCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BearingCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1702,7 +1677,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_BearingCommon_RotationAccommodated_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BearingCommon_IfcBearing" client="cl_Pset_BearingCommon" supplier="cl_IfcBearing"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BuildingElementProxyCommon" name="Pset_BuildingElementProxyCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BuildingElementProxyCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1738,7 +1712,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_BuildingElementProxyCommon_FireRating_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BuildingElementProxyCommon_IfcBuildingElementProxy" client="cl_Pset_BuildingElementProxyCommon" supplier="cl_IfcBuildingElementProxy"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BuildingSystemCommon" name="Pset_BuildingSystemCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BuildingSystemCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -1749,7 +1722,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_BuildingSystemCommon_Reference_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BuildingSystemCommon_IfcBuildingSystem" client="cl_Pset_BuildingSystemCommon" supplier="cl_IfcBuildingSystem"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ChimneyCommon" name="Pset_ChimneyCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ChimneyCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1790,7 +1762,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ChimneyCommon_FireRating_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ChimneyCommon_IfcChimney" client="cl_Pset_ChimneyCommon" supplier="cl_IfcChimney"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ColumnCommon" name="Pset_ColumnCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ColumnCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1836,7 +1807,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ColumnCommon_FireRating_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ColumnCommon_IfcColumn" client="cl_Pset_ColumnCommon" supplier="cl_IfcColumn"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CoveringCommon" name="Pset_CoveringCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CoveringCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1897,7 +1867,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CoveringCommon_FireRating_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoveringCommon_IfcCovering" client="cl_Pset_CoveringCommon" supplier="cl_IfcCovering"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CoveringFlooring" name="Pset_CoveringFlooring">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CoveringFlooring_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1913,7 +1882,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CoveringFlooring_HasAntiStaticSurface_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoveringFlooring_IfcCoveringTypeEnum.FLOORING" client="cl_Pset_CoveringFlooring" supplier="cl_IfcCoveringTypeEnum_FLOORING"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CurtainWallCommon" name="Pset_CurtainWallCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CurtainWallCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1959,7 +1927,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CurtainWallCommon_IsExternal_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CurtainWallCommon_IfcCurtainWall" client="cl_Pset_CurtainWallCommon" supplier="cl_IfcCurtainWall"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DoorCommon" name="Pset_DoorCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DoorCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2060,7 +2027,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorCommon_SmokeStop_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorCommon_IfcDoor" client="cl_Pset_DoorCommon" supplier="cl_IfcDoor"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DoorWindowGlazingType" name="Pset_DoorWindowGlazingType">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DoorWindowGlazingType_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2161,8 +2127,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorWindowGlazingType_ThermalTransmittanceWinter_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorWindowGlazingType_IfcDoor" client="cl_Pset_DoorWindowGlazingType" supplier="cl_IfcDoor"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorWindowGlazingType_IfcWindow" client="cl_Pset_DoorWindowGlazingType" supplier="cl_IfcWindow"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MemberCommon" name="Pset_MemberCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MemberCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2213,7 +2177,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MemberCommon_FireRating_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MemberCommon_IfcMember" client="cl_Pset_MemberCommon" supplier="cl_IfcMember"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PlateCommon" name="Pset_PlateCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PlateCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2254,7 +2217,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PlateCommon_FireRating_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PlateCommon_IfcPlate" client="cl_Pset_PlateCommon" supplier="cl_IfcPlate"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailingCommon" name="Pset_RailingCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailingCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2285,7 +2247,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_RailingCommon_IsExternal_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailingCommon_IfcRailing" client="cl_Pset_RailingCommon" supplier="cl_IfcRailing"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RampCommon" name="Pset_RampCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RampCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2346,7 +2307,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_RampCommon_FireRating_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RampCommon_IfcRamp" client="cl_Pset_RampCommon" supplier="cl_IfcRamp"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RampFlightCommon" name="Pset_RampFlightCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RampFlightCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2382,7 +2342,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_RampFlightCommon_CounterSlope_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RampFlightCommon_IfcRampFlight" client="cl_Pset_RampFlightCommon" supplier="cl_IfcRampFlight"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RoofCommon" name="Pset_RoofCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RoofCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2423,7 +2382,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_RoofCommon_LoadBearing_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RoofCommon_IfcRoof" client="cl_Pset_RoofCommon" supplier="cl_IfcRoof"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ShadingDeviceCommon" name="Pset_ShadingDeviceCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ShadingDeviceCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2497,7 +2455,6 @@ OR
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementShading_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementShading_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ShadingDeviceCommon_IfcShadingDevice" client="cl_Pset_ShadingDeviceCommon" supplier="cl_IfcShadingDevice"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SlabCommon" name="Pset_SlabCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SlabCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2558,7 +2515,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SlabCommon_LoadBearing_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SlabCommon_IfcSlab" client="cl_Pset_SlabCommon" supplier="cl_IfcSlab"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_StairCommon" name="Pset_StairCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_StairCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2659,7 +2615,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StairCommon_FireExit_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_StairCommon_IfcStair" client="cl_Pset_StairCommon" supplier="cl_IfcStair"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_StairFlightCommon" name="Pset_StairFlightCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_StairFlightCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2725,7 +2680,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_StairFlightCommon_WaistThickness_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_StairFlightCommon_IfcStairFlight" client="cl_Pset_StairFlightCommon" supplier="cl_IfcStairFlight"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_Tiling" name="Pset_Tiling">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_Tiling_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2746,10 +2700,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_Tiling_TileWidth_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Tiling_IfcPavement" client="cl_Pset_Tiling">
-      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcPavement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Tiling_IfcCovering" client="cl_Pset_Tiling" supplier="cl_IfcCovering"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WallCommon" name="Pset_WallCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WallCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2810,7 +2760,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WallCommon_Compartmentation_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WallCommon_IfcWall" client="cl_Pset_WallCommon" supplier="cl_IfcWall"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WindowCommon" name="Pset_WindowCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WindowCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2901,7 +2850,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowCommon_WindLoadRating_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WindowCommon_IfcWindow" client="cl_Pset_WindowCommon" supplier="cl_IfcWindow"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_BeamBaseQuantities" name="Qto_BeamBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_BeamBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -2952,7 +2900,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BeamBaseQuantities_NetWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_BeamBaseQuantities_IfcBeam" client="cl_Qto_BeamBaseQuantities" supplier="cl_IfcBeam"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_BuildingElementProxyQuantities" name="Qto_BuildingElementProxyQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_BuildingElementProxyQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -2968,7 +2915,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BuildingElementProxyQuantities_NetVolume_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_BuildingElementProxyQuantities_IfcBuildingElementProxy" client="cl_Qto_BuildingElementProxyQuantities" supplier="cl_IfcBuildingElementProxy"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ChimneyBaseQuantities" name="Qto_ChimneyBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ChimneyBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -2979,7 +2925,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ChimneyBaseQuantities_Length_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ChimneyBaseQuantities_IfcChimney" client="cl_Qto_ChimneyBaseQuantities" supplier="cl_IfcChimney"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ColumnBaseQuantities" name="Qto_ColumnBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ColumnBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -3030,7 +2975,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ColumnBaseQuantities_NetWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ColumnBaseQuantities_IfcColumn" client="cl_Qto_ColumnBaseQuantities" supplier="cl_IfcColumn"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_CoveringBaseQuantities" name="Qto_CoveringBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_CoveringBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -3051,7 +2995,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_CoveringBaseQuantities_NetArea_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CoveringBaseQuantities_IfcCovering" client="cl_Qto_CoveringBaseQuantities" supplier="cl_IfcCovering"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_CurtainWallQuantities" name="Qto_CurtainWallQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_CurtainWallQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -3082,7 +3025,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_CurtainWallQuantities_NetSideArea_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CurtainWallQuantities_IfcCurtainWall" client="cl_Qto_CurtainWallQuantities" supplier="cl_IfcCurtainWall"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_DoorBaseQuantities" name="Qto_DoorBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_DoorBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -3108,7 +3050,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_DoorBaseQuantities_Area_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_DoorBaseQuantities_IfcDoor" client="cl_Qto_DoorBaseQuantities" supplier="cl_IfcDoor"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_MemberBaseQuantities" name="Qto_MemberBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_MemberBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -3159,7 +3100,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_MemberBaseQuantities_NetWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_MemberBaseQuantities_IfcMember" client="cl_Qto_MemberBaseQuantities" supplier="cl_IfcMember"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_PlateBaseQuantities" name="Qto_PlateBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_PlateBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -3205,7 +3145,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_PlateBaseQuantities_NetWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PlateBaseQuantities_IfcPlate" client="cl_Qto_PlateBaseQuantities" supplier="cl_IfcPlate"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_RailingBaseQuantities" name="Qto_RailingBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_RailingBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -3216,7 +3155,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_RailingBaseQuantities_Length_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_RailingBaseQuantities_IfcRailing" client="cl_Qto_RailingBaseQuantities" supplier="cl_IfcRailing"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_RampFlightBaseQuantities" name="Qto_RampFlightBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_RampFlightBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -3252,7 +3190,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_RampFlightBaseQuantities_NetVolume_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_RampFlightBaseQuantities_IfcRampFlight" client="cl_Qto_RampFlightBaseQuantities" supplier="cl_IfcRampFlight"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_RoofBaseQuantities" name="Qto_RoofBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_RoofBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -3273,7 +3210,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_RoofBaseQuantities_ProjectedArea_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_RoofBaseQuantities_IfcRoof" client="cl_Qto_RoofBaseQuantities" supplier="cl_IfcRoof"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_SlabBaseQuantities" name="Qto_SlabBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_SlabBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -3329,7 +3265,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_SlabBaseQuantities_NetWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SlabBaseQuantities_IfcSlab" client="cl_Qto_SlabBaseQuantities" supplier="cl_IfcSlab"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_StairFlightBaseQuantities" name="Qto_StairFlightBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_StairFlightBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -3350,7 +3285,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_StairFlightBaseQuantities_NetVolume_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_StairFlightBaseQuantities_IfcStairFlight" client="cl_Qto_StairFlightBaseQuantities" supplier="cl_IfcStairFlight"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_WallBaseQuantities" name="Qto_WallBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_WallBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -3411,7 +3345,6 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_WallBaseQuantities_NetWeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_WallBaseQuantities_IfcWall" client="cl_Qto_WallBaseQuantities" supplier="cl_IfcWall"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_WindowBaseQuantities" name="Qto_WindowBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_WindowBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -3437,6 +3370,73 @@ OR
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_WindowBaseQuantities_Area_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelCoversBldgElements_RelatingBuildingElement" name="RelatingBuildingElement" memberEnd="at_IfcRelCoversBldgElements_RelatingBuildingElement as_IfcRelCoversBldgElements_RelatingBuildingElement_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelCoversBldgElements_RelatingBuildingElement_target_end" name="INV_HasCoverings_S[0:?]" type="cl_IfcRelCoversBldgElements" association="as_IfcRelCoversBldgElements_RelatingBuildingElement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelCoversBldgElements_RelatingBuildingElement_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelCoversBldgElements_RelatingBuildingElement_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelCoversBldgElements_RelatedCoverings" name="RelatedCoverings" memberEnd="at_IfcRelCoversBldgElements_RelatedCoverings as_IfcRelCoversBldgElements_RelatedCoverings_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelCoversBldgElements_RelatedCoverings_target_end" name="INV_CoversElements_S[0:1]" type="cl_IfcRelCoversBldgElements" association="as_IfcRelCoversBldgElements_RelatedCoverings">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelCoversBldgElements_RelatedCoverings_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelCoversBldgElements_RelatedCoverings_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelCoversSpaces_RelatingSpace" name="RelatingSpace" memberEnd="at_IfcRelCoversSpaces_RelatingSpace as_IfcRelCoversSpaces_RelatingSpace_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelCoversSpaces_RelatingSpace_target_end" name="INV_HasCoverings_S[0:?]" type="cl_IfcRelCoversSpaces" association="as_IfcRelCoversSpaces_RelatingSpace">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelCoversSpaces_RelatingSpace_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelCoversSpaces_RelatingSpace_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRelCoversSpaces_RelatedCoverings" name="RelatedCoverings" memberEnd="at_IfcRelCoversSpaces_RelatedCoverings as_IfcRelCoversSpaces_RelatedCoverings_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRelCoversSpaces_RelatedCoverings_target_end" name="INV_CoversSpaces_S[0:1]" type="cl_IfcRelCoversSpaces" association="as_IfcRelCoversSpaces_RelatedCoverings">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRelCoversSpaces_RelatedCoverings_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcRelCoversSpaces_RelatedCoverings_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BeamCommon_IfcBeam" client="cl_Pset_BeamCommon" supplier="cl_IfcBeam"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BearingCommon_IfcBearing" client="cl_Pset_BearingCommon" supplier="cl_IfcBearing"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BuildingElementProxyCommon_IfcBuildingElementProxy" client="cl_Pset_BuildingElementProxyCommon" supplier="cl_IfcBuildingElementProxy"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BuildingSystemCommon_IfcBuildingSystem" client="cl_Pset_BuildingSystemCommon" supplier="cl_IfcBuildingSystem"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ChimneyCommon_IfcChimney" client="cl_Pset_ChimneyCommon" supplier="cl_IfcChimney"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ColumnCommon_IfcColumn" client="cl_Pset_ColumnCommon" supplier="cl_IfcColumn"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoveringCommon_IfcCovering" client="cl_Pset_CoveringCommon" supplier="cl_IfcCovering"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoveringFlooring_IfcCoveringTypeEnum.FLOORING" client="cl_Pset_CoveringFlooring" supplier="cl_IfcCoveringTypeEnum_FLOORING"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CurtainWallCommon_IfcCurtainWall" client="cl_Pset_CurtainWallCommon" supplier="cl_IfcCurtainWall"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorCommon_IfcDoor" client="cl_Pset_DoorCommon" supplier="cl_IfcDoor"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorWindowGlazingType_IfcDoor" client="cl_Pset_DoorWindowGlazingType" supplier="cl_IfcDoor"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorWindowGlazingType_IfcWindow" client="cl_Pset_DoorWindowGlazingType" supplier="cl_IfcWindow"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MemberCommon_IfcMember" client="cl_Pset_MemberCommon" supplier="cl_IfcMember"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PlateCommon_IfcPlate" client="cl_Pset_PlateCommon" supplier="cl_IfcPlate"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailingCommon_IfcRailing" client="cl_Pset_RailingCommon" supplier="cl_IfcRailing"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RampCommon_IfcRamp" client="cl_Pset_RampCommon" supplier="cl_IfcRamp"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RampFlightCommon_IfcRampFlight" client="cl_Pset_RampFlightCommon" supplier="cl_IfcRampFlight"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RoofCommon_IfcRoof" client="cl_Pset_RoofCommon" supplier="cl_IfcRoof"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ShadingDeviceCommon_IfcShadingDevice" client="cl_Pset_ShadingDeviceCommon" supplier="cl_IfcShadingDevice"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SlabCommon_IfcSlab" client="cl_Pset_SlabCommon" supplier="cl_IfcSlab"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_StairCommon_IfcStair" client="cl_Pset_StairCommon" supplier="cl_IfcStair"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_StairFlightCommon_IfcStairFlight" client="cl_Pset_StairFlightCommon" supplier="cl_IfcStairFlight"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Tiling_IfcPavement" client="cl_Pset_Tiling">
+      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcPavement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_Tiling_IfcCovering" client="cl_Pset_Tiling" supplier="cl_IfcCovering"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WallCommon_IfcWall" client="cl_Pset_WallCommon" supplier="cl_IfcWall"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WindowCommon_IfcWindow" client="cl_Pset_WindowCommon" supplier="cl_IfcWindow"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_BeamBaseQuantities_IfcBeam" client="cl_Qto_BeamBaseQuantities" supplier="cl_IfcBeam"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_BuildingElementProxyQuantities_IfcBuildingElementProxy" client="cl_Qto_BuildingElementProxyQuantities" supplier="cl_IfcBuildingElementProxy"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ChimneyBaseQuantities_IfcChimney" client="cl_Qto_ChimneyBaseQuantities" supplier="cl_IfcChimney"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ColumnBaseQuantities_IfcColumn" client="cl_Qto_ColumnBaseQuantities" supplier="cl_IfcColumn"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CoveringBaseQuantities_IfcCovering" client="cl_Qto_CoveringBaseQuantities" supplier="cl_IfcCovering"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_CurtainWallQuantities_IfcCurtainWall" client="cl_Qto_CurtainWallQuantities" supplier="cl_IfcCurtainWall"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_DoorBaseQuantities_IfcDoor" client="cl_Qto_DoorBaseQuantities" supplier="cl_IfcDoor"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_MemberBaseQuantities_IfcMember" client="cl_Qto_MemberBaseQuantities" supplier="cl_IfcMember"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PlateBaseQuantities_IfcPlate" client="cl_Qto_PlateBaseQuantities" supplier="cl_IfcPlate"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_RailingBaseQuantities_IfcRailing" client="cl_Qto_RailingBaseQuantities" supplier="cl_IfcRailing"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_RampFlightBaseQuantities_IfcRampFlight" client="cl_Qto_RampFlightBaseQuantities" supplier="cl_IfcRampFlight"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_RoofBaseQuantities_IfcRoof" client="cl_Qto_RoofBaseQuantities" supplier="cl_IfcRoof"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SlabBaseQuantities_IfcSlab" client="cl_Qto_SlabBaseQuantities" supplier="cl_IfcSlab"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_StairFlightBaseQuantities_IfcStairFlight" client="cl_Qto_StairFlightBaseQuantities" supplier="cl_IfcStairFlight"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_WallBaseQuantities_IfcWall" client="cl_Qto_WallBaseQuantities" supplier="cl_IfcWall"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_WindowBaseQuantities_IfcWindow" client="cl_Qto_WindowBaseQuantities" supplier="cl_IfcWindow"/>
   </packagedElement>
 </uml:Model>

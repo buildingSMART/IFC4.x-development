@@ -359,36 +359,6 @@ AND
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcWindowPanelProperties_ShapeAspectStyle_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDoorLiningProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcDoorLiningProperties_ShapeAspectStyle as_IfcDoorLiningProperties_ShapeAspectStyle_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDoorLiningProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcDoorLiningProperties" association="as_IfcDoorLiningProperties_ShapeAspectStyle">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDoorLiningProperties_ShapeAspectStyle_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDoorLiningProperties_ShapeAspectStyle_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDoorPanelProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcDoorPanelProperties_ShapeAspectStyle as_IfcDoorPanelProperties_ShapeAspectStyle_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDoorPanelProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcDoorPanelProperties" association="as_IfcDoorPanelProperties_ShapeAspectStyle">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDoorPanelProperties_ShapeAspectStyle_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDoorPanelProperties_ShapeAspectStyle_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPermeableCoveringProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcPermeableCoveringProperties_ShapeAspectStyle as_IfcPermeableCoveringProperties_ShapeAspectStyle_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPermeableCoveringProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcPermeableCoveringProperties" association="as_IfcPermeableCoveringProperties_ShapeAspectStyle">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPermeableCoveringProperties_ShapeAspectStyle_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPermeableCoveringProperties_ShapeAspectStyle_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWindowLiningProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcWindowLiningProperties_ShapeAspectStyle as_IfcWindowLiningProperties_ShapeAspectStyle_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcWindowLiningProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcWindowLiningProperties" association="as_IfcWindowLiningProperties_ShapeAspectStyle">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcWindowLiningProperties_ShapeAspectStyle_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcWindowLiningProperties_ShapeAspectStyle_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWindowPanelProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcWindowPanelProperties_ShapeAspectStyle as_IfcWindowPanelProperties_ShapeAspectStyle_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcWindowPanelProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcWindowPanelProperties" association="as_IfcWindowPanelProperties_ShapeAspectStyle">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcWindowPanelProperties_ShapeAspectStyle_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcWindowPanelProperties_ShapeAspectStyle_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DoorLiningProperties" name="Pset_DoorLiningProperties">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DoorLiningProperties_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -454,12 +424,6 @@ AND
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DoorLiningProperties_LiningToPanelOffsetY_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorLiningProperties_IfcDoor" client="cl_Pset_DoorLiningProperties">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoor"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorLiningProperties_IfcMember" client="cl_Pset_DoorLiningProperties">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DoorPanelProperties" name="Pset_DoorPanelProperties">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DoorPanelProperties_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -504,12 +468,6 @@ AND
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelPositionEnum_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DoorPanelPositionEnum_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorPanelProperties_IfcDoor" client="cl_Pset_DoorPanelProperties">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoor"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorPanelProperties_IfcPlate" client="cl_Pset_DoorPanelProperties">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcPlate"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PermeableCoveringProperties" name="Pset_PermeableCoveringProperties">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PermeableCoveringProperties_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -550,15 +508,6 @@ AND
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelPositionEnum_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelPositionEnum_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelPositionEnum_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PermeableCoveringProperties_IfcDoor" client="cl_Pset_PermeableCoveringProperties">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoor"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PermeableCoveringProperties_IfcMember" client="cl_Pset_PermeableCoveringProperties">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PermeableCoveringProperties_IfcWindow" client="cl_Pset_PermeableCoveringProperties">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWindow"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WindowLiningProperties" name="Pset_WindowLiningProperties">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WindowLiningProperties_comment_0">
@@ -620,12 +569,6 @@ AND
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_WindowLiningProperties_LiningToPanelOffsetY_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WindowLiningProperties_IfcMember" client="cl_Pset_WindowLiningProperties">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WindowLiningProperties_IfcWindow" client="cl_Pset_WindowLiningProperties">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWindow"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WindowPanelProperties" name="Pset_WindowPanelProperties">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WindowPanelProperties_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -666,6 +609,63 @@ AND
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WindowPanelOperationEnum_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDoorLiningProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcDoorLiningProperties_ShapeAspectStyle as_IfcDoorLiningProperties_ShapeAspectStyle_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDoorLiningProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcDoorLiningProperties" association="as_IfcDoorLiningProperties_ShapeAspectStyle">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDoorLiningProperties_ShapeAspectStyle_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDoorLiningProperties_ShapeAspectStyle_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDoorPanelProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcDoorPanelProperties_ShapeAspectStyle as_IfcDoorPanelProperties_ShapeAspectStyle_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDoorPanelProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcDoorPanelProperties" association="as_IfcDoorPanelProperties_ShapeAspectStyle">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDoorPanelProperties_ShapeAspectStyle_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDoorPanelProperties_ShapeAspectStyle_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcPermeableCoveringProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcPermeableCoveringProperties_ShapeAspectStyle as_IfcPermeableCoveringProperties_ShapeAspectStyle_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcPermeableCoveringProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcPermeableCoveringProperties" association="as_IfcPermeableCoveringProperties_ShapeAspectStyle">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcPermeableCoveringProperties_ShapeAspectStyle_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcPermeableCoveringProperties_ShapeAspectStyle_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWindowLiningProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcWindowLiningProperties_ShapeAspectStyle as_IfcWindowLiningProperties_ShapeAspectStyle_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcWindowLiningProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcWindowLiningProperties" association="as_IfcWindowLiningProperties_ShapeAspectStyle">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcWindowLiningProperties_ShapeAspectStyle_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcWindowLiningProperties_ShapeAspectStyle_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcWindowPanelProperties_ShapeAspectStyle" name="ShapeAspectStyle" memberEnd="at_IfcWindowPanelProperties_ShapeAspectStyle as_IfcWindowPanelProperties_ShapeAspectStyle_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcWindowPanelProperties_ShapeAspectStyle_target_end" name="" type="cl_IfcWindowPanelProperties" association="as_IfcWindowPanelProperties_ShapeAspectStyle">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcWindowPanelProperties_ShapeAspectStyle_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcWindowPanelProperties_ShapeAspectStyle_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorLiningProperties_IfcDoor" client="cl_Pset_DoorLiningProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorLiningProperties_IfcMember" client="cl_Pset_DoorLiningProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorPanelProperties_IfcDoor" client="cl_Pset_DoorPanelProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorPanelProperties_IfcPlate" client="cl_Pset_DoorPanelProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcPlate"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PermeableCoveringProperties_IfcDoor" client="cl_Pset_PermeableCoveringProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PermeableCoveringProperties_IfcMember" client="cl_Pset_PermeableCoveringProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PermeableCoveringProperties_IfcWindow" client="cl_Pset_PermeableCoveringProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWindow"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WindowLiningProperties_IfcMember" client="cl_Pset_WindowLiningProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMember"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WindowLiningProperties_IfcWindow" client="cl_Pset_WindowLiningProperties">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcWindow"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WindowPanelProperties_IfcPlate" client="cl_Pset_WindowPanelProperties">
       <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcPlate"/>

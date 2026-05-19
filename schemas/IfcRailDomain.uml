@@ -221,9 +221,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RailwayCommunicationTerminalType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RailwayCommunicationTerminalType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AudioVisualApplianceTypeRailwayCommunicationTerminal_IfcAudioVisualApplianceTypeEnum.COMMUNICATIONTERMINAL" client="cl_Pset_AudioVisualApplianceTypeRailwayCommunicationTerminal">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcAudioVisualApplianceTypeEnum_COMMUNICATIONTERMINAL"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_AudioVisualApplianceTypeRecordingEquipment" name="Pset_AudioVisualApplianceTypeRecordingEquipment">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_AudioVisualApplianceTypeRecordingEquipment_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -252,9 +249,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcLabelIfcInteger_DefinedValue_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLabelIfcInteger_DefinedValue_upper" value="*"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AudioVisualApplianceTypeRecordingEquipment_IfcAudioVisualApplianceTypeEnum.RECORDINGEQUIPMENT" client="cl_Pset_AudioVisualApplianceTypeRecordingEquipment">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcAudioVisualApplianceTypeEnum_RECORDINGEQUIPMENT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_AxleCountingEquipment" name="Pset_AxleCountingEquipment">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_AxleCountingEquipment_comment_0">
@@ -323,9 +317,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AxleCountingEquipmentType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AxleCountingEquipmentType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AxleCountingEquipment_IfcSensorTypeEnum.WHEELSENSOR" client="cl_Pset_AxleCountingEquipment">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcSensorTypeEnum_WHEELSENSOR"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BalanceWeightTensionerDesignCriteria" name="Pset_BalanceWeightTensionerDesignCriteria">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BalanceWeightTensionerDesignCriteria_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -353,9 +344,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcThermodynamicTemperatureMeasureIfcPositiveLengthMeasure_DefinedValue_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcThermodynamicTemperatureMeasureIfcPositiveLengthMeasure_DefinedValue_upper" value="*"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BalanceWeightTensionerDesignCriteria_IfcDiscreteAccessoryTypeEnum.TENSIONINGEQUIPMENT" client="cl_Pset_BalanceWeightTensionerDesignCriteria">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_TENSIONINGEQUIPMENT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BuiltSystemRailwayLine" name="Pset_BuiltSystemRailwayLine">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BuiltSystemRailwayLine_comment_0">
@@ -385,9 +373,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_LineCharacteristic_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_LineCharacteristic_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_LineCharacteristic_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BuiltSystemRailwayLine_IfcBuiltSystemTypeEnum.RAILWAYLINE" client="cl_Pset_BuiltSystemRailwayLine">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuiltSystemTypeEnum_RAILWAYLINE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BuiltSystemRailwayTrack" name="Pset_BuiltSystemRailwayTrack">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BuiltSystemRailwayTrack_comment_0">
@@ -444,9 +429,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrackCharacteristic_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrackCharacteristic_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrackCharacteristic_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BuiltSystemRailwayTrack_IfcBuiltSystemTypeEnum.RAILWAYTRACK" client="cl_Pset_BuiltSystemRailwayTrack">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuiltSystemTypeEnum_RAILWAYTRACK"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CableCarrierSegmentTypeCatenaryWire" name="Pset_CableCarrierSegmentTypeCatenaryWire">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CableCarrierSegmentTypeCatenaryWire_comment_0">
@@ -518,9 +500,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CableCarrierSegmentTypeCatenaryWire_YoungModulus_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableCarrierSegmentTypeCatenaryWire_IfcCableCarrierSegmentTypeEnum.CATENARYWIRE" client="cl_Pset_CableCarrierSegmentTypeCatenaryWire">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierSegmentTypeEnum_CATENARYWIRE"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CableCarrierSegmentTypeDropper" name="Pset_CableCarrierSegmentTypeDropper">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CableCarrierSegmentTypeDropper_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -566,9 +545,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CableCarrierSegmentTypeDropper_NominalLoad_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableCarrierSegmentTypeDropper_IfcCableCarrierSegmentTypeEnum.DROPPER" client="cl_Pset_CableCarrierSegmentTypeDropper">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierSegmentTypeEnum_DROPPER"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CableFittingTypeExit" name="Pset_CableFittingTypeExit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CableFittingTypeExit_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -578,9 +554,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CableFittingTypeExit_GroundResistance_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CableFittingTypeExit_GroundResistance_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableFittingTypeExit_IfcCableFittingTypeEnum.EXIT" client="cl_Pset_CableFittingTypeExit">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableFittingTypeEnum_EXIT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CableFittingTypeFanout" name="Pset_CableFittingTypeFanout">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CableFittingTypeFanout_comment_0">
@@ -596,9 +569,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CableFittingTypeFanout_TubeDiameter_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CableFittingTypeFanout_TubeDiameter_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableFittingTypeFanout_IfcCableFittingTypeEnum.FANOUT" client="cl_Pset_CableFittingTypeFanout">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableFittingTypeEnum_FANOUT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CableSegmentConnector" name="Pset_CableSegmentConnector">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CableSegmentConnector_comment_0">
@@ -635,9 +605,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CableSegmentConnector_ConnectorBGender_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentConnector_IfcCableSegment" client="cl_Pset_CableSegmentConnector">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegment"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CableSegmentOccurenceFiberSegment" name="Pset_CableSegmentOccurenceFiberSegment">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CableSegmentOccurenceFiberSegment_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -647,9 +614,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CableSegmentOccurenceFiberSegment_InUse_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CableSegmentOccurenceFiberSegment_InUse_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentOccurenceFiberSegment_IfcCableSegmentTypeEnum.FIBERSEGMENT" client="cl_Pset_CableSegmentOccurenceFiberSegment">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_FIBERSEGMENT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_InsulatorType" name="PEnum_InsulatorType">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InsulatorType_LONGRODINSULATOR" name="LONGRODINSULATOR"/>
@@ -709,9 +673,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CableSegmentTypeContactWire_TensileStrength_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeContactWire_IfcCableSegmentTypeEnum.CONTACTWIRESEGMENT" client="cl_Pset_CableSegmentTypeContactWire">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_CONTACTWIRESEGMENT"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CableSegmentTypeEarthingConductor" name="Pset_CableSegmentTypeEarthingConductor">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CableSegmentTypeEarthingConductor_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -721,9 +682,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CableSegmentTypeEarthingConductor_ResistanceToGround_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CableSegmentTypeEarthingConductor_ResistanceToGround_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeEarthingConductor_IfcCableSegmentTypeEnum.CONDUCTORSEGMENT" client="cl_Pset_CableSegmentTypeEarthingConductor">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_CONDUCTORSEGMENT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CableSegmentTypeFiberSegment" name="Pset_CableSegmentTypeFiberSegment">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CableSegmentTypeFiberSegment_comment_0">
@@ -745,9 +703,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CableSegmentTypeFiberSegment_FiberType_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeFiberSegment_IfcCableSegmentTypeEnum.FIBERSEGMENT" client="cl_Pset_CableSegmentTypeFiberSegment">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_FIBERSEGMENT"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CableSegmentTypeFiberTubeSegment" name="Pset_CableSegmentTypeFiberTubeSegment">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CableSegmentTypeFiberTubeSegment_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -762,9 +717,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CableSegmentTypeFiberTubeSegment_NumberOfFibers_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CableSegmentTypeFiberTubeSegment_NumberOfFibers_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeFiberTubeSegment_IfcCableSegmentTypeEnum.FIBERTUBE" client="cl_Pset_CableSegmentTypeFiberTubeSegment">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_FIBERTUBE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CableSegmentTypeOpticalCableSegment" name="Pset_CableSegmentTypeOpticalCableSegment">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CableSegmentTypeOpticalCableSegment_comment_0">
@@ -816,9 +768,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberMode_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FiberMode_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeOpticalCableSegment_IfcCableSegmentTypeEnum.OPTICALCABLESEGMENT" client="cl_Pset_CableSegmentTypeOpticalCableSegment">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_OPTICALCABLESEGMENT"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CableSegmentTypeStitchWire" name="Pset_CableSegmentTypeStitchWire">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CableSegmentTypeStitchWire_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -848,9 +797,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CableSegmentTypeStitchWire_TensileStrength_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CableSegmentTypeStitchWire_TensileStrength_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeStitchWire_IfcCableSegmentTypeEnum.STITCHWIRE" client="cl_Pset_CableSegmentTypeStitchWire">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_STITCHWIRE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CableSegmentTypeWirePairSegment" name="Pset_CableSegmentTypeWirePairSegment">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CableSegmentTypeWirePairSegment_comment_0">
@@ -894,9 +840,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WirePairType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WirePairType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeWirePairSegment_IfcCableSegmentTypeEnum.WIREPAIRSEGMENT" client="cl_Pset_CableSegmentTypeWirePairSegment">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_WIREPAIRSEGMENT"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CessBetweenRails" name="Pset_CessBetweenRails">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CessBetweenRails_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -938,9 +881,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UsagePurpose_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UsagePurpose_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CessBetweenRails_IfcSlabTypeEnum.TRACKSLAB" client="cl_Pset_CessBetweenRails">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlabTypeEnum_TRACKSLAB"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CoaxialCable" name="Pset_CoaxialCable">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CoaxialCable_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -980,9 +920,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CoaxialCable_RadiantFrequency_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CoaxialCable_RadiantFrequency_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoaxialCable_IfcCableSegmentTypeEnum.CABLESEGMENT" client="cl_Pset_CoaxialCable">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_CABLESEGMENT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CommunicationsApplianceTypeAntenna" name="Pset_CommunicationsApplianceTypeAntenna">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CommunicationsApplianceTypeAntenna_comment_0">
@@ -1031,9 +968,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AntennaType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_AntennaType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeAntenna_IfcCommunicationsApplianceTypeEnum.ANTENNA" client="cl_Pset_CommunicationsApplianceTypeAntenna">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_ANTENNA"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CommunicationsApplianceTypeAutomaton" name="Pset_CommunicationsApplianceTypeAutomaton">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CommunicationsApplianceTypeAutomaton_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1048,9 +982,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CommunicationsApplianceTypeAutomaton_OutputSignalType_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CommunicationsApplianceTypeAutomaton_OutputSignalType_upper" value="*"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeAutomaton_IfcCommunicationsApplianceTypeEnum.AUTOMATON" client="cl_Pset_CommunicationsApplianceTypeAutomaton">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_AUTOMATON"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CommunicationsApplianceTypeComputer" name="Pset_CommunicationsApplianceTypeComputer">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CommunicationsApplianceTypeComputer_comment_0">
@@ -1075,9 +1006,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ComputerUIType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ComputerUIType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeComputer_IfcCommunicationsApplianceTypeEnum.COMPUTER" client="cl_Pset_CommunicationsApplianceTypeComputer">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_COMPUTER"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CommunicationsApplianceTypeGateway" name="Pset_CommunicationsApplianceTypeGateway">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CommunicationsApplianceTypeGateway_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1086,9 +1014,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CommunicationsApplianceTypeGateway_NumberOfInterfaces_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CommunicationsApplianceTypeGateway_NumberOfInterfaces_upper" value="*"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeGateway_IfcCommunicationsApplianceTypeEnum.GATEWAY" client="cl_Pset_CommunicationsApplianceTypeGateway">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_GATEWAY"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CommunicationsApplianceTypeIntelligentPeripheral" name="Pset_CommunicationsApplianceTypeIntelligentPeripheral">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CommunicationsApplianceTypeIntelligentPeripheral_comment_0">
@@ -1099,9 +1024,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CommunicationsApplianceTypeIntelligentPeripheral_UserCapacity_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CommunicationsApplianceTypeIntelligentPeripheral_UserCapacity_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeIntelligentPeripheral_IfcCommunicationsApplianceTypeEnum.INTELLIGENTPERIPHERAL" client="cl_Pset_CommunicationsApplianceTypeIntelligentPeripheral">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_INTELLIGENTPERIPHERAL"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CommunicationsApplianceTypeIpNetworkEquipment" name="Pset_CommunicationsApplianceTypeIpNetworkEquipment">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CommunicationsApplianceTypeIpNetworkEquipment_comment_0">
@@ -1136,9 +1058,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CommunicationsApplianceTypeIpNetworkEquipment_NumberOfInterfaces_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CommunicationsApplianceTypeIpNetworkEquipment_NumberOfInterfaces_upper" value="*"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeIpNetworkEquipment_IfcCommunicationsApplianceTypeEnum.IPNETWORKEQUIPMENT" client="cl_Pset_CommunicationsApplianceTypeIpNetworkEquipment">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_IPNETWORKEQUIPMENT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CommunicationsApplianceTypeModem" name="Pset_CommunicationsApplianceTypeModem">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CommunicationsApplianceTypeModem_comment_0">
@@ -1178,9 +1097,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ModemTrafficInterfaceType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ModemTrafficInterfaceType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeModem_IfcCommunicationsApplianceTypeEnum.MODEM" client="cl_Pset_CommunicationsApplianceTypeModem">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_MODEM"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CommunicationsApplianceTypeOpticalLineTerminal" name="Pset_CommunicationsApplianceTypeOpticalLineTerminal">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CommunicationsApplianceTypeOpticalLineTerminal_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1194,9 +1110,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CommunicationsApplianceTypeOpticalLineTerminal_NumberOfInterfaces_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CommunicationsApplianceTypeOpticalLineTerminal_NumberOfInterfaces_upper" value="*"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeOpticalLineTerminal_IfcCommunicationsApplianceTypeEnum.OPTICALLINETERMINAL" client="cl_Pset_CommunicationsApplianceTypeOpticalLineTerminal">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_OPTICALLINETERMINAL"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CommunicationsApplianceTypeOpticalNetworkUnit" name="Pset_CommunicationsApplianceTypeOpticalNetworkUnit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CommunicationsApplianceTypeOpticalNetworkUnit_comment_0">
@@ -1218,9 +1131,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_OpticalNetworkUnitType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_OpticalNetworkUnitType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeOpticalNetworkUnit_IfcCommunicationsApplianceTypeEnum.OPTICALNETWORKUNIT" client="cl_Pset_CommunicationsApplianceTypeOpticalNetworkUnit">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_OPTICALNETWORKUNIT"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CommunicationsApplianceTypeTelecommand" name="Pset_CommunicationsApplianceTypeTelecommand">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CommunicationsApplianceTypeTelecommand_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1235,9 +1145,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CommunicationsApplianceTypeTelecommand_NumberOfCPUs_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeTelecommand_IfcCommunicationsApplianceTypeEnum.TELECOMMAND" client="cl_Pset_CommunicationsApplianceTypeTelecommand">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_TELECOMMAND"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CommunicationsApplianceTypeTelephonyExchange" name="Pset_CommunicationsApplianceTypeTelephonyExchange">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CommunicationsApplianceTypeTelephonyExchange_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1247,9 +1154,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CommunicationsApplianceTypeTelephonyExchange_UserCapacity_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CommunicationsApplianceTypeTelephonyExchange_UserCapacity_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeTelephonyExchange_IfcCommunicationsApplianceTypeEnum.TELEPHONYEXCHANGE" client="cl_Pset_CommunicationsApplianceTypeTelephonyExchange">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_TELEPHONYEXCHANGE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CommunicationsApplianceTypeTransportEquipment" name="Pset_CommunicationsApplianceTypeTransportEquipment">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CommunicationsApplianceTypeTransportEquipment_comment_0">
@@ -1295,9 +1199,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TransportEquipmentAssemblyType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TransportEquipmentAssemblyType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeTransportEquipment_IfcCommunicationsApplianceTypeEnum.TRANSPORTEQUIPMENT" client="cl_Pset_CommunicationsApplianceTypeTransportEquipment">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_TRANSPORTEQUIPMENT"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CoveringTypeMembrane" name="Pset_CoveringTypeMembrane">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CoveringTypeMembrane_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1312,9 +1213,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_CoveringTypeMembrane_NominalTransverseInclination_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CoveringTypeMembrane_NominalTransverseInclination_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoveringTypeMembrane_IfcCoveringTypeEnum.MEMBRANE" client="cl_Pset_CoveringTypeMembrane">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcCoveringTypeEnum_MEMBRANE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_CurrentInstrumentTransformer" name="Pset_CurrentInstrumentTransformer">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_CurrentInstrumentTransformer_comment_0">
@@ -1374,12 +1272,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_CurrentInstrumentTransformer_SecondaryCurrent_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CurrentInstrumentTransformer_IfcFlowInstrumentTypeEnum.AMMETER" client="cl_Pset_CurrentInstrumentTransformer">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcFlowInstrumentTypeEnum_AMMETER"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CurrentInstrumentTransformer_IfcFlowInstrumentTypeEnum.COMBINED" client="cl_Pset_CurrentInstrumentTransformer">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcFlowInstrumentTypeEnum_COMBINED"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DataTransmissionUnit" name="Pset_DataTransmissionUnit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DataTransmissionUnit_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1407,9 +1299,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DataTransmissionUnitUsage_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DataTransmissionUnitUsage_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DataTransmissionUnit_IfcCommunicationsApplianceTypeEnum.MODEM" client="cl_Pset_DataTransmissionUnit">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_MODEM"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryTypeBracket" name="Pset_DiscreteAccessoryTypeBracket">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryTypeBracket_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1419,9 +1308,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryTypeBracket_IsInsulated_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryTypeBracket_IsInsulated_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeBracket_IfcDiscreteAccessoryTypeEnum.BRACKET" client="cl_Pset_DiscreteAccessoryTypeBracket">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_BRACKET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryTypeCableArranger" name="Pset_DiscreteAccessoryTypeCableArranger">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryTypeCableArranger_comment_0">
@@ -1440,9 +1326,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ArrangerPositionEnum_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ArrangerPositionEnum_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ArrangerPositionEnum_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeCableArranger_IfcDiscreteAccessoryTypeEnum.CABLEARRANGER" client="cl_Pset_DiscreteAccessoryTypeCableArranger">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_CABLEARRANGER"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryTypeInsulator" name="Pset_DiscreteAccessoryTypeInsulator">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryTypeInsulator_comment_0">
@@ -1520,9 +1403,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryTypeInsulator_Voltage_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeInsulator_IfcDiscreteAccessoryTypeEnum.INSULATOR" client="cl_Pset_DiscreteAccessoryTypeInsulator">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_INSULATOR"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryTypeLock" name="Pset_DiscreteAccessoryTypeLock">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryTypeLock_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1538,9 +1418,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryTypeLock_RequiredClosureSpacing_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeLock_IfcDiscreteAccessoryTypeEnum.LOCK" client="cl_Pset_DiscreteAccessoryTypeLock">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_LOCK"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryTypeRailBrace" name="Pset_DiscreteAccessoryTypeRailBrace">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryTypeRailBrace_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1550,9 +1427,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryTypeRailBrace_IsTemporary_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryTypeRailBrace_IsTemporary_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeRailBrace_IfcDiscreteAccessoryTypeEnum.RAILBRACE" client="cl_Pset_DiscreteAccessoryTypeRailBrace">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_RAILBRACE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryTypeRailLubrication" name="Pset_DiscreteAccessoryTypeRailLubrication">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryTypeRailLubrication_comment_0">
@@ -1591,9 +1465,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_LubricationPowerSupply_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_LubricationPowerSupply_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeRailLubrication_IfcDiscreteAccessoryTypeEnum.RAIL_LUBRICATION" client="cl_Pset_DiscreteAccessoryTypeRailLubrication">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_RAIL_LUBRICATION"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryTypeRailPad" name="Pset_DiscreteAccessoryTypeRailPad">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryTypeRailPad_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1611,9 +1482,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RailPadStiffness_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RailPadStiffness_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeRailPad_IfcDiscreteAccessoryTypeEnum.RAILPAD" client="cl_Pset_DiscreteAccessoryTypeRailPad">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_RAILPAD"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryTypeSlidingChair" name="Pset_DiscreteAccessoryTypeSlidingChair">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryTypeSlidingChair_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1624,9 +1492,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryTypeSlidingChair_IsSelfLubricated_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeSlidingChair_IfcDiscreteAccessoryTypeEnum.SLIDINGCHAIR" client="cl_Pset_DiscreteAccessoryTypeSlidingChair">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_SLIDINGCHAIR"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryTypeSoundAbsorption" name="Pset_DiscreteAccessoryTypeSoundAbsorption">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryTypeSoundAbsorption_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1636,9 +1501,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryTypeSoundAbsorption_SoundAbsorptionLimit_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryTypeSoundAbsorption_SoundAbsorptionLimit_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeSoundAbsorption_IfcDiscreteAccessoryTypeEnum.SOUNDABSORPTION" client="cl_Pset_DiscreteAccessoryTypeSoundAbsorption">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_SOUNDABSORPTION"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryTypeTensioningEquipment" name="Pset_DiscreteAccessoryTypeTensioningEquipment">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryTypeTensioningEquipment_comment_0">
@@ -1678,9 +1540,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryTypeTensioningEquipment_TransmissionEfficiency_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeTensioningEquipment_IfcDiscreteAccessoryTypeEnum.TENSIONINGEQUIPMENT" client="cl_Pset_DiscreteAccessoryTypeTensioningEquipment">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_TENSIONINGEQUIPMENT"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionBoardTypeDispatchingBoard" name="Pset_DistributionBoardTypeDispatchingBoard">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionBoardTypeDispatchingBoard_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1701,9 +1560,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DispatchingBoardType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DispatchingBoardType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionBoardTypeDispatchingBoard_IfcDistributionBoardTypeEnum.DISPATCHINGBOARD" client="cl_Pset_DistributionBoardTypeDispatchingBoard">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcDistributionBoardTypeEnum_DISPATCHINGBOARD"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionBoardTypeDistributionFrame" name="Pset_DistributionBoardTypeDistributionFrame">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionBoardTypeDistributionFrame_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1713,9 +1569,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DistributionBoardTypeDistributionFrame_PortCapacity_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DistributionBoardTypeDistributionFrame_PortCapacity_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionBoardTypeDistributionFrame_IfcDistributionBoardTypeEnum.DISTRIBUTIONFRAME" client="cl_Pset_DistributionBoardTypeDistributionFrame">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcDistributionBoardTypeEnum_DISTRIBUTIONFRAME"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DistributionSystemTypeOverheadContactlineSystem" name="Pset_DistributionSystemTypeOverheadContactlineSystem">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DistributionSystemTypeOverheadContactlineSystem_comment_0">
@@ -1790,9 +1643,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_OverheadContactLineType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_OverheadContactLineType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionSystemTypeOverheadContactlineSystem_IfcDistributionSystemEnum.OVERHEAD_CONTACTLINE_SYSTEM" client="cl_Pset_DistributionSystemTypeOverheadContactlineSystem">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcDistributionSystemEnum_OVERHEAD_CONTACTLINE_SYSTEM"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DoorTypeTurnstile" name="Pset_DoorTypeTurnstile">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DoorTypeTurnstile_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1824,9 +1674,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TurnstileType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TurnstileType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TurnstileType_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorTypeTurnstile_IfcDoorTypeEnum.TURNSTILE" client="cl_Pset_DoorTypeTurnstile">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoorTypeEnum_TURNSTILE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElectricalDeviceCompliance" name="Pset_ElectricalDeviceCompliance">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElectricalDeviceCompliance_comment_0">
@@ -1864,9 +1711,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLabelIfcBoolean_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricalDeviceCompliance_IfcDistributionElement" client="cl_Pset_ElectricalDeviceCompliance">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcDistributionElement"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElectricalFeederLine" name="Pset_ElectricalFeederLine">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElectricalFeederLine_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1903,9 +1747,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElectricalFeederType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElectricalFeederType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElectricalFeederType_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricalFeederLine_IfcCableSegmentTypeEnum.CONDUCTORSEGMENT" client="cl_Pset_ElectricalFeederLine">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_CONDUCTORSEGMENT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElectricFlowStorageDeviceTypeBattery" name="Pset_ElectricFlowStorageDeviceTypeBattery">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElectricFlowStorageDeviceTypeBattery_comment_0">
@@ -1953,9 +1794,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BatteryChargingType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BatteryChargingType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricFlowStorageDeviceTypeBattery_IfcElectricFlowStorageDeviceTypeEnum.BATTERY" client="cl_Pset_ElectricFlowStorageDeviceTypeBattery">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricFlowStorageDeviceTypeEnum_BATTERY"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElectricFlowStorageDeviceTypeCapacitor" name="Pset_ElectricFlowStorageDeviceTypeCapacitor">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElectricFlowStorageDeviceTypeCapacitor_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1965,9 +1803,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElectricFlowStorageDeviceTypeCapacitor_NumberOfPhases_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElectricFlowStorageDeviceTypeCapacitor_NumberOfPhases_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricFlowStorageDeviceTypeCapacitor_IfcElectricFlowStorageDeviceTypeEnum.CAPACITOR" client="cl_Pset_ElectricFlowStorageDeviceTypeCapacitor">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricFlowStorageDeviceTypeEnum_CAPACITOR"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElectricFlowStorageDeviceTypeInductor" name="Pset_ElectricFlowStorageDeviceTypeInductor">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElectricFlowStorageDeviceTypeInductor_comment_0">
@@ -1984,9 +1819,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElectricFlowStorageDeviceTypeInductor_NumberOfPhases_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricFlowStorageDeviceTypeInductor_IfcElectricFlowStorageDeviceTypeEnum.INDUCTOR" client="cl_Pset_ElectricFlowStorageDeviceTypeInductor">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricFlowStorageDeviceTypeEnum_INDUCTOR"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElectricFlowStorageDeviceTypeRecharger" name="Pset_ElectricFlowStorageDeviceTypeRecharger">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElectricFlowStorageDeviceTypeRecharger_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -1996,9 +1828,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElectricFlowStorageDeviceTypeRecharger_NominalSupplyCurrent_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElectricFlowStorageDeviceTypeRecharger_NominalSupplyCurrent_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricFlowStorageDeviceTypeRecharger_IfcElectricFlowStorageDeviceTypeEnum.RECHARGER" client="cl_Pset_ElectricFlowStorageDeviceTypeRecharger">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricFlowStorageDeviceTypeEnum_RECHARGER"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElectricFlowStorageDeviceTypeUPS" name="Pset_ElectricFlowStorageDeviceTypeUPS">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElectricFlowStorageDeviceTypeUPS_comment_0">
@@ -2024,9 +1853,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElectricFlowStorageDeviceTypeUPS_VoltageRegulationRate_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElectricFlowStorageDeviceTypeUPS_VoltageRegulationRate_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricFlowStorageDeviceTypeUPS_IfcElectricFlowStorageDeviceTypeEnum.UPS" client="cl_Pset_ElectricFlowStorageDeviceTypeUPS">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricFlowStorageDeviceTypeEnum_UPS"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElectricFlowTreatmentDeviceTypeElectronicFilter" name="Pset_ElectricFlowTreatmentDeviceTypeElectronicFilter">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElectricFlowTreatmentDeviceTypeElectronicFilter_comment_0">
@@ -2076,9 +1902,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElectronicFilterType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElectronicFilterType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricFlowTreatmentDeviceTypeElectronicFilter_IfcElectricFlowTreatmentDeviceTypeEnum.ELECTRONICFILTER" client="cl_Pset_ElectricFlowTreatmentDeviceTypeElectronicFilter">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricFlowTreatmentDeviceTypeEnum_ELECTRONICFILTER"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypeCantilever" name="Pset_ElementAssemblyTypeCantilever">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementAssemblyTypeCantilever_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2122,9 +1945,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CantileverAssemblyType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CantileverAssemblyType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeCantilever_IfcElementAssemblyTypeEnum.SUSPENSIONASSEMBLY" client="cl_Pset_ElementAssemblyTypeCantilever">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_SUSPENSIONASSEMBLY"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypeDilatationPanel" name="Pset_ElementAssemblyTypeDilatationPanel">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementAssemblyTypeDilatationPanel_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2167,9 +1987,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BladesOrientation_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BladesOrientation_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeDilatationPanel_IfcElementAssemblyTypeEnum.DILATATIONPANEL" client="cl_Pset_ElementAssemblyTypeDilatationPanel">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_DILATATIONPANEL"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypeHeadSpan" name="Pset_ElementAssemblyTypeHeadSpan">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementAssemblyTypeHeadSpan_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2190,9 +2007,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementAssemblyTypeHeadSpan_Span_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeHeadSpan_IfcElementAssemblyTypeEnum.SUPPORTINGASSEMBLY" client="cl_Pset_ElementAssemblyTypeHeadSpan">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_SUPPORTINGASSEMBLY"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypeMast" name="Pset_ElementAssemblyTypeMast">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementAssemblyTypeMast_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2202,9 +2016,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementAssemblyTypeMast_WithLightningRod_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementAssemblyTypeMast_WithLightningRod_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeMast_IfcElementAssemblyTypeEnum.MAST" client="cl_Pset_ElementAssemblyTypeMast">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_MAST"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypeOCSSuspension" name="Pset_ElementAssemblyTypeOCSSuspension">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementAssemblyTypeOCSSuspension_comment_0">
@@ -2220,9 +2031,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementAssemblyTypeOCSSuspension_ContactWireHeight_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementAssemblyTypeOCSSuspension_ContactWireHeight_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeOCSSuspension_IfcElementAssemblyTypeEnum.SUSPENSIONASSEMBLY" client="cl_Pset_ElementAssemblyTypeOCSSuspension">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_SUSPENSIONASSEMBLY"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypeRigidFrame" name="Pset_ElementAssemblyTypeRigidFrame">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementAssemblyTypeRigidFrame_comment_0">
@@ -2248,9 +2056,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementAssemblyTypeRigidFrame_Span_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementAssemblyTypeRigidFrame_Span_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeRigidFrame_IfcElementAssemblyTypeEnum.RIGID_FRAME" client="cl_Pset_ElementAssemblyTypeRigidFrame">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_RIGID_FRAME"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypeSteadyDevice" name="Pset_ElementAssemblyTypeSteadyDevice">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementAssemblyTypeSteadyDevice_comment_0">
@@ -2283,9 +2088,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SteadyDeviceType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SteadyDeviceType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeSteadyDevice_IfcElementAssemblyTypeEnum.SUSPENSIONASSEMBLY" client="cl_Pset_ElementAssemblyTypeSteadyDevice">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_SUSPENSIONASSEMBLY"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypeSupportingAssembly" name="Pset_ElementAssemblyTypeSupportingAssembly">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementAssemblyTypeSupportingAssembly_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2311,9 +2113,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SupportingSystemType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SupportingSystemType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeSupportingAssembly_IfcElementAssemblyTypeEnum.SUPPORTINGASSEMBLY" client="cl_Pset_ElementAssemblyTypeSupportingAssembly">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_SUPPORTINGASSEMBLY"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypeTrackPanel" name="Pset_ElementAssemblyTypeTrackPanel">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementAssemblyTypeTrackPanel_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2336,9 +2135,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementAssemblyTypeTrackPanel_InstallationPlan_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementAssemblyTypeTrackPanel_InstallationPlan_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeTrackPanel_IfcElementAssemblyTypeEnum.TRACKPANEL" client="cl_Pset_ElementAssemblyTypeTrackPanel">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_TRACKPANEL"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypeTractionSwitchingAssembly" name="Pset_ElementAssemblyTypeTractionSwitchingAssembly">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementAssemblyTypeTractionSwitchingAssembly_comment_0">
@@ -2370,9 +2166,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementAssemblyTypeTractionSwitchingAssembly_DesignAmbientTemperature_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementAssemblyTypeTractionSwitchingAssembly_DesignAmbientTemperature_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeTractionSwitchingAssembly_IfcElementAssemblyTypeEnum.TRACTION_SWITCHING_ASSEMBLY" client="cl_Pset_ElementAssemblyTypeTractionSwitchingAssembly">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_TRACTION_SWITCHING_ASSEMBLY"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypeTurnoutPanel" name="Pset_ElementAssemblyTypeTurnoutPanel">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementAssemblyTypeTurnoutPanel_comment_0">
@@ -2523,9 +2316,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TypeOfTurnout_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TypeOfTurnout_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeTurnoutPanel_IfcElementAssemblyTypeEnum.TURNOUTPANEL" client="cl_Pset_ElementAssemblyTypeTurnoutPanel">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_TURNOUTPANEL"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_EmbeddedTrack" name="Pset_EmbeddedTrack">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_EmbeddedTrack_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2545,9 +2335,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EmbeddedTrack_PermissibleRoadLoad_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EmbeddedTrack_PermissibleRoadLoad_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EmbeddedTrack_IfcSlabTypeEnum.TRACKSLAB" client="cl_Pset_EmbeddedTrack">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlabTypeEnum_TRACKSLAB"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_EnvironmentalCondition" name="Pset_EnvironmentalCondition">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_EnvironmentalCondition_comment_0">
@@ -2621,9 +2408,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EnvironmentalCondition_MaximumSolarRadiation_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EnvironmentalCondition_IfcElement" client="cl_Pset_EnvironmentalCondition">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FastenerRailWeld" name="Pset_FastenerRailWeld">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FastenerRailWeld_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2649,9 +2433,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FastenerRailWeld_AssemblyPlace_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FastenerRailWeld_IfcFastenerTypeEnum.WELD" client="cl_Pset_FastenerRailWeld">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcFastenerTypeEnum_WELD"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FootingTypePadFooting" name="Pset_FootingTypePadFooting">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FootingTypePadFooting_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2666,9 +2447,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FootingTypePadFooting_IsReinforced_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FootingTypePadFooting_IsReinforced_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FootingTypePadFooting_IfcFootingTypeEnum.PAD_FOOTING" client="cl_Pset_FootingTypePadFooting">
-      <supplier xmi:type="uml:Class" href="IfcStructuralElementsDomain.uml#cl_IfcFootingTypeEnum_PAD_FOOTING"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ImpactProtectionDeviceOccurrenceBumper" name="Pset_ImpactProtectionDeviceOccurrenceBumper">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ImpactProtectionDeviceOccurrenceBumper_comment_0">
@@ -2696,9 +2474,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BumperOrientation_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BumperOrientation_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImpactProtectionDeviceOccurrenceBumper_IfcImpactProtectionDeviceTypeEnum.BUMPER" client="cl_Pset_ImpactProtectionDeviceOccurrenceBumper">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcImpactProtectionDeviceTypeEnum_BUMPER"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ImpactProtectionDeviceTypeBumper" name="Pset_ImpactProtectionDeviceTypeBumper">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ImpactProtectionDeviceTypeBumper_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2718,9 +2493,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImpactProtectionDeviceTypeBumper_EnergyAbsorption_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImpactProtectionDeviceTypeBumper_EnergyAbsorption_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImpactProtectionDeviceTypeBumper_IfcImpactProtectionDeviceTypeEnum.BUMPER" client="cl_Pset_ImpactProtectionDeviceTypeBumper">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcImpactProtectionDeviceTypeEnum_BUMPER"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_InstallationOccurrence" name="Pset_InstallationOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_InstallationOccurrence_comment_0">
@@ -2742,15 +2514,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_InstallationOccurrence_PutIntoOperationDate_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_InstallationOccurrence_IfcAsset" client="cl_Pset_InstallationOccurrence">
-      <supplier xmi:type="uml:Class" href="IfcSharedFacilitiesElements.uml#cl_IfcAsset"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_InstallationOccurrence_IfcElement" client="cl_Pset_InstallationOccurrence">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_InstallationOccurrence_IfcSystem" client="cl_Pset_InstallationOccurrence">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_IpNetworkEquipmentPHistory" name="Pset_IpNetworkEquipmentPHistory">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_IpNetworkEquipmentPHistory_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -2760,9 +2523,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_IpNetworkEquipmentPHistory_NumberOfPackets_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_IpNetworkEquipmentPHistory_NumberOfPackets_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_IpNetworkEquipmentPHistory_IfcCommunicationsApplianceTypeEnum.IPNETWORKEQUIPMENT" client="cl_Pset_IpNetworkEquipmentPHistory">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_IPNETWORKEQUIPMENT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_JunctionBoxTypeData" name="Pset_JunctionBoxTypeData">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_JunctionBoxTypeData_comment_0">
@@ -2779,9 +2539,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DataConnectionType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DataConnectionType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DataConnectionType_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_JunctionBoxTypeData_IfcJunctionBoxTypeEnum.DATA" client="cl_Pset_JunctionBoxTypeData">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcJunctionBoxTypeEnum_DATA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MarkerGeneral" name="Pset_MarkerGeneral">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MarkerGeneral_comment_0">
@@ -2832,9 +2589,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MarkerType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MarkerType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MarkerGeneral_IfcElementAssemblyTypeEnum.SIGNALASSEMBLY" client="cl_Pset_MarkerGeneral">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_SIGNALASSEMBLY"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalFastenerOCSFitting" name="Pset_MechanicalFastenerOCSFitting">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalFastenerOCSFitting_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2861,9 +2615,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_OCSFasteningType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_OCSFasteningType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalFastenerOCSFitting_IfcMechanicalFastenerTypeEnum.COUPLER" client="cl_Pset_MechanicalFastenerOCSFitting">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcMechanicalFastenerTypeEnum_COUPLER"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalFastenerTypeRailFastening" name="Pset_MechanicalFastenerTypeRailFastening">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalFastenerTypeRailFastening_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2889,9 +2640,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrackFasteningElasticityType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrackFasteningElasticityType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrackFasteningElasticityType_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalFastenerTypeRailFastening_IfcMechanicalFastenerTypeEnum.RAILFASTENING" client="cl_Pset_MechanicalFastenerTypeRailFastening">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcMechanicalFastenerTypeEnum_RAILFASTENING"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MechanicalFastenerTypeRailJoint" name="Pset_MechanicalFastenerTypeRailJoint">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MechanicalFastenerTypeRailJoint_comment_0">
@@ -2944,9 +2692,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SleeperArrangement_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SleeperArrangement_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalFastenerTypeRailJoint_IfcMechanicalFastenerTypeEnum.RAILJOINT" client="cl_Pset_MechanicalFastenerTypeRailJoint">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcMechanicalFastenerTypeEnum_RAILJOINT"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MemberTypeAnchoringBar" name="Pset_MemberTypeAnchoringBar">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MemberTypeAnchoringBar_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -2967,9 +2712,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MechanicalStressType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MechanicalStressType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MechanicalStressType_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MemberTypeAnchoringBar_IfcMemberTypeEnum.BRACE" client="cl_Pset_MemberTypeAnchoringBar">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMemberTypeEnum_BRACE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MemberTypeCatenaryStay" name="Pset_MemberTypeCatenaryStay">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MemberTypeCatenaryStay_comment_0">
@@ -3002,9 +2744,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CatenaryStayType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CatenaryStayType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MemberTypeCatenaryStay_IfcMemberTypeEnum.STAY_CABLE" client="cl_Pset_MemberTypeCatenaryStay">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMemberTypeEnum_STAY_CABLE"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MemberTypeOCSRigidSupport" name="Pset_MemberTypeOCSRigidSupport">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MemberTypeOCSRigidSupport_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3019,9 +2758,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MemberTypeOCSRigidSupport_ContactWireStagger_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MemberTypeOCSRigidSupport_ContactWireStagger_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MemberTypeOCSRigidSupport_IfcMemberTypeEnum.MEMBER" client="cl_Pset_MemberTypeOCSRigidSupport">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMemberTypeEnum_MEMBER"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MemberTypePost" name="Pset_MemberTypePost">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MemberTypePost_comment_0">
@@ -3058,9 +2794,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MemberTypePost_BendingStrength_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MemberTypePost_IfcMemberTypeEnum.POST" client="cl_Pset_MemberTypePost">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMemberTypeEnum_POST"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MemberTypeTieBar" name="Pset_MemberTypeTieBar">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MemberTypeTieBar_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3070,9 +2803,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MemberTypeTieBar_IsTemporaryInstallation_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MemberTypeTieBar_IsTemporaryInstallation_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MemberTypeTieBar_IfcMemberTypeEnum.TIEBAR" client="cl_Pset_MemberTypeTieBar">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMemberTypeEnum_TIEBAR"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeAccessPoint" name="Pset_MobileTelecommunicationsApplianceTypeAccessPoint">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeAccessPoint_comment_0">
@@ -3108,9 +2838,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MobileTelecommunicationsApplianceTypeAccessPoint_UserCapacity_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeAccessPoint_IfcMobileTelecommunicationsApplianceTypeEnum.ACCESSPOINT" client="cl_Pset_MobileTelecommunicationsApplianceTypeAccessPoint">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_ACCESSPOINT"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeBasebandUnit" name="Pset_MobileTelecommunicationsApplianceTypeBasebandUnit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeBasebandUnit_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3134,9 +2861,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MobileTelecommunicationsApplianceTypeBasebandUnit_MaximumNumberOfRRUs_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MobileTelecommunicationsApplianceTypeBasebandUnit_MaximumNumberOfRRUs_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeBasebandUnit_IfcMobileTelecommunicationsApplianceTypeEnum.BASEBANDUNIT" client="cl_Pset_MobileTelecommunicationsApplianceTypeBasebandUnit">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_BASEBANDUNIT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeBaseTransceiverStation" name="Pset_MobileTelecommunicationsApplianceTypeBaseTransceiverStation">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeBaseTransceiverStation_comment_0">
@@ -3206,9 +2930,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcLabelIfcPowerMeasure_DefinedValue_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeBaseTransceiverStation_IfcMobileTelecommunicationsApplianceTypeEnum.BASETRANSCEIVERSTATION" client="cl_Pset_MobileTelecommunicationsApplianceTypeBaseTransceiverStation">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_BASETRANSCEIVERSTATION"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeCommon" name="Pset_MobileTelecommunicationsApplianceTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3223,9 +2944,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MobileTelecommunicationsApplianceTypeCommon_Status_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MobileTelecommunicationsApplianceTypeCommon_Status_upper" value="*"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeCommon_IfcMobileTelecommunicationsAppliance" client="cl_Pset_MobileTelecommunicationsApplianceTypeCommon">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsAppliance"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeEUtranNodeB" name="Pset_MobileTelecommunicationsApplianceTypeEUtranNodeB">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeEUtranNodeB_comment_0">
@@ -3265,9 +2983,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MobileTelecommunicationsApplianceTypeEUtranNodeB_UplinkRadioBand_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MobileTelecommunicationsApplianceTypeEUtranNodeB_UplinkRadioBand_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeEUtranNodeB_IfcMobileTelecommunicationsApplianceTypeEnum.E_UTRAN_NODE_B" client="cl_Pset_MobileTelecommunicationsApplianceTypeEUtranNodeB">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_E_UTRAN_NODE_B"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeMasterUnit" name="Pset_MobileTelecommunicationsApplianceTypeMasterUnit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeMasterUnit_comment_0">
@@ -3329,9 +3044,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MasterUnitType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_MasterUnitType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeMasterUnit_IfcMobileTelecommunicationsApplianceTypeEnum.MASTERUNIT" client="cl_Pset_MobileTelecommunicationsApplianceTypeMasterUnit">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_MASTERUNIT"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeMobileSwitchingCenter" name="Pset_MobileTelecommunicationsApplianceTypeMobileSwitchingCenter">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeMobileSwitchingCenter_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3351,9 +3063,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MobileTelecommunicationsApplianceTypeMobileSwitchingCenter_MaximumNumberOfManagedBSCs_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeMobileSwitchingCenter_IfcMobileTelecommunicationsApplianceTypeEnum.MOBILESWITCHINGCENTER" client="cl_Pset_MobileTelecommunicationsApplianceTypeMobileSwitchingCenter">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_MOBILESWITCHINGCENTER"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeMSCServer" name="Pset_MobileTelecommunicationsApplianceTypeMSCServer">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeMSCServer_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3367,9 +3076,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MobileTelecommunicationsApplianceTypeMSCServer_NumberOfInterfaces_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MobileTelecommunicationsApplianceTypeMSCServer_NumberOfInterfaces_upper" value="*"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeMSCServer_IfcMobileTelecommunicationsApplianceTypeEnum.MSCSERVER" client="cl_Pset_MobileTelecommunicationsApplianceTypeMSCServer">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_MSCSERVER"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MobileTeleCommunicationsApplianceTypeRemoteRadioUnit" name="Pset_MobileTeleCommunicationsApplianceTypeRemoteRadioUnit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MobileTeleCommunicationsApplianceTypeRemoteRadioUnit_comment_0">
@@ -3419,9 +3125,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MobileTeleCommunicationsApplianceTypeRemoteRadioUnit_RRUConnectionType_upper" value="*"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTeleCommunicationsApplianceTypeRemoteRadioUnit_IfcMobileTelecommunicationsApplianceTypeEnum.REMOTERADIOUNIT" client="cl_Pset_MobileTeleCommunicationsApplianceTypeRemoteRadioUnit">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_REMOTERADIOUNIT"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeRemoteUnit" name="Pset_MobileTelecommunicationsApplianceTypeRemoteUnit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MobileTelecommunicationsApplianceTypeRemoteUnit_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3440,9 +3143,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MobileTelecommunicationsApplianceTypeRemoteUnit_RUConnectionType_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MobileTelecommunicationsApplianceTypeRemoteUnit_RUConnectionType_upper" value="*"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeRemoteUnit_IfcMobileTelecommunicationsApplianceTypeEnum.REMOTEUNIT" client="cl_Pset_MobileTelecommunicationsApplianceTypeRemoteUnit">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_REMOTEUNIT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_OnSiteTelecomControlUnit" name="Pset_OnSiteTelecomControlUnit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_OnSiteTelecomControlUnit_comment_0">
@@ -3497,9 +3197,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ControllerInterfaceType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ControllerInterfaceType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_OnSiteTelecomControlUnit_IfcController" client="cl_Pset_OnSiteTelecomControlUnit">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcController"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_OpticalAdapter" name="Pset_OpticalAdapter">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_OpticalAdapter_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3509,9 +3206,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_OpticalAdapter_FiberType_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_OpticalAdapter_FiberType_upper" value="*"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_OpticalAdapter_IfcCableFittingTypeEnum.TRANSITION" client="cl_Pset_OpticalAdapter">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableFittingTypeEnum_TRANSITION"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_OpticalPigtail" name="Pset_OpticalPigtail">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_OpticalPigtail_comment_0">
@@ -3532,9 +3226,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_OpticalPigtail_ConnectorType_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_OpticalPigtail_ConnectorType_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_OpticalPigtail_IfcCableSegmentTypeEnum.OPTICALCABLESEGMENT" client="cl_Pset_OpticalPigtail">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_OPTICALCABLESEGMENT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_OpticalSplitter" name="Pset_OpticalSplitter">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_OpticalSplitter_comment_0">
@@ -3561,9 +3252,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_OpticalSplitterType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_OpticalSplitterType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_OpticalSplitter_IfcJunctionBoxTypeEnum.DATA" client="cl_Pset_OpticalSplitter">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcJunctionBoxTypeEnum_DATA"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PatchCordCable" name="Pset_PatchCordCable">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PatchCordCable_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3573,12 +3261,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PatchCordCable_JacketColour_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PatchCordCable_JacketColour_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PatchCordCable_IfcCableSegmentTypeEnum.CABLESEGMENT" client="cl_Pset_PatchCordCable">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_CABLESEGMENT"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PatchCordCable_IfcCableSegmentTypeEnum.OPTICALCABLESEGMENT" client="cl_Pset_PatchCordCable">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_OPTICALCABLESEGMENT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PointMachine" name="Pset_PointMachine">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PointMachine_comment_0">
@@ -3633,18 +3315,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PointMachine_Current_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PointMachine_IfcActuatorTypeEnum.ELECTRICACTUATOR" client="cl_Pset_PointMachine">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcActuatorTypeEnum_ELECTRICACTUATOR"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PointMachine_IfcActuatorTypeEnum.HANDOPERATEDACTUATOR" client="cl_Pset_PointMachine">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcActuatorTypeEnum_HANDOPERATEDACTUATOR"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PointMachine_IfcActuatorTypeEnum.HYDRAULICACTUATOR" client="cl_Pset_PointMachine">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcActuatorTypeEnum_HYDRAULICACTUATOR"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PointMachine_IfcActuatorTypeEnum.PNEUMATICACTUATOR" client="cl_Pset_PointMachine">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcActuatorTypeEnum_PNEUMATICACTUATOR"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PowerControlSystem" name="Pset_PowerControlSystem">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PowerControlSystem_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -3654,9 +3324,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PowerControlSystem_AssemblyInstruction_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PowerControlSystem_AssemblyInstruction_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PowerControlSystem_IfcDistributionSystemEnum.ELECTRICAL" client="cl_Pset_PowerControlSystem">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcDistributionSystemEnum_ELECTRICAL"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProtectiveDeviceTypeAntiArcingDevice" name="Pset_ProtectiveDeviceTypeAntiArcingDevice">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProtectiveDeviceTypeAntiArcingDevice_comment_0">
@@ -3675,9 +3342,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProtectiveDeviceTypeAntiArcingDevice_GroundingType_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProtectiveDeviceTypeAntiArcingDevice_GroundingType_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProtectiveDeviceTypeAntiArcingDevice_IfcProtectiveDeviceTypeEnum.ANTI_ARCING_DEVICE" client="cl_Pset_ProtectiveDeviceTypeAntiArcingDevice">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcProtectiveDeviceTypeEnum_ANTI_ARCING_DEVICE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProtectiveDeviceTypeSparkGap" name="Pset_ProtectiveDeviceTypeSparkGap">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProtectiveDeviceTypeSparkGap_comment_0">
@@ -3720,12 +3384,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SparkGapType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SparkGapType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProtectiveDeviceTypeSparkGap_IfcProtectiveDeviceTypeEnum.SPARKGAP" client="cl_Pset_ProtectiveDeviceTypeSparkGap">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcProtectiveDeviceTypeEnum_SPARKGAP"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProtectiveDeviceTypeSparkGap_IfcProtectiveDeviceTypeEnum.VOLTAGELIMITER" client="cl_Pset_ProtectiveDeviceTypeSparkGap">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcProtectiveDeviceTypeEnum_VOLTAGELIMITER"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailTypeBlade" name="Pset_RailTypeBlade">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailTypeBlade_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3751,7 +3409,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_RailTypeBlade_BladeRadius_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailTypeBlade_IfcRailTypeEnum.BLADE" client="cl_Pset_RailTypeBlade" supplier="cl_IfcRailTypeEnum_BLADE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailTypeCheckRail" name="Pset_RailTypeCheckRail">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailTypeCheckRail_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3766,7 +3423,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_RailTypeCheckRail_InstallationPlan_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailTypeCheckRail_IfcRailTypeEnum.CHECKRAIL" client="cl_Pset_RailTypeCheckRail" supplier="cl_IfcRailTypeEnum_CHECKRAIL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailTypeGuardRail" name="Pset_RailTypeGuardRail">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailTypeGuardRail_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3801,7 +3457,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GuardRailType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GuardRailType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailTypeGuardRail_IfcRailTypeEnum.GUARDRAIL" client="cl_Pset_RailTypeGuardRail" supplier="cl_IfcRailTypeEnum_GUARDRAIL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailTypeRail" name="Pset_RailTypeRail">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailTypeRail_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3894,7 +3549,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RailElementaryLength_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RailElementaryLength_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailTypeRail_IfcRailTypeEnum.RAIL" client="cl_Pset_RailTypeRail" supplier="cl_IfcRailTypeEnum_RAIL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailTypeStockRail" name="Pset_RailTypeStockRail">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailTypeStockRail_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3915,7 +3569,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_RailTypeStockRail_NominalLength_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailTypeStockRail_IfcRailTypeEnum.STOCKRAIL" client="cl_Pset_RailTypeStockRail" supplier="cl_IfcRailTypeEnum_STOCKRAIL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailwayBalise" name="Pset_RailwayBalise">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailwayBalise_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -3985,9 +3638,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RailwayBaliseType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RailwayBaliseType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayBalise_IfcCommunicationsApplianceTypeEnum.TRANSPONDER" client="cl_Pset_RailwayBalise">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_TRANSPONDER"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailwayCableCarrier" name="Pset_RailwayCableCarrier">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailwayCableCarrier_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -3997,9 +3647,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_RailwayCableCarrier_NumberOfCrossedTracks_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_RailwayCableCarrier_NumberOfCrossedTracks_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayCableCarrier_IfcCableCarrierSegment" client="cl_Pset_RailwayCableCarrier">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierSegment"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailwayLevelCrossing" name="Pset_RailwayLevelCrossing">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailwayLevelCrossing_comment_0">
@@ -4036,9 +3683,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_RailwayLevelCrossing_IsExceptionalTransportRoute_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayLevelCrossing_IfcFacilityPartCommonTypeEnum.LEVELCROSSING" client="cl_Pset_RailwayLevelCrossing">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcFacilityPartCommonTypeEnum_LEVELCROSSING"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailwaySignalAspect" name="Pset_RailwaySignalAspect">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailwaySignalAspect_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4069,12 +3713,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrainCategory_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrainCategory_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrainCategory_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwaySignalAspect_IfcSignal" client="cl_Pset_RailwaySignalAspect">
-      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSignal"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwaySignalAspect_IfcSign" client="cl_Pset_RailwaySignalAspect">
-      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSign"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailwaySignalOccurrence" name="Pset_RailwaySignalOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailwaySignalOccurrence_comment_0">
@@ -4146,9 +3784,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_RailwaySignalOccurrence_DistanceToStopMark_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwaySignalOccurrence_IfcSignal" client="cl_Pset_RailwaySignalOccurrence">
-      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSignal"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailwaySignalSighting" name="Pset_RailwaySignalSighting">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailwaySignalSighting_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -4188,12 +3823,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_RailwaySignalSighting_SignalViewingMinimumInFront_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_RailwaySignalSighting_SignalViewingMinimumInFront_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwaySignalSighting_IfcSignal" client="cl_Pset_RailwaySignalSighting">
-      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSignal"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwaySignalSighting_IfcSign" client="cl_Pset_RailwaySignalSighting">
-      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSign"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailwaySignalType" name="Pset_RailwaySignalType">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailwaySignalType_comment_0">
@@ -4275,9 +3904,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RailwaySignalType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RailwaySignalType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwaySignalType_IfcSignal" client="cl_Pset_RailwaySignalType">
-      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSignal"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RailwayTrackStructurePart" name="Pset_RailwayTrackStructurePart">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RailwayTrackStructurePart_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -4314,11 +3940,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrackSupportingStructure_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TrackSupportingStructure_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayTrackStructurePart_IfcRailwayPartTypeEnum.DILATIONTRACK" client="cl_Pset_RailwayTrackStructurePart" supplier="cl_IfcRailwayPartTypeEnum_DILATIONTRACK"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayTrackStructurePart_IfcRailwayPartTypeEnum.PLAINTRACK" client="cl_Pset_RailwayTrackStructurePart" supplier="cl_IfcRailwayPartTypeEnum_PLAINTRACK"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayTrackStructurePart_IfcRailwayPartTypeEnum.TRACK" client="cl_Pset_RailwayTrackStructurePart" supplier="cl_IfcRailwayPartTypeEnum_TRACK"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayTrackStructurePart_IfcRailwayPartTypeEnum.TURNOUTTRACK" client="cl_Pset_RailwayTrackStructurePart" supplier="cl_IfcRailwayPartTypeEnum_TURNOUTTRACK"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayTrackStructurePart_IfcRailwayPartTypeEnum.TRACKPART" client="cl_Pset_RailwayTrackStructurePart" supplier="cl_IfcRailwayPartTypeEnum_TRACKPART"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_RepairOccurrence" name="Pset_RepairOccurrence">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_RepairOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -4339,15 +3960,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_RepairOccurrence_MeanTimeToRepair_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RepairOccurrence_IfcAsset" client="cl_Pset_RepairOccurrence">
-      <supplier xmi:type="uml:Class" href="IfcSharedFacilitiesElements.uml#cl_IfcAsset"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RepairOccurrence_IfcElement" client="cl_Pset_RepairOccurrence">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RepairOccurrence_IfcSystem" client="cl_Pset_RepairOccurrence">
-      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SectioningDevice" name="Pset_SectioningDevice">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SectioningDevice_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4364,9 +3976,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SectioningDeviceType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SectioningDeviceType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SectioningDeviceType_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SectioningDevice_IfcDiscreteAccessoryTypeEnum.INSULATOR" client="cl_Pset_SectioningDevice">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_INSULATOR"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SectionInsulator" name="Pset_SectionInsulator">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SectionInsulator_comment_0">
@@ -4392,9 +4001,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SectionInsulator_TensileStrength_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SectionInsulator_TensileStrength_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SectionInsulator_IfcDiscreteAccessoryTypeEnum.INSULATOR" client="cl_Pset_SectionInsulator">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_INSULATOR"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SensorTypeEarthquakeSensor" name="Pset_SensorTypeEarthquakeSensor">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SensorTypeEarthquakeSensor_comment_0">
@@ -4473,9 +4079,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthquakeSensorType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthquakeSensorType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SensorTypeEarthquakeSensor_IfcSensorTypeEnum.EARTHQUAKESENSOR" client="cl_Pset_SensorTypeEarthquakeSensor">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcSensorTypeEnum_EARTHQUAKESENSOR"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SensorTypeForeignObjectDetectionSensor" name="Pset_SensorTypeForeignObjectDetectionSensor">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SensorTypeForeignObjectDetectionSensor_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4500,9 +4103,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ForeignObjectDetectionSensorType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ForeignObjectDetectionSensorType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ForeignObjectDetectionSensorType_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SensorTypeForeignObjectDetectionSensor_IfcSensorTypeEnum.FOREIGNOBJECTDETECTIONSENSOR" client="cl_Pset_SensorTypeForeignObjectDetectionSensor">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcSensorTypeEnum_FOREIGNOBJECTDETECTIONSENSOR"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SensorTypeRainSensor" name="Pset_SensorTypeRainSensor">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SensorTypeRainSensor_comment_0">
@@ -4558,9 +4158,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RainSensorType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RainSensorType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RainSensorType_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SensorTypeRainSensor_IfcSensorTypeEnum.RAINSENSOR" client="cl_Pset_SensorTypeRainSensor">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcSensorTypeEnum_RAINSENSOR"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SensorTypeSnowSensor" name="Pset_SensorTypeSnowSensor">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SensorTypeSnowSensor_comment_0">
@@ -4626,9 +4223,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SnowSensorType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SnowSensorType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SensorTypeSnowSensor_IfcSensorTypeEnum.SNOWDEPTHSENSOR" client="cl_Pset_SensorTypeSnowSensor">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcSensorTypeEnum_SNOWDEPTHSENSOR"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SensorTypeTurnoutClosureSensor" name="Pset_SensorTypeTurnoutClosureSensor">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SensorTypeTurnoutClosureSensor_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4646,9 +4240,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SensorTypeTurnoutClosureSensor_IndicationRodMovementRange_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SensorTypeTurnoutClosureSensor_IndicationRodMovementRange_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SensorTypeTurnoutClosureSensor_IfcSensorTypeEnum.TURNOUTCLOSURESENSOR" client="cl_Pset_SensorTypeTurnoutClosureSensor">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcSensorTypeEnum_TURNOUTCLOSURESENSOR"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SignalFrame" name="Pset_SignalFrame">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SignalFrame_comment_0">
@@ -4685,9 +4276,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SignalFrame_SignalFrameBackboardDiameter_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SignalFrame_IfcSignal" client="cl_Pset_SignalFrame">
-      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSignal"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SlabTypeTrackSlab" name="Pset_SlabTypeTrackSlab">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SlabTypeTrackSlab_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4697,9 +4285,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SlabTypeTrackSlab_TechnicalStandard_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SlabTypeTrackSlab_TechnicalStandard_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SlabTypeTrackSlab_IfcSlabTypeEnum.TRACKSLAB" client="cl_Pset_SlabTypeTrackSlab">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlabTypeEnum_TRACKSLAB"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpringTensioner" name="Pset_SpringTensioner">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpringTensioner_comment_0">
@@ -4723,9 +4308,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SpringTensioner_TensioningWorkingRange_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SpringTensioner_TensioningWorkingRange_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpringTensioner_IfcDiscreteAccessoryTypeEnum.TENSIONINGEQUIPMENT" client="cl_Pset_SpringTensioner">
-      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_TENSIONINGEQUIPMENT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SwitchingDeviceTypeRelay" name="Pset_SwitchingDeviceTypeRelay">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SwitchingDeviceTypeRelay_comment_0">
@@ -4783,9 +4365,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SwitchingDeviceTypeRelay_Voltage_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SwitchingDeviceTypeRelay_IfcSwitchingDeviceTypeEnum.RELAY" client="cl_Pset_SwitchingDeviceTypeRelay">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcSwitchingDeviceTypeEnum_RELAY"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SymmetricPairCable" name="Pset_SymmetricPairCable">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SymmetricPairCable_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4800,9 +4379,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SymmetricPairCable_NumberOfUntwistedPairs_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SymmetricPairCable_NumberOfUntwistedPairs_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SymmetricPairCable_IfcCableSegmentTypeEnum.CABLESEGMENT" client="cl_Pset_SymmetricPairCable">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_CABLESEGMENT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SystemFurnitureElementTypeSubrack" name="Pset_SystemFurnitureElementTypeSubrack">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SystemFurnitureElementTypeSubrack_comment_0">
@@ -4823,9 +4399,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SystemFurnitureElementTypeSubrack_NumberOfOccupiedUnits_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SystemFurnitureElementTypeSubrack_NumberOfOccupiedUnits_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SystemFurnitureElementTypeSubrack_IfcSystemFurnitureElementTypeEnum.SUBRACK" client="cl_Pset_SystemFurnitureElementTypeSubrack">
-      <supplier xmi:type="uml:Class" href="IfcSharedFacilitiesElements.uml#cl_IfcSystemFurnitureElementTypeEnum_SUBRACK"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TelecomCableGeneral" name="Pset_TelecomCableGeneral">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TelecomCableGeneral_comment_0">
@@ -4879,12 +4452,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CableArmourType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CableArmourType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TelecomCableGeneral_IfcCableFitting" client="cl_Pset_TelecomCableGeneral">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableFitting"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TelecomCableGeneral_IfcCableSegment" client="cl_Pset_TelecomCableGeneral">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegment"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TicketProcessing" name="Pset_TicketProcessing">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TicketProcessing_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4899,12 +4466,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_TicketProcessing_TicketStuckRatio_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_TicketProcessing_TicketStuckRatio_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TicketProcessing_IfcDoorTypeEnum.BOOM_BARRIER" client="cl_Pset_TicketProcessing">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoorTypeEnum_BOOM_BARRIER"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TicketProcessing_IfcDoorTypeEnum.TURNSTILE" client="cl_Pset_TicketProcessing">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoorTypeEnum_TURNSTILE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TicketVendingMachine" name="Pset_TicketVendingMachine">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TicketVendingMachine_comment_0">
@@ -4962,9 +4523,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_VendingMachineUserInterface_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_VendingMachineUserInterface_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TicketVendingMachine_IfcElectricApplianceTypeEnum.VENDINGMACHINE" client="cl_Pset_TicketVendingMachine">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricApplianceTypeEnum_VENDINGMACHINE"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TrackBase" name="Pset_TrackBase">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TrackBase_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -4979,9 +4537,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_TrackBase_SurfaceGallingArea_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_TrackBase_SurfaceGallingArea_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TrackBase_IfcSlabTypeEnum.BASESLAB" client="cl_Pset_TrackBase">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlabTypeEnum_BASESLAB"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TrackElementOccurrenceSleeper" name="Pset_TrackElementOccurrenceSleeper">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TrackElementOccurrenceSleeper_comment_0">
@@ -5015,7 +4570,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UnderSleeperPadStiffness_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UnderSleeperPadStiffness_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TrackElementOccurrenceSleeper_IfcTrackElementTypeEnum.SLEEPER" client="cl_Pset_TrackElementOccurrenceSleeper" supplier="cl_IfcTrackElementTypeEnum_SLEEPER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TrackElementPHistoryDerailer" name="Pset_TrackElementPHistoryDerailer">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TrackElementPHistoryDerailer_comment_0">
         <body>PSET_PERFORMANCEDRIVEN</body>
@@ -5026,7 +4580,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_TrackElementPHistoryDerailer_IsDerailing_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TrackElementPHistoryDerailer_IfcTrackElementTypeEnum.DERAILER" client="cl_Pset_TrackElementPHistoryDerailer" supplier="cl_IfcTrackElementTypeEnum_DERAILER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TrackElementTypeDerailer" name="Pset_TrackElementTypeDerailer">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TrackElementTypeDerailer_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5052,7 +4605,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_TrackElementTypeDerailer_DerailmentHeight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TrackElementTypeDerailer_IfcTrackElementTypeEnum.DERAILER" client="cl_Pset_TrackElementTypeDerailer" supplier="cl_IfcTrackElementTypeEnum_DERAILER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TrackElementTypeSleeper" name="Pset_TrackElementTypeSleeper">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TrackElementTypeSleeper_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5116,7 +4668,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SleeperType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SleeperType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TrackElementTypeSleeper_IfcTrackElementTypeEnum.SLEEPER" client="cl_Pset_TrackElementTypeSleeper" supplier="cl_IfcTrackElementTypeEnum_SLEEPER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TractionPowerSystem" name="Pset_TractionPowerSystem">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TractionPowerSystem_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -5154,9 +4705,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElectrificationType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElectrificationType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElectrificationType_UNSET" name="UNSET"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TractionPowerSystem_IfcDistributionSystemEnum.ELECTRICAL" client="cl_Pset_TractionPowerSystem">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcDistributionSystemEnum_ELECTRICAL"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_TransportEquipmentOTN" name="Pset_TransportEquipmentOTN">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_TransportEquipmentOTN_comment_0">
@@ -5201,9 +4749,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_TransportEquipmentOTN_EquipmentCapacity_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TransportEquipmentOTN_IfcCommunicationsApplianceTypeEnum.TRANSPORTEQUIPMENT" client="cl_Pset_TransportEquipmentOTN">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_TRANSPORTEQUIPMENT"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_UnitaryControlElementBaseStationController" name="Pset_UnitaryControlElementBaseStationController">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_UnitaryControlElementBaseStationController_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
@@ -5222,9 +4767,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_UnitaryControlElementBaseStationController_NumberOfManagedCarriers_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_UnitaryControlElementBaseStationController_NumberOfManagedCarriers_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UnitaryControlElementBaseStationController_IfcUnitaryControlElementTypeEnum.BASESTATIONCONTROLLER" client="cl_Pset_UnitaryControlElementBaseStationController">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcUnitaryControlElementTypeEnum_BASESTATIONCONTROLLER"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_UnitaryControlElementTypeControlPanel" name="Pset_UnitaryControlElementTypeControlPanel">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_UnitaryControlElementTypeControlPanel_comment_0">
@@ -5264,9 +4806,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_UnitaryControlElementTypeControlPanel_ReferenceEnvironmentTemperature_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_UnitaryControlElementTypeControlPanel_ReferenceEnvironmentTemperature_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UnitaryControlElementTypeControlPanel_IfcUnitaryControlElementTypeEnum.CONTROLPANEL" client="cl_Pset_UnitaryControlElementTypeControlPanel">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcUnitaryControlElementTypeEnum_CONTROLPANEL"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_VoltageInstrumentTransformer" name="Pset_VoltageInstrumentTransformer">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_VoltageInstrumentTransformer_comment_0">
@@ -5326,12 +4865,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_VoltageInstrumentTransformer_SecondaryVoltage_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VoltageInstrumentTransformer_IfcFlowInstrumentTypeEnum.COMBINED" client="cl_Pset_VoltageInstrumentTransformer">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcFlowInstrumentTypeEnum_COMBINED"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VoltageInstrumentTransformer_IfcFlowInstrumentTypeEnum.VOLTMETER" client="cl_Pset_VoltageInstrumentTransformer">
-      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcFlowInstrumentTypeEnum_VOLTMETER"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_WiredCommunicationPortCommon" name="Pset_WiredCommunicationPortCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_WiredCommunicationPortCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
@@ -5359,9 +4892,6 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CommunicationStandard_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CommunicationStandard_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WiredCommunicationPortCommon_IfcDistributionPortTypeEnum.CABLE" client="cl_Pset_WiredCommunicationPortCommon">
-      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcDistributionPortTypeEnum_CABLE"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ConduitSegmentBaseQuantities" name="Qto_ConduitSegmentBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ConduitSegmentBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -5376,9 +4906,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ConduitSegmentBaseQuantities_OuterDiameter_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ConduitSegmentBaseQuantities_OuterDiameter_upper" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ConduitSegmentBaseQuantities_IfcCableCarrierSegmentTypeEnum.CONDUITSEGMENT" client="cl_Qto_ConduitSegmentBaseQuantities">
-      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierSegmentTypeEnum_CONDUITSEGMENT"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_RailBaseQuantities" name="Qto_RailBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_RailBaseQuantities_comment_0">
@@ -5400,7 +4927,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_RailBaseQuantities_Weight_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_RailBaseQuantities_IfcRail" client="cl_Qto_RailBaseQuantities" supplier="cl_IfcRail"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_SleeperBaseQuantities" name="Qto_SleeperBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_SleeperBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -5421,7 +4947,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_SleeperBaseQuantities_Height_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SleeperBaseQuantities_IfcTrackElementTypeEnum.SLEEPER" client="cl_Qto_SleeperBaseQuantities" supplier="cl_IfcTrackElementTypeEnum_SLEEPER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_SpatialZoneBaseQuantities" name="Qto_SpatialZoneBaseQuantities">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_SpatialZoneBaseQuantities_comment_0">
         <body>QTO_TYPEDRIVENOVERRIDE</body>
@@ -5442,6 +4967,481 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_SpatialZoneBaseQuantities_Height_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AudioVisualApplianceTypeRailwayCommunicationTerminal_IfcAudioVisualApplianceTypeEnum.COMMUNICATIONTERMINAL" client="cl_Pset_AudioVisualApplianceTypeRailwayCommunicationTerminal">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcAudioVisualApplianceTypeEnum_COMMUNICATIONTERMINAL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AudioVisualApplianceTypeRecordingEquipment_IfcAudioVisualApplianceTypeEnum.RECORDINGEQUIPMENT" client="cl_Pset_AudioVisualApplianceTypeRecordingEquipment">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcAudioVisualApplianceTypeEnum_RECORDINGEQUIPMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_AxleCountingEquipment_IfcSensorTypeEnum.WHEELSENSOR" client="cl_Pset_AxleCountingEquipment">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcSensorTypeEnum_WHEELSENSOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BalanceWeightTensionerDesignCriteria_IfcDiscreteAccessoryTypeEnum.TENSIONINGEQUIPMENT" client="cl_Pset_BalanceWeightTensionerDesignCriteria">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_TENSIONINGEQUIPMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BuiltSystemRailwayLine_IfcBuiltSystemTypeEnum.RAILWAYLINE" client="cl_Pset_BuiltSystemRailwayLine">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuiltSystemTypeEnum_RAILWAYLINE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BuiltSystemRailwayTrack_IfcBuiltSystemTypeEnum.RAILWAYTRACK" client="cl_Pset_BuiltSystemRailwayTrack">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuiltSystemTypeEnum_RAILWAYTRACK"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableCarrierSegmentTypeCatenaryWire_IfcCableCarrierSegmentTypeEnum.CATENARYWIRE" client="cl_Pset_CableCarrierSegmentTypeCatenaryWire">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierSegmentTypeEnum_CATENARYWIRE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableCarrierSegmentTypeDropper_IfcCableCarrierSegmentTypeEnum.DROPPER" client="cl_Pset_CableCarrierSegmentTypeDropper">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierSegmentTypeEnum_DROPPER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableFittingTypeExit_IfcCableFittingTypeEnum.EXIT" client="cl_Pset_CableFittingTypeExit">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableFittingTypeEnum_EXIT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableFittingTypeFanout_IfcCableFittingTypeEnum.FANOUT" client="cl_Pset_CableFittingTypeFanout">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableFittingTypeEnum_FANOUT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentConnector_IfcCableSegment" client="cl_Pset_CableSegmentConnector">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentOccurenceFiberSegment_IfcCableSegmentTypeEnum.FIBERSEGMENT" client="cl_Pset_CableSegmentOccurenceFiberSegment">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_FIBERSEGMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeContactWire_IfcCableSegmentTypeEnum.CONTACTWIRESEGMENT" client="cl_Pset_CableSegmentTypeContactWire">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_CONTACTWIRESEGMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeEarthingConductor_IfcCableSegmentTypeEnum.CONDUCTORSEGMENT" client="cl_Pset_CableSegmentTypeEarthingConductor">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_CONDUCTORSEGMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeFiberSegment_IfcCableSegmentTypeEnum.FIBERSEGMENT" client="cl_Pset_CableSegmentTypeFiberSegment">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_FIBERSEGMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeFiberTubeSegment_IfcCableSegmentTypeEnum.FIBERTUBE" client="cl_Pset_CableSegmentTypeFiberTubeSegment">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_FIBERTUBE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeOpticalCableSegment_IfcCableSegmentTypeEnum.OPTICALCABLESEGMENT" client="cl_Pset_CableSegmentTypeOpticalCableSegment">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_OPTICALCABLESEGMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeStitchWire_IfcCableSegmentTypeEnum.STITCHWIRE" client="cl_Pset_CableSegmentTypeStitchWire">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_STITCHWIRE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CableSegmentTypeWirePairSegment_IfcCableSegmentTypeEnum.WIREPAIRSEGMENT" client="cl_Pset_CableSegmentTypeWirePairSegment">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_WIREPAIRSEGMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CessBetweenRails_IfcSlabTypeEnum.TRACKSLAB" client="cl_Pset_CessBetweenRails">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlabTypeEnum_TRACKSLAB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoaxialCable_IfcCableSegmentTypeEnum.CABLESEGMENT" client="cl_Pset_CoaxialCable">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_CABLESEGMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeAntenna_IfcCommunicationsApplianceTypeEnum.ANTENNA" client="cl_Pset_CommunicationsApplianceTypeAntenna">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_ANTENNA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeAutomaton_IfcCommunicationsApplianceTypeEnum.AUTOMATON" client="cl_Pset_CommunicationsApplianceTypeAutomaton">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_AUTOMATON"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeComputer_IfcCommunicationsApplianceTypeEnum.COMPUTER" client="cl_Pset_CommunicationsApplianceTypeComputer">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_COMPUTER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeGateway_IfcCommunicationsApplianceTypeEnum.GATEWAY" client="cl_Pset_CommunicationsApplianceTypeGateway">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_GATEWAY"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeIntelligentPeripheral_IfcCommunicationsApplianceTypeEnum.INTELLIGENTPERIPHERAL" client="cl_Pset_CommunicationsApplianceTypeIntelligentPeripheral">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_INTELLIGENTPERIPHERAL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeIpNetworkEquipment_IfcCommunicationsApplianceTypeEnum.IPNETWORKEQUIPMENT" client="cl_Pset_CommunicationsApplianceTypeIpNetworkEquipment">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_IPNETWORKEQUIPMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeModem_IfcCommunicationsApplianceTypeEnum.MODEM" client="cl_Pset_CommunicationsApplianceTypeModem">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_MODEM"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeOpticalLineTerminal_IfcCommunicationsApplianceTypeEnum.OPTICALLINETERMINAL" client="cl_Pset_CommunicationsApplianceTypeOpticalLineTerminal">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_OPTICALLINETERMINAL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeOpticalNetworkUnit_IfcCommunicationsApplianceTypeEnum.OPTICALNETWORKUNIT" client="cl_Pset_CommunicationsApplianceTypeOpticalNetworkUnit">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_OPTICALNETWORKUNIT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeTelecommand_IfcCommunicationsApplianceTypeEnum.TELECOMMAND" client="cl_Pset_CommunicationsApplianceTypeTelecommand">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_TELECOMMAND"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeTelephonyExchange_IfcCommunicationsApplianceTypeEnum.TELEPHONYEXCHANGE" client="cl_Pset_CommunicationsApplianceTypeTelephonyExchange">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_TELEPHONYEXCHANGE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CommunicationsApplianceTypeTransportEquipment_IfcCommunicationsApplianceTypeEnum.TRANSPORTEQUIPMENT" client="cl_Pset_CommunicationsApplianceTypeTransportEquipment">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_TRANSPORTEQUIPMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CoveringTypeMembrane_IfcCoveringTypeEnum.MEMBRANE" client="cl_Pset_CoveringTypeMembrane">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcCoveringTypeEnum_MEMBRANE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CurrentInstrumentTransformer_IfcFlowInstrumentTypeEnum.AMMETER" client="cl_Pset_CurrentInstrumentTransformer">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcFlowInstrumentTypeEnum_AMMETER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_CurrentInstrumentTransformer_IfcFlowInstrumentTypeEnum.COMBINED" client="cl_Pset_CurrentInstrumentTransformer">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcFlowInstrumentTypeEnum_COMBINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DataTransmissionUnit_IfcCommunicationsApplianceTypeEnum.MODEM" client="cl_Pset_DataTransmissionUnit">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_MODEM"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeBracket_IfcDiscreteAccessoryTypeEnum.BRACKET" client="cl_Pset_DiscreteAccessoryTypeBracket">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_BRACKET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeCableArranger_IfcDiscreteAccessoryTypeEnum.CABLEARRANGER" client="cl_Pset_DiscreteAccessoryTypeCableArranger">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_CABLEARRANGER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeInsulator_IfcDiscreteAccessoryTypeEnum.INSULATOR" client="cl_Pset_DiscreteAccessoryTypeInsulator">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_INSULATOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeLock_IfcDiscreteAccessoryTypeEnum.LOCK" client="cl_Pset_DiscreteAccessoryTypeLock">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_LOCK"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeRailBrace_IfcDiscreteAccessoryTypeEnum.RAILBRACE" client="cl_Pset_DiscreteAccessoryTypeRailBrace">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_RAILBRACE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeRailLubrication_IfcDiscreteAccessoryTypeEnum.RAIL_LUBRICATION" client="cl_Pset_DiscreteAccessoryTypeRailLubrication">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_RAIL_LUBRICATION"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeRailPad_IfcDiscreteAccessoryTypeEnum.RAILPAD" client="cl_Pset_DiscreteAccessoryTypeRailPad">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_RAILPAD"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeSlidingChair_IfcDiscreteAccessoryTypeEnum.SLIDINGCHAIR" client="cl_Pset_DiscreteAccessoryTypeSlidingChair">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_SLIDINGCHAIR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeSoundAbsorption_IfcDiscreteAccessoryTypeEnum.SOUNDABSORPTION" client="cl_Pset_DiscreteAccessoryTypeSoundAbsorption">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_SOUNDABSORPTION"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeTensioningEquipment_IfcDiscreteAccessoryTypeEnum.TENSIONINGEQUIPMENT" client="cl_Pset_DiscreteAccessoryTypeTensioningEquipment">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_TENSIONINGEQUIPMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionBoardTypeDispatchingBoard_IfcDistributionBoardTypeEnum.DISPATCHINGBOARD" client="cl_Pset_DistributionBoardTypeDispatchingBoard">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcDistributionBoardTypeEnum_DISPATCHINGBOARD"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionBoardTypeDistributionFrame_IfcDistributionBoardTypeEnum.DISTRIBUTIONFRAME" client="cl_Pset_DistributionBoardTypeDistributionFrame">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcDistributionBoardTypeEnum_DISTRIBUTIONFRAME"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DistributionSystemTypeOverheadContactlineSystem_IfcDistributionSystemEnum.OVERHEAD_CONTACTLINE_SYSTEM" client="cl_Pset_DistributionSystemTypeOverheadContactlineSystem">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcDistributionSystemEnum_OVERHEAD_CONTACTLINE_SYSTEM"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DoorTypeTurnstile_IfcDoorTypeEnum.TURNSTILE" client="cl_Pset_DoorTypeTurnstile">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoorTypeEnum_TURNSTILE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricalDeviceCompliance_IfcDistributionElement" client="cl_Pset_ElectricalDeviceCompliance">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcDistributionElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricalFeederLine_IfcCableSegmentTypeEnum.CONDUCTORSEGMENT" client="cl_Pset_ElectricalFeederLine">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_CONDUCTORSEGMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricFlowStorageDeviceTypeBattery_IfcElectricFlowStorageDeviceTypeEnum.BATTERY" client="cl_Pset_ElectricFlowStorageDeviceTypeBattery">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricFlowStorageDeviceTypeEnum_BATTERY"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricFlowStorageDeviceTypeCapacitor_IfcElectricFlowStorageDeviceTypeEnum.CAPACITOR" client="cl_Pset_ElectricFlowStorageDeviceTypeCapacitor">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricFlowStorageDeviceTypeEnum_CAPACITOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricFlowStorageDeviceTypeInductor_IfcElectricFlowStorageDeviceTypeEnum.INDUCTOR" client="cl_Pset_ElectricFlowStorageDeviceTypeInductor">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricFlowStorageDeviceTypeEnum_INDUCTOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricFlowStorageDeviceTypeRecharger_IfcElectricFlowStorageDeviceTypeEnum.RECHARGER" client="cl_Pset_ElectricFlowStorageDeviceTypeRecharger">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricFlowStorageDeviceTypeEnum_RECHARGER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricFlowStorageDeviceTypeUPS_IfcElectricFlowStorageDeviceTypeEnum.UPS" client="cl_Pset_ElectricFlowStorageDeviceTypeUPS">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricFlowStorageDeviceTypeEnum_UPS"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElectricFlowTreatmentDeviceTypeElectronicFilter_IfcElectricFlowTreatmentDeviceTypeEnum.ELECTRONICFILTER" client="cl_Pset_ElectricFlowTreatmentDeviceTypeElectronicFilter">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricFlowTreatmentDeviceTypeEnum_ELECTRONICFILTER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeCantilever_IfcElementAssemblyTypeEnum.SUSPENSIONASSEMBLY" client="cl_Pset_ElementAssemblyTypeCantilever">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_SUSPENSIONASSEMBLY"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeDilatationPanel_IfcElementAssemblyTypeEnum.DILATATIONPANEL" client="cl_Pset_ElementAssemblyTypeDilatationPanel">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_DILATATIONPANEL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeHeadSpan_IfcElementAssemblyTypeEnum.SUPPORTINGASSEMBLY" client="cl_Pset_ElementAssemblyTypeHeadSpan">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_SUPPORTINGASSEMBLY"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeMast_IfcElementAssemblyTypeEnum.MAST" client="cl_Pset_ElementAssemblyTypeMast">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_MAST"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeOCSSuspension_IfcElementAssemblyTypeEnum.SUSPENSIONASSEMBLY" client="cl_Pset_ElementAssemblyTypeOCSSuspension">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_SUSPENSIONASSEMBLY"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeRigidFrame_IfcElementAssemblyTypeEnum.RIGID_FRAME" client="cl_Pset_ElementAssemblyTypeRigidFrame">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_RIGID_FRAME"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeSteadyDevice_IfcElementAssemblyTypeEnum.SUSPENSIONASSEMBLY" client="cl_Pset_ElementAssemblyTypeSteadyDevice">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_SUSPENSIONASSEMBLY"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeSupportingAssembly_IfcElementAssemblyTypeEnum.SUPPORTINGASSEMBLY" client="cl_Pset_ElementAssemblyTypeSupportingAssembly">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_SUPPORTINGASSEMBLY"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeTrackPanel_IfcElementAssemblyTypeEnum.TRACKPANEL" client="cl_Pset_ElementAssemblyTypeTrackPanel">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_TRACKPANEL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeTractionSwitchingAssembly_IfcElementAssemblyTypeEnum.TRACTION_SWITCHING_ASSEMBLY" client="cl_Pset_ElementAssemblyTypeTractionSwitchingAssembly">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_TRACTION_SWITCHING_ASSEMBLY"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeTurnoutPanel_IfcElementAssemblyTypeEnum.TURNOUTPANEL" client="cl_Pset_ElementAssemblyTypeTurnoutPanel">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_TURNOUTPANEL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EmbeddedTrack_IfcSlabTypeEnum.TRACKSLAB" client="cl_Pset_EmbeddedTrack">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlabTypeEnum_TRACKSLAB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EnvironmentalCondition_IfcElement" client="cl_Pset_EnvironmentalCondition">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FastenerRailWeld_IfcFastenerTypeEnum.WELD" client="cl_Pset_FastenerRailWeld">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcFastenerTypeEnum_WELD"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FootingTypePadFooting_IfcFootingTypeEnum.PAD_FOOTING" client="cl_Pset_FootingTypePadFooting">
+      <supplier xmi:type="uml:Class" href="IfcStructuralElementsDomain.uml#cl_IfcFootingTypeEnum_PAD_FOOTING"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImpactProtectionDeviceOccurrenceBumper_IfcImpactProtectionDeviceTypeEnum.BUMPER" client="cl_Pset_ImpactProtectionDeviceOccurrenceBumper">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcImpactProtectionDeviceTypeEnum_BUMPER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImpactProtectionDeviceTypeBumper_IfcImpactProtectionDeviceTypeEnum.BUMPER" client="cl_Pset_ImpactProtectionDeviceTypeBumper">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcImpactProtectionDeviceTypeEnum_BUMPER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_InstallationOccurrence_IfcAsset" client="cl_Pset_InstallationOccurrence">
+      <supplier xmi:type="uml:Class" href="IfcSharedFacilitiesElements.uml#cl_IfcAsset"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_InstallationOccurrence_IfcElement" client="cl_Pset_InstallationOccurrence">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_InstallationOccurrence_IfcSystem" client="cl_Pset_InstallationOccurrence">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_IpNetworkEquipmentPHistory_IfcCommunicationsApplianceTypeEnum.IPNETWORKEQUIPMENT" client="cl_Pset_IpNetworkEquipmentPHistory">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_IPNETWORKEQUIPMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_JunctionBoxTypeData_IfcJunctionBoxTypeEnum.DATA" client="cl_Pset_JunctionBoxTypeData">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcJunctionBoxTypeEnum_DATA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MarkerGeneral_IfcElementAssemblyTypeEnum.SIGNALASSEMBLY" client="cl_Pset_MarkerGeneral">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementAssemblyTypeEnum_SIGNALASSEMBLY"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalFastenerOCSFitting_IfcMechanicalFastenerTypeEnum.COUPLER" client="cl_Pset_MechanicalFastenerOCSFitting">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcMechanicalFastenerTypeEnum_COUPLER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalFastenerTypeRailFastening_IfcMechanicalFastenerTypeEnum.RAILFASTENING" client="cl_Pset_MechanicalFastenerTypeRailFastening">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcMechanicalFastenerTypeEnum_RAILFASTENING"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalFastenerTypeRailJoint_IfcMechanicalFastenerTypeEnum.RAILJOINT" client="cl_Pset_MechanicalFastenerTypeRailJoint">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcMechanicalFastenerTypeEnum_RAILJOINT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MemberTypeAnchoringBar_IfcMemberTypeEnum.BRACE" client="cl_Pset_MemberTypeAnchoringBar">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMemberTypeEnum_BRACE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MemberTypeCatenaryStay_IfcMemberTypeEnum.STAY_CABLE" client="cl_Pset_MemberTypeCatenaryStay">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMemberTypeEnum_STAY_CABLE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MemberTypeOCSRigidSupport_IfcMemberTypeEnum.MEMBER" client="cl_Pset_MemberTypeOCSRigidSupport">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMemberTypeEnum_MEMBER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MemberTypePost_IfcMemberTypeEnum.POST" client="cl_Pset_MemberTypePost">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMemberTypeEnum_POST"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MemberTypeTieBar_IfcMemberTypeEnum.TIEBAR" client="cl_Pset_MemberTypeTieBar">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcMemberTypeEnum_TIEBAR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeAccessPoint_IfcMobileTelecommunicationsApplianceTypeEnum.ACCESSPOINT" client="cl_Pset_MobileTelecommunicationsApplianceTypeAccessPoint">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_ACCESSPOINT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeBasebandUnit_IfcMobileTelecommunicationsApplianceTypeEnum.BASEBANDUNIT" client="cl_Pset_MobileTelecommunicationsApplianceTypeBasebandUnit">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_BASEBANDUNIT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeBaseTransceiverStation_IfcMobileTelecommunicationsApplianceTypeEnum.BASETRANSCEIVERSTATION" client="cl_Pset_MobileTelecommunicationsApplianceTypeBaseTransceiverStation">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_BASETRANSCEIVERSTATION"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeCommon_IfcMobileTelecommunicationsAppliance" client="cl_Pset_MobileTelecommunicationsApplianceTypeCommon">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsAppliance"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeEUtranNodeB_IfcMobileTelecommunicationsApplianceTypeEnum.E_UTRAN_NODE_B" client="cl_Pset_MobileTelecommunicationsApplianceTypeEUtranNodeB">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_E_UTRAN_NODE_B"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeMasterUnit_IfcMobileTelecommunicationsApplianceTypeEnum.MASTERUNIT" client="cl_Pset_MobileTelecommunicationsApplianceTypeMasterUnit">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_MASTERUNIT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeMobileSwitchingCenter_IfcMobileTelecommunicationsApplianceTypeEnum.MOBILESWITCHINGCENTER" client="cl_Pset_MobileTelecommunicationsApplianceTypeMobileSwitchingCenter">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_MOBILESWITCHINGCENTER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeMSCServer_IfcMobileTelecommunicationsApplianceTypeEnum.MSCSERVER" client="cl_Pset_MobileTelecommunicationsApplianceTypeMSCServer">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_MSCSERVER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTeleCommunicationsApplianceTypeRemoteRadioUnit_IfcMobileTelecommunicationsApplianceTypeEnum.REMOTERADIOUNIT" client="cl_Pset_MobileTeleCommunicationsApplianceTypeRemoteRadioUnit">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_REMOTERADIOUNIT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MobileTelecommunicationsApplianceTypeRemoteUnit_IfcMobileTelecommunicationsApplianceTypeEnum.REMOTEUNIT" client="cl_Pset_MobileTelecommunicationsApplianceTypeRemoteUnit">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcMobileTelecommunicationsApplianceTypeEnum_REMOTEUNIT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_OnSiteTelecomControlUnit_IfcController" client="cl_Pset_OnSiteTelecomControlUnit">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcController"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_OpticalAdapter_IfcCableFittingTypeEnum.TRANSITION" client="cl_Pset_OpticalAdapter">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableFittingTypeEnum_TRANSITION"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_OpticalPigtail_IfcCableSegmentTypeEnum.OPTICALCABLESEGMENT" client="cl_Pset_OpticalPigtail">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_OPTICALCABLESEGMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_OpticalSplitter_IfcJunctionBoxTypeEnum.DATA" client="cl_Pset_OpticalSplitter">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcJunctionBoxTypeEnum_DATA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PatchCordCable_IfcCableSegmentTypeEnum.CABLESEGMENT" client="cl_Pset_PatchCordCable">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_CABLESEGMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PatchCordCable_IfcCableSegmentTypeEnum.OPTICALCABLESEGMENT" client="cl_Pset_PatchCordCable">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_OPTICALCABLESEGMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PointMachine_IfcActuatorTypeEnum.ELECTRICACTUATOR" client="cl_Pset_PointMachine">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcActuatorTypeEnum_ELECTRICACTUATOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PointMachine_IfcActuatorTypeEnum.HANDOPERATEDACTUATOR" client="cl_Pset_PointMachine">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcActuatorTypeEnum_HANDOPERATEDACTUATOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PointMachine_IfcActuatorTypeEnum.HYDRAULICACTUATOR" client="cl_Pset_PointMachine">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcActuatorTypeEnum_HYDRAULICACTUATOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PointMachine_IfcActuatorTypeEnum.PNEUMATICACTUATOR" client="cl_Pset_PointMachine">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcActuatorTypeEnum_PNEUMATICACTUATOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PowerControlSystem_IfcDistributionSystemEnum.ELECTRICAL" client="cl_Pset_PowerControlSystem">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcDistributionSystemEnum_ELECTRICAL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProtectiveDeviceTypeAntiArcingDevice_IfcProtectiveDeviceTypeEnum.ANTI_ARCING_DEVICE" client="cl_Pset_ProtectiveDeviceTypeAntiArcingDevice">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcProtectiveDeviceTypeEnum_ANTI_ARCING_DEVICE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProtectiveDeviceTypeSparkGap_IfcProtectiveDeviceTypeEnum.SPARKGAP" client="cl_Pset_ProtectiveDeviceTypeSparkGap">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcProtectiveDeviceTypeEnum_SPARKGAP"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProtectiveDeviceTypeSparkGap_IfcProtectiveDeviceTypeEnum.VOLTAGELIMITER" client="cl_Pset_ProtectiveDeviceTypeSparkGap">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcProtectiveDeviceTypeEnum_VOLTAGELIMITER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailTypeBlade_IfcRailTypeEnum.BLADE" client="cl_Pset_RailTypeBlade" supplier="cl_IfcRailTypeEnum_BLADE"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailTypeCheckRail_IfcRailTypeEnum.CHECKRAIL" client="cl_Pset_RailTypeCheckRail" supplier="cl_IfcRailTypeEnum_CHECKRAIL"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailTypeGuardRail_IfcRailTypeEnum.GUARDRAIL" client="cl_Pset_RailTypeGuardRail" supplier="cl_IfcRailTypeEnum_GUARDRAIL"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailTypeRail_IfcRailTypeEnum.RAIL" client="cl_Pset_RailTypeRail" supplier="cl_IfcRailTypeEnum_RAIL"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailTypeStockRail_IfcRailTypeEnum.STOCKRAIL" client="cl_Pset_RailTypeStockRail" supplier="cl_IfcRailTypeEnum_STOCKRAIL"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayBalise_IfcCommunicationsApplianceTypeEnum.TRANSPONDER" client="cl_Pset_RailwayBalise">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_TRANSPONDER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayCableCarrier_IfcCableCarrierSegment" client="cl_Pset_RailwayCableCarrier">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayLevelCrossing_IfcFacilityPartCommonTypeEnum.LEVELCROSSING" client="cl_Pset_RailwayLevelCrossing">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcFacilityPartCommonTypeEnum_LEVELCROSSING"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwaySignalAspect_IfcSignal" client="cl_Pset_RailwaySignalAspect">
+      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSignal"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwaySignalAspect_IfcSign" client="cl_Pset_RailwaySignalAspect">
+      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSign"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwaySignalOccurrence_IfcSignal" client="cl_Pset_RailwaySignalOccurrence">
+      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSignal"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwaySignalSighting_IfcSignal" client="cl_Pset_RailwaySignalSighting">
+      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSignal"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwaySignalSighting_IfcSign" client="cl_Pset_RailwaySignalSighting">
+      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSign"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwaySignalType_IfcSignal" client="cl_Pset_RailwaySignalType">
+      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSignal"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayTrackStructurePart_IfcRailwayPartTypeEnum.DILATIONTRACK" client="cl_Pset_RailwayTrackStructurePart" supplier="cl_IfcRailwayPartTypeEnum_DILATIONTRACK"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayTrackStructurePart_IfcRailwayPartTypeEnum.PLAINTRACK" client="cl_Pset_RailwayTrackStructurePart" supplier="cl_IfcRailwayPartTypeEnum_PLAINTRACK"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayTrackStructurePart_IfcRailwayPartTypeEnum.TRACK" client="cl_Pset_RailwayTrackStructurePart" supplier="cl_IfcRailwayPartTypeEnum_TRACK"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayTrackStructurePart_IfcRailwayPartTypeEnum.TURNOUTTRACK" client="cl_Pset_RailwayTrackStructurePart" supplier="cl_IfcRailwayPartTypeEnum_TURNOUTTRACK"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RailwayTrackStructurePart_IfcRailwayPartTypeEnum.TRACKPART" client="cl_Pset_RailwayTrackStructurePart" supplier="cl_IfcRailwayPartTypeEnum_TRACKPART"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RepairOccurrence_IfcAsset" client="cl_Pset_RepairOccurrence">
+      <supplier xmi:type="uml:Class" href="IfcSharedFacilitiesElements.uml#cl_IfcAsset"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RepairOccurrence_IfcElement" client="cl_Pset_RepairOccurrence">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_RepairOccurrence_IfcSystem" client="cl_Pset_RepairOccurrence">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SectioningDevice_IfcDiscreteAccessoryTypeEnum.INSULATOR" client="cl_Pset_SectioningDevice">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_INSULATOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SectionInsulator_IfcDiscreteAccessoryTypeEnum.INSULATOR" client="cl_Pset_SectionInsulator">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_INSULATOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SensorTypeEarthquakeSensor_IfcSensorTypeEnum.EARTHQUAKESENSOR" client="cl_Pset_SensorTypeEarthquakeSensor">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcSensorTypeEnum_EARTHQUAKESENSOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SensorTypeForeignObjectDetectionSensor_IfcSensorTypeEnum.FOREIGNOBJECTDETECTIONSENSOR" client="cl_Pset_SensorTypeForeignObjectDetectionSensor">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcSensorTypeEnum_FOREIGNOBJECTDETECTIONSENSOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SensorTypeRainSensor_IfcSensorTypeEnum.RAINSENSOR" client="cl_Pset_SensorTypeRainSensor">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcSensorTypeEnum_RAINSENSOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SensorTypeSnowSensor_IfcSensorTypeEnum.SNOWDEPTHSENSOR" client="cl_Pset_SensorTypeSnowSensor">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcSensorTypeEnum_SNOWDEPTHSENSOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SensorTypeTurnoutClosureSensor_IfcSensorTypeEnum.TURNOUTCLOSURESENSOR" client="cl_Pset_SensorTypeTurnoutClosureSensor">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcSensorTypeEnum_TURNOUTCLOSURESENSOR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SignalFrame_IfcSignal" client="cl_Pset_SignalFrame">
+      <supplier xmi:type="uml:Class" href="IfcSharedInfrastructureElements.uml#cl_IfcSignal"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SlabTypeTrackSlab_IfcSlabTypeEnum.TRACKSLAB" client="cl_Pset_SlabTypeTrackSlab">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlabTypeEnum_TRACKSLAB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpringTensioner_IfcDiscreteAccessoryTypeEnum.TENSIONINGEQUIPMENT" client="cl_Pset_SpringTensioner">
+      <supplier xmi:type="uml:Class" href="IfcSharedComponentElements.uml#cl_IfcDiscreteAccessoryTypeEnum_TENSIONINGEQUIPMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SwitchingDeviceTypeRelay_IfcSwitchingDeviceTypeEnum.RELAY" client="cl_Pset_SwitchingDeviceTypeRelay">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcSwitchingDeviceTypeEnum_RELAY"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SymmetricPairCable_IfcCableSegmentTypeEnum.CABLESEGMENT" client="cl_Pset_SymmetricPairCable">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegmentTypeEnum_CABLESEGMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SystemFurnitureElementTypeSubrack_IfcSystemFurnitureElementTypeEnum.SUBRACK" client="cl_Pset_SystemFurnitureElementTypeSubrack">
+      <supplier xmi:type="uml:Class" href="IfcSharedFacilitiesElements.uml#cl_IfcSystemFurnitureElementTypeEnum_SUBRACK"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TelecomCableGeneral_IfcCableFitting" client="cl_Pset_TelecomCableGeneral">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableFitting"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TelecomCableGeneral_IfcCableSegment" client="cl_Pset_TelecomCableGeneral">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TicketProcessing_IfcDoorTypeEnum.BOOM_BARRIER" client="cl_Pset_TicketProcessing">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoorTypeEnum_BOOM_BARRIER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TicketProcessing_IfcDoorTypeEnum.TURNSTILE" client="cl_Pset_TicketProcessing">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcDoorTypeEnum_TURNSTILE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TicketVendingMachine_IfcElectricApplianceTypeEnum.VENDINGMACHINE" client="cl_Pset_TicketVendingMachine">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcElectricApplianceTypeEnum_VENDINGMACHINE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TrackBase_IfcSlabTypeEnum.BASESLAB" client="cl_Pset_TrackBase">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcSlabTypeEnum_BASESLAB"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TrackElementOccurrenceSleeper_IfcTrackElementTypeEnum.SLEEPER" client="cl_Pset_TrackElementOccurrenceSleeper" supplier="cl_IfcTrackElementTypeEnum_SLEEPER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TrackElementPHistoryDerailer_IfcTrackElementTypeEnum.DERAILER" client="cl_Pset_TrackElementPHistoryDerailer" supplier="cl_IfcTrackElementTypeEnum_DERAILER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TrackElementTypeDerailer_IfcTrackElementTypeEnum.DERAILER" client="cl_Pset_TrackElementTypeDerailer" supplier="cl_IfcTrackElementTypeEnum_DERAILER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TrackElementTypeSleeper_IfcTrackElementTypeEnum.SLEEPER" client="cl_Pset_TrackElementTypeSleeper" supplier="cl_IfcTrackElementTypeEnum_SLEEPER"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TractionPowerSystem_IfcDistributionSystemEnum.ELECTRICAL" client="cl_Pset_TractionPowerSystem">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcDistributionSystemEnum_ELECTRICAL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_TransportEquipmentOTN_IfcCommunicationsApplianceTypeEnum.TRANSPORTEQUIPMENT" client="cl_Pset_TransportEquipmentOTN">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCommunicationsApplianceTypeEnum_TRANSPORTEQUIPMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UnitaryControlElementBaseStationController_IfcUnitaryControlElementTypeEnum.BASESTATIONCONTROLLER" client="cl_Pset_UnitaryControlElementBaseStationController">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcUnitaryControlElementTypeEnum_BASESTATIONCONTROLLER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UnitaryControlElementTypeControlPanel_IfcUnitaryControlElementTypeEnum.CONTROLPANEL" client="cl_Pset_UnitaryControlElementTypeControlPanel">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcUnitaryControlElementTypeEnum_CONTROLPANEL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VoltageInstrumentTransformer_IfcFlowInstrumentTypeEnum.COMBINED" client="cl_Pset_VoltageInstrumentTransformer">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcFlowInstrumentTypeEnum_COMBINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_VoltageInstrumentTransformer_IfcFlowInstrumentTypeEnum.VOLTMETER" client="cl_Pset_VoltageInstrumentTransformer">
+      <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcFlowInstrumentTypeEnum_VOLTMETER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_WiredCommunicationPortCommon_IfcDistributionPortTypeEnum.CABLE" client="cl_Pset_WiredCommunicationPortCommon">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgServiceElements.uml#cl_IfcDistributionPortTypeEnum_CABLE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ConduitSegmentBaseQuantities_IfcCableCarrierSegmentTypeEnum.CONDUITSEGMENT" client="cl_Qto_ConduitSegmentBaseQuantities">
+      <supplier xmi:type="uml:Class" href="IfcElectricalDomain.uml#cl_IfcCableCarrierSegmentTypeEnum_CONDUITSEGMENT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_RailBaseQuantities_IfcRail" client="cl_Qto_RailBaseQuantities" supplier="cl_IfcRail"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SleeperBaseQuantities_IfcTrackElementTypeEnum.SLEEPER" client="cl_Qto_SleeperBaseQuantities" supplier="cl_IfcTrackElementTypeEnum_SLEEPER"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SpatialZoneBaseQuantities_IfcSpatialZone" client="cl_Qto_SpatialZoneBaseQuantities">
       <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialZone"/>
     </packagedElement>

@@ -365,24 +365,6 @@ END_FUNCTION;
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcSurfaceOrFaceSurface_IfcSurface" client="un_IfcSurfaceOrFaceSurface">
       <supplier xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcSurface"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGridAxis_AxisCurve" name="AxisCurve" memberEnd="at_IfcGridAxis_AxisCurve as_IfcGridAxis_AxisCurve_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcGridAxis_AxisCurve_target_end" name="" type="cl_IfcGridAxis" association="as_IfcGridAxis_AxisCurve">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcGridAxis_AxisCurve_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcGridAxis_AxisCurve_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcObjectPlacement_PlacementRelTo" name="PlacementRelTo" memberEnd="at_IfcObjectPlacement_PlacementRelTo as_IfcObjectPlacement_PlacementRelTo_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcObjectPlacement_PlacementRelTo_target_end" name="INV_ReferencedByPlacements_S[0:?]" type="cl_IfcObjectPlacement" association="as_IfcObjectPlacement_PlacementRelTo">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcObjectPlacement_PlacementRelTo_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcObjectPlacement_PlacementRelTo_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcVirtualGridIntersection_IntersectingAxes" name="IntersectingAxes" memberEnd="at_IfcVirtualGridIntersection_IntersectingAxes as_IfcVirtualGridIntersection_IntersectingAxes_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcVirtualGridIntersection_IntersectingAxes_target_end" name="INV_HasIntersections_S[0:?]" type="cl_IfcVirtualGridIntersection" association="as_IfcVirtualGridIntersection_IntersectingAxes">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcVirtualGridIntersection_IntersectingAxes_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcVirtualGridIntersection_IntersectingAxes_target_end_upper" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_BLOSSCURVE" name="IfcAlignmentCantSegmentTypeEnum.BLOSSCURVE">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_BLOSSCURVE_gen_IfcAlignmentCantSegment" general="cl_IfcAlignmentCantSegment"/>
     </packagedElement>
@@ -403,12 +385,6 @@ END_FUNCTION;
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_VIENNESEBEND" name="IfcAlignmentCantSegmentTypeEnum.VIENNESEBEND">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentCantSegmentTypeEnum_VIENNESEBEND_gen_IfcAlignmentCantSegment" general="cl_IfcAlignmentCantSegment"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAlignmentHorizontalSegment_StartPoint" name="StartPoint" memberEnd="at_IfcAlignmentHorizontalSegment_StartPoint as_IfcAlignmentHorizontalSegment_StartPoint_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAlignmentHorizontalSegment_StartPoint_target_end" name="" type="cl_IfcAlignmentHorizontalSegment" association="as_IfcAlignmentHorizontalSegment_StartPoint">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAlignmentHorizontalSegment_StartPoint_target_end_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAlignmentHorizontalSegment_StartPoint_target_end_upper" value="1"/>
-      </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_BLOSSCURVE" name="IfcAlignmentHorizontalSegmentTypeEnum.BLOSSCURVE">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentHorizontalSegmentTypeEnum_BLOSSCURVE_gen_IfcAlignmentHorizontalSegment" general="cl_IfcAlignmentHorizontalSegment"/>
@@ -448,6 +424,30 @@ END_FUNCTION;
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_PARABOLICARC" name="IfcAlignmentVerticalSegmentTypeEnum.PARABOLICARC">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignmentVerticalSegmentTypeEnum_PARABOLICARC_gen_IfcAlignmentVerticalSegment" general="cl_IfcAlignmentVerticalSegment"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcGridAxis_AxisCurve" name="AxisCurve" memberEnd="at_IfcGridAxis_AxisCurve as_IfcGridAxis_AxisCurve_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcGridAxis_AxisCurve_target_end" name="" type="cl_IfcGridAxis" association="as_IfcGridAxis_AxisCurve">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcGridAxis_AxisCurve_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcGridAxis_AxisCurve_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcObjectPlacement_PlacementRelTo" name="PlacementRelTo" memberEnd="at_IfcObjectPlacement_PlacementRelTo as_IfcObjectPlacement_PlacementRelTo_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcObjectPlacement_PlacementRelTo_target_end" name="INV_ReferencedByPlacements_S[0:?]" type="cl_IfcObjectPlacement" association="as_IfcObjectPlacement_PlacementRelTo">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcObjectPlacement_PlacementRelTo_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcObjectPlacement_PlacementRelTo_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcVirtualGridIntersection_IntersectingAxes" name="IntersectingAxes" memberEnd="at_IfcVirtualGridIntersection_IntersectingAxes as_IfcVirtualGridIntersection_IntersectingAxes_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcVirtualGridIntersection_IntersectingAxes_target_end" name="INV_HasIntersections_S[0:?]" type="cl_IfcVirtualGridIntersection" association="as_IfcVirtualGridIntersection_IntersectingAxes">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcVirtualGridIntersection_IntersectingAxes_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcVirtualGridIntersection_IntersectingAxes_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcAlignmentHorizontalSegment_StartPoint" name="StartPoint" memberEnd="at_IfcAlignmentHorizontalSegment_StartPoint as_IfcAlignmentHorizontalSegment_StartPoint_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcAlignmentHorizontalSegment_StartPoint_target_end" name="" type="cl_IfcAlignmentHorizontalSegment" association="as_IfcAlignmentHorizontalSegment_StartPoint">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcAlignmentHorizontalSegment_StartPoint_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcAlignmentHorizontalSegment_StartPoint_target_end_upper" value="1"/>
+      </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="as_IfcConnectionCurveGeometry_CurveOnRelatingElement" name="CurveOnRelatingElement" memberEnd="at_IfcConnectionCurveGeometry_CurveOnRelatingElement as_IfcConnectionCurveGeometry_CurveOnRelatingElement_target_end">
       <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcConnectionCurveGeometry_CurveOnRelatingElement_target_end" name="" type="cl_IfcConnectionCurveGeometry" association="as_IfcConnectionCurveGeometry_CurveOnRelatingElement">

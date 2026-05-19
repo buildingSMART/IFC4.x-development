@@ -811,6 +811,102 @@ END_RULE;
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSimplePropertyTemplate_AccessState_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ActorCommon" name="Pset_ActorCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ActorCommon_comment_0">
+        <body>PSET_OCCURRENCEDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ActorCommon_NumberOfActors" name="NumberOfActors">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ActorCommon_NumberOfActors_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ActorCommon_NumberOfActors_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ActorCommon_ActorCategory" name="ActorCategory">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ActorCommon_ActorCategory_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ActorCommon_ActorCategory_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ActorCommon_SkillLevel" name="SkillLevel">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ActorCommon_SkillLevel_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ActorCommon_SkillLevel_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectCommon" name="Pset_ProjectCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProjectCommon_comment_0">
+        <body>PSET_OCCURRENCEDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectCommon_ProjectType" name="ProjectType" type="en_PEnum_ProjectType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectCommon_ProjectType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectCommon_ProjectType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectCommon_ProjectInvestmentEstimate" name="ProjectInvestmentEstimate">
+        <type xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcCostValue"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectCommon_ProjectInvestmentEstimate_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectCommon_ProjectInvestmentEstimate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectCommon_FundingSource" name="FundingSource">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectCommon_FundingSource_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectCommon_FundingSource_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectCommon_ROI" name="ROI">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectCommon_ROI_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectCommon_ROI_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectCommon_NetEarnedValue" name="NetEarnedValue">
+        <type xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcCostValue"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectCommon_NetEarnedValue_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectCommon_NetEarnedValue_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectCommon_PaybackPeriod" name="PaybackPeriod">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectCommon_PaybackPeriod_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectCommon_PaybackPeriod_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ProjectType" name="PEnum_ProjectType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ProjectType_MODIFICATION" name="MODIFICATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ProjectType_NEWBUILD" name="NEWBUILD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ProjectType_OPERATIONMAINTENANCE" name="OPERATIONMAINTENANCE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ProjectType_RENOVATION" name="RENOVATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ProjectType_REPAIR" name="REPAIR"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_BodyGeometryValidation" name="Qto_BodyGeometryValidation">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_BodyGeometryValidation_comment_0">
+        <body>QTO_OCCURRENCEDRIVEN</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_BodyGeometryValidation_GrossSurfaceArea" name="GrossSurfaceArea">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcAreaMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_BodyGeometryValidation_GrossSurfaceArea_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BodyGeometryValidation_GrossSurfaceArea_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_BodyGeometryValidation_NetSurfaceArea" name="NetSurfaceArea">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcAreaMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_BodyGeometryValidation_NetSurfaceArea_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BodyGeometryValidation_NetSurfaceArea_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_BodyGeometryValidation_GrossVolume" name="GrossVolume">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_BodyGeometryValidation_GrossVolume_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BodyGeometryValidation_GrossVolume_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_BodyGeometryValidation_NetVolume" name="NetVolume">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_BodyGeometryValidation_NetVolume_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BodyGeometryValidation_NetVolume_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_BodyGeometryValidation_SurfaceGenusBeforeFeatures" name="SurfaceGenusBeforeFeatures">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_BodyGeometryValidation_SurfaceGenusBeforeFeatures_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BodyGeometryValidation_SurfaceGenusBeforeFeatures_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_BodyGeometryValidation_SurfaceGenusAfterFeatures" name="SurfaceGenusAfterFeatures">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_BodyGeometryValidation_SurfaceGenusAfterFeatures_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BodyGeometryValidation_SurfaceGenusAfterFeatures_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="as_IfcRoot_OwnerHistory" name="OwnerHistory" memberEnd="at_IfcRoot_OwnerHistory as_IfcRoot_OwnerHistory_target_end">
       <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcRoot_OwnerHistory_target_end" name="" type="cl_IfcRoot" association="as_IfcRoot_OwnerHistory">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcRoot_OwnerHistory_target_end_lower"/>
@@ -1264,104 +1360,8 @@ END_RULE;
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcTypeResource_ResourceOf_target_end_upper" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ActorCommon" name="Pset_ActorCommon">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ActorCommon_comment_0">
-        <body>PSET_OCCURRENCEDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ActorCommon_NumberOfActors" name="NumberOfActors">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ActorCommon_NumberOfActors_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ActorCommon_NumberOfActors_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ActorCommon_ActorCategory" name="ActorCategory">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ActorCommon_ActorCategory_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ActorCommon_ActorCategory_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ActorCommon_SkillLevel" name="SkillLevel">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ActorCommon_SkillLevel_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ActorCommon_SkillLevel_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ActorCommon_IfcActor" client="cl_Pset_ActorCommon" supplier="cl_IfcActor"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProjectCommon" name="Pset_ProjectCommon">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProjectCommon_comment_0">
-        <body>PSET_OCCURRENCEDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectCommon_ProjectType" name="ProjectType" type="en_PEnum_ProjectType">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectCommon_ProjectType_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectCommon_ProjectType_upper" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectCommon_ProjectInvestmentEstimate" name="ProjectInvestmentEstimate">
-        <type xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcCostValue"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectCommon_ProjectInvestmentEstimate_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectCommon_ProjectInvestmentEstimate_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectCommon_FundingSource" name="FundingSource">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectCommon_FundingSource_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectCommon_FundingSource_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectCommon_ROI" name="ROI">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRatioMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectCommon_ROI_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectCommon_ROI_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectCommon_NetEarnedValue" name="NetEarnedValue">
-        <type xmi:type="uml:Class" href="IfcCostResource.uml#cl_IfcCostValue"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectCommon_NetEarnedValue_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectCommon_NetEarnedValue_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProjectCommon_PaybackPeriod" name="PaybackPeriod">
-        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDuration"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProjectCommon_PaybackPeriod_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProjectCommon_PaybackPeriod_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ProjectType" name="PEnum_ProjectType">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ProjectType_MODIFICATION" name="MODIFICATION"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ProjectType_NEWBUILD" name="NEWBUILD"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ProjectType_OPERATIONMAINTENANCE" name="OPERATIONMAINTENANCE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ProjectType_RENOVATION" name="RENOVATION"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ProjectType_REPAIR" name="REPAIR"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProjectCommon_IfcProject" client="cl_Pset_ProjectCommon" supplier="cl_IfcProject"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_BodyGeometryValidation" name="Qto_BodyGeometryValidation">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_BodyGeometryValidation_comment_0">
-        <body>QTO_OCCURRENCEDRIVEN</body>
-      </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_BodyGeometryValidation_GrossSurfaceArea" name="GrossSurfaceArea">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcAreaMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_BodyGeometryValidation_GrossSurfaceArea_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BodyGeometryValidation_GrossSurfaceArea_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_BodyGeometryValidation_NetSurfaceArea" name="NetSurfaceArea">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcAreaMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_BodyGeometryValidation_NetSurfaceArea_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BodyGeometryValidation_NetSurfaceArea_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_BodyGeometryValidation_GrossVolume" name="GrossVolume">
-        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_BodyGeometryValidation_GrossVolume_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BodyGeometryValidation_GrossVolume_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_BodyGeometryValidation_NetVolume" name="NetVolume">
-        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_BodyGeometryValidation_NetVolume_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BodyGeometryValidation_NetVolume_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_BodyGeometryValidation_SurfaceGenusBeforeFeatures" name="SurfaceGenusBeforeFeatures">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_BodyGeometryValidation_SurfaceGenusBeforeFeatures_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BodyGeometryValidation_SurfaceGenusBeforeFeatures_upper" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_BodyGeometryValidation_SurfaceGenusAfterFeatures" name="SurfaceGenusAfterFeatures">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_BodyGeometryValidation_SurfaceGenusAfterFeatures_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_BodyGeometryValidation_SurfaceGenusAfterFeatures_upper" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_BodyGeometryValidation_IfcProduct" client="cl_Qto_BodyGeometryValidation" supplier="cl_IfcProduct"/>
   </packagedElement>
 </uml:Model>
