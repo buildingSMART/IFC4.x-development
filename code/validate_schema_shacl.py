@@ -140,10 +140,10 @@ if platform.system() == 'Windows':
         
     os.environ['SHACL_HOME'] = SHACL_PATH
 
-def run_shacl_tool(args):
+def run_shacl_tool(args, allowed_returncodes=(0,)):
     proc = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = proc.communicate()
-    if proc.returncode:
+    if proc.returncode not in allowed_returncodes:
         raise RuntimeError(
             f"{os.path.basename(args[0])} failed with exit code {proc.returncode}\n"
             + stderr.decode("utf-8", errors="replace")
@@ -193,7 +193,8 @@ def infer_to_fixpoint():
 infer_to_fixpoint()
 
 stdout = run_shacl_tool(
-    [VALIDATE_PATH, "-datafile", INFERRED_SCHEMA_FILE, "-shapesfile", SHAPES_FILE])
+    [VALIDATE_PATH, "-datafile", INFERRED_SCHEMA_FILE, "-shapesfile", SHAPES_FILE],
+    allowed_returncodes=(0, 1))
 g = parse_turtle(stdout)
 
 results = []
