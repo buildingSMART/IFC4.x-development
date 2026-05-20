@@ -151,10 +151,16 @@ def run_shacl_tool(args):
         )
     return stdout
 
+def strip_jena_log_lines(text):
+    return re.sub(
+        r"(?m)^\d{2}:\d{2}:\d{2}\s+(?:TRACE|DEBUG|INFO|WARN|ERROR)\s+\S+\s+:: .*(?:\n|$)",
+        "",
+        text)
+
 def parse_turtle(data):
     g = rdflib.Graph()
     if data.strip():
-        text = data.decode("utf-8")
+        text = strip_jena_log_lines(data.decode("utf-8"))
         text = re.sub(
             r"(?m)^PREFIX\s+([A-Za-z][\w-]*|):\s*<([^>]+)>\s*$",
             r"@prefix \1: <\2> .",
