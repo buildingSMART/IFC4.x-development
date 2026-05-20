@@ -154,7 +154,12 @@ def run_shacl_tool(args):
 def parse_turtle(data):
     g = rdflib.Graph()
     if data.strip():
-        g.parse(data=data.decode("utf-8"), format="ttl")
+        text = data.decode("utf-8")
+        text = re.sub(
+            r"(?m)^PREFIX\s+([A-Za-z][\w-]*|):\s*<([^>]+)>\s*$",
+            r"@prefix \1: <\2> .",
+            text)
+        g.parse(data=text, format="ttl")
     return g
 
 def add_new_triples(target_graph, inferred_graph):
@@ -183,10 +188,7 @@ infer_to_fixpoint()
 
 stdout = run_shacl_tool(
     [VALIDATE_PATH, "-datafile", INFERRED_SCHEMA_FILE, "-shapesfile", SHAPES_FILE])
-stdout = stdout.decode("utf-8")
-
-g = rdflib.Graph()
-g.parse(data=stdout, format="ttl")
+g = parse_turtle(stdout)
 
 results = []
 
