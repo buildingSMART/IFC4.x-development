@@ -3599,7 +3599,7 @@ OR
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_BoltType" name="PEnum_BoltType">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_GROUTED" name="GROUTED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_ANCHORED" name="ANCHORED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_ANCHOREDWITHEXPANSIONCASING" name="ANCHOREDWITHEXPANSIONCASING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_ANCHORED_WITH_EXPANSION_CASING" name="ANCHORED_WITH_EXPANSION_CASING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_COMBINATION" name="COMBINATION"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_FRICTION" name="FRICTION"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_FITTING" name="FITTING"/>
