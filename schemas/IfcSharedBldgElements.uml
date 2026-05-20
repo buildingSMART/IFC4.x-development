@@ -3516,9 +3516,9 @@ OR
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_TONGUE_GROOVE" name="TONGUE_GROOVE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_CONVEX_CONVEX" name="CONVEX_CONVEX"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_CONCAVE_CONVEX" name="CONCAVE_CONVEX"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_UNSET" name="UNSET"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_NOTKNOWN" name="NOTKNOWN"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SegmentJointType_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ArchElementTypeSegment_IfcArchElementTypeEnum.SEGMENT" client="cl_Pset_ArchElementTypeSegment" supplier="cl_IfcArchElementTypeEnum_SEGMENT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ArchElementCommon" name="Pset_ArchElementCommon">
