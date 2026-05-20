@@ -3607,9 +3607,9 @@ OR
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_WIRE" name="WIRE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_SELFDRILLING" name="SELFDRILLING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_GLASS_FIBRE_REINFORCED_PLASTICS" name="GLASS_FIBRE_REINFORCED_PLASTICS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_UNSET" name="UNSET"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_USERDEFINED" name="USERDEFINED"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ArchElementTypeSteelRib_IfcArchElementTypeEnum.STEELRIB" client="cl_Pset_ArchElementTypeSteelRib" supplier="cl_IfcArchElementTypeEnum_STEELRIB"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ArchElementBaseQuantities" name="Qto_ArchElementBaseQuantities">
