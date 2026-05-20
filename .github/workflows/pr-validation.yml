@@ -49,7 +49,7 @@ jobs:
       SHADOW_MODE:  ${{ inputs.shadow_mode || 'false' }}
       PYTHONHASHSEED: "0"
       PYTHONUNBUFFERED: "1"
-      SHACLVERSION: "1.3.2"
+      SHACLVERSION: "1.5.0"
 
     steps:
       # ----------------------------------------------------------------
