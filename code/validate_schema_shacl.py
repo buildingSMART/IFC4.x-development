@@ -140,10 +140,10 @@ if platform.system() == 'Windows':
         
     os.environ['SHACL_HOME'] = SHACL_PATH
 
-def run_shacl_tool(args, allow_nonzero=False):
+def run_shacl_tool(args):
     proc = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = proc.communicate()
-    if proc.returncode and not allow_nonzero:
+    if proc.returncode:
         raise RuntimeError(
             f"{os.path.basename(args[0])} failed with exit code {proc.returncode}\n"
             + stderr.decode("utf-8", errors="replace")
@@ -182,8 +182,7 @@ def infer_to_fixpoint():
 infer_to_fixpoint()
 
 stdout = run_shacl_tool(
-    [VALIDATE_PATH, "-datafile", INFERRED_SCHEMA_FILE, "-shapesfile", SHAPES_FILE],
-    allow_nonzero=True)
+    [VALIDATE_PATH, "-datafile", INFERRED_SCHEMA_FILE, "-shapesfile", SHAPES_FILE])
 stdout = stdout.decode("utf-8")
 
 g = rdflib.Graph()
