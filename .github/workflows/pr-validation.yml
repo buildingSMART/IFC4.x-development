@@ -49,7 +49,7 @@ jobs:
       SHADOW_MODE:  ${{ inputs.shadow_mode || 'false' }}
       PYTHONHASHSEED: "0"
       PYTHONUNBUFFERED: "1"
-      SHACLVERSION: "1.3.2"
+      SHACLVERSION: "1.5.0"
 
     steps:
       # ----------------------------------------------------------------
@@ -65,13 +65,20 @@ jobs:
           cache: 'pip'
           cache-dependency-path: code/requirements.txt
 
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y curl default-jre-headless graphviz rsync unzip
+          sudo apt-get install -y curl graphviz rsync unzip
 
       - name: Install SHACL validator
         run: |
+          java -version
           curl --silent --show-error --location --retry 5 \
             "https://repo1.maven.org/maven2/org/topbraid/shacl/${SHACLVERSION}/shacl-${SHACLVERSION}-bin.zip" \
             --output /tmp/shacl.zip
