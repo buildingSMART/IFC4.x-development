@@ -1053,7 +1053,7 @@ END_FUNCTION;
           <body>IfcReal := NVL(Scale, 1.0)</body>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCartesianTransformationOperator_Dim" name="Dim" isDerived="true" type="dt_IfcDimensionCount">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCartesianTransformationOperator_Dim" name="Dim" type="dt_IfcDimensionCount" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCartesianTransformationOperator_Dim_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCartesianTransformationOperator_Dim_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcCartesianTransformationOperator_Dim_expr" name="Dim">
@@ -1064,7 +1064,7 @@ END_FUNCTION;
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcCurve" name="IfcCurve" isAbstract="true">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCurve_gen_IfcGeometricRepresentationItem" general="cl_IfcGeometricRepresentationItem"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCurve_Dim" name="Dim" isDerived="true" type="dt_IfcDimensionCount">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCurve_Dim" name="Dim" type="dt_IfcDimensionCount" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCurve_Dim_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCurve_Dim_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcCurve_Dim_expr" name="Dim">
@@ -1086,7 +1086,7 @@ END_FUNCTION;
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDirection_DirectionRatios_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDirection_DirectionRatios_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDirection_Dim" name="Dim" isDerived="true" type="dt_IfcDimensionCount">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDirection_Dim" name="Dim" type="dt_IfcDimensionCount" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDirection_Dim_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDirection_Dim_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcDirection_Dim_expr" name="Dim">
@@ -1106,7 +1106,7 @@ END_FUNCTION;
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPlacement_Location_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPlacement_Location_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPlacement_Dim" name="Dim" isDerived="true" type="dt_IfcDimensionCount">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPlacement_Dim" name="Dim" type="dt_IfcDimensionCount" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPlacement_Dim_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPlacement_Dim_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcPlacement_Dim_expr" name="Dim">
@@ -1117,7 +1117,7 @@ END_FUNCTION;
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPoint" name="IfcPoint" isAbstract="true">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPoint_gen_IfcGeometricRepresentationItem" general="cl_IfcGeometricRepresentationItem"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPoint_Dim" name="Dim" isDerived="true" type="dt_IfcDimensionCount">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcPoint_Dim" name="Dim" type="dt_IfcDimensionCount" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcPoint_Dim_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcPoint_Dim_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcPoint_Dim_expr" name="Dim">
@@ -1132,7 +1132,7 @@ END_FUNCTION;
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSegment_Transition_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSegment_Transition_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSegment_Dim" name="Dim" isDerived="true" type="dt_IfcDimensionCount">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSegment_Dim" name="Dim" type="dt_IfcDimensionCount" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSegment_Dim_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSegment_Dim_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcSegment_Dim_expr" name="Dim">
@@ -1143,7 +1143,7 @@ END_FUNCTION;
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSurface" name="IfcSurface" isAbstract="true">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSurface_gen_IfcGeometricRepresentationItem" general="cl_IfcGeometricRepresentationItem"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurface_Dim" name="Dim" isDerived="true" type="dt_IfcDimensionCount">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurface_Dim" name="Dim" type="dt_IfcDimensionCount" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSurface_Dim_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSurface_Dim_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcSurface_Dim_expr" name="Dim">
@@ -1169,7 +1169,7 @@ END_FUNCTION;
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcVector_Magnitude_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcVector_Magnitude_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcVector_Dim" name="Dim" isDerived="true" type="dt_IfcDimensionCount">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcVector_Dim" name="Dim" type="dt_IfcDimensionCount" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcVector_Dim_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcVector_Dim_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcVector_Dim_expr" name="Dim">
@@ -1202,7 +1202,7 @@ END_FUNCTION;
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAxis1Placement_Axis_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAxis1Placement_Axis_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAxis1Placement_Z" name="Z" isDerived="true" type="cl_IfcDirection">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAxis1Placement_Z" name="Z" type="cl_IfcDirection" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAxis1Placement_Z_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAxis1Placement_Z_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcAxis1Placement_Z_expr" name="Z">
@@ -1235,7 +1235,7 @@ END_FUNCTION;
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAxis2Placement2D_RefDirection_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAxis2Placement2D_RefDirection_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAxis2Placement2D_P" name="P" isDerived="true" type="cl_IfcDirection">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAxis2Placement2D_P" name="P" type="cl_IfcDirection" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAxis2Placement2D_P_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAxis2Placement2D_P_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcAxis2Placement2D_P_expr" name="P">
@@ -1290,7 +1290,7 @@ END_FUNCTION;
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAxis2Placement3D_RefDirection_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAxis2Placement3D_RefDirection_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAxis2Placement3D_P" name="P" isDerived="true" type="cl_IfcDirection">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAxis2Placement3D_P" name="P" type="cl_IfcDirection" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAxis2Placement3D_P_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcAxis2Placement3D_P_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcAxis2Placement3D_P_expr" name="P">
@@ -1364,7 +1364,7 @@ END_FUNCTION;
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCartesianTransformationOperator2D_gen_IfcCartesianTransformationOperator" general="cl_IfcCartesianTransformationOperator"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCartesianTransformationOperator2D_U" name="U" isDerived="true" type="cl_IfcDirection">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCartesianTransformationOperator2D_U" name="U" type="cl_IfcDirection" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCartesianTransformationOperator2D_U_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCartesianTransformationOperator2D_U_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcCartesianTransformationOperator2D_U_expr" name="U">
@@ -1406,7 +1406,7 @@ SELF\IfcCartesianTransformationOperator.Axis2,?)</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCartesianTransformationOperator3D_Axis3_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCartesianTransformationOperator3D_Axis3_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCartesianTransformationOperator3D_U" name="U" isDerived="true" type="cl_IfcDirection">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCartesianTransformationOperator3D_U" name="U" type="cl_IfcDirection" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCartesianTransformationOperator3D_U_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCartesianTransformationOperator3D_U_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcCartesianTransformationOperator3D_U_expr" name="U">
@@ -1633,7 +1633,7 @@ SELF\IfcCartesianTransformationOperator.Axis2,Axis3)</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSurfaceCurve_MasterRepresentation_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSurfaceCurve_MasterRepresentation_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurfaceCurve_BasisSurface" name="BasisSurface" isDerived="true" type="cl_IfcSurface">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurfaceCurve_BasisSurface" name="BasisSurface" type="cl_IfcSurface" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSurfaceCurve_BasisSurface_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSurfaceCurve_BasisSurface_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcSurfaceCurve_BasisSurface_expr" name="BasisSurface">
@@ -1708,7 +1708,7 @@ SELF\IfcCartesianTransformationOperator.Axis2,Axis3)</body>
           <body>IfcInteger := (SIZEOF(ControlPointsList) - 1)</body>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBSplineCurve_ControlPoints" name="ControlPoints" isDerived="true" type="cl_IfcCartesianPoint">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBSplineCurve_ControlPoints" name="ControlPoints" type="cl_IfcCartesianPoint" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBSplineCurve_ControlPoints_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBSplineCurve_ControlPoints_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcBSplineCurve_ControlPoints_expr" name="ControlPoints">
@@ -1770,7 +1770,7 @@ SELF\IfcCartesianTransformationOperator.Axis2,Axis3)</body>
           <body>IfcInteger := SIZEOF(ControlPointsList[1]) - 1</body>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBSplineSurface_ControlPoints" name="ControlPoints" isDerived="true" type="cl_IfcCartesianPoint">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBSplineSurface_ControlPoints" name="ControlPoints" type="cl_IfcCartesianPoint" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBSplineSurface_ControlPoints_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBSplineSurface_ControlPoints_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcBSplineSurface_ControlPoints_expr" name="ControlPoints">
@@ -2274,7 +2274,7 @@ SELF\IfcCartesianTransformationOperator.Axis2,Axis3)</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSurfaceOfLinearExtrusion_Depth_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSurfaceOfLinearExtrusion_Depth_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurfaceOfLinearExtrusion_ExtrusionAxis" name="ExtrusionAxis" isDerived="true" type="cl_IfcVector">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurfaceOfLinearExtrusion_ExtrusionAxis" name="ExtrusionAxis" type="cl_IfcVector" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSurfaceOfLinearExtrusion_ExtrusionAxis_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSurfaceOfLinearExtrusion_ExtrusionAxis_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcSurfaceOfLinearExtrusion_ExtrusionAxis_expr" name="ExtrusionAxis">
@@ -2289,7 +2289,7 @@ SELF\IfcCartesianTransformationOperator.Axis2,Axis3)</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSurfaceOfRevolution_AxisPosition_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSurfaceOfRevolution_AxisPosition_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurfaceOfRevolution_AxisLine" name="AxisLine" isDerived="true" type="cl_IfcLine">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSurfaceOfRevolution_AxisLine" name="AxisLine" type="cl_IfcLine" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSurfaceOfRevolution_AxisLine_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSurfaceOfRevolution_AxisLine_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcSurfaceOfRevolution_AxisLine_expr" name="AxisLine">
@@ -2508,7 +2508,7 @@ UpperIndexOnControlPoints, KnotMultiplicities, Knots)</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCompositeCurveOnSurface_gen_IfcCompositeCurve" general="cl_IfcCompositeCurve"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCompositeCurveOnSurface_BasisSurface" name="BasisSurface" isDerived="true" type="cl_IfcSurface">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcCompositeCurveOnSurface_BasisSurface" name="BasisSurface" type="cl_IfcSurface" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcCompositeCurveOnSurface_BasisSurface_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcCompositeCurveOnSurface_BasisSurface_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcCompositeCurveOnSurface_BasisSurface_expr" name="BasisSurface">
