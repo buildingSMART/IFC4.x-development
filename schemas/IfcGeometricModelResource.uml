@@ -555,7 +555,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSectionedSurface_AreaProfileTypes" name="AreaProfileTypes">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcSectionedSurface_AreaProfileTypes" name="AreaProfileTypes">
           <language>EXPRESS_WHERE</language>
-          <body>SIZEOF(QUERY(temp &lt;* CrossSections | temp.ProfileType = IfcProfileTypeEnum.CURVE)) &lt;> 0</body>
+          <body>SIZEOF(QUERY(temp &lt;* CrossSections | temp.ProfileType &lt;> IfcProfileTypeEnum.CURVE)) = 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSectionedSurface_CorrespondingSectionPositions" name="CorrespondingSectionPositions">
