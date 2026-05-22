@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcProductExtension" name="IfcProductExtension" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcProductExtension" name="IfcProductExtension">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcProductExtension" name="IfcProductExtension">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcAlignmentTypeEnum" name="IfcAlignmentTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentTypeEnum_USERDEFINED" name="USERDEFINED"/>
@@ -296,7 +296,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRelConnectsElements_NoSelfReference" name="NoSelfReference">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcRelConnectsElements_NoSelfReference" name="NoSelfReference">
           <language>EXPRESS_WHERE</language>
-          <body>RelatingElement :&lt;&gt;: RelatedElement</body>
+          <body>RelatingElement :&lt;>: RelatedElement</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRelConnectsElements_gen_IfcRelConnects">
@@ -336,7 +336,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRelConnectsPorts_NoSelfReference" name="NoSelfReference">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcRelConnectsPorts_NoSelfReference" name="NoSelfReference">
           <language>EXPRESS_WHERE</language>
-          <body>RelatingPort :&lt;&gt;: RelatedPort</body>
+          <body>RelatingPort :&lt;>: RelatedPort</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRelConnectsPorts_gen_IfcRelConnects">
@@ -392,7 +392,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRelInterferesElements_NoSelfReference" name="NoSelfReference">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcRelInterferesElements_NoSelfReference" name="NoSelfReference">
           <language>EXPRESS_WHERE</language>
-          <body>RelatingElement :&lt;&gt;: RelatedElement</body>
+          <body>RelatingElement :&lt;>: RelatedElement</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRelInterferesElements_gen_IfcRelConnects">

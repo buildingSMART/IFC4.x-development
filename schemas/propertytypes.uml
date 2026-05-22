@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_propertytypes" name="propertytypes" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_propertytypes" name="propertytypes">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_propertytypes" name="propertytypes">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ElementStatus" name="PEnum_ElementStatus">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementStatus_DEMOLISH" name="DEMOLISH"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcMeasureResource" name="IfcMeasureResource" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcMeasureResource" name="IfcMeasureResource">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcMeasureResource" name="IfcMeasureResource">
     <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcCorrectDimensions" name="IfcCorrectDimensions">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcCorrectDimensions_expr" name="IfcCorrectDimensions">
@@ -376,7 +376,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCompoundPlaneAngleMeasure_L[3:4]_ConsistentSign" name="ConsistentSign">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcCompoundPlaneAngleMeasure_ConsistentSign" name="ConsistentSign">
           <language>EXPRESS_WHERE</language>
-          <body>((SELF[1] &gt;= 0) AND (SELF[2] &gt;= 0) AND (SELF[3] &gt;= 0) AND ((SIZEOF(SELF) = 3) OR (SELF[4] &gt;= 0)))
+          <body>((SELF[1] >= 0) AND (SELF[2] >= 0) AND (SELF[3] >= 0) AND ((SIZEOF(SELF) = 3) OR (SELF[4] >= 0)))
 OR
 ((SELF[1] &lt;= 0) AND (SELF[2] &lt;= 0) AND (SELF[3] &lt;= 0) AND ((SIZEOF(SELF) = 3) OR (SELF[4] &lt;= 0)))</body>
         </specification>
@@ -404,13 +404,13 @@ OR
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDerivedUnit_WR1" name="WR1">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcDerivedUnit_WR1" name="WR1">
           <language>EXPRESS_WHERE</language>
-          <body>(SIZEOF (Elements) &gt; 1) OR ((SIZEOF (Elements) = 1) AND (Elements[1].Exponent &lt;&gt; 1 ))</body>
+          <body>(SIZEOF (Elements) > 1) OR ((SIZEOF (Elements) = 1) AND (Elements[1].Exponent &lt;> 1 ))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDerivedUnit_WR2" name="WR2">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcDerivedUnit_WR2" name="WR2">
           <language>EXPRESS_WHERE</language>
-          <body>(UnitType &lt;&gt; IfcDerivedUnitEnum.USERDEFINED) OR
+          <body>(UnitType &lt;> IfcDerivedUnitEnum.USERDEFINED) OR
 ((UnitType = IfcDerivedUnitEnum.USERDEFINED) AND 
  (EXISTS(SELF.UserDefinedType)))</body>
         </specification>
@@ -612,7 +612,7 @@ OR
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcHeatingValueMeasure_WR1" name="WR1">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcHeatingValueMeasure_WR1" name="WR1">
           <language>EXPRESS_WHERE</language>
-          <body>SELF &gt; 0.</body>
+          <body>SELF > 0.</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcHeatingValueMeasure_gen_real">
@@ -1212,7 +1212,7 @@ OR
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcNonNegativeLengthMeasure_NotNegative" name="NotNegative">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcNonNegativeLengthMeasure_NotNegative" name="NotNegative">
           <language>EXPRESS_WHERE</language>
-          <body>SELF &gt;= 0.</body>
+          <body>SELF >= 0.</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcNonNegativeLengthMeasure_gen_IfcLengthMeasure" general="dt_IfcLengthMeasure"/>
@@ -1230,7 +1230,7 @@ OR
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPositiveInteger_WR1" name="WR1">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcPositiveInteger_WR1" name="WR1">
           <language>EXPRESS_WHERE</language>
-          <body>SELF &gt; 0</body>
+          <body>SELF > 0</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcPositiveInteger_gen_IfcInteger" general="dt_IfcInteger"/>
@@ -1239,7 +1239,7 @@ OR
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPositiveLengthMeasure_WR1" name="WR1">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcPositiveLengthMeasure_WR1" name="WR1">
           <language>EXPRESS_WHERE</language>
-          <body>SELF &gt; 0.</body>
+          <body>SELF > 0.</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcPositiveLengthMeasure_gen_IfcLengthMeasure" general="dt_IfcLengthMeasure"/>
@@ -1248,7 +1248,7 @@ OR
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPositivePlaneAngleMeasure_WR1" name="WR1">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcPositivePlaneAngleMeasure_WR1" name="WR1">
           <language>EXPRESS_WHERE</language>
-          <body>SELF &gt; 0.</body>
+          <body>SELF > 0.</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcPositivePlaneAngleMeasure_gen_IfcPlaneAngleMeasure" general="dt_IfcPlaneAngleMeasure"/>
@@ -1257,7 +1257,7 @@ OR
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPositiveRatioMeasure_WR1" name="WR1">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="dt_IfcPositiveRatioMeasure_WR1" name="WR1">
           <language>EXPRESS_WHERE</language>
-          <body>SELF &gt; 0.</body>
+          <body>SELF > 0.</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcPositiveRatioMeasure_gen_IfcRatioMeasure" general="dt_IfcRatioMeasure"/>

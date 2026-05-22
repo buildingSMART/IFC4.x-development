@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcGeometricModelResource" name="IfcGeometricModelResource" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcGeometricModelResource" name="IfcGeometricModelResource">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcGeometricModelResource" name="IfcGeometricModelResource">
     <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcPointListDim" name="IfcPointListDim">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcPointListDim_expr" name="IfcPointListDim">
@@ -191,7 +191,7 @@ END_FUNCTION;
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcGeometricSet_ConsistentDim" name="ConsistentDim">
           <language>EXPRESS_WHERE</language>
           <body>SIZEOF(QUERY(Temp &lt;* Elements |
-  Temp.Dim &lt;&gt; Elements[1].Dim))
+  Temp.Dim &lt;> Elements[1].Dim))
 = 0</body>
         </specification>
       </ownedRule>
@@ -240,7 +240,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSectionedSpine_ConsistentProfileTypes" name="ConsistentProfileTypes">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcSectionedSpine_ConsistentProfileTypes" name="ConsistentProfileTypes">
           <language>EXPRESS_WHERE</language>
-          <body>SIZEOF(QUERY(temp &lt;* CrossSections | CrossSections[1].ProfileType &lt;&gt; temp.ProfileType)) = 0</body>
+          <body>SIZEOF(QUERY(temp &lt;* CrossSections | CrossSections[1].ProfileType &lt;> temp.ProfileType)) = 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSectionedSpine_CorrespondingSectionPositions" name="CorrespondingSectionPositions">
@@ -524,7 +524,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSectionedSolid_ConsistentProfileTypes" name="ConsistentProfileTypes">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcSectionedSolid_ConsistentProfileTypes" name="ConsistentProfileTypes">
           <language>EXPRESS_WHERE</language>
-          <body>SIZEOF(QUERY(temp &lt;* CrossSections | CrossSections[1].ProfileType &lt;&gt; temp.ProfileType)) = 0</body>
+          <body>SIZEOF(QUERY(temp &lt;* CrossSections | CrossSections[1].ProfileType &lt;> temp.ProfileType)) = 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSectionedSolid_DirectrixIs3D" name="DirectrixIs3D">
@@ -536,7 +536,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSectionedSolid_SectionsSameType" name="SectionsSameType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcSectionedSolid_SectionsSameType" name="SectionsSameType">
           <language>EXPRESS_WHERE</language>
-          <body>SIZEOF(QUERY(temp &lt;* CrossSections | TYPEOF(CrossSections[1]) :&lt;&gt;: TYPEOF(temp))) = 0</body>
+          <body>SIZEOF(QUERY(temp &lt;* CrossSections | TYPEOF(CrossSections[1]) :&lt;>: TYPEOF(temp))) = 0</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSectionedSolid_gen_IfcSolidModel" general="cl_IfcSolidModel"/>
@@ -555,7 +555,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSectionedSurface_AreaProfileTypes" name="AreaProfileTypes">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcSectionedSurface_AreaProfileTypes" name="AreaProfileTypes">
           <language>EXPRESS_WHERE</language>
-          <body>SIZEOF(QUERY(temp &lt;* CrossSections | temp.ProfileType = IfcProfileTypeEnum.CURVE)) &lt;&gt; 0</body>
+          <body>SIZEOF(QUERY(temp &lt;* CrossSections | temp.ProfileType = IfcProfileTypeEnum.CURVE)) &lt;> 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSectionedSurface_CorrespondingSectionPositions" name="CorrespondingSectionPositions">
@@ -579,7 +579,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSectionedSurface_SectionsSameType" name="SectionsSameType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcSectionedSurface_SectionsSameType" name="SectionsSameType">
           <language>EXPRESS_WHERE</language>
-          <body>SIZEOF(QUERY(temp &lt;* CrossSections | TYPEOF(CrossSections[1]) :&lt;&gt;: TYPEOF(temp))) = 0</body>
+          <body>SIZEOF(QUERY(temp &lt;* CrossSections | TYPEOF(CrossSections[1]) :&lt;>: TYPEOF(temp))) = 0</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSectionedSurface_gen_IfcSurface">
@@ -645,7 +645,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSweptDiskSolid_InnerRadiusSize" name="InnerRadiusSize">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcSweptDiskSolid_InnerRadiusSize" name="InnerRadiusSize">
           <language>EXPRESS_WHERE</language>
-          <body>(NOT EXISTS(InnerRadius)) OR (Radius &gt; InnerRadius)</body>
+          <body>(NOT EXISTS(InnerRadius)) OR (Radius > InnerRadius)</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSweptDiskSolid_gen_IfcSolidModel" general="cl_IfcSolidModel"/>
@@ -737,7 +737,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcExtrudedAreaSolid_ValidExtrusionDirection" name="ValidExtrusionDirection">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcExtrudedAreaSolid_ValidExtrusionDirection" name="ValidExtrusionDirection">
           <language>EXPRESS_WHERE</language>
-          <body>IfcDotProduct(IfcRepresentationItem() || IfcGeometricRepresentationItem() || IfcDirection([0.0,0.0,1.0]), SELF.ExtrudedDirection) &lt;&gt; 0.0</body>
+          <body>IfcDotProduct(IfcRepresentationItem() || IfcGeometricRepresentationItem() || IfcDirection([0.0,0.0,1.0]), SELF.ExtrudedDirection) &lt;> 0.0</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcExtrudedAreaSolid_gen_IfcSweptAreaSolid" general="cl_IfcSweptAreaSolid"/>
@@ -839,7 +839,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSweptDiskSolidPolygonal_CorrectRadii" name="CorrectRadii">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcSweptDiskSolidPolygonal_CorrectRadii" name="CorrectRadii">
           <language>EXPRESS_WHERE</language>
-          <body>NOT(EXISTS(FilletRadius)) OR (FilletRadius &gt;= SELF\IfcSweptDiskSolid.Radius)</body>
+          <body>NOT(EXISTS(FilletRadius)) OR (FilletRadius >= SELF\IfcSweptDiskSolid.Radius)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcSweptDiskSolidPolygonal_DirectrixIsPolyline" name="DirectrixIsPolyline">

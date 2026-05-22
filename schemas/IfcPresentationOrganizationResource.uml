@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcPresentationOrganizationResource" name="IfcPresentationOrganizationResource" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcPresentationOrganizationResource" name="IfcPresentationOrganizationResource">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcPresentationOrganizationResource" name="IfcPresentationOrganizationResource">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcLightDistributionCurveEnum" name="IfcLightDistributionCurveEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcLightDistributionCurveEnum_TYPE_A" name="TYPE_A"/>
@@ -95,7 +95,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPresentationLayerWithStyle_ApplicableOnlyToItems" name="ApplicableOnlyToItems">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPresentationLayerWithStyle_ApplicableOnlyToItems" name="ApplicableOnlyToItems">
           <language>EXPRESS_WHERE</language>
-          <body>SIZEOF(QUERY(temp &lt;* AssignedItems | (SIZEOF(TYPEOF(temp) * ['IFC4X3_ADD2.IfcGeometricRepresentationItem','IFC4X3_ADD2.IfcMappedItem']) &gt;= 1))) = SIZEOF(AssignedItems)</body>
+          <body>SIZEOF(QUERY(temp &lt;* AssignedItems | (SIZEOF(TYPEOF(temp) * ['IFC4X3_ADD2.IfcGeometricRepresentationItem','IFC4X3_ADD2.IfcMappedItem']) >= 1))) = SIZEOF(AssignedItems)</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPresentationLayerWithStyle_gen_IfcPresentationLayerAssignment" general="cl_IfcPresentationLayerAssignment"/>

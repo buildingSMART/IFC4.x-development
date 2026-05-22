@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcProcessExtension" name="IfcProcessExtension" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcProcessExtension" name="IfcProcessExtension">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcProcessExtension" name="IfcProcessExtension">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcEventTriggerTypeEnum" name="IfcEventTriggerTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEventTriggerTypeEnum_EVENTCOMPLEX" name="EVENTCOMPLEX"/>
@@ -85,13 +85,13 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRelSequence_AvoidInconsistentSequence" name="AvoidInconsistentSequence">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcRelSequence_AvoidInconsistentSequence" name="AvoidInconsistentSequence">
           <language>EXPRESS_WHERE</language>
-          <body>RelatingProcess :&lt;&gt;: RelatedProcess</body>
+          <body>RelatingProcess :&lt;>: RelatedProcess</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRelSequence_CorrectSequenceType" name="CorrectSequenceType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcRelSequence_CorrectSequenceType" name="CorrectSequenceType">
           <language>EXPRESS_WHERE</language>
-          <body>(SequenceType &lt;&gt; IfcSequenceEnum.USERDEFINED) OR ((SequenceType = IfcSequenceEnum.USERDEFINED) AND EXISTS(UserDefinedSequenceType))</body>
+          <body>(SequenceType &lt;> IfcSequenceEnum.USERDEFINED) OR ((SequenceType = IfcSequenceEnum.USERDEFINED) AND EXISTS(UserDefinedSequenceType))</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRelSequence_gen_IfcRelConnects">
@@ -126,7 +126,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcEvent_CorrectTypeAssigned" name="CorrectTypeAssigned">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcEvent_CorrectTypeAssigned" name="CorrectTypeAssigned">
           <language>EXPRESS_WHERE</language>
-          <body>NOT(EXISTS(EventTriggerType)) OR (EventTriggerType &lt;&gt; IfcEventTriggerTypeEnum.USERDEFINED) OR ((EventTriggerType = IfcEventTriggerTypeEnum.USERDEFINED) AND EXISTS(UserDefinedEventTriggerType))</body>
+          <body>NOT(EXISTS(EventTriggerType)) OR (EventTriggerType &lt;> IfcEventTriggerTypeEnum.USERDEFINED) OR ((EventTriggerType = IfcEventTriggerTypeEnum.USERDEFINED) AND EXISTS(UserDefinedEventTriggerType))</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEvent_gen_IfcProcess">
@@ -155,7 +155,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcEventType_CorrectEventTriggerType" name="CorrectEventTriggerType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcEventType_CorrectEventTriggerType" name="CorrectEventTriggerType">
           <language>EXPRESS_WHERE</language>
-          <body>(EventTriggerType &lt;&gt; IfcEventTriggerTypeEnum.USERDEFINED) OR ((EventTriggerType = IfcEventTriggerTypeEnum.USERDEFINED) AND EXISTS(UserDefinedEventTriggerType))</body>
+          <body>(EventTriggerType &lt;> IfcEventTriggerTypeEnum.USERDEFINED) OR ((EventTriggerType = IfcEventTriggerTypeEnum.USERDEFINED) AND EXISTS(UserDefinedEventTriggerType))</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEventType_gen_IfcTypeProcess">

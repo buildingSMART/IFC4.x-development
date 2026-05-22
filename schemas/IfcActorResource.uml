@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcActorResource" name="IfcActorResource" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcActorResource" name="IfcActorResource">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcActorResource" name="IfcActorResource">
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcActorRole" name="IfcActorRole">
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcActorRole_WR1" name="WR1">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcActorRole_WR1" name="WR1">
           <language>EXPRESS_WHERE</language>
-          <body>(Role &lt;&gt; IfcRoleEnum.USERDEFINED) OR
+          <body>(Role &lt;> IfcRoleEnum.USERDEFINED) OR
 ((Role = IfcRoleEnum.USERDEFINED) AND
   EXISTS(SELF.UserDefinedRole))</body>
         </specification>
@@ -30,7 +30,7 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcAddress_WR1" name="WR1">
           <language>EXPRESS_WHERE</language>
           <body>(NOT(EXISTS(Purpose))) OR
-((Purpose &lt;&gt; IfcAddressTypeEnum.USERDEFINED) OR
+((Purpose &lt;> IfcAddressTypeEnum.USERDEFINED) OR
 ((Purpose = IfcAddressTypeEnum.USERDEFINED) AND
   EXISTS(SELF.UserDefinedPurpose)))</body>
         </specification>

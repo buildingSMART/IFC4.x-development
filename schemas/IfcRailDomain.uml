@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcRailDomain" name="IfcRailDomain" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcRailDomain" name="IfcRailDomain">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcRailDomain" name="IfcRailDomain">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcRailTypeEnum" name="IfcRailTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRailTypeEnum_BLADE" name="BLADE"/>

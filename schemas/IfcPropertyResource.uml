@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcPropertyResource" name="IfcPropertyResource" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcPropertyResource" name="IfcPropertyResource">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcPropertyResource" name="IfcPropertyResource">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcCurveInterpolationEnum" name="IfcCurveInterpolationEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCurveInterpolationEnum_LINEAR" name="LINEAR"/>
@@ -73,7 +73,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPropertyDependencyRelationship_NoSelfReference" name="NoSelfReference">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPropertyDependencyRelationship_NoSelfReference" name="NoSelfReference">
           <language>EXPRESS_WHERE</language>
-          <body>DependingProperty :&lt;&gt;: DependantProperty</body>
+          <body>DependingProperty :&lt;>: DependantProperty</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPropertyDependencyRelationship_gen_IfcResourceLevelRelationship">
@@ -276,7 +276,7 @@ OR (SIZEOF(DefiningValues) = SIZEOF(DefinedValues))</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPropertyTableValue_WR22" name="WR22">
           <language>EXPRESS_WHERE</language>
           <body>NOT(EXISTS(DefiningValues)) OR 
-(SIZEOF(QUERY(temp &lt;* SELF.DefiningValues | TYPEOF(temp) &lt;&gt; TYPEOF(SELF.DefiningValues[1])
+(SIZEOF(QUERY(temp &lt;* SELF.DefiningValues | TYPEOF(temp) &lt;> TYPEOF(SELF.DefiningValues[1])
 )) = 0)</body>
         </specification>
       </ownedRule>
@@ -284,7 +284,7 @@ OR (SIZEOF(DefiningValues) = SIZEOF(DefinedValues))</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPropertyTableValue_WR23" name="WR23">
           <language>EXPRESS_WHERE</language>
           <body>NOT(EXISTS(DefinedValues)) OR 
-(SIZEOF(QUERY(temp &lt;* SELF.DefinedValues | TYPEOF(temp) &lt;&gt; TYPEOF(SELF.DefinedValues[1])
+(SIZEOF(QUERY(temp &lt;* SELF.DefinedValues | TYPEOF(temp) &lt;> TYPEOF(SELF.DefinedValues[1])
 )) = 0)</body>
         </specification>
       </ownedRule>

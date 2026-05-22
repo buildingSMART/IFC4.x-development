@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcUtilityResource" name="IfcUtilityResource" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcUtilityResource" name="IfcUtilityResource">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcUtilityResource" name="IfcUtilityResource">
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcApplication" name="IfcApplication">
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcApplication_UR1" name="UR1">
@@ -110,7 +110,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcTable_WR1" name="WR1">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcTable_WR1" name="WR1">
           <language>EXPRESS_WHERE</language>
-          <body>SIZEOF(QUERY( Temp &lt;* Rows | HIINDEX(Temp.RowCells) &lt;&gt; HIINDEX(Rows[1].RowCells))) = 0</body>
+          <body>SIZEOF(QUERY( Temp &lt;* Rows | HIINDEX(Temp.RowCells) &lt;> HIINDEX(Rows[1].RowCells))) = 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcTable_WR2" name="WR2">

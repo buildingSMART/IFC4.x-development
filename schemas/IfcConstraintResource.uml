@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcConstraintResource" name="IfcConstraintResource" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcConstraintResource" name="IfcConstraintResource">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcConstraintResource" name="IfcConstraintResource">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcBenchmarkEnum" name="IfcBenchmarkEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBenchmarkEnum_EQUALTO" name="EQUALTO"/>
@@ -17,7 +17,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcConstraint_WR11" name="WR11">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcConstraint_WR11" name="WR11">
           <language>EXPRESS_WHERE</language>
-          <body>(ConstraintGrade &lt;&gt; IfcConstraintEnum.USERDEFINED) OR
+          <body>(ConstraintGrade &lt;> IfcConstraintEnum.USERDEFINED) OR
 ((ConstraintGrade = IfcConstraintEnum.USERDEFINED) AND EXISTS(SELF\IfcConstraint.UserDefinedGrade))</body>
         </specification>
       </ownedRule>
@@ -135,7 +135,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcObjective_WR21" name="WR21">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcObjective_WR21" name="WR21">
           <language>EXPRESS_WHERE</language>
-          <body>(ObjectiveQualifier &lt;&gt; IfcObjectiveEnum.USERDEFINED) OR
+          <body>(ObjectiveQualifier &lt;> IfcObjectiveEnum.USERDEFINED) OR
 ((ObjectiveQualifier = IfcObjectiveEnum.USERDEFINED) AND EXISTS(SELF\IfcObjective.UserDefinedQualifier))</body>
         </specification>
       </ownedRule>

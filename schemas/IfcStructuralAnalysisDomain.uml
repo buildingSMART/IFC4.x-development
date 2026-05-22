@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcStructuralAnalysisDomain" name="IfcStructuralAnalysisDomain" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcStructuralAnalysisDomain" name="IfcStructuralAnalysisDomain">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcStructuralAnalysisDomain" name="IfcStructuralAnalysisDomain">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcActionSourceTypeEnum" name="IfcActionSourceTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcActionSourceTypeEnum_BRAKES" name="BRAKES"/>
@@ -177,9 +177,9 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStructuralLoadGroup_HasObjectType" name="HasObjectType">
           <language>EXPRESS_WHERE</language>
           <body>(
-  (PredefinedType &lt;&gt; IfcLoadGroupTypeEnum.USERDEFINED) AND
-  (ActionType &lt;&gt; IfcActionTypeEnum.USERDEFINED) AND
-  (ActionSource &lt;&gt; IfcActionSourceTypeEnum.USERDEFINED)
+  (PredefinedType &lt;> IfcLoadGroupTypeEnum.USERDEFINED) AND
+  (ActionType &lt;> IfcActionTypeEnum.USERDEFINED) AND
+  (ActionSource &lt;> IfcActionSourceTypeEnum.USERDEFINED)
 ) OR EXISTS(SELF\IfcObject.ObjectType)</body>
         </specification>
       </ownedRule>
@@ -213,7 +213,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStructuralResultGroup_HasObjectType" name="HasObjectType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStructuralResultGroup_HasObjectType" name="HasObjectType">
           <language>EXPRESS_WHERE</language>
-          <body>(TheoryType &lt;&gt; IfcAnalysisTheoryTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
+          <body>(TheoryType &lt;> IfcAnalysisTheoryTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralResultGroup_gen_IfcGroup">
@@ -305,21 +305,21 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStructuralCurveAction_HasObjectType" name="HasObjectType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStructuralCurveAction_HasObjectType" name="HasObjectType">
           <language>EXPRESS_WHERE</language>
-          <body>(PredefinedType &lt;&gt; IfcStructuralCurveActivityTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
+          <body>(PredefinedType &lt;> IfcStructuralCurveActivityTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStructuralCurveAction_ProjectedIsGlobal" name="ProjectedIsGlobal">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStructuralCurveAction_ProjectedIsGlobal" name="ProjectedIsGlobal">
           <language>EXPRESS_WHERE</language>
           <body>(NOT EXISTS(ProjectedOrTrue)) OR
-((ProjectedOrTrue &lt;&gt; PROJECTED_LENGTH) OR
+((ProjectedOrTrue &lt;> PROJECTED_LENGTH) OR
  (SELF\IfcStructuralActivity.GlobalOrLocal = GLOBAL_COORDS))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStructuralCurveAction_SuitablePredefinedType" name="SuitablePredefinedType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStructuralCurveAction_SuitablePredefinedType" name="SuitablePredefinedType">
           <language>EXPRESS_WHERE</language>
-          <body>PredefinedType &lt;&gt; IfcStructuralCurveActivityTypeEnum.EQUIDISTANT</body>
+          <body>PredefinedType &lt;> IfcStructuralCurveActivityTypeEnum.EQUIDISTANT</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveAction_gen_IfcStructuralAction" general="cl_IfcStructuralAction"/>
@@ -344,7 +344,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStructuralCurveMember_HasObjectType" name="HasObjectType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStructuralCurveMember_HasObjectType" name="HasObjectType">
           <language>EXPRESS_WHERE</language>
-          <body>(PredefinedType &lt;&gt; IfcStructuralCurveMemberTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
+          <body>(PredefinedType &lt;> IfcStructuralCurveMemberTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveMember_gen_IfcStructuralMember" general="cl_IfcStructuralMember"/>
@@ -362,13 +362,13 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStructuralCurveReaction_HasObjectType" name="HasObjectType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStructuralCurveReaction_HasObjectType" name="HasObjectType">
           <language>EXPRESS_WHERE</language>
-          <body>(PredefinedType &lt;&gt; IfcStructuralCurveActivityTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
+          <body>(PredefinedType &lt;> IfcStructuralCurveActivityTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStructuralCurveReaction_SuitablePredefinedType" name="SuitablePredefinedType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStructuralCurveReaction_SuitablePredefinedType" name="SuitablePredefinedType">
           <language>EXPRESS_WHERE</language>
-          <body>(PredefinedType &lt;&gt; IfcStructuralCurveActivityTypeEnum.SINUS) AND (PredefinedType &lt;&gt; IfcStructuralCurveActivityTypeEnum.PARABOLA)</body>
+          <body>(PredefinedType &lt;> IfcStructuralCurveActivityTypeEnum.SINUS) AND (PredefinedType &lt;> IfcStructuralCurveActivityTypeEnum.PARABOLA)</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralCurveReaction_gen_IfcStructuralReaction" general="cl_IfcStructuralReaction"/>
@@ -407,14 +407,14 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStructuralSurfaceAction_HasObjectType" name="HasObjectType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStructuralSurfaceAction_HasObjectType" name="HasObjectType">
           <language>EXPRESS_WHERE</language>
-          <body>(PredefinedType &lt;&gt; IfcStructuralSurfaceActivityTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
+          <body>(PredefinedType &lt;> IfcStructuralSurfaceActivityTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStructuralSurfaceAction_ProjectedIsGlobal" name="ProjectedIsGlobal">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStructuralSurfaceAction_ProjectedIsGlobal" name="ProjectedIsGlobal">
           <language>EXPRESS_WHERE</language>
           <body>(NOT EXISTS(ProjectedOrTrue)) OR
-((ProjectedOrTrue &lt;&gt; PROJECTED_LENGTH) OR
+((ProjectedOrTrue &lt;> PROJECTED_LENGTH) OR
  (SELF\IfcStructuralActivity.GlobalOrLocal = GLOBAL_COORDS))</body>
         </specification>
       </ownedRule>
@@ -435,7 +435,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStructuralSurfaceMember_HasObjectType" name="HasObjectType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStructuralSurfaceMember_HasObjectType" name="HasObjectType">
           <language>EXPRESS_WHERE</language>
-          <body>(PredefinedType &lt;&gt; IfcStructuralSurfaceMemberTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
+          <body>(PredefinedType &lt;> IfcStructuralSurfaceMemberTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceMember_gen_IfcStructuralMember" general="cl_IfcStructuralMember"/>
@@ -453,7 +453,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcStructuralSurfaceReaction_HasPredefinedType" name="HasPredefinedType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcStructuralSurfaceReaction_HasPredefinedType" name="HasPredefinedType">
           <language>EXPRESS_WHERE</language>
-          <body>(PredefinedType &lt;&gt; IfcStructuralSurfaceActivityTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
+          <body>(PredefinedType &lt;> IfcStructuralSurfaceActivityTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcStructuralSurfaceReaction_gen_IfcStructuralReaction" general="cl_IfcStructuralReaction"/>

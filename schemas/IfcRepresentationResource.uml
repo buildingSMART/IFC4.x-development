@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcRepresentationResource" name="IfcRepresentationResource" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcRepresentationResource" name="IfcRepresentationResource">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcRepresentationResource" name="IfcRepresentationResource">
     <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcConvertDirectionInto2D" name="IfcConvertDirectionInto2D">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcConvertDirectionInto2D_expr" name="IfcConvertDirectionInto2D">
@@ -152,7 +152,7 @@ END_FUNCTION;
          REPEAT i:=1 TO HIINDEX(Items);  
            IF ('IFC4X3_ADD2.IFCGEOMETRICSET' IN TYPEOF(Items[i]))
            THEN
-             IF (SIZEOF(QUERY(temp &lt;* Items[i]\IfcGeometricSet.Elements | 'IFC4X3_ADD2.IFCSURFACE' IN TYPEOF(temp))) &gt; 0)
+             IF (SIZEOF(QUERY(temp &lt;* Items[i]\IfcGeometricSet.Elements | 'IFC4X3_ADD2.IFCSURFACE' IN TYPEOF(temp))) > 0)
              THEN
                Count := Count - 1;
              END_IF;
@@ -171,7 +171,7 @@ END_FUNCTION;
                    'IFC4X3_ADD2.IFCTESSELLATEDITEM',
                    'IFC4X3_ADD2.IFCSHELLBASEDSURFACEMODEL',
                    'IFC4X3_ADD2.IFCFACEBASEDSURFACEMODEL',
-                   'IFC4X3_ADD2.IFCSOLIDMODEL'] * TYPEOF(temp)) &gt;= 1
+                   'IFC4X3_ADD2.IFCSOLIDMODEL'] * TYPEOF(temp)) >= 1
                  ));      
       END;
 
@@ -180,7 +180,7 @@ END_FUNCTION;
         Count := SIZEOF(QUERY(temp &lt;* Items | SIZEOF([
                    'IFC4X3_ADD2.IFCTESSELLATEDITEM',
                    'IFC4X3_ADD2.IFCSHELLBASEDSURFACEMODEL',
-                   'IFC4X3_ADD2.IFCFACEBASEDSURFACEMODEL'] * TYPEOF(temp)) &gt;= 1
+                   'IFC4X3_ADD2.IFCFACEBASEDSURFACEMODEL'] * TYPEOF(temp)) >= 1
                  ));      
       END;
 
@@ -193,7 +193,7 @@ END_FUNCTION;
       BEGIN
         Count := SIZEOF(QUERY(temp &lt;* Items | (SIZEOF([
                    'IFC4X3_ADD2.IFCEXTRUDEDAREASOLID',
-                   'IFC4X3_ADD2.IFCREVOLVEDAREASOLID'] * TYPEOF(temp)) &gt;= 1
+                   'IFC4X3_ADD2.IFCREVOLVEDAREASOLID'] * TYPEOF(temp)) >= 1
                    ) AND (SIZEOF([
                    'IFC4X3_ADD2.IFCEXTRUDEDAREASOLIDTAPERED',
                    'IFC4X3_ADD2.IFCREVOLVEDAREASOLIDTAPERED'] * TYPEOF(temp)) = 0
@@ -206,7 +206,7 @@ END_FUNCTION;
         Count := SIZEOF(QUERY(temp &lt;* Items | SIZEOF([
                    'IFC4X3_ADD2.IFCSWEPTAREASOLID',
                    'IFC4X3_ADD2.IFCSWEPTDISKSOLID',
-                   'IFC4X3_ADD2.IFCSECTIONEDSOLIDHORIZONTAL'] *  TYPEOF(temp)) &gt;= 1
+                   'IFC4X3_ADD2.IFCSECTIONEDSOLIDHORIZONTAL'] *  TYPEOF(temp)) >= 1
                  ));      
       END;
 
@@ -215,7 +215,7 @@ END_FUNCTION;
         Count := SIZEOF(QUERY(temp &lt;* Items | SIZEOF([
                    'IFC4X3_ADD2.IFCBOOLEANRESULT',
                    'IFC4X3_ADD2.IFCCSGPRIMITIVE3D',
-                   'IFC4X3_ADD2.IFCCSGSOLID'] *  TYPEOF(temp)) &gt;= 1
+                   'IFC4X3_ADD2.IFCCSGSOLID'] *  TYPEOF(temp)) >= 1
                  ));            
       END;
 
@@ -223,7 +223,7 @@ END_FUNCTION;
       BEGIN
         Count := SIZEOF(QUERY(temp &lt;* Items | SIZEOF([
                    'IFC4X3_ADD2.IFCCSGSOLID',
-                   'IFC4X3_ADD2.IFCBOOLEANCLIPPINGRESULT'] * TYPEOF(temp)) &gt;= 1
+                   'IFC4X3_ADD2.IFCBOOLEANCLIPPINGRESULT'] * TYPEOF(temp)) >= 1
                  )); 
       END;
 
@@ -240,7 +240,7 @@ END_FUNCTION;
     'BoundingBox' :
       BEGIN
         Count := SIZEOF(QUERY(temp &lt;* Items | ('IFC4X3_ADD2.IFCBOUNDINGBOX' IN TYPEOF(temp))));
-        IF (SIZEOF(Items) &gt; 1)
+        IF (SIZEOF(Items) > 1)
         THEN
           Count := 0;
         END_IF;   
@@ -323,10 +323,10 @@ END_FUNCTION;
 LOCAL
   IsDifferent  : LOGICAL := FALSE;
 END_LOCAL;
-  IF (SIZEOF(IfcGeometricRepresentationContext) &gt; 1)
+  IF (SIZEOF(IfcGeometricRepresentationContext) > 1)
   THEN
     REPEAT i := 2 TO HIINDEX(IfcGeometricRepresentationContext);
-      IF (IfcGeometricRepresentationContext[1].WorldCoordinateSystem :&lt;&gt;: IfcGeometricRepresentationContext[i].WorldCoordinateSystem)
+      IF (IfcGeometricRepresentationContext[1].WorldCoordinateSystem :&lt;>: IfcGeometricRepresentationContext[i].WorldCoordinateSystem)
       THEN
         IsDifferent := (NOT(IfcSameValidPrecision(IfcGeometricRepresentationContext[1].Precision,
                                                   IfcGeometricRepresentationContext[i].Precision)))
@@ -694,7 +694,7 @@ END_RULE;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeometricRepresentationSubContext_UserTargetProvided" name="UserTargetProvided">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcGeometricRepresentationSubContext_UserTargetProvided" name="UserTargetProvided">
           <language>EXPRESS_WHERE</language>
-          <body>(TargetView &lt;&gt; IfcGeometricProjectionEnum.USERDEFINED) OR 
+          <body>(TargetView &lt;> IfcGeometricProjectionEnum.USERDEFINED) OR 
 ((TargetView =  IfcGeometricProjectionEnum.USERDEFINED) AND EXISTS(UserDefinedTargetView))</body>
         </specification>
       </ownedRule>

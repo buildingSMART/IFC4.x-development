@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcQuantityResource" name="IfcQuantityResource" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcQuantityResource" name="IfcQuantityResource">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcQuantityResource" name="IfcQuantityResource">
     <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcUniqueQuantityNames" name="IfcUniqueQuantityNames">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcUniqueQuantityNames_expr" name="IfcUniqueQuantityNames">
@@ -86,7 +86,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityArea_WR22" name="WR22">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityArea_WR22" name="WR22">
           <language>EXPRESS_WHERE</language>
-          <body>AreaValue &gt;= 0.</body>
+          <body>AreaValue >= 0.</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcQuantityArea_gen_IfcPhysicalSimpleQuantity" general="cl_IfcPhysicalSimpleQuantity"/>
@@ -105,7 +105,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityCount_WR21" name="WR21">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityCount_WR21" name="WR21">
           <language>EXPRESS_WHERE</language>
-          <body>CountValue &gt;= 0</body>
+          <body>CountValue >= 0</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcQuantityCount_gen_IfcPhysicalSimpleQuantity" general="cl_IfcPhysicalSimpleQuantity"/>
@@ -131,7 +131,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityLength_WR22" name="WR22">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityLength_WR22" name="WR22">
           <language>EXPRESS_WHERE</language>
-          <body>LengthValue &gt;= 0.</body>
+          <body>LengthValue >= 0.</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcQuantityLength_gen_IfcPhysicalSimpleQuantity" general="cl_IfcPhysicalSimpleQuantity"/>
@@ -170,7 +170,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityTime_WR22" name="WR22">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityTime_WR22" name="WR22">
           <language>EXPRESS_WHERE</language>
-          <body>TimeValue &gt;= 0.</body>
+          <body>TimeValue >= 0.</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcQuantityTime_gen_IfcPhysicalSimpleQuantity" general="cl_IfcPhysicalSimpleQuantity"/>
@@ -196,7 +196,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityVolume_WR22" name="WR22">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityVolume_WR22" name="WR22">
           <language>EXPRESS_WHERE</language>
-          <body>VolumeValue &gt;= 0.</body>
+          <body>VolumeValue >= 0.</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcQuantityVolume_gen_IfcPhysicalSimpleQuantity" general="cl_IfcPhysicalSimpleQuantity"/>
@@ -222,7 +222,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcQuantityWeight_WR22" name="WR22">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcQuantityWeight_WR22" name="WR22">
           <language>EXPRESS_WHERE</language>
-          <body>WeightValue &gt;= 0.</body>
+          <body>WeightValue >= 0.</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcQuantityWeight_gen_IfcPhysicalSimpleQuantity" general="cl_IfcPhysicalSimpleQuantity"/>

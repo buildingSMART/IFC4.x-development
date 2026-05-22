@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcProfileResource" name="IfcProfileResource" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcProfileResource" name="IfcProfileResource">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcProfileResource" name="IfcProfileResource">
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcProfileDef" name="IfcProfileDef">
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcProfileDef_ProfileType" name="ProfileType" type="en_IfcProfileTypeEnum">
@@ -87,7 +87,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCompositeProfileDef_InvariantProfileType" name="InvariantProfileType">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcCompositeProfileDef_InvariantProfileType" name="InvariantProfileType">
           <language>EXPRESS_WHERE</language>
-          <body>SIZEOF(QUERY(temp &lt;* Profiles | temp.ProfileType &lt;&gt; Profiles[1].ProfileType)) = 0</body>
+          <body>SIZEOF(QUERY(temp &lt;* Profiles | temp.ProfileType &lt;> Profiles[1].ProfileType)) = 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCompositeProfileDef_NoRecursion" name="NoRecursion">
@@ -194,7 +194,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcArbitraryProfileDefWithVoids_WR2" name="WR2">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcArbitraryProfileDefWithVoids_WR2" name="WR2">
           <language>EXPRESS_WHERE</language>
-          <body>SIZEOF(QUERY(temp &lt;* InnerCurves | temp.Dim &lt;&gt; 2)) = 0</body>
+          <body>SIZEOF(QUERY(temp &lt;* InnerCurves | temp.Dim &lt;> 2)) = 0</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcArbitraryProfileDefWithVoids_WR3" name="WR3">

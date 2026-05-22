@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcPresentationAppearanceResource" name="IfcPresentationAppearanceResource" xmi:version="20131001">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcPresentationAppearanceResource" name="IfcPresentationAppearanceResource">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcPresentationAppearanceResource" name="IfcPresentationAppearanceResource">
     <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcCorrectFillAreaStyle" name="IfcCorrectFillAreaStyle">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcCorrectFillAreaStyle_expr" name="IfcCorrectFillAreaStyle">
@@ -33,21 +33,21 @@ Colour    := SIZEOF(QUERY(Style &lt;* Styles |
    TYPEOF(Style)));
 
 
-IF (External &gt; 1) THEN
+IF (External > 1) THEN
   RETURN (FALSE);
 END_IF;
 
 
-IF ((External = 1) AND ((Hatching &gt; 0) OR (Tiles &gt; 0) OR (Colour &gt; 0))) THEN
+IF ((External = 1) AND ((Hatching > 0) OR (Tiles > 0) OR (Colour > 0))) THEN
   RETURN (FALSE);
 END_IF;
 
 
-IF (Colour &gt; 1) THEN
+IF (Colour > 1) THEN
   RETURN (FALSE);
 END_IF;
 
-IF ((Hatching &gt; 0) AND (Tiles &gt;0)) THEN
+IF ((Hatching > 0) AND (Tiles >0)) THEN
   RETURN (FALSE);
 END_IF;
 
@@ -278,7 +278,7 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcCurveStyleFontPattern_VisibleLengthGreaterEqualZero" name="VisibleLengthGreaterEqualZero">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcCurveStyleFontPattern_VisibleLengthGreaterEqualZero" name="VisibleLengthGreaterEqualZero">
           <language>EXPRESS_WHERE</language>
-          <body>VisibleSegmentLength &gt;= 0.</body>
+          <body>VisibleSegmentLength >= 0.</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcCurveStyleFontPattern_gen_IfcPresentationItem">
@@ -782,13 +782,13 @@ END_FUNCTION;
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPixelTexture_MinPixelInS" name="MinPixelInS">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPixelTexture_MinPixelInS" name="MinPixelInS">
           <language>EXPRESS_WHERE</language>
-          <body>Width &gt;= 1</body>
+          <body>Width >= 1</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPixelTexture_MinPixelInT" name="MinPixelInT">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPixelTexture_MinPixelInT" name="MinPixelInT">
           <language>EXPRESS_WHERE</language>
-          <body>Height &gt;= 1</body>
+          <body>Height >= 1</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPixelTexture_NumberOfColours" name="NumberOfColours">
@@ -990,7 +990,7 @@ END_FUNCTION;
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcTextStyleFontModel_MeasureOfFontSize" name="MeasureOfFontSize">
           <language>EXPRESS_WHERE</language>
           <body>('IFC4X3_ADD2.IFCLENGTHMEASURE' IN TYPEOF(SELF.FontSize)) AND
-(SELF.FontSize &gt; 0.)</body>
+(SELF.FontSize > 0.)</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTextStyleFontModel_gen_IfcPreDefinedTextFont" general="cl_IfcPreDefinedTextFont"/>
