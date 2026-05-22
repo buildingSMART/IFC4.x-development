@@ -285,6 +285,12 @@ END_FUNCTION;
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLinearPlacement" name="IfcLinearPlacement">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_H7QPkFYHEfGf_PSL7MFwqA" name="CorrectLinearPlacement">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_H7m04FYHEfGf_PSL7MFwqA" name="CorrectLinearPlacement">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS(SELF\IfcObjectPlacement.PlacementRelTo) AND ('IFC4X4.IFCLOCALPLACEMENT' IN TYPEOF(SELF\IfcObjectPlacement.PlacementRelTo))</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLinearPlacement_gen_IfcObjectPlacement" general="cl_IfcObjectPlacement"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcLinearPlacement_RelativePlacement" name="RelativePlacement" association="as_IfcLinearPlacement_RelativePlacement">
         <type xmi:type="uml:Class" href="IfcGeometryResource.uml#cl_IfcAxis2PlacementLinear"/>
