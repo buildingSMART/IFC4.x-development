@@ -432,6 +432,7 @@ jobs:
           UML_FILES:          ${{ steps.diff.outputs.uml_files }}
           MD_FILES:           ${{ steps.diff.outputs.md_files }}
         with:
+          github-token: ${{ secrets.PR_COMMENT_TOKEN || secrets.GITHUB_TOKEN }}
           script: |
             const fs = require('fs');
             const icon = (o) => ({ success: '✓', failure: '✗', skipped: '⊘', cancelled: '⊘' }[o] || '?');
