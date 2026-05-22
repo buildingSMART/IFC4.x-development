@@ -24,7 +24,7 @@ A kind of compacting method that adopts rolling machinery, repeated rolling and 
 A method of injecting curable slurry into cracks or pores of a geotechnical foundation to improve its physical and mechanical properties.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

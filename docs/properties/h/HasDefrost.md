@@ -1,4 +1,4 @@
 HasDefrost
 ==========
 
-has the heat exchanger has defrost function or not.
+Has the heat exchanger has defrost function or not.

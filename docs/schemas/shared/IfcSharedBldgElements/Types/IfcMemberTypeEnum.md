@@ -68,7 +68,7 @@ A sloped element suspending a structure (such as bridge deck) from a pylon.
 A linear cable element used to secure or stabilise a structure by resisting lateral and longitudinal loading through tension only, but cannot resist compression. usually formed of a flexible cable or wire.
 
 ### TIEBAR
-A linear bar element used to secure or stabilise a structure by resisting lateral and longitudinal loading through tension and or compression. usually formed by a solid bar.
+A linear bar element used to secure or stabilise a structure by resisting lateral and longitudinal loading through tension and or compression. Usually formed by a solid bar.
 
 ### USERDEFINED
 User-defined linear element.

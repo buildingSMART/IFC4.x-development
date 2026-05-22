@@ -23,7 +23,7 @@ A device that measures the quantity of oil.
 A device that measures the quantity of water.
 
 ### USERDEFINED
-User-defined meter type
+User-defined meter type.
 
 ### NOTDEFINED
-Undefined meter type
+Undefined meter type.

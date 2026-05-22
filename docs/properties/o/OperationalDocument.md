@@ -1,4 +1,4 @@
 OperationalDocument
 ===================
 
-Manufacturer's operational document
+Manufacturer's operational document.

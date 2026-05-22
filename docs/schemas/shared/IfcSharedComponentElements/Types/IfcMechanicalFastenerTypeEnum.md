@@ -48,10 +48,10 @@ An assembly of components which secures a rail to the supporting structure and r
 Note: definition from EN 13481-1.
 
 ### CHAIN
-a series of linked metal rings used for fastening or securing something, or for pulling loads.
+A series of linked metal rings used for fastening or securing something, or for pulling loads.
 
 ### ROPE
-a length of thick strong cord made by twisting together strands of hemp, sisal, nylon, or similar material. used primarily for mooring vessels
+A length of thick strong cord made by twisting together strands of hemp, sisal, nylon, or similar material. used primarily for mooring vessels.
 
 ### USERDEFINED
 User-defined mechanical fastener.

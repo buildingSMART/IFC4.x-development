@@ -1,4 +1,4 @@
 Texture
 =======
 
-Stratum texture
+Stratum texture.

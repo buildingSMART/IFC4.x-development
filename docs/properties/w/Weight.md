@@ -1,4 +1,4 @@
 Weight
 ======
 
-Total weight of object
+Total weight of object.

@@ -27,7 +27,7 @@ Device attached to a sprinkler to deflect the water flow into a spread pattern t
 Fire monitor.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

@@ -1,4 +1,4 @@
 AllowableHullPressure
 =====================
 
-Allowable contact pressure between fender and hull
+Allowable contact pressure between fender and hull.

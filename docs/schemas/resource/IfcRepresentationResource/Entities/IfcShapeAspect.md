@@ -41,10 +41,10 @@ The word or group of words by which the shape aspect is known. It is a tag to in
 The word or group of words that characterize the shape aspect. It can be used to add additional meaning to the name of the aspect.
 
 ### ProductDefinitional
-An indication that the shape aspect is on the physical boundary of the product definition shape. If the value of this attribute is TRUE, it shall be asserted that the shape aspect being identified is on such a boundary. If the value is FALSE, it shall be asserted that the shape aspect being identified is not on such a boundary. If the value is UNKNOWN, it shall be asserted that it is not known whether or not the shape aspect being identified is on such a boundary.
----
-EXAMPLE: Would be FALSE for a center line, identified as shape aspect; would be TRUE for a cantilever.
----
+An indication that the shape aspect is on the physical boundary of the product definition shape.
+* TRUE: the shape aspect represents geometry that sits on (or forms) the physical outer boundary of the product's definition shape. Example: the glazing panel face of a window, or the top surface of a slab — geometry that is part of what defines the product's extent in space.
+* FALSE: the shape aspect represents geometry that does not form the physical boundary. Example: a centre line (e.g., of a beam or pipe), it is a useful reference geometry derived from the product, but it does not coincide with the product's physical surface.
+UNKNOWN: it cannot be asserted either way.
 
 ### PartOfProductDefinitionShape
 Reference to the _IfcProductDefinitionShape_ or the _IfcRepresentationMap_ of which this shape is an aspect.

@@ -1,4 +1,4 @@
 DurationTargetPerformance
 =========================
 
-Target time to failure of the asset
+Target time to failure of the asset.

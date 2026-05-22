@@ -1,4 +1,4 @@
 CillLevelLowerHead
 ==================
 
-Height of the lower head cill level
+Height of the lower head cill level.

@@ -1,4 +1,4 @@
 NoiseEmissions
 ==============
 
-Level of sound emission
+Level of sound emission.

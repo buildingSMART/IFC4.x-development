@@ -1,4 +1,4 @@
 TailLength
 ==========
 
-Length of the tail
+Length of the tail.

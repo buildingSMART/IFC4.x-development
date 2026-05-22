@@ -11,70 +11,70 @@ This enumeration defines roles which may be played by an actor.
 ## Items
 
 ### SUPPLIER
-Supplier
+Supplier.
 
 ### MANUFACTURER
-Manufacturer
+Manufacturer.
 
 ### CONTRACTOR
-Contractor
+Contractor.
 
 ### SUBCONTRACTOR
-Sub-contractor
+Sub-contractor.
 
 ### ARCHITECT
-Architect
+Architect.
 
 ### STRUCTURALENGINEER
-Structural engineer
+Structural engineer.
 
 ### COSTENGINEER
-Cost engineer
+Cost engineer.
 
 ### CLIENT
-Client
+Client.
 
 ### BUILDINGOWNER
-Facility owner
+Facility owner.
 
 ### BUILDINGOPERATOR
-Facility operator
+Facility operator.
 
 ### MECHANICALENGINEER
-Mechanical engineer
+Mechanical engineer.
 
 ### ELECTRICALENGINEER
-Electrical engineer
+Electrical engineer.
 
 ### PROJECTMANAGER
-Project manager
+Project manager.
 
 ### FACILITIESMANAGER
-Facilities manager
+Facilities manager.
 
 ### CIVILENGINEER
-Civil engineer
+Civil engineer.
 
 ### COMMISSIONINGENGINEER
-Commissioning engineer
+Commissioning engineer.
 
 ### ENGINEER
-Engineer
+Engineer.
 
 ### OWNER
-Owner
+Owner.
 
 ### CONSULTANT
-Consultant
+Consultant.
 
 ### CONSTRUCTIONMANAGER
-Construction manager
+Construction manager.
 
 ### FIELDCONSTRUCTIONMANAGER
-Field construction manager
+Field construction manager.
 
 ### RESELLER
-Reseller
+Reseller.
 
 ### USERDEFINED
 User defined value to be provided.

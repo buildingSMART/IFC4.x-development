@@ -139,6 +139,9 @@ Struck by falling object
 Struck by moving vehicle
 
 ### OVERTURINGPLANT
+Deprecated due to a typo.
+
+### OVERTURNINGPLANT
 Overturning plant or moving machinery
 
 ### PUBLICPROTECTIONISSUES

@@ -1,4 +1,4 @@
 LockLines
 =========
 
-Number of Parallel lock series
+Number of Parallel lock series.

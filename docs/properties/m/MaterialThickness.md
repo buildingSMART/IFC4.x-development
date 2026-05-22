@@ -1,4 +1,4 @@
 MaterialThickness
 =================
 
-Nominal thickness of the applied material
+Nominal thickness of the applied material.

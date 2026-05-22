@@ -1,4 +1,4 @@
 SulphurDioxideEmissions
 =======================
 
-Rate of emission of sulphur dioxide
+Rate of emission of sulphur dioxide.

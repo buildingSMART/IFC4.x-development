@@ -1,4 +1,4 @@
 CarbonDioxideEmissions
 ======================
 
-Rate of emission of carbon dioxide
+Rate of emission of carbon dioxide.

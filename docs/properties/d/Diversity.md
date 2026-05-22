@@ -1,7 +1,7 @@
 Diversity
 =========
 
-The ratio, expressed as a numerical
+The ratio, expressed as a numerical.
 value or as a percentage, of the
 simultaneous maximum demand of
 a group of electrical appliances or

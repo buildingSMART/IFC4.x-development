@@ -1,4 +1,4 @@
 UncertaintyBasis
 ================
 
-Indication of the basis of the uncertainty
+Indication of the basis of the uncertainty.

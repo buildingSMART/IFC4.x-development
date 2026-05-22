@@ -20,6 +20,7 @@ Note: definition from IEC 60050-82.
 
 ### EROSIONPREVENTION
 A grouping of elements into a built system for preventing unwanted relocation of material particles in earthworks slopes or rock faces.
+
 Typical types of erosion prevention include:
 
 * Planting
@@ -57,7 +58,7 @@ A set of functional tracks with explicit terminals. It is usually composed of a 
 Railway track system. It is usually composed of continuous sequences of track parts and alignments.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

@@ -1,4 +1,4 @@
 NextAssessmentDate
 ==================
 
-Date of next condition inspection
+Date of next condition inspection.

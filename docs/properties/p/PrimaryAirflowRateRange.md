@@ -1,4 +1,4 @@
 PrimaryAirflowRateRange
 =======================
 
-possible range of primary airflow that can be delivered..
+Possible range of primary airflow that can be delivered..

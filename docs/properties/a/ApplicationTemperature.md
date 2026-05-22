@@ -1,4 +1,4 @@
 ApplicationTemperature
 ======================
 
-Indicates the ambient temperature at which the course is applied
+Indicates the ambient temperature at which the course is applied.

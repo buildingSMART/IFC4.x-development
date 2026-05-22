@@ -33,7 +33,7 @@ Excavation where soil or rock below topsoil is cut to the depth required for the
 Excavation for basements of buildings, abutments of bridges or similar structures either partially or completely below ground level.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

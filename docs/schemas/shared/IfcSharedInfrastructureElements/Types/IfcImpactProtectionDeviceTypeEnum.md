@@ -6,7 +6,7 @@ This container defines the different predefined types of kinetic impact protecto
 ## Items
 
 ### CRASHCUSHION
-NOTE Definition from EN1317-1:2010: road vehicle energy absorption device installed in front of one or more hazards to reduce the severity of impact
+NOTE Definition from EN1317-1:2010: road vehicle energy absorption device installed in front of one or more hazards to reduce the severity of impact.
 
 NOTE Definition from ISO6707-1: energy-absorbing device installed in front of a rigid object to reduce the severity of impact of a vehicle, (Impact barrier, US)
 
@@ -20,7 +20,7 @@ A passive or active device formed of a damper and impact panel that is mounted o
 A bumper is a buffer object at end of track that prevents driving over. It can be fixed on rails or the track panel, or can also be a natural element (e.g. rock, sand).
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

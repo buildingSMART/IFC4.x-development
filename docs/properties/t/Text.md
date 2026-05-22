@@ -1,4 +1,4 @@
 Text
 ====
 
-Text content
+Text content.

@@ -8,16 +8,16 @@ _IfcArithmeticOperatorEnum_ specifies the form of arithmetic operation implied b
 ## Items
 
 ### ADD
-Add
+Add.
 
 ### DIVIDE
-Divide
+Divide.
 
 ### MULTIPLY
-Multiply
+Multiply.
 
 ### SUBTRACT
-Subtract
+Subtract.
 
 ### MODULO
 Modulo. The remainder of division given two positive integer numbers.

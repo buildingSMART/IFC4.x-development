@@ -1,4 +1,4 @@
 AnchorageType
 =============
 
-Mooring device anchorage type
+Mooring device anchorage type.

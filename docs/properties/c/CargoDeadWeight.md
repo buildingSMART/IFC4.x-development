@@ -1,4 +1,4 @@
 CargoDeadWeight
 ===============
 
-Weight of (bulk) cargo carried
+Weight of (bulk) cargo carried.

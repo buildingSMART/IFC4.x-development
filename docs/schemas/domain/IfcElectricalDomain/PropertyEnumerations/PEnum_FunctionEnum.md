@@ -4,22 +4,22 @@
 ## Items
 
 ### LINE
-Line
+Line.
 
 ### NEUTRAL
-Neutral
+Neutral.
 
 ### PROTECTIVEEARTH
-Protective Earth
+Protective Earth.
 
 ### PROTECTIVEEARTHNEUTRAL
-Protective Earth Neutral
+Protective Earth Neutral.
 
 ### OTHER
-required category not on scale
+required category not on scale.
 
 ### NOTKNOWN
-Value is unkown
+Value is unkown.
 
 ### UNSET
-Value has not been specified
+Value has not been specified.

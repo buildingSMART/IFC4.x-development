@@ -50,7 +50,7 @@ Loads from transport.
 Loads on the facility that occur during erection, but not after completion.
 
 ### PROPPING
-Propping
+Propping.
 
 ### SYSTEM_IMPERFECTION
 Loads from imperfections in the system.
@@ -80,7 +80,7 @@ Loads from a wave hitting the structure.
 Rain and water on the structure.
 
 ### BRAKES
-Brakes
+Brakes.
 
 ### USERDEFINED
 User defined. See objectType for user defined type.

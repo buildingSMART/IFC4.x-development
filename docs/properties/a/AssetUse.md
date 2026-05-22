@@ -1,4 +1,4 @@
 AssetUse
 ========
 
-General use category of the asset
+General use category of the asset.

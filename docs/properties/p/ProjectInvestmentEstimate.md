@@ -1,4 +1,4 @@
 ProjectInvestmentEstimate
 =========================
 
-Estimate of investment cost
+Estimate of investment cost.

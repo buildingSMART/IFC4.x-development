@@ -1,4 +1,4 @@
 AccidentResponse
 ================
 
-Accident response chosen for the asset
+Accident response chosen for the asset.

@@ -1,4 +1,4 @@
 CyclicRange
 ===========
 
-Identifies the angular range of the kinematic behaviour
+Identifies the angular range of the kinematic behaviour.

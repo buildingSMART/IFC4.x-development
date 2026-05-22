@@ -12,13 +12,13 @@ Gravity-operated conveyor where media descends through a trough or chute.
 An endless belt for carrying material without stretching.
 
 ### SCREWCONVEYOR
-composed of a longitudinal screw in a trough or pipe that rotates to force media through the segment
+composed of a longitudinal screw in a trough or pipe that rotates to force media through the segment.
 
 ### BUCKETCONVEYOR
-A conveyor in the form of connected buckets or segments that move in a continuous loop
+A conveyor in the form of connected buckets or segments that move in a continuous loop.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

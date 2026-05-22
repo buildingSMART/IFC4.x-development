@@ -4,28 +4,28 @@
 ## Items
 
 ### PHASE_L1
-Phase L1
+Phase L1.
 
 ### PHASE_L2
-Phase L2
+Phase L2.
 
 ### PHASE_L3
-Phase L3
+Phase L3.
 
 ### NEUTRAL
-Neutral
+Neutral.
 
 ### PROTECTIVEEARTH
-Protective Earth
+Protective Earth.
 
 ### PROTECTIVEEARTHNEUTRAL
-Protective Earth Neutral
+Protective Earth Neutral.
 
 ### OTHER
-required category not on scale
+required category not on scale.
 
 ### NOTKNOWN
-Value is unkown
+Value is unkown.
 
 ### UNSET
-Value has not been specified
+Value has not been specified.

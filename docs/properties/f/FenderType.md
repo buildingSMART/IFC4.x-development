@@ -1,4 +1,4 @@
 FenderType
 ==========
 
-The type of fender
+The type of fender.

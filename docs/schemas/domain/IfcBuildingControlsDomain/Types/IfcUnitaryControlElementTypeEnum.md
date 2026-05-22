@@ -11,7 +11,7 @@ The _IfcUnitaryControlElementTypeEnum_ defines the range of different types and/
 A control element at which alarms are annunciated.
 
 ### CONTROLPANEL
-A control element at which devices that control or monitor the operation of a site, building or part of a building are located
+A control element at which devices that control or monitor the operation of a site, building or part of a building are located.
 
 ### GASDETECTIONPANEL
 A control element at which the detection of gas is annunciated.

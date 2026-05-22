@@ -1,4 +1,4 @@
 DeviceCapacity
 ==============
 
-Mooring device force capacity
+Mooring device force capacity.

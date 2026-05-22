@@ -1,4 +1,4 @@
 ThreadLength
 ============
 
-Nominal length of the thread
+Nominal length of the thread.

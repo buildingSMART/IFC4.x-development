@@ -12,13 +12,13 @@ Figure 1 shows the designation of a door panel with _PanelPosition_ = LEFT and a
 ## Items
 
 ### LEFT
-Left
+Left.
 
 ### MIDDLE
-Middle
+Middle.
 
 ### RIGHT
-Right
+Right.
 
 ### NOTDEFINED
 Not defined.

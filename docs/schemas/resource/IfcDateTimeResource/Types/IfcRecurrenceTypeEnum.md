@@ -8,25 +8,25 @@ _IfcRecurrenceTypeEnum_ enumerates the recurring pattern type, with valid combin
 ## Items
 
 ### DAILY
-Interval, Occurrences
+Interval, Occurrences.
 
 ### WEEKLY
-WeekdayComponent, Interval, Occurrences
+WeekdayComponent, Interval, Occurrences.
 
 ### MONTHLY_BY_DAY_OF_MONTH
-DayComponent, Interval, Occurrences
+DayComponent, Interval, Occurrences.
 
 ### MONTHLY_BY_POSITION
-WeekdayComponent, Position, Interval, Occurrences
+WeekdayComponent, Position, Interval, Occurrences.
 
 ### BY_DAY_COUNT
-Interval, Occurrences
+Interval, Occurrences.
 
 ### BY_WEEKDAY_COUNT
-WeekdayComponent, Interval, Occurrences
+WeekdayComponent, Interval, Occurrences.
 
 ### YEARLY_BY_DAY_OF_MONTH
-DayComponent, MonthComponent, Interval, Occurrences
+DayComponent, MonthComponent, Interval, Occurrences.
 
 ### YEARLY_BY_POSITION
-WeekdayComponent, MonthComponent, Position, Interval, Occurrences
+WeekdayComponent, MonthComponent, Position, Interval, Occurrences.

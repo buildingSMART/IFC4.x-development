@@ -20,7 +20,7 @@ Guardrail located at the edge of a floor, rather then a stair or ramp. Examples 
 NOTE Definition from ISO6707-1: non-load bearing vertical construction, usually lightweight, which bounds or subdivides an external area.
 
 ### USERDEFINED
-User-defined railing element, a term to identify the user type is given by the attribute _IfcRailing.ObjectType._
+User-defined railing element, a term to identify the user type is given by the attribute _IfcRailing.ObjectType._.
 
 ### NOTDEFINED
 Undefined railing element, no type information available.

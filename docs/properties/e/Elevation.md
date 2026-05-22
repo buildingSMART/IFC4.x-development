@@ -1,4 +1,4 @@
 Elevation
 =========
 
-Elevation of the entity
+Elevation of the entity.

@@ -20,7 +20,7 @@ A safety device used to open or close a circuit when there is no current. Used t
 A device that will electrically open the circuit after a period of prolonged, abnormal current flow.
 
 ### RESIDUALCURRENTCIRCUITBREAKER
-A device that opens, closes, or isolates a circuit and has short circuit and overload protection. It attempts to break the circuit when there is a difference in current between any two phases. May also be referred to as 'Ground Fault Interupter (GFI)' or 'Ground Fault Circuit Interuptor (GFCI)'
+A device that opens, closes, or isolates a circuit and has short circuit and overload protection. It attempts to break the circuit when there is a difference in current between any two phases. May also be referred to as 'Ground Fault Interupter (GFI)' or 'Ground Fault Circuit Interuptor (GFCI)'.
 
 ### RESIDUALCURRENTSWITCH
 A device that opens, closes or isolates a circuit and has no short circuit or overload protection. May also be identified as a 'ground fault switch'.

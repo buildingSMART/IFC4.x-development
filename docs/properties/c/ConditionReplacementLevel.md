@@ -1,4 +1,4 @@
 ConditionReplacementLevel
 =========================
 
-Condition that will trigger a replacement process
+Condition that will trigger a replacement process.

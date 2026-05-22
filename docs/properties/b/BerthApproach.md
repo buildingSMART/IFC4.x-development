@@ -1,4 +1,4 @@
 BerthApproach
 =============
 
-How the vessel approaches the berth
+How the vessel approaches the berth.

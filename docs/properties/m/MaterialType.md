@@ -1,4 +1,4 @@
 MaterialType
 ============
 
-Material type used... e.g. paint, tape, thermoplastic, stone
+Material type used... e.g. paint, tape, thermoplastic, stone.

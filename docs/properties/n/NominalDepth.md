@@ -1,4 +1,4 @@
 NominalDepth
 ============
 
-Nominal Depth of the object
+Nominal Depth of the object.

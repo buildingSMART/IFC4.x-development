@@ -1,4 +1,4 @@
 ControlType
 ===========
 
-The type controller, signal modification effected and applicable ports
+The type controller, signal modification effected and applicable ports.

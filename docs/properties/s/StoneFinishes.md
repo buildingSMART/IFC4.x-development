@@ -1,4 +1,4 @@
 StoneFinishes
 =============
 
-Eg. 'Polished', 'Bush Hammered', 'Split', 'Sawn', 'Flamed'
+Eg. 'Polished', 'Bush Hammered', 'Split', 'Sawn', 'Flamed'.

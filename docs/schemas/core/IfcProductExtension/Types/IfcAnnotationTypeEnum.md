@@ -47,7 +47,7 @@ Annotation used to illustrate lines connecting points of equal temperature on a 
 > EXAMPLE Typically used in to show the heating or cooling distribution within a space or to show temperature distribution on a geographic map.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

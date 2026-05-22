@@ -1,4 +1,4 @@
 FundingSource
 =============
 
-Investment funding source
+Investment funding source.

@@ -1,4 +1,4 @@
 ResourceDepletionPerUnit
 ========================
 
-Quantity of resources used calculated in equivalent antimony
+Quantity of resources used calculated in equivalent antimony.

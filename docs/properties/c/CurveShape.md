@@ -1,4 +1,4 @@
 CurveShape
 ==========
 
-Shape according to CurveShapeEnum
+Shape according to CurveShapeEnum.

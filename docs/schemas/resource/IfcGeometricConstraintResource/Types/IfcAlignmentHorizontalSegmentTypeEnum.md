@@ -139,7 +139,7 @@ $$ \displaylines{
 } $$
 
 ### COSINECURVE
-Cosine transition. The cosine transition was already discussed in 1868. Width the advent of high-speed rail it was applied in production designs. It is e.g. installed on Japanese high speed lines
+Cosine transition. The cosine transition was already discussed in 1868. Width the advent of high-speed rail it was applied in production designs. It is e.g. installed on Japanese high speed lines.
 
 **Base formula (Curvature)**
 

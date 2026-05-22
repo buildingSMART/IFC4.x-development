@@ -1,4 +1,4 @@
 Intermittent
 ============
 
-If fillet weld, intermittent or not
+If fillet weld, intermittent or not.

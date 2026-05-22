@@ -1,4 +1,4 @@
 EquipmentLoading
 ================
 
-Loading from equipment
+Loading from equipment.

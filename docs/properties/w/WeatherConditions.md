@@ -1,4 +1,4 @@
 WeatherConditions
 =================
 
-Indicates the weather conditions during the application of the course
+Indicates the weather conditions during the application of the course.

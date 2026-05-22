@@ -1,4 +1,4 @@
 SignArea
 ===========
 
-Sign Area
+Sign Area.

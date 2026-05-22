@@ -22,7 +22,7 @@ A distribution point at which connections are made for distribution of electrica
 A distribution point at which voice and data communication signals are managed between communication devices.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

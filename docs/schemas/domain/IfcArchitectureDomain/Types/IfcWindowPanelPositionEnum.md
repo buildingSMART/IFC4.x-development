@@ -26,19 +26,19 @@ Note:
 ## Items
 
 ### LEFT
-Left
+Left.
 
 ### MIDDLE
-Middle
+Middle.
 
 ### RIGHT
-Right
+Right.
 
 ### BOTTOM
-Bottom
+Bottom.
 
 ### TOP
-Top
+Top.
 
 ### NOTDEFINED
 Undefined.

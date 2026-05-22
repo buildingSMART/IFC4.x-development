@@ -14,7 +14,7 @@ Plate heat exchanger.
 Shell and Tube heat exchanger.
 
 ### TURNOUTHEATING
-A device used to remove snow from railways. E.g. electric heating device, gas heater
+A device used to remove snow from railways. E.g. electric heating device, gas heater.
 
 ### USERDEFINED
 User-defined heat exchanger type.

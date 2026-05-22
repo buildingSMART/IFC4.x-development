@@ -1,4 +1,4 @@
 InertWastePerUnit
 =================
 
-Quantity of inert waste generated
+Quantity of inert waste generated.

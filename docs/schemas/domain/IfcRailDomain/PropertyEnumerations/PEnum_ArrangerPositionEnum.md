@@ -12,16 +12,16 @@ Front side.
 Rear side.
 
 ### HORIZONTAL
-Horizontal
+Horizontal.
 
 ### VERTICAL
-Vertical
+Vertical.
 
 ### OTHER
-required category not on scale
+required category not on scale.
 
 ### NOTKNOWN
-Value is unkown
+Value is unkown.
 
 ### UNSET
-Value has not been specified
+Value has not been specified.

@@ -1,4 +1,4 @@
 EnergyConsumption
 =================
 
-Annual energy consumption requirement
+Annual energy consumption requirement.

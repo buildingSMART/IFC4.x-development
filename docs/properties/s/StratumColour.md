@@ -1,4 +1,4 @@
 StratumColour
 =============
 
-Stratum colour
+Stratum colour.

@@ -12,7 +12,7 @@ Figure 1 illustrates the interpretation of a load definition depending on the en
 ## Items
 
 ### PROJECTED_LENGTH
-Projected length
+Projected length.
 
 ### TRUE_LENGTH
-True Length
+True Length.

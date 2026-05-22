@@ -12,7 +12,7 @@ a fixed vertical structure serving as a navigation mark, to show reefs or other 
 an anchored floating structure serving as a navigation mark, to show reefs or other hazards, or provide navigational directions.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

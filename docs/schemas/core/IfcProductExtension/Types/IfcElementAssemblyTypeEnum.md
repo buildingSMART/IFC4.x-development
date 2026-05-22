@@ -26,7 +26,7 @@ A beam-like superstructure, such as bridge main girder extending between abutmen
 Assembled reinforcement elements.
 
 ### RIGID_FRAME
-A structure built up of beams, columns, etc. with moment-resisting joints, such as gantry
+A structure built up of beams, columns, etc. with moment-resisting joints, such as gantry.
 
 ### SLAB_FIELD
 Slabs, laid out in one plane.

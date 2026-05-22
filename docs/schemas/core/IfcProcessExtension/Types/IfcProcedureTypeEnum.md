@@ -20,7 +20,7 @@ A warning of potential danger that should be taken note of as a procedure or whe
 A procedure undertaken to calibrate an artifact.
 
 ### DIAGNOSTIC
-Diagnostic
+Diagnostic.
 
 ### SHUTDOWN
 A procedure undertaken to shutdown the operation of an artifact.

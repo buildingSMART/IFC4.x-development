@@ -45,7 +45,7 @@ A packet control unit performs some of the processing tasks of the base station 
 The service GPRS support node (SGSN) is a component of the GPRS core network. It is the GPRS support node of mobile station service, and it can achieve mobility management and packet routing and transfer.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

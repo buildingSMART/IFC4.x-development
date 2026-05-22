@@ -1,4 +1,4 @@
 PowerDemand
 ===========
 
-Power demand of the element
+Power demand of the element.

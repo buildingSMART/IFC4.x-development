@@ -29,4 +29,4 @@ An outlet used for connecting telephone communications equipment.
 User-defined type.
 
 ### NOTDEFINED
-Undefined type.<
+Undefined type.

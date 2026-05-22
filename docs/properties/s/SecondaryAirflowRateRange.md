@@ -1,4 +1,4 @@
 SecondaryAirflowRateRange
 =========================
 
-possible range of secondary airflow that can be delivered.
+Possible range of secondary airflow that can be delivered.

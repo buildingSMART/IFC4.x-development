@@ -30,7 +30,7 @@ Upper part of the soil, natural or constructed, that supports the loads transmit
 Side slope (batter) fill abutting the road structure or back slope fill.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

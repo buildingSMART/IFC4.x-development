@@ -1,4 +1,4 @@
 IsFreshwater
 ============
 
-Indication of freshwater (true,false or unknown)
+Indication of freshwater (true,false or unknown).

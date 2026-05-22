@@ -1,4 +1,4 @@
 GroupCode
 =========
 
-e.g. panels, worksurfaces, storage, etc.
+E.g. panels, worksurfaces, storage, etc.

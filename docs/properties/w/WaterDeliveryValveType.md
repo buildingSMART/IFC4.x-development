@@ -1,4 +1,4 @@
 WaterDeliveryValveType
 ======================
 
-Type of water delivery valve
+Type of water delivery valve.

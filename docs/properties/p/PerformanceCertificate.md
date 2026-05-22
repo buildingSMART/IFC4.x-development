@@ -1,4 +1,4 @@
 PerformanceCertificate
 ======================
 
-Manufacturer's performance certificate
+Manufacturer's performance certificate.

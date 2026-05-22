@@ -8,7 +8,7 @@ The _IfcWasteTerminalTypeEnum_ defines the range of different types of waste ter
 ## Items
 
 ### FLOORTRAP
-Pipe fitting, set into the floor, that retains liquid to prevent the passage of foul air
+Pipe fitting, set into the floor, that retains liquid to prevent the passage of foul air.
 
 ### FLOORWASTE
 Pipe fitting, set into the floor, that collects waste water and discharges it to a separate trap.

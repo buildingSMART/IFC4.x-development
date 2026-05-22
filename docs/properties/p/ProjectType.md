@@ -1,4 +1,4 @@
 ProjectType
 ===========
 
-Additional typing of a project
+Additional typing of a project.

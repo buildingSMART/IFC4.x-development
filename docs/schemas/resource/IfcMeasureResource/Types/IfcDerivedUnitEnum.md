@@ -11,160 +11,160 @@ _IfcDerivedUnitEnum_ is an enumeration type for allowed types of derived units.
 ## Items
 
 ### ANGULARVELOCITYUNIT
-Angularvelocity unit
+Angularvelocity unit.
 
 ### AREADENSITYUNIT
-Area density unit
+Area density unit.
 
 ### COMPOUNDPLANEANGLEUNIT
-Compound plane angle unit
+Compound plane angle unit.
 
 ### DYNAMICVISCOSITYUNIT
-Dynamic viscosity unit
+Dynamic viscosity unit.
 
 ### HEATFLUXDENSITYUNIT
-Heat flux density unit
+Heat flux density unit.
 
 ### INTEGERCOUNTRATEUNIT
-Integer count rate unit
+Integer count rate unit.
 
 ### ISOTHERMALMOISTURECAPACITYUNIT
-Isothermal moisture capacity unit
+Isothermal moisture capacity unit.
 
 ### KINEMATICVISCOSITYUNIT
-Kenematic viscosity unit
+Kenematic viscosity unit.
 
 ### LINEARVELOCITYUNIT
-Linear velocity unit
+Linear velocity unit.
 
 ### MASSDENSITYUNIT
-Mass denisity unit
+Mass denisity unit.
 
 ### MASSFLOWRATEUNIT
-Mass flowrate unit
+Mass flowrate unit.
 
 ### MOISTUREDIFFUSIVITYUNIT
-Moistere diffusivity unit
+Moistere diffusivity unit.
 
 ### MOLECULARWEIGHTUNIT
-Molecular weight unit
+Molecular weight unit.
 
 ### SPECIFICHEATCAPACITYUNIT
-Specific heat capacity unit
+Specific heat capacity unit.
 
 ### THERMALADMITTANCEUNIT
-Thermal admittance unit
+Thermal admittance unit.
 
 ### THERMALCONDUCTANCEUNIT
-Thermal Conductance unit
+Thermal Conductance unit.
 
 ### THERMALRESISTANCEUNIT
-Thermal resistance unit
+Thermal resistance unit.
 
 ### THERMALTRANSMITTANCEUNIT
-Thermal transmittance unit
+Thermal transmittance unit.
 
 ### VAPORPERMEABILITYUNIT
-Vapor permeability unit
+Vapor permeability unit.
 
 ### VOLUMETRICFLOWRATEUNIT
-Valumetric flowrate unit
+Valumetric flowrate unit.
 
 ### ROTATIONALFREQUENCYUNIT
-Rotational frequency unit
+Rotational frequency unit.
 
 ### TORQUEUNIT
-Torque unit
+Torque unit.
 
 ### MOMENTOFINERTIAUNIT
-Moment of inertia unit
+Moment of inertia unit.
 
 ### LINEARMOMENTUNIT
-Linear moment unit
+Linear moment unit.
 
 ### LINEARFORCEUNIT
-Linear force unit
+Linear force unit.
 
 ### PLANARFORCEUNIT
-planar force unit
+planar force unit.
 
 ### MODULUSOFELASTICITYUNIT
-Modulus of elasticity unit
+Modulus of elasticity unit.
 
 ### SHEARMODULUSUNIT
-Shear modulus unit
+Shear modulus unit.
 
 ### LINEARSTIFFNESSUNIT
-Linear stiffness unit
+Linear stiffness unit.
 
 ### ROTATIONALSTIFFNESSUNIT
-Rotational stuffness unit
+Rotational stuffness unit.
 
 ### MODULUSOFSUBGRADEREACTIONUNIT
-Modulus of subgrade reaction unit
+Modulus of subgrade reaction unit.
 
 ### ACCELERATIONUNIT
-Acceleration unit
+Acceleration unit.
 
 ### CURVATUREUNIT
-Curvature unit
+Curvature unit.
 
 ### HEATINGVALUEUNIT
-Heating value unit
+Heating value unit.
 
 ### IONCONCENTRATIONUNIT
-Ion concentration unit
+Ion concentration unit.
 
 ### LUMINOUSINTENSITYDISTRIBUTIONUNIT
-Luminous intensity distribution unit
+Luminous intensity distribution unit.
 
 ### MASSPERLENGTHUNIT
-Mass per length unit
+Mass per length unit.
 
 ### MODULUSOFLINEARSUBGRADEREACTIONUNIT
-Modulus of linear subgrade reaction unit
+Modulus of linear subgrade reaction unit.
 
 ### MODULUSOFROTATIONALSUBGRADEREACTIONUNIT
-Modulus of rotational subgrade reaction unit
+Modulus of rotational subgrade reaction unit.
 
 ### PHUNIT
-PH Unit
+PH Unit.
 
 ### ROTATIONALMASSUNIT
-Rotational mass unit
+Rotational mass unit.
 
 ### SECTIONAREAINTEGRALUNIT
-Section area integral unit
+Section area integral unit.
 
 ### SECTIONMODULUSUNIT
-Section modulus unit
+Section modulus unit.
 
 ### SOUNDPOWERLEVELUNIT
-Sound power level unit
+Sound power level unit.
 
 ### SOUNDPOWERUNIT
-Sound power unit
+Sound power unit.
 
 ### SOUNDPRESSURELEVELUNIT
-Sound pressure level unit
+Sound pressure level unit.
 
 ### SOUNDPRESSUREUNIT
-Sound pressure unit
+Sound pressure unit.
 
 ### TEMPERATUREGRADIENTUNIT
-Temperature gradient unit
+Temperature gradient unit.
 
 ### TEMPERATURERATEOFCHANGEUNIT
-Temperature of change unit
+Temperature of change unit.
 
 ### THERMALEXPANSIONCOEFFICIENTUNIT
-Thermal expansion coefficient unit
+Thermal expansion coefficient unit.
 
 ### WARPINGCONSTANTUNIT
-Warping constraint unit
+Warping constraint unit.
 
 ### WARPINGMOMENTUNIT
-Warping moment unit
+Warping moment unit.
 
 ### USERDEFINED
 User defined derived unit.

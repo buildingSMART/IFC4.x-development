@@ -1,4 +1,4 @@
 DownstreamFloodWaterLevel
 =========================
 
-the design minimum upstream water level for the lock complex
+The design minimum upstream water level for the lock complex.

@@ -1,4 +1,4 @@
 zzTargetPerformance
 ===================
 
-Target capacity or performance of the asset
+Target capacity or performance of the asset.

@@ -164,19 +164,19 @@ of the positive y-axis.
 ![swinging right and fixed](../../../../figures/ifcdoortypeenum-fig19b.gif)
 
 ### DOUBLE_DOOR_LIFTING_VERTICAL
-Double panel lifting vertical
+Double panel lifting vertical.
 
 ### LIFTING_HORIZONTAL
-Lifting horizontal
+Lifting horizontal.
 
 ### LIFTING_VERTICAL_LEFT
-Lifting vertical left
+Lifting vertical left.
 
 ### LIFTING_VERTICAL_RIGHT
-Lifting vertical right
+Lifting vertical right.
 
 ### REVOLVING_VERTICAL
-Revolving vertical
+Revolving vertical.
 
 ### USERDEFINED
 User defined operation type.

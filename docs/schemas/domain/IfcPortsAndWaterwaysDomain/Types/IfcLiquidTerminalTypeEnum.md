@@ -12,7 +12,7 @@ A loading arm permits the transfer of liquid or liquefied gas from one system to
 A Supporting framework on which a hose may be wound whose primary purpose is to connect and interact with the external environment.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

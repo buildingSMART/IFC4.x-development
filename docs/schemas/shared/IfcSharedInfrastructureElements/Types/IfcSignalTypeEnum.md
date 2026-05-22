@@ -18,7 +18,7 @@ A signal type formed of an active device conveying information in both a visual 
 A virtual or fictitious signal. For example, in a railway signalling system, as opposed to the physical signal the non-physical signals do not send information to the train. Another example being fictitious signals on the signalman's display, needed to define the route exit towards open line where there is no physical signal. Finally, a virtual *ERTMS L2* signal is also a non-physical signal but can have a physical presence, i.e. a stop marker board along the track.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

@@ -39,8 +39,10 @@ The following checks can be done to validate the correct exchange:
 
 ### StartDistAlong
 Distance along the horizontal alignment as measured along the corresponding _IfcAlignmentHorizontal_.
-> NOTE 1 The distance along is measured from the start point of _IfcAlignmentHorizontal_.
-> NOTE 2 The unit of measurement is the global length unit, as set by _IfcContext_.UnitInContext
+
+> NOTE The distance along is measured from the start point of _IfcAlignmentHorizontal_.
+
+> NOTE The unit of measurement is the global length unit, as set by _IfcContext_.UnitInContext
 
 ### HorizontalLength
 Length measured as distance along the horizontal alignment of the segment.
@@ -57,9 +59,12 @@ End gradient of the segment. In the case of a PredefinedType='.CONSTANTGRADIENT.
 
 ### RadiusOfCurvature
 Radius of parabola or arc. Positive values imply a CCW direction whereas negative CW.
-> NOTE1 For _PredefinedType_ is CIRCULARARC. The radius of the basis circle for the arc.
-> NOTE2 For _PredefinedType_ is PARABOLICARC. Parabola constant (determining the “steepness” of the parabola). The parabola constant is provided by the “minimum parabola radius”, the true radius of a parabola at its vertical axis (the zero-gradient point of the parabola). The minimum radius is twice the focal length of the parabola (the distance between the focal point and the vertex).
-> NOTE3 For _PredefinedType_ that is not either CIRCULARARC or PARABOLICARC the value should be empty.
+
+> NOTE For _PredefinedType_ is CIRCULARARC. The radius of the basis circle for the arc.
+
+> NOTE For _PredefinedType_ is PARABOLICARC. Parabola constant (determining the “steepness” of the parabola). The parabola constant is provided by the “minimum parabola radius”, the true radius of a parabola at its vertical axis (the zero-gradient point of the parabola). The minimum radius is twice the focal length of the parabola (the distance between the focal point and the vertex).
+
+> NOTE For _PredefinedType_ that is not either CIRCULARARC or PARABOLICARC the value should be empty.
 
 ### PredefinedType
 Predefined type of the vertical alignmnent segment.

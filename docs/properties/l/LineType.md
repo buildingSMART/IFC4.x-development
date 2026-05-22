@@ -1,4 +1,4 @@
 LineType
 ========
 
-Mooring line type
+Mooring line type.

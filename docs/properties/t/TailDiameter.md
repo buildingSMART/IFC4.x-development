@@ -1,4 +1,4 @@
 TailDiameter
 ============
 
-Diameter of the tail
+Diameter of the tail.

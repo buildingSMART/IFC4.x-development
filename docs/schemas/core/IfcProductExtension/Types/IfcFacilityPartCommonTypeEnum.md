@@ -30,7 +30,7 @@ A longitudinal facility part that represents a termination segment of a longitud
 A vertical facility part comprising of the upper volume of a structure, usually forming the volume of operation or the receiving of live loading.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

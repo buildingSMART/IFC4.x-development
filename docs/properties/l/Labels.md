@@ -1,4 +1,4 @@
 Labels
 ======
 
-Table mapping values to labels
+Table mapping values to labels.

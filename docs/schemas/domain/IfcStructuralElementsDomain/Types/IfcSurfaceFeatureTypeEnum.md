@@ -26,7 +26,7 @@ surface markings defined by enclosed 2d shape with defined hatch fillings.
 2D lines painted on pavement surfaces to form boundaries, centrelines and edge markings.
 
 ### PAVEMENTSURFACEMARKING
-Painted or chemical lines or symbols on the surface of pavements (a road or paved area)
+Painted or chemical lines or symbols on the surface of pavements (a road or paved area).
 
 ### SYMBOLMARKING
 Surface markings that convey information in the form of symbols and shapes such as arrows, text or pictorial symbols.

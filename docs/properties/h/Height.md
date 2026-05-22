@@ -1,4 +1,4 @@
 Height
 ======
 
-Characteristic height
+Characteristic height.

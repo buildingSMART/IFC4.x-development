@@ -41,16 +41,16 @@ A spatial element that encompasses a floating dry dock and supporting quay side 
 
 ### NAVIGATIONALCHANNEL
 A natural navigable watercourse (such as a river) that needs to be managed or have improvements applied. This includes defined navigational areas in open seas and bays.
- NOTE definition in ISO 6707: open passage for conveying or containing water
+ NOTE definition in ISO 6707: open passage for conveying or containing water.
 
 ### BREAKWATER
 A longitudinal structure that protects a shore area, harbour, basin or estuary from waves.
  NOTE Definition in ISO 21650: structure protecting a shore area, harbour, anchorage and/or basin from waves
- NOTE Definition in ISO 6707: long structure in a body of water designed to protect a basin or the shore from waves
+ NOTE Definition in ISO 6707: long structure in a body of water designed to protect a basin or the shore from waves.
 
 ### DRYDOCK
 a Dry dock is an enclosed chamber (by gate) that allows the draining of water for the construction or repair of marine vessels.
- NOTE definition in ISO 6707: dock with gates from which water can be drained or pumped, leaving it dry to enable a vessel to be built or repaired
+ NOTE definition in ISO 6707: dock with gates from which water can be drained or pumped, leaving it dry to enable a vessel to be built or repaired.
 
 ### JETTY
 A berthing structure, that extends out into the sea usually perpendicular to the coastline, primarily for the transfer of liquid bulk materials.
@@ -70,7 +70,7 @@ A facility for the dynamic launch or recovery of a vessel utilizing an inclined 
 A subset of facilities that have the primary function of providing a navigable area of water.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

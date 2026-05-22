@@ -23,7 +23,7 @@ A device that senses or detects electrical conductance.
 A device that senses or detects contact, such as for detecting if a door is closed.
 
 ### FIRESENSOR
-A device that senses or detects fire
+A device that senses or detects fire.
 
 ### FLOWSENSOR
 A device that senses or detects flow in a fluid.
@@ -32,7 +32,7 @@ A device that senses or detects flow in a fluid.
 A device that senses or detects frost on a window.
 
 ### GASSENSOR
-A device that senses or detects gas concentration (other than CO2)
+A device that senses or detects gas concentration (other than CO2).
 
 ### HEATSENSOR
 A device that senses or detects heat.
@@ -41,7 +41,7 @@ A device that senses or detects heat.
 A device that senses or detects humidity.
 
 ### IDENTIFIERSENSOR
-A device that reads a tag, such as for gaining access to a door or elevator
+A device that reads a tag, such as for gaining access to a door or elevator.
 
 ### IONCONCENTRATIONSENSOR
 A device that senses or detects ion concentration, such as for water hardness.

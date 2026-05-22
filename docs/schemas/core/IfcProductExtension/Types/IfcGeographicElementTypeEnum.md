@@ -8,10 +8,10 @@ This enumeration defines the different predefined types of geographic elements t
 ## Items
 
 ### TERRAIN
-Terrain
+Terrain.
 
 ### SOIL_BORING_POINT
-Soil boring point
+Soil boring point.
 
 > IFC4.3.0.0 DEPRECATION Use IfcBorehole instead.
 
@@ -19,7 +19,7 @@ Soil boring point
 Plant life or plant cover (as of an area). For example trees, shrubs, herbs, grasses, ferns, and mosses.
 
 ### USERDEFINED
-User defined
+User defined.
 
 ### NOTDEFINED
-Not defined
+Not defined.

@@ -1,4 +1,4 @@
 IsSignalFrameMiniature
 ======================
 
-Indicate whether the signal frame is miniature (TRUE) or not (FALSE)
+Indicate whether the signal frame is miniature (TRUE) or not (FALSE).

@@ -1,4 +1,4 @@
 ApplicationMethod
 =================
 
-State the application method used... e.g. spray, extruded
+State the application method used... e.g. spray, extruded.

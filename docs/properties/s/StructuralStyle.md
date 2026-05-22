@@ -1,4 +1,4 @@
 StructuralStyle
 ===============
 
-Structural style of the element
+Structural style of the element.

@@ -4,22 +4,22 @@
 ## Items
 
 ### HELICALCONDUCTOR
-Helical Conductor
+Helical Conductor.
 
 ### CIRCULARCONDUCTOR
-Circular Conductor
+Circular Conductor.
 
 ### SECTORCONDUCTOR
-Sector Conductor
+Sector Conductor.
 
 ### RECTANGULARCONDUCTOR
-Rectangular Conductor
+Rectangular Conductor.
 
 ### OTHER
-required category not on scale
+required category not on scale.
 
 ### NOTKNOWN
-Value is unkown
+Value is unkown.
 
 ### UNSET
-Value has not been specified
+Value has not been specified.

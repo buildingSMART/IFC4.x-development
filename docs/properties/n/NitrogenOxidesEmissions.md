@@ -1,4 +1,4 @@
 NitrogenOxidesEmissions
 =======================
 
-Rate of emission of nitrogen oxides
+Rate of emission of nitrogen oxides.

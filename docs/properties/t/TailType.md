@@ -1,4 +1,4 @@
 TailType
 ========
 
-Mooring tail type
+Mooring tail type.

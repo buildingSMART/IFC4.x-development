@@ -33,7 +33,7 @@ A frog is an arrangement ensuring the intersection of two opposite running edges
 Note: definition from EN 13232-1-2004.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

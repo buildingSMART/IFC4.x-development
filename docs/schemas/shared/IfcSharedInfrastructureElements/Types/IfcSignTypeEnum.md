@@ -15,7 +15,7 @@ A sign type formed of a flat plate with some written or symbolic images on it.
 A sign type that provides information via a reflective mirror surface.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

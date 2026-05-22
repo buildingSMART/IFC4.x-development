@@ -1,4 +1,4 @@
 DurationMaintenanceLevel
 ========================
 
-Duration interval at which maintenance is performed
+Duration interval at which maintenance is performed.

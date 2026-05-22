@@ -17,4 +17,4 @@ Indicates that values between the defined values are to be found by linear inter
 Indicates that values between the defined values are to be found by linear interpolation of the Briggs' logarithm (base 10) of the values.
 
 ### NOTDEFINED
-No interpolation information is provided
+No interpolation information is provided.

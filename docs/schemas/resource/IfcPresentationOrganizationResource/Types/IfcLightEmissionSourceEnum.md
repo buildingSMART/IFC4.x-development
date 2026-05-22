@@ -8,34 +8,34 @@ _IfcLightEmissionSourceEnum_ defines the range of different types of light emitt
 ## Items
 
 ### COMPACTFLUORESCENT
-Compact fluorescent
+Compact fluorescent.
 
 ### FLUORESCENT
-Fluorescent
+Fluorescent.
 
 ### HIGHPRESSUREMERCURY
-High pressure mercury
+High pressure mercury.
 
 ### HIGHPRESSURESODIUM
-High pressure sodium
+High pressure sodium.
 
 ### LIGHTEMITTINGDIODE
-Light emitting diode
+Light emitting diode.
 
 ### LOWPRESSURESODIUM
-Low pressure sodium
+Low pressure sodium.
 
 ### LOWVOLTAGEHALOGEN
-Low voltage halogen
+Low voltage halogen.
 
 ### MAINVOLTAGEHALOGEN
-Main voltage halogen
+Main voltage halogen.
 
 ### METALHALIDE
-Metal halide
+Metal halide.
 
 ### TUNGSTENFILAMENT
-Tungsten filament
+Tungsten filament.
 
 ### NOTDEFINED
 Not defined.

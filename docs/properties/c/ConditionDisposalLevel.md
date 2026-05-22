@@ -1,4 +1,4 @@
 ConditionDisposalLevel
 ======================
 
-Condition that will trigger a disposal process
+Condition that will trigger a disposal process.

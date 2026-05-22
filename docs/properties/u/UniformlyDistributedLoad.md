@@ -1,4 +1,4 @@
 UniformlyDistributedLoad
 ========================
 
-Uniformly Distributed Load
+Uniformly Distributed Load.

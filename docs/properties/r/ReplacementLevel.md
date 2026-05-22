@@ -1,4 +1,4 @@
 ReplacementLevel
 ================
 
-Performance level at which replacement takes place
+Performance level at which replacement takes place.

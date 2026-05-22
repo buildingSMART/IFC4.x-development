@@ -1,4 +1,4 @@
 DurationDisposalLevel
 =====================
 
-Duration interval at which disposal is performed
+Duration interval at which disposal is performed.

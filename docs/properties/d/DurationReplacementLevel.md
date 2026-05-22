@@ -1,4 +1,4 @@
 DurationReplacementLevel
 ========================
 
-Duration interval at which replacement is performed
+Duration interval at which replacement is performed.

@@ -8,88 +8,88 @@ _IfcUnitEnum_ is an enumeration type for allowed unit types of _IfcNamedUnit_.
 ## Items
 
 ### ABSORBEDDOSEUNIT
-Absorbed dose unit
+Absorbed dose unit.
 
 ### AMOUNTOFSUBSTANCEUNIT
-Amount of substance unit
+Amount of substance unit.
 
 ### AREAUNIT
-Area unit
+Area unit.
 
 ### DOSEEQUIVALENTUNIT
-Dose equivalent unit
+Dose equivalent unit.
 
 ### ELECTRICCAPACITANCEUNIT
-Electric capacitance unit
+Electric capacitance unit.
 
 ### ELECTRICCHARGEUNIT
-Electric charge unit
+Electric charge unit.
 
 ### ELECTRICCONDUCTANCEUNIT
-Electric conductance unit
+Electric conductance unit.
 
 ### ELECTRICCURRENTUNIT
-Electric current unit
+Electric current unit.
 
 ### ELECTRICRESISTANCEUNIT
-Electric resistance unit
+Electric resistance unit.
 
 ### ELECTRICVOLTAGEUNIT
-Electric voltage unit
+Electric voltage unit.
 
 ### ENERGYUNIT
-Energy unit
+Energy unit.
 
 ### FORCEUNIT
-Force unit
+Force unit.
 
 ### FREQUENCYUNIT
-Frequency unit
+Frequency unit.
 
 ### ILLUMINANCEUNIT
-Illuminance unit
+Illuminance unit.
 
 ### INDUCTANCEUNIT
-Inductance unit
+Inductance unit.
 
 ### LENGTHUNIT
-Length unit
+Length unit.
 
 ### LUMINOUSFLUXUNIT
-Luminous flux unit
+Luminous flux unit.
 
 ### LUMINOUSINTENSITYUNIT
-Luminous intensity unit
+Luminous intensity unit.
 
 ### MAGNETICFLUXDENSITYUNIT
-Magnetic flux density unit
+Magnetic flux density unit.
 
 ### MAGNETICFLUXUNIT
-Magnetic flux unit
+Magnetic flux unit.
 
 ### MASSUNIT
-Mass unit
+Mass unit.
 
 ### PLANEANGLEUNIT
-Plane angle unit
+Plane angle unit.
 
 ### POWERUNIT
-Power unit
+Power unit.
 
 ### PRESSUREUNIT
-Pressure unit
+Pressure unit.
 
 ### RADIOACTIVITYUNIT
-Radio activity unit
+Radio activity unit.
 
 ### SOLIDANGLEUNIT
-Solid angle unit
+Solid angle unit.
 
 ### THERMODYNAMICTEMPERATUREUNIT
-Thermodynamic temperature unit
+Thermodynamic temperature unit.
 
 ### TIMEUNIT
-Time unit
+Time unit.
 
 ### VOLUMEUNIT
 Volume unit.

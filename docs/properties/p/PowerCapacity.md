@@ -1,4 +1,4 @@
 PowerCapacity
 =============
 
-Power capacity of the equipment
+Power capacity of the equipment.

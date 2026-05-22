@@ -15,7 +15,7 @@ A region spatial part that forms a sub division of a facility for the purpose of
 A vertical spatial part that represents the elevation of the low waterline, multiple low waterlines can be used to represent the different low tide types.
 
 ### CORE
-A lateral spatial part that sub divides the core structure of a facility such as a breakwater or embankment
+A lateral spatial part that sub divides the core structure of a facility such as a breakwater or embankment.
 
 ### WATERFIELD
 A region or lateral facility part that covers the water field of a waterside facility such as a quay.
@@ -30,7 +30,7 @@ A longitudinal spatial part of a waterway or port facility that provides facilit
 A vertical spatial part that represents the elevation working surface of the quay for the placement of quay furniture and plant.
 
 ### CHAMBER
-A longitudinal spatial part of a waterway or port facility that forms the impounded chamber of a facility, such as a ship lock, dry dock or hydrolift
+A longitudinal spatial part of a waterway or port facility that forms the impounded chamber of a facility, such as a ship lock, dry dock or hydrolift.
 
 ### STORAGEAREA
 A region spatial part that forms a sub division of a facility for the purpose of storing cargo. For example container stacks, dry bulk storage yards, material storage yards.
@@ -78,7 +78,7 @@ A region spatial part that covers a managed navigational area that is maintained
 A vertical spatial part that represents the elevation of the high waterline, multiple high waterlines can be used to represent the different high tide types.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

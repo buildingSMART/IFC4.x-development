@@ -1,4 +1,4 @@
 PaybackPeriod
 =============
 
-Payback period of investment
+Payback period of investment.

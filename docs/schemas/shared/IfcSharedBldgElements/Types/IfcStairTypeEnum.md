@@ -35,7 +35,7 @@ A stair consisting of one flight with one half winder, which makes a 180° turn.
 ![](../../../../figures/ifcstairtypeenum-fig04.gif)
 
 ### HALF_TURN_STAIR
-A stair making a 180° turn, consisting of two straight flights connected
+A stair making a 180° turn, consisting of two straight flights connected.
 
 ![](../../../../figures/ifcstairtypeenum-fig08.gif)
 
@@ -85,7 +85,7 @@ A curved stair consisting of two curved flights without turns but with one landi
 ![](../../../../figures/ifcstairtypeenum-fig12.gif)
 
 ### LADDER
-a piece of equipment consisting of a series of bars or steps between two upright elements used for climbing up or down something
+a piece of equipment consisting of a series of bars or steps between two upright elements used for climbing up or down something.
 
 ### USERDEFINED
 Free form stair (user defined operation type).

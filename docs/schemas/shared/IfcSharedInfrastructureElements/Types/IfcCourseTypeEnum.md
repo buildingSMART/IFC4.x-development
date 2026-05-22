@@ -26,7 +26,7 @@ A layer within a pavement structure that forms a paved area or road.
 Layer with the primary task to provide protection against erosion and scour.
 
 ### USERDEFINED
-User-defined type
+User-defined type.
 
 ### NOTDEFINED
 Undefined type.

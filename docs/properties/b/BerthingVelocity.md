@@ -1,4 +1,4 @@
 BerthingVelocity
 ================
 
-Velocity of the vessel as it berths
+Velocity of the vessel as it berths.

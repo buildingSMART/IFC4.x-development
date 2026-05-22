@@ -1,4 +1,4 @@
 LockChamberLevels
 =================
 
-Number of steps (chambers) in a lock line
+Number of steps (chambers) in a lock line.

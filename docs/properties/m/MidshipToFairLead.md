@@ -1,4 +1,4 @@
 MidshipToFairLead
 =================
 
-Distance from the vessel midship to the fairlead for the line
+Distance from the vessel midship to the fairlead for the line.

@@ -1,4 +1,4 @@
 DashedLine
 ==========
 
-State if the line is dashed or continuous
+State if the line is dashed or continuous.

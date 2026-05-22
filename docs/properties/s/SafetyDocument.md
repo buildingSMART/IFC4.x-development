@@ -1,4 +1,4 @@
 SafetyDocument
 ==============
 
-Manufacturer's safety document
+Manufacturer's safety document.

@@ -1,4 +1,4 @@
 zzPerformanceUnit
 =================
 
-Unit that quantifies the Target Performance value
+Unit that quantifies the Target Performance value.

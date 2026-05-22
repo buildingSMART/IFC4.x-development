@@ -1,4 +1,4 @@
 RadioactiveWastePerUnit
 =======================
 
-Quantity of radioactive waste generated
+Quantity of radioactive waste generated.

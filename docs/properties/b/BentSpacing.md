@@ -1,4 +1,4 @@
 BentSpacing
 ===========
 
-Bent (upright) spacing
+Bent (upright) spacing.

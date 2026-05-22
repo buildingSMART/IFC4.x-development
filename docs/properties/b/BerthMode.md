@@ -1,4 +1,4 @@
 BerthMode
 =========
 
-Orientation of vessel as it approaches berth
+Orientation of vessel as it approaches berth.

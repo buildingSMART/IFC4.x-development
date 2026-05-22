@@ -1,4 +1,4 @@
 AboveDeckProjectedWindEnd
 =========================
 
-End on projected windage area above the main deck
+End on projected windage area above the main deck.

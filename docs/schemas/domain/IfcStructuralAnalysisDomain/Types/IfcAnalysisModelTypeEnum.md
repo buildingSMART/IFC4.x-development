@@ -8,16 +8,16 @@ This type definition is used to distinguish between different types of structura
 ## Items
 
 ### IN_PLANE_LOADING_2D
-In plan loading 2D
+In plan loading 2D.
 
 ### OUT_PLANE_LOADING_2D
-Out plane loading 2D
+Out plane loading 2D.
 
 ### LOADING_3D
-Loading 3D
+Loading 3D.
 
 ### USERDEFINED
-User defined
+User defined.
 
 ### NOTDEFINED
-Not defined
+Not defined.

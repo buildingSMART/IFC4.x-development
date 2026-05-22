@@ -1,4 +1,4 @@
 VehicleAvailability
 ===================
 
-Vehicle or Plant availability
+Vehicle or Plant availability.

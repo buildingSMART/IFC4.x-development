@@ -1,4 +1,4 @@
 VelocityFactorReaction
 ======================
 
-Deviation in reaction due to strain rate
+Deviation in reaction due to strain rate.

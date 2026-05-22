@@ -1,4 +1,4 @@
 DeviceType
 ==========
 
-Mooring device type
+Mooring device type.

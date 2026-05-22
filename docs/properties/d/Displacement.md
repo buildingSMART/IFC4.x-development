@@ -1,4 +1,4 @@
 Displacement
 ============
 
-Weight of water displaced by the vessel
+Weight of water displaced by the vessel.
