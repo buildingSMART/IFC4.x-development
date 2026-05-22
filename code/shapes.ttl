@@ -263,6 +263,69 @@ ex:InferEnumLiteralTypes a sh:NodeShape ;
     ]
     .
 
+ex:InferPredefinedTypeAttributeTypes a sh:NodeShape ;
+    sh:targetClass ex:ownedAttribute ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            CONSTRUCT {
+                ?this a ex:PredefinedTypeAttribute .
+                ?enum a ex:PredefinedTypeEnumeration .
+                ?owner a ex:PredefinedTypeAttributeOwner .
+            }
+            WHERE {
+                ?this ex:name "PredefinedType" ;
+                      ex:containedIn ?owner ;
+                      ex:type ?enum .
+
+                ?enum a ex:Enumeration .
+            }
+        """ ;
+    ]
+    .
+
+ex:InferPredefinedTypeEnumerationLiteralTypes a sh:NodeShape ;
+    sh:targetClass ex:PredefinedTypeEnumeration ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            CONSTRUCT {
+                ?literal a ex:PredefinedTypeEnumerationLiteral .
+            }
+            WHERE {
+                ?literal ex:containedIn ?this ;
+                         ex:name ?literalName .
+            }
+        """ ;
+    ]
+    .
+
+ex:InferPredefinedTypeSpecializationClassTypes a sh:NodeShape ;
+    sh:targetClass ex:Class ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            CONSTRUCT {
+                ?this a ex:PredefinedTypeSpecializationClass .
+                ?this ex:predefinedTypeEnumeration ?enum .
+                ?this ex:predefinedTypeLiteralName ?literalName .
+            }
+            WHERE {
+                ?this ex:name ?className .
+                ?enum a ex:PredefinedTypeEnumeration ;
+                      ex:name ?enumName .
+
+                FILTER (STRSTARTS(STR(?className), CONCAT(STR(?enumName), "."))) .
+                BIND(STRAFTER(STR(?className), CONCAT(STR(?enumName), ".")) AS ?literalName)
+                FILTER (STRLEN(?literalName) > 0) .
+            }
+        """ ;
+    ]
+    .
+
 ex:InferDataTypeTypes a sh:NodeShape ;
     sh:targetClass ex:DataType ;
     sh:rule [
@@ -575,6 +638,62 @@ ex:hasIfcTypeObjectSubtype a sh:SPARQLConstraint ;
     """
     .
 
+ex:hasPredefinedTypeSpecializationClass a sh:SPARQLConstraint ;
+    sh:message "PredefinedType enumeration literal '{?expectedName}' has no specialization class under '{?ownerName}'" ;
+    sh:select """
+        PREFIX ex:  <http://example.org/ifc43Shapes/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        
+        SELECT ?this ?expectedName ?ownerName
+        WHERE {
+            ?this a ex:PredefinedTypeEnumerationLiteral ;
+                  ex:name ?literalName ;
+                  ex:containedIn ?enum .
+
+            ?enum ex:name ?enumName .
+            ?attr a ex:PredefinedTypeAttribute ;
+                  ex:type ?enum ;
+                  ex:containedIn ?owner .
+            ?owner ex:name ?ownerName .
+
+            BIND(CONCAT(STR(?enumName), ".", STR(?literalName)) AS ?expectedName)
+
+            FILTER NOT EXISTS {
+                ?class a ex:Class ;
+                       ex:name ?expectedName ;
+                       rdfs:subClassOf+ ?owner .
+            }
+        }
+    """
+    .
+
+ex:hasPredefinedTypeEnumerationLiteral a sh:SPARQLConstraint ;
+    sh:message "PredefinedType specialization class '{?className}' has no matching PredefinedType enumeration literal in a supertype" ;
+    sh:select """
+        PREFIX ex:  <http://example.org/ifc43Shapes/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        
+        SELECT ?this ?className
+        WHERE {
+            ?this a ex:PredefinedTypeSpecializationClass ;
+                  ex:name ?className ;
+                  ex:predefinedTypeEnumeration ?enum ;
+                  ex:predefinedTypeLiteralName ?literalName .
+
+            FILTER NOT EXISTS {
+                ?this rdfs:subClassOf+ ?owner .
+
+                ?attr a ex:PredefinedTypeAttribute ;
+                      ex:containedIn ?owner ;
+                      ex:type ?enum .
+
+                ?literal ex:containedIn ?enum ;
+                         ex:name ?literalName .
+            }
+        }
+    """
+    .
+
 ex:Fail a sh:SPARQLConstraint ;
     sh:message "Generic failing constraint" ;
     sh:select """
@@ -645,4 +764,14 @@ ex:TypeObjectHasObjectTypingEntry a sh:NodeShape ;
 ex:ObjectTypingEntryHasTypeObject a sh:NodeShape ;
     sh:targetClass ex:GeneralUsageRow;
     sh:sparql ex:hasIfcTypeObjectSubtype
+    .
+
+ex:PredefinedTypeLiteralHasSpecializationClass a sh:NodeShape ;
+    sh:targetClass ex:PredefinedTypeEnumerationLiteral;
+    sh:sparql ex:hasPredefinedTypeSpecializationClass
+    .
+
+ex:PredefinedTypeSpecializationClassHasLiteral a sh:NodeShape ;
+    sh:targetClass ex:PredefinedTypeSpecializationClass;
+    sh:sparql ex:hasPredefinedTypeEnumerationLiteral
     .
