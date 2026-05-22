@@ -197,9 +197,14 @@ class markdown_mixin:
         for img in soup.findAll("img"):
             if img["src"].endswith(".svg"):
                 entity, hash = img["src"].split("/")[-1].split(".")[0].split("_")
-                svg = BeautifulSoup(open(os.path.join("svgs", entity + "_" + hash + ".dot.svg")), as_xml=True)
-                img.replaceWith(svg.find("svg"))
-                img = svg
+                try:
+                    svg = BeautifulSoup(open(os.path.join("svgs", entity + "_" + hash + ".dot.svg")), as_xml=True)
+                    img.replaceWith(svg.find("svg"))
+                    img = svg
+                except FileNotFoundError:
+                    # There are now also .svg figure references from markdown,
+                    # these do not need to be embedded for link interactivity.
+                    pass
             elif img["src"].startswith("http"):
                 pass
             else:
