@@ -1,5 +1,6 @@
 import os
 import re
+import csv
 import glob
 import platform
 import tempfile
@@ -26,6 +27,7 @@ SCHEMA_FILE = os.path.join(tempfile.gettempdir(), "schema.ttl")
 INFERRED_SCHEMA_FILE = os.path.join(tempfile.gettempdir(), "schema-inferred.ttl")
 SHAPES_FILE = relative_path("shapes.ttl")
 MAX_INFERENCE_ITERATIONS = 20
+base_path = relative_path("..")
 
 def process_document(g, fn, subj, cls):
     g.add((subj, RDF.type, cls))
@@ -58,9 +60,55 @@ def process_document(g, fn, subj, cls):
     contents = parse_document(fn=fn)
     if contents:
         write(subj, contents)
+
+def process_general_usage_csv(g, fn):
+    template = os.path.splitext(os.path.basename(fn))[0]
+
+    with open(fn, newline="", encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f)
+        if reader.fieldnames is None:
+            return
+
+        fieldnames = [field.strip() for field in reader.fieldnames]
+        reader.fieldnames = fieldnames
+
+        for row_number, row in enumerate(reader, start=2):
+            values = {
+                field: (row.get(field) or "").strip()
+                for field in fieldnames
+            }
+            if not any(values.values()):
+                continue
+
+            subj = fqdn(f"{template}_row_{row_number}")
+            g.add((subj, RDF.type, fqdn("GeneralUsageRow")))
+            g.add((subj, fqdn("Template"), rdflib.Literal(template)))
+
+            for field, value in values.items():
+                g.add((subj, fqdn(field), rdflib.Literal(value)))
+
+def schema_source_files():
+    yield relative_path("../schemas/ifc4x3_add2.uml")
+    yield __file__
+    for pattern in (
+        "docs/properties/**/*.md",
+        "docs/schemas/**/*.md",
+        "schemas/mvd/GeneralUsage/*.csv",
+    ):
+        yield from glob.glob(os.path.join(base_path, pattern), recursive=True)
+
+def schema_cache_is_current():
+    if not os.path.exists(SCHEMA_FILE):
+        return False
+
+    schema_mtime = os.path.getmtime(SCHEMA_FILE)
+    return all(
+        os.path.getmtime(source_file) <= schema_mtime
+        for source_file in schema_source_files()
+    )
     
 
-if not os.path.exists(SCHEMA_FILE):
+if not schema_cache_is_current():
 
     d = xmi.doc(relative_path("../schemas/ifc4x3_add2.uml"))
     
@@ -110,13 +158,14 @@ if not os.path.exists(SCHEMA_FILE):
             if pid := nd.parent.attributes().get('xmi:id'):
                 g.add((s, fqdn("containedIn"), fqdn(pid)))
     
-    base_path = relative_path("..")
-    
     for i,fn in enumerate(glob.glob(os.path.join(base_path, "docs/properties/**/*.md"), recursive=True)):
         process_document(g, fn, fqdn(f"doc_{i}"), fqdn("MarkdownPropertyDefinition"))
 
     for i,fn in enumerate(glob.glob(os.path.join(base_path, "docs/schemas/**/*.md"), recursive=True), start=i):
         process_document(g, fn, fqdn(f"doc_{i}"), fqdn("MarkdownResourceDefinition"))
+
+    for fn in glob.glob(os.path.join(base_path, "schemas/mvd/GeneralUsage/*.csv")):
+        process_general_usage_csv(g, fn)
 
     g.serialize(SCHEMA_FILE, format="turtle", encoding="utf-8")
 
