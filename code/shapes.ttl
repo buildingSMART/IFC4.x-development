@@ -212,6 +212,23 @@ ex:InferLeafObjectTypes a sh:NodeShape ;
     ]
     .
 
+ex:InferTypeObjectTypes a sh:NodeShape ;
+    sh:targetClass ex:Entity ;
+    sh:rule [
+        a sh:SPARQLRule ;
+        sh:construct """
+            PREFIX ex:  <http://example.org/ifc43Shapes/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            CONSTRUCT {
+                ?this a ex:SubtypeOfIfcTypeObject .
+            }
+            WHERE {
+                ?this rdfs:subClassOf*/ex:name "IfcTypeObject" .
+            }
+        """ ;
+    ]
+    .
+
 ex:InferEnumerationTypes a sh:NodeShape ;
     sh:targetClass ex:Enumeration ;
     sh:rule [
@@ -523,6 +540,41 @@ ex:hasOptionalPredefinedType a sh:SPARQLConstraint ;
     """
     .
 
+ex:hasObjectTypingRow a sh:SPARQLConstraint ;
+    sh:message "IfcTypeObject subtype '{?entityName}' has no ObjectTyping RelatingType entry" ;
+    sh:select """
+        PREFIX ex:  <http://example.org/ifc43Shapes/>
+        
+        SELECT ?this ?entityName
+        WHERE {
+            ?this ex:name ?entityName .
+
+            FILTER NOT EXISTS {
+                ?row ex:Template "ObjectTyping" ;
+                     ex:RelatingType ?entityName .
+            }
+        }
+    """
+    .
+
+ex:hasIfcTypeObjectSubtype a sh:SPARQLConstraint ;
+    sh:message "ObjectTyping RelatingType '{?relatingType}' does not identify an IfcTypeObject subtype" ;
+    sh:select """
+        PREFIX ex:  <http://example.org/ifc43Shapes/>
+        
+        SELECT ?this ?relatingType
+        WHERE {
+            ?this ex:Template "ObjectTyping" ;
+                  ex:RelatingType ?relatingType .
+
+            FILTER NOT EXISTS {
+                ?type a ex:SubtypeOfIfcTypeObject ;
+                      ex:name ?relatingType .
+            }
+        }
+    """
+    .
+
 ex:Fail a sh:SPARQLConstraint ;
     sh:message "Generic failing constraint" ;
     sh:select """
@@ -583,4 +635,14 @@ ex:LeafEntityIsNotAbstract a sh:NodeShape ;
 ex:TypeObjectPredefinedTypeMandatory a sh:NodeShape ;
     sh:targetClass ex:SubtypeOfIfcTypeObjectWithPredefinedTypeAttribute;
     sh:sparql ex:hasMandatoryPredefinedType
+    .
+
+ex:TypeObjectHasObjectTypingEntry a sh:NodeShape ;
+    sh:targetClass ex:SubtypeOfIfcTypeObject;
+    sh:sparql ex:hasObjectTypingRow
+    .
+
+ex:ObjectTypingEntryHasTypeObject a sh:NodeShape ;
+    sh:targetClass ex:GeneralUsageRow;
+    sh:sparql ex:hasIfcTypeObjectSubtype
     .
