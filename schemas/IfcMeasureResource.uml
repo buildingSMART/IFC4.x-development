@@ -431,7 +431,7 @@ OR
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDerivedUnit_Name_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDerivedUnit_Name_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnit_Dimensions" name="Dimensions" isDerived="true" type="cl_IfcDimensionalExponents">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDerivedUnit_Dimensions" name="Dimensions" type="cl_IfcDimensionalExponents" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDerivedUnit_Dimensions_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDerivedUnit_Dimensions_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcDerivedUnit_Dimensions_expr" name="Dimensions">
@@ -1272,7 +1272,7 @@ OR
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSIUnit_Name_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSIUnit_Name_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSIUnit_Dimensions" name="Dimensions" isDerived="true" type="cl_IfcDimensionalExponents">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcSIUnit_Dimensions" name="Dimensions" type="cl_IfcDimensionalExponents" isDerived="true">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcSIUnit_Dimensions_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcSIUnit_Dimensions_upper" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="at_IfcSIUnit_Dimensions_expr" name="Dimensions">

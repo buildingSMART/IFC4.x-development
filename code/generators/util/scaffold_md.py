@@ -133,6 +133,7 @@ def load_short_def(spec_dir, name, kind):
         "pset": "PropertySets",
         "qto": "QuantitySets",
         "enum": "Types",
+        "type": "Types",
     }.get(kind)
     if not subdir:
         return None
@@ -691,6 +692,21 @@ def scaffold_entity(name, supertype, attrs, rules, applicable_concepts=None,
     return "\n".join(lines) + "\n"
 
 
+def scaffold_datatype(name, short_def=None):
+    lines = [f"# {name}", ""]
+    if short_def:
+        first, _, rest = short_def.partition("\n\n")
+        lines.append(first.strip())
+        lines.append("<!-- end of short definition -->")
+        if rest.strip():
+            lines.append("")
+            lines.append(rest.rstrip())
+    else:
+        lines.append(f"<!-- FILL IN: short definition of {name}. -->")
+        lines.append("<!-- end of short definition -->")
+    return "\n".join(lines) + "\n"
+
+
 def scaffold_enum(name, literals, short_def=None, literal_docs=None):
     literal_docs = literal_docs or {}
     lines = [f"# {name}", ""]
@@ -738,7 +754,7 @@ def find_target_path(uml_path, docs_root, ent_name, kind):
     if layer is None:
         layer = "shared"  # fallback
 
-    subdir = {"entity": "Entities", "enum": "Types", "penum": "PropertyEnumerations", "pset": "PropertySets", "qto": "QuantitySets"}[kind]
+    subdir = {"entity": "Entities", "enum": "Types", "type": "Types", "penum": "PropertyEnumerations", "pset": "PropertySets", "qto": "QuantitySets"}[kind]
     return docs_root / "schemas" / layer / schema / subdir / f"{ent_name}.md"
 
 
@@ -780,7 +796,11 @@ def main():
             continue
 
         kind_xmi = el.getAttribute("xmi:type")
-        if kind_xmi == "uml:Enumeration":
+        if kind_xmi == "uml:DataType":
+            kind = "type"
+            short_def = load_short_def(args.ifc_spec_dir, nm, kind)
+            content = scaffold_datatype(nm, short_def=short_def)
+        elif kind_xmi == "uml:Enumeration":
             kind = "penum" if nm.startswith("PEnum_") else "enum"
             short_def = load_short_def(args.ifc_spec_dir, nm, kind)
             literal_docs = (
