@@ -36,4 +36,4 @@ User-defined constraints for the property.
 User-defined approvals for the property.
 
 ### PartOfMaterialOrProfileProperties
-Reference to the IfcMaterialProperties by which the IfcProperty is referenced.
+Reference to the IfcMaterialProperties or IfcProfileProperties by which the IfcProperty is referenced.
