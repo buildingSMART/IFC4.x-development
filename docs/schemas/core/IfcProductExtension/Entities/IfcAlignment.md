@@ -136,3 +136,7 @@ Alignments may be assigned to groups using _IfcRelAssignsToGroup_, where _IfcGro
 
 Alignments can nest _IfcReferent_'s, such as stations or mileage points. These can be used as semantic entities holding information about locations along the alignment curve. This is done using the _IfcRelNests_ relationship.
 
+## Formal Propositions
+
+### AlignmentRepresentation
+Only IfcShapeRepresentation.RepresentationIdentifier='Axis' and IfcShapeRepresentation.RepresentationType='Curve2D' or 'Curve3D' are allowed. If both 'Curve2D' and 'Curve3D' are defined, then the horizontal alignment 2D curve shall be the basis of the 3D curve.
