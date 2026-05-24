@@ -57,6 +57,9 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPavementTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcReinforcedSoilTypeEnum" name="IfcReinforcedSoilTypeEnum">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_A9WNgFdgEfGj2up58Qo5_g">
+        <body>DEPRECATED</body>
+      </ownedComment>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcReinforcedSoilTypeEnum_DYNAMICALLYCOMPACTED" name="DYNAMICALLYCOMPACTED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcReinforcedSoilTypeEnum_GROUTED" name="GROUTED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcReinforcedSoilTypeEnum_REPLACED" name="REPLACED"/>
@@ -180,6 +183,9 @@
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoslice_gen_IfcGeotechnicalAssembly" general="cl_IfcGeotechnicalAssembly"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcReinforcedSoil" name="IfcReinforcedSoil">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_LdhLMFdhEfGj2up58Qo5_g">
+        <body>DEPRECATED</body>
+      </ownedComment>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcReinforcedSoil_gen_IfcEarthworksElement" general="cl_IfcEarthworksElement"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcReinforcedSoil_PredefinedType" name="PredefinedType" type="en_IfcReinforcedSoilTypeEnum">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcReinforcedSoil_PredefinedType_lower"/>
@@ -1271,5 +1277,131 @@
       <supplier xmi:type="uml:Class" href="IfcStructuralElementsDomain.uml#cl_IfcSurfaceFeature"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_VolumetricStratumBaseQuantities_IfcGeotechnicalStratum" client="cl_Qto_VolumetricStratumBaseQuantities" supplier="cl_IfcGeotechnicalStratum"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGroundReinforcementElement" name="IfcGroundReinforcementElement">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElement_gen_IfcBuiltElement">
+        <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuiltElement"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGroundReinforcementElement_PredefinedType" name="PredefinedType" type="en_IfcGroundReinforcementElementTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGroundReinforcementElement_PredefinedType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGroundReinforcementElement_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGroundReinforcementElementType" name="IfcGroundReinforcementElementType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementType_gen_IfcBuiltElementType">
+        <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuiltElementType"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGroundReinforcementElementType_PredefinedType" name="PredefinedType" type="en_IfcGroundReinforcementElementTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGroundReinforcementElementType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGroundReinforcementElementType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGround" name="IfcImprovedGround">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGround_gen_IfcEarthworksElement" general="cl_IfcEarthworksElement"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcImprovedGround_PredefinedType" name="PredefinedType" type="en_IfcImprovedGroundTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcImprovedGround_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcImprovedGround_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcGroundReinforcementElementTypeEnum" name="IfcGroundReinforcementElementTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGroundReinforcementElementTypeEnum_BAR" name="BAR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGroundReinforcementElementTypeEnum_BOLT" name="BOLT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGroundReinforcementElementTypeEnum_FABRIC" name="FABRIC"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGroundReinforcementElementTypeEnum_PILE" name="PILE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGroundReinforcementElementTypeEnum_PLATE" name="PLATE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGroundReinforcementElementTypeEnum_TENDON" name="TENDON"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGroundReinforcementElementTypeEnum_TUBE" name="TUBE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGroundReinforcementElementTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGroundReinforcementElementTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_BAR" name="IfcGroundReinforcementElementTypeEnum.BAR">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_BAR_gen_IfcGroundReinforcementElement" general="cl_IfcGroundReinforcementElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_BAR_gen_IfcGroundReinforcementElementType" general="cl_IfcGroundReinforcementElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_BOLT" name="IfcGroundReinforcementElementTypeEnum.BOLT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_BOLT_gen_IfcGroundReinforcementElement" general="cl_IfcGroundReinforcementElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_BOLT_gen_IfcGroundReinforcementElementType" general="cl_IfcGroundReinforcementElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_FABRIC" name="IfcGroundReinforcementElementTypeEnum.FABRIC">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_FABRIC_gen_IfcGroundReinforcementElement" general="cl_IfcGroundReinforcementElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_FABRIC_gen_IfcGroundReinforcementElementType" general="cl_IfcGroundReinforcementElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_PILE" name="IfcGroundReinforcementElementTypeEnum.PILE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_PILE_gen_IfcGroundReinforcementElement" general="cl_IfcGroundReinforcementElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_PILE_gen_IfcGroundReinforcementElementType" general="cl_IfcGroundReinforcementElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_PLATE" name="IfcGroundReinforcementElementTypeEnum.PLATE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_PLATE_gen_IfcGroundReinforcementElement" general="cl_IfcGroundReinforcementElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_PLATE_gen_IfcGroundReinforcementElementType" general="cl_IfcGroundReinforcementElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_TENDON" name="IfcGroundReinforcementElementTypeEnum.TENDON">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_TENDON_gen_IfcGroundReinforcementElement" general="cl_IfcGroundReinforcementElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_TENDON_gen_IfcGroundReinforcementElementType" general="cl_IfcGroundReinforcementElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_TUBE" name="IfcGroundReinforcementElementTypeEnum.TUBE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_TUBE_gen_IfcGroundReinforcementElement" general="cl_IfcGroundReinforcementElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_TUBE_gen_IfcGroundReinforcementElementType" general="cl_IfcGroundReinforcementElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_USERDEFINED" name="IfcGroundReinforcementElementTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_USERDEFINED_gen_IfcGroundReinforcementElement" general="cl_IfcGroundReinforcementElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_USERDEFINED_gen_IfcGroundReinforcementElementType" general="cl_IfcGroundReinforcementElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_NOTDEFINED" name="IfcGroundReinforcementElementTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_NOTDEFINED_gen_IfcGroundReinforcementElement" general="cl_IfcGroundReinforcementElement"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGroundReinforcementElementTypeEnum_NOTDEFINED_gen_IfcGroundReinforcementElementType" general="cl_IfcGroundReinforcementElementType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcImprovedGroundTypeEnum" name="IfcImprovedGroundTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcImprovedGroundTypeEnum_DEEPMIXED" name="DEEPMIXED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcImprovedGroundTypeEnum_DEWATERED" name="DEWATERED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcImprovedGroundTypeEnum_DYNAMICALLYCOMPACTED" name="DYNAMICALLYCOMPACTED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcImprovedGroundTypeEnum_FROZEN" name="FROZEN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcImprovedGroundTypeEnum_INJECTIONGROUTED" name="INJECTIONGROUTED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcImprovedGroundTypeEnum_JETGROUTED" name="JETGROUTED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcImprovedGroundTypeEnum_LATERALLYDRAINED" name="LATERALLYDRAINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcImprovedGroundTypeEnum_REPLACED" name="REPLACED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcImprovedGroundTypeEnum_ROLLERCOMPACTED" name="ROLLERCOMPACTED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcImprovedGroundTypeEnum_SURCHARGEPRELOADED" name="SURCHARGEPRELOADED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcImprovedGroundTypeEnum_VERTICALLYDRAINED" name="VERTICALLYDRAINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcImprovedGroundTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcImprovedGroundTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_DEEPMIXED" name="IfcImprovedGroundTypeEnum.DEEPMIXED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_DEEPMIXED_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_DEWATERED" name="IfcImprovedGroundTypeEnum.DEWATERED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_DEWATERED_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_DYNAMICALLYCOMPACTED" name="IfcImprovedGroundTypeEnum.DYNAMICALLYCOMPACTED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_DYNAMICALLYCOMPACTED_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_FROZEN" name="IfcImprovedGroundTypeEnum.FROZEN">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_FROZEN_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_INJECTIONGROUTED" name="IfcImprovedGroundTypeEnum.INJECTIONGROUTED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_INJECTIONGROUTED_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_JETGROUTED" name="IfcImprovedGroundTypeEnum.JETGROUTED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_JETGROUTED_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_LATERALLYDRAINED" name="IfcImprovedGroundTypeEnum.LATERALLYDRAINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_LATERALLYDRAINED_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_REPLACED" name="IfcImprovedGroundTypeEnum.REPLACED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_REPLACED_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_ROLLERCOMPACTED" name="IfcImprovedGroundTypeEnum.ROLLERCOMPACTED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_ROLLERCOMPACTED_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_SURCHARGEPRELOADED" name="IfcImprovedGroundTypeEnum.SURCHARGEPRELOADED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_SURCHARGEPRELOADED_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_VERTICALLYDRAINED" name="IfcImprovedGroundTypeEnum.VERTICALLYDRAINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_VERTICALLYDRAINED_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_USERDEFINED" name="IfcImprovedGroundTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_USERDEFINED_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_NOTDEFINED" name="IfcImprovedGroundTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_NOTDEFINED_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
