@@ -543,10 +543,19 @@ END_RULE;
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcMapConversion" name="IfcMapConversion">
-      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcMapConversion_TargetCRSOnlyProjected" name="TargetCRSOnlyProjected">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcMapConversion_TargetCRSOnlyProjected" name="TargetCRSOnlyProjected">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcMapConversion_TargetCRSProjected" name="TargetCRSProjected">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcMapConversion_TargetCRSProjected" name="TargetCRSProjected">
           <language>EXPRESS_WHERE</language>
           <body>'IFC4X3_ADD2.IFCPROJECTEDCRS' IN TYPEOF(SELF\IfcCoordinateOperation.TargetCRS)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcMapConversion_ValidXAxis" name="ValidXAxis">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcMapConversion_ValidXAxis" name="ValidXAxis">
+          <language>EXPRESS_WHERE</language>
+          <body>(NOT EXISTS(XAxisAbscissa) AND NOT EXISTS(XAxisOrdinate)) OR
+(NOT EXISTS(XAxisAbscissa) AND XAxisOrdinate &lt;&gt; 0.0) OR
+(NOT EXISTS(XAxisOrdinate) AND XAxisAbscissa &lt;&gt; 0.0) OR
+(EXISTS(XAxisAbscissa) AND EXISTS(XAxisOrdinate) AND NOT ((XAxisAbscissa = 0.0) AND (XAxisOrdinate = 0.0)))</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcMapConversion_gen_IfcCoordinateOperation" general="cl_IfcCoordinateOperation"/>
