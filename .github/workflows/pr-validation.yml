@@ -411,11 +411,9 @@ jobs:
             exit 1
           fi
 
-      # ----------------------------------------------------------------
-      # PR summary comment -- per-check pass/fail + lists of new artifacts.
-      # Posted as github-actions[bot] on the PR conversation.
-      # ----------------------------------------------------------------
-      - name: Summary comment on PR
+      # Build the body here; pr-validation-comment.yml posts it
+      # (fork PRs can't call issues.createComment from this workflow).
+      - name: Build PR summary comment body
         if: github.event_name == 'pull_request' && always()
         uses: actions/github-script@v7
         env:
@@ -432,7 +430,6 @@ jobs:
           UML_FILES:          ${{ steps.diff.outputs.uml_files }}
           MD_FILES:           ${{ steps.diff.outputs.md_files }}
         with:
-          github-token: ${{ secrets.PR_COMMENT_TOKEN || secrets.GITHUB_TOKEN }}
           script: |
             const fs = require('fs');
             const icon = (o) => ({ success: '✓', failure: '✗', skipped: '⊘', cancelled: '⊘' }[o] || '?');
@@ -523,12 +520,17 @@ jobs:
               `<sub>See [workflow run](${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}) for failure details.</sub>`,
             ].join('\n');
 
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              body
-            });
+            fs.mkdirSync('/tmp/pr-comment', { recursive: true });
+            fs.writeFileSync('/tmp/pr-comment/body.md', body);
+
+      - name: Upload PR comment body artifact
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-comment-body
+          path: /tmp/pr-comment/body.md
+          if-no-files-found: error
+          retention-days: 1
 
       # ----------------------------------------------------------------
       - name: Upload generated artifacts (debug)
