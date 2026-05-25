@@ -1,0 +1,90 @@
+# Posts the PR-validation summary comment with a writable token (fork PRs
+# can't post from pr-validation.yml). MUST NOT checkout PR head or run any
+# PR-supplied code -- only downloads the pre-rendered body artifact.
+
+name: PR Validation Comment
+
+on:
+  pull_request_target:
+    branches:
+      - ifc4.4-main
+      - ifc4.3-main
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'schemas/**'
+      - 'docs/**'
+      - 'reference_schemas/psd/**'
+      - 'code/**'
+      - '.github/workflows/pr-validation.yml'
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+  actions: read
+
+concurrency:
+  group: pr-validation-comment-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Wait for validation run
+        id: wait
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const headSha = context.payload.pull_request.head.sha;
+            const workflowName = 'PR Validation (schema generators)';
+            const timeoutMs = 25 * 60 * 1000;
+            const pollIntervalMs = 30 * 1000;
+            const startedAt = Date.now();
+
+            core.info(`Waiting for "${workflowName}" run on ${headSha}`);
+
+            while (Date.now() - startedAt < timeoutMs) {
+              const { data } = await github.rest.actions.listWorkflowRunsForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                head_sha: headSha,
+                event: 'pull_request',
+                per_page: 30,
+              });
+              const run = data.workflow_runs.find(r => r.name === workflowName);
+              if (run) {
+                core.info(`Run ${run.id}: status=${run.status} conclusion=${run.conclusion}`);
+                if (run.status === 'completed') {
+                  core.setOutput('run_id', String(run.id));
+                  return;
+                }
+              }
+              await new Promise(r => setTimeout(r, pollIntervalMs));
+            }
+
+            core.setFailed(
+              `No completed "${workflowName}" run for ${headSha} within ${timeoutMs/60000} min`
+            );
+
+      - name: Download PR comment body
+        uses: actions/download-artifact@v4
+        with:
+          name: pr-comment-body
+          path: ./body
+          run-id: ${{ steps.wait.outputs.run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Post summary comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('./body/body.md', 'utf8');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body,
+            });
