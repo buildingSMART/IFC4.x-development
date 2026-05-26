@@ -63,6 +63,8 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_SHADING" name="SHADING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TRACKCIRCUIT" name="TRACKCIRCUIT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TRANSPORT" name="TRANSPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT" name="TUNNEL_PRESUPPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TUNNEL_SUPPORT" name="TUNNEL_SUPPORT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
@@ -80,6 +82,8 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_GRID" name="GRID"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_MAST" name="MAST"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_PIER" name="PIER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" name="PRESUPPORTFACE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT" name="PRESUPPORTVAULT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_PYLON" name="PYLON"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_RAIL_MECHANICAL_EQUIPMENT_ASSEMBLY" name="RAIL_MECHANICAL_EQUIPMENT_ASSEMBLY"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_REINFORCEMENT_UNIT" name="REINFORCEMENT_UNIT"/>
@@ -1198,6 +1202,12 @@ AND
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuiltSystemTypeEnum_TRANSPORT" name="IfcBuiltSystemTypeEnum.TRANSPORT">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuiltSystemTypeEnum_TRANSPORT_gen_IfcBuiltSystem" general="cl_IfcBuiltSystem"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT" name="IfcBuiltSystemTypeEnum.TUNNEL_PRESUPPORT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT_gen_IfcBuiltSystem" general="cl_IfcBuiltSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_SUPPORT" name="IfcBuiltSystemTypeEnum.TUNNEL_SUPPORT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_SUPPORT_gen_IfcBuiltSystem" general="cl_IfcBuiltSystem"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuiltSystemTypeEnum_USERDEFINED" name="IfcBuiltSystemTypeEnum.USERDEFINED">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuiltSystemTypeEnum_USERDEFINED_gen_IfcBuiltSystem" general="cl_IfcBuiltSystem"/>
     </packagedElement>
@@ -1255,6 +1265,14 @@ AND
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_PIER" name="IfcElementAssemblyTypeEnum.PIER">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PIER_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PIER_gen_IfcElementAssemblyType" general="cl_IfcElementAssemblyType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" name="IfcElementAssemblyTypeEnum.PRESUPPORTFACE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE_gen_IfcElementAssemblyType" general="cl_IfcElementAssemblyType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT" name="IfcElementAssemblyTypeEnum.PRESUPPORTVAULT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT_gen_IfcElementAssemblyType" general="cl_IfcElementAssemblyType"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_PYLON" name="IfcElementAssemblyTypeEnum.PYLON">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PYLON_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
@@ -3843,5 +3861,8 @@ AND
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ProjectionElementBaseQuantities_IfcProjectionElement" client="cl_Qto_ProjectionElementBaseQuantities" supplier="cl_IfcProjectionElement"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SiteBaseQuantities_IfcSite" client="cl_Qto_SiteBaseQuantities" supplier="cl_IfcSite"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SpaceBaseQuantities_IfcSpace" client="cl_Qto_SpaceBaseQuantities" supplier="cl_IfcSpace"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLinearZone" name="IfcLinearZone" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLinearZone_gen_IfcLinearElement" general="cl_IfcLinearElement"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
