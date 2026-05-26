@@ -1691,7 +1691,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GroundReinforcmentElementTypeBolt_IfcGroundReinforcementElementTypeEnum_BOLT" client="cl_Pset_GroundReinforcmentElementTypeBolt" supplier="cl_IfcGroundReinforcementElementTypeEnum_BOLT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ImprovedGroundCommon" name="Pset_ImprovedGroundCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ImprovedGroundCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundCommon_AvgDepthToTreatment" name="AvgDepthToTreatment">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
@@ -1722,7 +1722,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImprovedGroundCommon_IfcImprovedGround" client="cl_Pset_ImprovedGroundCommon" supplier="cl_IfcImprovedGround"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ImprovedGroundTypeDewatered" name="Pset_ImprovedGroundTypeDewatered">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ImprovedGroundTypeDewatered_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeDewatered_AverageBoreholeDepth" name="AverageBoreholeDepth">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
@@ -1770,7 +1770,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImprovedGroundTypeDewatered_IfcImprovedGroundTypeEnum_DEWATERED" client="cl_Pset_ImprovedGroundTypeDewatered" supplier="cl_IfcImprovedGroundTypeEnum_DEWATERED"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ImprovedGroundTypeInjectionGrouted" name="Pset_ImprovedGroundTypeInjectionGrouted">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ImprovedGroundTypeInjectionGrouted_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_AsBuiltInjectionDuration" name="AsBuiltInjectionDuration">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTimeMeasure"/>
@@ -1880,7 +1880,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImprovedGroundTypeInjectionGrouted_IfcImprovedGroundTypeEnum_INJECTIONGROUTED" client="cl_Pset_ImprovedGroundTypeInjectionGrouted" supplier="cl_IfcImprovedGroundTypeEnum_INJECTIONGROUTED"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ImprovedGroundTypeJetGrouted" name="Pset_ImprovedGroundTypeJetGrouted">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ImprovedGroundTypeJetGrouted_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_AirPressure" name="AirPressure">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
