@@ -1403,5 +1403,593 @@
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcImprovedGroundTypeEnum_NOTDEFINED" name="IfcImprovedGroundTypeEnum.NOTDEFINED">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcImprovedGroundTypeEnum_NOTDEFINED_gen_IfcImprovedGround" general="cl_IfcImprovedGround"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GroundReinforcementElementTypeBar" name="Pset_GroundReinforcementElementTypeBar">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GroundReinforcementElementTypeBar_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBar_BarSectionType" name="BarSectionType" type="en_PEnum_BarSectionType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBar_BarSectionType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBar_BarSectionType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBar_IsGrouted" name="IsGrouted">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBar_IsGrouted_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBar_IsGrouted_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBar_IsSelfDrilling" name="IsSelfDrilling">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBar_IsSelfDrilling_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBar_IsSelfDrilling_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBar_NominalDiameter" name="NominalDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBar_NominalDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBar_NominalDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBar_NominalLength" name="NominalLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBar_NominalLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBar_NominalLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBar_UserDefinedBarSectionType" name="UserDefinedBarSectionType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBar_UserDefinedBarSectionType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBar_UserDefinedBarSectionType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_BarSectionType" name="PEnum_BarSectionType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_SMOOTH" name="SMOOTH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_RIBBED" name="RIBBED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_HOLLOW" name="HOLLOW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GroundReinforcementElementTypeBar_IfcGroundReinforcementElementTypeEnum_BAR" client="cl_Pset_GroundReinforcementElementTypeBar" supplier="cl_IfcGroundReinforcementElementTypeEnum_BAR"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GroundReinforcementElementTypePile" name="Pset_GroundReinforcementElementTypePile">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GroundReinforcementElementTypePile_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypePile_DistanceFromSurface" name="DistanceFromSurface">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypePile_DistanceFromSurface_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypePile_DistanceFromSurface_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypePile_GroutBodyDiameter" name="GroutBodyDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypePile_GroutBodyDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypePile_GroutBodyDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypePile_LengthEmbedmentInRock" name="LengthEmbedmentInRock">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypePile_LengthEmbedmentInRock_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypePile_LengthEmbedmentInRock_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypePile_LengthGroutBody" name="LengthGroutBody">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypePile_LengthGroutBody_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypePile_LengthGroutBody_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GroundReinforcementElementTypePile_IfcGroundReinforcementElementTypeEnum_PILE" client="cl_Pset_GroundReinforcementElementTypePile" supplier="cl_IfcGroundReinforcementElementTypeEnum_PILE"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GroundReinforcementElementTypePlate" name="Pset_GroundReinforcementElementTypePlate">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GroundReinforcementElementTypePlate_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypePlate_NominalLength" name="NominalLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypePlate_NominalLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypePlate_NominalLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypePlate_NominalThickness" name="NominalThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypePlate_NominalThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypePlate_NominalThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypePlate_NominalWidth" name="NominalWidth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypePlate_NominalWidth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypePlate_NominalWidth_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GroundReinforcementElementTypePlate_IfcGroundReinforcementElementTypeEnum_PLATE" client="cl_Pset_GroundReinforcementElementTypePlate" supplier="cl_IfcGroundReinforcementElementTypeEnum_PLATE"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GroundReinforcementElementTypeTendon" name="Pset_GroundReinforcementElementTypeTendon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GroundReinforcementElementTypeTendon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_AnchorageSlip" name="AnchorageSlip">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_AnchorageSlip_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_AnchorageSlip_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_CrossSectionArea" name="CrossSectionArea">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcAreaMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_CrossSectionArea_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_CrossSectionArea_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_FixedAnchorLength" name="FixedAnchorLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_FixedAnchorLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_FixedAnchorLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_FreeAnchorLength" name="FreeAnchorLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_FreeAnchorLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_FreeAnchorLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_FrictionCoefficient" name="FrictionCoefficient">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_FrictionCoefficient_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_FrictionCoefficient_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_NominalDiameter" name="NominalDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_NominalDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_NominalDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_PreStress" name="PreStress">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_PreStress_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_PreStress_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_SheathDiameter" name="SheathDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_SheathDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_SheathDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_TensionForce" name="TensionForce">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_TensionForce_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeTendon_TensionForce_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GroundReinforcementElementTypeTendon_IfcGroundReinforcementElementTypeEnum_TENDON" client="cl_Pset_GroundReinforcementElementTypeTendon" supplier="cl_IfcGroundReinforcementElementTypeEnum_TENDON"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GroundReinforcementElementTypeTube" name="Pset_GroundReinforcementElementTypeTube">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GroundReinforcementElementTypeTube_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeTube_NominalLength" name="NominalLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeTube_NominalLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeTube_NominalLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeTube_OuterDiameter" name="OuterDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeTube_OuterDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeTube_OuterDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeTube_TubeThickness" name="TubeThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeTube_TubeThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeTube_TubeThickness_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GroundReinforcementElementTypeTube_IfcGroundReinforcementElementTypeEnum_TUBE" client="cl_Pset_GroundReinforcementElementTypeTube" supplier="cl_IfcGroundReinforcementElementTypeEnum_TUBE"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GroundReinforcmentElementTypeBolt" name="Pset_GroundReinforcmentElementTypeBolt">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GroundReinforcmentElementTypeBolt_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltCrossSection" name="BoltCrossSection" type="en_PEnum_BoltCrossSection">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltCrossSection_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltCrossSection_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltDiameter" name="BoltDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltHoleDiameter" name="BoltHoleDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltHoleDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltHoleDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltLength" name="BoltLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltType" name="BoltType" type="en_PEnum_BoltType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_CorrosionTreatment" name="CorrosionTreatment">
+        <type xmi:type="uml:Enumeration" href="IfcSharedComponentElements.uml#en_PEnum_ElementComponentCorrosionTreatment"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_CorrosionTreatment_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_CorrosionTreatment_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_Deformability" name="Deformability">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_Deformability_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_Deformability_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_GroutingType" name="GroutingType" type="en_PEnum_GroutingType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_GroutingType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_GroutingType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_HoleLength" name="HoleLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_HoleLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_HoleLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_LockingForce" name="LockingForce">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_LockingForce_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_LockingForce_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_LongitudinalInclination" name="LongitudinalInclination">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_LongitudinalInclination_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_LongitudinalInclination_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_MassPerLength" name="MassPerLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMassPerLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_MassPerLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_MassPerLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_MechanicalTension" name="MechanicalTension">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_MechanicalTension_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_MechanicalTension_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_PlateType" name="PlateType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_PlateType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_PlateType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_RadialInclination" name="RadialInclination">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_RadialInclination_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_RadialInclination_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedBoltCrossSection" name="UserDefinedBoltCrossSection">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedBoltCrossSection_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedBoltCrossSection_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedBoltType" name="UserDefinedBoltType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedBoltType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedBoltType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedGroutingType" name="UserDefinedGroutingType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedGroutingType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedGroutingType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_BoltCrossSection" name="PEnum_BoltCrossSection">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_SOLIDBAR" name="SOLIDBAR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_HOLLOWBAR" name="HOLLOWBAR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_RIBBED" name="RIBBED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_UNSET" name="UNSET"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_USERDEFINED" name="USERDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_BoltType" name="PEnum_BoltType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_GROUTED" name="GROUTED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_ANCHORED" name="ANCHORED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_ANCHOREDWITHEXPANSIONCASING" name="ANCHOREDWITHEXPANSIONCASING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_COMBINATION" name="COMBINATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_FRICTION" name="FRICTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_FITTING" name="FITTING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_CABLE" name="CABLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_WIRE" name="WIRE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_SELFDRILLING" name="SELFDRILLING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_GLASSFIBREREINFORCEDPLASTICS" name="GLASSFIBREREINFORCEDPLASTICS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_UNSET" name="UNSET"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_USERDEFINED" name="USERDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_GroutingType" name="PEnum_GroutingType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_STDGROUTING_CEMENT" name="STDGROUTING_CEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_MICROFINE_CEMENT" name="MICROFINE_CEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_ULTRAFINE_CEMENT" name="ULTRAFINE_CEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_CHEMICAL_COMPONENT" name="CHEMICAL_COMPONENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GroundReinforcmentElementTypeBolt_IfcGroundReinforcementElementTypeEnum_BOLT" client="cl_Pset_GroundReinforcmentElementTypeBolt" supplier="cl_IfcGroundReinforcementElementTypeEnum_BOLT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ImprovedGroundCommon" name="Pset_ImprovedGroundCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ImprovedGroundCommon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundCommon_AvgDepthToTreatment" name="AvgDepthToTreatment">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundCommon_AvgDepthToTreatment_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundCommon_AvgDepthToTreatment_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundCommon_AvgTreatmentDepth" name="AvgTreatmentDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundCommon_AvgTreatmentDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundCommon_AvgTreatmentDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundCommon_AvgTreatmentSpacing" name="AvgTreatmentSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundCommon_AvgTreatmentSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundCommon_AvgTreatmentSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundCommon_AvgTreatmentThickness" name="AvgTreatmentThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundCommon_AvgTreatmentThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundCommon_AvgTreatmentThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundCommon_TreatmentHoleCount" name="TreatmentHoleCount">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundCommon_TreatmentHoleCount_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundCommon_TreatmentHoleCount_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImprovedGroundCommon_IfcImprovedGround" client="cl_Pset_ImprovedGroundCommon" supplier="cl_IfcImprovedGround"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ImprovedGroundTypeDewatered" name="Pset_ImprovedGroundTypeDewatered">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ImprovedGroundTypeDewatered_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeDewatered_AverageBoreholeDepth" name="AverageBoreholeDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeDewatered_AverageBoreholeDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeDewatered_AverageBoreholeDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeDewatered_BoreholeCount" name="BoreholeCount">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeDewatered_BoreholeCount_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeDewatered_BoreholeCount_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeDewatered_BoreholeSpacing" name="BoreholeSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeDewatered_BoreholeSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeDewatered_BoreholeSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeDewatered_DewateringMethod" name="DewateringMethod" type="en_PEnum_DewateringMethod">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeDewatered_DewateringMethod_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeDewatered_DewateringMethod_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeDewatered_StaticDischargeHead" name="StaticDischargeHead">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeDewatered_StaticDischargeHead_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeDewatered_StaticDischargeHead_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeDewatered_StaticSuctionLift" name="StaticSuctionLift">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeDewatered_StaticSuctionLift_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeDewatered_StaticSuctionLift_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeDewatered_VolumetricFlowRate" name="VolumetricFlowRate">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcVolumetricFlowRateMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeDewatered_VolumetricFlowRate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeDewatered_VolumetricFlowRate_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_DewateringMethod" name="PEnum_DewateringMethod">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_SUMPPUMP" name="SUMPPUMP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_WELLPOINT" name="WELLPOINT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_DEEPWELL" name="DEEPWELL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_VACUUMWELLPOINTS" name="VACUUMWELLPOINTS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_EDUCTORWELLS" name="EDUCTORWELLS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_USERDEFINED" name="USERDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImprovedGroundTypeDewatered_IfcImprovedGroundTypeEnum_DEWATERED" client="cl_Pset_ImprovedGroundTypeDewatered" supplier="cl_IfcImprovedGroundTypeEnum_DEWATERED"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ImprovedGroundTypeInjectionGrouted" name="Pset_ImprovedGroundTypeInjectionGrouted">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ImprovedGroundTypeInjectionGrouted_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_AsBuiltInjectionDuration" name="AsBuiltInjectionDuration">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcTimeMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_AsBuiltInjectionDuration_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_AsBuiltInjectionDuration_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeAngle" name="DrillholeAngle">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositivePlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeAngle_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeAngle_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeCount" name="DrillholeCount">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveInteger"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeCount_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeCount_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeDiameter" name="DrillholeDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeDrifting" name="DrillholeDrifting">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeDrifting_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeDrifting_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeLength" name="DrillholeLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_DrillholeLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InjectionDistributionEquipment" name="InjectionDistributionEquipment" type="en_PEnum_InjectionDistributionEquipment">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InjectionDistributionEquipment_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InjectionDistributionEquipment_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InjectionPackerType" name="InjectionPackerType" type="en_PEnum_InjectionPackerType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InjectionPackerType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InjectionPackerType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InjectionPhase" name="InjectionPhase" type="en_PEnum_InjectionPhase">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InjectionPhase_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InjectionPhase_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InjectionPressure" name="InjectionPressure">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InjectionPressure_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InjectionPressure_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InsertedDeviceDiameter" name="InsertedDeviceDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InsertedDeviceDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_InsertedDeviceDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_LongitudinalOverlap" name="LongitudinalOverlap">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_LongitudinalOverlap_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_LongitudinalOverlap_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_ManchetteSpacing" name="ManchetteSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_ManchetteSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_ManchetteSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_RadialSpacing" name="RadialSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_RadialSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_RadialSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_StopCriteria" name="StopCriteria">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_StopCriteria_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_StopCriteria_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_TAMTubesSpacing" name="TAMTubesSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_TAMTubesSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_TAMTubesSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_WorkflowProcess" name="WorkflowProcess">
+        <type xmi:type="uml:Class" href="IfcExternalReferenceResource.uml#cl_IfcDocumentReference"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_WorkflowProcess_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeInjectionGrouted_WorkflowProcess_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_InjectionDistributionEquipment" name="PEnum_InjectionDistributionEquipment">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_INJECTIONHOSE" name="INJECTIONHOSE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_INJECTIONTUBE" name="INJECTIONTUBE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_PETROLEUMPIPE" name="PETROLEUMPIPE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_TUBESAMANCHETTE" name="TUBESAMANCHETTE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_PILLOW" name="PILLOW"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_BULLFLEX" name="BULLFLEX"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_InjectionPackerType" name="PEnum_InjectionPackerType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPackerType_SINGLE" name="SINGLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPackerType_DOUBLE" name="DOUBLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPackerType_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPackerType_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_InjectionPhase" name="PEnum_InjectionPhase">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPhase_PRE_INJECTION" name="PRE_INJECTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPhase_POST_INJECTION" name="POST_INJECTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPhase_CONCURRENT_INJECTION" name="CONCURRENT_INJECTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPhase_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImprovedGroundTypeInjectionGrouted_IfcImprovedGroundTypeEnum_INJECTIONGROUTED" client="cl_Pset_ImprovedGroundTypeInjectionGrouted" supplier="cl_IfcImprovedGroundTypeEnum_INJECTIONGROUTED"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ImprovedGroundTypeJetGrouted" name="Pset_ImprovedGroundTypeJetGrouted">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ImprovedGroundTypeJetGrouted_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_AirPressure" name="AirPressure">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_AirPressure_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_AirPressure_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_DistanceFromSurface" name="DistanceFromSurface">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_DistanceFromSurface_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_DistanceFromSurface_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_GroundPressure" name="GroundPressure">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_GroundPressure_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_GroundPressure_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_GroutBodyDiameter" name="GroutBodyDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_GroutBodyDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_GroutBodyDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_GroutBodyLength" name="GroutBodyLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_GroutBodyLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_GroutBodyLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_JetGroutingMethod" name="JetGroutingMethod" type="en_PEnum_JetGroutingMethod">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_JetGroutingMethod_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_JetGroutingMethod_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_LengthEmbedmentInRock" name="LengthEmbedmentInRock">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_LengthEmbedmentInRock_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_LengthEmbedmentInRock_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_RotationalSpeed" name="RotationalSpeed">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRotationalFrequencyMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_RotationalSpeed_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_RotationalSpeed_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_VolumetricFlowRate" name="VolumetricFlowRate">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcVolumetricFlowRateMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_VolumetricFlowRate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_VolumetricFlowRate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_WaterPressure" name="WaterPressure">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_WaterPressure_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ImprovedGroundTypeJetGrouted_WaterPressure_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_JetGroutingMethod" name="PEnum_JetGroutingMethod">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_JetGroutingMethod_SINGLEPHASE" name="SINGLEPHASE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_JetGroutingMethod_TWOPHASE" name="TWOPHASE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_JetGroutingMethod_THREEPHASE" name="THREEPHASE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImprovedGroundTypeJetGrouted_IfcImprovedGroundTypeEnum_JETGROUTED" client="cl_Pset_ImprovedGroundTypeJetGrouted" supplier="cl_IfcImprovedGroundTypeEnum_JETGROUTED"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ImprovedGroundBaseQuantities" name="Qto_ImprovedGroundBaseQuantities">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ImprovedGroundBaseQuantities_comment_0">
+        <body>QTO_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ImprovedGroundBaseQuantities_LengthOfAreaTreated" name="LengthOfAreaTreated">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ImprovedGroundBaseQuantities_LengthOfAreaTreated_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ImprovedGroundBaseQuantities_LengthOfAreaTreated_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ImprovedGroundBaseQuantities_VolumeOfTreatedGround" name="VolumeOfTreatedGround">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ImprovedGroundBaseQuantities_VolumeOfTreatedGround_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ImprovedGroundBaseQuantities_VolumeOfTreatedGround_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ImprovedGroundBaseQuantities_WidthOfAreaTreated" name="WidthOfAreaTreated">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcAreaMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ImprovedGroundBaseQuantities_WidthOfAreaTreated_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ImprovedGroundBaseQuantities_WidthOfAreaTreated_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ImprovedGroundBaseQuantities_IfcImprovedGround" client="cl_Qto_ImprovedGroundBaseQuantities" supplier="cl_IfcImprovedGround"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ImprovedGroundInjectionGroutedQuantities" name="Qto_ImprovedGroundInjectionGroutedQuantities">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ImprovedGroundInjectionGroutedQuantities_comment_0">
+        <body>QTO_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ImprovedGroundInjectionGroutedQuantities_QuantityDryMass" name="QuantityDryMass">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityWeight"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ImprovedGroundInjectionGroutedQuantities_QuantityDryMass_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ImprovedGroundInjectionGroutedQuantities_QuantityDryMass_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ImprovedGroundInjectionGroutedQuantities_QuantityGroutedMaterial" name="QuantityGroutedMaterial">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ImprovedGroundInjectionGroutedQuantities_QuantityGroutedMaterial_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ImprovedGroundInjectionGroutedQuantities_QuantityGroutedMaterial_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ImprovedGroundInjectionGroutedQuantities_IfcImprovedGroundTypeEnum_INJECTIONGROUTED" client="cl_Qto_ImprovedGroundInjectionGroutedQuantities" supplier="cl_IfcImprovedGroundTypeEnum_INJECTIONGROUTED"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ImprovedGroundJetGroutedQuantities" name="Qto_ImprovedGroundJetGroutedQuantities">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ImprovedGroundJetGroutedQuantities_comment_0">
+        <body>QTO_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ImprovedGroundJetGroutedQuantities_VolumeFlushedMaterial" name="VolumeFlushedMaterial">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ImprovedGroundJetGroutedQuantities_VolumeFlushedMaterial_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ImprovedGroundJetGroutedQuantities_VolumeFlushedMaterial_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ImprovedGroundJetGroutedQuantities_VolumeInjectedMaterial" name="VolumeInjectedMaterial">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ImprovedGroundJetGroutedQuantities_VolumeInjectedMaterial_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ImprovedGroundJetGroutedQuantities_VolumeInjectedMaterial_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ImprovedGroundJetGroutedQuantities_IfcImprovedGroundTypeEnum_JETGROUTED" client="cl_Qto_ImprovedGroundJetGroutedQuantities" supplier="cl_IfcImprovedGroundTypeEnum_JETGROUTED"/>
   </packagedElement>
 </uml:Model>
