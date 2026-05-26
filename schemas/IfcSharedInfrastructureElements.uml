@@ -1764,6 +1764,9 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DiscontinuitySpacing_MEDIUM" name="MEDIUM"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DiscontinuitySpacing_WIDE" name="WIDE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DiscontinuitySpacing_VERY_WIDE" name="VERY_WIDE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DiscontinuitySpacing_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DiscontinuitySpacing_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DiscontinuitySpacing_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_Weathering" name="PEnum_Weathering">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_Weathering_FRESH" name="FRESH"/>

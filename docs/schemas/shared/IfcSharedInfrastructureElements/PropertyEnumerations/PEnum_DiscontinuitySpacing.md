@@ -20,3 +20,12 @@ Less than 20 mm.
 
 ### VERY_WIDE
 Greater than 2000 mm.
+
+### OTHER
+The type is user-defined.
+
+### NOTKNOWN
+Value is unknown.
+
+### UNSET
+Value has not been specified.
