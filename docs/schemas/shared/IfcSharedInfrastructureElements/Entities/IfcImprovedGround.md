@@ -1,6 +1,7 @@
 # IfcImprovedGround
 
 Ground stabilized by some mechanical or chemical method.
+<!-- end of short definition -->
 
 ## Attributes
 
