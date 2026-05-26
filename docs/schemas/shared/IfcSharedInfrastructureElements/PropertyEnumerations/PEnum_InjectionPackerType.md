@@ -9,8 +9,9 @@ Single seal to restrict the flow of grout in one direction, volume after packer 
 ### DOUBLE
 Double seal to restrict the flow of grout in two directions, volume between packers is grouted.
 
-### USERDEFINED
-User Defined
+### OTHER
+The value falls outside of the predefined values of this enumeration.
 
-### NOTDEFINED
-Notdefined
+### NOTKNOWN
+Value is unkown.
+

@@ -3,11 +3,11 @@
 
 ## Items
 
-### SINGLEPHASE
+### SINGLE_PHASE
 Jet grouting using single fluid (generally cement and water).
 
-### TWOPHASE
+### TWO_PHASE
 Jet grouting using two fluids (generally grout and water).
 
-### THREEPHASE
+### THREE_PHASE
 Jet grouting using three fluids (generally grout, water and air).

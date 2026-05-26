@@ -3,7 +3,7 @@
 
 ## Items
 
-### STDGROUTING_CEMENT
+### STANDARD_GROUTING_CEMENT
 Standard grouting cement.
 
 ### MICROFINE_CEMENT
@@ -12,11 +12,12 @@ Standard grouting cement.
 
 ### CHEMICAL_COMPONENT
 
-### USERDEFINED
-User Defined
+### OTHER
+The value falls outside of the predefined values of this enumeration.
 
 ### NOTKNOWN
-Value is unknown.
+Value is unkown.
 
 ### UNSET
 Value has not been specified.
+

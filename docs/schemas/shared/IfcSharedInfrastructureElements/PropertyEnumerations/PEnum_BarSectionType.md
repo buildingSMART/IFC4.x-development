@@ -12,8 +12,9 @@ A ribbed bar section.
 ### HOLLOW
 A hollow bar section.
 
-### USERDEFINED
-User Defined
+### OTHER
+The value falls outside of the predefined values of this enumeration.
 
-### NOTDEFINED
-Notdefined
+### NOTKNOWN
+Value is unkown.
+

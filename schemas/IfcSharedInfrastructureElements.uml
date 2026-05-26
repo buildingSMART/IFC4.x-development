@@ -1441,8 +1441,9 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_SMOOTH" name="SMOOTH"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_RIBBED" name="RIBBED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_HOLLOW" name="HOLLOW"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_USERDEFINED" name="USERDEFINED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BarSectionType_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GroundReinforcementElementTypeBar_IfcGroundReinforcementElementTypeEnum_BAR" client="cl_Pset_GroundReinforcementElementTypeBar" supplier="cl_IfcGroundReinforcementElementTypeEnum_BAR"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GroundReinforcementElementTypePile" name="Pset_GroundReinforcementElementTypePile">
@@ -1660,31 +1661,31 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_SOLIDBAR" name="SOLIDBAR"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_HOLLOWBAR" name="HOLLOWBAR"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_RIBBED" name="RIBBED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_UNSET" name="UNSET"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltCrossSection_USERDEFINED" name="USERDEFINED"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_BoltType" name="PEnum_BoltType">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_GROUTED" name="GROUTED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_ANCHORED" name="ANCHORED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_ANCHOREDWITHEXPANSIONCASING" name="ANCHOREDWITHEXPANSIONCASING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_ANCHORED_WITH_EXPANSION_CASING" name="ANCHORED_WITH_EXPANSION_CASING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_COMBINATION" name="COMBINATION"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_FRICTION" name="FRICTION"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_FITTING" name="FITTING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_CABLE" name="CABLE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_WIRE" name="WIRE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_SELFDRILLING" name="SELFDRILLING"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_GLASSFIBREREINFORCEDPLASTICS" name="GLASSFIBREREINFORCEDPLASTICS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_GLASS_FIBRE_REINFORCED_PLASTICS" name="GLASS_FIBRE_REINFORCED_PLASTICS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_UNSET" name="UNSET"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_BoltType_USERDEFINED" name="USERDEFINED"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_GroutingType" name="PEnum_GroutingType">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_STDGROUTING_CEMENT" name="STDGROUTING_CEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_STANDARD_GROUTING_CEMENT" name="STANDARD_GROUTING_CEMENT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_MICROFINE_CEMENT" name="MICROFINE_CEMENT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_ULTRAFINE_CEMENT" name="ULTRAFINE_CEMENT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_CHEMICAL_COMPONENT" name="CHEMICAL_COMPONENT"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_UNSET" name="UNSET"/>
     </packagedElement>
@@ -1760,12 +1761,14 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_DewateringMethod" name="PEnum_DewateringMethod">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_SUMPPUMP" name="SUMPPUMP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_SUMP_PUMP" name="SUMP_PUMP"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_WELLPOINT" name="WELLPOINT"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_DEEPWELL" name="DEEPWELL"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_VACUUMWELLPOINTS" name="VACUUMWELLPOINTS"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_EDUCTORWELLS" name="EDUCTORWELLS"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_DEEP_WELL" name="DEEP_WELL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_VACUUM_WELLPOINTS" name="VACUUM_WELLPOINTS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_EDUCTOR_WELLS" name="EDUCTOR_WELLS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DewateringMethod_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImprovedGroundTypeDewatered_IfcImprovedGroundTypeEnum_DEWATERED" client="cl_Pset_ImprovedGroundTypeDewatered" supplier="cl_IfcImprovedGroundTypeEnum_DEWATERED"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ImprovedGroundTypeInjectionGrouted" name="Pset_ImprovedGroundTypeInjectionGrouted">
@@ -1856,25 +1859,29 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_InjectionDistributionEquipment" name="PEnum_InjectionDistributionEquipment">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_INJECTIONHOSE" name="INJECTIONHOSE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_INJECTIONTUBE" name="INJECTIONTUBE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_PETROLEUMPIPE" name="PETROLEUMPIPE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_TUBESAMANCHETTE" name="TUBESAMANCHETTE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_INJECTION_HOSE" name="INJECTION_HOSE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_INJECTION_TUBE" name="INJECTION_TUBE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_PETROLEUM_PIPE" name="PETROLEUM_PIPE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_TUBE_MANCHETTE" name="TUBE_MANCHETTE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_PILLOW" name="PILLOW"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_BULLFLEX" name="BULLFLEX"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_USERDEFINED" name="USERDEFINED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionDistributionEquipment_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_InjectionPackerType" name="PEnum_InjectionPackerType">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPackerType_SINGLE" name="SINGLE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPackerType_DOUBLE" name="DOUBLE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPackerType_USERDEFINED" name="USERDEFINED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPackerType_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPackerType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPackerType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPackerType_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_InjectionPhase" name="PEnum_InjectionPhase">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPhase_PRE_INJECTION" name="PRE_INJECTION"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPhase_POST_INJECTION" name="POST_INJECTION"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPhase_CONCURRENT_INJECTION" name="CONCURRENT_INJECTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPhase_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPhase_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_InjectionPhase_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImprovedGroundTypeInjectionGrouted_IfcImprovedGroundTypeEnum_INJECTIONGROUTED" client="cl_Pset_ImprovedGroundTypeInjectionGrouted" supplier="cl_IfcImprovedGroundTypeEnum_INJECTIONGROUTED"/>
@@ -1933,9 +1940,12 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_JetGroutingMethod" name="PEnum_JetGroutingMethod">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_JetGroutingMethod_SINGLEPHASE" name="SINGLEPHASE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_JetGroutingMethod_TWOPHASE" name="TWOPHASE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_JetGroutingMethod_THREEPHASE" name="THREEPHASE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_JetGroutingMethod_SINGLE_PHASE" name="SINGLE_PHASE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_JetGroutingMethod_TWO_PHASE" name="TWO_PHASE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_JetGroutingMethod_THREE_PHASE" name="THREE_PHASE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_JetGroutingMethod_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_JetGroutingMethod_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_JetGroutingMethod_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ImprovedGroundTypeJetGrouted_IfcImprovedGroundTypeEnum_JETGROUTED" client="cl_Pset_ImprovedGroundTypeJetGrouted" supplier="cl_IfcImprovedGroundTypeEnum_JETGROUTED"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ImprovedGroundBaseQuantities" name="Qto_ImprovedGroundBaseQuantities">

@@ -7,7 +7,7 @@
 
 ### ANCHORED
 
-### ANCHOREDWITHEXPANSIONCASING
+### ANCHORED_WITH_EXPANSION_CASING
 
 ### COMBINATION
 
@@ -21,13 +21,14 @@
 
 ### SELFDRILLING
 
-### GLASSFIBREREINFORCEDPLASTICS
+### GLASS_FIBRE_REINFORCED_PLASTICS
+
+### OTHER
+The value falls outside of the predefined values of this enumeration.
 
 ### NOTKNOWN
-Value is unkown
+Value is unkown.
 
 ### UNSET
-Value has not been specified
+Value has not been specified.
 
-### USERDEFINED
-User Defined

@@ -12,5 +12,6 @@ Injection is performed after excavation.
 ### CONCURRENT_INJECTION
 Injection is performed during excavation.
 
-### UNSET
-Value has not been specified.
+### OTHER
+The value falls outside of the predefined values of this enumeration.
+
