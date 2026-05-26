@@ -1564,96 +1564,96 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GroundReinforcementElementTypeTube_IfcGroundReinforcementElementTypeEnum_TUBE" client="cl_Pset_GroundReinforcementElementTypeTube" supplier="cl_IfcGroundReinforcementElementTypeEnum_TUBE"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GroundReinforcmentElementTypeBolt" name="Pset_GroundReinforcmentElementTypeBolt">
-      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GroundReinforcmentElementTypeBolt_comment_0">
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GroundReinforcementElementTypeBolt" name="Pset_GroundReinforcementElementTypeBolt">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GroundReinforcementElementTypeBolt_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
       </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltCrossSection" name="BoltCrossSection" type="en_PEnum_BoltCrossSection">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltCrossSection_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltCrossSection_upper" value="*"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltCrossSection" name="BoltCrossSection" type="en_PEnum_BoltCrossSection">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltCrossSection_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltCrossSection_upper" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltDiameter" name="BoltDiameter">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltDiameter" name="BoltDiameter">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltDiameter_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltDiameter_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltDiameter_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltHoleDiameter" name="BoltHoleDiameter">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltHoleDiameter" name="BoltHoleDiameter">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltHoleDiameter_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltHoleDiameter_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltHoleDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltHoleDiameter_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltLength" name="BoltLength">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltLength" name="BoltLength">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltLength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltLength_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltLength_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltType" name="BoltType" type="en_PEnum_BoltType">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltType_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_BoltType_upper" value="*"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltType" name="BoltType" type="en_PEnum_BoltType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_BoltType_upper" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_CorrosionTreatment" name="CorrosionTreatment">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_CorrosionTreatment" name="CorrosionTreatment">
         <type xmi:type="uml:Enumeration" href="IfcSharedComponentElements.uml#en_PEnum_ElementComponentCorrosionTreatment"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_CorrosionTreatment_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_CorrosionTreatment_upper" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_CorrosionTreatment_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_CorrosionTreatment_upper" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_Deformability" name="Deformability">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_Deformability" name="Deformability">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_Deformability_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_Deformability_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_Deformability_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_Deformability_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_GroutingType" name="GroutingType" type="en_PEnum_GroutingType">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_GroutingType_lower" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_GroutingType_upper" value="*"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_GroutingType" name="GroutingType" type="en_PEnum_GroutingType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_GroutingType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_GroutingType_upper" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_HoleLength" name="HoleLength">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_HoleLength" name="HoleLength">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_HoleLength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_HoleLength_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_HoleLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_HoleLength_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_LockingForce" name="LockingForce">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_LockingForce" name="LockingForce">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_LockingForce_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_LockingForce_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_LockingForce_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_LockingForce_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_LongitudinalInclination" name="LongitudinalInclination">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_LongitudinalInclination" name="LongitudinalInclination">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_LongitudinalInclination_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_LongitudinalInclination_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_LongitudinalInclination_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_LongitudinalInclination_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_MassPerLength" name="MassPerLength">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_MassPerLength" name="MassPerLength">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMassPerLengthMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_MassPerLength_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_MassPerLength_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_MassPerLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_MassPerLength_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_MechanicalTension" name="MechanicalTension">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_MechanicalTension" name="MechanicalTension">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_MechanicalTension_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_MechanicalTension_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_MechanicalTension_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_MechanicalTension_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_PlateType" name="PlateType">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_PlateType" name="PlateType">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_PlateType_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_PlateType_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_PlateType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_PlateType_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_RadialInclination" name="RadialInclination">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_RadialInclination" name="RadialInclination">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_RadialInclination_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_RadialInclination_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_RadialInclination_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_RadialInclination_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedBoltCrossSection" name="UserDefinedBoltCrossSection">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_UserDefinedBoltCrossSection" name="UserDefinedBoltCrossSection">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedBoltCrossSection_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedBoltCrossSection_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_UserDefinedBoltCrossSection_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_UserDefinedBoltCrossSection_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedBoltType" name="UserDefinedBoltType">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_UserDefinedBoltType" name="UserDefinedBoltType">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedBoltType_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedBoltType_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_UserDefinedBoltType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_UserDefinedBoltType_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedGroutingType" name="UserDefinedGroutingType">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_UserDefinedGroutingType" name="UserDefinedGroutingType">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedGroutingType_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcmentElementTypeBolt_UserDefinedGroutingType_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_UserDefinedGroutingType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GroundReinforcementElementTypeBolt_UserDefinedGroutingType_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_BoltCrossSection" name="PEnum_BoltCrossSection">
@@ -1688,7 +1688,7 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_UNSET" name="UNSET"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GroundReinforcmentElementTypeBolt_IfcGroundReinforcementElementTypeEnum_BOLT" client="cl_Pset_GroundReinforcmentElementTypeBolt" supplier="cl_IfcGroundReinforcementElementTypeEnum_BOLT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GroundReinforcementElementTypeBolt_IfcGroundReinforcementElementTypeEnum_BOLT" client="cl_Pset_GroundReinforcementElementTypeBolt" supplier="cl_IfcGroundReinforcementElementTypeEnum_BOLT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ImprovedGroundCommon" name="Pset_ImprovedGroundCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ImprovedGroundCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
