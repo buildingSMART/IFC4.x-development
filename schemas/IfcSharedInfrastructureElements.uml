@@ -1441,13 +1441,14 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PreSupportType" name="PEnum_PreSupportType">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_JETGROUTED" name="JETGROUTED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_PIPEUMBRELLA" name="PIPEUMBRELLA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_JET_GROUTED" name="JET_GROUTED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_PIPE_UMBRELLA" name="PIPE_UMBRELLA"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_FREEZING" name="FREEZING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_FOREPOLING" name="FOREPOLING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_SPILING" name="SPILING"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_USERDEFINED" name="USERDEFINED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PreSupportCommon_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT" client="cl_Pset_PreSupportCommon">
       <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT"/>

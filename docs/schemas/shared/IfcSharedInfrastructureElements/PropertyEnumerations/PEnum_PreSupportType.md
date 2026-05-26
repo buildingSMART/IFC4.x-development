@@ -3,10 +3,10 @@
 
 ## Items
 
-### JETGROUTED
+### JET_GROUTED
 Pre-support using jet grouting.
 
-### PIPEUMBRELLA
+### PIPE_UMBRELLA
 Pre-support using pipe umbrellas.
 
 ### FREEZING
@@ -18,8 +18,11 @@ Pre-support using forepoling.
 ### SPILING
 Pre-support using spiling.
 
-### USERDEFINED
-User Defined
+### OTHER
+The type is user-defined.
 
-### NOTDEFINED
-Notdefined
+### NOTKNOWN
+Value is unknown.
+
+### UNSET
+Value has not been specified.
