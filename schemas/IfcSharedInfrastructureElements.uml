@@ -1271,5 +1271,54 @@
       <supplier xmi:type="uml:Class" href="IfcStructuralElementsDomain.uml#cl_IfcSurfaceFeature"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_VolumetricStratumBaseQuantities_IfcGeotechnicalStratum" client="cl_Qto_VolumetricStratumBaseQuantities" supplier="cl_IfcGeotechnicalStratum"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcGeoScienceObservationTypeEnum" name="IfcGeoScienceObservationTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceObservationTypeEnum_INSITUTESTRESULT" name="INSITUTESTRESULT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceObservationTypeEnum_LABTESTRESULT" name="LABTESTRESULT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceObservationTypeEnum_BOREHOLELOG" name="BOREHOLELOG"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceObservationTypeEnum_MAPPEDFEATURE" name="MAPPEDFEATURE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceObservationTypeEnum_LOCALINFORMATION" name="LOCALINFORMATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceObservationTypeEnum_GEOPHYSICALSURVEYRESULT" name="GEOPHYSICALSURVEYRESULT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceObservationTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceObservationTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceObservation" name="IfcGeoScienceObservation">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcGeoScienceObservation_HasObjectType" name="HasObjectType">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcGeoScienceObservation_HasObjectType" name="HasObjectType">
+          <language>EXPRESS_WHERE</language>
+          <body>(PredefinedType &lt;> IfcGeoScienceObservationTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceObservation_gen_IfcObservation">
+        <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcObservation"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeoScienceObservation_PredefinedType" name="PredefinedType" type="en_IfcGeoScienceObservationTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeoScienceObservation_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcGeoScienceObservation_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceObservationTypeEnum_INSITUTESTRESULT" name="IfcGeoScienceObservationTypeEnum.INSITUTESTRESULT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceObservationTypeEnum_INSITUTESTRESULT_gen_IfcGeoScienceObservation" general="cl_IfcGeoScienceObservation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceObservationTypeEnum_LABTESTRESULT" name="IfcGeoScienceObservationTypeEnum.LABTESTRESULT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceObservationTypeEnum_LABTESTRESULT_gen_IfcGeoScienceObservation" general="cl_IfcGeoScienceObservation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceObservationTypeEnum_BOREHOLELOG" name="IfcGeoScienceObservationTypeEnum.BOREHOLELOG">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceObservationTypeEnum_BOREHOLELOG_gen_IfcGeoScienceObservation" general="cl_IfcGeoScienceObservation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceObservationTypeEnum_MAPPEDFEATURE" name="IfcGeoScienceObservationTypeEnum.MAPPEDFEATURE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceObservationTypeEnum_MAPPEDFEATURE_gen_IfcGeoScienceObservation" general="cl_IfcGeoScienceObservation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceObservationTypeEnum_LOCALINFORMATION" name="IfcGeoScienceObservationTypeEnum.LOCALINFORMATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceObservationTypeEnum_LOCALINFORMATION_gen_IfcGeoScienceObservation" general="cl_IfcGeoScienceObservation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceObservationTypeEnum_GEOPHYSICALSURVEYRESULT" name="IfcGeoScienceObservationTypeEnum.GEOPHYSICALSURVEYRESULT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceObservationTypeEnum_GEOPHYSICALSURVEYRESULT_gen_IfcGeoScienceObservation" general="cl_IfcGeoScienceObservation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceObservationTypeEnum_USERDEFINED" name="IfcGeoScienceObservationTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceObservationTypeEnum_USERDEFINED_gen_IfcGeoScienceObservation" general="cl_IfcGeoScienceObservation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceObservationTypeEnum_NOTDEFINED" name="IfcGeoScienceObservationTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceObservationTypeEnum_NOTDEFINED_gen_IfcGeoScienceObservation" general="cl_IfcGeoScienceObservation"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
