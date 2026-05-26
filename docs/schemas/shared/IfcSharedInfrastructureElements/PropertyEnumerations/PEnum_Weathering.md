@@ -14,3 +14,12 @@ The rock is broken up by physical weathering, so that bonding between grains is 
 
 ### DECOMPOSED
 The rock is weathered by the chemical alteration of the mineral grains to the condition of a soil in which the original material fabric is still intact; some or all of the mineral grains are decomposed.
+
+### OTHER
+The type is user-defined.
+
+### NOTKNOWN
+Value is unknown.
+
+### UNSET
+Value has not been specified.

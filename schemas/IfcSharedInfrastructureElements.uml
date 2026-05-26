@@ -1773,6 +1773,9 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_Weathering_DISCOLOURED" name="DISCOLOURED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_Weathering_DISINTEGRATED" name="DISINTEGRATED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_Weathering_DECOMPOSED" name="DECOMPOSED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_Weathering_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_Weathering_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_Weathering_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsMappedUnit_IfcGeoScienceObservationTypeEnum_MAPPEDFEATURE" client="cl_Pset_GeoObsMappedUnit" supplier="cl_IfcGeoScienceObservationTypeEnum_MAPPEDFEATURE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsPtObservationCommon" name="Pset_GeoObsPtObservationCommon">
