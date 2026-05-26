@@ -1429,6 +1429,9 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PreSupportArrangement" name="PEnum_PreSupportArrangement">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_SIMPLE" name="SIMPLE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_STAGGERED" name="STAGGERED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PreSupportLocation" name="PEnum_PreSupportLocation">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_TUNNELVAULT" name="TUNNELVAULT"/>
