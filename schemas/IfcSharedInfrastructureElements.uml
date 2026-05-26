@@ -1873,6 +1873,9 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GeophysicalSurveyMethod_GRAVITY" name="GRAVITY"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GeophysicalSurveyMethod_MAGNETIC" name="MAGNETIC"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GeophysicalSurveyMethod_NMR" name="NMR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GeophysicalSurveyMethod_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GeophysicalSurveyMethod_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GeophysicalSurveyMethod_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeophysicalSurveyCommon_IfcGeoScienceObservationTypeEnum_GEOPHYSICALSURVEYRESULT" client="cl_Pset_GeophysicalSurveyCommon" supplier="cl_IfcGeoScienceObservationTypeEnum_GEOPHYSICALSURVEYRESULT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_InSituTestCPT" name="Pset_InSituTestCPT">

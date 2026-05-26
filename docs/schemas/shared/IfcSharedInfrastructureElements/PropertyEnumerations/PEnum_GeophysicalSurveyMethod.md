@@ -35,3 +35,12 @@ Measuring variations in the magnetic field of the earth which are related to cha
 
 ### NMR
 Measuring magnetic resonance signals from proton-containing fluids (e.g. water, hydrocarbons) in the earth's subsurface.
+
+### OTHER
+The type is user-defined.
+
+### NOTKNOWN
+Value is unknown.
+
+### UNSET
+Value has not been specified.
