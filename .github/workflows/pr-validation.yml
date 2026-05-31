@@ -128,7 +128,7 @@ jobs:
           {
             echo "new_entities<<EOF"
             git diff "$BASE_REF"...HEAD -- 'schemas/*.uml' 2>/dev/null | \
-              grep -E '^\+.*<packagedElement.*xmi:type="uml:Class".*name="(Ifc[A-Za-z]+)"' | \
+              grep -E '^\+.*<packagedElement.*xmi:type="uml:Class".*xmi:id="cl_Ifc[A-Za-z]+".*name="(Ifc[A-Za-z]+)"' | \
               sed -E 's/.*name="(Ifc[A-Za-z]+)".*/\1/' | sort -u || true
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
