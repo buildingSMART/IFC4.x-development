@@ -14,6 +14,12 @@ concept {
     IfcVoxelGrid:HasColours -> IfcIndexedColourMap:MappedTo
     IfcIndexedColourMap:Colours -> IfcColourRgbList:ColourList
     IfcColourRgbList:ColourList -> IfcNormalisedRatioMeasure
+    IfcIndexedColourMap:MappedTo -> IfcTessellatedItem:HasColours
+
+    IfcProduct:ReferencedBy -> IfcRelAssignsToProduct:RelatingProduct
+    IfcRelAssignsToProduct:RelatedObjects -> IfcVoxelData:HasAssignments
+    IfcRelAssignsToProduct:RelatedObjects[binding="Type"]
+    IfcVoxelData:Representation -> IfcProductDefinitionShape
     IfcLabel_0 -> constraint_0
     constraint_0[label="=Body"]
     IfcLabel_1 -> constraint_1
