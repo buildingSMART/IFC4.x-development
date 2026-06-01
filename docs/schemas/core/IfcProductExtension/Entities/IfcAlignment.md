@@ -58,6 +58,7 @@ The alignment concept is organised into two parts. These two parts work together
 
 A mapping between the *business logic* and its *geometry definition* in IFC is described by the concept templates related to the alignment geometry.
 
+> NOTE Alignment layouts _IfcAlignmentHorizontal_, _IfcAlignmentVertical_, and _IfcAlignmentCant_ nest _IfcAlignment_ with an _IfcRelNests_ relationship. _IfcRelNests.RelatedObjects_ is an ordered list. The proper order of the alignment layouts is _IfcAlignmentHorizontal_, _IfcAlignmentVertical_, and _IfcAlignmentCant_. When _IfcReferent_ is used to define the start station of the alignment, and it is located within the same _IfcRelNests.RelatedObjects_ list as the alignment layouts, it must precede _IfcAlignmentHorizontal_.
 
 ## Attributes
 
