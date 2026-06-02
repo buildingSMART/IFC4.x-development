@@ -4189,7 +4189,7 @@ AND
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpatialGeoObsSlopeArea_IfcSpatialZoneTypeEnum_MAPPEDZONE" client="cl_Pset_SpatialGeoObsSlopeArea" supplier="cl_IfcSpatialZoneTypeEnum_MAPPEDZONE"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsTunnelFace" name="Pset_SpatialGeoObsTunnelFace">
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsTunnelFace" name="Pset_SpatialGeoScienceObservationTunnelFace">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpatialGeoObsTunnelFace_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
       </ownedComment>
