@@ -77,3 +77,10 @@ User-defined accessory.
 
 ### NOTDEFINED
 Undefined accessory.
+
+### STRUCTURAL_SEALING
+A sealing capable of transferring either dynamic or static loads (or both).
+
+### WATER_BARRIER
+A device aiding in compartmentalization of water in e.g. tunneling.
+

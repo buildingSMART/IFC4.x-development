@@ -64,7 +64,7 @@ An amplified audio signal such as for loudspeakers.
 Exhaust air collection system for removing stale or noxious air from one or more spaces.
 
 ### FIREPROTECTION
-Fire protection sprinkler system.
+Active fire protection for detecting, stopping and escaping fire.
 
 ### FUEL
 Arbitrary supply of fuel.
@@ -154,10 +154,11 @@ A system that allows communications between operators (e.g. switchtender, traffi
 Mobile network insures wireless communication by providing a secure platform for voice and data communication between infrastructure operators, including drivers, dispatchers, shunting team members and station controllers.
 
 ### MONITORINGSYSTEM
-Sensor-based system for building and infrastructure environmental monitoring and control.
+Sensor-based system for building and infrastructure monitoring and control (including environmental monitoring and control).
 
 ### USERDEFINED
 
-
 ### NOTDEFINED
 
+### SAFETY
+A system aimed for protecting the safety of people, vehicles and other equipment from unwanted events.

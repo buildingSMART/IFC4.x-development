@@ -95,12 +95,28 @@ An obstacle (with oil catchment basin) installed typically in a bus lane to prev
 ### TRAFFIC_CALMING_DEVICE
 A structure on the carriageway to control the speed of vehicles.
 
->NOTE Definition from ISO 6707-1: Encouragement of restrained and considerate behaviour by means such as road humps and reductions in width of the travelled way (US:traffic restraint, UK:speed bump).
-
->NOTE Definition from PIARC: Local carriageway layout (staggered section, choker) or physical device (central island, round- or flat-top road hump, speed bump, rumble strips, etc.) to control the speed of road vehicles.
+NOTE Definition from ISO 6707-1: Encouragement of restrained and considerate behaviour by means such as road humps and reductions in width of the travelled way (US:traffic restraint, UK:speed bump).
+NOTE Definition from PIARC: Local carriageway layout (staggered section, choker) or physical device (central island, round- or flat-top road hump, speed bump, rumble strips, etc.) to control the speed of road vehicles.
 
 ### USERDEFINED
 User-defined element assembly.
 
 ### NOTDEFINED
 Undefined element assembly.
+
+### DUCTBANK
+A Duct Bank is two or more ducts or conduits used as part of a system. A duct bank is designed to protect and group or consolidate data and electrical cables to and from a facility. The cables are laid in PVC pipes or conduits. These conduit are bundled together and protected with either steel or reinforced concrete casings. Duct banks are often located underground. They can carry cables for all electrical wiring and data requirements in the facility as well as extra cables that are not for immediate use, but may be valuable for future requirements.
+
+### PRESUPPORTFACE
+Horizontal boreholes in the face of the tunnel with various types of support, reinforcing and stabilising the ground ahead of the face and removed during subsequent excavation.
+
+### PRESUPPORTVAULT
+Outwards inclined radial boreholes around the perimeter of the tunnel with various types of support forming a protective vault around and ahead of the excavation.
+
+### RING
+The ring is the basic unit for construction progress in tunneling, and the position of the TBM (Tunnel Boring Machine) can be determined by the ring number.
+The rings are portions of cylinders with surfaces that can be either parallel or non-parallel, identified below:
+- parallel surfaces: straight ring
+- non parallel surfaces: tapered trapezoidal ring / tapered universal ring
+The ring is composed from _IfcArchElement_ of type _SEGMENT_.
+
