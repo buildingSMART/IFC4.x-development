@@ -50,6 +50,7 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcReinforcingMeshTypeEnum" name="IfcReinforcingMeshTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcReinforcingMeshTypeEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcReinforcingMeshTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcReinforcingMeshTypeEnum_STEELSTRAPS" name="STEELSTRAPS"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcSurfaceFeatureTypeEnum" name="IfcSurfaceFeatureTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSurfaceFeatureTypeEnum_DEFECT" name="DEFECT"/>
@@ -1604,5 +1605,9 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FootingBaseQuantities_IfcFooting" client="cl_Qto_FootingBaseQuantities" supplier="cl_IfcFooting"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_PileBaseQuantities_IfcPile" client="cl_Qto_PileBaseQuantities" supplier="cl_IfcPile"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ReinforcingElementBaseQuantities_IfcReinforcingElement" client="cl_Qto_ReinforcingElementBaseQuantities" supplier="cl_IfcReinforcingElement"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcReinforcingMeshTypeEnum_STEELSTRAPS" name="IfcReinforcingMeshTypeEnum.STEELSTRAPS">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcReinforcingMeshTypeEnum_STEELSTRAPS_gen_IfcReinforcingMesh" general="cl_IfcReinforcingMesh"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcReinforcingMeshTypeEnum_STEELSTRAPS_gen_IfcReinforcingMeshType" general="cl_IfcReinforcingMeshType"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>

@@ -23,6 +23,9 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEarthworksCutTypeEnum_TRENCH" name="TRENCH"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEarthworksCutTypeEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEarthworksCutTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEarthworksCutTypeEnum_ANCHOREDOPENEXCAVATION" name="ANCHOREDOPENEXCAVATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEarthworksCutTypeEnum_BRACEDOPENEXCAVATION" name="BRACEDOPENEXCAVATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEarthworksCutTypeEnum_CONFINEDOPENEXCAVATION" name="CONFINEDOPENEXCAVATION"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcEarthworksFillTypeEnum" name="IfcEarthworksFillTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEarthworksFillTypeEnum_BACKFILL" name="BACKFILL"/>
@@ -1271,5 +1274,14 @@
       <supplier xmi:type="uml:Class" href="IfcStructuralElementsDomain.uml#cl_IfcSurfaceFeature"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_VolumetricStratumBaseQuantities_IfcGeotechnicalStratum" client="cl_Qto_VolumetricStratumBaseQuantities" supplier="cl_IfcGeotechnicalStratum"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEarthworksCutTypeEnum_ANCHOREDOPENEXCAVATION" name="IfcEarthworksCutTypeEnum.ANCHOREDOPENEXCAVATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEarthworksCutTypeEnum_ANCHOREDOPENEXCAVATION_gen_IfcEarthworksCut" general="cl_IfcEarthworksCut"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEarthworksCutTypeEnum_BRACEDOPENEXCAVATION" name="IfcEarthworksCutTypeEnum.BRACEDOPENEXCAVATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEarthworksCutTypeEnum_BRACEDOPENEXCAVATION_gen_IfcEarthworksCut" general="cl_IfcEarthworksCut"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEarthworksCutTypeEnum_CONFINEDOPENEXCAVATION" name="IfcEarthworksCutTypeEnum.CONFINEDOPENEXCAVATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEarthworksCutTypeEnum_CONFINEDOPENEXCAVATION_gen_IfcEarthworksCut" general="cl_IfcEarthworksCut"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>

@@ -34,6 +34,8 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_TENSIONINGEQUIPMENT" name="TENSIONINGEQUIPMENT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_STRUCTURAL_SEALING" name="STRUCTURAL_SEALING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDiscreteAccessoryTypeEnum_WATER_BARRIER" name="WATER_BARRIER"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcFastenerTypeEnum" name="IfcFastenerTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFastenerTypeEnum_GLUE" name="GLUE"/>
@@ -806,5 +808,13 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FastenerWeld_IfcFastenerTypeEnum.WELD" client="cl_Pset_FastenerWeld" supplier="cl_IfcFastenerTypeEnum_WELD"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalFastenerAnchorBolt_IfcMechanicalFastenerTypeEnum.ANCHORBOLT" client="cl_Pset_MechanicalFastenerAnchorBolt" supplier="cl_IfcMechanicalFastenerTypeEnum_ANCHORBOLT"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MechanicalFastenerBolt_IfcMechanicalFastenerTypeEnum.BOLT" client="cl_Pset_MechanicalFastenerBolt" supplier="cl_IfcMechanicalFastenerTypeEnum_BOLT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_STRUCTURAL_SEALING" name="IfcDiscreteAccessoryTypeEnum.STRUCTURAL_SEALING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_STRUCTURAL_SEALING_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_STRUCTURAL_SEALING_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_WATER_BARRIER" name="IfcDiscreteAccessoryTypeEnum.WATER_BARRIER">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_WATER_BARRIER_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_WATER_BARRIER_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>

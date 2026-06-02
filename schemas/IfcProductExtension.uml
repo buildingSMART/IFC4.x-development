@@ -65,6 +65,11 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TRANSPORT" name="TRANSPORT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_FIREPROTECTION" name="FIREPROTECTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TUNNEL_LINING" name="TUNNEL_LINING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT" name="TUNNEL_PRESUPPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TUNNEL_SUPPORT" name="TUNNEL_SUPPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_WATERPROOFING" name="WATERPROOFING"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcElementAssemblyTypeEnum" name="IfcElementAssemblyTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_ABUTMENT" name="ABUTMENT"/>
@@ -97,6 +102,10 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_TURNOUTPANEL" name="TURNOUTPANEL"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_DUCTBANK" name="DUCTBANK"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" name="PRESUPPORTFACE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT" name="PRESUPPORTVAULT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_RING" name="RING"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcElementCompositionEnum" name="IfcElementCompositionEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementCompositionEnum_COMPLEX" name="COMPLEX"/>
@@ -208,6 +217,16 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSpatialZoneTypeEnum_VENTILATION" name="VENTILATION"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSpatialZoneTypeEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSpatialZoneTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSpatialZoneTypeEnum_ANNULARGAP" name="ANNULARGAP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSpatialZoneTypeEnum_CLEARANCE" name="CLEARANCE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSpatialZoneTypeEnum_COMPARTMENT" name="COMPARTMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSpatialZoneTypeEnum_INSTALLATION" name="INSTALLATION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSpatialZoneTypeEnum_INTERIOR" name="INTERIOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSpatialZoneTypeEnum_INVERT" name="INVERT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSpatialZoneTypeEnum_LINING" name="LINING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSpatialZoneTypeEnum_MAPPEDZONE" name="MAPPEDZONE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSpatialZoneTypeEnum_SERVICE" name="SERVICE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSpatialZoneTypeEnum_TESTEDZONE" name="TESTEDZONE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcTransportElementTypeEnum" name="IfcTransportElementTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTransportElementTypeEnum_CRANEWAY" name="CRANEWAY"/>
@@ -3843,5 +3862,76 @@ AND
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ProjectionElementBaseQuantities_IfcProjectionElement" client="cl_Qto_ProjectionElementBaseQuantities" supplier="cl_IfcProjectionElement"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SiteBaseQuantities_IfcSite" client="cl_Qto_SiteBaseQuantities" supplier="cl_IfcSite"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SpaceBaseQuantities_IfcSpace" client="cl_Qto_SpaceBaseQuantities" supplier="cl_IfcSpace"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuiltSystemTypeEnum_FIREPROTECTION" name="IfcBuiltSystemTypeEnum.FIREPROTECTION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuiltSystemTypeEnum_FIREPROTECTION_gen_IfcBuiltSystem" general="cl_IfcBuiltSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_LINING" name="IfcBuiltSystemTypeEnum.TUNNEL_LINING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_LINING_gen_IfcBuiltSystem" general="cl_IfcBuiltSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT" name="IfcBuiltSystemTypeEnum.TUNNEL_PRESUPPORT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT_gen_IfcBuiltSystem" general="cl_IfcBuiltSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_SUPPORT" name="IfcBuiltSystemTypeEnum.TUNNEL_SUPPORT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_SUPPORT_gen_IfcBuiltSystem" general="cl_IfcBuiltSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuiltSystemTypeEnum_WATERPROOFING" name="IfcBuiltSystemTypeEnum.WATERPROOFING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuiltSystemTypeEnum_WATERPROOFING_gen_IfcBuiltSystem" general="cl_IfcBuiltSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_DUCTBANK" name="IfcElementAssemblyTypeEnum.DUCTBANK">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_DUCTBANK_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_DUCTBANK_gen_IfcElementAssemblyType" general="cl_IfcElementAssemblyType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" name="IfcElementAssemblyTypeEnum.PRESUPPORTFACE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE_gen_IfcElementAssemblyType" general="cl_IfcElementAssemblyType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT" name="IfcElementAssemblyTypeEnum.PRESUPPORTVAULT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT_gen_IfcElementAssemblyType" general="cl_IfcElementAssemblyType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_RING" name="IfcElementAssemblyTypeEnum.RING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_RING_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_RING_gen_IfcElementAssemblyType" general="cl_IfcElementAssemblyType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSpatialZoneTypeEnum_ANNULARGAP" name="IfcSpatialZoneTypeEnum.ANNULARGAP">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_ANNULARGAP_gen_IfcSpatialZone" general="cl_IfcSpatialZone"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_ANNULARGAP_gen_IfcSpatialZoneType" general="cl_IfcSpatialZoneType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSpatialZoneTypeEnum_CLEARANCE" name="IfcSpatialZoneTypeEnum.CLEARANCE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_CLEARANCE_gen_IfcSpatialZone" general="cl_IfcSpatialZone"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_CLEARANCE_gen_IfcSpatialZoneType" general="cl_IfcSpatialZoneType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSpatialZoneTypeEnum_COMPARTMENT" name="IfcSpatialZoneTypeEnum.COMPARTMENT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_COMPARTMENT_gen_IfcSpatialZone" general="cl_IfcSpatialZone"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_COMPARTMENT_gen_IfcSpatialZoneType" general="cl_IfcSpatialZoneType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSpatialZoneTypeEnum_INSTALLATION" name="IfcSpatialZoneTypeEnum.INSTALLATION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_INSTALLATION_gen_IfcSpatialZone" general="cl_IfcSpatialZone"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_INSTALLATION_gen_IfcSpatialZoneType" general="cl_IfcSpatialZoneType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSpatialZoneTypeEnum_INTERIOR" name="IfcSpatialZoneTypeEnum.INTERIOR">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_INTERIOR_gen_IfcSpatialZone" general="cl_IfcSpatialZone"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_INTERIOR_gen_IfcSpatialZoneType" general="cl_IfcSpatialZoneType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSpatialZoneTypeEnum_INVERT" name="IfcSpatialZoneTypeEnum.INVERT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_INVERT_gen_IfcSpatialZone" general="cl_IfcSpatialZone"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_INVERT_gen_IfcSpatialZoneType" general="cl_IfcSpatialZoneType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSpatialZoneTypeEnum_LINING" name="IfcSpatialZoneTypeEnum.LINING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_LINING_gen_IfcSpatialZone" general="cl_IfcSpatialZone"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_LINING_gen_IfcSpatialZoneType" general="cl_IfcSpatialZoneType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSpatialZoneTypeEnum_MAPPEDZONE" name="IfcSpatialZoneTypeEnum.MAPPEDZONE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_MAPPEDZONE_gen_IfcSpatialZone" general="cl_IfcSpatialZone"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_MAPPEDZONE_gen_IfcSpatialZoneType" general="cl_IfcSpatialZoneType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSpatialZoneTypeEnum_SERVICE" name="IfcSpatialZoneTypeEnum.SERVICE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_SERVICE_gen_IfcSpatialZone" general="cl_IfcSpatialZone"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_SERVICE_gen_IfcSpatialZoneType" general="cl_IfcSpatialZoneType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcSpatialZoneTypeEnum_TESTEDZONE" name="IfcSpatialZoneTypeEnum.TESTEDZONE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_TESTEDZONE_gen_IfcSpatialZone" general="cl_IfcSpatialZone"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcSpatialZoneTypeEnum_TESTEDZONE_gen_IfcSpatialZoneType" general="cl_IfcSpatialZoneType"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
