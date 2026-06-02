@@ -816,5 +816,22 @@
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_WATER_BARRIER_gen_IfcDiscreteAccessory" general="cl_IfcDiscreteAccessory"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDiscreteAccessoryTypeEnum_WATER_BARRIER_gen_IfcDiscreteAccessoryType" general="cl_IfcDiscreteAccessoryType"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_DiscreteAccessoryTypeWaterBarrier" name="Pset_DiscreteAccessoryTypeWaterBarrier">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_DiscreteAccessoryTypeWaterBarrier_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_DiscreteAccessoryTypeWaterBarrier_SealType" name="SealType" type="en_PEnum_SealType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_DiscreteAccessoryTypeWaterBarrier_SealType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_DiscreteAccessoryTypeWaterBarrier_SealType_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SealType" name="PEnum_SealType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SealType_COMPRESSIBLE" name="COMPRESSIBLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SealType_HYDRO_EXPANDING" name="HYDRO_EXPANDING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SealType_MIXED" name="MIXED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SealType_MEMBRANE" name="MEMBRANE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SealType_INFLATABLE" name="INFLATABLE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeWaterBarrier_IfcDiscreteAccessoryTypeEnum_WATER_BARRIER" client="cl_Pset_DiscreteAccessoryTypeWaterBarrier" supplier="cl_IfcDiscreteAccessoryTypeEnum_WATER_BARRIER"/>
   </packagedElement>
 </uml:Model>

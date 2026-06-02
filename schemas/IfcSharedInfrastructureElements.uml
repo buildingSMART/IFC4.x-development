@@ -1283,5 +1283,69 @@
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEarthworksCutTypeEnum_CONFINEDOPENEXCAVATION" name="IfcEarthworksCutTypeEnum.CONFINEDOPENEXCAVATION">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEarthworksCutTypeEnum_CONFINEDOPENEXCAVATION_gen_IfcEarthworksCut" general="cl_IfcEarthworksCut"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_EarthworksCutCommon" name="Pset_EarthworksCutCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_EarthworksCutCommon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksCutCommon_EarthworksCutExcavationMethod" name="EarthworksCutExcavationMethod" type="en_PEnum_EarthworksCutExcavationMethod">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksCutCommon_EarthworksCutExcavationMethod_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksCutCommon_EarthworksCutExcavationMethod_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksCutCommon_MaximumUnsupportedCut" name="MaximumUnsupportedCut">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksCutCommon_MaximumUnsupportedCut_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksCutCommon_MaximumUnsupportedCut_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksCutCommon_SupportDescription" name="SupportDescription">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksCutCommon_SupportDescription_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksCutCommon_SupportDescription_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksCutCommon_UserDefinedExcavationMethod" name="UserDefinedExcavationMethod">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksCutCommon_UserDefinedExcavationMethod_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksCutCommon_UserDefinedExcavationMethod_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_EarthworksCutExcavationMethod" name="PEnum_EarthworksCutExcavationMethod">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_HAND" name="HAND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_EXCAVATOR" name="EXCAVATOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_JACKHAMMER" name="JACKHAMMER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_RIPPER" name="RIPPER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_DRILLANDBLAST" name="DRILLANDBLAST"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_USERDEFINED" name="USERDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EarthworksCutCommon_IfcEarthworksCut" client="cl_Pset_EarthworksCutCommon" supplier="cl_IfcEarthworksCut"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_EarthworksCutTypeTrench" name="Pset_EarthworksCutTypeTrench">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_EarthworksCutTypeTrench_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksCutTypeTrench_CatchmentArea" name="CatchmentArea">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcAreaMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksCutTypeTrench_CatchmentArea_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksCutTypeTrench_CatchmentArea_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksCutTypeTrench_NominalDepth" name="NominalDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksCutTypeTrench_NominalDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksCutTypeTrench_NominalDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksCutTypeTrench_NominalLength" name="NominalLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksCutTypeTrench_NominalLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksCutTypeTrench_NominalLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksCutTypeTrench_NominalWidth" name="NominalWidth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksCutTypeTrench_NominalWidth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksCutTypeTrench_NominalWidth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksCutTypeTrench_VolumetricCapacity" name="VolumetricCapacity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcVolumeMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksCutTypeTrench_VolumetricCapacity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksCutTypeTrench_VolumetricCapacity_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EarthworksCutTypeTrench_IfcEarthworksCutTypeEnum_TRENCH" client="cl_Pset_EarthworksCutTypeTrench" supplier="cl_IfcEarthworksCutTypeEnum_TRENCH"/>
   </packagedElement>
 </uml:Model>
