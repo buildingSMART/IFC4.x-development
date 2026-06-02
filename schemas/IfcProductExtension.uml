@@ -4096,7 +4096,7 @@ AND
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PreSupportCommon_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT" client="cl_Pset_PreSupportCommon" supplier="cl_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PreSupportCommon_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT" client="cl_Pset_PreSupportCommon" supplier="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PreSupportCommon_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" client="cl_Pset_PreSupportCommon" supplier="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsExcavatedZone" name="Pset_SpatialGeoObsExcavatedZone">
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsExcavatedZone" name="Pset_SpatialGeoScienceObservationExcavatedZone">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpatialGeoObsExcavatedZone_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
       </ownedComment>
