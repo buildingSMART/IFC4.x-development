@@ -1640,7 +1640,7 @@
         <body>PSET_TYPEDRIVENOVERRIDE</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ReinforcingMeshTypeSteelStraps_BoltLength" name="BoltLength">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ReinforcingMeshTypeSteelStraps_BoltLength_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ReinforcingMeshTypeSteelStraps_BoltLength_upper" value="1"/>
       </ownedAttribute>
