@@ -4136,7 +4136,7 @@ AND
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationStep_TOPHEADING" name="TOPHEADING"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpatialGeoObsExcavatedZone_IfcSpatialZoneTypeEnum_MAPPEDZONE" client="cl_Pset_SpatialGeoObsExcavatedZone" supplier="cl_IfcSpatialZoneTypeEnum_MAPPEDZONE"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsFieldOutcrop" name="Pset_SpatialGeoObsFieldOutcrop">
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsFieldOutcrop" name="Pset_SpatialGeoScienceObservationFieldOutcrop">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpatialGeoObsFieldOutcrop_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
       </ownedComment>
