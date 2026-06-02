@@ -3,13 +3,13 @@
 
 ## Items
 
-### TUNNELFACE
+### TUNNEL_FACE
 Observation done on the face of the excavation.
 
-### TUNNELWALL
+### TUNNEL_WALL
 Observation done on the sides of the excavation.
 
-### TUNNELROOF
+### TUNNEL_ROOF
 Observation done on the roof of the excavation.
 
 ### INVERT

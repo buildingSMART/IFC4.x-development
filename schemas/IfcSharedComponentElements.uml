@@ -831,6 +831,9 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SealType_MIXED" name="MIXED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SealType_MEMBRANE" name="MEMBRANE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SealType_INFLATABLE" name="INFLATABLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SealType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SealType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SealType_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_DiscreteAccessoryTypeWaterBarrier_IfcDiscreteAccessoryTypeEnum_WATER_BARRIER" client="cl_Pset_DiscreteAccessoryTypeWaterBarrier" supplier="cl_IfcDiscreteAccessoryTypeEnum_WATER_BARRIER"/>
   </packagedElement>

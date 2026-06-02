@@ -1312,8 +1312,10 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_EXCAVATOR" name="EXCAVATOR"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_JACKHAMMER" name="JACKHAMMER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_RIPPER" name="RIPPER"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_DRILLANDBLAST" name="DRILLANDBLAST"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_DRILL_AND_BLAST" name="DRILL_AND_BLAST"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarthworksCutExcavationMethod_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EarthworksCutCommon_IfcEarthworksCut" client="cl_Pset_EarthworksCutCommon" supplier="cl_IfcEarthworksCut"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_EarthworksCutTypeTrench" name="Pset_EarthworksCutTypeTrench">

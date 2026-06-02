@@ -15,8 +15,9 @@ Pneumatic or hydraulic tool breaking rock or concrete.
 ### RIPPER
 Equipment with a toothed tool to break and loosen hard soil.
 
-### DRILLANDBLAST
+### DRILL_AND_BLAST
 Controlled drilling followed by explosive blasting.
 
-### USERDEFINED
-User Defined
+### OTHER
+The value falls outside of the predefined values of this enumeration.
+

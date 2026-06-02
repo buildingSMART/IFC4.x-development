@@ -3,14 +3,15 @@
 
 ## Items
 
-### TUNNELVAULT
+### TUNNEL_VAULT
 The pre-support is around the circumference of the tunnel.
 
-### TUNNELFACE
+### TUNNEL_FACE
 The pre-support is in the tunnel face.
 
-### USERDEFINED
-User Defined
+### OTHER
+The value falls outside of the predefined values of this enumeration.
 
-### NOTDEFINED
-Notdefined
+### NOTKNOWN
+Value is unkown.
+

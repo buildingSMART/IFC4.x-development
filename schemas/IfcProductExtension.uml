@@ -3950,7 +3950,9 @@ AND
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_WaterproofingSystem" name="PEnum_WaterproofingSystem">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WaterproofingSystem_WATERTIGHT" name="WATERTIGHT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WaterproofingSystem_DRAINED" name="DRAINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WaterproofingSystem_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WaterproofingSystem_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_WaterproofingSystem_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BuiltSystemTypeWaterproofing_IfcBuiltSystemTypeEnum_WATERPROOFING" client="cl_Pset_BuiltSystemTypeWaterproofing" supplier="cl_IfcBuiltSystemTypeEnum_WATERPROOFING"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypePreSupportFace" name="Pset_ElementAssemblyTypePreSupportFace">
@@ -4004,12 +4006,12 @@ AND
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RingType_CONICAL" name="CONICAL"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RingType_PARALLEL" name="PARALLEL"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RingType_PARALLEL_WITH_CORRECTIVE_RINGS" name="PARALLEL_WITH_CORRECTIVE_RINGS"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RingType_SWISS_TÜBBING" name="SWISS_TÜBBING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RingType_SWISS_TUBBING" name="SWISS_TUBBING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RingType_INVERT_SEGMENT_WITH_SHOTCRETE" name="INVERT_SEGMENT_WITH_SHOTCRETE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RingType_HEXAGONAL" name="HEXAGONAL"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RingType_UNSET" name="UNSET"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RingType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RingType_NOTKNOWN" name="NOTKNOWN"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RingType_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RingType_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypeRing_IfcElementAssemblyTypeEnum_RING" client="cl_Pset_ElementAssemblyTypeRing" supplier="cl_IfcElementAssemblyTypeEnum_RING"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PreSupportCommon" name="Pset_PreSupportCommon">
@@ -4077,21 +4079,26 @@ AND
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PreSupportArrangement" name="PEnum_PreSupportArrangement">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_SIMPLE" name="SIMPLE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_STAGGERED" name="STAGGERED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PreSupportLocation" name="PEnum_PreSupportLocation">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_TUNNELVAULT" name="TUNNELVAULT"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_TUNNELFACE" name="TUNNELFACE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_USERDEFINED" name="USERDEFINED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_TUNNEL_VAULT" name="TUNNEL_VAULT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_TUNNEL_FACE" name="TUNNEL_FACE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PreSupportType" name="PEnum_PreSupportType">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_JETGROUTED" name="JETGROUTED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_PIPEUMBRELLA" name="PIPEUMBRELLA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_JET_GROUTED" name="JET_GROUTED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_PIPE_UMBRELLA" name="PIPE_UMBRELLA"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_FREEZING" name="FREEZING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_FOREPOLING" name="FOREPOLING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_SPILING" name="SPILING"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_USERDEFINED" name="USERDEFINED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PreSupportCommon_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT" client="cl_Pset_PreSupportCommon" supplier="cl_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PreSupportCommon_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT" client="cl_Pset_PreSupportCommon" supplier="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT"/>
@@ -4124,16 +4131,25 @@ AND
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ExcavationFaceType" name="PEnum_ExcavationFaceType">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceType_TUNNELFACE" name="TUNNELFACE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceType_TUNNELWALL" name="TUNNELWALL"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceType_TUNNELROOF" name="TUNNELROOF"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceType_TUNNEL_FACE" name="TUNNEL_FACE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceType_TUNNEL_WALL" name="TUNNEL_WALL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceType_TUNNEL_ROOF" name="TUNNEL_ROOF"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceType_INVERT" name="INVERT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceType_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ExcavationMethod" name="PEnum_ExcavationMethod">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationMethod_DRILLBLAST" name="DRILLBLAST"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationMethod_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationMethod_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationMethod_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ExcavationStep" name="PEnum_ExcavationStep">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationStep_TOPHEADING" name="TOPHEADING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationStep_TOP_HEADING" name="TOP_HEADING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationStep_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationStep_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationStep_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpatialGeoObsExcavatedZone_IfcSpatialZoneTypeEnum_MAPPEDZONE" client="cl_Pset_SpatialGeoObsExcavatedZone" supplier="cl_IfcSpatialZoneTypeEnum_MAPPEDZONE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsFieldOutcrop" name="Pset_SpatialGeoScienceObservationFieldOutcrop">
@@ -4270,11 +4286,11 @@ AND
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_GroutingType" name="PEnum_GroutingType">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_STDGROUTING_CEMENT" name="STDGROUTING_CEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_STANDARD_GROUTING_CEMENT" name="STANDARD_GROUTING_CEMENT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_MICROFINE_CEMENT" name="MICROFINE_CEMENT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_ULTRAFINE_CEMENT" name="ULTRAFINE_CEMENT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_CHEMICAL_COMPONENT" name="CHEMICAL_COMPONENT"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_UNSET" name="UNSET"/>
     </packagedElement>
