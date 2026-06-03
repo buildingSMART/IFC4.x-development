@@ -1350,7 +1350,7 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsBoreholeConstruction_IfcBorehole" client="cl_Pset_GeoObsBoreholeConstruction" supplier="cl_IfcBorehole"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsCommon" name="Pset_GeoObsCommon">
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsCommon" name="Pset_GeoScienceObservationCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
       </ownedComment>
