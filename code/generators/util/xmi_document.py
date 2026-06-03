@@ -360,7 +360,7 @@ class xmi_document:
             if c.xmi_id is None or c.name is None:
                 continue
 
-            if c.xmi_type in ("uml:Package", "uml:EnumerationLiteral", "uml:Generalization", "uml:OpaqueExpression", "uml:Property", "uml:Association", "uml:Dependency"):
+            if c.xmi_type in ("uml:Package", "uml:EnumerationLiteral", "uml:Generalization", "uml:OpaqueExpression", "uml:Property", "uml:Association", "uml:Dependency", "uml:LiteralInteger", "uml:LiteralUnlimitedNatural"):
                 continue
 
             if c.xml.tagName == 'uml:Model':
