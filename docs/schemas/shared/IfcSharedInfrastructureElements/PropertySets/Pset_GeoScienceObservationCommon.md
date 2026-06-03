@@ -1,4 +1,4 @@
-# Pset_GeoObsCommon
+# Pset_GeoScienceObservationCommon
 
 Common properties for geoscience observations.
 <!-- end of short definition -->
