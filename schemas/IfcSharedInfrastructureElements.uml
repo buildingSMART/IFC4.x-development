@@ -1374,7 +1374,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsCommon_IfcSensor" client="cl_Pset_GeoObsCommon">
       <supplier xmi:type="uml:Class" href="IfcBuildingControlsDomain.uml#cl_IfcSensor"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsBorehole" name="Pset_SpatialGeoObsBorehole">
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsBorehole" name="Pset_SpatialGeoScienceObservationBorehole">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpatialGeoObsBorehole_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
       </ownedComment>
