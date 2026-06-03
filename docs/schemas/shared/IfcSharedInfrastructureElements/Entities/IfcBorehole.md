@@ -1,6 +1,7 @@
 # IfcBorehole
 
 A Borehole is the generalized term for any narrow shaft drilled in the ground, either vertically, horizontally, or inclined. 
+<!-- end of short definition -->
 
 > NOTE In the context of ground models, IfcBorehole is mainly used as a space where observations of the ground conditions are made, and results from tests in place (in-situ) or on samples collected from the borehole are located.
 
