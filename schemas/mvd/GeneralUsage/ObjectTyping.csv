@@ -8,6 +8,7 @@ IfcAudioVisualAppliance,IfcAudioVisualApplianceType
 IfcBeam,IfcBeamType
 IfcBearing,IfcBearingType
 IfcBoiler,IfcBoilerType
+IfcBorehole,IfcBoreholeType
 IfcBuildingElementPart,IfcBuildingElementPartType
 IfcBuildingElementProxy,IfcBuildingElementProxyType
 IfcBuiltElement,IfcBuiltElementType
