@@ -1,4 +1,4 @@
 LiningMaterial
 ==============
 
-Lining material or 'NOT LINED' or 'UNKNOWN' (boreholeML).
+The material of the lining for borehole wall stabilizing.
