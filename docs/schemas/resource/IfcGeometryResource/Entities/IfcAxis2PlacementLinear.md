@@ -21,7 +21,3 @@ The _Location_ on parent type _IfcPlacement_ shall be of type _IfcPointByDistanc
 
 ### WR2
 The _Axis_ and _RefDirection_ shall not be parallel or anti-parallel.
-
-## Informal Propositions
-
-- _Axis_ and _RefDirection_ shall either both be provided or both be omitted.
