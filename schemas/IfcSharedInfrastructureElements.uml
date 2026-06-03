@@ -155,7 +155,11 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBorehole" name="IfcBorehole">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBorehole_gen_IfcGeotechnicalAssembly" general="cl_IfcGeotechnicalAssembly"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBorehole_gen_IfcGeotechnicalAssembly" general="cl_IfcGeoScienceElement"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_T6R1UF8mEfG9fPJwYf2phQ" name="PredefinedType" type="en_IfcBoreholeTypeEnum" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_amAGcF8mEfG9fPJwYf2phQ" name="LiteralInteger1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_amAGcV8mEfG9fPJwYf2phQ" name="LiteralUnlimitedNatural1" value="1"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEarthworksCut" name="IfcEarthworksCut">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEarthworksCut_gen_IfcFeatureElementSubtraction">
@@ -1271,10 +1275,49 @@
       <supplier xmi:type="uml:Class" href="IfcStructuralElementsDomain.uml#cl_IfcSurfaceFeature"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_VolumetricStratumBaseQuantities_IfcGeotechnicalStratum" client="cl_Qto_VolumetricStratumBaseQuantities" supplier="cl_IfcGeotechnicalStratum"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcBoreholeTypeEnum" name="IfcBoreholeTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBoreholeTypeEnum_COREDRILLING" name="COREDRILLING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBoreholeTypeEnum_DESTRUCTIVEDRILLING" name="DESTRUCTIVEDRILLING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBoreholeTypeEnum_DEWATERING" name="DEWATERING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBoreholeTypeEnum_TRIALPIT" name="TRIALPIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBoreholeTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBoreholeTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceElementType" name="IfcGeoScienceElementType" isAbstract="true">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceElementType_gen_IfcElementType">
         <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElementType"/>
       </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoreholeType" name="IfcBoreholeType">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBoreholeType_gen_IfcGeoScienceElementType" general="cl_IfcGeoScienceElementType"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcBoreholeType_PredefinedType" name="PredefinedType" type="en_IfcBoreholeTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcBoreholeType_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcBoreholeType_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoreholeTypeEnum_COREDRILLING" name="IfcBoreholeTypeEnum.COREDRILLING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBoreholeTypeEnum_COREDRILLING_gen_IfcBoreholeType" general="cl_IfcBoreholeType"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_TQjtcF8nEfG9fPJwYf2phQ" general="cl_IfcBorehole"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoreholeTypeEnum_DESTRUCTIVEDRILLING" name="IfcBoreholeTypeEnum.DESTRUCTIVEDRILLING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBoreholeTypeEnum_DESTRUCTIVEDRILLING_gen_IfcBoreholeType" general="cl_IfcBoreholeType"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_f1IoUF8nEfG9fPJwYf2phQ" general="cl_IfcBorehole"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoreholeTypeEnum_DEWATERING" name="IfcBoreholeTypeEnum.DEWATERING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBoreholeTypeEnum_DEWATERING_gen_IfcBoreholeType" general="cl_IfcBoreholeType"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_oKeioF8nEfG9fPJwYf2phQ" general="cl_IfcBorehole"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoreholeTypeEnum_TRIALPIT" name="IfcBoreholeTypeEnum.TRIALPIT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBoreholeTypeEnum_TRIALPIT_gen_IfcBoreholeType" general="cl_IfcBoreholeType"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_0qY_8F8nEfG9fPJwYf2phQ" general="cl_IfcBorehole"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoreholeTypeEnum_USERDEFINED" name="IfcBoreholeTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBoreholeTypeEnum_USERDEFINED_gen_IfcBoreholeType" general="cl_IfcBoreholeType"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_FOHQ8F8oEfG9fPJwYf2phQ" general="cl_IfcBorehole"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBoreholeTypeEnum_NOTDEFINED" name="IfcBoreholeTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBoreholeTypeEnum_NOTDEFINED_gen_IfcBoreholeType" general="cl_IfcBoreholeType"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_3Ap3QF8oEfG9fPJwYf2phQ" general="cl_IfcBorehole"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceElement" name="IfcGeoScienceElement" isAbstract="true">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceElement_gen_IfcElement">
