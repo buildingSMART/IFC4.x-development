@@ -1324,7 +1324,7 @@
         <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
       </generalization>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsBoreholeConstruction" name="Pset_GeoObsBoreholeConstruction">
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsBoreholeConstruction" name="Pset_GeoScienceObservationBoreholeConstruction">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsBoreholeConstruction_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
       </ownedComment>
