@@ -109,6 +109,9 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeotechnicalAssembly" name="IfcGeotechnicalAssembly" isAbstract="true">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Ac9dAF9SEfG73IEoZuhExg">
+        <body>DEPRECATED</body>
+      </ownedComment>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeotechnicalAssembly_gen_IfcGeotechnicalElement" general="cl_IfcGeotechnicalElement"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeotechnicalStratum" name="IfcGeotechnicalStratum">
