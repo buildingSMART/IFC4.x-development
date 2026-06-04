@@ -3,7 +3,7 @@
 Abstract supertype for geotechnical entities.
 <!-- end of short definition -->
 
-> DEPRECATION The entity _IfcGeotechnicalElement_ shall not be used anymore, use _IfcGeoScienceElement_ instead.
+> IFC4.4.0.0 DEPRECATION This entity is now deprecated. Use IfcGeoScienceElement instead.
 
 ## Concepts
 
