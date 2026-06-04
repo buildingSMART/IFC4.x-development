@@ -7,4 +7,4 @@ The assembly may contain one of more strata and other anthropic elements. The co
 
 > NOTE This IfcElement subtype is an anomaly in the sense that it does not have a PredefinedType attribute. This is to be provided in subsequent versions of the standard.
 
-> DEPRECATION The entity _IfcGeomodel_ shall not be used anymore, use _IfcGeoScienceModel_ instead.
+> IFC4.4.0.0 DEPRECATION This entity is now deprecated. Use IfcGeoScienceModel instead.
