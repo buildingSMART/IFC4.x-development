@@ -5,4 +5,4 @@ Representation of the concept of an identified discrete almost homogeneous geolo
 
 The shape representations used should correspond to the sub-type of _IfcGeotechnicalAssembly_ in which it occurs
 
-> DEPRECATION The entity _IfcGeotechnicalstratum_ shall not be used anymore, use _IfcGeoScienceFeature_ instead.
+> IFC4.4.0.0 DEPRECATION This entity is now deprecated. Use IfcGeoScienceFeature instead.
