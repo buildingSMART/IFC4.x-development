@@ -118,6 +118,9 @@
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeotechnicalAssembly_gen_IfcGeotechnicalElement" general="cl_IfcGeotechnicalElement"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeotechnicalStratum" name="IfcGeotechnicalStratum">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_iNUCAF9mEfG73IEoZuhExg">
+        <body>DEPRECATED</body>
+      </ownedComment>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeotechnicalStratum_gen_IfcGeotechnicalElement" general="cl_IfcGeotechnicalElement"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcGeotechnicalStratum_PredefinedType" name="PredefinedType" type="en_IfcGeotechnicalStratumTypeEnum">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcGeotechnicalStratum_PredefinedType_lower"/>
