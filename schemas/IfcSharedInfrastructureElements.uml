@@ -177,6 +177,9 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeomodel" name="IfcGeomodel">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_T1irMF9mEfG73IEoZuhExg">
+        <body>DEPRECATED</body>
+      </ownedComment>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeomodel_gen_IfcGeotechnicalAssembly" general="cl_IfcGeotechnicalAssembly"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoslice" name="IfcGeoslice">
