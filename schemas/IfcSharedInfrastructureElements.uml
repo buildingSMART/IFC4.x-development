@@ -81,6 +81,9 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcSignalTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeotechnicalElement" name="IfcGeotechnicalElement" isAbstract="true">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_bMj8EF9mEfG73IEoZuhExg">
+        <body>DEPRECATED</body>
+      </ownedComment>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeotechnicalElement_gen_IfcElement">
         <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcElement"/>
       </generalization>
