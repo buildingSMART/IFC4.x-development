@@ -5,4 +5,4 @@ Representation of the concept of a sectional planar geological and geotechnical 
 
 > NOTE This IfcElement subtype is an anomaly in the sense that it does not have a PredefinedType attribute. This is to be provided in subsequent versions of the standard.
 
-> DEPRECATION The entity _IfcGeoSlice_ shall not be used anymore, use _IfcGeoScienceModel_ instead.
+> IFC4.4.0.0 DEPRECATION This entity is now deprecated. Use IfcGeoScienceModel instead.
