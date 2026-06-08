@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_ifc4x3_add2" name="ifc4x3_add2">
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_ifc4x3_add2" name="ifc4x3_add2" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_base" name="base">
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_binary" name="binary"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_boolean" name="boolean"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_integer" name="integer"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_logical" name="logical"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_number" name="number"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_real" name="real"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_string" name="string"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_PropertyTableValueBase" name="PropertyTableValueBase"/>
+  </packagedElement>
   <packageImport xmi:type="uml:PackageImport" xmi:id="ip_IfcGeometryResource">
     <importedPackage xmi:type="uml:Package" href="IfcGeometryResource.uml#pk_IfcGeometryResource"/>
   </packageImport>
@@ -129,14 +139,7 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="ip_propertytypes">
     <importedPackage xmi:type="uml:Package" href="propertytypes.uml#pk_propertytypes"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Package" xmi:id="pk_base" name="base">
-    <packagedElement xmi:type="uml:DataType" xmi:id="dt_binary" name="binary"/>
-    <packagedElement xmi:type="uml:DataType" xmi:id="dt_boolean" name="boolean"/>
-    <packagedElement xmi:type="uml:DataType" xmi:id="dt_integer" name="integer"/>
-    <packagedElement xmi:type="uml:DataType" xmi:id="dt_logical" name="logical"/>
-    <packagedElement xmi:type="uml:DataType" xmi:id="dt_number" name="number"/>
-    <packagedElement xmi:type="uml:DataType" xmi:id="dt_real" name="real"/>
-    <packagedElement xmi:type="uml:DataType" xmi:id="dt_string" name="string"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_PropertyTableValueBase" name="PropertyTableValueBase"/>
-  </packagedElement>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="ip_IfcTunnelDomain">
+    <importedPackage xmi:type="uml:Package" href="IfcTunnelDomain.uml#pk_IfcTunnelDomain"/>
+  </packageImport>
 </uml:Model>
