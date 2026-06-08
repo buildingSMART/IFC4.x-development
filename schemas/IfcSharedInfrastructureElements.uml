@@ -158,9 +158,7 @@
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBorehole_gen_IfcGeotechnicalAssembly" general="cl_IfcGeotechnicalAssembly"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcEarthworksCut" name="IfcEarthworksCut">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEarthworksCut_gen_IfcFeatureElementSubtraction">
-        <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcFeatureElementSubtraction"/>
-      </generalization>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcEarthworksCut_gen_IfcExcavation" general="cl_IfcExcavation"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcEarthworksCut_PredefinedType" name="PredefinedType" type="en_IfcEarthworksCutTypeEnum">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcEarthworksCut_PredefinedType_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcEarthworksCut_PredefinedType_upper" value="1"/>
@@ -1271,5 +1269,277 @@
       <supplier xmi:type="uml:Class" href="IfcStructuralElementsDomain.uml#cl_IfcSurfaceFeature"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_VolumetricStratumBaseQuantities_IfcGeotechnicalStratum" client="cl_Qto_VolumetricStratumBaseQuantities" supplier="cl_IfcGeotechnicalStratum"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcFaceExcavationTypeEnum" name="IfcFaceExcavationTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFaceExcavationTypeEnum_FULLFACE" name="FULLFACE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFaceExcavationTypeEnum_STAGED" name="STAGED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFaceExcavationTypeEnum_PILOTBORE" name="PILOTBORE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFaceExcavationTypeEnum_SHAFT" name="SHAFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFaceExcavationTypeEnum_CROSSCONNECTION" name="CROSSCONNECTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFaceExcavationTypeEnum_REAMING" name="REAMING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFaceExcavationTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFaceExcavationTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcRadialExcavationTypeEnum" name="IfcRadialExcavationTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRadialExcavationTypeEnum_PROFILEENLARGEMENT" name="PROFILEENLARGEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRadialExcavationTypeEnum_REPROFILING" name="REPROFILING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRadialExcavationTypeEnum_NICHE" name="NICHE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRadialExcavationTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRadialExcavationTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcExcavation" name="IfcExcavation" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcExcavation_gen_IfcFeatureElementSubtraction">
+        <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcFeatureElementSubtraction"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcUndergroundExcavation" name="IfcUndergroundExcavation" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcUndergroundExcavation_gen_IfcExcavation" general="cl_IfcExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFaceExcavation" name="IfcFaceExcavation">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcFaceExcavation_HasObjectType" name="HasObjectType">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcFaceExcavation_HasObjectType" name="HasObjectType">
+          <language>EXPRESS_WHERE</language>
+          <body>(PredefinedType &lt;> IfcFaceExcavationTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFaceExcavation_gen_IfcUndergroundExcavation" general="cl_IfcUndergroundExcavation"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcFaceExcavation_PredefinedType" name="PredefinedType" type="en_IfcFaceExcavationTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcFaceExcavation_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcFaceExcavation_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRadialExcavation" name="IfcRadialExcavation">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRadialExcavation_HasObjectType" name="HasObjectType">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcRadialExcavation_HasObjectType" name="HasObjectType">
+          <language>EXPRESS_WHERE</language>
+          <body>(PredefinedType &lt;> IfcRadialExcavationTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRadialExcavation_gen_IfcUndergroundExcavation" general="cl_IfcUndergroundExcavation"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcRadialExcavation_PredefinedType" name="PredefinedType" type="en_IfcRadialExcavationTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcRadialExcavation_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcRadialExcavation_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFaceExcavationTypeEnum_FULLFACE" name="IfcFaceExcavationTypeEnum.FULLFACE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFaceExcavationTypeEnum_FULLFACE_gen_IfcFaceExcavation" general="cl_IfcFaceExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFaceExcavationTypeEnum_STAGED" name="IfcFaceExcavationTypeEnum.STAGED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFaceExcavationTypeEnum_STAGED_gen_IfcFaceExcavation" general="cl_IfcFaceExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFaceExcavationTypeEnum_PILOTBORE" name="IfcFaceExcavationTypeEnum.PILOTBORE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFaceExcavationTypeEnum_PILOTBORE_gen_IfcFaceExcavation" general="cl_IfcFaceExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFaceExcavationTypeEnum_SHAFT" name="IfcFaceExcavationTypeEnum.SHAFT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFaceExcavationTypeEnum_SHAFT_gen_IfcFaceExcavation" general="cl_IfcFaceExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFaceExcavationTypeEnum_CROSSCONNECTION" name="IfcFaceExcavationTypeEnum.CROSSCONNECTION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFaceExcavationTypeEnum_CROSSCONNECTION_gen_IfcFaceExcavation" general="cl_IfcFaceExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFaceExcavationTypeEnum_REAMING" name="IfcFaceExcavationTypeEnum.REAMING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFaceExcavationTypeEnum_REAMING_gen_IfcFaceExcavation" general="cl_IfcFaceExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFaceExcavationTypeEnum_USERDEFINED" name="IfcFaceExcavationTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFaceExcavationTypeEnum_USERDEFINED_gen_IfcFaceExcavation" general="cl_IfcFaceExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcFaceExcavationTypeEnum_NOTDEFINED" name="IfcFaceExcavationTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcFaceExcavationTypeEnum_NOTDEFINED_gen_IfcFaceExcavation" general="cl_IfcFaceExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRadialExcavationTypeEnum_PROFILEENLARGEMENT" name="IfcRadialExcavationTypeEnum.PROFILEENLARGEMENT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRadialExcavationTypeEnum_PROFILEENLARGEMENT_gen_IfcRadialExcavation" general="cl_IfcRadialExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRadialExcavationTypeEnum_REPROFILING" name="IfcRadialExcavationTypeEnum.REPROFILING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRadialExcavationTypeEnum_REPROFILING_gen_IfcRadialExcavation" general="cl_IfcRadialExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRadialExcavationTypeEnum_NICHE" name="IfcRadialExcavationTypeEnum.NICHE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRadialExcavationTypeEnum_NICHE_gen_IfcRadialExcavation" general="cl_IfcRadialExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRadialExcavationTypeEnum_USERDEFINED" name="IfcRadialExcavationTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRadialExcavationTypeEnum_USERDEFINED_gen_IfcRadialExcavation" general="cl_IfcRadialExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcRadialExcavationTypeEnum_NOTDEFINED" name="IfcRadialExcavationTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRadialExcavationTypeEnum_NOTDEFINED_gen_IfcRadialExcavation" general="cl_IfcRadialExcavation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ExcavationCommon" name="Pset_ExcavationCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ExcavationCommon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ExcavationCommon_BulkingFactor" name="BulkingFactor">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ExcavationCommon_BulkingFactor_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ExcavationCommon_BulkingFactor_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ExcavationCommon_IfcUndergroundExcavation" client="cl_Pset_ExcavationCommon" supplier="cl_IfcUndergroundExcavation"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FaceExcavationCommon" name="Pset_FaceExcavationCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FaceExcavationCommon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FaceExcavationCommon_DriveInclination" name="DriveInclination" type="en_PEnum_DriveInclination">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FaceExcavationCommon_DriveInclination_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FaceExcavationCommon_DriveInclination_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FaceExcavationCommon_ExcavationFaceInclination" name="ExcavationFaceInclination" type="en_PEnum_ExcavationFaceInclination">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FaceExcavationCommon_ExcavationFaceInclination_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FaceExcavationCommon_ExcavationFaceInclination_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FaceExcavationCommon_FaceExcavationType" name="FaceExcavationType" type="en_PEnum_FaceExcavationType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FaceExcavationCommon_FaceExcavationType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FaceExcavationCommon_FaceExcavationType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FaceExcavationCommon_IsDriveDirectedAlongChainage" name="IsDriveDirectedAlongChainage">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FaceExcavationCommon_IsDriveDirectedAlongChainage_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FaceExcavationCommon_IsDriveDirectedAlongChainage_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FaceExcavationCommon_MaxUnsupportedExcavationLength" name="MaxUnsupportedExcavationLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FaceExcavationCommon_MaxUnsupportedExcavationLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FaceExcavationCommon_MaxUnsupportedExcavationLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FaceExcavationCommon_TunnelInclination" name="TunnelInclination" type="en_PEnum_TunnelInclination">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FaceExcavationCommon_TunnelInclination_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FaceExcavationCommon_TunnelInclination_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_DriveInclination" name="PEnum_DriveInclination">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DriveInclination_HORIZONTAL" name="HORIZONTAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DriveInclination_VERTICAL" name="VERTICAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DriveInclination_INCLINED" name="INCLINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ExcavationFaceInclination" name="PEnum_ExcavationFaceInclination">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceInclination_VERTICAL" name="VERTICAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceInclination_INCLINED" name="INCLINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_FaceExcavationType" name="PEnum_FaceExcavationType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_FULLFACE" name="FULLFACE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_STAGED" name="STAGED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_PILOTBORE" name="PILOTBORE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_SHAFT" name="SHAFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_CROSSCONNECTION" name="CROSSCONNECTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_REAMING" name="REAMING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_OTHER" name="OTHER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_TunnelInclination" name="PEnum_TunnelInclination">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TunnelInclination_RISING" name="RISING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TunnelInclination_FALLING" name="FALLING"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FaceExcavationCommon_IfcFaceExcavation" client="cl_Pset_FaceExcavationCommon" supplier="cl_IfcFaceExcavation"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_LateralExcavationCommon" name="Pset_LateralExcavationCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_LateralExcavationCommon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_LateralExcavationCommon_RadialExcavationDepth" name="RadialExcavationDepth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_LateralExcavationCommon_RadialExcavationDepth_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_LateralExcavationCommon_RadialExcavationDepth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_LateralExcavationCommon_RadialExcavationDirection" name="RadialExcavationDirection" type="en_PEnum_RadialExcavationDirection">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_LateralExcavationCommon_RadialExcavationDirection_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_LateralExcavationCommon_RadialExcavationDirection_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_LateralExcavationCommon_RadialExcavationType" name="RadialExcavationType" type="en_PEnum_RadialExcavationType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_LateralExcavationCommon_RadialExcavationType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_LateralExcavationCommon_RadialExcavationType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_LateralExcavationCommon_RadialExcavationTypeOther" name="RadialExcavationTypeOther">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_LateralExcavationCommon_RadialExcavationTypeOther_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_LateralExcavationCommon_RadialExcavationTypeOther_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_RadialExcavationDirection" name="PEnum_RadialExcavationDirection">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationDirection_LATERAL" name="LATERAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationDirection_VERTICAL" name="VERTICAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationDirection_RADIAL" name="RADIAL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_RadialExcavationType" name="PEnum_RadialExcavationType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationType_PROFILEENLARGEMENT" name="PROFILEENLARGEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationType_REPROFILING" name="REPROFILING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationType_NICHE" name="NICHE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationType_OTHER" name="OTHER"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_LateralExcavationCommon_IfcRadialExcavation" client="cl_Pset_LateralExcavationCommon" supplier="cl_IfcRadialExcavation"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_UndergroundExcavationCommon" name="Pset_UndergroundExcavationCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_UndergroundExcavationCommon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_UndergroundExcavationCommon_ExcavationClass" name="ExcavationClass">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_UndergroundExcavationCommon_ExcavationClass_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_UndergroundExcavationCommon_ExcavationClass_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_UndergroundExcavationCommon_RoundLength" name="RoundLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_UndergroundExcavationCommon_RoundLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_UndergroundExcavationCommon_RoundLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_UndergroundExcavationCommon_SupportClass" name="SupportClass">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_UndergroundExcavationCommon_SupportClass_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_UndergroundExcavationCommon_SupportClass_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_UndergroundExcavationCommon_SupportDescription" name="SupportDescription">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_UndergroundExcavationCommon_SupportDescription_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_UndergroundExcavationCommon_SupportDescription_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_UndergroundExcavationCommon_UndergroundExcavationMethod" name="UndergroundExcavationMethod" type="en_PEnum_UndergroundExcavationMethod">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_UndergroundExcavationCommon_UndergroundExcavationMethod_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_UndergroundExcavationCommon_UndergroundExcavationMethod_upper" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_UndergroundExcavationMethod" name="PEnum_UndergroundExcavationMethod">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_HAND" name="HAND"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_EXCAVATOR" name="EXCAVATOR"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_JACKHAMMER" name="JACKHAMMER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_RIPPER" name="RIPPER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_DRILLANDBLAST" name="DRILLANDBLAST"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_ROADHEADER" name="ROADHEADER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBMOPENWITHGRIPPERS" name="TBMOPENWITHGRIPPERS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBMCLOSEDWITHGRIPPERS" name="TBMCLOSEDWITHGRIPPERS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBMEARTHPRESSUREFACESUPPORT" name="TBMEARTHPRESSUREFACESUPPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBMSLURRYPRESSUREFACESUPPORT" name="TBMSLURRYPRESSUREFACESUPPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBMAIRPRESSUREFACESUPPORT" name="TBMAIRPRESSUREFACESUPPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBMMIXSHIELD" name="TBMMIXSHIELD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_SHAFTBORINGMACHINE" name="SHAFTBORINGMACHINE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_RAISEDRILL" name="RAISEDRILL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UndergroundExcavationCommon_IfcUndergroundExcavation" client="cl_Pset_UndergroundExcavationCommon" supplier="cl_IfcUndergroundExcavation"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ExcavationBaseQuantities" name="Qto_ExcavationBaseQuantities">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Qto_ExcavationBaseQuantities_comment_0">
+        <body>QTO_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ExcavationBaseQuantities_Depth" name="Depth">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ExcavationBaseQuantities_Depth_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ExcavationBaseQuantities_Depth_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ExcavationBaseQuantities_Length" name="Length">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ExcavationBaseQuantities_Length_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ExcavationBaseQuantities_Length_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ExcavationBaseQuantities_LooseVolume" name="LooseVolume">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ExcavationBaseQuantities_LooseVolume_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ExcavationBaseQuantities_LooseVolume_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ExcavationBaseQuantities_UndisturbedVolume" name="UndisturbedVolume">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityVolume"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ExcavationBaseQuantities_UndisturbedVolume_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ExcavationBaseQuantities_UndisturbedVolume_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ExcavationBaseQuantities_Weight" name="Weight">
+        <type xmi:type="uml:Class" href="IfcQuantityResource.uml#cl_IfcQuantityWeight"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ExcavationBaseQuantities_Weight_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ExcavationBaseQuantities_Weight_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Qto_ExcavationBaseQuantities_Width" name="Width">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Qto_ExcavationBaseQuantities_Width_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Qto_ExcavationBaseQuantities_Width_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ExcavationBaseQuantities_IfcExcavation" client="cl_Qto_ExcavationBaseQuantities" supplier="cl_IfcExcavation"/>
   </packagedElement>
 </uml:Model>
