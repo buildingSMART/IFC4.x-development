@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcSharedInfrastructureElements" name="IfcSharedInfrastructureElements">
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcSharedInfrastructureElements" name="IfcSharedInfrastructureElements" xmi:version="20131001">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcSharedInfrastructureElements" name="IfcSharedInfrastructureElements">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcCourseTypeEnum" name="IfcCourseTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCourseTypeEnum_ARMOUR" name="ARMOUR"/>
@@ -1466,8 +1466,7 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SupportCommon_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
       </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SupportCommon_Arrangement" name="Arrangement">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SupportCommon_Arrangement" name="Arrangement" type="en_PEnum_PreSupportArrangement">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SupportCommon_Arrangement_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SupportCommon_Arrangement_upper" value="1"/>
       </ownedAttribute>
