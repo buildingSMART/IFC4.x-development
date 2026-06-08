@@ -1434,10 +1434,11 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PreSupportLocation" name="PEnum_PreSupportLocation">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_TUNNELVAULT" name="TUNNELVAULT"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_TUNNELFACE" name="TUNNELFACE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_USERDEFINED" name="USERDEFINED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_TUNNEL_VAULT" name="TUNNEL_VAULT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_TUNNEL_FACE" name="TUNNEL_FACE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PreSupportType" name="PEnum_PreSupportType">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_JETGROUTED" name="JETGROUTED"/>
