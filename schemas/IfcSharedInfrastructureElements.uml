@@ -1405,23 +1405,34 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DriveInclination_HORIZONTAL" name="HORIZONTAL"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DriveInclination_VERTICAL" name="VERTICAL"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DriveInclination_INCLINED" name="INCLINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DriveInclination_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DriveInclination_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_DriveInclination_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ExcavationFaceInclination" name="PEnum_ExcavationFaceInclination">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceInclination_VERTICAL" name="VERTICAL"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceInclination_INCLINED" name="INCLINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceInclination_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceInclination_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ExcavationFaceInclination_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_FaceExcavationType" name="PEnum_FaceExcavationType">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_FULLFACE" name="FULLFACE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_FULL_FACE" name="FULL_FACE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_STAGED" name="STAGED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_PILOTBORE" name="PILOTBORE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_PILOT_BORE" name="PILOT_BORE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_SHAFT" name="SHAFT"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_CROSSCONNECTION" name="CROSSCONNECTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_CROSS_CONNECTION" name="CROSS_CONNECTION"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_REAMING" name="REAMING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FaceExcavationType_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_TunnelInclination" name="PEnum_TunnelInclination">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TunnelInclination_RISING" name="RISING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TunnelInclination_FALLING" name="FALLING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TunnelInclination_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TunnelInclination_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TunnelInclination_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FaceExcavationCommon_IfcFaceExcavation" client="cl_Pset_FaceExcavationCommon" supplier="cl_IfcFaceExcavation"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_LateralExcavationCommon" name="Pset_LateralExcavationCommon">
@@ -1451,12 +1462,17 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationDirection_LATERAL" name="LATERAL"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationDirection_VERTICAL" name="VERTICAL"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationDirection_RADIAL" name="RADIAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationDirection_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationDirection_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationDirection_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_RadialExcavationType" name="PEnum_RadialExcavationType">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationType_PROFILEENLARGEMENT" name="PROFILEENLARGEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationType_PROFILE_ENLARGEMENT" name="PROFILE_ENLARGEMENT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationType_REPROFILING" name="REPROFILING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationType_NICHE" name="NICHE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_RadialExcavationType_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_LateralExcavationCommon_IfcRadialExcavation" client="cl_Pset_LateralExcavationCommon" supplier="cl_IfcRadialExcavation"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_UndergroundExcavationCommon" name="Pset_UndergroundExcavationCommon">
@@ -1493,16 +1509,19 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_EXCAVATOR" name="EXCAVATOR"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_JACKHAMMER" name="JACKHAMMER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_RIPPER" name="RIPPER"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_DRILLANDBLAST" name="DRILLANDBLAST"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_DRILL_AND_BLAST" name="DRILL_AND_BLAST"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_ROADHEADER" name="ROADHEADER"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBMOPENWITHGRIPPERS" name="TBMOPENWITHGRIPPERS"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBMCLOSEDWITHGRIPPERS" name="TBMCLOSEDWITHGRIPPERS"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBMEARTHPRESSUREFACESUPPORT" name="TBMEARTHPRESSUREFACESUPPORT"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBMSLURRYPRESSUREFACESUPPORT" name="TBMSLURRYPRESSUREFACESUPPORT"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBMAIRPRESSUREFACESUPPORT" name="TBMAIRPRESSUREFACESUPPORT"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBMMIXSHIELD" name="TBMMIXSHIELD"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_SHAFTBORINGMACHINE" name="SHAFTBORINGMACHINE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_RAISEDRILL" name="RAISEDRILL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBM_OPEN_WITH_GRIPPERS" name="TBM_OPEN_WITH_GRIPPERS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBM_CLOSED_WITH_GRIPPERS" name="TBM_CLOSED_WITH_GRIPPERS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBM_EARTH_PRESSURE_FACE_SUPPORT" name="TBM_EARTH_PRESSURE_FACE_SUPPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBM_SLURRY_PRESSURE_FACE_SUPPORT" name="TBM_SLURRY_PRESSURE_FACE_SUPPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBM_AIR_PRESSURE_FACE_SUPPORT" name="TBM_AIR_PRESSURE_FACE_SUPPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_TBM_MIX_SHIELD" name="TBM_MIX_SHIELD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_SHAFT_BORING_MACHINE" name="SHAFT_BORING_MACHINE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_RAISE_DRILL" name="RAISE_DRILL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_UndergroundExcavationMethod_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_UndergroundExcavationCommon_IfcUndergroundExcavation" client="cl_Pset_UndergroundExcavationCommon" supplier="cl_IfcUndergroundExcavation"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Qto_ExcavationBaseQuantities" name="Qto_ExcavationBaseQuantities">
