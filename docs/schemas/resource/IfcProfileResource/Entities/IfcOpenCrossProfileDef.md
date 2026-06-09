@@ -36,3 +36,7 @@ The list of slopes and the list of widths shall be of the same size.
 ### CorrespondingTags
 
 The list of tags shall have one more member.
+
+### UniqueTags
+
+The tags shall be unique
