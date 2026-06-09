@@ -7,8 +7,7 @@ The _IfcAxis2PlacementLinear_ provides location and orientation to place items i
 
 ### Axis
 The exact direction of the local Z Axis.
-If Axis is omitted, the direction is taken from the local coordinate frame of the 3D basis curve.
-For example, with _IfcGradientCurve_ the Axis direction is taken perpendicular to the tangent of the basis curve in the plane of the basis curve.
+When the Axis is omitted, its direction defaults to the normal vector to the basis curve that lies within the vertical plane with the RefDirection and has positive Z coordinate.
 For _IfcSegmentedReferenceCurve_ the Axis direction also includes the 'twist' resulting from a deviating elevation relative to the associated _IfcGradientCurve_.
 
 ### RefDirection
