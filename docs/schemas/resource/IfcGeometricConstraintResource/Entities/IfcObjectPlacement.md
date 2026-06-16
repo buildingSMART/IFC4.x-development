@@ -29,4 +29,4 @@ an object coordinate system for instances of _IfcProduct_.
 > IFC4 CHANGE The cardinality has changed to 0..n to allow reuse of instances of _IfcObjectPlacement_ as placement object in one to many products. It takes also into account that it can act as a placement for _IfcStructuralAnalysisModel_.
 
 ### PlacementRelTo
-Reference to another object placement that provides the parent object coordinate system used to establish the local coordinate system, by means specified within subtypes of this entity.
+Reference to another object placement that provides the parent object coordinate system used to establish the local coordinate system, by means specified within the subtypes of _IfcObjectPlacement_.
