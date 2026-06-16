@@ -5,6 +5,8 @@ Nesting and aggregation relationships between _IfcAlignment_'s and their layouts
 
 In the diagram below is an example of a *parent* alignment, with the horizontal layout, and two *child* alignments, one with a vertical layout, and the other with a vertical and a cant layout; both re-using the definition of the horizontal layout from the *parent* alignment.
 
+At most, one *child* alignment with vertical and cant layout is permissible. Viennese Bend cant segments influece the geometry of the horizontal Viennese Bend transition curve segment. In general, having more than one cant layout will result in non-unique horizontal geomtry.
+
 When defining the list of segments for the business logic (i.e., _IfcAlignmentHorizontalSegment_, _IfcAlignmentVerticalSegment_, _IfcAlignmentCantSegment_):
 
 1. A **zero-length segment** shall be added, at the end of the list of segments for _IfcAlignmentSegment.DesignParameters_.
