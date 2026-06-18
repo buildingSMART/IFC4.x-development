@@ -111,6 +111,13 @@ def do_try(fn):
 defined_sequences = []
 referenced_wrappers = set()
 
+def literal_bound(b):
+    # Numeric bound -> int; '?' or symbolic expression -> None (unbounded). (mirrors IfcOpenShell #8039)
+    try:
+        return int(b)
+    except (TypeError, ValueError):
+        return None
+
 def create_attribute(entity, a, name_override=None):
     if isinstance(a, express_parser.AggregationType):
         a_type = a
@@ -162,7 +169,7 @@ def create_attribute(entity, a, name_override=None):
             return agt
 
         def format_unbounded(v):
-            if v in (float("inf"), "?"):
+            if v in (float("inf"), "?") or literal_bound(v) is None:
                 return "unbounded"
             return str(v)
         
@@ -171,12 +178,12 @@ def create_attribute(entity, a, name_override=None):
             is_optional = True
 
             min_occurs_mult = int(a.bounds.lower)
-            max_occurs_mult = float("inf") if a.bounds.upper == "?" else int(a.bounds.upper)
+            max_occurs_mult = float("inf") if literal_bound(a.bounds.upper) is None else int(a.bounds.upper)
         else:
             if isinstance(a_type.type, express_parser.AggregationType):
                 # nested lists don't require a lot of special handling, just list list
                 min_occurs_mult = int(a_type.bounds.lower)
-                max_occurs_mult = float("inf") if a_type.bounds.upper == "?" else int(a_type.bounds.upper)
+                max_occurs_mult = float("inf") if literal_bound(a_type.bounds.upper) is None else int(a_type.bounds.upper)
                 aggregate_type_prefix = aggregate_type(a_type) + " "
                 a_type = a_type.type
 
@@ -217,7 +224,7 @@ def create_attribute(entity, a, name_override=None):
                         XS.minLength,
                         {"value": (a_type.bounds.lower)}
                     )]
-                if a_type.bounds.upper != "?":
+                if literal_bound(a_type.bounds.upper) is not None:
                     length_constraint += [X(
                         XS.maxLength,
                         {"value": (a_type.bounds.upper)}
@@ -250,11 +257,14 @@ def create_attribute(entity, a, name_override=None):
             
             if a_type.aggregate_type == 'array':
                 assert min_occurs_mult == 1
-                extent = int(a_type.bounds.upper) - int(a_type.bounds.lower) + 1
-                for c in (XS.minLength, XS.maxLength):
-                    length_constraint += [X(
-                        c, {"value": str(extent)}
-                    )]
+                upper = literal_bound(a_type.bounds.upper)
+                if upper is not None:
+                    extent = upper - int(a_type.bounds.lower) + 1
+                    for c in (XS.minLength, XS.maxLength):
+                        length_constraint += [X(
+                            c, {"value": str(extent)}
+                        )]
+                # else: symbolic/expression upper bound -> no fixed extent (unbounded)
             else:                
                 if int(a_type.bounds.lower) != 1:
                     length_constraint += [X(
@@ -480,7 +490,7 @@ def convert_simple(nm_def):
         
             yield X(XS.complexType, {"name": nm}, children=[
                 X(XS.sequence, children=[X(XS.element,
-                    {"ref": base, 'maxOccurs': "unbounded" if defn.bounds.upper == '?' else defn.bounds.upper}
+                    {"ref": base, 'maxOccurs': defn.bounds.upper if literal_bound(defn.bounds.upper) is not None else "unbounded"}
                 )])]+attrs
             )
             

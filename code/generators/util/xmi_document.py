@@ -347,7 +347,7 @@ class xmi_document:
 
         def format_aggr(ag):
             ag_names = ("ARRAY", "LIST", "SET", "BAG")
-            m = re.match(r'(\w)(U)?\[(\d+):(\d+|\?)\]', ag)
+            m = re.match(r'(\w)(U)?\[(\d+):([^\]]+)\]', ag)
             assert m
             t, u, l, h = m.groups()
             unique = ("UNIQUE",) if u else ()
