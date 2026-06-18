@@ -63,12 +63,12 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_SHADING" name="SHADING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TRACKCIRCUIT" name="TRACKCIRCUIT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TRANSPORT" name="TRANSPORT"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_USERDEFINED" name="USERDEFINED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_FIREPROTECTION" name="FIREPROTECTION"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TUNNEL_LINING" name="TUNNEL_LINING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT" name="TUNNEL_PRESUPPORT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TUNNEL_SUPPORT" name="TUNNEL_SUPPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_FIREPROTECTION" name="FIREPROTECTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TUNNEL_LINING" name="TUNNEL_LINING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_WATERPROOFING" name="WATERPROOFING"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcElementAssemblyTypeEnum" name="IfcElementAssemblyTypeEnum">
@@ -100,11 +100,11 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_TRAFFIC_CALMING_DEVICE" name="TRAFFIC_CALMING_DEVICE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_TRUSS" name="TRUSS"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_TURNOUTPANEL" name="TURNOUTPANEL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT" name="PRESUPPORTVAULT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" name="PRESUPPORTFACE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_DUCTBANK" name="DUCTBANK"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_DUCTBANK" name="DUCTBANK"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" name="PRESUPPORTFACE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT" name="PRESUPPORTVAULT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_RING" name="RING"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcElementCompositionEnum" name="IfcElementCompositionEnum">
@@ -3881,13 +3881,13 @@ AND
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_DUCTBANK_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_DUCTBANK_gen_IfcElementAssemblyType" general="cl_IfcElementAssemblyType"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" name="IfcElementAssemblyTypeEnum.PRESUPPORTFACE">
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
-      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE_gen_IfcElementAssemblyType" general="cl_IfcElementAssemblyType"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT" name="IfcElementAssemblyTypeEnum.PRESUPPORTVAULT">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT_gen_IfcElementAssemblyType" general="cl_IfcElementAssemblyType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" name="IfcElementAssemblyTypeEnum.PRESUPPORTFACE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE_gen_IfcElementAssemblyType" general="cl_IfcElementAssemblyType"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_RING" name="IfcElementAssemblyTypeEnum.RING">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_RING_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
