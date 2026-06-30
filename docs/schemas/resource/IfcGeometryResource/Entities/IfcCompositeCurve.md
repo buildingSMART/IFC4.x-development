@@ -53,6 +53,8 @@ The component bounded curves, their transitions and senses. The transition attri
 
 > NOTE : For _IfcGradientCurve_ and _IfcSegmentedReferenceCurve_ the segments define the interpolation between segment start and and segment end.
 
+> NOTE : When providing a geometric representation of an IfcAlignment (_IfcCompositeCurve_ for horizontal, _IfcGradientCurve_ for vertical, _IfcSegmentedReferenceCurve_ for cant), _Segments_ must be a LIST[2:?] where the second segment is a zero-length segment indicating the end point of the curve. All _Segments_ must be of type _IfcCurveSegment_
+
 ### SelfIntersect
 Indication of whether the curve intersects itself or not; this is for information only.
 
