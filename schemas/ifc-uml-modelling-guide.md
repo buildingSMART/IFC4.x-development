@@ -29,7 +29,7 @@ schemas/
 
 Each file contains a `uml:Model` root with a single `uml:Package` named after
 the subschema. All schema content is nested inside that package as
-`packagedElement` children.
+`packagedElement` children. The `uml:Package` is imported into the top-level aggregate using `uml:PackageImport`.
 
 ---
 
@@ -57,7 +57,7 @@ Entities are `packagedElement` elements with `xmi:type="uml:Class"`.
                 general="cl_IfcBuiltElement"/>
 ```
 
-The `general` attribute references the parent entity by its local `xmi:id`.
+References (attributes types, generalisations) point to the local `xmi:id` when coming from the same file.
 For cross-file references, an `href` is used:
 
 ```xml
@@ -101,10 +101,10 @@ The name suffix encodes the aggregate type and bounds:
 | `_L[1:3]`      | `LIST [1:3] OF`        |
 | `_A[3:3]`      | `ARRAY [3:3] OF`       |
 
-Example: `UAxes_LU[1:?]` means `LIST [1:?] OF UNIQUE IfcGridAxis`.
+Example: `UAxes_LU[1:?]` (with type pointing to `IfcGeometricConstraintResource.uml#cl_IfcGridAxis`) means `LIST [1:?] OF UNIQUE IfcGridAxis`.
 
 Nested aggregates (e.g. `LIST [1:?] OF LIST [3:?] OF UNIQUE IfcPositiveInteger`)
-are encoded verbatim in the name for the same reason.
+are encoded verbatim in the name for the same reason. For example `InnerCoordIndices_L[1:?]_LU[3:?]`.
 
 The `lowerValue` and `upperValue` on such attributes encode only optionality
 (0 = optional, 1 = mandatory), not the aggregate bounds.
@@ -132,7 +132,7 @@ and inverse attributes** section below.
 
 ### Type references
 
-Attribute types are referenced via `href` to elements in the same or other files:
+Attribute types are referenced via `href` to elements from other files:
 
 | Target type | href pattern                                   |
 |-------------|------------------------------------------------|
@@ -186,7 +186,7 @@ alongside entities.
 
 ---
 
-## Enumerations (IfcXxxTypeEnum)
+## Enumerations
 
 EXPRESS enumerations are `packagedElement` elements with
 `xmi:type="uml:Enumeration"`. Enumeration values are `ownedLiteral` children:
@@ -217,7 +217,10 @@ See the **Property enumerations** section below.
 
 Defined types (e.g. `IfcLengthMeasure`, `IfcLabel`) are `packagedElement`
 elements with `xmi:type="uml:DataType"`. Their underlying type is encoded
-as a `generalization`:
+as a `generalization`.
+
+The types that the express language defines such as REAL and INTEGER are in the main UML model in a `uml:Package` name `base`.
+
 
 ```xml
 <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcLengthMeasure"
