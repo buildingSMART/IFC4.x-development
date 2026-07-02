@@ -27,8 +27,7 @@ class SchemaVersionEnum(StrEnum):
 def get_all_entities(schemaversion) -> List[str]:
     entities = list()
     schema_definition = ifcopenshell.schema_by_name(schemaversion.value)
-    for declaration in schema_definition.declarations():
-        if declaration.as_entity():
+    for declaration in schema_definition.entities():
             entities.append(declaration.name())
 
     return entities
