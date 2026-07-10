@@ -10,7 +10,7 @@ Any entity name not found in `mvd_entity_usage.json` is considered out of scope 
 This list of excluded entities is then included in the MVD best practice checks (e.g. rules IFC430 and IFC431 for IFC 4.3) gherkin rules for the Validation Service
 
 Example usage:
-    python generate_mvd_exclusions.py IFC4X3 mvd_entity_usage.json
+    python determine_mvd_exclusions.py IFC4X3_ADD2 mvd_entity_usage.json
 """
 from enum import StrEnum, auto
 from typing import Dict, List
@@ -21,7 +21,7 @@ import ifcopenshell
 class SchemaVersionEnum(StrEnum):
     IFC2X3 = auto()
     IFC4 = auto()
-    IFC4X3 = auto()
+    IFC4X3_ADD2 = auto()
 
 
 def get_all_entities(schemaversion) -> List[str]:
