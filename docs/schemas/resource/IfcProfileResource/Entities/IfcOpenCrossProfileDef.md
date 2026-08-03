@@ -20,6 +20,10 @@ The slope measure.
 
 ### Tags
 
+OPTIONAL LIST [2:?] OF UNIQUE IfcLabel
+
+When used with _IfcSectionedSurface_, the Tag attribute is used to define interpolation transion curves and branching longitudinal breaklines. Within this context, tags must be unique to properly match profile verticies between consecutive cross sections.
+
 ### OffsetPoint
 Optional Cartesian point to nominate the profile curve start. The provided slopes and widths emerge from this point. If no value is given, the profile initiates at the alignment intersection with the profile plane.
 
