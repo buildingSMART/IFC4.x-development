@@ -86,7 +86,7 @@ These 3 layouts may be used in different configurations. The most common are:
 4. Multiple Vertical layouts based on the same Horizontal Layout
 5. Multiple Vertical layouts based on the same Horizontal Layout, with a Cant layout applied
 
-(4) and (5) are used in scenarios where multiple alignments re-use the same horizontal layout definition. See **Alignment Layout - Reusing Horizontal Layout** and **Alignment Geometry - Reusing Horizontal Layout** for details on how to relate parent and child alignments in these cases.
+(4) and (5) are used in scenarios where multiple alignments re-use the same horizontal layout definition. See **Alignment Layout - Reusing Horizontal Layout** for details on how to relate parent and child alignments in these cases.
 
 ![Alignment configurations](../../../../figures/IfcAlignment-possible-configurations.png)
 
@@ -117,10 +117,6 @@ For configuration (3)
 In scenarios where multiple alignments re-use the same horizontal layout definition, these alignment can be aggregated in a parent-child relationship, to avoid redefining the horizontal layout. This is done using _IfcRelAggregates_.
 
 If the parent alignment has a *geometry definition* for its horizontal layout, then all the children can use this definition as *BaseCurve* to construct their own representations.
-
-### Alignment Geometry - Reusing Horizontal Layout
-
-For configurations (4),(5)
 
 ### Alignment Geometry - Segments
 
