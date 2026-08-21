@@ -34,10 +34,10 @@ jobs:
 
           case "${GITHUB_REF_NAME}" in
             ifc4.3-main)
-              echo "TARGET_SITE_DIR=${GITHUB_WORKSPACE}/output-repo/IFC/RELEASE/IFC4_3" >> "$GITHUB_ENV"
+              echo "TARGET_SITE_DIR=${GITHUB_WORKSPACE}/output-repo/IFC/DEV/IFC4_3/HTML" >> "$GITHUB_ENV"
               ;;
             ifc4.4-main)
-              echo "TARGET_SITE_DIR=${GITHUB_WORKSPACE}/output-repo/IFC/RELEASE/IFC4_4" >> "$GITHUB_ENV"
+              echo "TARGET_SITE_DIR=${GITHUB_WORKSPACE}/output-repo/IFC/DEV/IFC4_4/HTML" >> "$GITHUB_ENV"
               ;;
             *)
               echo "Unsupported branch: ${GITHUB_REF_NAME}"
@@ -80,7 +80,7 @@ jobs:
       - name: Check out output repository
         uses: actions/checkout@v4
         with:
-          repository: buildingSMART/IFC4.3.x-output-2
+          repository: buildingSMART/IFC-output
           path: output-repo
           fetch-depth: 1
           token: ${{ secrets.OUTPUT_2_TOKEN }}
