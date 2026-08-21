@@ -29,4 +29,4 @@ an object coordinate system for instances of _IfcProduct_.
 > IFC4 CHANGE The cardinality has changed to 0..n to allow reuse of instances of _IfcObjectPlacement_ as placement object in one to many products. It takes also into account that it can act as a placement for _IfcStructuralAnalysisModel_.
 
 ### PlacementRelTo
-Reference to object placement that provides the relative placement with its placement in a grid, local coordinate system or linear referenced placement. If it is omitted, then in the case of linear placement it is established by the origin of horizontal alignment of the referenced IfcAlignment Axis. In the case of local placement it is established by the geometric representation context.
+Reference to another object placement that provides the parent object coordinate system used to establish the local coordinate system, by means specified within the subtypes of _IfcObjectPlacement_.
