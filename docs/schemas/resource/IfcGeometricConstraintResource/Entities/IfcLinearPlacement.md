@@ -10,3 +10,10 @@ Placement that provides location and orientation confined to the context of a cu
 
 ### CartesianPosition
 Optional fallback for the `RelativePlacement` attribute, which may be used by importing applications that do not support linear placement.
+
+## Formal Propositions
+
+### CorrectLinearPlacement
+A linear placement is always relative to a local placement which sets the georeferencing context i.e. provide the indirect reference to IfcProject with assigned Project Global Positioning.
+
+> HISTORY New rule in IFC4.4.0.0
