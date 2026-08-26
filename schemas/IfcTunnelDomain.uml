@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcTunnelDomain" name="IfcTunnelDomain" xmi:version="20131001">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcTunnelDomain" name="IfcTunnelDomain">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcTunnelTypicalSectionTypeEnum" name="IfcTunnelTypicalSectionTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypicalSectionTypeEnum_GEOTECH" name="GEOTECH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypicalSectionTypeEnum_EXCAVATIONSUPPORT" name="EXCAVATIONSUPPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypicalSectionTypeEnum_RISK" name="RISK"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypicalSectionTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypicalSectionTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypicalSection" name="IfcTunnelTypicalSection">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcTunnelTypicalSection_HasObjectType" name="HasObjectType">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcTunnelTypicalSection_HasObjectType" name="HasObjectType">
+          <language>EXPRESS_WHERE</language>
+          <body>(PredefinedType &lt;&gt; IfcTunnelTypicalSectionTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypicalSection_gen_IfcLinearZone">
+        <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcLinearZone"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTunnelTypicalSection_PredefinedType" name="PredefinedType" type="en_IfcTunnelTypicalSectionTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTunnelTypicalSection_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTunnelTypicalSection_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypicalSectionTypeEnum_GEOTECH" name="IfcTunnelTypicalSectionTypeEnum.GEOTECH">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypicalSectionTypeEnum_GEOTECH_gen_IfcTunnelTypicalSection" general="cl_IfcTunnelTypicalSection"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypicalSectionTypeEnum_EXCAVATIONSUPPORT" name="IfcTunnelTypicalSectionTypeEnum.EXCAVATIONSUPPORT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypicalSectionTypeEnum_EXCAVATIONSUPPORT_gen_IfcTunnelTypicalSection" general="cl_IfcTunnelTypicalSection"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypicalSectionTypeEnum_RISK" name="IfcTunnelTypicalSectionTypeEnum.RISK">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypicalSectionTypeEnum_RISK_gen_IfcTunnelTypicalSection" general="cl_IfcTunnelTypicalSection"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypicalSectionTypeEnum_USERDEFINED" name="IfcTunnelTypicalSectionTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypicalSectionTypeEnum_USERDEFINED_gen_IfcTunnelTypicalSection" general="cl_IfcTunnelTypicalSection"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypicalSectionTypeEnum_NOTDEFINED" name="IfcTunnelTypicalSectionTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypicalSectionTypeEnum_NOTDEFINED_gen_IfcTunnelTypicalSection" general="cl_IfcTunnelTypicalSection"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
