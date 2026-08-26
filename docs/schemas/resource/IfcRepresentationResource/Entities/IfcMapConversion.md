@@ -53,3 +53,11 @@ _XAxisAbscissa_ it provides the direction of the local x axis within the horizon
 
 ### Scale
 Scale to be used, when the units of the CRS are not identical to the units of the engineering coordinate system. If omitted, the value of 1.0 is assumed.
+
+## Formal Propositions
+
+### TargetCRSProjected
+_IfcCoordinateOperation_.TargetCRS is of type _IfcProjectedCRS_.
+
+### ValidXAxis
+If both XAxisAbscissa and XAxisOrdinate are present, they must not both be zero; if only one is present, that one must be non-zero.
