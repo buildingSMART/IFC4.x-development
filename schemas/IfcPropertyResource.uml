@@ -320,7 +320,7 @@ OR (SIZEOF(DefiningValues) = SIZEOF(DefinedValues))</body>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="as_IfcExtendedProperties_Properties" name="Properties" memberEnd="at_IfcExtendedProperties_Properties as_IfcExtendedProperties_Properties_target_end">
-      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcExtendedProperties_Properties_target_end" name="" type="cl_IfcExtendedProperties" association="as_IfcExtendedProperties_Properties">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcExtendedProperties_Properties_target_end" name="INV_PartOfMaterialOrProfileProperties_S[0:?]" type="cl_IfcExtendedProperties" association="as_IfcExtendedProperties_Properties">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcExtendedProperties_Properties_target_end_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcExtendedProperties_Properties_target_end_upper" value="1"/>
       </ownedEnd>
