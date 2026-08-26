@@ -24,6 +24,9 @@
         END_IF;
       END_IF;
     END_IF;
+    IF ('IFC4X4.IFCLINEARPLACEMENT' IN TYPEOF(RelPlacement)) THEN
+      RETURN(TRUE);
+    END_IF;
   ELSE
     RETURN(TRUE);  
   END_IF;
