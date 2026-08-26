@@ -158,6 +158,7 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPlateTypeEnum_WEB_PLATE" name="WEB_PLATE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPlateTypeEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPlateTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcPlateTypeEnum_LAGGING" name="LAGGING"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcRailingTypeEnum" name="IfcRailingTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcRailingTypeEnum_BALUSTRADE" name="BALUSTRADE"/>
@@ -3438,5 +3439,9 @@ OR
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_StairFlightBaseQuantities_IfcStairFlight" client="cl_Qto_StairFlightBaseQuantities" supplier="cl_IfcStairFlight"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_WallBaseQuantities_IfcWall" client="cl_Qto_WallBaseQuantities" supplier="cl_IfcWall"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_WindowBaseQuantities_IfcWindow" client="cl_Qto_WindowBaseQuantities" supplier="cl_IfcWindow"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcPlateTypeEnum_LAGGING" name="IfcPlateTypeEnum.LAGGING">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPlateTypeEnum_LAGGING_gen_IfcPlate" general="cl_IfcPlate"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPlateTypeEnum_LAGGING_gen_IfcPlateType" general="cl_IfcPlateType"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
