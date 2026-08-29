@@ -12,22 +12,11 @@ Coverings are elements with relationships to the covered element and the space o
 
 > NOTE A more basic information about claddings, floorings, and ceilings of a space can be attached to _IfcSpace_'s using the _Pset_SpaceCommon_ properties. Then only a name can be provided and the covering quantities would be interpreted from the space quantities.
 
-Coverings can be assigned to
+To relate a covering (e.g. cladding) to its "covered element" (e.g. wall), use the the _IfcRelAggregates_ relationship.
 
-* a space represented by _IfcSpace_
-  * using the inverse relationship _CoversSpaces_ pointing to _IfcRelCoversSpaces_. The space is then accessible via _IfcRelCoversSpaces.RelatedSpace_. It defines to which space a covering is facing towards.
-* a space boundary represented by _IfcRelSpaceBoundary_
-  * using the inverse relationship _ProvidesBoundaries_ pointing to _IfcRelSpaceBoundary._ The space is then accessible via _IfcRelSpaceBoundary.RelatingSpace_.
-* a built element represented by _IfcBuiltElement_
-  * using the inverse relationship _Covers_ pointing to _IfcRelCoversBldgElements_. The building element is then accessible via _IfcRelCoversBldgElements.RelatingBuildingElement_.
+To relate a covering to a space (e.g. this room has carpet), use the _IfcRelContainedInSpatialStructure_ relationship. This may typically be used in facility management usecases and room data sheets, such as when creating room finishes schedules.
 
-> NOTE The mere containment relationship between an _IfcCovering_ and an _IfcSpace_ is created by using _IfcRelContainedInSpatialStructure_
-
-The following guideline shall apply:
-
-* (default) if the space has coverings that may not have their own shape representation and no defined relationships to the building elements they cover, then the _IfcCovering_ shall be assigned to _IfcSpace_ using the _IfcRelCoversSpaces_ relationship,
-* if the space has coverings that have an own shape representation and the space has defined space boundaries, then the covering, which relates to that space, shall be contained in the space using _IfcRelContainedInSpatialStructure_. It may be assigned to the space boundaries using the _IfcRelSpaceBoundary_.
-* if the covering does not relate to a space, then the covering should be assigned to the building element or a distribution element using the _IfcRelCoversBldgElements_ relationship.
+In addition to these relationships, if a covering has a shape representation and the space it is related to contains space boundaries, then the _IfcRelSpaceBoundary_ relationship should be used to relate the covering to the space. For example, this may be used in energy analysis where it is important to know the exact materials and elements that separate spaces at their boundaries.
 
 > HISTORY New entity in IFC1.0.
 
