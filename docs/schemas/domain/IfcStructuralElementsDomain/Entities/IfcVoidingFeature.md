@@ -47,6 +47,13 @@ The local placement for IfcVoidingFeature is defined in its supertype IfcProduct
 
 ### Property Sets for Objects
 
+### Quantity Sets
+
+
+
+### Reference Geometry
+
+Since there are no Boolean operations, either as _IfcBooleanResult_ or implicitly by _IfcRelVoidsElement_, the geometry of the _IfcOpeningElement_ shall not be used to subtract the opening from the 'Body' shape representation of the voided element.
 
 
 ### Reference SweptSolid PolyCurve Geometry
