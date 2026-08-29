@@ -12,7 +12,7 @@ The _IfcRepresentation_ defines the general concept of representing product prop
 > HISTORY New entity in IFC2.0
 
 { .change-ifc2x3}
-> IFC2x3 CHANGE The inverse attributes _LayerAssignments_ and_RepresentationMap_ have been added with upward compatibility.
+> IFC2x3 CHANGE The inverse attributes _LayerAssignments_ and _RepresentationMap_ have been added with upward compatibility.
 
 { .change-ifc2x4}
 > IFC4 CHANGE Entity _IfcRepresentation_ has been changed into an ABSTRACT supertype.
