@@ -19,7 +19,7 @@ Definition of the material constituent in descriptive terms.
 Reference to the material from which the constituent is constructed.
 
 ### Fraction
-Optional provision of a fraction of the total amount (volume or weight) that applies to the _IfcMaterialConstituentSet_ that is contributed by this _IfcMaterialConstituent_.
+Optional provision of a fraction of the total volume that applies to the _IfcMaterialConstituentSet_ that is contributed by this _IfcMaterialConstituent_.
 
 ### Category
 Category of the material constituent, e.g. the role it has in the constituent set it belongs to.
