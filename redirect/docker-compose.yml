@@ -1,0 +1,41 @@
+services:
+  web:
+    build: ./web
+    restart: unless-stopped
+    expose:
+      - "8000"
+    environment:
+      REDIRECT_TARGET: "${REDIRECT_TARGET:-https://standards.buildingsmart.org/IFC/DEV/IFC4_3/HTML}"
+      PRESERVE_PATH: "${PRESERVE_PATH:-1}"
+
+  nginx:
+    image: nginx:1.27-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAIN: "${DOMAIN:-ifc43-docs.standards.buildingsmart.org}"
+    volumes:
+      - ./nginx/conf:/opt/nginx:ro
+      - ./nginx/entrypoint.sh:/opt/entrypoint.sh:ro
+      - ./certbot/www:/var/www/certbot:ro
+      - ./certbot/conf:/etc/letsencrypt:ro
+    entrypoint: ["/bin/sh", "/opt/entrypoint.sh"]
+    depends_on:
+      - web
+
+  certbot:
+    image: certbot/certbot:latest
+    restart: unless-stopped
+    environment:
+      DOMAIN: "${DOMAIN:-ifc43-docs.standards.buildingsmart.org}"
+      CERTBOT_EMAIL: "${CERTBOT_EMAIL:-}"
+      CERTBOT_STAGING: "${CERTBOT_STAGING:-0}"
+    volumes:
+      - ./certbot/www:/var/www/certbot:rw
+      - ./certbot/conf:/etc/letsencrypt:rw
+      - ./certbot/entrypoint.sh:/opt/entrypoint.sh:ro
+    entrypoint: ["/bin/sh", "/opt/entrypoint.sh"]
+    depends_on:
+      - nginx
