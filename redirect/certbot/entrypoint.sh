@@ -16,8 +16,8 @@ if [ ! -f "$CERT" ]; then
     exit 1
   fi
 
-  echo "[certbot] Waiting for nginx to serve the ACME webroot on port 80..."
-  until wget -q -O /dev/null "http://nginx/"; do
+  echo "[certbot] Waiting for nginx to be up on port 80..."
+  until wget -q -O /dev/null "http://nginx/healthz"; do
     echo "[certbot] nginx not ready yet, retrying in 5s..."
     sleep 5
   done
