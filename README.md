@@ -3,7 +3,8 @@ IFC4.4.x
 
 This is the official buildingSMART International repository for IFC 4.3+ series. This `ifc4.4-main` branch contains the IFC4.4 Specification series.
 
-> [!IMPORTANT] The version status: `under-development` (not submitted to ISO yet).
+> [!IMPORTANT]
+> The version status is `under-development` (not submitted to ISO yet).
 
 The updated builds are automatically published here:
 - https://github.com/buildingSMART/Standards-builds
