@@ -18,4 +18,4 @@ except:
     traceback.print_exc()
     suffix = '?'
 
-spec_version_string_full = f"{spec_version_string}.{suffix}"
+spec_version_string_full = f"{spec_version_string} build {suffix}"
