@@ -2,7 +2,7 @@
 
 ## Content
 
-This is the **latest avaiilable, work-in-progress** documentation of the IFC 4.4.x specification. It is an evolution of the IFC 4.3_ADD2 (ISO 16739-1:2024).
+This is the **latest available, work-in-progress** documentation of the IFC 4.4.x specification. It is an evolution of the IFC 4.3_ADD2 (ISO 16739-1:2024).
 
 <img src="https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/master/docs/assets/img/Dongping.jpg" width="800">
 
