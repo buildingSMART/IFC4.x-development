@@ -273,7 +273,7 @@ def guid_by_id(id):
 def is_deprecated(elem):
     """Check if the element is deprecated in that IFC version or not."""
     deprecated = False
-    if elem.id in xmi_doc.deprecated:
+    if elem.id in getattr(xmi_doc, "deprecated", set()):
         deprecated = True
     # Some objects don't have deprecated status, but their markdown says they are deprecated
     try:
@@ -362,8 +362,9 @@ def generate_definitions():
             c for c in entity.children if c.name == "PredefinedType"
         ]
         if predefined_type_attribute:
-            # NB this points to the EA extension node and not the packagedElement
-            ptype = (predefined_type_attribute[0].node | "properties").type
+            ptype_id = predefined_type_attribute[0].node.resolve("type")
+            ptype_node = xmi_doc.xmi.by_id.get(ptype_id)
+            ptype = ptype_node.name if ptype_node is not None else None
             if ptype in enumerations:
                 for c in enumerations[ptype].children:
                     if c.name not in ("USERDEFINED", "NOTDEFINED"):
@@ -414,7 +415,7 @@ def generate_definitions():
             for a, (nm, (ty_ty_arg)) in zip(pset.children, pset.definition):
 
                 if not is_deprecated(a):
-                    if pset.stereotype == "QSET":
+                    if pset.name.startswith("Qto"):
                         type_name = "real"
                         type_values = None
                         kind_name = "Single"
@@ -456,6 +457,21 @@ def generate_definitions():
                                 ]
                                 if c.name == org_type_name
                             ]
+                            if not pe_types:
+                                # e.g. IfcComplexNumber_A[1:2] -> IfcComplexNumber
+                                pe_types = [
+                                    c
+                                    for c in xmi_doc.xmi.by_tag_and_type[
+                                        "packagedElement"
+                                    ]["uml:DataType"]
+                                    if re.split(r"_\w\[", c.name)[0] == org_type_name
+                                ]
+                            if not pe_types:
+                                logging.warning(
+                                    "%s.%s: type %s not found in XMI; skipping",
+                                    pset.name, nm, org_type_name,
+                                )
+                                continue
                             measure = pe_types[0].name
                             root_generalization = generalization(pe_types[0])
                             type_name = root_generalization.name  # .lower()
@@ -566,8 +582,6 @@ def generate_definitions():
 
         for c in entity.children:
 
-            c.name = name_improve(c.name)
-
             if not is_deprecated(c):
                 try:
                     node = c.node
@@ -576,10 +590,7 @@ def generate_definitions():
                         type_type = node | "type"
                         type_id = type_type.idref
                     else:
-                        type_id = (
-                            [t for t in (node / "ownedEnd") if t.name == c.name][0]
-                            | "type"
-                        ).idref
+                        type_id = node.resolve("type")
                         type_type = xmi_doc.xmi.by_id[type_id]
                     type_item = item_by_id[type_id]
                 except:
@@ -611,7 +622,7 @@ def generate_definitions():
 
                     type_values = None
 
-                    if type_item.definition.super_verbatim:
+                    if getattr(type_item.definition, "super_verbatim", None):
 
                         if not type_item.definition.super.lower().startswith("string"):
                             logging.warning(
@@ -627,9 +638,7 @@ def generate_definitions():
 
                     else:
 
-                        pattr = xmi_doc.xmi.by_id[c.node.idref]
-                        ty_id = (pattr | "type").idref
-                        ty_pe = xmi_doc.xmi.by_id[ty_id]
+                        ty_pe = xmi_doc.xmi.by_id[type_id]
                         ty_gen = generalization(ty_pe)
                         type_name = ty_gen.name.lower()
 
@@ -866,7 +875,7 @@ def restructure_and_annotate(all_concepts, uni_codes, codes):
             if ancestor["Psets"]:
                 for pset_code, pset_content in ancestor["Psets"].items():
                     for prop_code, prop_content in pset_content["Properties"].items():
-                        prop_code = prop_code[0:CHAR_LIMIT]
+                        prop_code = re.split(r"_\w\[", prop_code)[0][0:CHAR_LIMIT]
                         name = to_str(prop_content["Name"])
                         if not name:
                             name = name_improve(prop_code)
