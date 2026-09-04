@@ -1,9 +1,9 @@
-# IFC 4.3 Documentation server
+# IFC 4.4 Documentation server
 
 ## Introduction
 
 The documentation server is a website for viewing the IFC documentation.
-View it live at http://ifc43-docs.standards.buildingsmart.org/
+View it live at https://standards.buildingsmart.org/IFC/DEV/IFC4_4/
 
 ![Website screenshot](website-screenshot.png)
 

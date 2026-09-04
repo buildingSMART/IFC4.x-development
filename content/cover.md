@@ -1,19 +1,19 @@
-# IFC 4.3.2.timestamp
+# IFC 4.4.x
 
 ## Content
 
-This is the **latest** available documentation of the IFC 4.3.2.0 specification. 
-The structure and semantic contents of this are **[exactly the same as the ISO IFC 4.3](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/)** but with additional examples and clarifications in the documentation. It may also contain typo fixes.
-This is a further elaboration of the ISO release without changes to the schema and specification.
+This is the **latest avaiilable, work-in-progress** documentation of the IFC 4.4.x specification. It is an evolution of the IFC 4.3_ADD2 (ISO 16739-1:2024).
 
 <img src="https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/master/docs/assets/img/Dongping.jpg" width="800">
 
-For those interested in contributing: this html is automatically generated from the latest published [XMI](https://github.com/buildingSMART/IFC4.3.x-development/tree/master/schemas) (with the IFC schema) and [Markdown content](https://github.com/buildingSMART/IFC4.3.x-development/tree/master/docs) (with the definitions and documentations).
-Use the 'edit on GitHub' button to suggest additional clarifications or typo fixes. Structural changes to the specification or semantic definitions are not allowed. Those are possible in the next version of IFC.
+## Contributing 
+For those interested in contributing, use the `edit on GitHub` button to suggest changes.
+
+This HTML is automatically generated from the latest published source files, namely: [UML IFC schema files](https://github.com/buildingSMART/IFC4.x-development/tree/ifc4.4-main/schemas) and [Markdown content](https://github.com/buildingSMART/IFC4.x-development/tree/ifc4.4-main/docs) (with the definitions and documentations).
 
 ## Copyright
 
-Copyright © 1996-2024 buildingSMART International Limited. Some rights reserved. Any technical documentation made available by buildingSMART International Limited is the copyrighted work of buildingSMART International Limited and is owned by buildingSMART International Limited.
+Copyright © 1996-2026 buildingSMART International Limited. Some rights reserved. Any technical documentation made available by buildingSMART International Limited is the copyrighted work of buildingSMART International Limited and is owned by buildingSMART International Limited.
 The Industry Foundation Classes are published under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Read the [full license text here](https://creativecommons.org/licenses/by-nd/4.0/legalcode).
 For more information please refer to our [IP Policy](https://buildingsmart-1xbd3ajdayi.netdna-ssl.com/wp-content/uploads/2021/06/bSI-Intellectual-Property-Policy.pdf).
 
