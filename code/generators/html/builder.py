@@ -424,6 +424,13 @@ class StaticTemplateRenderer(markdown_mixin):
         return template.render(self._template_context(**context))
 
     def _template_context(self, **context) -> dict:
+        import version
+        """
+        >>> from matplotlib import cm, colors
+        >>> [colors.to_hex(c) for c in cm.Pastel1.colors][0:3]
+        ['#fbb4ae', '#b3cde3', '#ccebc5']
+        """
+        color = ['#fbb4ae', '#b3cde3', '#ccebc5'][version.status_number]
         payload = {
             "is_iso": False,
             "is_package": False,
@@ -435,6 +442,8 @@ class StaticTemplateRenderer(markdown_mixin):
             "current_lang_slug": slugify("English (default)"),
             "languages": translate.list_languages(),
             "get_page_history": lambda path: page_history(context.get("repo_dir", self.config.repo_root), path),
+            "header_color": color,
+            "status_message": version.status_message,
         }
         payload.update(context)
         return payload
