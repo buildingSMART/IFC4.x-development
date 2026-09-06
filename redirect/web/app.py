@@ -22,6 +22,9 @@ PRESERVE_PATH = os.environ.get("PRESERVE_PATH", "1") == "1"
 # Rewrite ".htm" to ".html" (case-insensitive), e.g. "/x.htm" -> "/x.html".
 _HTM_SUFFIX = re.compile(r"\.htm$", re.IGNORECASE)
 
+# Strip this legacy prefix from the start of the path.
+STRIP_PREFIX = "/IFC/RELEASE/IFC4x3/HTML/"
+
 app = Flask(__name__)
 
 
@@ -32,7 +35,10 @@ def redirect_everything(path: str):
     target = NEW_PREFIX
     if PRESERVE_PATH:
         # request.path keeps the original encoding.
-        target += _HTM_SUFFIX.sub(".html", request.path)
+        new_path = request.path
+        if new_path.startswith(STRIP_PREFIX):
+            new_path = "/" + new_path[len(STRIP_PREFIX):]
+        target += _HTM_SUFFIX.sub(".html", new_path)
     if request.query_string:
         target += "?" + request.query_string.decode("utf-8")
     return redirect(target, code=301)
