@@ -36,6 +36,9 @@ def redirect_everything(path: str):
     if PRESERVE_PATH:
         # request.path keeps the original encoding.
         new_path = request.path
+        if m := re.search(r"chapter-(\d).+$", new_path):
+            # rewrite .../chapter-5 or ./chapter-5/index.html -> chapter-5.html
+            new_path = new_path[:m.span()[0]] + f"chapter-{m.group(1)}.html"
         if new_path.startswith(STRIP_PREFIX):
             new_path = "/" + new_path[len(STRIP_PREFIX):]
         target += _HTM_SUFFIX.sub(".html", new_path)
