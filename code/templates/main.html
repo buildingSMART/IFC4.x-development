@@ -135,8 +135,13 @@
                     </p>
                     <p>
                         <small>
-                            <span id="contributors"></span><br />
-                            <span id="last-change"></span>
+                            {% set page_history = get_page_history(path) %}
+                            {% if page_history %}
+                            <span id="contributors">{{ page_history.contributors|length }} contributor(s):
+                                {% for contributor in page_history.contributors %}<img src="{{ contributor.avatar_url }}" class="contributor-icon" alt="{{ contributor.name }}" title="{{ contributor.name }}">{% endfor %}
+                            </span><br />
+                            <span id="last-change">Last change: <em>{{ page_history.last_change.message }}</em> by {{ page_history.last_change.name }} on {{ page_history.last_change.date }}</span>
+                            {% endif %}
                         </small>
                     </p>
                     <p>

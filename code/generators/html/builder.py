@@ -32,6 +32,7 @@ from .search import SearchIndexBuilder
 from . import translate
 from ..util.xmi_document import SCHEMA_NAME
 from . import md as mdp
+from git_history import page_history
 
 REPO_BRANCH = os.environ.get("REPO_BRANCH", "xmi-refresh")
 REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
@@ -433,6 +434,7 @@ class StaticTemplateRenderer(markdown_mixin):
             "get_language_icon": translate.get_language_icon,
             "current_lang_slug": slugify("English (default)"),
             "languages": translate.list_languages(),
+            "get_page_history": lambda path: page_history(context.get("repo_dir", self.config.repo_root), path),
         }
         payload.update(context)
         return payload
@@ -1909,6 +1911,7 @@ class StaticTemplateRenderer(markdown_mixin):
             navigation=self.get_navigation(),
             content=html,
             path=path.resolve().relative_to(self.examples_repo_root).as_posix(),
+            repo_dir=str(self.examples_repo_root),
             repo="buildingSMART/IFC4.3.x-sample-models",
             branch="main",
             title=self._example_title(Path(example).name),

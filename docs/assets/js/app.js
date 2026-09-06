@@ -373,30 +373,6 @@ Array.from(document.querySelectorAll('a')).concat(Array.from(document.querySelec
 });
 }
 
-if (!window.is_iso) {
-fetch(`https://api.github.com/repos/${window.appconfig.repo}/commits?path=${window.appconfig.path}`).then(r => r.json()).then(j => {
-    if (document.getElementById('contributors') === null) {
-        return;
-    }
-    let n = {};
-    j.forEach(c => {
-        n[c.author.avatar_url] = (n[c.author.avatar_url || 0]) + 1;
-    });
-    let es = Object.entries(n);
-    document.getElementById('contributors').appendChild(
-        document.createTextNode(es.length + ' contributor(s): ')
-    );
-    es.map(kv => [kv[1], kv[0]]).sort().forEach(kv => {
-        let img = document.createElement('img');
-        img.src = kv[1] + '&s=32';
-        img.classList.add('contributor-icon');
-        document.getElementById('contributors').appendChild(img);
-    });
-    document.getElementById('last-change').innerHTML += 'Last change: ' +
-    '<em>' + j[0].commit.message + '</em>' + ' by ' + j[0].commit.author.name + ' on ' + (new Date(j[0].commit.author.date)).toLocaleString();
-});
-}
-
 setupInheritanceToggle();
 setupConceptDiagramCanvas();
 if (!document.body.classList.contains('terms-and-definitions') && !document.body.classList.contains('cover')) {

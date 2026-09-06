@@ -24,6 +24,7 @@ import tabulate
 import pydot
 import pysolr
 import markdown
+from git_history import page_history
 
 import bs4
 
@@ -2646,7 +2647,8 @@ def inject_variables():
         'branch': REPO_BRANCH,
         'get_language_icon': translate.get_language_icon,  
         'current_lang_slug': slugify(request.cookies.get('languagePreference', 'English (default)')),
-        'languages': translate.list_languages()
+        'languages': translate.list_languages(),
+        'get_page_history': lambda path: page_history(REPO_DIR, path)
     }
 
 
