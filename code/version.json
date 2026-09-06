@@ -1,1 +1,9 @@
-[4,4,0]
+{
+    "version": [4,4,0],
+    "@status-options": {
+        "PREVIEW": "⚠ Preview version - backwards incompatible changes are likely",
+        "DEVELOPMENT": "⚠ Not an official release - under development",
+        "OFFICIAL": "✓ Official release"
+    },
+    "status": "DEVELOPMENT"
+}
