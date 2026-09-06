@@ -13,6 +13,8 @@ class BuildConfig:
     threads: int = 1
     sample_percent: float = 100.0
     profile: bool = False
+    include_paths: tuple[str, ...] | None = None
+    no_index: bool = False
 
     @classmethod
     def from_repo_root(
@@ -22,6 +24,8 @@ class BuildConfig:
         threads: int | None = None,
         sample_percent: float | None = None,
         profile: bool = False,
+        include_paths: tuple[str, ...] | None = None,
+        no_index: bool = False
     ) -> "BuildConfig":
         repo_root = repo_root.resolve()
         code_dir = (repo_root / "code").resolve()
@@ -38,4 +42,6 @@ class BuildConfig:
             threads=max(1, threads),
             sample_percent=max(0.1, min(100.0, sample_percent)),
             profile=profile,
+            include_paths=include_paths,
+            no_index=no_index
         )

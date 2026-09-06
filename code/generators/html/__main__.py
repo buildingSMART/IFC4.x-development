@@ -32,6 +32,13 @@ def main() -> None:
         help="Render only a deterministic sample of generated pages. Static pages are always included.",
     )
     parser.add_argument(
+        "--include",
+        nargs="+",
+        default=None,
+        metavar="PAGE",
+        help="Only render generated pages whose paths match one of the given values. Example: --include '/'.",
+    )
+    parser.add_argument(
         "--profile",
         action="store_true",
         help="Run the build under cProfile. This forces in-process rendering so the profile captures real work.",
@@ -41,6 +48,10 @@ def main() -> None:
         type=Path,
         default=None,
         help="Optional path to write the cProfile summary report.",
+    )
+    parser.add_argument(
+        "--no-index",
+        action="store_true"
     )
     args = parser.parse_args()
 
@@ -55,6 +66,8 @@ def main() -> None:
         args.threads,
         args.sample_percent,
         args.profile,
+        include_paths=args.include,
+        no_index=args.no_index
     )
     builder = StaticSiteBuilder(config)
 

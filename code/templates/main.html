@@ -17,20 +17,15 @@
         <div class="row">
             <header>
                 {% if is_iso %}
-                    <p style='float: right; text-align: right'>International Organization for Standardization</p>
+                    <p class="header-iso-title" style="text-align: right">International Organization for Standardization</p>
                     <p>ISO 16739-1:2023(E)</p>
                 {% else %}
-                    <img class="logo" src="https://raw.githubusercontent.com/buildingSMART/IFC4.x-development/ifc4.4-main/docs/assets/img/IFC4x4-logo1.1-wide.png" width="100" style="
-                        display: inline-flex;
-                        padding-bottom: 0px;
-                        padding-top: 0px;
-                        float: left;
-                    ">
-                    <p style="display: inline-block; vertical-align: top;">{{ spec_version_string_full }} ({{ schema_version_string }})
+                    <img src="https://raw.githubusercontent.com/buildingSMART/IFC4.x-development/ifc4.4-main/docs/assets/img/IFC4x4-logo1.1-wide.png">
+                    <p class="header-title">{{ spec_version_string_full }} ({{ schema_version_string }})
                         {% if is_package %}
                             <small>official</small>
                         {% else %}
-                            <small>under development</small>
+                            <small style="background-color: {{ header_color }};">{{ status_message }}</small>
                         {% endif %}
                     </p>
                 {% endif %}
@@ -135,8 +130,13 @@
                     </p>
                     <p>
                         <small>
-                            <span id="contributors"></span><br />
-                            <span id="last-change"></span>
+                            {% set page_history = get_page_history(path) %}
+                            {% if page_history %}
+                            <span id="contributors">{{ page_history.contributors|length }} contributor(s):
+                                {% for contributor in page_history.contributors %}<img src="{{ contributor.avatar_url }}" class="contributor-icon" alt="{{ contributor.name }}" title="{{ contributor.name }}">{% endfor %}
+                            </span><br />
+                            <span id="last-change">Last change: <em>{{ page_history.last_change.message }}</em> by {{ page_history.last_change.name }} on {{ page_history.last_change.date }}</span>
+                            {% endif %}
                         </small>
                     </p>
                     <p>
