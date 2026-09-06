@@ -2083,7 +2083,8 @@ class StaticSiteBuilder:
         self._render_html_paths(self._utility_paths(), collect=False, resource_names=resource_names)
 
         self._copy_generated_svgs()
-        self._build_search_index()
+        if not self.config.no_index:
+            self._build_search_index()
 
         return {
             "written": len([path for path in self.config.output_dir.rglob("*") if path.is_file()]),
@@ -2223,6 +2224,20 @@ class StaticSiteBuilder:
             if public_path not in excluded and not public_path.startswith("/annex")
         ]
 
+    def _should_render(self, path: str) -> bool:
+        if self.config.include_paths is None:
+            return True
+
+        normalized = path.strip("/")
+        return any(
+            normalized == include.strip("/")
+            or (
+                include.strip("/")
+                and normalized.startswith(include.strip("/") + "/")
+            )
+            for include in self.config.include_paths
+        )
+
     def _render_html_paths(
         self,
         public_paths: list[str],
@@ -2231,6 +2246,8 @@ class StaticSiteBuilder:
         listing_payloads: dict[str, list[dict[str, str]]] | None = None,
         resource_names: tuple[str, ...],
     ) -> None:
+        public_paths = [p for p in public_paths if self._should_render(p)]
+
         if self.config.profile or self.config.threads == 1:
             for public_path in public_paths:
                 try:
