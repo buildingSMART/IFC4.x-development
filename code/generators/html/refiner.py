@@ -272,7 +272,7 @@ class HtmlRefiner:
             title.string = f"{h1.get_text(strip=True)} - {title.get_text(strip=True)}"
 
     def _normalize_urls(self, soup, public_path: str) -> None:
-        for tag, attr in (("a", "href"), ("img", "src"), ("script", "src"), ("link", "href")):
+        for tag, attr in (("a", "href"), ("img", "src"), ("script", "src"), ("link", "href"), ("form", "action")):
             for element in soup.find_all(tag):
                 if value := element.get(attr):
                     if normalized := self._normalize_url(public_path, value):
