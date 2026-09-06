@@ -5,6 +5,7 @@ new GitHub Pages location. Paths and query strings are preserved by default.
 """
 
 import os
+import re
 
 from flask import Flask, redirect, request
 
@@ -18,6 +19,9 @@ NEW_PREFIX = os.environ.get(
 # If false, every request is sent straight to NEW_PREFIX (path dropped).
 PRESERVE_PATH = os.environ.get("PRESERVE_PATH", "1") == "1"
 
+# Rewrite ".htm" to ".html" (case-insensitive), e.g. "/x.htm" -> "/x.html".
+_HTM_SUFFIX = re.compile(r"\.htm$", re.IGNORECASE)
+
 app = Flask(__name__)
 
 
@@ -27,7 +31,8 @@ def redirect_everything(path: str):
     """Redirect unconditionally, regardless of whether the path existed."""
     target = NEW_PREFIX
     if PRESERVE_PATH:
-        target += request.path  # request.path keeps the original encoding
+        # request.path keeps the original encoding.
+        target += _HTM_SUFFIX.sub(".html", request.path)
     if request.query_string:
         target += "?" + request.query_string.decode("utf-8")
     return redirect(target, code=301)
