@@ -35,7 +35,10 @@ else:
     # (IFC4X4) instead of a per-commit dev placeholder.
     try:
         import json as _json
-        _version_tuple = _json.load(open(os.path.join(os.path.dirname(__file__), "..", "..", "version.json")))
+        _version_tuple = _json.load(open(os.path.join(os.path.dirname(__file__), "..", "..", "version.json"), encoding="utf-8"))
+        if isinstance(_version_tuple, dict):
+            # PR #1170 turns version.json into {"version": [...], "status": ...}
+            _version_tuple = _version_tuple["version"]
         _prefixes = ("IFC", "X", "_ADD", "_TC")
         SCHEMA_NAME = "".join("".join(map(str, t)) if t[1] else "" for t in zip(_prefixes, _version_tuple))
     except Exception:
