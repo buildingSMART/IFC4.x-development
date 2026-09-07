@@ -2,7 +2,7 @@
     "version": [4,4,0,0],
     "@status-options": {
         "PREVIEW": "⚠ Preview version - backwards incompatible changes are likely",
-        "DEVELOPMENT": "⚠ Not an official release - under development",
+        "DEVELOPMENT": "⚠ buildingSMART Working Draft. All content is under development.",
         "OFFICIAL": "✓ Official release"
     },
     "status": "PREVIEW"
