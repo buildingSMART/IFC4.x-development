@@ -381,11 +381,24 @@ if __name__ == "__main__":
             ]
             
         files = list(map(functools.partial(os.path.join, d), names))
+
+        # Current-schema artefacts are generated into <repo>/output by the
+        # generators; fall back to the code directory for the legacy layout.
+        def current(name):
+            for candidate in (
+                os.path.join(repo_dir, "output", name),
+                os.path.join(os.path.dirname(os.path.abspath(__file__)), name),
+                name,
+            ):
+                if os.path.exists(candidate):
+                    return candidate
+            return os.path.join(repo_dir, "output", name)
+
         files += [
-            "ifc43", 
-            "IFC.exp",
-            "deprecated_entities.json",
-            "psd",
+            "ifc43",
+            current("IFC.exp"),
+            current("deprecated_entities.json"),
+            current("psd"),
         ]
 
     specs = [[files[i], express_parser.parse(files[i+1]), *files[i+2:i+4]] for i in range(0, len(files), 4)]
