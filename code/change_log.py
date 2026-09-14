@@ -21,9 +21,9 @@ import bs4
 def BeautifulSoup(*args):
     return bs4.BeautifulSoup(*args, features='lxml')
     
-deprecation_pattern = re.compile('(IFC.+?) DEPRECATION (.+)')
-change_pattern = re.compile('^(IFC.+?) CHANGE (.+)')
-rename_pattern = re.compile('renamed from (Ifc[\w]+)')
+deprecation_pattern = re.compile(r'(IFC.+?) DEPRECATION (.+)')
+change_pattern = re.compile(r'^(IFC.+?) CHANGE (.+)')
+rename_pattern = re.compile(r'renamed from (Ifc[\w]+)')
 
 changes_by_schema = []
 changes_by_type = defaultdict(dict)
@@ -219,7 +219,7 @@ def compare_schemas(s0, depr0, s1, depr1, s1_ver):
                 def get_canonical_expr(item):
                     return re.sub(
                         # remove schema prefixes
-                        ('(ifc\w+\.)(ifc\w+)'), '\\2',
+                        (r'(ifc\w+\.)(ifc\w+)'), '\\2',
                         # join and lowercase
                         "".join(item.flat).lower()
                     )
