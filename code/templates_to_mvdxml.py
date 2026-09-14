@@ -115,7 +115,7 @@ for fn in sorted(fns, key=len):
     if concept_blocks:
         block = concept_blocks[0]
 
-        edges = re.findall("([\:\w]+)\s*\->\s*([\-\:\w]+)", block)
+        edges = re.findall(r"([\:\w]+)\s*\->\s*([\-\:\w]+)", block)
         rule_bindings = dict(re.findall(r'(\w+:\w+)\[binding="(.+?)"\]', block))
         constraint_expressions = dict(re.findall(r'(constraint_[\d+])\[label="=(.+?)"\]', block))
                 
