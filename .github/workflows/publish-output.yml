@@ -169,6 +169,34 @@ jobs:
           set -euxo pipefail
           python -m generators.json ../schemas/ifc4x3_add2.uml ../output/psd --output ../output/structure.json
 
+      - name: Generate change log data
+        working-directory: ifc43/code
+        shell: bash
+        run: |
+          set -euxo pipefail
+          python change_log.py ..
+
+      - name: Generate MVD concept data
+        working-directory: ifc43/code
+        shell: bash
+        run: |
+          set -euxo pipefail
+          python mvd_csv_to_json.py ../schemas
+
+      - name: Generate mvdXML
+        working-directory: ifc43/code
+        shell: bash
+        run: |
+          set -euxo pipefail
+          python templates_to_mvdxml.py ../output/IFC4.3.mvdxml ..
+
+      - name: Determine MVD scope
+        working-directory: ifc43/code
+        shell: bash
+        run: |
+          set -euxo pipefail
+          python determine_mvd_scope.py ../output/IFC.exp ../output/IFC4.3.mvdxml
+
       - name: Build static HTML site
         working-directory: ifc43/code
         shell: bash
