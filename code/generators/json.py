@@ -352,7 +352,7 @@ if __name__ == "__main__":
     # Backfill from UML deps (CSVs deleted in f5f6abe2).
     _synthesize_pset_concepts_from_uml(xmi_concepts, psets, supertype)
 
-    json.dump({
+    payload = {
         "entity_supertype": supertype,
         "entity_to_package": entity_to_package,
         "hierarchy": hierarchy,
@@ -364,4 +364,12 @@ if __name__ == "__main__":
         "type_values": type_values,
         "entity_where_clauses": where_clauses,
         "xmi_concepts": xmi_concepts
-    }, open(args.output, "w", encoding="utf-8"))
+    }
+
+    for sidecar_name in ("changes_by_schema", "changes_by_type"):
+        sidecar_path = CODE_DIR / f"{sidecar_name}.json"
+        if sidecar_path.exists():
+            payload[sidecar_name] = json.loads(sidecar_path.read_text(encoding="utf-8"))
+
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    json.dump(payload, open(args.output, "w", encoding="utf-8"))

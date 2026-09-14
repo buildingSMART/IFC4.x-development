@@ -44,7 +44,10 @@ def read_scope():
     nodes = (n for n in soup.h2.nextSiblingGenerator())
     return "\n".join(map(str, nodes)).strip()
 
-entity_supertype = json.load(open('entity_supertype.json'))
+structure_path = os.path.join(REPO_DIR, "output", "structure.json")
+if not os.path.exists(structure_path):
+    raise FileNotFoundError(f"Required schema structure not found: {structure_path}")
+entity_supertype = json.load(open(structure_path, encoding="utf-8"))["entity_supertype"]
 
 def yield_supertypes(x):
     yield x
