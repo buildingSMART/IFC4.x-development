@@ -327,9 +327,6 @@ class StaticTemplateRenderer(markdown_mixin):
             return self._render_annex_c()
         if path == "/annex-d.html":
             return self._render_annex_d()
-        match = re.fullmatch(r"/annex_d/(.+)\.html", path)
-        if match:
-            return self._render_annex_d_diagram_page(unquote(match.group(1)))
         match = re.fullmatch(r"/annex_d/(.+)\.png", path)
         if match:
             return self._file_response(self.config.repo_root / "output" / "ifc4x3_add2.uml" / f"{unquote(match.group(1))}.png")
@@ -1850,26 +1847,9 @@ class StaticTemplateRenderer(markdown_mixin):
         )
 
     def _render_annex_d(self) -> StaticResponse:
-        diagrams = [
-            self._toc_entry(name, url=f"/annex_d/{name}.html", number=f"D.{index}")
-            for index, name in enumerate(self._diagram_names(), 1)
-        ]
         return self._html_response(
             "annex-d.html",
             navigation=self.get_navigation(),
-            diagrams=diagrams,
-            body_class="annex",
-        )
-
-    def _render_annex_d_diagram_page(self, name: str) -> StaticResponse:
-        diagrams = self._diagram_names()
-        if name not in diagrams:
-            self._abort(404)
-        return self._html_response(
-            "annex-d-item.html",
-            navigation=self.get_navigation(),
-            name=name,
-            number=diagrams.index(name) + 1,
             body_class="annex",
         )
 
