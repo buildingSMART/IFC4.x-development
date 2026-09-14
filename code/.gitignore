@@ -3,7 +3,6 @@ __pycache__
 *~
 # generated artefacts
 concepts.json
-entity_supertype.json
 entity_to_package.json
 hierarchy.json
 inheritance_listing.txt
