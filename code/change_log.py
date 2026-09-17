@@ -21,9 +21,9 @@ import bs4
 def BeautifulSoup(*args):
     return bs4.BeautifulSoup(*args, features='lxml')
     
-deprecation_pattern = re.compile('(IFC.+?) DEPRECATION (.+)')
-change_pattern = re.compile('^(IFC.+?) CHANGE (.+)')
-rename_pattern = re.compile('renamed from (Ifc[\w]+)')
+deprecation_pattern = re.compile(r'(IFC.+?) DEPRECATION (.+)')
+change_pattern = re.compile(r'^(IFC.+?) CHANGE (.+)')
+rename_pattern = re.compile(r'renamed from (Ifc[\w]+)')
 
 changes_by_schema = []
 changes_by_type = defaultdict(dict)
@@ -132,7 +132,6 @@ def to_dict(decl, depr=[]):
         print(type(decl))
         
 def compare(depr0, depr1, e0, e1, schema_version):
-    depr0, depr1 = map(lambda fn: json.load(open(fn)), (depr0, depr1))
     dd0, dd1 = map(to_dict, (e0, e1), (depr0, depr1))
     
     result = DeepDiff(dd0, dd1, ignore_order=True, cutoff_intersection_for_pairs=0.5)
@@ -219,7 +218,7 @@ def compare_schemas(s0, depr0, s1, depr1, s1_ver):
                 def get_canonical_expr(item):
                     return re.sub(
                         # remove schema prefixes
-                        ('(ifc\w+\.)(ifc\w+)'), '\\2',
+                        (r'(ifc\w+\.)(ifc\w+)'), '\\2',
                         # join and lowercase
                         "".join(item.flat).lower()
                     )
@@ -381,14 +380,37 @@ if __name__ == "__main__":
             ]
             
         files = list(map(functools.partial(os.path.join, d), names))
+
+        # Current-schema artefacts are generated into <repo>/output by the
+        # generators; fall back to the code directory for the legacy layout.
+        def current(name):
+            for candidate in (
+                os.path.join(repo_dir, "output", name),
+                os.path.join(os.path.dirname(os.path.abspath(__file__)), name),
+                name,
+            ):
+                if os.path.exists(candidate):
+                    return candidate
+            return os.path.join(repo_dir, "output", name)
+
+        structure_path = os.path.join(repo_dir, "output", "structure.json")
+        if not os.path.exists(structure_path):
+            raise FileNotFoundError(f"Required schema structure not found: {structure_path}")
+        deprecated_entities = json.load(open(structure_path, encoding="utf-8"))["deprecated_entities"]
+
         files += [
-            "ifc43", 
-            "IFC.exp",
-            "deprecated_entities.json",
-            "psd",
+            "ifc43",
+            current("IFC.exp"),
+            deprecated_entities,
+            current("psd"),
         ]
 
-    specs = [[files[i], express_parser.parse(files[i+1]), *files[i+2:i+4]] for i in range(0, len(files), 4)]
+    def load_deprecations(depr):
+        # Historical schemas point at standalone reference JSON files; the
+        # current schema carries its list in the structure payload.
+        return json.load(open(depr, encoding="utf-8")) if isinstance(depr, str) else depr
+
+    specs = [[files[i], express_parser.parse(files[i+1]), load_deprecations(files[i+2]), files[i+3]] for i in range(0, len(files), 4)]
     
     for (ver_a, schema_a, depr_a, psd_a), (ver_b, schema_b, depr_b, psd_b) in zip(specs[:-1], specs[1:]): 
         differences = sorted(compare_schemas(schema_a, depr_a, schema_b, depr_b, ver_b)) \
