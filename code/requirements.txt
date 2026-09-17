@@ -10,7 +10,7 @@ lxml
 Markdown
 markdown-it-py==1.1.0
 Pygments
-pyparsing<3
+pyparsing>=3
 xmlschema
 
 # Translations
