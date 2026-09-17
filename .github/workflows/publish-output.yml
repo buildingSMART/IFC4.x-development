@@ -148,6 +148,28 @@ jobs:
           set -euxo pipefail
           python -m generators.json ../schemas/ifc4x3_add2.uml ../output/psd --output ../output/structure.json
 
+      - name: Determine EXPRESS parse cache key
+        id: parse-cache-key
+        shell: bash
+        run: |
+          set -euo pipefail
+          express_dir=$(python -c 'import os, ifcopenshell.express as e; print(os.path.dirname(e.__file__))' | tail -n 1)
+          echo "parser=$(cat "$express_dir"/*.py | sha256sum | cut -c1-16)" >> "$GITHUB_OUTPUT"
+          echo "pyparsing=$(python -c 'import pyparsing; print(pyparsing.__version__)')" >> "$GITHUB_OUTPUT"
+          echo "python=$(python -c 'import sys; print("%d.%d" % sys.version_info[:2])')" >> "$GITHUB_OUTPUT"
+
+      - name: Restore EXPRESS parse caches
+        uses: actions/cache@v4
+        with:
+          path: ifc43/reference_schemas/*.exp.cache.dat
+          key: express-parse-${{ hashFiles('ifc43/reference_schemas/*.exp') }}-${{ steps.parse-cache-key.outputs.parser }}-pyparsing${{ steps.parse-cache-key.outputs.pyparsing }}-py${{ steps.parse-cache-key.outputs.python }}
+
+      - name: Mark restored parse caches as newer than the checkout
+        shell: bash
+        # the parser ignores a cache older than its .exp file, and a restored
+        # cache keeps its original timestamp while the checkout is fresh
+        run: find ifc43/reference_schemas -name '*.exp.cache.dat' -exec touch {} +
+
       - name: Generate change log data
         working-directory: ifc43/code
         shell: bash
