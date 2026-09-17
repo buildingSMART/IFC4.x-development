@@ -14,17 +14,29 @@ html {
      font-size: 0.95rem;
 }
 header {
+    display: flex;
+    align-items: center;
     width: 100%;
     margin-bottom: var(--universal-margin);
 }
 header p {
-    float: left;
+    align-self: center;
+}
+header img {
+    align-self: flex-end;
+    height: 100%;
+    width: auto;
+    box-shadow: none !important;
 }
 ul {
     list-style-type: "\2014\a0";
 }
 header ul {
-    float: right;
+    margin-left: auto;
+    align-self: center;
+}
+header .header-iso-title {
+    margin-left: auto;
 }
 header ul>li {
     display: inline-block;
@@ -900,4 +912,9 @@ body.cover.iso #main-content * {
 
 .rightpanel div {
     pointer-events: auto;
+}
+
+header small {
+    padding: 4px 8px;
+    border-radius: 6px;
 }

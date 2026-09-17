@@ -32,6 +32,7 @@ from .search import SearchIndexBuilder
 from . import translate
 from ..util.xmi_document import SCHEMA_NAME
 from . import md as mdp
+from git_history import page_history
 
 REPO_BRANCH = os.environ.get("REPO_BRANCH", "xmi-refresh")
 REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
@@ -423,6 +424,13 @@ class StaticTemplateRenderer(markdown_mixin):
         return template.render(self._template_context(**context))
 
     def _template_context(self, **context) -> dict:
+        import version
+        """
+        >>> from matplotlib import cm, colors
+        >>> [colors.to_hex(c) for c in cm.Pastel1.colors][0:3]
+        ['#fbb4ae', '#b3cde3', '#ccebc5']
+        """
+        color = ['#fbb4ae', '#b3cde3', '#ccebc5'][version.status_number]
         payload = {
             "is_iso": False,
             "is_package": False,
@@ -433,6 +441,9 @@ class StaticTemplateRenderer(markdown_mixin):
             "get_language_icon": translate.get_language_icon,
             "current_lang_slug": slugify("English (default)"),
             "languages": translate.list_languages(),
+            "get_page_history": lambda path: page_history(context.get("repo_dir", self.config.repo_root), path),
+            "header_color": color,
+            "status_message": version.status_message,
         }
         payload.update(context)
         return payload
@@ -1909,6 +1920,7 @@ class StaticTemplateRenderer(markdown_mixin):
             navigation=self.get_navigation(),
             content=html,
             path=path.resolve().relative_to(self.examples_repo_root).as_posix(),
+            repo_dir=str(self.examples_repo_root),
             repo="buildingSMART/IFC4.3.x-sample-models",
             branch="main",
             title=self._example_title(Path(example).name),
@@ -2083,7 +2095,8 @@ class StaticSiteBuilder:
         self._render_html_paths(self._utility_paths(), collect=False, resource_names=resource_names)
 
         self._copy_generated_svgs()
-        self._build_search_index()
+        if not self.config.no_index:
+            self._build_search_index()
 
         return {
             "written": len([path for path in self.config.output_dir.rglob("*") if path.is_file()]),
@@ -2223,6 +2236,20 @@ class StaticSiteBuilder:
             if public_path not in excluded and not public_path.startswith("/annex")
         ]
 
+    def _should_render(self, path: str) -> bool:
+        if self.config.include_paths is None:
+            return True
+
+        normalized = path.strip("/")
+        return any(
+            normalized == include.strip("/")
+            or (
+                include.strip("/")
+                and normalized.startswith(include.strip("/") + "/")
+            )
+            for include in self.config.include_paths
+        )
+
     def _render_html_paths(
         self,
         public_paths: list[str],
@@ -2231,6 +2258,8 @@ class StaticSiteBuilder:
         listing_payloads: dict[str, list[dict[str, str]]] | None = None,
         resource_names: tuple[str, ...],
     ) -> None:
+        public_paths = [p for p in public_paths if self._should_render(p)]
+
         if self.config.profile or self.config.threads == 1:
             for public_path in public_paths:
                 try:
