@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ValveTypePressureRelief</Name>
+  <Definition>Spring or weight loaded valve that automatically discharges to a safe place fluid that has built up to excessive pressure in pipes or fittings.
+Note that a pressure relief valve is constrained to have a single port pattern.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcValve/PRESSURERELIEF</ClassName>
+    <ClassName>IfcValveType/PRESSURERELIEF</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcValve/PRESSURERELIEF,IfcValveType/PRESSURERELIEF</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ReliefPressure</Name>
+      <Definition>The pressure at which the spring or weight in the valve is set to discharge fluid.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

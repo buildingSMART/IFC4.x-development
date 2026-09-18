@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SensorTypeHeatSensor</Name>
+  <Definition>A device that senses or detects heat. HISTORY: In IFC4, incorporates Fire Sensor. HeatSensorSetPoint changed to SetPointTemperature</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSensor/HEATSENSOR</ClassName>
+    <ClassName>IfcSensorType/HEATSENSOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSensor/HEATSENSOR,IfcSensorType/HEATSENSOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>CoverageArea</Name>
+      <Definition>The area that is covered by the object.
+
+Floor area (typically measured as a circle whose center is at the location of the sensor).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SetPointTemperature</Name>
+      <Definition>The temperature value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RateOfTemperatureRise</Name>
+      <Definition>The rate of temperature rise that is to be sensed as being hazardous.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTemperatureRateOfChangeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

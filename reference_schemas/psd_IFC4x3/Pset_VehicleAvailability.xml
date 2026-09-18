@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_VehicleAvailability</Name>
+  <Definition>Property set for the application of availability data to vehicles and equipment.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcVehicle/ROLLINGSTOCK</ClassName>
+    <ClassName>IfcVehicle/VEHICLEAIR</ClassName>
+    <ClassName>IfcVehicle/VEHICLEMARINE</ClassName>
+    <ClassName>IfcVehicle/VEHICLE</ClassName>
+    <ClassName>IfcVehicle/VEHICLETRACKED</ClassName>
+    <ClassName>IfcVehicleType/ROLLINGSTOCK</ClassName>
+    <ClassName>IfcVehicleType/VEHICLEAIR</ClassName>
+    <ClassName>IfcVehicleType/VEHICLEMARINE</ClassName>
+    <ClassName>IfcVehicleType/VEHICLE</ClassName>
+    <ClassName>IfcVehicleType/VEHICLETRACKED</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcVehicle/ROLLINGSTOCK,IfcVehicle/VEHICLEAIR,IfcVehicle/VEHICLEMARINE,IfcVehicle/VEHICLE,IfcVehicle/VEHICLETRACKED,IfcVehicleType/ROLLINGSTOCK,IfcVehicleType/VEHICLEAIR,IfcVehicleType/VEHICLEMARINE,IfcVehicleType/VEHICLE,IfcVehicleType/VEHICLETRACKED</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>VehicleAvailability</Name>
+      <Definition>Vehicle or Plant availability</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaintenanceDowntime</Name>
+      <Definition>Maintenance downtime proportion.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WeatherDowntime</Name>
+      <Definition>Weather downtime proportion</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

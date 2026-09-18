@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_EnergyRequirements</Name>
+  <Definition>Property set for the application of energy requirements to facility and physical elements</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDistributionElement</ClassName>
+    <ClassName>IfcTransportationDevice</ClassName>
+    <ClassName>IfcDistributionElementType</ClassName>
+    <ClassName>IfcTransportationDeviceType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionElement,IfcTransportationDevice,IfcDistributionElementType,IfcTransportationDeviceType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>EnergyConsumption</Name>
+      <Definition>Annual energy consumption requirement</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcEnergyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PowerDemand</Name>
+      <Definition>Power demand of the element</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EnergySourceLabel</Name>
+      <Definition>Type of energy source e.g. Electricity, Diesel, LPG etc. utilised by the element.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EnergyConversionEfficiency</Name>
+      <Definition>Measure of the efficiency of conversion of fuel energy to mechanical energy</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

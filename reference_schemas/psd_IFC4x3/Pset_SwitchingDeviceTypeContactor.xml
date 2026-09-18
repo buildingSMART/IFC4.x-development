@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SwitchingDeviceTypeContactor</Name>
+  <Definition>An electrical device used to control the flow of power in a circuit on or off.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSwitchingDevice/CONTACTOR</ClassName>
+    <ClassName>IfcSwitchingDeviceType/CONTACTOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSwitchingDevice/CONTACTOR,IfcSwitchingDeviceType/CONTACTOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ContactorType</Name>
+      <Definition>A list of the available types of contactor from which that required may be selected where:CapacitorSwitching: for switching 3 phase single or multi-step capacitor banks.
+LowCurrent: requires the use of low resistance contacts.
+MagneticLatching: enables the contactor to remain in the on position when the coil is no longer energized.
+MechanicalLatching: requires that the contactor is mechanically retained in the on position.
+Modular: are totally enclosed and self contained.
+Reversing: has a double set of contactors that are prewired.
+Standard: is a generic device that controls the flow of power in a circuit on or off.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ContactorType">
+            <EnumItem>CAPACITORSWITCHING</EnumItem>
+            <EnumItem>LOWCURRENT</EnumItem>
+            <EnumItem>MAGNETICLATCHING</EnumItem>
+            <EnumItem>MECHANICALLATCHING</EnumItem>
+            <EnumItem>MODULAR</EnumItem>
+            <EnumItem>REVERSING</EnumItem>
+            <EnumItem>STANDARD</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

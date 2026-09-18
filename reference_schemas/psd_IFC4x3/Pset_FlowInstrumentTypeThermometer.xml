@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FlowInstrumentTypeThermometer</Name>
+  <Definition>A device that reads and displays a temperature value at a point.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFlowInstrument/THERMOMETER</ClassName>
+    <ClassName>IfcFlowInstrumentType/THERMOMETER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFlowInstrument/THERMOMETER,IfcFlowInstrumentType/THERMOMETER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ThermometerType</Name>
+      <Definition>Identifies the means by which temperature is displayed.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ThermometerType">
+            <EnumItem>DIAL</EnumItem>
+            <EnumItem>DIGITAL</EnumItem>
+            <EnumItem>STEM</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DisplaySize</Name>
+      <Definition>The physical size of the display.
+
+In the case of a stem thermometer, this will be the length of the stem. For a dial thermometer, it will be the diameter of the dial.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

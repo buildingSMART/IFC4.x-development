@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DuctSegmentOccurrence</Name>
+  <Definition>Duct segment occurrence attributes attached to an instance of IfcDuctSegment.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDuctSegment</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDuctSegment</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>InteriorRoughnessCoefficient</Name>
+      <Definition>The interior roughness of the material of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasLiner</Name>
+      <Definition>TRUE if the fitting has interior duct insulating lining, FALSE if it does not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Colour</Name>
+      <Definition>Colour of this object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

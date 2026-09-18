@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_LinearStratumBaseQuantities</Name>
+  <Definition>Quantity measures associated to a linear stratum such as in a borehole. Uncertainty is documented in Pset_Uncertainty.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcGeotechnicalStratum</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcGeotechnicalStratum</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Diameter</Name>
+      <Definition>The Diameter of the object.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Length</Name>
+      <Definition>The length of the object.
+
+Effective length sampled, if lower end of segment known</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RoadGuardElement</Name>
+  <Definition>Properties assigned to IfcWall/PARAPET or IfcRailing/GUARDRAIL when assigned as road guard elements.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcRailing/GUARDRAIL</ClassName>
+    <ClassName>IfcWall/PARAPET</ClassName>
+    <ClassName>IfcRailingType/GUARDRAIL</ClassName>
+    <ClassName>IfcWallType/PARAPET</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcRailing/GUARDRAIL,IfcWall/PARAPET,IfcRailingType/GUARDRAIL,IfcWallType/PARAPET</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>IsMoveable</Name>
+      <Definition>True if element is moveable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsTerminal</Name>
+      <Definition>True if element is a terminal. See class Terminal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsTransition</Name>
+      <Definition>True if element is a transition. See class Transition.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TerminalType</Name>
+      <Definition>Specifies the kind of terminal if IsTerminal is true.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

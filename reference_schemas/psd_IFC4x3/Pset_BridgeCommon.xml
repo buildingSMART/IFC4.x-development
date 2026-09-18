@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_BridgeCommon</Name>
+  <Definition>Common property set for bridges.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcBridge</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBridge</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>StructureIndicator</Name>
+      <Definition>The type of bridge structure (composite, coated, homogeneous or other)</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_StructureIndicator">
+            <EnumItem>COATED</EnumItem>
+            <EnumItem>COMPOSITE</EnumItem>
+            <EnumItem>HOMOGENEOUS</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

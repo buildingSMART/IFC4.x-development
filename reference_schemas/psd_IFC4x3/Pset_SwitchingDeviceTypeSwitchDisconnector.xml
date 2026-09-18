@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SwitchingDeviceTypeSwitchDisconnector</Name>
+  <Definition>A switch disconnector is a switch which in the open position satisfies the isolating requirements specified for a disconnector.History: Property 'HasVisualIndication' changed to 'IsIlluminated' to conform with property name for toggle switch</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSwitchingDevice/SWITCHDISCONNECTOR</ClassName>
+    <ClassName>IfcSwitchingDeviceType/SWITCHDISCONNECTOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSwitchingDevice/SWITCHDISCONNECTOR,IfcSwitchingDeviceType/SWITCHDISCONNECTOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SwitchDisconnectorType</Name>
+      <Definition>A list of the available types of switch disconnector from which that required may be selected where:CenterBreak: A disconnector in which both contacts of each pole are movable and engage at a point substantially midway between their supports. (IEC 441-14-08)
+DividedSupport: A disconnector in which the fixed and moving contacts of each pole are not supported by a common base or frame. (IEC 441-14-06)
+DoubleBreak: A disconnector that opens a circuit at two points. (IEC 441-14-09)
+EarthingSwitch: A disconnector in which the fixed and moving contacts of each pole are not supported by a common base or frame. (IEC 441-14-07)
+Isolator: A disconnector which in the open position satisfies isolating requirements. (IEC 441-14-12)</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SwitchDisconnectorType">
+            <EnumItem>CENTERBREAK</EnumItem>
+            <EnumItem>DIVIDEDSUPPORT</EnumItem>
+            <EnumItem>DOUBLEBREAK</EnumItem>
+            <EnumItem>EARTHINGSWITCH</EnumItem>
+            <EnumItem>ISOLATOR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LoadDisconnectionType</Name>
+      <Definition>A list of the available types of load disconnection from which that required may be selected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_LoadDisconnectionType">
+            <EnumItem>OFFLOAD</EnumItem>
+            <EnumItem>ONLOAD</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

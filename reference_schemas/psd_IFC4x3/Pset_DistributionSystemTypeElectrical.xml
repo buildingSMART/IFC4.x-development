@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DistributionSystemTypeElectrical</Name>
+  <Definition>Properties of electrical circuits.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDistributionSystem/ELECTRICAL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionSystem/ELECTRICAL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ElectricalSystemType</Name>
+      <Definition>For certain purposes of electrical regulations, IEC 60364 defines types of system using type identifiers. Assignment of identifiers depends upon the relationship of the source, and of exposed conductive parts of the installation, to Ground (Earth).   Identifiers that may be assigned through IEC 60364 are:•TN type system, a system having one or more points of the source of energy directly earthed, the exposed conductive parts of the installation being connected to that point by protective conductors,
+•TN C type system, a TN type system in which neutral and protective functions are combined in a single conductor throughout the system,
+•TN S type system, a TN type system having separate neutral and protective conductors throughout the system,
+•TN C S type system, a TN type system in which neutral and protective functions are combined in a single conductor in part of the system,
+•TT type system, a system having one point of the source of energy directly earthed, the exposed conductive parts of the installation being connected to earth electrodes electrically independent of the earth electrodes of the source,
+•IT type system, a system having no direct connection between live parts and Earth, the exposed conductive parts of the electrical installation being earthed.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DistributionSystemElectricalType">
+            <EnumItem>IT</EnumItem>
+            <EnumItem>TN</EnumItem>
+            <EnumItem>TN_C</EnumItem>
+            <EnumItem>TN_C_S</EnumItem>
+            <EnumItem>TN_S</EnumItem>
+            <EnumItem>TT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ElectricalSystemCategory</Name>
+      <Definition>Designates the voltage range of the circuit, according to IEC.  HIGHVOLTAGE indicates &gt;1000V AC or &gt;1500V DV; LOWVOLTAGE indicates 50-1000V AC or 120-1500V DC; EXTRALOWVOLTAGE indicates &lt;50V AC or &lt;120V DC.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DistributionSystemElectricalCategory">
+            <EnumItem>EXTRALOWVOLTAGE</EnumItem>
+            <EnumItem>HIGHVOLTAGE</EnumItem>
+            <EnumItem>LOWVOLTAGE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Diversity</Name>
+      <Definition>The ratio, expressed as a numerical
+value or as a percentage, of the
+simultaneous maximum demand of
+a group of electrical appliances or
+consumers within a specified period,
+to the sum of their individual maximum
+demands within the same
+period. The group of electrical appliances is in this case connected to this circuit. Definition from IEC 60050, IEV 691-10-04
+NOTE1: It is often not desirable to size each conductor in a distribution system to support the total connected load at that point in the network. Diversity is applied on the basis of the anticipated loadings that are likely to result from all loads not being connected at the same time.
+NOTE2: Diversity is applied to final circuits only, not to sub-main circuits supplying other DBs.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfLiveConductors</Name>
+      <Definition>Number of live conductors within this circuit. Either this property or the ConductorFunction property (if only one) may be asserted.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumAllowedVoltageDrop</Name>
+      <Definition>The maximum voltage drop across the circuit that must not be exceeded.
+There are two  voltage drop limit settings that may be applied; one for sub-main circuits, and one in each Distribution Board or Consumer Unit for final circuits connected to that board. The settings should limit the overall voltage drop to the required level. Default settings of 1.5% for sub-main circuits and 2.5% for final circuits, giving an overall limit of 4% may be applied.
+NOTE: This value may also be specified as a constraint within an IFC model if required but is included within the property set at this stage pending implementation of the required capabilities within software applications.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricVoltageMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NetImpedance</Name>
+      <Definition>The maximum earth loop impedance upstream of a circuit (typically stated as the variable Zs). This value is for 55o C (130oF) Celsius usage.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricResistanceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RatedVoltageRange</Name>
+      <Definition>Voltage range as declared by the manufacturer expressed by its lower and upper rated voltages [Source : IEC 62368-1:2010, 3.3.10.5].</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcElectricVoltageMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

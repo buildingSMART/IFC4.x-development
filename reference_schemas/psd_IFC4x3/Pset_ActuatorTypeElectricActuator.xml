@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ActuatorTypeElectricActuator</Name>
+  <Definition>A device that electrically actuates a control element.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcActuator/ELECTRICACTUATOR</ClassName>
+    <ClassName>IfcActuatorType/ELECTRICACTUATOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActuator/ELECTRICACTUATOR,IfcActuatorType/ELECTRICACTUATOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ActuatorInputPower</Name>
+      <Definition>Maximum input power requirement.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ElectricActuatorType</Name>
+      <Definition>Enumeration that identifies electric actuator as defined by its operational principle.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElectricActuatorType">
+            <EnumItem>MAGNETIC</EnumItem>
+            <EnumItem>MOTORDRIVE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ControlPulseCurrent</Name>
+      <Definition>The current of the electric actuator control pulse.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_PointMachine</Name>
+  <Definition>Properties of point machine used in railway. The property set can be used by IfcActuator with predefined type set to ELECTRICACTUATOR, HYDRAULICACTUATOR, HANDOPERATEDACTUATOR, or PNEUMATICACTUATOR, indicated that such actuator is a point machine that can switch and lock the track turnout.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcActuator/ELECTRICACTUATOR</ClassName>
+    <ClassName>IfcActuator/HANDOPERATEDACTUATOR</ClassName>
+    <ClassName>IfcActuator/HYDRAULICACTUATOR</ClassName>
+    <ClassName>IfcActuator/PNEUMATICACTUATOR</ClassName>
+    <ClassName>IfcActuatorType/ELECTRICACTUATOR</ClassName>
+    <ClassName>IfcActuatorType/HANDOPERATEDACTUATOR</ClassName>
+    <ClassName>IfcActuatorType/HYDRAULICACTUATOR</ClassName>
+    <ClassName>IfcActuatorType/PNEUMATICACTUATOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActuator/ELECTRICACTUATOR,IfcActuator/HANDOPERATEDACTUATOR,IfcActuator/HYDRAULICACTUATOR,IfcActuator/PNEUMATICACTUATOR,IfcActuatorType/ELECTRICACTUATOR,IfcActuatorType/HANDOPERATEDACTUATOR,IfcActuatorType/HYDRAULICACTUATOR,IfcActuatorType/PNEUMATICACTUATOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ActionBarMovementLength</Name>
+      <Definition>The movement of the bar that pulls the point of a turnout.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TractionForce</Name>
+      <Definition>Traction force of the point machine in turnout conversion.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcForceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConversionTime</Name>
+      <Definition>Turnout conversion completion time.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LockingForce</Name>
+      <Definition>Locking force of the point machine motor.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcForceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasLockInside</Name>
+      <Definition>Indicates whether the locking is inside  (TRUE) or outside (FALSE) of the point machine.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MarkingRodMovementLength</Name>
+      <Definition>The length of the movement bar which indicates the turnout position.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumOperatingTime</Name>
+      <Definition>The maximum duration of the turnout movement before the interlocking turns to out of control status.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MinimumOperatingSpeed</Name>
+      <Definition>Minimum operating speed of the point machine.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAngularVelocityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Current</Name>
+      <Definition>The actual current and operable range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

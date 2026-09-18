@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElectricFlowStorageDeviceTypeUPS</Name>
+  <Definition>Properties of uninterruptible power supply equipment. The property set can be used by the predefined type UPS  of IfcElectricFlowStorageDevice.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElectricFlowStorageDevice/UPS</ClassName>
+    <ClassName>IfcElectricFlowStorageDeviceType/UPS</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElectricFlowStorageDevice/UPS,IfcElectricFlowStorageDeviceType/UPS</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AssemblyInstruction</Name>
+      <Definition>Instructions to describe how the system / equipment / facility is assembled.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CurrentRegulationRate</Name>
+      <Definition>It shows the ability of DC regulated power supply to suppress the fluctuation of output voltage caused by the change of load current (output current) when the input voltage is constant.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalSupplyCurrent</Name>
+      <Definition>The nominal current of the supply.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VoltageRegulationRate</Name>
+      <Definition>When the input side voltage changes from the lowest allowable input value to the specified maximum value, the relative change value of the output voltage is the percentage of the rated output voltage.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

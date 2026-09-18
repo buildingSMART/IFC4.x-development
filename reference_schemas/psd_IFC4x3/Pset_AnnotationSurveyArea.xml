@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_AnnotationSurveyArea</Name>
+  <Definition>Specifies particular properties of survey methods to be assigned to survey point set or resulting surface patches</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAnnotation/SURVEY</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAnnotation/SURVEY</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AcquisitionMethod</Name>
+      <Definition>The means by which survey data was acquired.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AcquisitionMethod">
+            <EnumItem>GPS</EnumItem>
+            <EnumItem>LASERSCAN_AIRBORNE</EnumItem>
+            <EnumItem>LASERSCAN_GROUND</EnumItem>
+            <EnumItem>SONAR</EnumItem>
+            <EnumItem>THEODOLITE</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+            <EnumItem>USERDEFINED</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AccuracyQualityObtained</Name>
+      <Definition>A measure of the accuracy quality of survey points as obtained expressed in percentage terms.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AccuracyQualityExpected</Name>
+      <Definition>A measure of the accuracy quality of survey points as expected expressed in percentage terms.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

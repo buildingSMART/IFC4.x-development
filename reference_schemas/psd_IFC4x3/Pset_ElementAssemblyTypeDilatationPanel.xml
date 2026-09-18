@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElementAssemblyTypeDilatationPanel</Name>
+  <Definition>Adjustment switch panel properties used in railway. The property set can be used by the predefined type DILATATION_PANEL of IfcElementAssembly.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElementAssembly/DILATATIONPANEL</ClassName>
+    <ClassName>IfcElementAssemblyType/DILATATIONPANEL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElementAssembly/DILATATIONPANEL,IfcElementAssemblyType/DILATATIONPANEL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>TechnicalStandard</Name>
+      <Definition>The technical standard which the element should comply with.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DilatationLength</Name>
+      <Definition>Length dilatation admitted by the element.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ExpansionDirection</Name>
+      <Definition>The expansion direction, e.g. single direction, bi-direction</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ExpansionDirection">
+            <EnumItem>BI_DIRECTION</EnumItem>
+            <EnumItem>SINGLE_DIRECTION</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InstallationPlan</Name>
+      <Definition>Reference to external information source about installation or construction plan of the element.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcDocumentReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BladesOrientation</Name>
+      <Definition>Orientation of internal blades.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BladesOrientation">
+            <EnumItem>BLADESINSIDE</EnumItem>
+            <EnumItem>BLADESOUTSIDE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

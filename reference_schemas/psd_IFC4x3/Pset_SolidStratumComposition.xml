@@ -1,0 +1,160 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SolidStratumComposition</Name>
+  <Definition>Properties expressing the composition of a stratum using volume measures, implementing ISO14688 Part 2 Table 1 Primary fractions and composite fractions. Regional and National conventions should be captured through classification and specific property sets. Zero values may be omitted.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcGeotechnicalStratum/SOLID</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcGeotechnicalStratum/SOLID</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AirVolume</Name>
+      <Definition>Relative volume of air stratum constituents.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BouldersVolume</Name>
+      <Definition>Relative volume of boulders (typically larger than 200mm) stratum constituents.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ClayVolume</Name>
+      <Definition>Relative volume of clay (typically smaller than 0.002mm) stratum constituents.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CobblesVolume</Name>
+      <Definition>Relative volume of cobbles (typically larger than 63mm) stratum constituents.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ContaminantVolume</Name>
+      <Definition>Relative volume of contaminant stratum constituents.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FillVolume</Name>
+      <Definition>Relative volume of fill (controlled placement of anthropogenic soil) stratum constituents.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>GravelVolume</Name>
+      <Definition>Relative volume of gravel (typically larger than 2mm) stratum constituents.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OrganicVolume</Name>
+      <Definition>Relative volume of organic (peat/humus) stratum constituents especially soil.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RockVolume</Name>
+      <Definition>Relative volume of rock stratum constituents.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SandVolume</Name>
+      <Definition>Relative volume of sand (typically smaller than 2mm) stratum constituents.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SiltVolume</Name>
+      <Definition>Relative volume of silt (typically smaller than 0.063mm) stratum constituents.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WaterVolume</Name>
+      <Definition>Relative volume of water stratum constituents.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CompositeFractions</Name>
+      <Definition>Denomination into soil groups by composite fractions</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SoilCompositeFractions">
+            <EnumItem>BOULDERS</EnumItem>
+            <EnumItem>BOULDERS_WITH_COBBLES</EnumItem>
+            <EnumItem>BOULDERS_WITH_FINER_SOILS</EnumItem>
+            <EnumItem>CLAY</EnumItem>
+            <EnumItem>CLAYEY_SILT</EnumItem>
+            <EnumItem>COBBLES</EnumItem>
+            <EnumItem>COBBLES_WITH_BOULDERS</EnumItem>
+            <EnumItem>COBBLES_WITH_FINER_SOILS</EnumItem>
+            <EnumItem>FILL</EnumItem>
+            <EnumItem>GRAVEL</EnumItem>
+            <EnumItem>GRAVELLY_SAND</EnumItem>
+            <EnumItem>GRAVEL_WITH_CLAY_OR_SILT</EnumItem>
+            <EnumItem>GRAVEL_WITH_COBBLES</EnumItem>
+            <EnumItem>ORGANIC_CLAY</EnumItem>
+            <EnumItem>ORGANIC_SILT</EnumItem>
+            <EnumItem>SAND</EnumItem>
+            <EnumItem>SANDY_CLAYEY_SILT</EnumItem>
+            <EnumItem>SANDY_GRAVEL</EnumItem>
+            <EnumItem>SANDY_GRAVELLY_CLAY</EnumItem>
+            <EnumItem>SANDY_GRAVELLY_SILT</EnumItem>
+            <EnumItem>SANDY_GRAVEL_WITH_COBBLES</EnumItem>
+            <EnumItem>SANDY_PEAT</EnumItem>
+            <EnumItem>SANDY_SILT</EnumItem>
+            <EnumItem>SAND_WITH_CLAY_AND_SILT</EnumItem>
+            <EnumItem>SILT</EnumItem>
+            <EnumItem>SILTY_CLAY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

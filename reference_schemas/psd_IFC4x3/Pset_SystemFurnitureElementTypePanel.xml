@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SystemFurnitureElementTypePanel</Name>
+  <Definition>A set of specific properties for vertical panels that assembly workstations.. HISTORY: First issued in IFC Release R1.5. Renamed from Pset_Panel</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSystemFurnitureElement/PANEL</ClassName>
+    <ClassName>IfcSystemFurnitureElementType/PANEL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSystemFurnitureElement/PANEL,IfcSystemFurnitureElementType/PANEL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>HasOpening</Name>
+      <Definition>indicates whether the panel has an opening (= TRUE) or not (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FurniturePanelType</Name>
+      <Definition>Available panel types from which that required may be selected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FurniturePanelType">
+            <EnumItem>ACOUSTICAL</EnumItem>
+            <EnumItem>DOOR</EnumItem>
+            <EnumItem>ENDS</EnumItem>
+            <EnumItem>GLAZED</EnumItem>
+            <EnumItem>HORZ_SEG</EnumItem>
+            <EnumItem>MONOLITHIC</EnumItem>
+            <EnumItem>OPEN</EnumItem>
+            <EnumItem>SCREEN</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalThickness</Name>
+      <Definition>The nominal thickness of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In case of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

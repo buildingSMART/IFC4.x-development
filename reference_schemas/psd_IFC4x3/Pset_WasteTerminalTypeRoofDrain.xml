@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_WasteTerminalTypeRoofDrain</Name>
+  <Definition>Pipe fitting, set into the roof, that collects rainwater for discharge into the rainwater system.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcWasteTerminal/ROOFDRAIN</ClassName>
+    <ClassName>IfcWasteTerminalType/ROOFDRAIN</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcWasteTerminal/ROOFDRAIN,IfcWasteTerminalType/ROOFDRAIN</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NominalBodyLength</Name>
+      <Definition>Nominal or quoted length measured along the x-axis of the local coordinate system of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalBodyWidth</Name>
+      <Definition>Nominal or quoted length, measured along the y-axis of the local coordinate system of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalBodyDepth</Name>
+      <Definition>Nominal or quoted length measured along the z-axis of the local coordinate system of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OutletConnectionSize</Name>
+      <Definition>Size of the outlet connection from the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CoverLength</Name>
+      <Definition>The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CoverWidth</Name>
+      <Definition>The length measured along the y-axis in the local coordinate system of the cover of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

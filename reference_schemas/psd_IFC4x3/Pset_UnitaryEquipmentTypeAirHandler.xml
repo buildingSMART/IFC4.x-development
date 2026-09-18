@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_UnitaryEquipmentTypeAirHandler</Name>
+  <Definition>Air handler unitary equipment type attributes.
+Note that these attributes were formerly Pset_AirHandler prior to IFC2x2.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcUnitaryEquipment/AIRHANDLER</ClassName>
+    <ClassName>IfcUnitaryEquipmentType/AIRHANDLER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcUnitaryEquipment/AIRHANDLER,IfcUnitaryEquipmentType/AIRHANDLER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AirHandlerConstruction</Name>
+      <Definition>Enumeration defining how the air handler might be fabricated.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirHandlerConstruction">
+            <EnumItem>CONSTRUCTEDONSITE</EnumItem>
+            <EnumItem>MANUFACTUREDITEM</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AirHandlerFanCoilArrangement</Name>
+      <Definition>Enumeration defining the arrangement of the supply air fan and the cooling coil.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirHandlerFanCoilArrangement">
+            <EnumItem>BLOWTHROUGH</EnumItem>
+            <EnumItem>DRAWTHROUGH</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DualDeck</Name>
+      <Definition>Does the AirHandler have a dual deck? TRUE = Yes, FALSE = No.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CommunicationsApplianceTypeComputer</Name>
+  <Definition>Properties common to a computer. This property set is applied to a type or occurrence of IfcCommunicationsAppliance with predefined type of COMPUTER.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCommunicationsAppliance/COMPUTER</ClassName>
+    <ClassName>IfcCommunicationsApplianceType/COMPUTER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCommunicationsAppliance/COMPUTER,IfcCommunicationsApplianceType/COMPUTER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>StorageCapacity</Name>
+      <Definition>Indicates the total data storage capacity of the device. It is defined by bytes.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>UserInterfaceType</Name>
+      <Definition>Indicates the user interface of the computer.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ComputerUIType">
+            <EnumItem>CLI</EnumItem>
+            <EnumItem>GUI</EnumItem>
+            <EnumItem>TOUCHSCREEN</EnumItem>
+            <EnumItem>TOUCHTONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

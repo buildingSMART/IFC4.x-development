@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_TransportEquipmentOTN</Name>
+  <Definition>Properties in this property set are applied to transport equipment that act in optical transport network (OTN) system.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCommunicationsAppliance/TRANSPORTEQUIPMENT</ClassName>
+    <ClassName>IfcCommunicationsApplianceType/TRANSPORTEQUIPMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCommunicationsAppliance/TRANSPORTEQUIPMENT,IfcCommunicationsApplianceType/TRANSPORTEQUIPMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SingleChannelAveragePower</Name>
+      <Definition>Indicates the average power of a single channel of the transport equipment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ChromaticDispersionTolerance</Name>
+      <Definition>Indicates the tolerance of the transport equipment chromatic dispersion. The value is defined by picosecond per nanometer (ps/nm).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SingleChannelPower</Name>
+      <Definition>Indicates the power range of a single channel of the transport equipment.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MinimumOpticalSignalToNoiseRatio</Name>
+      <Definition>Indicates the minimum optical signal to noise ratio of the transport equipment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PolarizationModeDispersionTolerance</Name>
+      <Definition>Indicates the polarization mode dispersion tolerance of the transport equipment. It is usually measured by picosecond.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SingleWaveTransmissionRate</Name>
+      <Definition>Indicates the single wave transmission rate of the transport equipment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EquipmentCapacity</Name>
+      <Definition>Indicates the equipment capacity of the appliance. The value is defined in bits/s.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIntegerCountRateMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

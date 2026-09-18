@@ -28,6 +28,11 @@ header img {
     width: auto;
     box-shadow: none !important;
 }
+header div {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0.6rem 1rem;
+}
 ul {
     list-style-type: "\2014\a0";
 }

@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CableSegmentTypeFiberSegment</Name>
+  <Definition>Properties of fiber segments. This property set is applicable to a type or occurrence of IfcCableSegment with predefined type FIBERSEGMENT.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment/FIBERSEGMENT</ClassName>
+    <ClassName>IfcCableSegmentType/FIBERSEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment/FIBERSEGMENT,IfcCableSegmentType/FIBERSEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>FiberColour</Name>
+      <Definition>Indicates the colour of a single fiber.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FiberColour">
+            <EnumItem>AQUA</EnumItem>
+            <EnumItem>BLACK</EnumItem>
+            <EnumItem>BLUE</EnumItem>
+            <EnumItem>BROWN</EnumItem>
+            <EnumItem>GREEN</EnumItem>
+            <EnumItem>ORANGE</EnumItem>
+            <EnumItem>RED</EnumItem>
+            <EnumItem>ROSE</EnumItem>
+            <EnumItem>SLATE</EnumItem>
+            <EnumItem>VIOLET</EnumItem>
+            <EnumItem>WHITE</EnumItem>
+            <EnumItem>YELLOW</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasTightJacket</Name>
+      <Definition>Indicates whether the fiber has a tight jacket or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FiberType</Name>
+      <Definition>Indicates the type of the single fiber.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FiberType">
+            <EnumItem>BEND_INSENSITIVEFIBER</EnumItem>
+            <EnumItem>CUTOFFSHIFTEDFIBER</EnumItem>
+            <EnumItem>DISPERSIONSHIFTEDFIBER</EnumItem>
+            <EnumItem>LOWWATERPEAKFIBER</EnumItem>
+            <EnumItem>NON_ZERODISPERSIONSHIFTEDFIBER</EnumItem>
+            <EnumItem>OM1</EnumItem>
+            <EnumItem>OM2</EnumItem>
+            <EnumItem>OM3</EnumItem>
+            <EnumItem>OM4</EnumItem>
+            <EnumItem>OM5</EnumItem>
+            <EnumItem>STANDARDSINGLEMODEFIBER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SoundAttenuation</Name>
+  <Definition>Common definition to capture sound pressure at a point on behalf of a device typically used within the context of building services and flow distribution systems.   To indicate sound values from an instance of IfcDistributionFlowElement at a particular location, IfcAnnotation instance(s) should be assigned to the IfcDistributionFlowElement through the IfcRelAssignsToProduct relationship. The IfcAnnotation should specify ObjectType of 'Sound' and geometric representation of 'Annotation Point' consisting of a single IfcPoint subtype as described at IfcAnnotation.  This property set is instantiated multiple times on an object for each frequency band.  HISTORY: New property set in IFC Release 2x4.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAnnotation</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAnnotation</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SoundScale</Name>
+      <Definition>The reference sound scale.DBA: Decibels in an A-weighted scale
+DBB: Decibels in an B-weighted scale
+DBC: Decibels in an C-weighted scale
+NC: Noise criteria
+NR: Noise rating</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SoundScale">
+            <EnumItem>DBA</EnumItem>
+            <EnumItem>DBB</EnumItem>
+            <EnumItem>DBC</EnumItem>
+            <EnumItem>NC</EnumItem>
+            <EnumItem>NR</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SoundFrequency</Name>
+      <Definition>List of nominal sound frequencies, correlated to the SoundPressure time series values (IfcTimeSeries.ListValues)</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcFrequencyMeasure"/>
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SoundPressure</Name>
+      <Definition>A time series of sound pressure values measured in decibels at a reference pressure of 20 microPascals for the referenced octave band frequency.  Each value in IfcTimeSeries.ListValues is correlated to the sound frequency at the same position within SoundFrequencies.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FlowMeterOccurrence</Name>
+  <Definition>Flow meter occurrence common attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFlowMeter</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFlowMeter</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>FlowMeterOurpose</Name>
+      <Definition>Enumeration defining the purpose of the flow meter occurrence.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FlowMeterPurpose">
+            <EnumItem>MASTER</EnumItem>
+            <EnumItem>SUBMASTER</EnumItem>
+            <EnumItem>SUBMETER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

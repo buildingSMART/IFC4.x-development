@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RailwayLevelCrossing</Name>
+  <Definition>Properties applicable to IfcFacilityPartCommon with PredefinedType set to LEVELCROSSING.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFacilityPartCommon/LEVELCROSSING</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFacilityPartCommon/LEVELCROSSING</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>IsAccessibleByVehicle</Name>
+      <Definition>Indicates whether the element is accessible by a vehicle or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasRailDrainage</Name>
+      <Definition>Indicates whether there is rail drainage or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsPrivateOwner</Name>
+      <Definition>Indicates if the owner of the crossed road is private or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PermissiblePavementLoad</Name>
+      <Definition>Permissible traffic load on the pavement.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMassMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsSecuredBySignalingSystem</Name>
+      <Definition>Indicates whether the level crossing is secured by a signalling system or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsExceptionalTransportRoute</Name>
+      <Definition>Indicates whether the route is suitable for exceptional transport (load, structure gauge, road),</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SwitchingDeviceTypeSelectorSwitch</Name>
+  <Definition>A selector switch is a switch that adjusts electrical power through a multi-position action.  HISTORY: Added in IFC4.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSwitchingDevice/SELECTORSWITCH</ClassName>
+    <ClassName>IfcSwitchingDeviceType/SELECTORSWITCH</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSwitchingDevice/SELECTORSWITCH,IfcSwitchingDeviceType/SELECTORSWITCH</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SelectorType</Name>
+      <Definition>A list of the available types of selector switch from which that required may be selected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SwitchingDeviceDimmerSwitchType">
+            <EnumItem>ROCKER</EnumItem>
+            <EnumItem>SELECTOR</EnumItem>
+            <EnumItem>TWIST</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SwitchUsage</Name>
+      <Definition>A list of the available usages for switches from which that required may be selected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SwitchUsage">
+            <EnumItem>EMERGENCY</EnumItem>
+            <EnumItem>GUARD</EnumItem>
+            <EnumItem>LIMIT</EnumItem>
+            <EnumItem>START</EnumItem>
+            <EnumItem>STOP</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SwitchActivation</Name>
+      <Definition>A list of the available activations for switches from which that required may be selected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SwitchActivation">
+            <EnumItem>ACTUATOR</EnumItem>
+            <EnumItem>FOOT</EnumItem>
+            <EnumItem>HAND</EnumItem>
+            <EnumItem>PROXIMITY</EnumItem>
+            <EnumItem>SOUND</EnumItem>
+            <EnumItem>TWOHAND</EnumItem>
+            <EnumItem>WIRE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalCurrent</Name>
+      <Definition>The nominal current that is designed to be measured.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ReferenceEnvironmentTemperature</Name>
+      <Definition>Ideal temperature range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RatedFrequency</Name>
+      <Definition>Frequency of the AC electric power supply when the device or system reaches its optimum operating condition.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfPhases</Name>
+      <Definition>Number of phases that the equipment operates on.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalPower</Name>
+      <Definition>A conventional value of apparent power determining a value of the rated current that may be carried with rated voltage applied, under specified conditions. ( IEV ref 421-04-04)</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

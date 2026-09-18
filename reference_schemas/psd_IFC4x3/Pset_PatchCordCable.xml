@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_PatchCordCable</Name>
+  <Definition>This property set has properties that are applicable to cable segment and optical cable segment, indicated that the cable is a patch cord cable, which is fitted with connectors at both ends, allowing it to be rapidly and conveniently connected to other cables or to distribution panels.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment/CABLESEGMENT</ClassName>
+    <ClassName>IfcCableSegment/OPTICALCABLESEGMENT</ClassName>
+    <ClassName>IfcCableSegmentType/CABLESEGMENT</ClassName>
+    <ClassName>IfcCableSegmentType/OPTICALCABLESEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment/CABLESEGMENT,IfcCableSegment/OPTICALCABLESEGMENT,IfcCableSegmentType/CABLESEGMENT,IfcCableSegmentType/OPTICALCABLESEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>JacketColour</Name>
+      <Definition>Indicates the colour of the cable or fitting jacket.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FootingTypePadFooting</Name>
+  <Definition>Properties of footing. The property set can be used by the predefined type PAD_FOOTING of IfcFooting.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFooting/PAD_FOOTING</ClassName>
+    <ClassName>IfcFootingType/PAD_FOOTING</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFooting/PAD_FOOTING,IfcFootingType/PAD_FOOTING</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>LoadBearingCapacity</Name>
+      <Definition>Maximum load bearing capacity of the floor structure throughtout the storey as designed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlanarForceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsReinforced</Name>
+      <Definition>Indicates whether the foundation is reinforced (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

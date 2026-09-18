@@ -1,0 +1,147 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DistributionPortTypeDuct</Name>
+  <Definition>Duct port occurrence attributes attached to an instance of IfcDistributionPort.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDistributionPort/DUCT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionPort/DUCT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ConnectionType</Name>
+      <Definition>The end-style treatment of the duct port:BEADEDSLEEVE: Beaded Sleeve.
+COMPRESSION: Compression.
+CRIMP: Crimp.
+DRAWBAND: Drawband.
+DRIVESLIP: Drive slip.
+FLANGED: Flanged.
+OUTSIDESLEEVE: Outside Sleeve.
+SLIPON: Slipon.
+SOLDERED: Soldered.
+SSLIP: S-Slip.
+STANDINGSEAM: Standing seam.
+SWEDGE: Swedge.
+WELDED: Welded.
+OTHER: Another type of end-style has been applied.
+NONE: No end-style has been applied.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DuctConnectionType">
+            <EnumItem>BEADEDSLEEVE</EnumItem>
+            <EnumItem>COMPRESSION</EnumItem>
+            <EnumItem>CRIMP</EnumItem>
+            <EnumItem>DRAWBAND</EnumItem>
+            <EnumItem>DRIVESLIP</EnumItem>
+            <EnumItem>FLANGED</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>OUTSIDESLEEVE</EnumItem>
+            <EnumItem>SLIPON</EnumItem>
+            <EnumItem>SOLDERED</EnumItem>
+            <EnumItem>SSLIP</EnumItem>
+            <EnumItem>STANDINGSEAM</EnumItem>
+            <EnumItem>SWEDGE</EnumItem>
+            <EnumItem>WELDED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>USERDEFINED</EnumItem>
+            <EnumItem>NOTDEFINED</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConnectionSubtype</Name>
+      <Definition>The physical port connection subtype that further qualifies the ConnectionType. The following values are recommended:ACPLUG: A, B, C, D, E, F, EF, G, H, I, J, K, L, M
+DIN: Mini3P, Mini4P, Mini5P, Mini6P, Mini7P, Mini8P, Mini9P
+DSub: DA15, DB25, DC37, DD50, DE9, DE15
+EIAJ: RC5720
+HDMI: A, B, C
+RADIO: IEEE802.11g, IEEE802.11n
+RJ: 4P4C, 6P2C, 8P8C
+SOCKET: E-11, E-12, E-14, E-17, E-26, E-27, E-39, E-40
+TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalWidth</Name>
+      <Definition>The nominal overall width of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalHeight</Name>
+      <Definition>The nominal height of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.
+
+The nominal height of the duct connection. Only provided for rectangular shaped ducts.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalThickness</Name>
+      <Definition>The nominal thickness of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In case of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DryBulbTemperature</Name>
+      <Definition>Dry bulb temperature of the object.
+
+Indicates dry bulb temperature of the air.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WetBulbTemperature</Name>
+      <Definition>Wet bulb temperature of the air.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VolumetricFlowRate</Name>
+      <Definition>The volumetric flow rate of the fluid.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcVolumetricFlowRateMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Velocity</Name>
+      <Definition>The velocity of the fluid.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcLinearVelocityMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Pressure</Name>
+      <Definition>The pressure of  fluid.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

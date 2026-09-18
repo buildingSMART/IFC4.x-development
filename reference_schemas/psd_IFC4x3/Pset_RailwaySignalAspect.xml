@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RailwaySignalAspect</Name>
+  <Definition>Properties in this property set are applicable for IfcSignal and IfcSign applied in railways. These properties describe the signal aspect, which is the information on the signal or sign shown to the train driver.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSignal</ClassName>
+    <ClassName>IfcSign</ClassName>
+    <ClassName>IfcSignalType</ClassName>
+    <ClassName>IfcSignType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSignal,IfcSign,IfcSignalType,IfcSignType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SignalAspectSymbol</Name>
+      <Definition>Content which is shown on the signal or sign, e.g. text, number, arrow or icon.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AppliesToTrainCategory</Name>
+      <Definition>Sign information relative to train category, e.g. freight, passenger.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TrainCategory">
+            <EnumItem>FREIGHT</EnumItem>
+            <EnumItem>PASSENGER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalAspectType</Name>
+      <Definition>The type of aspect, e.g. 2-display aspect for distant signal, 3-display aspect for block signal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignLegend</Name>
+      <Definition>Text information written on the signal or sign.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_PackingInstructions</Name>
+  <Definition>Packing instructions are specific instructions relating to the packing that is required for an artifact in the event of a move (or transport).</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcTask/MOVE</ClassName>
+    <ClassName>IfcTaskType/MOVE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcTask/MOVE,IfcTaskType/MOVE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>PackingCareType</Name>
+      <Definition>Identifies the predefined types of care that may be required when handling the artefact during a move where:Fragile: artefact may be broken during a move through careless handling.
+HandleWithCare: artefact may be damaged during a move through careless handling.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_PackingCareType">
+            <EnumItem>FRAGILE</EnumItem>
+            <EnumItem>HANDLEWITHCARE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WrappingMaterial</Name>
+      <Definition>Special requirements for material used to wrap an artefact.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMaterialDefinition"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ContainerMaterial</Name>
+      <Definition>Special requirements for material used to contain an artefact.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMaterialDefinition"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SpecialInstructions</Name>
+      <Definition>Special instructions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

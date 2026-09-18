@@ -1,0 +1,187 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_Tolerance</Name>
+  <Definition>Properties expressing the tolerance relating to locating and shaping of an intended element or feature. Range diameters are non-negative describing a linear, rectangular or  boxed region  .</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProduct</ClassName>
+    <ClassName>IfcTypeProduct</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProduct,IfcTypeProduct</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ToleranceDescription</Name>
+      <Definition>General description of the tolerance associated to the element or feature, its source and implications.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ToleranceBasis</Name>
+      <Definition>Indication of the basis of the tolerance requirement</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ToleranceBasis">
+            <EnumItem>APPEARANCE</EnumItem>
+            <EnumItem>ASSEMBLY</EnumItem>
+            <EnumItem>DEFLECTION</EnumItem>
+            <EnumItem>EXPANSION</EnumItem>
+            <EnumItem>FUNCTIONALITY</EnumItem>
+            <EnumItem>SETTLEMENT</EnumItem>
+            <EnumItem>STRUCTURAL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OverallTolerance</Name>
+      <Definition>Indicative (95%-100%) range tolerance associated to the intended shape and position in XYZ.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HorizontalTolerance</Name>
+      <Definition>Indicative (95%-100%) range tolerance associated to the horizontal shape and position in X, if different to the overall tolerance.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OrthogonalTolerance</Name>
+      <Definition>Indicative (95%-100%) range tolerance associated to the horizontal shape and position in Y, if different to the overall tolerance.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VerticalTolerance</Name>
+      <Definition>Indicative (95%-100%) range tolerance associated to the vertical shape and position in Z, if different to the overall tolerance.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PlanarFlatness</Name>
+      <Definition>Indicative (95%-100%) range flatness associated to the intended shape and position in XYZ.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HorizontalFlatness</Name>
+      <Definition>Indicative (95%-100%) range flatness associated to the horizontal surface in XY, if different to the overall flatness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ElevationalFlatness</Name>
+      <Definition>Indicative (95%-100%) range flatness associated to the elevational surface in ZX, if different to the overall flatness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SideFlatness</Name>
+      <Definition>Indicative (95%-100%) range flatness associated to the side surface in YZ, if different to the overall flatness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OverallOrthogonality</Name>
+      <Definition>Indicative (95%-100%) range orthogonality associated to the intended shape and orientation in XYZ.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HorizontalOrthogonality</Name>
+      <Definition>Indicative (95%-100%) range orthogonality associated to the horizontal shape and orientation in X, if different to the overall orthogonality.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OrthogonalOrthogonality</Name>
+      <Definition>Indicative (95%-100%) range orthogonality associated to the horizontal shape and orientation in Y, if different to the overall orthogonality.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VerticalOrthogonality</Name>
+      <Definition>Indicative (95%-100%) range orthogonality associated to the vertical shape and orientation in Z, if different to the overall orthogonality.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OverallStraightness</Name>
+      <Definition>Indicative (95%-100%) range straightness associated to the intended shape.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HorizontalStraightness</Name>
+      <Definition>Indicative (95%-100%) range straightness  associated to the horizontal shape in X, if different to the overall straightness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OrthogonalStraightness</Name>
+      <Definition>Indicative (95%-100%) range straightness  associated to the horizontal shape  in Y, if different to the overall straightness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VerticalStraightness</Name>
+      <Definition>Indicative (95%-100%) range straightness associated to the vertical shape in Z, if different to the overall straightness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

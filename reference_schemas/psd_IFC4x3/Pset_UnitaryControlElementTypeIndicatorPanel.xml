@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_UnitaryControlElementTypeIndicatorPanel</Name>
+  <Definition>Unitary control element type indicator panel attributes.  HISTORY: Added in IFC4.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcUnitaryControlElement/INDICATORPANEL</ClassName>
+    <ClassName>IfcUnitaryControlElementType/INDICATORPANEL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcUnitaryControlElement/INDICATORPANEL,IfcUnitaryControlElementType/INDICATORPANEL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>UnitaryApplication</Name>
+      <Definition>The application of the unitary control element.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_UnitaryControlElementApplication">
+            <EnumItem>LIFTARRIVALGONG</EnumItem>
+            <EnumItem>LIFTCARDIRECTIONLANTERN</EnumItem>
+            <EnumItem>LIFTFIRESYSTEMSPORT</EnumItem>
+            <EnumItem>LIFTHALLLANTERN</EnumItem>
+            <EnumItem>LIFTPOSITIONINDICATOR</EnumItem>
+            <EnumItem>LIFTVOICEANNOUNCER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

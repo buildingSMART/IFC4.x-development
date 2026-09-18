@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DoorPanelProperties</Name>
+  <Definition>Properties of the door panel.HISTORY New property set in IFC4.3.2.0 to replace the entity IfcDoorPanelProperties</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDoor</ClassName>
+    <ClassName>IfcPlate</ClassName>
+    <ClassName>IfcDoorType</ClassName>
+    <ClassName>IfcPlateType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDoor,IfcPlate,IfcDoorType,IfcPlateType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>PanelDepth</Name>
+      <Definition>Depth of the panel.
+
+For a door, it is the depth of the door panel, measured perpendicular to the plane of the door leaf.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PanelOperation</Name>
+      <Definition>The way of operation of a panel.
+
+For a door, it is the way of operation of the panel. The PanelOperation of the door panel shall correspond to the OperationType of the IfcDoorType by which it is referenced.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DoorPanelOperationEnum">
+            <EnumItem>DOUBLE_ACTING</EnumItem>
+            <EnumItem>FIXEDPANEL</EnumItem>
+            <EnumItem>FOLDING</EnumItem>
+            <EnumItem>REVOLVING</EnumItem>
+            <EnumItem>ROLLINGUP</EnumItem>
+            <EnumItem>SLIDING</EnumItem>
+            <EnumItem>SWINGING</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+            <EnumItem>NOTDEFINED</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PanelWidth</Name>
+      <Definition>Width of the panel.
+
+For a door, it is the width of the panel, given as ratio relative to the total clear opening width of the door. If omitted, it defaults to 1. A value shall be provided for all doors with OperationType's at IfcDoorType defining a door with more then one panel.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNormalisedRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PanelPosition</Name>
+      <Definition>Position of the panel.
+
+For a door, it is the position of the panel within the door. The PanelPosition of the door panel shall correspond to the OperationType of the IfcDoorType by which it is referenced.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DoorPanelPositionEnum">
+            <EnumItem>LEFT</EnumItem>
+            <EnumItem>MIDDLE</EnumItem>
+            <EnumItem>RIGHT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

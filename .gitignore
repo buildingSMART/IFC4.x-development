@@ -12,3 +12,5 @@ code/IFC.exp
 code/pset_definitions.json
 code/type_values.json
 .vscode/launch.json
+# EXPRESS parse caches written by ifcopenshell.express (pyparsing-version specific)
+*.cache.dat

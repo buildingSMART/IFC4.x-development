@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElementAssemblyTypeSteadyDevice</Name>
+  <Definition>Energy steady device properties used in railway. The property set can be used by the predefined type SUSPENSION_ASSEMBLY of IfcElementAssembly.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElementAssembly/SUSPENSIONASSEMBLY</ClassName>
+    <ClassName>IfcElementAssemblyType/SUSPENSIONASSEMBLY</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElementAssembly/SUSPENSIONASSEMBLY,IfcElementAssemblyType/SUSPENSIONASSEMBLY</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AssemblyInstruction</Name>
+      <Definition>Instructions to describe how the system / equipment / facility is assembled.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ContactWireStagger</Name>
+      <Definition>Lateral displacement of the contact wire to opposite sides of the track centre at successive supports.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsSetOnWorkingWire</Name>
+      <Definition>Indicates whether the steady device is set on the working wire.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SteadyDeviceType</Name>
+      <Definition>Type of Steady Device: To indicate the mode of registration.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SteadyDeviceType">
+            <EnumItem>PULL_OFF</EnumItem>
+            <EnumItem>PUSH_OFF</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

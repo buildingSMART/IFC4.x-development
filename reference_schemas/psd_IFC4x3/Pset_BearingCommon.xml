@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_BearingCommon</Name>
+  <Definition>Common properties for IfcBearing.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcBearing</ClassName>
+    <ClassName>IfcBearingType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBearing,IfcBearingType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>DisplacementAccommodated</Name>
+      <Definition>A list of exactly three boolean values representing an accommodated displacement (value TRUE or 1) or no displacement (value FALSE or 0) on the corresponding axis where the first value represents axis X, second value axis Y and third value axis Z.</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcBoolean"/>
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RotationAccommodated</Name>
+      <Definition>A list of exactly three boolean values representing an accommodated rotation (value TRUE or 1) or no rotation (value FALSE or 0) about the corresponding axis where the first value represents axis X, second value axis Y and third value axis Z.</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcBoolean"/>
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

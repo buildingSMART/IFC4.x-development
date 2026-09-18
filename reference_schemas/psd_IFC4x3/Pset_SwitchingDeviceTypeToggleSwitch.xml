@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SwitchingDeviceTypeToggleSwitch</Name>
+  <Definition>A toggle switch is a switch that enables or isolates electrical power through a two position on/off action.  HISTORY: SetPoint added in IFC4.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSwitchingDevice/TOGGLESWITCH</ClassName>
+    <ClassName>IfcSwitchingDeviceType/TOGGLESWITCH</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSwitchingDevice/TOGGLESWITCH,IfcSwitchingDeviceType/TOGGLESWITCH</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ToggleSwitchType</Name>
+      <Definition>A list of the available types of toggle switch from which that required may be selected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SwitchingDeviceToggleSwitchType">
+            <EnumItem>BREAKGLASS</EnumItem>
+            <EnumItem>CHANGEOVER</EnumItem>
+            <EnumItem>KEYOPERATED</EnumItem>
+            <EnumItem>MANUALPULL</EnumItem>
+            <EnumItem>PULLCORD</EnumItem>
+            <EnumItem>PUSHBUTTON</EnumItem>
+            <EnumItem>ROCKER</EnumItem>
+            <EnumItem>SELECTOR</EnumItem>
+            <EnumItem>TWIST</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SwitchUsage</Name>
+      <Definition>A list of the available usages for switches from which that required may be selected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SwitchUsage">
+            <EnumItem>EMERGENCY</EnumItem>
+            <EnumItem>GUARD</EnumItem>
+            <EnumItem>LIMIT</EnumItem>
+            <EnumItem>START</EnumItem>
+            <EnumItem>STOP</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SwitchActivation</Name>
+      <Definition>A list of the available activations for switches from which that required may be selected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SwitchActivation">
+            <EnumItem>ACTUATOR</EnumItem>
+            <EnumItem>FOOT</EnumItem>
+            <EnumItem>HAND</EnumItem>
+            <EnumItem>PROXIMITY</EnumItem>
+            <EnumItem>SOUND</EnumItem>
+            <EnumItem>TWOHAND</EnumItem>
+            <EnumItem>WIRE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

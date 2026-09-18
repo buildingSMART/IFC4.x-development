@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DiscreteAccessoryTypeSoundAbsorption</Name>
+  <Definition>Properties of sound absorption equipment used in railway. The property set can be used by the predefined type SOUNDABSORPTION of IfcDiscreteAccessory.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDiscreteAccessory/SOUNDABSORPTION</ClassName>
+    <ClassName>IfcDiscreteAccessoryType/SOUNDABSORPTION</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDiscreteAccessory/SOUNDABSORPTION,IfcDiscreteAccessoryType/SOUNDABSORPTION</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SoundAbsorptionLimit</Name>
+      <Definition>Mandatory limit values in sound absorption.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcSoundPowerLevelMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

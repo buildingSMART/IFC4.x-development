@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RailTypeBlade</Name>
+  <Definition>Properties common to IfcRail types and occurrences with PredefinedType set to BLADE.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcRail/BLADE</ClassName>
+    <ClassName>IfcRailType/BLADE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcRail/BLADE,IfcRailType/BLADE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>IsArticulatedBlade</Name>
+      <Definition>Indicates whether the blade is articulated or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsFallbackBlade</Name>
+      <Definition>Indicates whether the blade always returns to the same position as a trailable turnout or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalLength</Name>
+      <Definition>The nominal overall length of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In case of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BladeRadius</Name>
+      <Definition>The radius of the blade bend defined as design parameter.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

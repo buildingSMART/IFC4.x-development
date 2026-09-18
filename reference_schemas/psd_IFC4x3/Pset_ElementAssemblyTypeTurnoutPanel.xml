@@ -1,0 +1,217 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElementAssemblyTypeTurnoutPanel</Name>
+  <Definition>Turnout panel properties used in railway. The property set can be used by the predefined type TURNOUT_PANEL of IfcElementAssembly.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElementAssembly/TURNOUTPANEL</ClassName>
+    <ClassName>IfcElementAssemblyType/TURNOUTPANEL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElementAssembly/TURNOUTPANEL,IfcElementAssemblyType/TURNOUTPANEL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>IsAccessibleByVehicle</Name>
+      <Definition>Indicates whether the element is accessible by a vehicle or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BranchLineDirection</Name>
+      <Definition>Describes the direction associated to the branch line of the turnout (deviated branch).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BranchLineDirection">
+            <EnumItem>LEFTDEVIATION</EnumItem>
+            <EnumItem>LEFT_LEFTDEVIATION</EnumItem>
+            <EnumItem>LEFT_RIGHTDEVIATION</EnumItem>
+            <EnumItem>RIGHTDEVIATION</EnumItem>
+            <EnumItem>RIGHT_LEFTDEVIATION</EnumItem>
+            <EnumItem>RIGHT_RIGHTDEVIATION</EnumItem>
+            <EnumItem>SYMETRIC</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TrackExpansion</Name>
+      <Definition>In curvature context, bounded value of the expansion distance that can be added to rail gauge.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TurnoutCurvedRadius</Name>
+      <Definition>If turnout is curved, the main branch radius of curvature.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TypeOfCurvedTurnout</Name>
+      <Definition>Turnouts that are positioned in the curved part of the alignment.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TypeOfCurvedTurnout">
+            <EnumItem>CIRCULAR_ARC</EnumItem>
+            <EnumItem>STRAIGHT</EnumItem>
+            <EnumItem>TRANSITION</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InstallationPlan</Name>
+      <Definition>Reference to external information source about installation or construction plan of the element.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcDocumentReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsSharedTurnout</Name>
+      <Definition>Indicates if the turnout makes a connection to another infrastructure owner (for sharing costs).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumSpeedLimitOfDivergingLine</Name>
+      <Definition>Maximum speed for diverging line that corresponds to the type of turnout and design constraints.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLinearVelocityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TypeOfDrivingDevice</Name>
+      <Definition>Type of the driving device used for the turnout.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TypeOfDrivingDevice">
+            <EnumItem>ELECTRIC</EnumItem>
+            <EnumItem>HYDRAULIC</EnumItem>
+            <EnumItem>MANUAL</EnumItem>
+            <EnumItem>MIXED</EnumItem>
+            <EnumItem>MOTORISED</EnumItem>
+            <EnumItem>PNEUMATIC</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TrackElementOrientation</Name>
+      <Definition>Turnout panels can be placed in 2 mirror-symmetric directions in the field. To distinguish both ends of the turnout panel, a definition of an orientation system with respect to the panel is necessary. The orientation defines, if the panel is oriented in a way or opposite with respect to the direction of the alignment/stationing.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TurnoutPanelOrientation">
+            <EnumItem>BACK</EnumItem>
+            <EnumItem>FRONT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PercentShared</Name>
+      <Definition>Percent of costs paid by the other infrastructure owner.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TrackGaugeLength</Name>
+      <Definition>Basic track gauge of permanent way.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TurnoutPointMachineCount</Name>
+      <Definition>Count of point machines inside turnout panel.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TurnoutHeaterType</Name>
+      <Definition>Defines the kind of turnout heater installed.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TurnoutHeaterType">
+            <EnumItem>ELECTRIC</EnumItem>
+            <EnumItem>GAS</EnumItem>
+            <EnumItem>GEOTHERMAL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TypeOfJunction</Name>
+      <Definition>The turnout part of the continuous welded rail.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TypeOfJunction">
+            <EnumItem>ISOLATED_JOINT</EnumItem>
+            <EnumItem>JOINTED</EnumItem>
+            <EnumItem>WELDED_AND_INSERTABLE</EnumItem>
+            <EnumItem>WELDED_AND_NOT_INSERTABLE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TypeOfTurnout</Name>
+      <Definition>Type of turnout.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TypeOfTurnout">
+            <EnumItem>DERAILMENT_TURNOUT</EnumItem>
+            <EnumItem>DIAMOND_CROSSING</EnumItem>
+            <EnumItem>DOUBLE_SLIP_CROSSING</EnumItem>
+            <EnumItem>SCISSOR_CROSSOVER</EnumItem>
+            <EnumItem>SINGLE_SLIP_CROSSING</EnumItem>
+            <EnumItem>SLIP_TURNOUT_AND_SCISSORS_CROSSING</EnumItem>
+            <EnumItem>SYMMETRIC_TURNOUT</EnumItem>
+            <EnumItem>THREE_WAYS_TURNOUT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

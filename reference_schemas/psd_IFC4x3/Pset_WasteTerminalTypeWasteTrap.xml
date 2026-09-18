@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_WasteTerminalTypeWasteTrap</Name>
+  <Definition>Pipe fitting, set adjacent to a sanitary terminal, that retains liquid to prevent the passage of foul air.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcWasteTerminal/WASTETRAP</ClassName>
+    <ClassName>IfcWasteTerminalType/WASTETRAP</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcWasteTerminal/WASTETRAP,IfcWasteTerminalType/WASTETRAP</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>WasteTrapType</Name>
+      <Definition>Identifies the predefined types of trap from which the type required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TrapType">
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>P_TRAP</EnumItem>
+            <EnumItem>Q_TRAP</EnumItem>
+            <EnumItem>S_TRAP</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OutletConnectionSize</Name>
+      <Definition>Size of the outlet connection from the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InletConnectionSize</Name>
+      <Definition>Size of the inlet connection.
+Note that all inlet connections are assumed to be the same size.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

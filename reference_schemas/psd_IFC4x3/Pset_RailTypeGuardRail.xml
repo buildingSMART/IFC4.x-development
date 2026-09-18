@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RailTypeGuardRail</Name>
+  <Definition>Properties common to IfcRail types and occurrences with PredefinedType set to GUARDRAIL.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcRail/GUARDRAIL</ClassName>
+    <ClassName>IfcRailType/GUARDRAIL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcRail/GUARDRAIL,IfcRailType/GUARDRAIL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>GuardRailConnection</Name>
+      <Definition>Indicates how the guard rail is connected along its length, when the fasteners are not explicitly modelled.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_GuardRailConnection">
+            <EnumItem>FISHPLATE</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>WELD</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PositionInTrack</Name>
+      <Definition>Indicates the relative position of the element in track, which lies to the left or right as facing in the direction of increasing stationing values.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RelativePosition">
+            <EnumItem>LEFT</EnumItem>
+            <EnumItem>MIDDLE</EnumItem>
+            <EnumItem>RIGHT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>GuardRailType</Name>
+      <Definition>Type of the guard rail.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_GuardRailType">
+            <EnumItem>GUARDRAILANDSPOTSLEEPERS</EnumItem>
+            <EnumItem>GUARDRAILSONLY</EnumItem>
+            <EnumItem>SPOTSLEEPERSONLY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

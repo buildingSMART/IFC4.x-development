@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ValveTypePressureReducing</Name>
+  <Definition>Valve that reduces the pressure of a fluid immediately downstream of its position in a pipeline to a preselected value or by a predetermined ratio.
+Note that a pressure reducing valve is constrained to have a 2 port  pattern.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcValve/PRESSUREREDUCING</ClassName>
+    <ClassName>IfcValveType/PRESSUREREDUCING</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcValve/PRESSUREREDUCING,IfcValveType/PRESSUREREDUCING</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>UpstreamPressure</Name>
+      <Definition>The operating pressure of the fluid upstream of the pressure reducing valve.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DownstreamPressure</Name>
+      <Definition>The operating pressure of the fluid downstream of the pressure reducing valve.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

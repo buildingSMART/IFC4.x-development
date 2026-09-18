@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DiscreteAccessoryTypeCableArranger</Name>
+  <Definition>Properties used for a cable arranger. The property set can be used by the predefined type CABLEARRANGER of IfcDiscreteAccessory.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDiscreteAccessory/CABLEARRANGER</ClassName>
+    <ClassName>IfcDiscreteAccessoryType/CABLEARRANGER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDiscreteAccessory/CABLEARRANGER,IfcDiscreteAccessoryType/CABLEARRANGER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>CableArrangerPosition</Name>
+      <Definition>Indicates the directional position of the cable arranger: vertical, horizontal, front or rear. It is relative to the element (usually a cabinet) that the cable arranger is affiliated.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ArrangerPositionEnum">
+            <EnumItem>FRONTSIDE</EnumItem>
+            <EnumItem>HORIZONTAL</EnumItem>
+            <EnumItem>REARSIDE</EnumItem>
+            <EnumItem>VERTICAL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

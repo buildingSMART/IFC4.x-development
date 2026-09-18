@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ValveTypeDrawOffCock</Name>
+  <Definition>A small diameter valve, used to drain water from a cistern or water filled system.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcValve/DRAWOFFCOCK</ClassName>
+    <ClassName>IfcValveType/DRAWOFFCOCK</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcValve/DRAWOFFCOCK,IfcValveType/DRAWOFFCOCK</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>HasHoseUnion</Name>
+      <Definition>Indicates whether the object is fitted with a hose union connection (= TRUE) or not (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

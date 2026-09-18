@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FireSuppressionTerminalTypeHoseReel</Name>
+  <Definition>A supporting framework on which a hose may be wound (BS6100 155 8201).Note that the service provided by the hose (water/foam) is determined by the context of the system onto which the hose reel is connected.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFireSuppressionTerminal/HOSEREEL</ClassName>
+    <ClassName>IfcFireSuppressionTerminalType/HOSEREEL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFireSuppressionTerminal/HOSEREEL,IfcFireSuppressionTerminalType/HOSEREEL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>HoseReelType</Name>
+      <Definition>Identifies the predefined types of hose arrangement from which the type required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_HoseReelType">
+            <EnumItem>RACK</EnumItem>
+            <EnumItem>REEL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HoseReelMountingType</Name>
+      <Definition>Identifies the predefined types of hose reel mounting from which the type required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_HoseReelMountingType">
+            <EnumItem>CABINET_RECESSED</EnumItem>
+            <EnumItem>CABINET_SEMIRECESSED</EnumItem>
+            <EnumItem>SURFACE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InletConnectionSize</Name>
+      <Definition>Size of the inlet connection.
+Note that all inlet connections are assumed to be the same size.
+
+Connection to the hose reel.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HoseDiameter</Name>
+      <Definition>Notional diameter (bore) of the hose.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HoseLength</Name>
+      <Definition>Notional length of the hose fitted to the hose reel when fully extended.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HoseNozzleType</Name>
+      <Definition>Identifies the predefined types of nozzle (in terms of spray pattern) fitted to the end of the hose from which the type required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_HoseNozzleType">
+            <EnumItem>FOG</EnumItem>
+            <EnumItem>STRAIGHTSTREAM</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ClassOfService</Name>
+      <Definition>A classification of usage of the hose reel that may be applied.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ClassificationAuthority</Name>
+      <Definition>The name of the authority that applies the classification of service to the hose reel (e.g. NFPA/FEMA).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

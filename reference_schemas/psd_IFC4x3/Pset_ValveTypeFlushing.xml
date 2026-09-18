@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ValveTypeFlushing</Name>
+  <Definition>Valve that flushes a predetermined quantity of water to cleanse a WC, urinal or slop hopper.
+Note that a flushing valve is constrained to have a 2 port  pattern.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcValve/FLUSHING</ClassName>
+    <ClassName>IfcValveType/FLUSHING</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcValve/FLUSHING,IfcValveType/FLUSHING</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>FlushingRate</Name>
+      <Definition>The predetermined quantity of water to be flushed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasIntegralShutOffDevice</Name>
+      <Definition>Indication of whether the flushing valve has an integral shut off device fitted (set TRUE) or not (set FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsHighPressure</Name>
+      <Definition>Indication of whether the flushing valve is suitable for use on a high pressure water main (set TRUE) or not (set FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

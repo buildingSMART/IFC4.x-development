@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SanitaryTerminalTypeSink</Name>
+  <Definition>Waste water appliance for receiving, retaining or disposing of domestic, culinary, laboratory or industrial process liquids. HISTORY: In IFC4, Material property removed. Use materials capabilities from IfcMaterialResource schema. Datatype of color changed to IfcLabel (still a string value). SinkMounting changed to Mounting.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSanitaryTerminal/SINK</ClassName>
+    <ClassName>IfcSanitaryTerminalType/SINK</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSanitaryTerminal/SINK,IfcSanitaryTerminalType/SINK</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SinkType</Name>
+      <Definition>Selection of the type of sink from the enumerated list of types where:-Belfast:    Deep sink that has a plain edge and a weir overflow
+.
+Bucket:     Sink at low level, with protected front edge, that facilitates filling and emptying buckets, usually with a hinged grid on which to stand them.
+Cleaners:    Sink, usually fixed at normal height (900mm), with protected front edge.
+Combination_Left:    Sink with integral drainer on left hand side
+.
+Combination_Right: Sink with integral drainer on right hand side
+.
+Combination_Double:     Sink with integral drainer on both sides
+.
+Drip: Small sink that catches drips or flow from a faucet
+.
+Laboratory: Sink, of acid resisting material, with a top edge shaped to facilitate fixing to the underside of a desktop
+.
+London: Deep sink that has a plain edge and no overflow
+.
+Plaster: Sink with sediment receiver to prevent waste plaster passing into drains
+.
+Pot: Large metal sink, with a standing waste, for washing cooking utensils
+.
+Rinsing: Metal sink in which water can be heated and culinary utensils and tableware immersed at high temperature that destroys most harmful bacteria and allows subsequent self drying.
+.
+Shelf: Ceramic sink with an integral back shelf through which water fittings are mounted
+.
+VegetablePreparation:   Large metal sink, with a standing waste, for washing and preparing vegetables
+.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SinkType">
+            <EnumItem>BELFAST</EnumItem>
+            <EnumItem>BUCKET</EnumItem>
+            <EnumItem>CLEANERS</EnumItem>
+            <EnumItem>COMBINATION_DOUBLE</EnumItem>
+            <EnumItem>COMBINATION_LEFT</EnumItem>
+            <EnumItem>COMBINATION_RIGHT</EnumItem>
+            <EnumItem>DRIP</EnumItem>
+            <EnumItem>LABORATORY</EnumItem>
+            <EnumItem>LONDON</EnumItem>
+            <EnumItem>PLASTER</EnumItem>
+            <EnumItem>POT</EnumItem>
+            <EnumItem>RINSING</EnumItem>
+            <EnumItem>SHELF</EnumItem>
+            <EnumItem>VEGETABLEPREPARATION</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Mounting</Name>
+      <Definition>The property enumeration Pset_SanitaryMountingEnum defines the forms of mounting or fixing of the sanitary terminal that may be specified within property sets used to define sanitary terminals (WC’s, basins, sinks, etc.) where:-BackToWall:     A pedestal mounted sanitary terminal that fits flush to the wall at the rear to cover its service connections
+Pedestal:   A floor mounted sanitary terminal that has an integral base
+CounterTop:     A sanitary terminal that is installed into a horizontal surface that is installed into a horizontal surface. Note: When applied to a wash hand basin, the term more normally used is ‘vanity’. See also Wash Hand Basin Type specification.
+WallHung:   A sanitary terminal cantilevered clear of the floor.Note that BackToWall, Pedestal and WallHung are allowable values for a bidet.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SanitaryMounting">
+            <EnumItem>BACKTOWALL</EnumItem>
+            <EnumItem>COUNTERTOP</EnumItem>
+            <EnumItem>PEDESTAL</EnumItem>
+            <EnumItem>WALLHUNG</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Colour</Name>
+      <Definition>Colour of this object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DrainSize</Name>
+      <Definition>The size of the drain outlet connection from the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MountingOffset</Name>
+      <Definition>For counter top mounted basins the vertical offset between the top of the sink and the counter top.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

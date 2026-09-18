@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_PermeableCoveringProperties</Name>
+  <Definition>Properties of the permeable covering.HISTORY New property set in IFC4.3.2.0 to replace the entity IfcPermeableCoveringProperties</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDoor</ClassName>
+    <ClassName>IfcMember</ClassName>
+    <ClassName>IfcWindow</ClassName>
+    <ClassName>IfcDoorType</ClassName>
+    <ClassName>IfcMemberType</ClassName>
+    <ClassName>IfcWindowType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDoor,IfcMember,IfcWindow,IfcDoorType,IfcMemberType,IfcWindowType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>OperationType</Name>
+      <Definition>Type of operations. Also used to assign standard symbolic presentations according to national building standards.
+
+For a permeable covering, it is the type of permeable covering operations. Also used to assign standard symbolic presentations according to national building standards.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_PermeableCoveringOperationEnum">
+            <EnumItem>GRILL</EnumItem>
+            <EnumItem>LOUVER</EnumItem>
+            <EnumItem>SCREEN</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PanelPosition</Name>
+      <Definition>Position of the panel.
+
+For a permeable covering, it is the position of the permeable covering panel within the overall window or door type.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_WindowPanelPositionEnum">
+            <EnumItem>BOTTOM</EnumItem>
+            <EnumItem>LEFT</EnumItem>
+            <EnumItem>MIDDLE</EnumItem>
+            <EnumItem>RIGHT</EnumItem>
+            <EnumItem>TOP</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FrameDepth</Name>
+      <Definition>The length (or depth) of the frame.
+
+For a permeable covering, it is the depth of panel frame (used to include the permeable covering), measured from front face to back face horizontally (i.e. perpendicular to the window or door elevation plane).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FrameThickness</Name>
+      <Definition>The thickness of the frame.
+
+For a permeable covering, it is the width of panel frame (used to include the permeable covering), measured from inside of panel (at permeable covering) to outside of panel (at lining), i.e. parallel to the window or door (elevation) plane.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>
