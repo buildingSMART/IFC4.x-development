@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_MATERIALDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MaterialThermal</Name>
+  <Definition>A set of thermal material properties.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcMaterial</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMaterial</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SpecificHeatCapacity</Name>
+      <Definition>Defines the specific heat capacity of a material.
+
+Defines the specific heat of the material: heat energy absorbed per temperature unit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcSpecificHeatCapacityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BoilingPoint</Name>
+      <Definition>The boiling point of the material (fluid).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FreezingPoint</Name>
+      <Definition>The freezing point of the material (fluid).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ThermalConductivity</Name>
+      <Definition>The thermal conductivity of the object.
+
+The rate at which thermal energy is transmitted through the material.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermalConductivityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

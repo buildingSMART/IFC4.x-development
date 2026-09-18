@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_HumidifierPHistory</Name>
+  <Definition>Humidifier performance history attributes.
+Sound attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcHumidifier</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcHumidifier</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AtmosphericPressure</Name>
+      <Definition>Ambient atmospheric pressure.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SaturationEfficiency</Name>
+      <Definition>Saturation efficiency: Ratio of leaving air absolute humidity to the maximum absolute humidity.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

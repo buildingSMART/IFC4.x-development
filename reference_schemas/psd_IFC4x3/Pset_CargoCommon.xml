@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CargoCommon</Name>
+  <Definition>Properties common to the definition of all occurrences of IfcTransportElement and types of IfcTransportElementType with the predefined type set to CARGO.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcVehicle/CARGO</ClassName>
+    <ClassName>IfcVehicleType/CARGO</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcVehicle/CARGO,IfcVehicleType/CARGO</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ProcessItem</Name>
+      <Definition>The type of item (and its measurement method) being modelled within a process. This can be cargo, passengers or vehicles that pass through the system.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ProcessItem">
+            <EnumItem>BARREL</EnumItem>
+            <EnumItem>CGT</EnumItem>
+            <EnumItem>PASSENGER</EnumItem>
+            <EnumItem>TEU</EnumItem>
+            <EnumItem>TONNE</EnumItem>
+            <EnumItem>VEHICLE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AdditionalProcessing</Name>
+      <Definition>Any additional or special processing requirements on the associated cargo.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AdditionalProcessing">
+            <EnumItem>INSPECTION</EnumItem>
+            <EnumItem>ISOLATION</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>TARIFFS</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ProcessDirection</Name>
+      <Definition>The direction of flow of the cargo within the process.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ProcessDirection">
+            <EnumItem>EXPORT</EnumItem>
+            <EnumItem>IMPORT</EnumItem>
+            <EnumItem>TRANSFER</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

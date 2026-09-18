@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElectricFlowStorageDeviceTypeCapacitor</Name>
+  <Definition>Properties of capacitors. The property set can be used by the predefined type CAPACITOR of IfcElectricFlowStorageDevice.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElectricFlowStorageDevice/CAPACITOR</ClassName>
+    <ClassName>IfcElectricFlowStorageDeviceType/CAPACITOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElectricFlowStorageDevice/CAPACITOR,IfcElectricFlowStorageDeviceType/CAPACITOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NumberOfPhases</Name>
+      <Definition>Number of phases that the equipment operates on.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CommunicationsApplianceTypeOpticalNetworkUnit</Name>
+  <Definition>Properties common to a optical network unit. This property set is applied to a type or occurrence of IfcCommunicationsAppliance with predefined type OPTICAL_NETWORK_UNIT.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCommunicationsAppliance/OPTICALNETWORKUNIT</ClassName>
+    <ClassName>IfcCommunicationsApplianceType/OPTICALNETWORKUNIT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCommunicationsAppliance/OPTICALNETWORKUNIT,IfcCommunicationsApplianceType/OPTICALNETWORKUNIT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>OpticalNetworkUnitType</Name>
+      <Definition>Indicates the type of the optical network unit equipment.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_OpticalNetworkUnitType">
+            <EnumItem>ACTIVE</EnumItem>
+            <EnumItem>PASSIVE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfInterfaces</Name>
+      <Definition>Indicates the types of interfaces and their number in the device.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcLabel"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcInteger"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

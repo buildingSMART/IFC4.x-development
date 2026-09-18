@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FlowInstrumentPHistory</Name>
+  <Definition>Properties for history of flow instrument values.  HISTORY: Added in IFC4.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFlowInstrument</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFlowInstrument</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Value</Name>
+      <Definition>The expected range and default value.
+
+Indicates measured values over time which may be recorded continuously or only when changed beyond a particular deadband.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Quality</Name>
+      <Definition>Indicates the quality of measurement or failure condition, which may be further qualified by the Status.  True: measured values are considered reliable; False: measured values are considered not reliable (i.e. a fault has been detected); Unknown: reliability of values is uncertain.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure).
+
+Indicates an error code or identifier, whose meaning is specific to the particular automation system.  Example values include: 'ConfigurationError', 'NotConnected', 'DeviceFailure', 'SensorFailure', 'LastKnown, 'CommunicationsFailure', 'OutOfService'.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

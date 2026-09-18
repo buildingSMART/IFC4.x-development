@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_VoltageInstrumentTransformer</Name>
+  <Definition>Instrument transformers are high accuracy class electrical devices used to isolate or transform voltage or current levels. The main function of instrument transformers is to operate instruments or metering from high voltage or high current circuits, safely isolating secondary control circuitry from the high voltages or currents. Combination instrument transformers are metering voltage.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFlowInstrument/COMBINED</ClassName>
+    <ClassName>IfcFlowInstrument/VOLTMETER</ClassName>
+    <ClassName>IfcFlowInstrumentType/COMBINED</ClassName>
+    <ClassName>IfcFlowInstrumentType/VOLTMETER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFlowInstrument/COMBINED,IfcFlowInstrument/VOLTMETER,IfcFlowInstrumentType/COMBINED,IfcFlowInstrumentType/VOLTMETER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AccuracyClass</Name>
+      <Definition>A designation assigned to an instrument transformer the current (or voltage) error and phase displacement of which remain within specified limits under prescribed conditions of use (IEC 321-01-24).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AccuracyGrade</Name>
+      <Definition>The grade of accuracy.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RatedVoltage</Name>
+      <Definition>The range of allowed voltage that a device is certified to handle. The upper bound of this value is the maximum.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcElectricVoltageMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalCurrent</Name>
+      <Definition>The nominal current that is designed to be measured.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalPower</Name>
+      <Definition>A conventional value of apparent power determining a value of the rated current that may be carried with rated voltage applied, under specified conditions. ( IEV ref 421-04-04)</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfPhases</Name>
+      <Definition>Number of phases that the equipment operates on.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PrimaryFrequency</Name>
+      <Definition>The frequency that is going to be transformed and that runs into the transformer on the primary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PrimaryVoltage</Name>
+      <Definition>The voltage that is going to be transformed and that runs into the transformer on the primary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricVoltageMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SecondaryFrequency</Name>
+      <Definition>The frequency that has been transformed and is running out of the transformer on the secondary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SecondaryVoltage</Name>
+      <Definition>The voltage that has been transformed and is running out of the transformer on the secondary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricVoltageMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -365,7 +365,7 @@ if __name__ == "__main__":
     build_rename_messages()
 
     if repo_dir:
-        d = os.path.join(repo_dir, "reference_schemas")
+        ref_schema_dir = os.path.join(repo_dir, "reference_schemas")
         names = [
                 "ifc4", "IFC4_ADD2_TC1.exp", "deprecated_entities_Ifc4.0.2.2.json", "psd_IFC4_ADD2_TC1",
         ]
@@ -378,8 +378,12 @@ if __name__ == "__main__":
                 "ifc41", "IFC4x1.exp", "deprecated_entities_Ifc4.0.2.2.json", "psd_IFC4x1",
                 "ifc42", "IFC4x2.exp", "deprecated_entities_Ifc4.2.0.1.json", "psd_IFC4x2"
             ]
+
+        names += [
+            "ifc43", "IFC4X3_ADD2.exp", "deprecated_entities_Ifc4.3.2.0.json", "psd_IFC4x3"
+        ]
             
-        files = list(map(functools.partial(os.path.join, d), names))
+        files = list(map(functools.partial(os.path.join, ref_schema_dir), names))
 
         # Current-schema artefacts are generated into <repo>/output by the
         # generators; fall back to the code directory for the legacy layout.
@@ -399,7 +403,7 @@ if __name__ == "__main__":
         deprecated_entities = json.load(open(structure_path, encoding="utf-8"))["deprecated_entities"]
 
         files += [
-            "ifc43",
+            "ifc44",
             current("IFC.exp"),
             deprecated_entities,
             current("psd"),

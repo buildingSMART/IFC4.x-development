@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_WindowBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of windows.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcWindow</ClassName>
+    <ClassName>IfcWindowType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcWindow,IfcWindowType</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Width</Name>
+      <Definition>The width of the object. Only given, if the object has constant thickness (prismatic).
+
+Total outer width of the window lining. It should only be provided, if it is a rectangular window.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Height</Name>
+      <Definition>Characteristic height
+
+Total outer height of the window lining. It should only be provided, if it is a rectangular window.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Perimeter</Name>
+      <Definition>Perimeter of the object.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Area</Name>
+      <Definition>Calculated area for the object.
+
+Total area of the outer lining of the window.</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_TankTypePreformed</Name>
+  <Definition>Fixed vessel manufactured as a single unit with one or more compartments for storing a liquid.Pset renamed from Pset_TankTypePreformedTank to Pset_TankTypePreformed in IFC2x2 Pset Addendum.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcTank</ClassName>
+    <ClassName>IfcTankType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcTank,IfcTankType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>PatternType</Name>
+      <Definition>Defines the types of pattern (or shape of a tank that may be specified.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TankPatternType">
+            <EnumItem>HORIZONTALCYLINDER</EnumItem>
+            <EnumItem>RECTANGULAR</EnumItem>
+            <EnumItem>VERTICALCYLINDER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EndShapeType</Name>
+      <Definition>Defines the types of end shapes that can be used for preformed tanks. The convention for reading these enumerated values is that for a vertical cylinder, the first value is the base and the second is the top; for a horizontal cylinder, the order of reading should be left to right. For a speherical tank, the value UNSET should be used.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_EndShapeType">
+            <EnumItem>CONCAVECONVEX</EnumItem>
+            <EnumItem>CONCAVEFLAT</EnumItem>
+            <EnumItem>CONVEXCONVEX</EnumItem>
+            <EnumItem>FLATCONVEX</EnumItem>
+            <EnumItem>FLATFLAT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FirstCurvatureRadius</Name>
+      <Definition>FirstCurvatureRadius should be defined as the base or left side radius of curvature value.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SecondCurvatureRadius</Name>
+      <Definition>SecondCurvatureRadius should be defined as the top or right side radius of curvature value.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

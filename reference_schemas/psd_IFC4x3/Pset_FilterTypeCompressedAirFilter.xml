@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FilterTypeCompressedAirFilter</Name>
+  <Definition>Compressed air filter type attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFilter/COMPRESSEDAIRFILTER</ClassName>
+    <ClassName>IfcFilterType/COMPRESSEDAIRFILTER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFilter/COMPRESSEDAIRFILTER,IfcFilterType/COMPRESSEDAIRFILTER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>CompressedAirFilterType</Name>
+      <Definition>ACTIVATEDCARBON: absorbs oil vapor and odor; PARTICLE_FILTER: used to absorb solid particles of medium size; COALESCENSE_FILTER: used to absorb fine solid, oil, and water particles, also called micro filter</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CompressedAirFilterType">
+            <EnumItem>ACTIVATEDCARBON</EnumItem>
+            <EnumItem>COALESCENSE_FILTER</EnumItem>
+            <EnumItem>PARTICLE_FILTER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OperationPressureMax</Name>
+      <Definition>Maximum pressure under normal operating conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ParticleAbsorptionCurve</Name>
+      <Definition>Ratio of particles that are removed by the filter.  Each entry describes the ratio of particles absorbed greater than equal to the specified size and less than the next specified size.  For example,  given for 3 significant particle sizes &gt;= 0,1 micro m, &gt;= 1 micro m, &gt;= 5 micro m</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcPositiveLengthMeasure"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcPositiveRatioMeasure"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AutomaticCondensateDischarge</Name>
+      <Definition>Whether or not the condensing water or oil is discharged automatically from the filter.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CloggingIndicator</Name>
+      <Definition>Whether the filter has an indicator to display the degree of clogging of the filter.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

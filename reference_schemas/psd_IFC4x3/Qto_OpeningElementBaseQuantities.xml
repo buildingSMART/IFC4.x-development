@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_OpeningElementBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of opening elements.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcOpeningElement</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcOpeningElement</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Width</Name>
+      <Definition>The width of the object. Only given, if the object has constant thickness (prismatic).
+
+Width of the opening, in case of wall openings it is the horizontal dimension in case of slab openings it is one horizontal dimension. Only provided, if the area is rectangular.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Height</Name>
+      <Definition>Characteristic height
+
+Height of the opening, in case of wall openings it is the vertical dimension in case of slab openings it is one horizontal dimension. Only provided, if the area is rectangular.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Depth</Name>
+      <Definition>The depth of the object.
+
+Depth (or thickness) of the opening, in case of openings it shall be identical to the width (or thickness) of the voided element, in case of recesses it shall be less. Only provided, if the depth is constant.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Area</Name>
+      <Definition>Calculated area for the object.
+
+Area of the opening as viewed by an elevation view (for wall openings) or as viewed by a ground floor view (for slab openings).</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Volume</Name>
+      <Definition>Volume of the element.
+
+Volume of the opening. It is the subtraction volume of the opening from the voided element (e.g. wall or slab). In case that the geometric volume of the opening is bigger then the subtraction volume, only the subtraction volume should be used.</Definition>
+      <QtoType>Q_VOLUME</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

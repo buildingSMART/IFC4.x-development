@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_OnSiteTelecomControlUnit</Name>
+  <Definition>Properties for on-site telecom control unit used for railway.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcController</ClassName>
+    <ClassName>IfcControllerType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcController,IfcControllerType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>HasEarthquakeAlarm</Name>
+      <Definition>Indicates whether the on-site control unit includes earthquake alarm function.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasEarthquakeCollection</Name>
+      <Definition>Indicates whether the on-site control unit collects earthquake information.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasForeignObjectCollection</Name>
+      <Definition>Indicates whether the on-site control unit collects foreign object information.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ControllerInterfaceType</Name>
+      <Definition>Indicates the type of serial interface used by the device.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ControllerInterfaceType">
+            <EnumItem>EARTHQUAKERELAYINTERFACE</EnumItem>
+            <EnumItem>FOREIGNOBJECTRELAYINTERFACE</EnumItem>
+            <EnumItem>RS_422</EnumItem>
+            <EnumItem>RS_485</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasOutputFunction</Name>
+      <Definition>Indicates whether the on-site control unit includes an output function.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasRainCollection</Name>
+      <Definition>Indicates whether the on-site control unit collects information on rain.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasSnowCollection</Name>
+      <Definition>Indicates whether the on-site control unit collects information on snow depth.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasWindCollection</Name>
+      <Definition>Indicates whether the on-site control unit collects information on wind.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

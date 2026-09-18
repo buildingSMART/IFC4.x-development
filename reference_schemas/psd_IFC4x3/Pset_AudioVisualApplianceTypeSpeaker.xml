@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_AudioVisualApplianceTypeSpeaker</Name>
+  <Definition>An audio-visual speaker is a device that converts amplified audio signals into sound waves.  HISTORY: Added in IFC4.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAudioVisualAppliance/SPEAKER</ClassName>
+    <ClassName>IfcAudioVisualApplianceType/SPEAKER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAudioVisualAppliance/SPEAKER,IfcAudioVisualApplianceType/SPEAKER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SpeakerType</Name>
+      <Definition>Indicates the type of speaker.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AudioVisualSpeakerType">
+            <EnumItem>COAXIAL</EnumItem>
+            <EnumItem>FULLRANGE</EnumItem>
+            <EnumItem>MIDRANGE</EnumItem>
+            <EnumItem>TWEETER</EnumItem>
+            <EnumItem>WOOFER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SpeakerMounting</Name>
+      <Definition>Indicates how the speaker is designed to be mounted.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AudioVisualSpeakerMounting">
+            <EnumItem>CEILING</EnumItem>
+            <EnumItem>FREESTANDING</EnumItem>
+            <EnumItem>OUTDOOR</EnumItem>
+            <EnumItem>WALL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SpeakerDriverSize</Name>
+      <Definition>Indicates the number of drivers and their sizes.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcIdentifier"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcPositiveLengthMeasure"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FrequencyResponse</Name>
+      <Definition>Indicates the output over a specified range of frequencies.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcFrequencyMeasure"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcSoundPowerMeasure"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Impedence</Name>
+      <Definition>Indicates the speaker impedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

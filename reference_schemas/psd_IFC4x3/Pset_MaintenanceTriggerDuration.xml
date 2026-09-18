@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MaintenanceTriggerDuration</Name>
+  <Definition>Trigger levels for an asset that has an PPM based maintenance strategy.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAsset</ClassName>
+    <ClassName>IfcElement</ClassName>
+    <ClassName>IfcSystem</ClassName>
+    <ClassName>IfcElementType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAsset,IfcElement,IfcSystem,IfcElementType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>DurationTargetPerformance</Name>
+      <Definition>Target time to failure of the asset</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDuration"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DurationMaintenanceLevel</Name>
+      <Definition>Duration interval at which maintenance is performed</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDuration"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DurationReplacementLevel</Name>
+      <Definition>Duration interval at which replacement is performed</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDuration"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DurationDisposalLevel</Name>
+      <Definition>Duration interval at which disposal is performed</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDuration"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

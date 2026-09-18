@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_Permit</Name>
+  <Definition>A permit is a document that allows permission to gain access to an area or carry out work in a situation where security or other access restrictions apply.
+HISTORY: IFC4 EndDate added. PermitType, PermitDuration, StartTime and EndTime are deleted.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcPermit</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcPermit</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>EscortRequirement</Name>
+      <Definition>Indicates whether or not an escort is required to accompany persons carrying out a work order at or to/from the place of work (= TRUE) or not (= FALSE).NOTE - There are many instances where escorting is required, particularly in a facility that has a high security rating. Escorting may require that persons are escorted to and from the place of work. Alternatively, it may involve the escort remaining at the place of work at all times.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>StartDate</Name>
+      <Definition>Date and time from which the permit becomes valid.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDateTime"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EndDate</Name>
+      <Definition>Date and time at which the permit ceases to be valid.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDateTime"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SpecialRequirements</Name>
+      <Definition>Any additional special requirements that need to be included in the permit to work.NOTE - Additional permit requirements may be imposed according to the nature of the facility at which the work is carried out. For instance, in clean areas, special clothing may be required whilst in corrective institutions, it may be necessary to check in and check out tools that will be used for work as a safety precaution.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

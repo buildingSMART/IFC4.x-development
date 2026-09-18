@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SwitchingDeviceTypeDimmerSwitch</Name>
+  <Definition>A dimmer switch is a switch that adjusts electrical power through a variable position level action.  HISTORY: Added in IFC4.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSwitchingDevice/DIMMERSWITCH</ClassName>
+    <ClassName>IfcSwitchingDeviceType/DIMMERSWITCH</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSwitchingDevice/DIMMERSWITCH,IfcSwitchingDeviceType/DIMMERSWITCH</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>DimmerType</Name>
+      <Definition>A list of the available types of dimmer switch from which that required may be selected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SwitchingDeviceDimmerSwitchType">
+            <EnumItem>ROCKER</EnumItem>
+            <EnumItem>SELECTOR</EnumItem>
+            <EnumItem>TWIST</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

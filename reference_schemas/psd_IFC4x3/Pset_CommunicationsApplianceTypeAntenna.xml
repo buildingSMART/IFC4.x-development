@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CommunicationsApplianceTypeAntenna</Name>
+  <Definition>Properties common to an antenna. This property set is applied to a type or occurrence of IfcCommunicationsAppliance with the predefined type ANTENNA.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCommunicationsAppliance/ANTENNA</ClassName>
+    <ClassName>IfcCommunicationsApplianceType/ANTENNA</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCommunicationsAppliance/ANTENNA,IfcCommunicationsApplianceType/ANTENNA</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AntennaGain</Name>
+      <Definition>Indicates the antenna gain, which is a ratio of the power transmitted by an antenna in a specific direction compared to an isotropic antenna.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PolarizationMode</Name>
+      <Definition>Indicates the polarization mode of antenna.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_PolarizationMode">
+            <EnumItem>DUALPOLARIZATION</EnumItem>
+            <EnumItem>SINGLEPOLARIZATION</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RadiationPattern</Name>
+      <Definition>Indicates the radiation pattern of antenna.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RadiationPattern">
+            <EnumItem>DIRECTIONAL</EnumItem>
+            <EnumItem>FANBEAM</EnumItem>
+            <EnumItem>OMNIDIRECTIONAL</EnumItem>
+            <EnumItem>PENCILBEAM</EnumItem>
+            <EnumItem>SHAPEDBEAM</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AntennaType</Name>
+      <Definition>Indicates the type of antenna.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AntennaType">
+            <EnumItem>CEILING</EnumItem>
+            <EnumItem>PANEL</EnumItem>
+            <EnumItem>YAGI</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

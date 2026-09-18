@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DistributionChamberElementTypeInspectionPit</Name>
+  <Definition>Recess or chamber formed to permit access for inspection of substructure and services (definition modified from BS6100 221 4128).</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDistributionChamberElement/INSPECTIONPIT</ClassName>
+    <ClassName>IfcDistributionChamberElementType/INSPECTIONPIT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionChamberElement/INSPECTIONPIT,IfcDistributionChamberElementType/INSPECTIONPIT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Length</Name>
+      <Definition>The length of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Width</Name>
+      <Definition>The width of the object. Only given, if the object has constant thickness (prismatic).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Depth</Name>
+      <Definition>The depth of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

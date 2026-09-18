@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CableCarrierSegmentTypeCableTraySegment</Name>
+  <Definition>An (typically) open carrier segment onto which cables are laid.
+HISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableCarrierSegment/CABLETRAYSEGMENT</ClassName>
+    <ClassName>IfcCableCarrierSegmentType/CABLETRAYSEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableCarrierSegment/CABLETRAYSEGMENT,IfcCableCarrierSegmentType/CABLETRAYSEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>HasCover</Name>
+      <Definition>Indication of whether the cable tray has a cover (=TRUE) or not (= FALSE). By default, this value should be set to FALSE..</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

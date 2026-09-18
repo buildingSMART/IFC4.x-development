@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RepairOccurrence</Name>
+  <Definition>Properties defining repair information for occurrences of element, asset or system.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAsset</ClassName>
+    <ClassName>IfcElement</ClassName>
+    <ClassName>IfcSystem</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAsset,IfcElement,IfcSystem</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>RepairContent</Name>
+      <Definition>Content of repair, reason and nature can be given, e.g. display faults, communication failure, display exchange.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RepairDate</Name>
+      <Definition>Date on which the last repair is done on the asset.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDate"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MeanTimeToRepair</Name>
+      <Definition>Mean time to repair.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

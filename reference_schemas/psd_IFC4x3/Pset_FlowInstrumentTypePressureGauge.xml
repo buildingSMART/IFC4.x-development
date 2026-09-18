@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FlowInstrumentTypePressureGauge</Name>
+  <Definition>A device that reads and displays a pressure value at a point or the pressure difference between two points.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFlowInstrument/PRESSUREGAUGE</ClassName>
+    <ClassName>IfcFlowInstrumentType/PRESSUREGAUGE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFlowInstrument/PRESSUREGAUGE,IfcFlowInstrumentType/PRESSUREGAUGE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>PressureGaugeType</Name>
+      <Definition>Identifies the means by which pressure is displayed.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_PressureGaugeType">
+            <EnumItem>DIAL</EnumItem>
+            <EnumItem>DIGITAL</EnumItem>
+            <EnumItem>MANOMETER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DisplaySize</Name>
+      <Definition>The physical size of the display.
+
+For a dial pressure gauge it will be the diameter of the dial.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

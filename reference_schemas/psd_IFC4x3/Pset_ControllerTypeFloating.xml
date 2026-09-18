@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ControllerTypeFloating</Name>
+  <Definition>Properties for signal handling for an analog controller taking disparate valued multiple inputs and creating a single valued output.  HISTORY: IFC4 adapted from Pset_ControllerTypeCommon and applicable predefined type made specific to FLOATING; ACCUMULATOR and PULSECONVERTER types added; additional properties added to replace Pset_AnalogInput and Pset_AnalogOutput.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcController/FLOATING</ClassName>
+    <ClassName>IfcControllerType/FLOATING</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcController/FLOATING,IfcControllerType/FLOATING</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ControlType</Name>
+      <Definition>The type controller, signal modification effected and applicable ports
+
+CONSTANT: No inputs; SignalOffset is written to the output value.
+MODIFIER: Single analog input is read, added to SignalOffset, multiplied by SignalFactor, and written to the output value.
+ABSOLUTE: Single analog input is read and absolute value is written to the output value.
+INVERSE: Single analog input is read, 1.0 is divided by the input value and written to the output value.
+HYSTERISIS: Single analog input is read, delayed according to SignalTime, and written to the output value.
+RUNNINGAVERAGE: Single analog input is read, averaged over SignalTime, and written to the output value.
+DERIVATIVE: Single analog input is read and the rate of change during the SignalTime is written to the output value.
+INTEGRAL: Single analog input is read and the average value during the SignalTime is written to the output value.
+BINARY: Single binary input is read and SignalOffset is written to the output value if True.
+ACCUMULATOR: Single binary input is read, and for each pulse the SignalOffset is added to the accumulator, and while the accumulator is greater than the SignalFactor, the accumulator is decremented by SignalFactor and the integer result is incremented by one.
+PULSECONVERTER: Single integer input is read, and for each increment the SignalMultiplier is added and written to the output value.
+SUM: Two analog inputs are read, added, and written to the output value.
+SUBTRACT: Two analog inputs are read, subtracted, and written to the output value.
+PRODUCT: Two analog inputs are read, multiplied, and written to the output value.
+DIVIDE: Two analog inputs are read, divided, and written to the output value.
+AVERAGE: Two analog inputs are read and the average is written to the output value.
+MAXIMUM: Two analog inputs are read and the maximum is written to the output value.
+MINIMUM: Two analog inputs are read and the minimum is written to the output value..
+INPUT: Controller element is a dedicated input.
+OUTPUT: Controller element is a dedicated output.
+VARIABLE: Controller element is an in-memory variable.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ControllerTypeFloating">
+            <EnumItem>ABSOLUTE</EnumItem>
+            <EnumItem>ACCUMULATOR</EnumItem>
+            <EnumItem>AVERAGE</EnumItem>
+            <EnumItem>BINARY</EnumItem>
+            <EnumItem>CONSTANT</EnumItem>
+            <EnumItem>DERIVATIVE</EnumItem>
+            <EnumItem>DIVIDE</EnumItem>
+            <EnumItem>HYSTERESIS</EnumItem>
+            <EnumItem>INPUT</EnumItem>
+            <EnumItem>INTEGRAL</EnumItem>
+            <EnumItem>INVERSE</EnumItem>
+            <EnumItem>LOWERLIMITCONTROL</EnumItem>
+            <EnumItem>MAXIMUM</EnumItem>
+            <EnumItem>MINIMUM</EnumItem>
+            <EnumItem>MODIFIER</EnumItem>
+            <EnumItem>OUTPUT</EnumItem>
+            <EnumItem>PRODUCT</EnumItem>
+            <EnumItem>PULSECONVERTER</EnumItem>
+            <EnumItem>REPORT</EnumItem>
+            <EnumItem>RUNNINGAVERAGE</EnumItem>
+            <EnumItem>SPLIT</EnumItem>
+            <EnumItem>SUBTRACT</EnumItem>
+            <EnumItem>SUM</EnumItem>
+            <EnumItem>UPPERLIMITCONTROL</EnumItem>
+            <EnumItem>VARIABLE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Labels</Name>
+      <Definition>Table mapping values to labels
+
+Labels indicate transition points such as 'Hi', 'Lo', 'HiHi', or 'LoLo'.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcReal"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcLabel"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Range</Name>
+      <Definition>The physical range of values supported by the device.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcReal"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Value</Name>
+      <Definition>The expected range and default value.
+
+The expected range and default value.  While the property data type is IfcReal (to support all cases including when the units are unknown), a unit may optionally be provided to indicate the measure and unit.  The LowerLimitValue and UpperLimitValue must fall within the physical Range and may be used to determine extents when charting Pset_ControllerPHistory.Value.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcReal"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalOffset</Name>
+      <Definition>Offset constant added to modified signal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalFactor</Name>
+      <Definition>Factor multiplied onto offset signal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalTime</Name>
+      <Definition>Time factor used for integral and running average controllers.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

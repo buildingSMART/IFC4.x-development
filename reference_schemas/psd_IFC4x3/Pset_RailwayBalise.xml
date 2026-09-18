@@ -1,0 +1,121 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RailwayBalise</Name>
+  <Definition>Properties  applicable to a railway balise. This property set is applied to a type or occurrence of IfcCommunicationsAppliance with predefined type TRANSPONDER.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCommunicationsAppliance/TRANSPONDER</ClassName>
+    <ClassName>IfcCommunicationsApplianceType/TRANSPONDER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCommunicationsAppliance/TRANSPONDER,IfcCommunicationsApplianceType/TRANSPONDER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NominalHeight</Name>
+      <Definition>The nominal height of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalWidth</Name>
+      <Definition>The nominal overall width of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalWeight</Name>
+      <Definition>Nominal weight of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMassMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalLength</Name>
+      <Definition>The nominal overall length of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In case of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FailureInformation</Name>
+      <Definition>The information for failure description.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RailwayBaliseType</Name>
+      <Definition>Type of the railway balise.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RailwayBaliseType">
+            <EnumItem>ACTIVEBALISE</EnumItem>
+            <EnumItem>PASSIVEBALISE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DetectionRange</Name>
+      <Definition>The detection range of the equipment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InformationLength</Name>
+      <Definition>Indicates supported bytes of the data Information, e.g.127 bytes.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TransmissionRate</Name>
+      <Definition>Data transmission rate between the device and the receiving module in bits per second.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIntegerCountRateMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OperationalTemperatureRange</Name>
+      <Definition>The temperature range in which the device operates normally.
+
+Allowable operation ambient air temperature range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IP_Code</Name>
+      <Definition>IP Code, the International Protection Marking, IEC 60529), classifies and rates the degree of protection provided against intrusion.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

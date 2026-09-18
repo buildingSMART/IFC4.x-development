@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElementAssemblyTypeMast</Name>
+  <Definition>Telecom Tower properties used in railway. The property set can be used by the predefined type MAST of IfcElementAssembly.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElementAssembly/MAST</ClassName>
+    <ClassName>IfcElementAssemblyType/MAST</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElementAssembly/MAST,IfcElementAssemblyType/MAST</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>WithLightningRod</Name>
+      <Definition>Indicates whether the element is equipped with a lightning rod (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

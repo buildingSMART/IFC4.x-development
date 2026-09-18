@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ProtectiveDeviceTypeSparkGap</Name>
+  <Definition>Spark gap properties used in energy domain. The property set can be used by the predefined type SPARKGAP and VOLTAGELIMITER of IfcProtectiveDevice.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDevice/SPARKGAP</ClassName>
+    <ClassName>IfcProtectiveDevice/VOLTAGELIMITER</ClassName>
+    <ClassName>IfcProtectiveDeviceType/SPARKGAP</ClassName>
+    <ClassName>IfcProtectiveDeviceType/VOLTAGELIMITER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDevice/SPARKGAP,IfcProtectiveDevice/VOLTAGELIMITER,IfcProtectiveDeviceType/SPARKGAP,IfcProtectiveDeviceType/VOLTAGELIMITER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>BreakdownVoltageTolerance</Name>
+      <Definition>Nominal value of the spark gap breakdown voltage tolerance.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricVoltageMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Capacitance</Name>
+      <Definition>Maximum value of the capacitance between the electrodes at specified frequency and temperature.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCapacitanceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CurrentRMS</Name>
+      <Definition>Maximum rms (root mean square) current of an electric-electronic or electromechanical component at specified ambient temperature.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PowerDissipation</Name>
+      <Definition>Permissible power which may be dissipated continuously, at specified conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SparkGapType</Name>
+      <Definition>Type of Spark gap.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SparkGapType">
+            <EnumItem>AIRSPARKGAP</EnumItem>
+            <EnumItem>GASFILLEDSPARKGAP</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Resistivity</Name>
+      <Definition>Electrical resistivity of a rock or soil (Ohm-m).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricResistanceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

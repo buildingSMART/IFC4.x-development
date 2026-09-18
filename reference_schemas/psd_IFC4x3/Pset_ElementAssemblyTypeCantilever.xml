@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElementAssemblyTypeCantilever</Name>
+  <Definition>Energy cantilever properties used in railway. The property set can be used by the predefined type SUSPENSION_ASSEMBLY of IfcElementAssembly.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElementAssembly/SUSPENSIONASSEMBLY</ClassName>
+    <ClassName>IfcElementAssemblyType/SUSPENSIONASSEMBLY</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElementAssembly/SUSPENSIONASSEMBLY,IfcElementAssemblyType/SUSPENSIONASSEMBLY</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AssemblyInstruction</Name>
+      <Definition>Instructions to describe how the system / equipment / facility is assembled.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ContactWireStagger</Name>
+      <Definition>Lateral displacement of the contact wire to opposite sides of the track centre at successive supports.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SystemHeight</Name>
+      <Definition>Vertical distance between the main catenary wire and the contact wire measured at a support point.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CantileverType</Name>
+      <Definition>Type of cantilever assembly.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CantileverAssemblyType">
+            <EnumItem>CENTER_CANTILEVER</EnumItem>
+            <EnumItem>DIRECT_SUSPENSION</EnumItem>
+            <EnumItem>INSULATED_OVERLAP_CANTILEVER</EnumItem>
+            <EnumItem>INSULATED_SUSPENSION_SET</EnumItem>
+            <EnumItem>MECHANICAL_OVERLAP_CANTILEVER</EnumItem>
+            <EnumItem>MIDPOINT_CANTILEVER</EnumItem>
+            <EnumItem>MULTIPLE_TRACK_CANTILEVER</EnumItem>
+            <EnumItem>OUT_OF_RUNNING_CANTILEVER</EnumItem>
+            <EnumItem>PHASE_SEPARATION_CANTILEVER</EnumItem>
+            <EnumItem>SINGLE</EnumItem>
+            <EnumItem>SYSTEM_SEPARATION_CANTILEVER</EnumItem>
+            <EnumItem>TRANSITION_CANTILEVER</EnumItem>
+            <EnumItem>TURNOUT_CANTILEVER</EnumItem>
+            <EnumItem>UNDERBRIDGE_CANTILEVER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

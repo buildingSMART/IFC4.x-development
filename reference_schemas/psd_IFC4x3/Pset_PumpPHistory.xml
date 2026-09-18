@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_PumpPHistory</Name>
+  <Definition>Pump performance history attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcPump</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcPump</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>MechanicalEfficiency</Name>
+      <Definition>The objects operational mechanical efficiency.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OverallEfficiency</Name>
+      <Definition>Total efficiency of object.
+
+The pump and motor overall operational efficiency.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PressureRise</Name>
+      <Definition>The developed pressure.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RotationSpeed</Name>
+      <Definition>Pump rotational speed.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Flowrate</Name>
+      <Definition>The flowrate of the fluid.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PowerHistory</Name>
+      <Definition>The actual power consumption of the pump.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DistributionPortPHistoryPipe</Name>
+  <Definition>Log of substance usage attached to an instance of IfcPerformanceHistory having an assigned IfcDistributionPort of type PIPE.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDistributionPort/PIPE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionPort/PIPE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Temperature</Name>
+      <Definition>Temperature of the fluid.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Pressure</Name>
+      <Definition>The pressure of  fluid.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Flowrate</Name>
+      <Definition>The flowrate of the fluid.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

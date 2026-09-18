@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_MATERIALDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MaterialSteel</Name>
+  <Definition>A set of extended mechanical properties related to steel (or other metallic and isotropic) materials.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcMaterial</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMaterial</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>YieldStress</Name>
+      <Definition>A measure of the yield stress (or characteristic 0.2 percent proof stress) of the material.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>UltimateStress</Name>
+      <Definition>A measure of the ultimate stress of the material.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>UltimateStrain</Name>
+      <Definition>A measure of the (engineering) strain at the state of ultimate stress of the material.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HardeningModule</Name>
+      <Definition>A measure of the hardening module of the material (slope of stress versus strain curve after yield range).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcModulusOfElasticityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ProportionalStress</Name>
+      <Definition>A measure of the proportional stress of the material. It describes the stress before the first plastic deformation occurs and is commonly measured at a deformation of 0.01%.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PlasticStrain</Name>
+      <Definition>A measure of the permanent displacement, as in slip or twinning, which remains after the stress has been removed. Currently applied to a strain of 0.2% proportional stress of the material.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Relaxations</Name>
+      <Definition>Measures of decrease in stress over long time intervals resulting from plastic flow. Different relaxation values for different initial stress levels for a material may be given. It describes the time dependent relative relaxation value for a given initial stress level at constant strain.
+Relating values are the &quot;RelaxationValue&quot;. Related values are the &quot;InitialStress&quot;</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcNormalisedRatioMeasure"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcNormalisedRatioMeasure"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>StructuralGrade</Name>
+      <Definition>Classification label to define mechanical properties according to structural grades defined in published standards; designated by numbers, letters, or a combination of both.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

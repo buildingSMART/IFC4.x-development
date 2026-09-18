@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DamperPHistory</Name>
+  <Definition>Damper performance history attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDamper</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDamper</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AirFlowRate</Name>
+      <Definition>Air flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Leakage</Name>
+      <Definition>Air leakage rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PressureDrop</Name>
+      <Definition>Pressure drop.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BladePositionAngle</Name>
+      <Definition>Blade position angle; angle between the blade and flow direction ( 0 - 90).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DamperPosition</Name>
+      <Definition>Control damper position, ranging from 0 to 1; damper position (0=closed=90deg position angle, 1=open=0deg position angle).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PressureLossCoefficient</Name>
+      <Definition>Pressure loss coefficient.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

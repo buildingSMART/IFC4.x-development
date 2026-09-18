@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_GeotechnicalAssemblyCommon</Name>
+  <Definition>Properties describing the characteristics of any geotechnical model. A Status of &quot;New&quot; should not be associated to a IfcGeotechnicalAssembly or IfcGeotechnicalStratum, as other entities are used for earthworks and courses.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcGeotechnicalAssembly</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcGeotechnicalAssembly</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Limitations</Name>
+      <Definition>Limitations on usage.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Methodology</Name>
+      <Definition>Methodology used to prepare the contents of the geotechnical assembly.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BoreHolePurpose</Name>
+      <Definition>Purpose for which the borehole, section or volumetric model was created. (EU Inspire, boreholeML)</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_StrataAssemblyPurpose">
+            <EnumItem>DEPOSIT</EnumItem>
+            <EnumItem>ENVIRONMENTAL</EnumItem>
+            <EnumItem>FEEDSTOCK</EnumItem>
+            <EnumItem>GEOLOGICAL</EnumItem>
+            <EnumItem>GEOTHERMAL</EnumItem>
+            <EnumItem>HYDROCARBON</EnumItem>
+            <EnumItem>HYDROGEOLOGICAL</EnumItem>
+            <EnumItem>MINERAL</EnumItem>
+            <EnumItem>PEDOLOGICAL</EnumItem>
+            <EnumItem>SITE_INVESTIGATION</EnumItem>
+            <EnumItem>STORAGE</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>USERDEFINED</EnumItem>
+            <EnumItem>NOTDEFINED</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElementStatus">
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

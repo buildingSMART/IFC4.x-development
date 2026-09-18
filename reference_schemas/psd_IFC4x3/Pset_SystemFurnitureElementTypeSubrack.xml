@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SystemFurnitureElementTypeSubrack</Name>
+  <Definition>Properties of subrack used in railway telecom. The property set can be used by the predefined type SUBRACK of IfcSystemFurnitureElement</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSystemFurnitureElement/SUBRACK</ClassName>
+    <ClassName>IfcSystemFurnitureElementType/SUBRACK</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSystemFurnitureElement/SUBRACK,IfcSystemFurnitureElementType/SUBRACK</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NumberOfSlots</Name>
+      <Definition>Indicates the number of  slots.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfUnits</Name>
+      <Definition>Indicates the number of vertical units.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfOccupiedUnits</Name>
+      <Definition>Indicates the number of vertical units occupied by the equipment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

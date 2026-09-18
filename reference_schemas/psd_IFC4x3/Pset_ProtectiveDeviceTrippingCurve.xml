@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ProtectiveDeviceTrippingCurve</Name>
+  <Definition>Tripping curves are applied to thermal, thermal magnetic or MCB_RCD tripping units (i.e. tripping units having type property sets for thermal, thermal magnetic or MCB_RCD tripping defined). They are not applied to electronic tripping units.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDevice</ClassName>
+    <ClassName>IfcProtectiveDeviceType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDevice,IfcProtectiveDeviceType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>TrippingCurveType</Name>
+      <Definition>The type of tripping curve that is represented by the property set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TrippingCurveType">
+            <EnumItem>LOWER</EnumItem>
+            <EnumItem>UPPER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TrippingCurve</Name>
+      <Definition>A curve that establishes the release time of a tripping unit when a particular prospective current is applied.  Note that the tripping curve is defined within a Cartesian coordinate system and this fact must be asserted within the property set:(1) Defining value is the Prospective Current which is a list of minimum 2 and maximum 16 numbers providing the currents in [x In] for points in the current/time log/log coordinate space. The curve is drawn as a straight line between two consecutive points.
+(2) Defined value is a list of minimum 2 and maximum 16 numbers providing the release_time in [s] for points in the current/time log/log coordinate space. The curve is drawn as a straight line between two consecutive points. Note that a defined interpolation.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcElectricCurrentMeasure"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcTimeMeasure"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

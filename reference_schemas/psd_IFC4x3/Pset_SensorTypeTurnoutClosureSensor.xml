@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SensorTypeTurnoutClosureSensor</Name>
+  <Definition>Properties that are applicable for IfcSensor with predefined type TURNOUTCLOSURESENSOR.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSensor/TURNOUTCLOSURESENSOR</ClassName>
+    <ClassName>IfcSensorType/TURNOUTCLOSURESENSOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSensor/TURNOUTCLOSURESENSOR,IfcSensorType/TURNOUTCLOSURESENSOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>DetectionRange</Name>
+      <Definition>The detection range of the equipment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IndicationRodMovementRange</Name>
+      <Definition>Indicates the range of indication rod movement.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

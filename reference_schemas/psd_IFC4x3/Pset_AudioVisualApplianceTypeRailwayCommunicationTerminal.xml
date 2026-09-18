@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_AudioVisualApplianceTypeRailwayCommunicationTerminal</Name>
+  <Definition>Properties used for railway communication terminals.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAudioVisualAppliance/COMMUNICATIONTERMINAL</ClassName>
+    <ClassName>IfcAudioVisualApplianceType/COMMUNICATIONTERMINAL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAudioVisualAppliance/COMMUNICATIONTERMINAL,IfcAudioVisualApplianceType/COMMUNICATIONTERMINAL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>RailwayCommunicationTerminalType</Name>
+      <Definition>Indicates the type of railway communication terminal.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RailwayCommunicationTerminalType">
+            <EnumItem>IP</EnumItem>
+            <EnumItem>LEGACY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

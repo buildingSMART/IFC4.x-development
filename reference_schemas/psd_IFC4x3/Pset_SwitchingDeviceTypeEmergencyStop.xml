@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SwitchingDeviceTypeEmergencyStop</Name>
+  <Definition>An emergency stop device acts to remove as quickly as possible any danger that may have arisen unexpectedly.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSwitchingDevice/EMERGENCYSTOP</ClassName>
+    <ClassName>IfcSwitchingDeviceType/EMERGENCYSTOP</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSwitchingDevice/EMERGENCYSTOP,IfcSwitchingDeviceType/EMERGENCYSTOP</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SwitchOperation</Name>
+      <Definition>Indicates operation of emergency stop switch.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SwitchingDeviceEmergencyStopType">
+            <EnumItem>MUSHROOM</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfPhases</Name>
+      <Definition>Number of phases that the equipment operates on.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ReferenceEnvironmentTemperature</Name>
+      <Definition>Ideal temperature range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BreakingCapacity</Name>
+      <Definition>The current that a fuse, circuit breaker, or other electrical apparatus is able to interrupt without being destroyed or causing an electric arc with unacceptable duration.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfEarthFaultRelays</Name>
+      <Definition>Indicates the number of relays used for preventing earth fault.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfEmergencyButtons</Name>
+      <Definition>The number of emergency buttons built in the device.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfRelays</Name>
+      <Definition>Indicates number of relays built in the device.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfOverCurrentRelays</Name>
+      <Definition>Indicates number of relays used for preventing over current.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfAffectedPoles</Name>
+      <Definition>Number of poles that the equipment affects.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalCurrent</Name>
+      <Definition>The nominal current that is designed to be measured.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RatedFrequency</Name>
+      <Definition>Frequency of the AC electric power supply when the device or system reaches its optimum operating condition.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RatedVoltage</Name>
+      <Definition>The range of allowed voltage that a device is certified to handle. The upper bound of this value is the maximum.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcElectricVoltageMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TransformationRatio</Name>
+      <Definition>The ratio of the actual primary current or voltage to the actual secondary current or voltage.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

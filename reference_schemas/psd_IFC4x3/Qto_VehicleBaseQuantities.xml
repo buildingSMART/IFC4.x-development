@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_VehicleBaseQuantities</Name>
+  <Definition>Quantities for vehicles</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcVehicle/ROLLINGSTOCK</ClassName>
+    <ClassName>IfcVehicle/VEHICLEAIR</ClassName>
+    <ClassName>IfcVehicle/VEHICLEMARINE</ClassName>
+    <ClassName>IfcVehicle/VEHICLE</ClassName>
+    <ClassName>IfcVehicle/VEHICLETRACKED</ClassName>
+    <ClassName>IfcVehicleType/ROLLINGSTOCK</ClassName>
+    <ClassName>IfcVehicleType/VEHICLEAIR</ClassName>
+    <ClassName>IfcVehicleType/VEHICLEMARINE</ClassName>
+    <ClassName>IfcVehicleType/VEHICLE</ClassName>
+    <ClassName>IfcVehicleType/VEHICLETRACKED</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcVehicle/ROLLINGSTOCK,IfcVehicle/VEHICLEAIR,IfcVehicle/VEHICLEMARINE,IfcVehicle/VEHICLE,IfcVehicle/VEHICLETRACKED,IfcVehicleType/ROLLINGSTOCK,IfcVehicleType/VEHICLEAIR,IfcVehicleType/VEHICLEMARINE,IfcVehicleType/VEHICLE,IfcVehicleType/VEHICLETRACKED</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Length</Name>
+      <Definition>The length of the object.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Width</Name>
+      <Definition>The width of the object. Only given, if the object has constant thickness (prismatic).</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Height</Name>
+      <Definition>Characteristic height</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

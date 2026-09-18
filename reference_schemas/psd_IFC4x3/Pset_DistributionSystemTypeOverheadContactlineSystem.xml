@@ -1,0 +1,122 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DistributionSystemTypeOverheadContactlineSystem</Name>
+  <Definition>Properties of an overhead contact line system. The property set is associated with the predefined type OVERHEAD_CONTACT_LINE_SYSTEM of IfcDistributionSystem.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDistributionSystem/OVERHEAD_CONTACTLINE_SYSTEM</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionSystem/OVERHEAD_CONTACTLINE_SYSTEM</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SpanNominalLength</Name>
+      <Definition>The length of span as a design parameter for the overhead contactline system.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ContactWireStagger</Name>
+      <Definition>Lateral displacement of the contact wire to opposite sides of the track centre at successive supports.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ContactWireNominalDrop</Name>
+      <Definition>Vertical distance between the main catenary wire and the contact wire measured at a support point.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PressureRange</Name>
+      <Definition>Allowable maximum and minimum working pressure (relative to ambient pressure).</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ContactWireNominalHeight</Name>
+      <Definition>Nominal distance from the top of the rail to the lower face of the contact wire, measured perpendicular to the track.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ContactWireUplift</Name>
+      <Definition>Vertical upward movement of the contact wire due to the force produced from the pantograph.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ElectricalClearance</Name>
+      <Definition>The recommended air clearances between earth and the live parts of the overhead contactline system.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfOverlappingSpans</Name>
+      <Definition>Number of overlapping spans in the overhead contactline system.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PantographType</Name>
+      <Definition>Indicates the type of pantograph as a design parameter for the overhead contactline system.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TensionLength</Name>
+      <Definition>Length of overhead contactline between two terminating points. It is a design parameter for the overhead contactline system.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OCSType</Name>
+      <Definition>Indicates the type of overhead contactline system (OCS).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_OverheadContactLineType">
+            <EnumItem>COMPOUND_CATENARY_SUSPENSION</EnumItem>
+            <EnumItem>OCL_WITH_CATENARY_SUSPENSION</EnumItem>
+            <EnumItem>OCL_WITH_STITCHED_CATENARY_SUSPENSION</EnumItem>
+            <EnumItem>RIGID_CATENARY</EnumItem>
+            <EnumItem>TROLLY_TYPE_CONTACT_LINE</EnumItem>
+            <EnumItem>TROLLY_TYPE_WITH_STITCHWIRE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_TicketVendingMachine</Name>
+  <Definition>Properties of ticket vending machine. The property set can be used by IfcElectricAppliance with PredefinedType VENDINGMACHINE.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElectricAppliance/VENDINGMACHINE</ClassName>
+    <ClassName>IfcElectricApplianceType/VENDINGMACHINE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElectricAppliance/VENDINGMACHINE,IfcElectricApplianceType/VENDINGMACHINE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>TicketStuckRatio</Name>
+      <Definition>Indicates the ratio of tickets being stuck or jammed in the appliance.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MoneyStuckRatio</Name>
+      <Definition>Indicates the ratio of money being stuck or jammed in appliance.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PaymentMethod</Name>
+      <Definition>Indicates the vending machine payment method.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_PaymentMethod">
+            <EnumItem>CARD</EnumItem>
+            <EnumItem>CASH</EnumItem>
+            <EnumItem>E_PAYMENT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TicketProductionSpeed</Name>
+      <Definition>Indicates the production speed of the ticket. It is measured by counting the number of tickets that can be produced per hour.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIntegerCountRateMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TicketVendingMachineType</Name>
+      <Definition>Indicates the type of ticket vending machine.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TicketVendingMachineType">
+            <EnumItem>TICKETREDEMPTIONMACHINE</EnumItem>
+            <EnumItem>TICKETREFUNDINGMACHINE</EnumItem>
+            <EnumItem>TICKETVENDINGMACHINE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VendingMachineUserInterface</Name>
+      <Definition>Indicates the type of vending machine user interface.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_VendingMachineUserInterface">
+            <EnumItem>MOUSECHOOSETYPE</EnumItem>
+            <EnumItem>TOUCHSCREEN</EnumItem>
+            <EnumItem>TOUCH_TONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

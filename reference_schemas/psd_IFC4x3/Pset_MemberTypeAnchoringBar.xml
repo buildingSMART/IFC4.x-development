@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MemberTypeAnchoringBar</Name>
+  <Definition>Properties of anchoring bar. The anchoring bar is used to connect stay from pole to the foundation.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcMember/BRACE</ClassName>
+    <ClassName>IfcMemberType/BRACE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMember/BRACE,IfcMemberType/BRACE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>MechanicalStressType</Name>
+      <Definition>Indicates which type of stress is applied to the element.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_MechanicalStressType">
+            <EnumItem>MECHANICAL_COMPRESSION</EnumItem>
+            <EnumItem>MECHANICAL_TRACTION</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasLightningRod</Name>
+      <Definition>Indicates whether the element is equipped with a lightning rod (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

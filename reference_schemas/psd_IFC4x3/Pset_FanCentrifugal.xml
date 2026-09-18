@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FanCentrifugal</Name>
+  <Definition>Centrifugal fan occurrence attributes attached to an instance of IfcFan.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFan/CENTRIFUGALAIRFOIL</ClassName>
+    <ClassName>IfcFan/CENTRIFUGALBACKWARDINCLINEDCURVED</ClassName>
+    <ClassName>IfcFan/CENTRIFUGALFORWARDCURVED</ClassName>
+    <ClassName>IfcFan/CENTRIFUGALRADIAL</ClassName>
+    <ClassName>IfcFanType/CENTRIFUGALAIRFOIL</ClassName>
+    <ClassName>IfcFanType/CENTRIFUGALBACKWARDINCLINEDCURVED</ClassName>
+    <ClassName>IfcFanType/CENTRIFUGALFORWARDCURVED</ClassName>
+    <ClassName>IfcFanType/CENTRIFUGALRADIAL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFan/CENTRIFUGALAIRFOIL,IfcFan/CENTRIFUGALBACKWARDINCLINEDCURVED,IfcFan/CENTRIFUGALFORWARDCURVED,IfcFan/CENTRIFUGALRADIAL,IfcFanType/CENTRIFUGALAIRFOIL,IfcFanType/CENTRIFUGALBACKWARDINCLINEDCURVED,IfcFanType/CENTRIFUGALFORWARDCURVED,IfcFanType/CENTRIFUGALRADIAL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>DischargePosition</Name>
+      <Definition>Centrifugal fan discharge position.TOPHORIZONTAL: Top horizontal discharge.
+TOPANGULARDOWN: Top angular down discharge.
+DOWNBLAST: Downblast discharge.
+BOTTOMANGULARDOWN: Bottom angular down discharge.
+BOTTOMHORIZONTAL: Bottom horizontal discharge.
+BOTTOMANGULARUP: Bottom angular up discharge.
+UPBLAST: Upblast discharge.
+TOPANGULARUP: Top angular up discharge.
+OTHER: Other type of fan arrangement.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CentrifugalFanDischargePosition">
+            <EnumItem>BOTTOMANGULARDOWN</EnumItem>
+            <EnumItem>BOTTOMANGULARUP</EnumItem>
+            <EnumItem>BOTTOMHORIZONTAL</EnumItem>
+            <EnumItem>DOWNBLAST</EnumItem>
+            <EnumItem>TOPANGULARDOWN</EnumItem>
+            <EnumItem>TOPANGULARUP</EnumItem>
+            <EnumItem>TOPHORIZONTAL</EnumItem>
+            <EnumItem>UPBLAST</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DirectionOfRotation</Name>
+      <Definition>The direction of the centrifugal fan wheel rotation when viewed from the drive side of the fan.CLOCKWISE: Clockwise.
+COUNTERCLOCKWISE: Counter-clockwise.
+OTHER: Other type of fan rotation.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CentrifugalFanRotation">
+            <EnumItem>CLOCKWISE</EnumItem>
+            <EnumItem>COUNTERCLOCKWISE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FanArrangement</Name>
+      <Definition>Defines the fan and motor drive arrangement as defined by AMCA.ARRANGEMENT1: Arrangement 1.
+ARRANGEMENT2: Arrangement 2.
+ARRANGEMENT3: Arrangement 3.
+ARRANGEMENT4: Arrangement 4.
+ARRANGEMENT7: Arrangement 7.
+ARRANGEMENT8: Arrangement 8.
+ARRANGEMENT9: Arrangement 9.
+ARRANGEMENT10: Arrangement 10.
+OTHER: Other type of fan drive arrangement.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CentrifugalFanArrangement">
+            <EnumItem>ARRANGEMENT1</EnumItem>
+            <EnumItem>ARRANGEMENT10</EnumItem>
+            <EnumItem>ARRANGEMENT2</EnumItem>
+            <EnumItem>ARRANGEMENT3</EnumItem>
+            <EnumItem>ARRANGEMENT4</EnumItem>
+            <EnumItem>ARRANGEMENT7</EnumItem>
+            <EnumItem>ARRANGEMENT8</EnumItem>
+            <EnumItem>ARRANGEMENT9</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

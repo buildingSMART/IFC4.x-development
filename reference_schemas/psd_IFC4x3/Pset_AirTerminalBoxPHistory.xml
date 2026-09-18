@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_AirTerminalBoxPHistory</Name>
+  <Definition>Air terminal box performance history attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAirTerminalBox</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAirTerminalBox</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>DamperPosition</Name>
+      <Definition>Control damper position, ranging from 0 to 1; damper position (0=closed=90deg position angle, 1=open=0deg position angle).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AtmosphericPressure</Name>
+      <Definition>Ambient atmospheric pressure.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Sound</Name>
+      <Definition>Sound performance.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AirFlowCurve</Name>
+      <Definition/>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

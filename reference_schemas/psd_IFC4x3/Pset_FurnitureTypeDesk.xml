@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FurnitureTypeDesk</Name>
+  <Definition>A set of specific properties for furniture type desk. HISTORY: First issued in IFC Release R1.5. Renamed from Pset_Desk</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFurniture/DESK</ClassName>
+    <ClassName>IfcFurnitureType/DESK</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFurniture/DESK,IfcFurnitureType/DESK</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>WorksurfaceArea</Name>
+      <Definition>The value of the work surface area of the desk.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

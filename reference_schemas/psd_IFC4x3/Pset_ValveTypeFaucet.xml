@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ValveTypeFaucet</Name>
+  <Definition>A small diameter valve, with a free outlet, from which water is drawn.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcValve/FAUCET</ClassName>
+    <ClassName>IfcValveType/FAUCET</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcValve/FAUCET,IfcValveType/FAUCET</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>FaucetType</Name>
+      <Definition>Defines the range of faucet types that may be specified where:Bib:     Faucet with a horizontal inlet and a nozzle that discharges downwards.
+Globe:   Faucet fitted through the end of a bath, with a horizontal inlet, a partially spherical body and a vertical nozzle.
+Diverter:   Combination faucet assembly with a valve to enable the flow of mixed water to be transferred to a showerhead.
+DividedFlowCombination:  Combination faucet assembly in which hot and cold water are kept separate until emerging from a common nozzle
+.
+Pillar:  Faucet that has a vertical inlet and a nozzle that discharges downwards
+.
+SingleOutletCombination =    Combination faucet assembly in which hot and cold water mix before emerging from a common nozzle
+.
+Spray:   Faucet with a spray outlet
+.
+SprayMixing:     Spray faucet connected to hot and cold water supplies that delivers water at a temperature determined during use.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FaucetType">
+            <EnumItem>BIB</EnumItem>
+            <EnumItem>DIVERTER</EnumItem>
+            <EnumItem>DIVIDEDFLOWCOMBINATION</EnumItem>
+            <EnumItem>GLOBE</EnumItem>
+            <EnumItem>PILLAR</EnumItem>
+            <EnumItem>SINGLEOUTLETCOMBINATION</EnumItem>
+            <EnumItem>SPRAY</EnumItem>
+            <EnumItem>SPRAYMIXING</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FaucetOperation</Name>
+      <Definition>Defines the range of ways in which a faucet can be operated that may be specified where:CeramicDisc: Quick action faucet with a ceramic seal to open or close the orifice
+.
+LeverHandle: Quick action faucet that is operated by a lever handle
+.
+NonConcussiveSelfClosing:    Self closing faucet that does not induce surge pressure
+.
+QuarterTurn: Quick action faucet that can be fully opened or shut by turning the operating mechanism through 90 degrees.
+QuickAction: Faucet that can be opened or closed fully with a single small movement of the operating mechanism
+.
+ScrewDown: Faucet in which a plate or disc is moved, by the rotation of a screwed spindle, to close or open the orifice.
+SelfClosing: Faucet that is opened by pressure of the top of an operating spindle and is closed under the action of a spring or weight when the pressure is released.
+TimedSelfClosing:   Self closing faucet that discharges for a predetermined period of time
+.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FaucetOperation">
+            <EnumItem>CERAMICDISC</EnumItem>
+            <EnumItem>LEVERHANDLE</EnumItem>
+            <EnumItem>NONCONCUSSIVESELFCLOSING</EnumItem>
+            <EnumItem>QUARTERTURN</EnumItem>
+            <EnumItem>QUICKACTION</EnumItem>
+            <EnumItem>SCREWDOWN</EnumItem>
+            <EnumItem>SELFCLOSING</EnumItem>
+            <EnumItem>TIMEDSELFCLOSING</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FaucetFunction</Name>
+      <Definition>Defines the operating temperature of a faucet that may be specified.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FaucetFunction">
+            <EnumItem>COLD</EnumItem>
+            <EnumItem>HOT</EnumItem>
+            <EnumItem>MIXED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Finish</Name>
+      <Definition>Description of the (surface) finish of the object for informational purposes.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FaucetTopDescription</Name>
+      <Definition>Description of the operating mechanism/top of the faucet.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

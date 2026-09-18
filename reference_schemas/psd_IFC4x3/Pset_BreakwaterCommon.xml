@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_BreakwaterCommon</Name>
+  <Definition>Properties common to the definition of all occurrences of IfcMarineFacility with the predefined type set to BREAKWATER.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcMarineFacility/BREAKWATER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMarineFacility/BREAKWATER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>StructuralStyle</Name>
+      <Definition>Structural style of the element</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Elevation</Name>
+      <Definition>Elevation of the entity</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

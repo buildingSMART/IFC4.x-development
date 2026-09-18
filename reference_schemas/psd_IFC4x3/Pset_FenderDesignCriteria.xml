@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FenderDesignCriteria</Name>
+  <Definition>Properties common to the definition of design criteria of all occurrences of  IfcImpactProtectionDevice and types of IfcImpactProtectionDeviceType with the predefined type set to FENDER.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSpace/BERTH</ClassName>
+    <ClassName>IfcSpaceType/BERTH</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpace/BERTH,IfcSpaceType/BERTH</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>CoefficientOfFriction</Name>
+      <Definition>Coefficient of friction value for the fender</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EnergyAbsorptionTolerance</Name>
+      <Definition>Manufacturing tolerance on energy absorption</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaxReactionTolerance</Name>
+      <Definition>Manufacturing tolerance on maximum reaction at fender support.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumTemperatureFactor</Name>
+      <Definition>Deviation in performance due to maximum design temperature</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MinimumTemperatureFactor</Name>
+      <Definition>Deviation in performance due to minimum design temperature</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VelocityFactorEnergy</Name>
+      <Definition>Deviation in energy absorption performance due to strain rate</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VelocityFactorReaction</Name>
+      <Definition>Deviation in reaction due to strain rate</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EnergyAbsorption</Name>
+      <Definition>Energy absorption capacity of the element.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcEnergyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaxReaction</Name>
+      <Definition>Maximum reaction from the element</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcForceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MinCompressedFenderHeight</Name>
+      <Definition>Minimum height required for a compressed fender to prevent vessels striking the structure</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AddedMassCoefficientMethod</Name>
+      <Definition>Method used to determine the Added Mass Coefficient used for design</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AddedMassCoefficientMethod">
+            <EnumItem>PIANC</EnumItem>
+            <EnumItem>SHIGERU_UEDA</EnumItem>
+            <EnumItem>VASCO_COSTA</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

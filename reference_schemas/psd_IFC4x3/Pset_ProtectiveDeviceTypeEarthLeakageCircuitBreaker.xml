@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ProtectiveDeviceTypeEarthLeakageCircuitBreaker</Name>
+  <Definition>An earth failure device acts to protect people and equipment from the effects of current leakage.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDevice/EARTHLEAKAGECIRCUITBREAKER</ClassName>
+    <ClassName>IfcProtectiveDeviceType/EARTHLEAKAGECIRCUITBREAKER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDevice/EARTHLEAKAGECIRCUITBREAKER,IfcProtectiveDeviceType/EARTHLEAKAGECIRCUITBREAKER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>EarthFailureDeviceType</Name>
+      <Definition>A list of the available types of circuit breaker from which that required may be selected where:Standard: Device that operates without a time delay.
+TimeDelayed: Device that operates after a time delay.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_EarthFailureDeviceType">
+            <EnumItem>STANDARD</EnumItem>
+            <EnumItem>TIMEDELAYED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Sensitivity</Name>
+      <Definition>Sensitivity.
+
+The rated rms value of the vector sum of the instantaneous currents flowing in the main circuits of the device which causes the device to operate under specified conditions. (IEC 61008-1).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

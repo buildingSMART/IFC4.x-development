@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_TrackElementTypeSleeper</Name>
+  <Definition>Properties common to the definition to all occurrences and types of IfcTrackElement with PredefinedType set to SLEEPER.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcTrackElement/SLEEPER</ClassName>
+    <ClassName>IfcTrackElementType/SLEEPER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcTrackElement/SLEEPER,IfcTrackElementType/SLEEPER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>InstalledCondition</Name>
+      <Definition>Assessment of the condition of the element at point of installation.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_InstalledCondition">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>REGENERATED</EnumItem>
+            <EnumItem>REUSED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SleeperType</Name>
+      <Definition>Indicates the sleeper type.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SleeperType">
+            <EnumItem>COMPOSITESLEEPER</EnumItem>
+            <EnumItem>CONCRETESLEEPER</EnumItem>
+            <EnumItem>INSULATEDSTEELSLEEPER</EnumItem>
+            <EnumItem>MONOBLOCKCONCRETESLEEPER</EnumItem>
+            <EnumItem>NOTINSULATEDSTEELSLEEPER</EnumItem>
+            <EnumItem>TWOBLOCKCONCRETESLEEPER</EnumItem>
+            <EnumItem>WOODENSLEEPER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TechnicalStandard</Name>
+      <Definition>The technical standard which the element should comply with.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FasteningType</Name>
+      <Definition>Indicates the type of fastening used to generate traction between the foot of the rail and the sleeper. It depends on but is not uniquely identified by the type of sleeper. This property shall only be used when sleeper fastening is not modelled as an element.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsElectricallyInsulated</Name>
+      <Definition>Indicates whether the sleeper is electrically insulated due to its design or the running rails or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HollowSleeperUsage</Name>
+      <Definition>Indicates the purpose of using hollow sleeper. The possible value can be eg. cable trenching, protection of turnout mechanism, etc.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfTrackCenters</Name>
+      <Definition>Indicates the number of track centers running over the sleepers.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsHollowSleeper</Name>
+      <Definition>Indicates whether the sleeper is hollowed or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

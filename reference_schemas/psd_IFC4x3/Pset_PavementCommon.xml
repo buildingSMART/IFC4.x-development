@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_PavementCommon</Name>
+  <Definition>Describes the common properties and nominal dimensions of pavement.Property use clarification
+The nominal thickness of the pavement remains constant with the value from NominalThickness, unless the property NominalThicknessEnd is provided. In which case NominalThickness is the value at the beginning of a transition (usually at the object placement location). e.g. a (road) transition segment where the pavement object's linear placement along an alignment denotes the beginning location and NominalThicknessEnd is the value at the end as indicated by the property NominalLength. In the case of local placements, it is user defined along which axis lengths and widths are measured.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcPavement</ClassName>
+    <ClassName>IfcPavementType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcPavement,IfcPavementType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as &quot;construction type&quot;. It should be provided as an alternative to the name of the &quot;object type&quot;, if the software does not support object types and no classification reference to a recognized classification system used.IFC4.3.0.0 DEPRECATION  The Reference property is deprecated and shall no longer be used, use attribute Name on the relating type instead.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElementStatus">
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalThicknessEnd</Name>
+      <Definition>The nominal thickness of the object after a transition from its original value. The size information is provided in addition to the shape representation and the geometric parameters used within. In case of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>StructuralSlope</Name>
+      <Definition>The nominal side slope (allowable steepness) of the pavement structure (not including side slope fill) as a positive ratio measure. The slope  information is provided in addition to the shape representation and the geometric parameters used within. In case of inconsistency between the geometric parameters take precedence. Value is typically less than 1.0 (1:1) but may be greater than that for steeper slopes.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>StructuralSlopeType</Name>
+      <Definition>User defined description on the type of slope used for the pavement structure (not including side slope fill) . Examples are &quot;Even&quot; or &quot;Stepped&quot;.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalWidth</Name>
+      <Definition>The nominal overall width of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalLength</Name>
+      <Definition>The nominal overall length of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In case of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalThickness</Name>
+      <Definition>The nominal thickness of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In case of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

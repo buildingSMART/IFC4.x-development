@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DiscreteAccessoryTypeRailBrace</Name>
+  <Definition>Properties of a rail brace. The property set can be used by the predefined type RAILBRACE of IfcDiscreteAccessory.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDiscreteAccessory/RAILBRACE</ClassName>
+    <ClassName>IfcDiscreteAccessoryType/RAILBRACE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDiscreteAccessory/RAILBRACE,IfcDiscreteAccessoryType/RAILBRACE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>IsTemporary</Name>
+      <Definition>Indicates if the installation of the element is temporary or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

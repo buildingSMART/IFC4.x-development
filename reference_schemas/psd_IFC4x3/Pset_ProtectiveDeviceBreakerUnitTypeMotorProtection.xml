@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ProtectiveDeviceBreakerUnitTypeMotorProtection</Name>
+  <Definition>A coherent set of attributes representing different capacities of a a motor protection device, defined in accordance with IEC 60947. Note - A protective device may be associated with different instances of this Pset.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDevice</ClassName>
+    <ClassName>IfcProtectiveDeviceType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDevice,IfcProtectiveDeviceType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>PerformanceClasses</Name>
+      <Definition>A set of designations of performance classes for the breaker unit for which the data of this instance is valid.
+
+A set of designations of performance classes for the breaker unit for which the data of this instance is valid. A breaker unit being a motor protection device may be
+constructed for different levels of breaking capacities. A maximum of 7 different
+performance classes may be provided. Examples of performance classes that may be specified include B, C, N, S, H, L, V.</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcLabel"/>
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VoltageLevel</Name>
+      <Definition>The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_VoltageLevels">
+            <EnumItem>U1000</EnumItem>
+            <EnumItem>U230</EnumItem>
+            <EnumItem>U400</EnumItem>
+            <EnumItem>U440</EnumItem>
+            <EnumItem>U525</EnumItem>
+            <EnumItem>U690</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ICU60947</Name>
+      <Definition>The ultimate breaking capacity in [A] for an object tested in accordance with the IEC 60947 series.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ICS60947</Name>
+      <Definition>The service breaking capacity in [A] for an object tested in accordance with the IEC 60947 series.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ICW60947</Name>
+      <Definition>The thermal withstand current in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series. The value shall be related to 1 s.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ICM60947</Name>
+      <Definition>The making capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

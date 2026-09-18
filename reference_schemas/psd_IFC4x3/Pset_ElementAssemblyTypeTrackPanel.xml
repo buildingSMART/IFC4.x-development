@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElementAssemblyTypeTrackPanel</Name>
+  <Definition>Track panel properties used in railway. The property set can be used by the predefined type TRACK_PANEL of IfcElementAssembly.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElementAssembly/TRACKPANEL</ClassName>
+    <ClassName>IfcElementAssemblyType/TRACKPANEL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElementAssembly/TRACKPANEL,IfcElementAssemblyType/TRACKPANEL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>IsAccessibleByVehicle</Name>
+      <Definition>Indicates whether the element is accessible by a vehicle or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TrackExpansion</Name>
+      <Definition>In curvature context, bounded value of the expansion distance that can be added to rail gauge.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InstallationPlan</Name>
+      <Definition>Reference to external information source about installation or construction plan of the element.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcDocumentReference"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

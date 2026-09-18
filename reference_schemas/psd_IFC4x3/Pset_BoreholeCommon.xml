@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_BoreholeCommon</Name>
+  <Definition>Properties describing the features of a borehole (if not modelled separately).</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcBorehole</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBorehole</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>BoreholeState</Name>
+      <Definition>The state the borehole or trial pit has been left in. (boreholeML).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BoreholeState">
+            <EnumItem>CAP_REPLACED</EnumItem>
+            <EnumItem>CASING_INSTALLED</EnumItem>
+            <EnumItem>CASING_PARTIALLY_REPLACED</EnumItem>
+            <EnumItem>CASING_REPLACED</EnumItem>
+            <EnumItem>CHAMBER_RECONDITIONED</EnumItem>
+            <EnumItem>DECONSTRUCTED</EnumItem>
+            <EnumItem>INSTALLED</EnumItem>
+            <EnumItem>PARTIALLY_DECONSTRUCTED</EnumItem>
+            <EnumItem>PARTIALLY_REFILLED</EnumItem>
+            <EnumItem>RECONDITIONED</EnumItem>
+            <EnumItem>REFILLED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CapDepth</Name>
+      <Definition>Depth of cap (boreholeML).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CapMaterial</Name>
+      <Definition>Cap material or 'NOT CAPPED' or 'UNKNOWN' (boreholeML).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FillingDepth</Name>
+      <Definition>Depth of filling (boreholeML).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FillingMaterial</Name>
+      <Definition>Filling material or 'NOT FILLED' or 'UNKNOWN' (boreholeML).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>GroundwaterDepth</Name>
+      <Definition>Depth groundwater encountered (boreholeML).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LiningMaterial</Name>
+      <Definition>Lining material or 'NOT LINED' or 'UNKNOWN' (boreholeML).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LiningThickness</Name>
+      <Definition>Thickness of the lining.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

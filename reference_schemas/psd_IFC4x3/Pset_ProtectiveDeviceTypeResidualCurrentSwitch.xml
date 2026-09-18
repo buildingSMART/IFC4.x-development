@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ProtectiveDeviceTypeResidualCurrentSwitch</Name>
+  <Definition>A residual current switch opens, closes or isolates a circuit and has no short circuit or overload protection.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDevice/RESIDUALCURRENTSWITCH</ClassName>
+    <ClassName>IfcProtectiveDeviceType/RESIDUALCURRENTSWITCH</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDevice/RESIDUALCURRENTSWITCH,IfcProtectiveDeviceType/RESIDUALCURRENTSWITCH</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Sensitivity</Name>
+      <Definition>Sensitivity.
+
+Current leakage to an unwanted leading path during normal operation (IEC 151-14-49).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

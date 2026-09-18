@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_CurtainWallQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of curtain walls.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCurtainWall</ClassName>
+    <ClassName>IfcCurtainWallType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCurtainWall,IfcCurtainWallType</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Length</Name>
+      <Definition>The length of the object.
+
+Along center line (even if different to the wall path).</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Height</Name>
+      <Definition>Characteristic height
+
+Total height of the curtain wall. It should only be provided, if it is constant along the curtain wall path.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Width</Name>
+      <Definition>The width of the object. Only given, if the object has constant thickness (prismatic).
+
+Only be provided, if it is constant along the curtain wall path.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossSideArea</Name>
+      <Definition>Area of the wall as viewed by an elevation view of the middle plane of the wall.  It does not take into account any wall modifications (such as openings).</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetSideArea</Name>
+      <Definition>Area of the object as viewed by an elevation view of the middle plane of the object. It does take into account all object modifications (such as openings).</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

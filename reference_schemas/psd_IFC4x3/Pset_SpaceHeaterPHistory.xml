@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SpaceHeaterPHistory</Name>
+  <Definition>Space heater performance history common attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSpaceHeater</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpaceHeater</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>FractionRadiantHeatTransfer</Name>
+      <Definition>Fraction of the total heat transfer rate as the radiant heat transfer.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FractionConvectiveHeatTransfer</Name>
+      <Definition>Fraction of the total heat transfer rate as the convective heat transfer.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Effectiveness</Name>
+      <Definition>Effectiveness, represented as ratio.
+
+Ratio of the real heat transfer rate to the maximum possible heat transfer rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SurfaceTemperature</Name>
+      <Definition>Average surface temperature of the component.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SpaceAirTemperature</Name>
+      <Definition>Dry bulb temperature in the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SpaceMeanRadiantTemperature</Name>
+      <Definition>Mean radiant temperature in the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AuxiliaryEnergySourceConsumption</Name>
+      <Definition>Auxiliary energy source consumption.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>UACurve</Name>
+      <Definition>UA value.
+
+As a function of ambient temperature and surface temperature; UA = f (Tambient, Tsurface)</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OutputCapacityCurve</Name>
+      <Definition>Partial output capacity curve (as a function of water temperature); Q = f (Twater).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AirResistanceCurve</Name>
+      <Definition>Air resistance curve (w/ fan only); Pressure = f ( flow rate).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CharacteristicExponent</Name>
+      <Definition>Characteristic exponent, slope of log(heat output) vs log (surface temperature minus environmental temperature).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HeatOutputRate</Name>
+      <Definition>Overall heat transfer rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

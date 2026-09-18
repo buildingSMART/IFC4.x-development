@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_TransitionSectionCommon</Name>
+  <Definition>Properties for a transition section.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcEarthworksFill/TRANSITIONSECTION</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcEarthworksFill/TRANSITIONSECTION</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NominalLength</Name>
+      <Definition>The nominal overall length of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In case of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SlabTypeTrackSlab</Name>
+  <Definition>Properties in this property set are generally applicable slabs used in railway tracks, modelled as IfcSlab with PredefinedType TRACKSLAB.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSlab/TRACKSLAB</ClassName>
+    <ClassName>IfcSlabType/TRACKSLAB</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSlab/TRACKSLAB,IfcSlabType/TRACKSLAB</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>TechnicalStandard</Name>
+      <Definition>The technical standard which the element should comply with.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

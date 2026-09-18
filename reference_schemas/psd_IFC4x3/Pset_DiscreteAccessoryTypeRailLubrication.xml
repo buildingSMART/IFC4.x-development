@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DiscreteAccessoryTypeRailLubrication</Name>
+  <Definition>Properties of rail lubrication equipment. The property set can be used by the predefined type RAIL_LUBRICATION of IfcDiscreteAccessory.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDiscreteAccessory/RAIL_LUBRICATION</ClassName>
+    <ClassName>IfcDiscreteAccessoryType/RAIL_LUBRICATION</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDiscreteAccessory/RAIL_LUBRICATION,IfcDiscreteAccessoryType/RAIL_LUBRICATION</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>PositionInTrack</Name>
+      <Definition>Indicates the relative position of the element in track, which lies to the left or right as facing in the direction of increasing stationing values.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RelativePosition">
+            <EnumItem>LEFT</EnumItem>
+            <EnumItem>MIDDLE</EnumItem>
+            <EnumItem>RIGHT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumNoiseEmissions</Name>
+      <Definition>Maximum noise emissions limit at this location.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcSoundPowerLevelMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LubricationSystemType</Name>
+      <Definition>Design and type of lubricating system e.g. active, passive.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_LubricationSystemType">
+            <EnumItem>ACTIVE_LUBRICATION</EnumItem>
+            <EnumItem>PASSIVE_LUBRICATION</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LubricationPowerSupplyType</Name>
+      <Definition>Type of power supply method used by the rail lubrication.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_LubricationPowerSupply">
+            <EnumItem>ELECTRIC</EnumItem>
+            <EnumItem>PHOTOVOLTAIC</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RoadMarkingCommon</Name>
+  <Definition>Properties for road markings.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSurfaceFeature/HATCHMARKING</ClassName>
+    <ClassName>IfcSurfaceFeature/LINEMARKING</ClassName>
+    <ClassName>IfcSurfaceFeature/PAVEMENTSURFACEMARKING</ClassName>
+    <ClassName>IfcSurfaceFeature/SYMBOLMARKING</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSurfaceFeature/HATCHMARKING,IfcSurfaceFeature/LINEMARKING,IfcSurfaceFeature/PAVEMENTSURFACEMARKING,IfcSurfaceFeature/SYMBOLMARKING</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ApplicationMethod</Name>
+      <Definition>State the application method used... e.g. spray, extruded</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DiagramNumber</Name>
+      <Definition>A designator with content according to local standards, e.g. M25.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaterialColour</Name>
+      <Definition>Actual colour on the road marking material</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaterialThickness</Name>
+      <Definition>Nominal thickness of the applied material</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaterialType</Name>
+      <Definition>Material type used... e.g. paint, tape, thermoplastic, stone</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Structure</Name>
+      <Definition>State if marking is Structured or not, and what type... e.g. Kamflex, Longflex, Dropflex</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

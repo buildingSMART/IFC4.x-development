@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SpaceFireSafetyRequirements</Name>
+  <Definition>Properties related to fire protection of spaces that apply to the occurrences of IfcSpace or IfcZone.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSpatialElement</ClassName>
+    <ClassName>IfcSpatialZone</ClassName>
+    <ClassName>IfcZone</ClassName>
+    <ClassName>IfcSpatialElementType</ClassName>
+    <ClassName>IfcSpatialZoneType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpatialElement,IfcSpatialZone,IfcZone,IfcSpatialElementType,IfcSpatialZoneType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>FireRiskFactor</Name>
+      <Definition>Fire Risk factor assigned to the space according to local building regulations. It defines the fire risk of the space at several levels of fire hazard.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FlammableStorage</Name>
+      <Definition>Indication whether the space is intended to serve as a storage of flammable material (which is regarded as such by the presiding building code. (TRUE) indicates yes, (FALSE) otherwise.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FireExit</Name>
+      <Definition>Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).
+
+Here whether the space (in case of e.g., a corridor) is designed to serve as an exit space, e.g., for fire escape purposes.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SprinklerProtection</Name>
+      <Definition>Indication whether this object is sprinkler protected (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SprinklerProtectionAutomatic</Name>
+      <Definition>Indication whether this object has an automatic sprinkler protection (TRUE) or not (FALSE).
+It should only be given, if the property &quot;SprinklerProtection&quot; is set to TRUE.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AirPressurization</Name>
+      <Definition>Indication whether the space is required to have pressurized air (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

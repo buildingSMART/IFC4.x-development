@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_AnnotationContourLine</Name>
+  <Definition>Specifies properties of a standard curve that has a single, consistent measure value.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAnnotation/CONTOURLINE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAnnotation/CONTOURLINE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ContourValue</Name>
+      <Definition>Value of the elevation of the contour above or below a reference plane.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

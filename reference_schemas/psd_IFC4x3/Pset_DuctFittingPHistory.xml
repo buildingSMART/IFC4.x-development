@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DuctFittingPHistory</Name>
+  <Definition>Duct fitting performance history common attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDuctFitting</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDuctFitting</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>LossCoefficient</Name>
+      <Definition>Dimensionless loss coefficient used for calculating fluid resistance representing the ratio of total pressure loss to velocity pressure at a referenced cross-section.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AtmosphericPressure</Name>
+      <Definition>Ambient atmospheric pressure.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AirFlowLeakage</Name>
+      <Definition>Volumetric leakage flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

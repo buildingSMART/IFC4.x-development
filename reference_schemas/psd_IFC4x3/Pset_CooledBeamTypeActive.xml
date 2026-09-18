@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CooledBeamTypeActive</Name>
+  <Definition>Active (ventilated) cooled beam common attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCooledBeam/ACTIVE</ClassName>
+    <ClassName>IfcCooledBeamType/ACTIVE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCooledBeam/ACTIVE,IfcCooledBeamType/ACTIVE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AirFlowConfiguration</Name>
+      <Definition>Air flow configuration type of cooled beam.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CooledBeamActiveAirFlowConfigurationType">
+            <EnumItem>BIDIRECTIONAL</EnumItem>
+            <EnumItem>UNIDIRECTIONALLEFT</EnumItem>
+            <EnumItem>UNIDIRECTIONALRIGHT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AirFlowRateRange</Name>
+      <Definition>Possible range of airflow that can be delivered.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcVolumetricFlowRateMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SupplyAirConnectionType</Name>
+      <Definition>The manner in which the pipe connection is made to the cooled beam.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CooledBeamSupplyAirConnectionType">
+            <EnumItem>LEFT</EnumItem>
+            <EnumItem>RIGHT</EnumItem>
+            <EnumItem>STRAIGHT</EnumItem>
+            <EnumItem>TOP</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConnectionSize</Name>
+      <Definition>The connection size of the object.
+
+Duct connection diameter.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

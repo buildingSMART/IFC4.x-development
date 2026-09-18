@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FireSuppressionTerminalTypeFireHydrant</Name>
+  <Definition>Device, fitted to a pipe, through which a temporary supply of water may be provided (BS6100 330 6107)For further details on fire hydrants, see www.firehydrant.org</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFireSuppressionTerminal/FIREHYDRANT</ClassName>
+    <ClassName>IfcFireSuppressionTerminalType/FIREHYDRANT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFireSuppressionTerminal/FIREHYDRANT,IfcFireSuppressionTerminalType/FIREHYDRANT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>FireHydrantType</Name>
+      <Definition>Defines the range of hydrant types from which the required type can be selected where.DryBarrel:   A hydrant that has isolating valves fitted below ground and that may be used where the possibility of water freezing is a consideration.
+WetBarrel:   A hydrant that has isolating valves fitted above ground and that may be used where there is no possibility of water freezing.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FireHydrantType">
+            <EnumItem>DRYBARREL</EnumItem>
+            <EnumItem>WETBARREL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PumperConnectionSize</Name>
+      <Definition>The size of a connection to which a fire hose may be connected that is then linked to a pumping unit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfHoseConnections</Name>
+      <Definition>The number of hose connections on the hydrant (excluding the pumper connection).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HoseConnectionSize</Name>
+      <Definition>The size of connections to which a hose may be connected (other than that to be linked to a pumping unit).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DischargeFlowRate</Name>
+      <Definition>The volumetric rate of fluid discharge.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FlowClass</Name>
+      <Definition>Alphanumeric indication of the flow class of a hydrant (may be used in connection with or instead of the FlowRate property).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WaterIsPotable</Name>
+      <Definition>Indication of whether the water flow from the hydrant is potable (set TRUE) or non potable (set FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PressureRating</Name>
+      <Definition>Pressure rating of the object.
+
+Maximum pressure that the hydrant is manufactured to withstand.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BodyColour</Name>
+      <Definition>Colour of the body of the hydrant.Note: Consult local fire regulations for statutory colours that may be required for hydrant bodies in particular circumstances.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CapColour</Name>
+      <Definition>Colour of the caps of the hydrant.Note: Consult local fire regulations for statutory colours that may be required for hydrant caps in particular circumstances.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

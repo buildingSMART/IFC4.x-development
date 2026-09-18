@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_PipeConnectionFlanged</Name>
+  <Definition>This property set is used to define the specifics of a flanged pipe connection used between occurrences of pipe segments and fittings.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcPipeSegment</ClassName>
+    <ClassName>IfcPipeSegmentType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcPipeSegment,IfcPipeSegmentType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>FlangeTable</Name>
+      <Definition>Designation of the standard table to which the flange conforms.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FlangeStandard</Name>
+      <Definition>Designation of the standard describing the flange table.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BoreSize</Name>
+      <Definition>The nominal bore of the pipe flange.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FlangeDiameter</Name>
+      <Definition>Overall diameter of the flange.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FlangeThickness</Name>
+      <Definition>Thickness of the material from which the pipe bend is constructed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfBoltholes</Name>
+      <Definition>Number of boltholes in the flange.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BoltSize</Name>
+      <Definition>Size of the bolts securing the flange.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BoltholePitch</Name>
+      <Definition>Diameter of the circle along which the boltholes are placed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

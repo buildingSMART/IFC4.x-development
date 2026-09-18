@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_LaborResourceBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of labour resources.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcLaborResource</ClassName>
+    <ClassName>IfcLaborResourceType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcLaborResource,IfcLaborResourceType</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>StandardWork</Name>
+      <Definition>Work that is performed at regular times, up to a particular limit after which overtime rates may apply.</Definition>
+      <QtoType>Q_TIME</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>OvertimeWork</Name>
+      <Definition>Work that is performed after exceeding a particular limit such as hours per day and/or hours per week, after which company or municipal policy requires a different rate to apply.  Note: Policies for when overtime takes effect are the responsibility of the user or application; they are not modelled in IFC.</Definition>
+      <QtoType>Q_TIME</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

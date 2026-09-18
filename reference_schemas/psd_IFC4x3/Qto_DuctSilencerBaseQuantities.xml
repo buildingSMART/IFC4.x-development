@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_DuctSilencerBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all types of duct silencers.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDuctSilencer</ClassName>
+    <ClassName>IfcDuctSilencerType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDuctSilencer,IfcDuctSilencerType</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>GrossWeight</Name>
+      <Definition>Total Gross Weight of the object without any add-on parts and not taking into account possible processing features (cut-out's, etc.) or openings and recesses.</Definition>
+      <QtoType>Q_WEIGHT</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

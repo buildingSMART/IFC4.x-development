@@ -1,0 +1,158 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FastenerWeld</Name>
+  <Definition>Properties related to welded connections.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFastener/WELD</ClassName>
+    <ClassName>IfcFastenerType/WELD</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFastener/WELD,IfcFastenerType/WELD</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Type1</Name>
+      <Definition>Type of weld seam according to ISO 2553.  Note, combined welds are given by two corresponding symbols in the direction of the normal axis of the coordinate system.  For example, an X weld is specified by Type1 = 'V' and Type2 = 'V'.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Type2</Name>
+      <Definition>See Type1.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Surface1</Name>
+      <Definition>Aspect of weld seam surface, i.e. 'plane', 'curved' or 'hollow'.  Combined welds are given by two corresponding symbols analogous to Type1 and Type2.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Surface2</Name>
+      <Definition>See Surface1.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Process</Name>
+      <Definition>Reference number of the welding process according to ISO 4063, an up to three digits long code</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ProcessName</Name>
+      <Definition>Name of the welding process.  Alternative to the numeric Process property.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalThroatThickness</Name>
+      <Definition>Design value of the height of the largest isosceles triangle that can be inscribed in the section of a fillet weld.REFERENCE Symbol a according to ISO 2553:2019.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WeldWidth</Name>
+      <Definition>Required elongated hole width at the faying surface or seam weld width at the faying surface.REFERENCE Symbol c according to ISO 2553:2019.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WeldDiameter</Name>
+      <Definition>Dimension of the required hole diameter at the faying surface, or required spot weld diameter at the faying surface, or required stud diameter.REFERENCE Symbol d according to ISO 2553:2019.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WeldElementSpacing</Name>
+      <Definition>Spacing between weld elements (centre to centre)REFERENCE Symbol e according to ISO 2553:2019.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WeldElementLength</Name>
+      <Definition>Length of each weld element.REFERENCE Symbol l according to ISO 2553:2019.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfWeldElements</Name>
+      <Definition>Number of weld elements.REFERENCE Symbol n according to ISO 2553:2019.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DeepPenetrationThroatThickness</Name>
+      <Definition>Nominal throat thickness or effective throat thickness to which a certain amount of fusion penetration is added.REFERENCE Symbol s according to ISO 2553:2019.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WeldLegLength</Name>
+      <Definition>Distance from the actual or projected intersection of the fusion faces and the toe of a fillet weld, measured across the fusion face.REFERENCE Symbol z according to ISO 2553:2019.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Intermittent</Name>
+      <Definition>If fillet weld, intermittent or not</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Staggered</Name>
+      <Definition>If intermittent weld, staggered or not</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

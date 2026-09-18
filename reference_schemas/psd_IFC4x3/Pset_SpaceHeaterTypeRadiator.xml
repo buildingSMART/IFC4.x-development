@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SpaceHeaterTypeRadiator</Name>
+  <Definition>Space heater type radiator attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSpaceHeater/RADIATOR</ClassName>
+    <ClassName>IfcSpaceHeaterType/RADIATOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpaceHeater/RADIATOR,IfcSpaceHeaterType/RADIATOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>RadiatorType</Name>
+      <Definition>Indicates the type of radiator.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SpaceHeaterRadiatorType">
+            <EnumItem>FINNEDTUBE</EnumItem>
+            <EnumItem>PANEL</EnumItem>
+            <EnumItem>SECTIONAL</EnumItem>
+            <EnumItem>TUBULAR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TubingLength</Name>
+      <Definition>Water tube length inside the component.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WaterContent</Name>
+      <Definition>Weight of water content within the heater.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMassMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

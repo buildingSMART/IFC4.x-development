@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DiscreteAccessoryCornerFixingPlate</Name>
+  <Definition>Properties specific to corner fixing plates.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDiscreteAccessory</ClassName>
+    <ClassName>IfcDiscreteAccessoryType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDiscreteAccessory,IfcDiscreteAccessoryType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>CornerFixingPlateLength</Name>
+      <Definition>The length of the L-shaped corner plate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CornerFixingPlateThickness</Name>
+      <Definition>The thickness of the L-shaped corner plate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CornerFixingPlateFlangeWidthInPlaneZ</Name>
+      <Definition>The flange width of the L-shaped corner plate in plane Z.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CornerFixingPlateFlangeWidthInPlaneX</Name>
+      <Definition>The flange width of the L-shaped corner plate in plane X.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

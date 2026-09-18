@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MooringDeviceCommon</Name>
+  <Definition>Properties common to the definition of all occurrences of IfcMooringDevice and types of IfcMooringDeviceType.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcMooringDevice</ClassName>
+    <ClassName>IfcMooringDeviceType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMooringDevice,IfcMooringDeviceType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>DeviceType</Name>
+      <Definition>Mooring device type</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_MooringDeviceType">
+            <EnumItem>CLEAT</EnumItem>
+            <EnumItem>DOUBLEBUTT</EnumItem>
+            <EnumItem>HORN</EnumItem>
+            <EnumItem>KIDNEY</EnumItem>
+            <EnumItem>PILLAR</EnumItem>
+            <EnumItem>RING</EnumItem>
+            <EnumItem>SINGLEBUTT</EnumItem>
+            <EnumItem>THEAD</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DeviceCapacity</Name>
+      <Definition>Mooring device force capacity</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcForceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AnchorageType</Name>
+      <Definition>Mooring device anchorage type</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AnchorageType">
+            <EnumItem>CASTIN</EnumItem>
+            <EnumItem>DRILLEDANDFIXED</EnumItem>
+            <EnumItem>THROUGHBOLTED</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MinumumLineSlope</Name>
+      <Definition>Minimum allowable line angle in degrees (negative if below horizontal from quay)</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumLineSlope</Name>
+      <Definition>Maximum allowable line angle in degrees (negative if below horizontal from quay)</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumLineCount</Name>
+      <Definition>Maximum number of lines that may be secured to the mooring device.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

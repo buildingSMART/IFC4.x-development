@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElectricalDeviceCompliance</Name>
+  <Definition>Properties related to information about compliance to standards or regulations of electric devices.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDistributionElement</ClassName>
+    <ClassName>IfcDistributionElementType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionElement,IfcDistributionElementType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ElectroMagneticStandardsCompliance</Name>
+      <Definition>Information about compliance with regard to electro magnetic related standards.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcLabel"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcBoolean"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ExplosiveAtmosphereStandardsCompliance</Name>
+      <Definition>Information about compliance with regard to explosive atmosphere related standards.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcLabel"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcBoolean"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FireProofingStandardsCompliance</Name>
+      <Definition>Information about compliance with regard to fire proofing related standards.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcLabel"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcBoolean"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LightningProtectionStandardsCompliance</Name>
+      <Definition>Information about compliance with regard to lightning protection related standards.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcLabel"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcBoolean"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElectricApplianceTypeDishwasher</Name>
+  <Definition>Common properties for dishwasher appliances.  HISTORY: Added in IFC4.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElectricAppliance/DISHWASHER</ClassName>
+    <ClassName>IfcElectricApplianceType/DISHWASHER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElectricAppliance/DISHWASHER,IfcElectricApplianceType/DISHWASHER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>DishwasherType</Name>
+      <Definition>Type of dishwasher.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElectricApplianceDishwasherType">
+            <EnumItem>BOTTLEWASHER</EnumItem>
+            <EnumItem>CUTLERYWASHER</EnumItem>
+            <EnumItem>DISHWASHER</EnumItem>
+            <EnumItem>POTWASHER</EnumItem>
+            <EnumItem>TRAYWASHER</EnumItem>
+            <EnumItem>UNKNOWN</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

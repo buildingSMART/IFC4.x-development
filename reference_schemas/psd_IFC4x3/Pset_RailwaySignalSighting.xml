@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RailwaySignalSighting</Name>
+  <Definition>Properties that define information about signal sighting or visibility in railways. These properties are applicable to occurrences of IfcSignal and IfcSign.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSignal</ClassName>
+    <ClassName>IfcSign</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSignal,IfcSign</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SignalSightingAchievableDistance</Name>
+      <Definition>Reading distance of the signal, which is achievable with the help of mitigation works.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalSightingAvailableDistance</Name>
+      <Definition>Reading distance of the signal without having any mitigation works.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalSightingCombinedWithRepeater</Name>
+      <Definition>Combined reading distance for the signal and any associated repeaters.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalSightingMinimum</Name>
+      <Definition>Minimal distance in which the signal has to be readable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalSightingPreferred</Name>
+      <Definition>Preferred distance in which the signal shall be readable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalSightingRouteIndicator</Name>
+      <Definition>Required reading distance for the route indicator.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalViewingMinimumInFront</Name>
+      <Definition>Smallest distance where the signal has to be readable (for train very close to the signal).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>
