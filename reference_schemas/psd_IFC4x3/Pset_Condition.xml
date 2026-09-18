@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_Condition</Name>
+  <Definition>Determines the state or condition of an element at a particular point in time.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAsset</ClassName>
+    <ClassName>IfcElement</ClassName>
+    <ClassName>IfcSystem</ClassName>
+    <ClassName>IfcElementType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAsset,IfcElement,IfcSystem,IfcElementType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AssessmentDate</Name>
+      <Definition>Date on which the overall condition is assessed</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDate"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AssessmentCondition</Name>
+      <Definition>The overall condition of a product based on an assessment of the contributions to the overall condition made by the various criteria considered. The meanings given to the values of assessed condition should be agreed and documented by local agreements. For instance, is overall condition measured on a scale of 1 - 10 or by assigning names such as Good, OK, Poor.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AssessmentDescription</Name>
+      <Definition>Qualitative description of the condition.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AssessmentType</Name>
+      <Definition>Category of latest condition assessment report of the asset.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AssessmentMethod</Name>
+      <Definition>External reference to assessment method or application used to perform the assessment.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcDocumentReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LastAssessmentReport</Name>
+      <Definition>Reference to latest condition (state of health) report.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NextAssessmentDate</Name>
+      <Definition>Date of next condition inspection</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDate"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AssessmentFrequency</Name>
+      <Definition>Indicates how often the equipment should be assessed, to have a clear estimation on its working state, based on which the maintenance staff can decide whether it requires maintenance or requires to be updated or replaced.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

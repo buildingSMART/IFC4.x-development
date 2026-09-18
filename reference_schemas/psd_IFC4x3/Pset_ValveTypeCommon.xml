@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ValveTypeCommon</Name>
+  <Definition>Valve type common attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcValve</ClassName>
+    <ClassName>IfcValveType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcValve,IfcValveType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as &quot;construction type&quot;. It should be provided as an alternative to the name of the &quot;object type&quot;, if the software does not support object types and no classification reference to a recognized classification system used.IFC4.3.0.0 DEPRECATION  The Reference property is deprecated and shall no longer be used, use attribute Name on the relating type instead.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElementStatus">
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ValvePattern</Name>
+      <Definition>The configuration of the ports of a valve according to either the linear route taken by a fluid flowing through the valve or by the number of ports where:SINGLEPORT: Valve that has a single entry port from the system that it serves, the exit port being to the surrounding environment.
+ANGLED_2_PORT: Valve in which the direction of flow is changed through 90 degrees.
+STRAIGHT_2_PORT: Valve in which the flow is straight through.
+STRAIGHT_3_PORT: Valve with three separate ports.
+CROSSOVER_4_PORT: Valve with 4 separate ports.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ValvePattern">
+            <EnumItem>ANGLED_2_PORT</EnumItem>
+            <EnumItem>CROSSOVER_4_PORT</EnumItem>
+            <EnumItem>SINGLEPORT</EnumItem>
+            <EnumItem>STRAIGHT_2_PORT</EnumItem>
+            <EnumItem>STRAIGHT_3_PORT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ValveOperation</Name>
+      <Definition>The method of valve operation where:DROPWEIGHT: A valve that is closed by the action of a weighted lever being released, the weight normally being prevented from dropping by being held by a wire, the closure normally being made by the action of heat on a fusible link in the wire
+FLOAT: A valve that is opened and closed by the action of a float that rises and falls with water level. The float may be a ball attached to a lever or other mechanism
+HYDRAULIC: A valve that is opened and closed by hydraulic actuation
+LEVER: A valve that is opened and closed by the action of a lever rotating the gate within the valve.
+LOCKSHIELD: A valve that requires the use of a special lockshield key for opening and closing, the operating mechanism being protected by a shroud during normal operation.
+MOTORIZED: A valve that is opened and closed by the action of an electric motor on an actuator
+PNEUMATIC: A valve that is opened and closed by pneumatic actuation
+SOLENOID: A valve that is normally held open by a magnetic field in a coil acting on the gate but that is closed immediately if the electrical current generating the magnetic field is removed.
+SPRING: A valve that is normally held in position by the pressure of a spring on a plate but that may be caused to open if the pressure of the fluid is sufficient to overcome the spring pressure.
+THERMOSTATIC: A valve in which the ports are opened or closed to maintain a required predetermined temperature.
+WHEEL: A valve that is opened and closed by the action of a wheel moving the gate within the valve.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ValveOperation">
+            <EnumItem>DROPWEIGHT</EnumItem>
+            <EnumItem>FLOAT</EnumItem>
+            <EnumItem>HYDRAULIC</EnumItem>
+            <EnumItem>LEVER</EnumItem>
+            <EnumItem>LOCKSHIELD</EnumItem>
+            <EnumItem>MOTORIZED</EnumItem>
+            <EnumItem>PNEUMATIC</EnumItem>
+            <EnumItem>SOLENOID</EnumItem>
+            <EnumItem>SPRING</EnumItem>
+            <EnumItem>THERMOSTATIC</EnumItem>
+            <EnumItem>WHEEL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ValveMechanism</Name>
+      <Definition>The mechanism by which the valve function is achieved where:BALL: Valve that has a ported ball that can be turned relative to the body seat ports.
+BUTTERFLY: Valve in which a streamlined disc pivots about a diametric axis.
+CONFIGUREDGATE: Screwdown valve in which the closing gate is shaped in a configured manner to have a more precise control of pressure and flow change across the valve.
+GLAND: Valve with a tapered seating, in which a rotatable plug is retained by means of a gland and gland packing.
+GLOBE: Screwdown valve that has a spherical body.
+LUBRICATEDPLUG: Plug valve in which a lubricant is injected under pressure between the plug face and the body.
+NEEDLE: Valve for regulating the flow in or from a pipe, in which a slender cone moves along the axis of flow to close against a fixed conical seat.
+PARALLELSLIDE: Screwdown valve that has a machined plate that slides in formed grooves to form a seal.
+PLUG: Valve that has a ported plug that can be turned relative to the body seat ports.
+WEDGEGATE: Screwdown valve that has a wedge shaped plate fitting into tapered guides to form a seal.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ValveMechanism">
+            <EnumItem>BALL</EnumItem>
+            <EnumItem>BUTTERFLY</EnumItem>
+            <EnumItem>CONFIGUREDGATE</EnumItem>
+            <EnumItem>GLAND</EnumItem>
+            <EnumItem>GLOBE</EnumItem>
+            <EnumItem>LUBRICATEDPLUG</EnumItem>
+            <EnumItem>NEEDLE</EnumItem>
+            <EnumItem>PARALLELSLIDE</EnumItem>
+            <EnumItem>PLUG</EnumItem>
+            <EnumItem>WEDGEGATE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Size</Name>
+      <Definition>The size of the connection to the valve (or to each connection for faucets, mixing valves, etc.).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TestPressure</Name>
+      <Definition>The maximum pressure to which the valve has been subjected under test.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WorkingPressure</Name>
+      <Definition>Working pressure.
+
+The normally expected maximum working pressure of the valve.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FlowCoefficient</Name>
+      <Definition>Flow coefficient (the quantity of fluid that passes through a fully open valve at unit pressure drop), typically expressed as the Kv or Cv value for the valve.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CloseOffRating</Name>
+      <Definition>Close off rating.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

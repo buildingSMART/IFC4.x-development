@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_ArealStratumBaseQuantities</Name>
+  <Definition>Quantity measures associated to areal stratum such as in a geotechnical slice. Uncertainty is documented in Pset_Uncertainty.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcGeotechnicalStratum</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcGeotechnicalStratum</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Area</Name>
+      <Definition>Calculated area for the object.
+
+Area represented, if lower edge of stratum known.</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Length</Name>
+      <Definition>The length of the object.
+
+Of upper edge of slice.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>PlanLength</Name>
+      <Definition>Projected plan length of upper edge of slice.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

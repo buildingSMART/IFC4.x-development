@@ -1,0 +1,198 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SpaceHVACDesign</Name>
+  <Definition>Properties for HVAC requirements for spaces.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSpatialElement</ClassName>
+    <ClassName>IfcSpatialZone</ClassName>
+    <ClassName>IfcZone</ClassName>
+    <ClassName>IfcSpatialElementType</ClassName>
+    <ClassName>IfcSpatialZoneType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpatialElement,IfcSpatialZone,IfcZone,IfcSpatialElementType,IfcSpatialZoneType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>TemperatureSetPoint</Name>
+      <Definition>The temperature setpoint range and default setpoint.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TemperatureMax</Name>
+      <Definition>Maximal temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TemperatureMin</Name>
+      <Definition>Minimal temperature of the space or zone, that is required from user/designer view point. If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TemperatureSummerMax</Name>
+      <Definition>Maximal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TemperatureSummerMin</Name>
+      <Definition>Minimal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TemperatureWinterMax</Name>
+      <Definition>Maximal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TemperatureWinterMin</Name>
+      <Definition>Minimal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HumiditySetPoint</Name>
+      <Definition>Humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period. Provide this property, if no humidity range (Min-Max) is available.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HumidityMax</Name>
+      <Definition>Maximal permitted humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HumidityMin</Name>
+      <Definition>Minimal permitted humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HumiditySummer</Name>
+      <Definition>Humidity of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HumidityWinter</Name>
+      <Definition>Humidity of the space or zone for the cold (winter) period that is required from user/designer view point and provided as requirement for heating.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DiscontinuedHeating</Name>
+      <Definition>Indication whether discontinued heating is required/desirable from user/designer view point. (TRUE) if yes, (FALSE) otherwise.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NaturalVentilation</Name>
+      <Definition>Indication whether the space is required to have natural ventilation (TRUE), or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NaturalVentilationRate</Name>
+      <Definition>Indication of the requirement of a particular natural air ventilation rate, given in air changes per hour.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNumericMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MechanicalVentilation</Name>
+      <Definition>Indication whether the space is required to have mechanical ventilation (TRUE), or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MechanicalVentilationRate</Name>
+      <Definition>Indication of the requirement of a particular mechanical air ventilation rate, given in air changes per hour.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNumericMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AirConditioning</Name>
+      <Definition>Indication whether this space requires air conditioning provided (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AirConditioningCentral</Name>
+      <Definition>Indication whether the space  requires a central air conditioning provided (TRUE) or not (FALSE).
+It should only be given, if the property &quot;AirConditioning&quot; is set to TRUE.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AirHandlingName</Name>
+      <Definition>The name of the air side system.IfcRelServicesBuildings should be used to reference the correct AirHandlingSystem (IfcSystem)</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

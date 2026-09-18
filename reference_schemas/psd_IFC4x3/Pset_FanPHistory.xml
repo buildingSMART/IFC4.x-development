@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FanPHistory</Name>
+  <Definition>Fan performance history attributes.IFC2X2 CHANGE Sound attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFan</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFan</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>FanRotationSpeed</Name>
+      <Definition>Fan rotation speed.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WheelTipSpeed</Name>
+      <Definition>Fan blade tip speed, typically defined as the linear speed of the tip of the fan blade furthest from the shaft.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FanEfficiency</Name>
+      <Definition>Fan mechanical efficiency.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OverallEfficiency</Name>
+      <Definition>Total efficiency of object.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FanPowerRate</Name>
+      <Definition>Fan power consumption.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ShaftPowerRate</Name>
+      <Definition>Fan shaft power.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DischargeVelocity</Name>
+      <Definition>The speed at which air discharges from the fan through the fan housing discharge opening.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DischargePressureLoss</Name>
+      <Definition>Fan discharge pressure loss associated with the discharge arrangement.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DrivePowerLoss</Name>
+      <Definition>Fan drive power losses associated with the type of connection between the motor and the fan wheel.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

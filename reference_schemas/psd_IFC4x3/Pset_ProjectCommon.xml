@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ProjectCommon</Name>
+  <Definition>Property set for the application of high level project information.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProject</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProject</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ProjectType</Name>
+      <Definition>Additional typing of a project</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ProjectType">
+            <EnumItem>MODIFICATION</EnumItem>
+            <EnumItem>NEWBUILD</EnumItem>
+            <EnumItem>OPERATIONMAINTENANCE</EnumItem>
+            <EnumItem>RENOVATION</EnumItem>
+            <EnumItem>REPAIR</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ProjectInvestmentEstimate</Name>
+      <Definition>Estimate of investment cost</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcCostValue"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FundingSource</Name>
+      <Definition>Investment funding source</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ROI</Name>
+      <Definition>Return on Investment</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NetEarnedValue</Name>
+      <Definition>Net earned value</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcCostValue"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PaybackPeriod</Name>
+      <Definition>Payback period of investment</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDuration"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

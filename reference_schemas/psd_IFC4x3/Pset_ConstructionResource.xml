@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ConstructionResource</Name>
+  <Definition>Properties for tracking resource usage over time.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcConstructionResource</ClassName>
+    <ClassName>IfcConstructionResourceType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcConstructionResource,IfcConstructionResourceType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ScheduleWorkProgression</Name>
+      <Definition>The scheduled work on behalf of the resource allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ActualWorkTime</Name>
+      <Definition>The actual work on behalf of the resource allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RemainingWorkProgression</Name>
+      <Definition>The remaining work on behalf of the resource allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ScheduleCost</Name>
+      <Definition>The budgeted cost on behalf of the resource allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ActualCost</Name>
+      <Definition>The actual cost on behalf of the resource allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RemainingCost</Name>
+      <Definition>The remaining cost on behalf of the resource allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ScheduleCompletion</Name>
+      <Definition>The scheduled completion percentage of the allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ActualCompletion</Name>
+      <Definition>The actual completion percentage of the allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SanitaryTerminalTypeBath</Name>
+  <Definition>Sanitary appliance for immersion of the human body or parts of it (BS6100). HISTORY: In IFC4, Material and MaterialThickness properties removed. Use materials capabilities from IfcMaterialResource schema. Datatype of color changed to IfcLabel (still a string value)</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSanitaryTerminal/BATH</ClassName>
+    <ClassName>IfcSanitaryTerminalType/BATH</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSanitaryTerminal/BATH,IfcSanitaryTerminalType/BATH</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>BathType</Name>
+      <Definition>The property enumeration defines the types of bath that may be specified within the property set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BathType">
+            <EnumItem>DOMESTIC</EnumItem>
+            <EnumItem>FOOT</EnumItem>
+            <EnumItem>PLUNGE</EnumItem>
+            <EnumItem>POOL</EnumItem>
+            <EnumItem>SITZ</EnumItem>
+            <EnumItem>SPA</EnumItem>
+            <EnumItem>TREATMENT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DrainSize</Name>
+      <Definition>The size of the drain outlet connection from the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasGrabHandles</Name>
+      <Definition>Indicates whether the bath is fitted with handles that provide assistance to a bather in entering or leaving the bath.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

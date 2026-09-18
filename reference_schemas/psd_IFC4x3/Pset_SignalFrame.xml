@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SignalFrame</Name>
+  <Definition>Properties that define signal frame parameters for occurrences and types of IfcSignal applied in railways.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSignal</ClassName>
+    <ClassName>IfcSignalType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSignal,IfcSignalType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>BackboardType</Name>
+      <Definition>The type of the backboard of the signal frame.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalFrameType</Name>
+      <Definition>Type of frame, e.g. main frame, route indicator, speed indicator, direction indicator, etc.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalWidth</Name>
+      <Definition>The nominal overall width of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalIndicatorType</Name>
+      <Definition>Type of the indicators on a signal, e.g. route indicator, speed restriction indicator etc.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SignalIndicatorType">
+            <EnumItem>DEPARTUREINDICATOR</EnumItem>
+            <EnumItem>DEPARTUREROUTEINDICATOR</EnumItem>
+            <EnumItem>DERAILINDICATOR</EnumItem>
+            <EnumItem>ROLLINGSTOCKSTOPINDICATOR</EnumItem>
+            <EnumItem>ROUTEINDICATOR</EnumItem>
+            <EnumItem>SHUNTINGINDICATOR</EnumItem>
+            <EnumItem>SWITCHINDICATOR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalFrameBackboardHeight</Name>
+      <Definition>The nominal height of the signal frame backboard.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalFrameBackboardDiameter</Name>
+      <Definition>The nominal diameter of the signal frame backboard.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

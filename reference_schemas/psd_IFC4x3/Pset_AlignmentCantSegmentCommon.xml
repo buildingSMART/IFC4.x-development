@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_AlignmentCantSegmentCommon</Name>
+  <Definition>Properties common to the definition of all instances of alignment segment that have designParameters for cant.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAlignmentSegment</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAlignmentSegment</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>CantDeficiency</Name>
+      <Definition>Difference between applied cant and a higher equilibrium cant.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CantEquilibrium</Name>
+      <Definition>Cant at a particular speed at which the vehicle will have a resultant force perpendicular to the running plane.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>StartSmoothingLength</Name>
+      <Definition>Length for the circular transition change of curvature at the start of the cant segment, measured from the start of the cant segment to the end of the circular transition change of curvature.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EndSmoothingLength</Name>
+      <Definition>Length for the circular transition change of curvature at the end of the cant segment, measured from the start of the circular transition change of curvature to the end of the cant segment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

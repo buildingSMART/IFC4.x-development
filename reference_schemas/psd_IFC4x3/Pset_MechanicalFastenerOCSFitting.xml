@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MechanicalFastenerOCSFitting</Name>
+  <Definition>Common properties of clamps and fittings used in railway overhead contact system (OCS).</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcMechanicalFastener/COUPLER</ClassName>
+    <ClassName>IfcMechanicalFastenerType/COUPLER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMechanicalFastener/COUPLER,IfcMechanicalFastenerType/COUPLER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ManufacturingTechnology</Name>
+      <Definition>The method / technology used to produce the equipment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OCSFasteningType</Name>
+      <Definition>Indicates the type of the overhead contact system (OCS) mechanical fastener.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_OCSFasteningType">
+            <EnumItem>EARTHING_FITTING</EnumItem>
+            <EnumItem>JOINT_FITTING</EnumItem>
+            <EnumItem>REGISTRATION_FITTING</EnumItem>
+            <EnumItem>SUPPORT_FITTING</EnumItem>
+            <EnumItem>SUSPENSION_FITTING</EnumItem>
+            <EnumItem>TENSIONING_FITTING</EnumItem>
+            <EnumItem>TERMINATION_FITTING</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ProtectiveDeviceBreakerUnitI2TFuseCurve</Name>
+  <Definition>A coherent set of attributes representing curves for melting- and breaking-energy of a fuse. Note - A fuse may be associated with different instances of this property set providing information related to different  basic characteristics.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDevice</ClassName>
+    <ClassName>IfcProtectiveDeviceType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDevice,IfcProtectiveDeviceType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>VoltageLevel</Name>
+      <Definition>The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_VoltageLevels">
+            <EnumItem>U1000</EnumItem>
+            <EnumItem>U230</EnumItem>
+            <EnumItem>U400</EnumItem>
+            <EnumItem>U440</EnumItem>
+            <EnumItem>U525</EnumItem>
+            <EnumItem>U690</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BreakerUnitFuseMeltingCurve</Name>
+      <Definition>A curve that establishes the energy required to melt the fuse of a breaker unit when a particular prospective melting current is applied.  Note that the breaker unit fuse melting curve is defined within a Cartesian coordinate system and this fact must be:(1) Defining value: ProspectiveCurrentMelting :A list of minimum 2 and maximum 8 numbers providing the currents in [A] for points in the
+current/melting_energy log/log coordinate space. The curve is drawn as a straight line between two consecutive points.
+(2) Defined value: MeltingEnergy: A list of minimum 2 and maximum 8 numbers providing the energy whereby the fuse is starting to melt, I2t, in [A2s] for points in the current/melting_energy log/log coordinate space. The curve is drawn as a straight line between two consecutive points.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcElectricCurrentMeasure"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcReal"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BreakerUnitFuseBreakingingCurve</Name>
+      <Definition>A curve that establishes the let through breaking energy of a breaker unit when a particular prospective breaking current is applied.  Note that the breaker unit fuse breaking curve is defined within a Cartesian coordinate system and this fact must be:(1) Defining value: ProspectiveCurrentBreaking: A list of minimum 2 and maximum 8 numbers providing the currents in [A] for points in the
+current/breaking energy log/log coordinate space. The curve is drawn as a straight line between two consecutive points.
+(2) Defined value: LetThroughBreakingEnergy: A list of minimum 2 and maximum 8 numbers providing the breaking energy whereby the fuse has provided a break, I2t, in [A2s] for points in the current/breakting_energy log/log coordinate space. The curve is drawn as a straight line between two consecutive.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcElectricCurrentMeasure"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcReal"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

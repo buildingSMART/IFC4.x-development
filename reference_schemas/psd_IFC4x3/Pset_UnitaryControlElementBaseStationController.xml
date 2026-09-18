@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_UnitaryControlElementBaseStationController</Name>
+  <Definition>Properties that are applicable to IfcUnitaryControlElement with the predefined type set to BASESTATIONCONTROLLER.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcUnitaryControlElement/BASESTATIONCONTROLLER</ClassName>
+    <ClassName>IfcUnitaryControlElementType/BASESTATIONCONTROLLER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcUnitaryControlElement/BASESTATIONCONTROLLER,IfcUnitaryControlElementType/BASESTATIONCONTROLLER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NumberOfInterfaces</Name>
+      <Definition>Indicates the types of interfaces and their number in the device.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcLabel"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcInteger"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfManagedBTSs</Name>
+      <Definition>Indicates the maximum number of base transceiver stations (BTSs) that can be handled by the device.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfManagedCarriers</Name>
+      <Definition>Indicates how many carrier frequencies can be managed by the device.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

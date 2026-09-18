@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ControllerTypeTwoPosition</Name>
+  <Definition>Properties for signal handling for an analog controller taking disparate valued multiple inputs and creating a single valued binary output. HISTORY: In IFC4, extended properties to replace Pset_BinaryInput and Pset_BinaryOutput.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcController/TWOPOSITION</ClassName>
+    <ClassName>IfcControllerType/TWOPOSITION</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcController/TWOPOSITION,IfcControllerType/TWOPOSITION</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ControlType</Name>
+      <Definition>The type controller, signal modification effected and applicable ports
+
+LOWERLIMITSWITCH: Single analog input is read and if less than Value.LowerBound then True is written to the output value.
+UPPERLIMITSWITCH: Single analog input is read and if more than Value.UpperBound then True is written to the output value.
+LOWERBANDSWITCH: Single analog input is read and if less than Value.LowerBound+BandWidth then True is written to the output value.
+UPPERBANDSWITCH: Single analog input is read and if more than Value.UpperBound-BandWidth then True is written to the output value.
+NOT: Single binary input is read and the opposite value is written to the output value.
+AND: Two binary inputs are read and if both are True then True is written to the output value.
+OR: Two binary inputs are read and if either is True then True is written to the output value.
+XOR: Two binary inputs are read and if one is true then True is written to the output value.
+CALENDAR: No inputs; the current time is compared with an IfcWorkCalendar to which the IfcController is assigned and True is written if active.
+INPUT: Controller element is a dedicated input.
+OUTPUT: Controller element is a dedicated output.
+VARIABLE: Controller element is an in-memory variable.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ControllerTwoPositionType">
+            <EnumItem>AND</EnumItem>
+            <EnumItem>AVERAGE</EnumItem>
+            <EnumItem>CALENDAR</EnumItem>
+            <EnumItem>INPUT</EnumItem>
+            <EnumItem>LOWERBANDSWITCH</EnumItem>
+            <EnumItem>LOWERLIMITSWITCH</EnumItem>
+            <EnumItem>NOT</EnumItem>
+            <EnumItem>OR</EnumItem>
+            <EnumItem>OUTPUT</EnumItem>
+            <EnumItem>UPPERBANDSWITCH</EnumItem>
+            <EnumItem>UPPERLIMITSWITCH</EnumItem>
+            <EnumItem>VARIABLE</EnumItem>
+            <EnumItem>XOR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Labels</Name>
+      <Definition>Table mapping values to labels
+
+Labels indicate the meanings of True and False, such as 'Open' and 'Closed'</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcBoolean"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcLabel"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Polarity</Name>
+      <Definition>True indicates normal polarity; False indicates reverse polarity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Value</Name>
+      <Definition>The expected range and default value.
+
+The default value such as normally-closed or normally-open.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

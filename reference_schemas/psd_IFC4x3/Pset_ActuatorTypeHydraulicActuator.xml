@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ActuatorTypeHydraulicActuator</Name>
+  <Definition>A device that hydraulically actuates a control element.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcActuator/HYDRAULICACTUATOR</ClassName>
+    <ClassName>IfcActuatorType/HYDRAULICACTUATOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActuator/HYDRAULICACTUATOR,IfcActuatorType/HYDRAULICACTUATOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>InputPressure</Name>
+      <Definition>Maximum input or design pressure for the object.
+
+Maximum design pressure for the actuator.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InputFlowrate</Name>
+      <Definition>Maximum input flowrate requirement.
+
+Hydraulic flowrate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

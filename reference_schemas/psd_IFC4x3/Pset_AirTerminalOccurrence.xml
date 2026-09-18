@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_AirTerminalOccurrence</Name>
+  <Definition>Air terminal occurrence attributes attached to an instance of IfcAirTerminal.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAirTerminal</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAirTerminal</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AirFlowType</Name>
+      <Definition/>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalAirFlowType">
+            <EnumItem>EXHAUSTAIR</EnumItem>
+            <EnumItem>RETURNAIR</EnumItem>
+            <EnumItem>SUPPLYAIR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AirFlowRate</Name>
+      <Definition>Air flow rate.
+
+The actual airflow rate as designed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AirTerminalLocation</Name>
+      <Definition>Location  (a single type of diffuser can be used for multiple locations); high means close to ceiling.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalLocation">
+            <EnumItem>CEILINGINTERIOR</EnumItem>
+            <EnumItem>CEILINGPERIMETER</EnumItem>
+            <EnumItem>FLOOR</EnumItem>
+            <EnumItem>SIDEWALLHIGH</EnumItem>
+            <EnumItem>SIDEWALLLOW</EnumItem>
+            <EnumItem>SILL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

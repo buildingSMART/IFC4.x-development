@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ValvePHistory</Name>
+  <Definition>Valve performance history common attributes of a typical 2 port pattern type valve.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcValve</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcValve</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>PercentageOpen</Name>
+      <Definition>The ratio between the amount that the valve is open to the full open position of the valve.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MeasuredFlowRate</Name>
+      <Definition>The rate of flow of a fluid measured across the valve.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MeasuredPressureDrop</Name>
+      <Definition>The actual pressure drop in the fluid measured across the valve.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

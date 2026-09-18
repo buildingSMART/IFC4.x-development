@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MarkerGeneral</Name>
+  <Definition>Properties common to a signalling marker made as an assembly of elements. The property set can be used by the predefined type SIGNAL_ASSEMBLY of IfcElementAssembly.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElementAssembly/SIGNALASSEMBLY</ClassName>
+    <ClassName>IfcElementAssemblyType/SIGNALASSEMBLY</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElementAssembly/SIGNALASSEMBLY,IfcElementAssemblyType/SIGNALASSEMBLY</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ApproachSpeed</Name>
+      <Definition>The design speed of trains approaching the signal if different from the line speed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLinearVelocityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MarkerType</Name>
+      <Definition>The type of marker (sign) e.g. stop signal, restriction signal, track circuit tuning zone sign or others specified in PEnum_MarkerType.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_MarkerType">
+            <EnumItem>APPROACHING_MARKER</EnumItem>
+            <EnumItem>CABLE_POST_MARKER</EnumItem>
+            <EnumItem>COMMUNICATION_MODE_CONVERSION_MARKER</EnumItem>
+            <EnumItem>EMU_STOP_POSITION_SIGN</EnumItem>
+            <EnumItem>FOUR_ASPECT_CAB_SIGNAL_CONNECT_SIGN</EnumItem>
+            <EnumItem>FOUR_ASPECT_CAB_SIGNAL_DISCONNECT_SIGN</EnumItem>
+            <EnumItem>LEVEL_CONVERSION_SIGN</EnumItem>
+            <EnumItem>LOCOMOTIVE_STOP_POSITION_SIGN</EnumItem>
+            <EnumItem>RELAY_STATION_SIGN</EnumItem>
+            <EnumItem>RESTRICTION_PLACE_SIGN</EnumItem>
+            <EnumItem>RESTRICTION_PROTECTION_AREA_TERMINAL_SIGN</EnumItem>
+            <EnumItem>RESTRICTION_SIGN</EnumItem>
+            <EnumItem>SECTION_SIGNAL_MARKER</EnumItem>
+            <EnumItem>STOP_SIGN</EnumItem>
+            <EnumItem>TRACK_CIRCUIT_TUNING_ZONE_SIGN</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalHeight</Name>
+      <Definition>The nominal height of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.
+
+The nominal height of the furniture of this type. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Symbol</Name>
+      <Definition>Content which is shown on the sign, e.g. text, number, arrow or icon. The string can also be a pointer to a symbol catalog.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalWidth</Name>
+      <Definition>The nominal overall width of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

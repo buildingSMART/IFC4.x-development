@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SymmetricPairCable</Name>
+  <Definition>Properties applicable to a symmetric pair cable, which is is a copper cable with a variable number of copper twisted symmetric pair conductors used to transmit data by means of electrical signals. this property set is applicable to type or occurrence of IfcCableSegment with predefined type CABLESEGMENT</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment/CABLESEGMENT</ClassName>
+    <ClassName>IfcCableSegmentType/CABLESEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment/CABLESEGMENT,IfcCableSegmentType/CABLESEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NumberOfTwistedPairs</Name>
+      <Definition>Total number of twisted wire pairs in copper pair cables.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfUntwistedPairs</Name>
+      <Definition>Total number of untwisted wire pairs in the copper pair cable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

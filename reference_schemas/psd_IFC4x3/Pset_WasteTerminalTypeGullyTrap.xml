@@ -1,0 +1,149 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_WasteTerminalTypeGullyTrap</Name>
+  <Definition>Pipe fitting or assembly of fittings to receive surface water or waste water, fitted with a grating or sealed cover and discharging through a trap (BS6100 330 3504 modified)</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcWasteTerminal/GULLYTRAP</ClassName>
+    <ClassName>IfcWasteTerminalType/GULLYTRAP</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcWasteTerminal/GULLYTRAP,IfcWasteTerminalType/GULLYTRAP</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NominalBodyLength</Name>
+      <Definition>Nominal or quoted length measured along the x-axis of the local coordinate system of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalBodyWidth</Name>
+      <Definition>Nominal or quoted length, measured along the y-axis of the local coordinate system of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalBodyDepth</Name>
+      <Definition>Nominal or quoted length measured along the z-axis of the local coordinate system of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>GullyType</Name>
+      <Definition>Identifies the predefined types of gully from which the type required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_GullyType">
+            <EnumItem>BACKINLET</EnumItem>
+            <EnumItem>VERTICAL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasStrainer</Name>
+      <Definition>Indicates whether the gully trap has a strainer (= TRUE) or not (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TrapType</Name>
+      <Definition>Identifies the predefined types of trap from which the type required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TrapType">
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>P_TRAP</EnumItem>
+            <EnumItem>Q_TRAP</EnumItem>
+            <EnumItem>S_TRAP</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OutletConnectionSize</Name>
+      <Definition>Size of the outlet connection from the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BackInletPatternType</Name>
+      <Definition>Identifies the pattern of inlet connections to a gully trap.A gulley trap may have 0,1,2,3 or 4 inlet connections and the pattern of their arrangement may vary. The enumeration makes the convention that an outlet is either vertical or is placed at the bottom (south side) of the gully trap (when viewed in plan). Position 1 is to the left (west), position 2 is to the top (north), position 3 is to the right (east) and position 4 is to the bottom (south).2
+           |!                       |
+1-|                       |-3
+   !                       ||
+          4</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BackInletPatternType">
+            <EnumItem>1</EnumItem>
+            <EnumItem>12</EnumItem>
+            <EnumItem>123</EnumItem>
+            <EnumItem>1234</EnumItem>
+            <EnumItem>124</EnumItem>
+            <EnumItem>13</EnumItem>
+            <EnumItem>134</EnumItem>
+            <EnumItem>14</EnumItem>
+            <EnumItem>2</EnumItem>
+            <EnumItem>23</EnumItem>
+            <EnumItem>234</EnumItem>
+            <EnumItem>24</EnumItem>
+            <EnumItem>3</EnumItem>
+            <EnumItem>34</EnumItem>
+            <EnumItem>4</EnumItem>
+            <EnumItem>NONE</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InletConnectionSize</Name>
+      <Definition>Size of the inlet connection.
+Note that all inlet connections are assumed to be the same size.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CoverLength</Name>
+      <Definition>The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CoverWidth</Name>
+      <Definition>The length measured along the y-axis in the local coordinate system of the cover of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

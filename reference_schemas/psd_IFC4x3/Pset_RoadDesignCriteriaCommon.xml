@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RoadDesignCriteriaCommon</Name>
+  <Definition>Road design criteria that may be attached to road parts.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFacilityPartCommon/JUNCTION</ClassName>
+    <ClassName>IfcFacilityPartCommon/LEVELCROSSING</ClassName>
+    <ClassName>IfcFacilityPartCommon/SEGMENT</ClassName>
+    <ClassName>IfcRoadPart/BICYCLECROSSING</ClassName>
+    <ClassName>IfcRoadPart/INTERSECTION</ClassName>
+    <ClassName>IfcRoadPart/PEDESTRIAN_CROSSING</ClassName>
+    <ClassName>IfcRoadPart/RAILWAYCROSSING</ClassName>
+    <ClassName>IfcRoadPart/ROADSEGMENT</ClassName>
+    <ClassName>IfcRoadPart/ROUNDABOUT</ClassName>
+    <ClassName>IfcRoadPart/TOLLPLAZA</ClassName>
+    <ClassName>IfcRoad</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFacilityPartCommon/JUNCTION,IfcFacilityPartCommon/LEVELCROSSING,IfcFacilityPartCommon/SEGMENT,IfcRoadPart/BICYCLECROSSING,IfcRoadPart/INTERSECTION,IfcRoadPart/PEDESTRIAN_CROSSING,IfcRoadPart/RAILWAYCROSSING,IfcRoadPart/ROADSEGMENT,IfcRoadPart/ROUNDABOUT,IfcRoadPart/TOLLPLAZA,IfcRoad</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Crossfall</Name>
+      <Definition>Specifies the nominal crossfall as a ratio measure (slope) at the location of the event.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DesignSpeed</Name>
+      <Definition>Speed selected in designing a new road or in modernizing, strengthening or rehabilitating an existing road section, to determine the various geometric design features of the carriageway that allow a car to travel safely at that speed, under normal road surface and weather conditions.NOTE  Definition according to PIARC.
+NOTE  The design speed is not constant, but may vary depending on the conditions of relief (plain, hill, mountain).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLinearVelocityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DesignTrafficVolume</Name>
+      <Definition>The traffic volume used for planning and design purposes specified as the number of vehicles per day . Typically given as AADT - Average Annual Daily Traffic</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DesignVehicleClass</Name>
+      <Definition>A vehicle designator with content according to local standards.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LaneWidth</Name>
+      <Definition>Standard nominal width of one trough lane.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfThroughLanes</Name>
+      <Definition>The total number of through lanes on the segment. This excludes auxiliary lanes, parking and turning lanes, acceleration/deceleration lanes, toll collection lanes, shoulders etc.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RoadDesignClass</Name>
+      <Definition>A road design class designator with content according to local standards.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

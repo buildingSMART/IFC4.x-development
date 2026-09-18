@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CessBetweenRails</Name>
+  <Definition>Properties in this property set are applicable for IfcSlab with PredefinedType TRACKSLAB, indicated that the slab is a cess or covering between rails.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSlab/TRACKSLAB</ClassName>
+    <ClassName>IfcSlabType/TRACKSLAB</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSlab/TRACKSLAB,IfcSlabType/TRACKSLAB</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>JointRelativePosition</Name>
+      <Definition>Indicates the relative position of the joint, which lies in the left or right rail or in the middle, or in combination. The left rail is to the left as facing in the direction of increasing stationing values, and the right rail is to the right.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RelativePosition">
+            <EnumItem>LEFT</EnumItem>
+            <EnumItem>MIDDLE</EnumItem>
+            <EnumItem>RIGHT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CheckRailType</Name>
+      <Definition>Type of the check rail. Check rail types enumerated in this property are defined based on EN 13674.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CheckRailType">
+            <EnumItem>TYPE_33C1</EnumItem>
+            <EnumItem>TYPE_40C1</EnumItem>
+            <EnumItem>TYPE_47C1</EnumItem>
+            <EnumItem>TYPE_CR3_60U</EnumItem>
+            <EnumItem>TYPE_R260</EnumItem>
+            <EnumItem>TYPE_R320CR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LoadCapacity</Name>
+      <Definition>Indicates the highest permissible load capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcForceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>UsagePurpose</Name>
+      <Definition>The purpose of usage of the cess between rails, e.g. maintenance, rescue services.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_UsagePurpose">
+            <EnumItem>MAINTENANCE</EnumItem>
+            <EnumItem>RESCUESERVICES</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

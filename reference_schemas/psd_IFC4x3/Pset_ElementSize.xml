@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElementSize</Name>
+  <Definition>Property set with properties about size of the element.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDistributionChamberElement</ClassName>
+    <ClassName>IfcEnergyConversionDevice</ClassName>
+    <ClassName>IfcFlowController</ClassName>
+    <ClassName>IfcFlowMovingDevice</ClassName>
+    <ClassName>IfcFlowStorageDevice</ClassName>
+    <ClassName>IfcFlowTerminal</ClassName>
+    <ClassName>IfcFlowTreatmentDevice</ClassName>
+    <ClassName>IfcDistributionChamberElementType</ClassName>
+    <ClassName>IfcEnergyConversionDeviceType</ClassName>
+    <ClassName>IfcFlowControllerType</ClassName>
+    <ClassName>IfcFlowMovingDeviceType</ClassName>
+    <ClassName>IfcFlowStorageDeviceType</ClassName>
+    <ClassName>IfcFlowTerminalType</ClassName>
+    <ClassName>IfcFlowTreatmentDeviceType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionChamberElement,IfcEnergyConversionDevice,IfcFlowController,IfcFlowMovingDevice,IfcFlowStorageDevice,IfcFlowTerminal,IfcFlowTreatmentDevice,IfcDistributionChamberElementType,IfcEnergyConversionDeviceType,IfcFlowControllerType,IfcFlowMovingDeviceType,IfcFlowStorageDeviceType,IfcFlowTerminalType,IfcFlowTreatmentDeviceType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NominalLength</Name>
+      <Definition>The nominal overall length of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In case of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalWidth</Name>
+      <Definition>The nominal overall width of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalHeight</Name>
+      <Definition>The nominal height of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

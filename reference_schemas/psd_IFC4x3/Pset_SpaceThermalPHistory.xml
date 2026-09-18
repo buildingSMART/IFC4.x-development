@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SpaceThermalPHistory</Name>
+  <Definition>Thermal and air flow conditions of a space or zone. HISTORY: New property set in IFC 2x2.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSpatialElement</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpatialElement</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>CoolingAirFlowRate</Name>
+      <Definition>Cooling air flow rate in the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HeatingAirFlowRate</Name>
+      <Definition>Heating air flow rate in the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VentilationAirFlowRateHistory</Name>
+      <Definition>Ventilation air flow rate in the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ExhaustAirFlowRate</Name>
+      <Definition>Design exhaust air flow rate for the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SpaceTemperatureHistory</Name>
+      <Definition>Temperature of the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SpaceRelativeHumidity</Name>
+      <Definition>The relative humidity of the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

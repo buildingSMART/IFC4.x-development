@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_TrafficCalmingDeviceCommon</Name>
+  <Definition>Properties for a traffic calming device.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElementAssembly/TRAFFIC_CALMING_DEVICE</ClassName>
+    <ClassName>IfcElementAssemblyType/TRAFFIC_CALMING_DEVICE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElementAssembly/TRAFFIC_CALMING_DEVICE,IfcElementAssemblyType/TRAFFIC_CALMING_DEVICE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>TypeDesignation</Name>
+      <Definition>Type designator for the element. The content depends on local standards. Eg. 'Bull nose', 'Half batter', 'Dropper', 'Chamfer' etc</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FenderCommon</Name>
+  <Definition>Properties common to the definition of all occurrences of IfcImpactProtectionDevice and types of IfcImpactProtectionDeviceType with the predefined type set to FENDER.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcImpactProtectionDevice/FENDER</ClassName>
+    <ClassName>IfcImpactProtectionDeviceType/FENDER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcImpactProtectionDevice/FENDER,IfcImpactProtectionDeviceType/FENDER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>FenderType</Name>
+      <Definition>The type of fender</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FenderType">
+            <EnumItem>ARCH</EnumItem>
+            <EnumItem>CELL</EnumItem>
+            <EnumItem>CONE</EnumItem>
+            <EnumItem>CYLINDER</EnumItem>
+            <EnumItem>PNEUMATIC</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CoefficientOfFriction</Name>
+      <Definition>Coefficient of friction value for the fender</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EnergyAbsorptionTolerance</Name>
+      <Definition>Manufacturing tolerance on energy absorption</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaxReactionTolerance</Name>
+      <Definition>Manufacturing tolerance on maximum reaction at fender support.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumTemperatureFactor</Name>
+      <Definition>Deviation in performance due to maximum design temperature</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MinimumTemperatureFactor</Name>
+      <Definition>Deviation in performance due to minimum design temperature</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VelocityFactorEnergy</Name>
+      <Definition>Deviation in energy absorption performance due to strain rate</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VelocityFactorReaction</Name>
+      <Definition>Deviation in reaction due to strain rate</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EnergyAbsorption</Name>
+      <Definition>Energy absorption capacity of the element.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcEnergyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaxReaction</Name>
+      <Definition>Maximum reaction from the element</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcForceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

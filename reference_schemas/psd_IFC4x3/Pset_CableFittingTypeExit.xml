@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CableFittingTypeExit</Name>
+  <Definition>Properties of the exit type of cable fitting which ends a cable segment at a non-electric element.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableFitting/EXIT</ClassName>
+    <ClassName>IfcCableFittingType/EXIT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableFitting/EXIT,IfcCableFittingType/EXIT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>GroundResistance</Name>
+      <Definition>The soil or ground resistance to electrical current from the cable fitting.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricResistanceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

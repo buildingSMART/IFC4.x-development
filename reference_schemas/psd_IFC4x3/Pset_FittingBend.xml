@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FittingBend</Name>
+  <Definition>Properties about the bend angles.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableCarrierFitting/BEND</ClassName>
+    <ClassName>IfcDuctFitting/BEND</ClassName>
+    <ClassName>IfcPipeFitting/BEND</ClassName>
+    <ClassName>IfcCableCarrierFittingType/BEND</ClassName>
+    <ClassName>IfcDuctFittingType/BEND</ClassName>
+    <ClassName>IfcPipeFittingType/BEND</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableCarrierFitting/BEND,IfcDuctFitting/BEND,IfcPipeFitting/BEND,IfcCableCarrierFittingType/BEND,IfcDuctFittingType/BEND,IfcPipeFittingType/BEND</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>BendAngle</Name>
+      <Definition>The change of direction of flow.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositivePlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BendRadius</Name>
+      <Definition>The radius of bending if circular arc or zero if sharp bend.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

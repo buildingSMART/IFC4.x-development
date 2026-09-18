@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RailwayTrackStructurePart</Name>
+  <Definition>Properties applicable to IfcRailwayPart with PredefinedType set to TRACK, or more specialized types including PLAINTRACK, TURNOUTTRACK, DILATATIONTRACK or TRACKPART.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcRailwayPart/DILATIONTRACK</ClassName>
+    <ClassName>IfcRailwayPart/PLAINTRACK</ClassName>
+    <ClassName>IfcRailwayPart/TRACK</ClassName>
+    <ClassName>IfcRailwayPart/TURNOUTTRACK</ClassName>
+    <ClassName>IfcRailwayPart/TRACKPART</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcRailwayPart/DILATIONTRACK,IfcRailwayPart/PLAINTRACK,IfcRailwayPart/TRACK,IfcRailwayPart/TURNOUTTRACK,IfcRailwayPart/TRACKPART</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>HasBallastTrack</Name>
+      <Definition>Indicates whether the track has ballast or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasCWR</Name>
+      <Definition>Indicates if the track has continuous welded rails.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsSunExposed</Name>
+      <Definition>Indicates if the object is in exposed position to sunshine.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TrackSupportingStructure</Name>
+      <Definition>Indicates the supporting structure for track part.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TrackSupportingStructure">
+            <EnumItem>BRIDGE</EnumItem>
+            <EnumItem>CONCRETE</EnumItem>
+            <EnumItem>ONSPECIALFOUNDATION</EnumItem>
+            <EnumItem>PAVEMENT</EnumItem>
+            <EnumItem>SUBGRADELAYER</EnumItem>
+            <EnumItem>TRANSITIONSECTION</EnumItem>
+            <EnumItem>TUNNEL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

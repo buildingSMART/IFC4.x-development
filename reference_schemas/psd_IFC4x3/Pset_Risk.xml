@@ -1,0 +1,285 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_Risk</Name>
+  <Definition>An indication of exposure to mischance, peril, menace, hazard or loss. Documentation of a potential hazard, likilihood and consequence aligned with AS/NZS 4360 and BS PAS 1192-6:2017, which can be assigned to or associated with a product, activity and/or location. Alternatively it may be assigned to an ISO 3864 annotation symbol.HISTORY Extended in IFC2x3, Revised IFC4x3There are various types of risk that may be encountered and there may be several instances of Pset_Risk associated to an instance or type.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcGroup</ClassName>
+    <ClassName>IfcProcess</ClassName>
+    <ClassName>IfcProduct</ClassName>
+    <ClassName>IfcTypeProcess</ClassName>
+    <ClassName>IfcTypeProduct</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcGroup,IfcProcess,IfcProduct,IfcTypeProcess,IfcTypeProduct</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>RiskName</Name>
+      <Definition>A locally unique identifier for the risk entry that can be used to track the development and mitigation of the risk throughout the project life cycle</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RiskType</Name>
+      <Definition>Identifies the predefined types of risk from which the type required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RiskType">
+            <EnumItem>ASBESTOSEFFECTS</EnumItem>
+            <EnumItem>ASPHIXIATION</EnumItem>
+            <EnumItem>BUSINESS</EnumItem>
+            <EnumItem>BUSINESSISSUES</EnumItem>
+            <EnumItem>CHEMICALEFFECTS</EnumItem>
+            <EnumItem>COMMERICALISSUES</EnumItem>
+            <EnumItem>CONFINEMENT</EnumItem>
+            <EnumItem>CRUSHING</EnumItem>
+            <EnumItem>DROWNINGANDFLOODING</EnumItem>
+            <EnumItem>ELECTRICSHOCK</EnumItem>
+            <EnumItem>ENVIRONMENTALISSUES</EnumItem>
+            <EnumItem>EVENT</EnumItem>
+            <EnumItem>FALL</EnumItem>
+            <EnumItem>FALLEDGE</EnumItem>
+            <EnumItem>FALLFRAGILEMATERIAL</EnumItem>
+            <EnumItem>FALLSCAFFOLD</EnumItem>
+            <EnumItem>FALL_LADDER</EnumItem>
+            <EnumItem>FIRE_EXPLOSION</EnumItem>
+            <EnumItem>HANDLING</EnumItem>
+            <EnumItem>HAZARD</EnumItem>
+            <EnumItem>HAZARDOUSDUST</EnumItem>
+            <EnumItem>HEALTHANDSAFETY</EnumItem>
+            <EnumItem>HEALTHISSUE</EnumItem>
+            <EnumItem>INSURANCE</EnumItem>
+            <EnumItem>INSURANCE_ISSUES</EnumItem>
+            <EnumItem>LEADEFFECTS</EnumItem>
+            <EnumItem>MACHINERYGUARDING</EnumItem>
+            <EnumItem>MATERIALEFFECTS</EnumItem>
+            <EnumItem>MATERIALSHANDLING</EnumItem>
+            <EnumItem>MECHANICALEFFECTS</EnumItem>
+            <EnumItem>MECHANICAL_LIFTING</EnumItem>
+            <EnumItem>MOBILE_ELEVATEDWORKPLATFORM</EnumItem>
+            <EnumItem>NOISE_EFFECTS</EnumItem>
+            <EnumItem>OPERATIONALISSUES</EnumItem>
+            <EnumItem>OTHERISSUES</EnumItem>
+            <EnumItem>OVERTURINGPLANT</EnumItem>
+            <EnumItem>PUBLICPROTECTIONISSUES</EnumItem>
+            <EnumItem>SAFETYISSUE</EnumItem>
+            <EnumItem>SILICADUST</EnumItem>
+            <EnumItem>SLIPTRIP</EnumItem>
+            <EnumItem>SOCIALISSUES</EnumItem>
+            <EnumItem>STRUCK</EnumItem>
+            <EnumItem>STRUCKFALLINFOBJECT</EnumItem>
+            <EnumItem>STRUCKVEHICLE</EnumItem>
+            <EnumItem>TOOLUSAGE</EnumItem>
+            <EnumItem>TRAPPED</EnumItem>
+            <EnumItem>UNINTENDEDCOLLAPSE</EnumItem>
+            <EnumItem>VIBRATION</EnumItem>
+            <EnumItem>WELFAREISSUE</EnumItem>
+            <EnumItem>WOODDUST</EnumItem>
+            <EnumItem>WORKINGOVERHEAD</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NatureOfRisk</Name>
+      <Definition>A description of the generic nature of the context or hazard that might be encountered.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RiskAssessmentMethodology</Name>
+      <Definition>An indication or link to the chosen risk assessment methodology, for example PAS1192-6 or a chosen ISO13100 annex.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>UnmitigatedRiskLikelihood</Name>
+      <Definition>Identifies the likelihood of the hazard prior to any specific mitigation.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RiskRating">
+            <EnumItem>CONSIDERABLE</EnumItem>
+            <EnumItem>CRITICAL</EnumItem>
+            <EnumItem>HIGH</EnumItem>
+            <EnumItem>INSIGNIFICANT</EnumItem>
+            <EnumItem>LOW</EnumItem>
+            <EnumItem>MODERATE</EnumItem>
+            <EnumItem>SOME</EnumItem>
+            <EnumItem>VERYHIGH</EnumItem>
+            <EnumItem>VERYLOW</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>UnmitigatedRiskConsequence</Name>
+      <Definition>Identifies the consequence of the hazard prior to any specific mitigation.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RiskRating">
+            <EnumItem>CONSIDERABLE</EnumItem>
+            <EnumItem>CRITICAL</EnumItem>
+            <EnumItem>HIGH</EnumItem>
+            <EnumItem>INSIGNIFICANT</EnumItem>
+            <EnumItem>LOW</EnumItem>
+            <EnumItem>MODERATE</EnumItem>
+            <EnumItem>SOME</EnumItem>
+            <EnumItem>VERYHIGH</EnumItem>
+            <EnumItem>VERYLOW</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>UnmitigatedRiskSignificance</Name>
+      <Definition>Identifies the significance of the risk given the likelihood and consequence prior to any specific mitigation.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RiskRating">
+            <EnumItem>CONSIDERABLE</EnumItem>
+            <EnumItem>CRITICAL</EnumItem>
+            <EnumItem>HIGH</EnumItem>
+            <EnumItem>INSIGNIFICANT</EnumItem>
+            <EnumItem>LOW</EnumItem>
+            <EnumItem>MODERATE</EnumItem>
+            <EnumItem>SOME</EnumItem>
+            <EnumItem>VERYHIGH</EnumItem>
+            <EnumItem>VERYLOW</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MitigationPlanned</Name>
+      <Definition>The planned (agreed and irrevocable) mitigation of the likelhood and consequences of the hazard.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MitigatedRiskLikelihood</Name>
+      <Definition>Identifies the likelihood of the hazard given the planned mitigation.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RiskRating">
+            <EnumItem>CONSIDERABLE</EnumItem>
+            <EnumItem>CRITICAL</EnumItem>
+            <EnumItem>HIGH</EnumItem>
+            <EnumItem>INSIGNIFICANT</EnumItem>
+            <EnumItem>LOW</EnumItem>
+            <EnumItem>MODERATE</EnumItem>
+            <EnumItem>SOME</EnumItem>
+            <EnumItem>VERYHIGH</EnumItem>
+            <EnumItem>VERYLOW</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MitigatedRiskConsequence</Name>
+      <Definition>Identifies the consequence of the hazard given the planned mitigation.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RiskRating">
+            <EnumItem>CONSIDERABLE</EnumItem>
+            <EnumItem>CRITICAL</EnumItem>
+            <EnumItem>HIGH</EnumItem>
+            <EnumItem>INSIGNIFICANT</EnumItem>
+            <EnumItem>LOW</EnumItem>
+            <EnumItem>MODERATE</EnumItem>
+            <EnumItem>SOME</EnumItem>
+            <EnumItem>VERYHIGH</EnumItem>
+            <EnumItem>VERYLOW</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MitigatedRiskSignificance</Name>
+      <Definition>Identifies the significance of the risk given the mitigation of likelihood and consequence.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RiskRating">
+            <EnumItem>CONSIDERABLE</EnumItem>
+            <EnumItem>CRITICAL</EnumItem>
+            <EnumItem>HIGH</EnumItem>
+            <EnumItem>INSIGNIFICANT</EnumItem>
+            <EnumItem>LOW</EnumItem>
+            <EnumItem>MODERATE</EnumItem>
+            <EnumItem>SOME</EnumItem>
+            <EnumItem>VERYHIGH</EnumItem>
+            <EnumItem>VERYLOW</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MitigationProposed</Name>
+      <Definition>Any proposed, but not yet agreed and irrevocable, mitigation of the likelhood and consequences of the hazard.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AssociatedProduct</Name>
+      <Definition>An indication or link to any associated product or material that may trigger the hazard. If used directly on an annotation or semantic object. for an alternative see group use encoding template</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AssociatedActivity</Name>
+      <Definition>An indication or link to any associated activity or process that may trigger the hazard. If used directly on an annotation or semantic object. for an alternative see group use encoding template</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AssociatedLocation</Name>
+      <Definition>An indication or link to any associated location or space that may trigger the hazard. If used directly on an annotation or semantic object. for an alternative see group use encoding template</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

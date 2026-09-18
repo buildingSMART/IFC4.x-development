@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_CoveringBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of coverings applied to spaces.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCovering</ClassName>
+    <ClassName>IfcCoveringType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCovering,IfcCoveringType</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Width</Name>
+      <Definition>The width of the object. Only given, if the object has constant thickness (prismatic).</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossArea</Name>
+      <Definition>Gross Area of the object. Openings, recesses, projections and cut-outs are not taken into account.
+
+Sum of all gross areas of the covering facing the space.</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetArea</Name>
+      <Definition>Total net area of the object. Openings, recesses and cut-outs are taken into account by subtraction, projections by addition.
+
+Sum of all net areas of the covering facing the space.</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

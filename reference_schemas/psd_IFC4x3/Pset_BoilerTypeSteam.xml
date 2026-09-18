@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_BoilerTypeSteam</Name>
+  <Definition>Steam boiler type common attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcBoiler/STEAM</ClassName>
+    <ClassName>IfcBoilerType/STEAM</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBoiler/STEAM,IfcBoilerType/STEAM</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>MaximumOutletPressure</Name>
+      <Definition>Maximum steam outlet pressure.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalEfficiencyTable</Name>
+      <Definition>The nominal efficiency of the boiler as defined by the manufacturer. For steam boilers, a function of inlet temperature versus steam pressure.  Note: as two variables are used, DefiningValues and DefinedValues are null, and values are stored in IfcTable in the following order: InletTemperature(IfcThermodynamicTemperatureMeasure) and OutletTemperature(IfcThermodynamicTemperatureMeasure) in DefiningValues, and NominalEfficiency(IfcNormalisedRatioMeasure) in DefinedValues. For example, DefininfValues(InletTemp, OutletTemp), DefinedValues(null, NominalEfficiency).  The IfcTable is related to IfcPropertyTableValue using IfcMetric and IfcResourceConstraintRelationship.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcThermodynamicTemperatureMeasure"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcNormalisedRatioMeasure"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HeatOutput</Name>
+      <Definition>Total nominal heat output as listed by the Boiler manufacturer.
+
+For steam boilers, it is a function of inlet temperature versus steam pressure.  Note: as two variables are used, DefiningValues and DefinedValues are null, and values are stored in IfcTable in the following order: InletTemperature(IfcThermodynamicTemperatureMeasure) and OutletTemperature(IfcThermodynamicTemperatureMeasure) in DefiningValues, and HeatOutput(IfcEnergyMeasure) in DefinedValues. For example, DefiningValues(InletTemp, OutletTemp), DefinedValues(null, HeatOutput). The IfcTable is related to IfcPropertyTableValue using IfcMetric and IfcResourceConstraintRelationship.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcThermodynamicTemperatureMeasure"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcEnergyMeasure"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ActuatorTypeRotationalActuation</Name>
+  <Definition>Characteristics of rotational actuation of an actuator
+History: Replaces Pset_RotationalActuator</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcActuator</ClassName>
+    <ClassName>IfcActuatorType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActuator,IfcActuatorType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Torque</Name>
+      <Definition>Indicates the maximum close-off torque for the actuator.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTorqueMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RangeAngle</Name>
+      <Definition>Indicates the maximum rotation the actuator must traverse.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

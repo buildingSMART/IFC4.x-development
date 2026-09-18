@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DamperTypeFireSmokeDamper</Name>
+  <Definition>Combination Fire and Smoke damper type attributes.
+New Pset in IFC2x2 Pset Addendum.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDamper/FIRESMOKEDAMPER</ClassName>
+    <ClassName>IfcDamperType/FIRESMOKEDAMPER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDamper/FIRESMOKEDAMPER,IfcDamperType/FIRESMOKEDAMPER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>DamperControlType</Name>
+      <Definition>The type of control used to operate the damper (e.g., Open/Closed Indicator, Resettable Temperature Sensor, Temperature Override, etc.).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ActuationType</Name>
+      <Definition>Enumeration that identifies the different types of dampers.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FireDamperActuationType">
+            <EnumItem>GRAVITY</EnumItem>
+            <EnumItem>SPRING</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ClosureRatingEnum</Name>
+      <Definition>Enumeration that identifies the closure rating for the damper.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FireDamperClosureRating">
+            <EnumItem>DYNAMIC</EnumItem>
+            <EnumItem>STATIC</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FireResistanceRating</Name>
+      <Definition>Measure of the fire resistance rating in hours (e.g., 1.5 hours, 2 hours, etc.).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FusibleLinkTemperature</Name>
+      <Definition>The temperature that the fusible link melts.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

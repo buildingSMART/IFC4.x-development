@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_BuiltSystemRailwayTrack</Name>
+  <Definition>Properties common to the definition of a track system. It is usually composed of continuous sequences of track parts and alignments.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcBuiltSystem/RAILWAYTRACK</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBuiltSystem/RAILWAYTRACK</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>TrackID</Name>
+      <Definition>The unique identification number of the track.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TrackNumber</Name>
+      <Definition>Indicates the local identification number of the track.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TrackUsage</Name>
+      <Definition>The expected primary usage of the track.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TrackUsage">
+            <EnumItem>CATCHSIDING</EnumItem>
+            <EnumItem>CLASSIFICATIONTRACK</EnumItem>
+            <EnumItem>CONNECTINGLINE</EnumItem>
+            <EnumItem>FREIGHTTRACK</EnumItem>
+            <EnumItem>LOCOMOTIVEHOLDTRACK</EnumItem>
+            <EnumItem>LOCOMOTIVERUNNINGTRACK</EnumItem>
+            <EnumItem>LOCOMOTIVESERVICETRACK</EnumItem>
+            <EnumItem>MAINTRACK</EnumItem>
+            <EnumItem>MULTIPLEUNITRUNNINGTRACK</EnumItem>
+            <EnumItem>RECEIVINGDEPARTURETRACK</EnumItem>
+            <EnumItem>REFUGESIDING</EnumItem>
+            <EnumItem>REPAIRSIDING</EnumItem>
+            <EnumItem>ROLLINGFORBIDDENTRACK</EnumItem>
+            <EnumItem>ROLLINGTRACK</EnumItem>
+            <EnumItem>ROUNDABOUTLINE</EnumItem>
+            <EnumItem>STORAGETRACK</EnumItem>
+            <EnumItem>SWITCHINGLEAD</EnumItem>
+            <EnumItem>UNTWININGLINE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TrackCharacteristic</Name>
+      <Definition>Indicates the characteristic of the track.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TrackCharacteristic">
+            <EnumItem>FUNICULAR</EnumItem>
+            <EnumItem>NORMAL</EnumItem>
+            <EnumItem>RACK</EnumItem>
+            <EnumItem>RIGIDOVERHEAD</EnumItem>
+            <EnumItem>THIRDRAIL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

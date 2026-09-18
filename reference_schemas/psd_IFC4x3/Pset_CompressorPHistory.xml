@@ -1,0 +1,116 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CompressorPHistory</Name>
+  <Definition>Compressor performance history attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCompressor</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCompressor</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>CompressorCapacity</Name>
+      <Definition>The product of the  ideal capacity and the overall volumetric efficiency of the compressor.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EnergyEfficiencyRatio</Name>
+      <Definition>Energy efficiency ratio (EER).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CoefficientOfPerformance</Name>
+      <Definition>The Coefficient of performance (COP) is the ratio of heat removed to energy input.
+The energy input may be obtained by multiplying
+Pset_DistributionPortPHistoryGas.FlowRate on the 'Fuel' port of the IfcChiller by Pset_MaterialFuel.LowerHeatingValue.
+The IfcDistributionPort for fuel has an associated IfcMaterial with fuel properties and is assigned to an IfcPerformanceHistory object nested within this IfcPerformanceHistory object.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VolumetricEfficiency</Name>
+      <Definition>Ratio of the actual volume of gas entering the compressor to the theoretical displacement of the compressor.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CompressionEfficiency</Name>
+      <Definition>Ratio of the work required for isentropic compression of the gas to the work delivered to the gas within the compression volume (as obtained by measurement).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MechanicalEfficiency</Name>
+      <Definition>The objects operational mechanical efficiency.
+
+Ratio of the work (as measured) delivered to the gas to the work input to the compressor shaft.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsentropicEfficiency</Name>
+      <Definition>Ratio of the work required for isentropic compression of the gas to work input to the compressor shaft.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CompressorTotalEfficiency</Name>
+      <Definition>Ratio of the thermal cooling capacity to electrical input.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ShaftPower</Name>
+      <Definition>The actual shaft power input to the compressor.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InputPower</Name>
+      <Definition>Input power to the compressor motor.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LubricantPumpHeatGain</Name>
+      <Definition>Lubricant pump heat gain.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FrictionHeatGain</Name>
+      <Definition>Friction heat gain.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CompressorTotalHeatGain</Name>
+      <Definition>Compressor total heat gain.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FullLoadRatio</Name>
+      <Definition>Ratio of actual power to full load power as a quadratic function of part load, at certain condensing and evaporating temperature, FracFullLoadPower = f ( PartLoadRatio).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

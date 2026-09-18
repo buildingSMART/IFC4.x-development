@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MobileTelecommunicationsApplianceTypeEUtranNodeB</Name>
+  <Definition>Properties common to the definition of all occurrences of  IfcMobileTelecommunicationsAppliance and types of IfcMobileTelecommunicationsApplianceType with the predefined type set to E_UTRAN_NODE_B.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcMobileTelecommunicationsAppliance/E_UTRAN_NODE_B</ClassName>
+    <ClassName>IfcMobileTelecommunicationsApplianceType/E_UTRAN_NODE_B</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMobileTelecommunicationsAppliance/E_UTRAN_NODE_B,IfcMobileTelecommunicationsApplianceType/E_UTRAN_NODE_B</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>DownlinkRadioBand</Name>
+      <Definition>Indicates the frequency range, delimited by a lower frequency and an upper frequency, allocated for downlink transmission.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfCarriers</Name>
+      <Definition>Indicates how many carrier frequencies can be managed by the device.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RadiatedOutputPowerPerAntenna</Name>
+      <Definition>Indicates the power of radio waves emitted by each antenna of the base transceiver station.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcLabel"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcPowerMeasure"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfAntennas</Name>
+      <Definition>Indicates the number of antennas integrated in the device.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfInterfaces</Name>
+      <Definition>Indicates the types of interfaces and their number in the device.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcLabel"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcInteger"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>UplinkRadioBand</Name>
+      <Definition>Indicates the frequency range, delimited by a lower frequency and an upper frequency, allocated for uplink transmission.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

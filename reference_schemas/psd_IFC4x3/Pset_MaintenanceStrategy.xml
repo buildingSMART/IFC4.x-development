@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MaintenanceStrategy</Name>
+  <Definition>Property set for the association of a maintenance strategy to an element, asset of system.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAsset</ClassName>
+    <ClassName>IfcElement</ClassName>
+    <ClassName>IfcSystem</ClassName>
+    <ClassName>IfcElementType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAsset,IfcElement,IfcSystem,IfcElementType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AssetCriticality</Name>
+      <Definition>Rating of the asset's criticality to the operation of the facility</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AssetRating">
+            <EnumItem>HIGH</EnumItem>
+            <EnumItem>LOW</EnumItem>
+            <EnumItem>MODERATE</EnumItem>
+            <EnumItem>VERYHIGH</EnumItem>
+            <EnumItem>VERYLOW</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AssetFrailty</Name>
+      <Definition>Rating of the asset's frailty to breakage or deterioration</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AssetRating">
+            <EnumItem>HIGH</EnumItem>
+            <EnumItem>LOW</EnumItem>
+            <EnumItem>MODERATE</EnumItem>
+            <EnumItem>VERYHIGH</EnumItem>
+            <EnumItem>VERYLOW</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AssetPriority</Name>
+      <Definition>Combined criticality and frailty rating indicating the operational and maintenance priority of the asset</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AssetRating">
+            <EnumItem>HIGH</EnumItem>
+            <EnumItem>LOW</EnumItem>
+            <EnumItem>MODERATE</EnumItem>
+            <EnumItem>VERYHIGH</EnumItem>
+            <EnumItem>VERYLOW</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MonitoringType</Name>
+      <Definition>Monitoring strategy chosen for the asset</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_MonitoringType">
+            <EnumItem>FEEDBACK</EnumItem>
+            <EnumItem>INSPECTION</EnumItem>
+            <EnumItem>IOT</EnumItem>
+            <EnumItem>PPM</EnumItem>
+            <EnumItem>SENSORS</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AccidentResponse</Name>
+      <Definition>Accident response chosen for the asset</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AccidentResponse">
+            <EnumItem>EMERGENCYINSPECTION</EnumItem>
+            <EnumItem>EMERGENCYPROCEDURE</EnumItem>
+            <EnumItem>REACTIVE</EnumItem>
+            <EnumItem>URGENTINSPECTION</EnumItem>
+            <EnumItem>URGENTPROCEDURE</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_RoofBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of roof.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcRoof</ClassName>
+    <ClassName>IfcRoofType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcRoof,IfcRoofType</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>GrossArea</Name>
+      <Definition>Gross Area of the object. Openings, recesses, projections and cut-outs are not taken into account.
+
+Indicates the outer surface of the roof and the sum of all roof slab gross areas.</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetArea</Name>
+      <Definition>Total net area of the object. Openings, recesses and cut-outs are taken into account by subtraction, projections by addition.
+
+Total net area of the outer surface of the roof. It is the suma of all roof slab net areas.</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>ProjectedArea</Name>
+      <Definition>Total gross area of the outer surfaces of the roof, projected tp the ground. It is the sum of all projected roof slab gross areas. Roof openings, like sky windows and other openings and cut-outs are not taken into account.</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

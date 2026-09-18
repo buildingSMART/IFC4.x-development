@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MechanicalFastenerTypeRailJoint</Name>
+  <Definition>Properties common to a rail joint of a railway track system.  The property set can be used by the predefined type RAILJOINT of IfcMechanicalFastener.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcMechanicalFastener/RAILJOINT</ClassName>
+    <ClassName>IfcMechanicalFastenerType/RAILJOINT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMechanicalFastener/RAILJOINT,IfcMechanicalFastenerType/RAILJOINT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SleeperArrangement</Name>
+      <Definition>Define the rail joint sleeper method of assembly (&quot;twin sleeper&quot; type or &quot;between sleepers&quot; type).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SleeperArrangement">
+            <EnumItem>BETWEENSLEEPERS</EnumItem>
+            <EnumItem>TWINSLEEPER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsCWRJoint</Name>
+      <Definition>Indicates if the rail joint is associated to a continuous welded rail.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsJointInsulated</Name>
+      <Definition>Indicates if the rail joint is insulated.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsLiftingBracketConnection</Name>
+      <Definition>Indicates if the connection is between two different heights (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfScrews</Name>
+      <Definition>Number of screws/bolts/connections.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RailGap</Name>
+      <Definition>The gap between the rail profiles.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsJointControlEquipment</Name>
+      <Definition>Indicates whether security equipment is checking the mechanical functionality of the rail joint.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AssemblyPlace</Name>
+      <Definition>Enumeration defining where the assembly is intended to take place, either in a factory, other offsite location or on the building site.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AssemblyPlace">
+            <EnumItem>FACTORY</EnumItem>
+            <EnumItem>OFFSITE</EnumItem>
+            <EnumItem>SITE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

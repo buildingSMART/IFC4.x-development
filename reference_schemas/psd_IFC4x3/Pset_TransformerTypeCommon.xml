@@ -1,0 +1,211 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_TransformerTypeCommon</Name>
+  <Definition>An inductive stationary device that transfers electrical energy from one circuit to another.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcTransformer</ClassName>
+    <ClassName>IfcTransformerType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcTransformer,IfcTransformerType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as &quot;construction type&quot;. It should be provided as an alternative to the name of the &quot;object type&quot;, if the software does not support object types and no classification reference to a recognized classification system used.IFC4.3.0.0 DEPRECATION  The Reference property is deprecated and shall no longer be used, use attribute Name on the relating type instead.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElementStatus">
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PrimaryVoltage</Name>
+      <Definition>The voltage that is going to be transformed and that runs into the transformer on the primary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricVoltageMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SecondaryVoltage</Name>
+      <Definition>The voltage that has been transformed and is running out of the transformer on the secondary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricVoltageMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PrimaryCurrent</Name>
+      <Definition>The current that is going to be transformed and that runs into the transformer on the primary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SecondaryCurrent</Name>
+      <Definition>The current that has been transformed and is running out of the transformer on the secondary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PrimaryFrequency</Name>
+      <Definition>The frequency that is going to be transformed and that runs into the transformer on the primary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SecondaryFrequency</Name>
+      <Definition>The frequency that has been transformed and is running out of the transformer on the secondary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PrimaryApparentPower</Name>
+      <Definition>The power in VA (volt ampere) that has been transformed and that runs into the transformer on the primary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SecondaryApparentPower</Name>
+      <Definition>The power in VA (volt ampere) that has been transformed and is running out of the transformer on the secondary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumApparentPower</Name>
+      <Definition>Maximum apparent power/capacity in VA (volt ampere).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SecondaryCurrentType</Name>
+      <Definition>A list of the secondary current types that can result from transformer output.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SecondaryCurrentType">
+            <EnumItem>AC</EnumItem>
+            <EnumItem>DC</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ShortCircuitVoltage</Name>
+      <Definition>A complex number that specifies the real and imaginary parts of the short-circuit voltage at rated current of a transformer given in %.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcComplexNumber"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RealImpedanceRatio</Name>
+      <Definition>The ratio between the real part of the zero sequence impedance and the real part of the positive impedance (i.e. real part of the short-circuit voltage) of the transformer.
+Used for three-phase transformer which includes a N-conductor.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ImaginaryImpedanceRatio</Name>
+      <Definition>The ratio between the imaginary part of the zero sequence impedance and the imaginary part of the positive impedance (i.e. imaginary part of the short-circuit voltage) of the transformer.
+Used for three-phase transformer which includes a N-conductor.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TransformerVectorGroup</Name>
+      <Definition>List of the possible vector groups for the transformer from which that required may be set. Values in the enumeration list follow a standard international code where the first letter  describes how the primary windings are connected,
+the second letter describes how the secondary windings are connected, and the numbers describe the rotation of voltages and currents from the primary to the secondary side in multiples of 30 degrees.D: means that the windings are delta-connected.
+Y: means that the windings are star-connected.
+Z: means that the windings are zig-zag connected (a special start-connected providing low reactance of the transformer);
+The connectivity is only relevant for three-phase transformers.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TransformerVectorGroup">
+            <EnumItem>DD0</EnumItem>
+            <EnumItem>DD6</EnumItem>
+            <EnumItem>DY11</EnumItem>
+            <EnumItem>DY5</EnumItem>
+            <EnumItem>DZ0</EnumItem>
+            <EnumItem>DZ6</EnumItem>
+            <EnumItem>YD11</EnumItem>
+            <EnumItem>YD5</EnumItem>
+            <EnumItem>YY0</EnumItem>
+            <EnumItem>YY6</EnumItem>
+            <EnumItem>YZ11</EnumItem>
+            <EnumItem>YZ5</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsNeutralPrimaryTerminalAvailable</Name>
+      <Definition>An indication of whether the neutral point of the primary winding is available as a terminal (=TRUE) or not (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsNeutralSecondaryTerminalAvailable</Name>
+      <Definition>An indication of whether the neutral point of the secondary winding is available as a terminal (=TRUE) or not (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

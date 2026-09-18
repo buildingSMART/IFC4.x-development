@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RailTypeCheckRail</Name>
+  <Definition>Properties common to IfcRail types and occurrences with PredefinedType set to CHECKRAIL.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcRail/CHECKRAIL</ClassName>
+    <ClassName>IfcRailType/CHECKRAIL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcRail/CHECKRAIL,IfcRailType/CHECKRAIL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>CheckRailType</Name>
+      <Definition>Type of the check rail. Check rail types enumerated in this property are defined based on EN 13674.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CheckRailType">
+            <EnumItem>TYPE_33C1</EnumItem>
+            <EnumItem>TYPE_40C1</EnumItem>
+            <EnumItem>TYPE_47C1</EnumItem>
+            <EnumItem>TYPE_CR3_60U</EnumItem>
+            <EnumItem>TYPE_R260</EnumItem>
+            <EnumItem>TYPE_R320CR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InstallationPlan</Name>
+      <Definition>Reference to external information source about installation or construction plan of the element.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

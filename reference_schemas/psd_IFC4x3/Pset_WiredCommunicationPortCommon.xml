@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_WiredCommunicationPortCommon</Name>
+  <Definition>Properties used for wired communication port.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDistributionPort/CABLE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionPort/CABLE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>CommunicationStandard</Name>
+      <Definition>Indicates the communication standard supported by the physical wired communication port.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CommunicationStandard">
+            <EnumItem>ETHERNET</EnumItem>
+            <EnumItem>STM_1</EnumItem>
+            <EnumItem>STM_16</EnumItem>
+            <EnumItem>STM_256</EnumItem>
+            <EnumItem>STM_4</EnumItem>
+            <EnumItem>STM_64</EnumItem>
+            <EnumItem>USB</EnumItem>
+            <EnumItem>XDSL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumTransferRate</Name>
+      <Definition>Indicates the transmission rate in bit/s over the wired port.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIntegerCountRateMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

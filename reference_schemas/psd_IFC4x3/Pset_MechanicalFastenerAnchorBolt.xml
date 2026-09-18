@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MechanicalFastenerAnchorBolt</Name>
+  <Definition>Properties common to different types of anchor bolts.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcMechanicalFastener/ANCHORBOLT</ClassName>
+    <ClassName>IfcMechanicalFastenerType/ANCHORBOLT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMechanicalFastener/ANCHORBOLT,IfcMechanicalFastenerType/ANCHORBOLT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AnchorBoltLength</Name>
+      <Definition>The length of the anchor bolt.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AnchorBoltDiameter</Name>
+      <Definition>The nominal diameter of the anchor bolt bar(s).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AnchorBoltThreadLength</Name>
+      <Definition>The length of the threaded part of the anchor bolt.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AnchorBoltProtrusionLength</Name>
+      <Definition>The length of the protruding part of the anchor bolt.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

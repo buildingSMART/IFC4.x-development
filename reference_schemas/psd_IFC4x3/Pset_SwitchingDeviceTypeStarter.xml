@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SwitchingDeviceTypeStarter</Name>
+  <Definition>A starter is a switch which in the closed position controls the application of power to an electrical device.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSwitchingDevice/STARTER</ClassName>
+    <ClassName>IfcSwitchingDeviceType/STARTER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSwitchingDevice/STARTER,IfcSwitchingDeviceType/STARTER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>StarterType</Name>
+      <Definition>A list of the available types of starter from which that required may be selected where:AutoTransformer: A starter for an induction motor which uses for starting one or more reduced voltages derived from an auto transformer. (IEC 441-14-45)
+Manual: A starter in which the force for closing the main contacts is provided exclusively by manual energy. (IEC 441-14-39)
+DirectOnLine: A starter which connects the line voltage across the motor terminals in one step. (IEC 441-14-40)
+Frequency: A starter in which the frequency of the power supply is progressively increased until the normal operation frequency is attained.
+nStep: A starter in which there are (n-1) intermediate accelerating positions between the off and full on positions. (IEC 441-14-41)
+Rheostatic: A starter using one or several resistors for obtaining, during starting, stated motor torque characteristics and for limiting the current. (IEC 441-14-425)
+StarDelta: A starter for a 3 phase induction motor such that in the starting position the stator windings are connected in star and in the final running position they are connected in delta. (IEC 441-14-44)</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_StarterType">
+            <EnumItem>AUTOTRANSFORMER</EnumItem>
+            <EnumItem>DIRECTONLINE</EnumItem>
+            <EnumItem>FREQUENCY</EnumItem>
+            <EnumItem>MANUAL</EnumItem>
+            <EnumItem>NSTEP</EnumItem>
+            <EnumItem>RHEOSTATIC</EnumItem>
+            <EnumItem>STARDELTA</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

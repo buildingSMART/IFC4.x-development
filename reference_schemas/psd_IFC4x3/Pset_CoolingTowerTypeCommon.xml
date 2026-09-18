@@ -1,0 +1,218 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CoolingTowerTypeCommon</Name>
+  <Definition>Cooling tower type common attributes.
+WaterRequirement attribute unit type modified in IFC2x2 Pset Addendum.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCoolingTower</ClassName>
+    <ClassName>IfcCoolingTowerType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCoolingTower,IfcCoolingTowerType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as &quot;construction type&quot;. It should be provided as an alternative to the name of the &quot;object type&quot;, if the software does not support object types and no classification reference to a recognized classification system used.IFC4.3.0.0 DEPRECATION  The Reference property is deprecated and shall no longer be used, use attribute Name on the relating type instead.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElementStatus">
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalCapacity</Name>
+      <Definition>The total nominal or volumetric capacity of the object.
+
+Nominal cooling tower capacity in terms of heat transfer rate of the cooling tower between air stream and water stream at nominal conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CircuitType</Name>
+      <Definition>OpenCircuit: Exposes water directly to the cooling atmosphere.
+CloseCircuit: The fluid is separated from the atmosphere by a heat exchanger.
+Wet: The air stream or the heat exchange surface is evaporatively cooled.
+Dry: No evaporation into the air stream.
+DryWet: A combination of a dry tower and a wet tower.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CoolingTowerCircuitType">
+            <EnumItem>CLOSEDCIRCUITDRY</EnumItem>
+            <EnumItem>CLOSEDCIRCUITDRYWET</EnumItem>
+            <EnumItem>CLOSEDCIRCUITWET</EnumItem>
+            <EnumItem>OPENCIRCUIT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FlowArrangement</Name>
+      <Definition>Defines the basic flow arrangements for the heat exchanger or cooler tower:COUNTERFLOW: Air and water flow enter in different directions.
+CROSSFLOW: Air and water flow are perpendicular.
+PARALLELFLOW: Air and water flow enter in same directions.
+MULTIPASS: Multipass flow heat exchanger arrangement. 
+OTHER: Other type of heat exchanger flow arrangement not defined above.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CoolingTowerFlowArrangement">
+            <EnumItem>COUNTERFLOW</EnumItem>
+            <EnumItem>CROSSFLOW</EnumItem>
+            <EnumItem>PARALLELFLOW</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SprayType</Name>
+      <Definition>SprayFilled: Water is sprayed into airflow.
+SplashTypeFill: water cascades over successive rows of splash bars.
+FilmTypeFill: water flows in a thin layer over closely spaced sheets.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CoolingTowerSprayType">
+            <EnumItem>FILMTYPEFILL</EnumItem>
+            <EnumItem>SPLASHTYPEFILL</EnumItem>
+            <EnumItem>SPRAYFILLED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CapacityControl</Name>
+      <Definition>FanCycling: Fan is cycled on and off to control duty.
+TwoSpeedFan: Fan is switched between low and high speed to control duty.
+VariableSpeedFan: Fan speed is varied to control duty.
+DampersControl: Dampers modulate the air flow to control duty.
+BypassValveControl: Bypass valve modulates the water flow to control duty.
+MultipleSeriesPumps: Turn on/off multiple series pump to control duty.
+TwoSpeedPump: Switch between high/low pump speed to control duty.
+VariableSpeedPump: vary pump speed to control duty.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CoolingTowerCapacityControl">
+            <EnumItem>BYPASSVALVECONTROL</EnumItem>
+            <EnumItem>DAMPERSCONTROL</EnumItem>
+            <EnumItem>FANCYCLING</EnumItem>
+            <EnumItem>MULTIPLESERIESPUMPS</EnumItem>
+            <EnumItem>TWOSPEEDFAN</EnumItem>
+            <EnumItem>TWOSPEEDPUMP</EnumItem>
+            <EnumItem>VARIABLESPEEDFAN</EnumItem>
+            <EnumItem>VARIABLESPEEDPUMP</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ControlStrategy</Name>
+      <Definition>FixedExitingWaterTemp: The capacity is controlled to maintain a fixed exiting water temperature.
+WetBulbTempReset: The set-point is reset based on the wet-bulb temperature.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CoolingTowerControlStrategy">
+            <EnumItem>FIXEDEXITINGWATERTEMP</EnumItem>
+            <EnumItem>WETBULBTEMPRESET</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfCells</Name>
+      <Definition>Number of cells in one cooling tower unit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BasinReserveVolume</Name>
+      <Definition>Volume between operating and overflow levels in cooling tower basin.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LiftElevationDifference</Name>
+      <Definition>Elevation difference between cooling tower sump and the top of the tower.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WaterRequirement</Name>
+      <Definition>Make-up water requirement.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OperationTemperatureRange</Name>
+      <Definition>Allowable operation ambient air temperature range.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AmbientDesignDryBulbTemperature</Name>
+      <Definition>Ambient design dry bulb temperature used for selecting the cooling tower.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AmbientDesignWetBulbTemperature</Name>
+      <Definition>Ambient design wet bulb temperature used for selecting the cooling tower.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

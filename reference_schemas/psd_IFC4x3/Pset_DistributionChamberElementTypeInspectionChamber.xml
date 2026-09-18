@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DistributionChamberElementTypeInspectionChamber</Name>
+  <Definition>Chamber constructed on a drain, sewer or pipeline and with a removable cover, that permits visible inspection.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDistributionChamberElement/INSPECTIONCHAMBER</ClassName>
+    <ClassName>IfcDistributionChamberElementType/INSPECTIONCHAMBER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionChamberElement/INSPECTIONCHAMBER,IfcDistributionChamberElementType/INSPECTIONCHAMBER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ChamberLengthOrRadius</Name>
+      <Definition>Length or, in the event of the shape being circular in plan, the radius of the chamber.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ChamberWidth</Name>
+      <Definition>Width, in the event of the shape being non circular in plan.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InspectionChamberInvertLevel</Name>
+      <Definition>Level of the lowest part of the cross section as measured from ground level.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SoffitLevel</Name>
+      <Definition>Level of the highest internal part of the cross section as measured from ground level.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WallMaterial</Name>
+      <Definition>The material from which the wall of the chamber is constructed.
+NOTE: It is assumed that chamber walls will be constructed of a single material.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMaterialDefinition"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WallThickness</Name>
+      <Definition>The thickness of the wall construction.
+NOTE: It is assumed that walls will be constructed at a single thickness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BaseMaterial</Name>
+      <Definition>The material from which the base of the chamber is constructed.
+NOTE: It is assumed that chamber base will be constructed of a single material.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMaterialDefinition"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BaseThickness</Name>
+      <Definition>The thickness of the base construction, assumed to be constructed at a single thickness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WithBackdrop</Name>
+      <Definition>Indicates whether the chamber has a backdrop or tumbling bay (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AccessCoverMaterial</Name>
+      <Definition>The material from which the access cover to the chamber is constructed.
+NOTE: It is assumed that chamber walls will be constructed of a single material.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMaterialDefinition"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AccessLengthOrRadius</Name>
+      <Definition>The length of the chamber access cover or, where the plan shape of the cover is circular, the radius.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AccessWidth</Name>
+      <Definition>The width of the chamber access cover where the plan shape of the cover is not circular.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AccessCoverLoadRating</Name>
+      <Definition>The load rating of the access cover (which may be a value or an alphanumerically defined class rating).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

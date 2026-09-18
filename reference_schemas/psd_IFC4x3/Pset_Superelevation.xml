@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_Superelevation</Name>
+  <Definition>Specifies the general properties for a Superelevation event.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcReferent/SUPERELEVATIONEVENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcReferent/SUPERELEVATIONEVENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Side</Name>
+      <Definition>Specifies if the width is measured to the RIGHT or to the LEFT of the curve referenced by the placement, or if the same value is applied to BOTH sides.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SideType">
+            <EnumItem>BOTH</EnumItem>
+            <EnumItem>LEFT</EnumItem>
+            <EnumItem>RIGHT</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Superelevation</Name>
+      <Definition>Specifies the superelevation as a ratio measure (slope) at the location of the event.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TransitionSuperelevation</Name>
+      <Definition>The type of transition of superelevation from previous event to this one.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TransitionSuperelevationType">
+            <EnumItem>LINEAR</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

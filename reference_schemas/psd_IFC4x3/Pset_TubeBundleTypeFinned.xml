@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_TubeBundleTypeFinned</Name>
+  <Definition>Finned tube bundle type attributes.
+Contains the attributes related to the fins attached to a tube in a finned tube bundle such as is commonly found in coils.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcTubeBundle/FINNED</ClassName>
+    <ClassName>IfcTubeBundleType/FINNED</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcTubeBundle/FINNED,IfcTubeBundleType/FINNED</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Spacing</Name>
+      <Definition>Distance between fins on a tube in the tube bundle.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Thickness</Name>
+      <Definition>The geometric thickness of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ThermalConductivity</Name>
+      <Definition>The thermal conductivity of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermalConductivityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Length</Name>
+      <Definition>The length of the object.
+
+As measured parallel to the direction of airflow.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Height</Name>
+      <Definition>Characteristic height
+
+Length of the fin as measured perpendicular to the direction of airflow.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Diameter</Name>
+      <Definition>The Diameter of the object.
+
+For circular fins only.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FinCorrugatedType</Name>
+      <Definition>Description of a fin corrugated type.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasCoating</Name>
+      <Definition>TRUE if the fin has a coating, FALSE if it does not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

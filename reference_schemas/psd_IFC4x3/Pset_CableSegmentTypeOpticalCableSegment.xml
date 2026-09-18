@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CableSegmentTypeOpticalCableSegment</Name>
+  <Definition>Properties of optical cables segments. This property set is applicable to a type or occurrence of IfcCableSegment with predefined type OPTICALCABLESEGMENT.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment/OPTICALCABLESEGMENT</ClassName>
+    <ClassName>IfcCableSegmentType/OPTICALCABLESEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment/OPTICALCABLESEGMENT,IfcCableSegmentType/OPTICALCABLESEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NumberOfFibers</Name>
+      <Definition>Indicates the number of fibers in the single tube or cable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OpticalCableStructure</Name>
+      <Definition>Distinguishes between different structures of an optical fiber cable.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_OpticalCableStructureType">
+            <EnumItem>BREAKOUT</EnumItem>
+            <EnumItem>LOOSETUBE</EnumItem>
+            <EnumItem>PATCHCORD</EnumItem>
+            <EnumItem>PIGTAIL</EnumItem>
+            <EnumItem>TIGHTBUFFERED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfMultiModeFibers</Name>
+      <Definition>Total number of multi-mode fibers in the optical fiber cable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfSingleModeFibers</Name>
+      <Definition>Total number of single-mode fibers in the optical fiber cable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfTubes</Name>
+      <Definition>Number of fiber tubes.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FiberMode</Name>
+      <Definition>Indicates the fiber mode.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FiberMode">
+            <EnumItem>MULTIMODE</EnumItem>
+            <EnumItem>SINGLEMODE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

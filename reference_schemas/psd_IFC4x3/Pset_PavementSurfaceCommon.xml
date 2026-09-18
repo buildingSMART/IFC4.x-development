@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_PavementSurfaceCommon</Name>
+  <Definition>Properties for a pavement surface.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcPavement</ClassName>
+    <ClassName>IfcPavementType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcPavement,IfcPavementType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>PavementRoughness</Name>
+      <Definition>An assessment of the functional condition of the pavement surface indicated as an index according to the International Roughness Index (IRI).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNumericMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PavementTexture</Name>
+      <Definition>Characterization of pavement texture by mean profile depthNOTE  Definition according to ISO 13473-1:2019</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>
