@@ -553,7 +553,7 @@ class xmi_document:
 
                 is_abstract = c.isAbstract == "true"
 
-                attributes, inverses, derived, children = [], [], [], []
+                attributes, inverses, derived = [], [], []
 
                 subtypes = [*map(operator.attrgetter('name'), filter(lambda n: n.xmi_type == 'uml:Class', filter(lambda n: '.' not in n.name, (self.xmi.by_id[x] for x in self.generalizations_in.get(c.id, [])))))]
                 supertypes = [self.xmi.by_id[x].name for x in self.generalizations_out.get(c.id, [])]
@@ -662,7 +662,7 @@ class xmi_document:
                              
                 yield xmi_item(
                     "ENTITY", c.name, 
-                    express_entity, c, children,
+                    express_entity, c, [(a.name, a) for a in c/"ownedAttribute"],
                     document=self,
-                    supertypes=subtypes
+                    supertypes=supertypes
                 )

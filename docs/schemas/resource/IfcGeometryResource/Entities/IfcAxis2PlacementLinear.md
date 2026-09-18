@@ -7,9 +7,11 @@ The _IfcAxis2PlacementLinear_ provides location and orientation to place items i
 
 ### Axis
 The exact direction of the local Z Axis.
+When the Axis is omitted, its direction defaults to the normal vector to the basis curve that lies within the vertical plane with the RefDirection and has positive Z coordinate.
+For _IfcSegmentedReferenceCurve_ the Axis direction also includes the 'twist' resulting from a deviating elevation relative to the associated _IfcGradientCurve_.
 
 ### RefDirection
-The direction used to determine the direction of the local X Axis. In case both Axis and RefDirection are set and not perpendicular an adjustment is necessary to maintain orthogonality to the Axis direction. If RefDirection is omitted, the direction is taken from the curve tangent at Location.
+The direction used to determine the direction of the local X Axis. In case both Axis and RefDirection are set and not perpendicular an adjustment is necessary to maintain orthogonality to the Axis direction. If RefDirection is omitted, the direction is taken from the curve tangent at _Location_.
 
 ## Formal Propositions
 

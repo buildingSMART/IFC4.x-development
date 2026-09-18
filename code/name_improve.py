@@ -218,24 +218,11 @@ def split_words(s):
 
 
 def name_improve(s):
+    s = re.split(r"_\w\[", s)[0]
     if s.lower().startswith("ifc"):
         s = s[3:]
-    caps_control(split_words(clean(normalise(s))).title())
-    return s
-
-
-def trim_definition(s):
-    marker = MARKER.replace("\n", "")
-    if MARKER in s:
-        return s[: s.find(marker)]
-    else:
-        logging.error(
-            f"\033[31mThe marker {marker} was not found in the text: {s[:100]}. The definition will be empty in bSDD.\033[0m"
-        )
-        return ""
+    return caps_control(split_words(clean(normalise(s))).title())
 
 
 def definition_improve(s):
-    s = clean(s)
-    s = trim_definition(s)
-    return s
+    return clean(s.split(MARKER.strip(), 1)[0].strip())
