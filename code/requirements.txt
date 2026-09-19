@@ -29,6 +29,7 @@ networkx
 # Data / utils
 numpy
 tabulate
+wordninja==2.0.0
 deepdiff
 hilbertcurve==1.0.5
 python-dotenv
