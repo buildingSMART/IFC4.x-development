@@ -4,8 +4,17 @@ import json
 import re
 from pathlib import Path
 
+import wordninja
+
 from .refiner import BeautifulSoup
 
+CAMEL_BOUNDARY = re.compile(
+    r"(?<=[a-z])(?=[A-Z0-9])"
+    r"|(?<=[A-Z][A-Z])(?=[0-9])"
+    r"|(?<=[0-9])(?=[a-z])"
+    r"|(?<=[0-9])(?=[A-Z][A-Za-z])"
+    r"|(?<=[A-Z])(?=[A-Z][a-z])"
+)
 
 class SearchIndexBuilder:
     SKIP_SELECTORS = (
@@ -65,6 +74,11 @@ class SearchIndexBuilder:
             element.decompose()
 
         title = self._extract_title(public_path, soup, root)
+
+        if m := re.match(r'((\d+\.)+\d+) (.+)$', title):
+            # remove the numbering prefix from the search, people likely do not search for this.
+            title = m.groups()[-1]
+
         headings = self._normalize_text(" ".join(node.get_text(" ", strip=True) for node in root.find_all(["h2", "h3", "h4", "h5", "h6"])))
 
         first_heading = root.find("h1")
@@ -81,7 +95,6 @@ class SearchIndexBuilder:
             "title": title,
             "kind": self._kind_for(public_path),
             "headings": headings,
-            "summary": self._summarize(text),
             "text": text,
         }
 
@@ -127,11 +140,29 @@ class SearchIndexBuilder:
             return "schema"
         return "page"
 
-    def _normalize_text(self, value: str) -> str:
-        return re.sub(r"\s+", " ", value).strip()
-
-    def _summarize(self, text: str, limit: int = 280) -> str:
-        if len(text) <= limit:
-            return text
-        clipped = text[:limit].rsplit(" ", 1)[0].strip()
-        return clipped + "..."
+    def _normalize_text(self, value: str, n: int = 4) -> str:
+        result = []
+        for piece in re.split(r"([_\s]+)", value):
+            if not piece:
+                continue
+            # Preserve original separators.
+            if re.fullmatch(r"[_\s]+", piece):
+                result.append(re.sub(r"\s+", " ", piece))
+                continue
+            result.append(piece)
+            partes = []
+            for token in CAMEL_BOUNDARY.split(piece):
+                if not token:
+                    continue
+                if token.isalpha() and token.isupper() and len(token) > n:
+                    parts = wordninja.split(token.lower())
+                else:
+                    parts = [token.lower()]
+                partes.extend(
+                    part.removeprefix("ifc")
+                    for part in parts
+                    if part.removeprefix("ifc")
+                )
+            if len(partes) > 1 or (partes and partes[0] != piece.lower()):
+                result.append(" (" + " ".join(partes) + ")")
+        return "".join(result).strip()
