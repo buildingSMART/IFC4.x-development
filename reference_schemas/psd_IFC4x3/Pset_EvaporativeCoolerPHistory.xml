@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_EvaporativeCoolerPHistory</Name>
+  <Definition>Evaporative cooler performance history attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcEvaporativeCooler</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcEvaporativeCooler</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>WaterSumpTemperature</Name>
+      <Definition>Water sump temperature.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Effectiveness</Name>
+      <Definition>Effectiveness, represented as ratio.
+
+Ratio of the change in dry bulb temperature of the (primary) air stream to the difference between the entering dry bulb temperature of the (primary) air and the wet-bulb temperature of the (secondary) air.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SensibleHeatTransferRate</Name>
+      <Definition>Sensible heat transfer rate.
+
+Sensible heat transfer rate to primary air flow.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LatentHeatTransferRate</Name>
+      <Definition>Latent heat transfer rate.
+
+To primary air flow.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TotalHeatTransferRate</Name>
+      <Definition>Total heat transfer rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

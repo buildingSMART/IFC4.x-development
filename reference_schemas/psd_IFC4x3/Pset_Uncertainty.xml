@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_Uncertainty</Name>
+  <Definition>Property set capturing the geometric uncertainty regarding measurements including how the way that uncertainty was assessed.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProduct</ClassName>
+    <ClassName>IfcTypeProduct</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProduct,IfcTypeProduct</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>UncertaintyBasis</Name>
+      <Definition>Indication of the basis of the uncertainty</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_UncertaintyBasis">
+            <EnumItem>ASSESSMENT</EnumItem>
+            <EnumItem>ESTIMATE</EnumItem>
+            <EnumItem>INTERPRETATION</EnumItem>
+            <EnumItem>MEASUREMENT</EnumItem>
+            <EnumItem>OBSERVATION</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>USERDEFINED</EnumItem>
+            <EnumItem>NOTDEFINED</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>UncertaintyDescription</Name>
+      <Definition>General description of the uncertainty associated to the element or feature, its source and implications.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HorizontalUncertainty</Name>
+      <Definition>Indicative (95%-100%) range diameter associated to the vertical shape and position in X, if different to the linear uncertainty.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LinearUncertainty</Name>
+      <Definition>Indicative (95%-100%) range diameter associated to the overall shape and position in XYZ.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OrthogonalUncertainty</Name>
+      <Definition>Indicative (95%-100%) range diameter associated to the horizontal shape and position in Y, if different to the horizontal uncertainty.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VerticalUncertainty</Name>
+      <Definition>Indicative (95%-100%) range diameter associated to the vertical shape and position in Z, if different to the linear uncertainty.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

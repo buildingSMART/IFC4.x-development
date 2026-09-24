@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SanitaryTerminalTypeToiletPan</Name>
+  <Definition>Soil appliance for the disposal of excrement. HISTORY: In IFC4, Material property removed. Use materials capabilities from IfcMaterialResource schema. Prefix for color property removed. Datatype of color changed to IfcLabel (still a string value).</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSanitaryTerminal/TOILETPAN</ClassName>
+    <ClassName>IfcSanitaryTerminalType/TOILETPAN</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSanitaryTerminal/TOILETPAN,IfcSanitaryTerminalType/TOILETPAN</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ToiletType</Name>
+      <Definition>Enumeration that defines the types of toilet (water closet) arrangements that may be specified where:-BedPanWasher: Enclosed soil appliance in which bedpans and urinal bottles are emptied and cleansed.
+Chemical: Portable receptacle or soil appliance that receives and retains excrement in either an integral or a separate container, in which it is chemically treated and from which it has to be emptied periodically.
+CloseCoupled:   Toilet suite in which a flushing cistern is connected directly to the water closet pan.
+LooseCoupled:   Toilet arrangement in which a flushing cistern is connected to the water closet pan through a flushing pipe.
+SlopHopper:     Hopper shaped soil appliance with a flushing rim and outlet similar to those of a toilet pan, into which human excrement is emptied for disposal.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ToiletType">
+            <EnumItem>BEDPANWASHER</EnumItem>
+            <EnumItem>CHEMICAL</EnumItem>
+            <EnumItem>CLOSECOUPLED</EnumItem>
+            <EnumItem>LOOSECOUPLED</EnumItem>
+            <EnumItem>SLOPHOPPER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ToiletPanType</Name>
+      <Definition>The property enumeration Pset_ToiletPanTypeEnum defines the types of toilet pan that may be specified within the property set Pset_Toilet:-Siphonic:   Toilet pan in which excrement is removed by siphonage induced by the flushing water.
+Squat:  Toilet pan with an elongated bowl installed with its top edge at or near floor level, so that the user has to squat.
+WashDown:   Toilet pan in which excrement is removed by the momentum of the flushing water.
+WashOut:    A washdown toilet pan in which excrement falls first into a shallow water filled bowl.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ToiletPanType">
+            <EnumItem>SIPHONIC</EnumItem>
+            <EnumItem>SQUAT</EnumItem>
+            <EnumItem>WASHDOWN</EnumItem>
+            <EnumItem>WASHOUT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PanMounting</Name>
+      <Definition>The property enumeration Pset_SanitaryMountingEnum defines the forms of mounting or fixing of the sanitary terminal that may be specified within property sets used to define sanitary terminals (WC’s, basins, sinks, etc.) where:-BackToWall:     A pedestal mounted sanitary terminal that fits flush to the wall at the rear to cover its service connections.
+Pedestal:   A floor mounted sanitary terminal that has an integral base.
+CounterTop:     A sanitary terminal that is installed into a horizontal surface that is installed into a horizontal surface. Note: When applied to a wash hand basin, the term more normally used is ‘vanity’. See also Wash Hand Basin Type specification.
+WallHung:   A sanitary terminal cantilevered clear of the floor.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SanitaryMounting">
+            <EnumItem>BACKTOWALL</EnumItem>
+            <EnumItem>COUNTERTOP</EnumItem>
+            <EnumItem>PEDESTAL</EnumItem>
+            <EnumItem>WALLHUNG</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SpilloverLevel</Name>
+      <Definition>The level at which water spills out of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

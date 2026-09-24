@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ProjectOrderMoveOrder</Name>
+  <Definition>Defines the requirements for move orders. Note that the move order status is defined in the same way as a work order status since a move order implies a work requirement.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProjectOrder/MOVEORDER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProjectOrder/MOVEORDER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SpecialInstructions</Name>
+      <Definition>Special instructions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

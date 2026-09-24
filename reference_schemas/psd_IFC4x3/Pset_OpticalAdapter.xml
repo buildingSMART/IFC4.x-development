@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_OpticalAdapter</Name>
+  <Definition>Properties in this property set are applicable to the transition type of cable fitting. Indicated that such transition is an optical adapter.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableFitting/TRANSITION</ClassName>
+    <ClassName>IfcCableFittingType/TRANSITION</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableFitting/TRANSITION,IfcCableFittingType/TRANSITION</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>FiberType</Name>
+      <Definition>Indicates the type of the single fiber.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FiberType">
+            <EnumItem>BEND_INSENSITIVEFIBER</EnumItem>
+            <EnumItem>CUTOFFSHIFTEDFIBER</EnumItem>
+            <EnumItem>DISPERSIONSHIFTEDFIBER</EnumItem>
+            <EnumItem>LOWWATERPEAKFIBER</EnumItem>
+            <EnumItem>NON_ZERODISPERSIONSHIFTEDFIBER</EnumItem>
+            <EnumItem>OM1</EnumItem>
+            <EnumItem>OM2</EnumItem>
+            <EnumItem>OM3</EnumItem>
+            <EnumItem>OM4</EnumItem>
+            <EnumItem>OM5</EnumItem>
+            <EnumItem>STANDARDSINGLEMODEFIBER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

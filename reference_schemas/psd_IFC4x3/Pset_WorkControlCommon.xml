@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_WorkControlCommon</Name>
+  <Definition>Properties common to the definition of all occurrences of IfcWorkPlan and IfcWorkSchedule (subtypes of IfcWorkControl).</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcWorkControl</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcWorkControl</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>WorkStartTime</Name>
+      <Definition>The default time of day a task is scheduled to start. For presentation purposes, if the start time of a task matches the WorkStartTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, applications may automatically append the WorkStartTime.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTime"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WorkFinishTime</Name>
+      <Definition>The default time of day a task is scheduled to finish. For presentation purposes, if the finish time of a task matches the WorkFinishTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, applications may automatically append the WorkFinishTime.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTime"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WorkDayDuration</Name>
+      <Definition>The elapsed time within a worktime-based day. For presentation purposes, applications may choose to display IfcTask durations in work days where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 24 hours (an elapsed day); if omitted then 8 hours is assumed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDuration"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WorkWeekDuration</Name>
+      <Definition>The elapsed time within a worktime-based week. For presentation purposes, applications may choose to display IfcTask durations in work weeks where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 168 hours (an elapsed week); if omitted then 40 hours is assumed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDuration"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WorkMonthDuration</Name>
+      <Definition>The elapsed time within a worktime-based month. For presentation purposes, applications may choose to display IfcTask durations in work months where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 744 hours (an elapsed month of 31 days); if omitted then 160 hours is assumed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDuration"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

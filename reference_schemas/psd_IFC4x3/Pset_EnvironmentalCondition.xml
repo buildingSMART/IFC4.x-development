@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_EnvironmentalCondition</Name>
+  <Definition>Properties defining environment conditions required by the element.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElement</ClassName>
+    <ClassName>IfcElementType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElement,IfcElementType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ReferenceAirRelativeHumidity</Name>
+      <Definition>Measurement of the ratio of water vapor in the air.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcNormalisedRatioMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ReferenceEnvironmentTemperature</Name>
+      <Definition>Ideal temperature range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumAtmosphericPressure</Name>
+      <Definition>Maximum level of atmospheric pressure that the equipment can operate effectively in.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>StorageTemperatureRange</Name>
+      <Definition>Allowed storage temperature range that the element complies with.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumWindSpeed</Name>
+      <Definition>Maximum resistance to wind load exposure.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLinearVelocityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OperationalTemperatureRange</Name>
+      <Definition>The temperature range in which the device operates normally.
+
+Allowable operation ambient air temperature range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumRainIntensity</Name>
+      <Definition>Maximum level of rain intensity that the equipment can operate effectively in. It is usually measured in millimeter per hour (mm/h).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SaltMistLevel</Name>
+      <Definition>Maximum level of salt mist that the equipment can operate effectively in. It is provided according to an international or national standard.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SeismicResistance</Name>
+      <Definition>Maximum magnitude of earthquake that the equipment complies with. The value indicates earthquake intensity measured in Richter scale.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SmokeLevel</Name>
+      <Definition>Maximum level of smoke that the equipment complies with. It is provided according to an international or national standard.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumSolarRadiation</Name>
+      <Definition>Maximum level of solar irradiance that the equipment can operate effectively in. This is usually tested and measured by a national or international standard. The value indicates power density measured in watt per square meter (w/m2).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

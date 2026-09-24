@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FilterPHistory</Name>
+  <Definition>Filter performance history attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFilter</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFilter</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>CountedEfficiency</Name>
+      <Definition>Filter efficiency based the particle counts concentration before and after filter against particles with certain size distribution.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WeightedEfficiency</Name>
+      <Definition>Filter efficiency based the particle weight concentration before and after filter against particles with certain size distribution.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ParticleMassHolding</Name>
+      <Definition>Mass of particle holding in the filter.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

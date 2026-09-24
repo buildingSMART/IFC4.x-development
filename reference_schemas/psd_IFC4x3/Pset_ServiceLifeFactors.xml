@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ServiceLifeFactors</Name>
+  <Definition>Captures various factors that impact the expected service life of elements within the system or zone.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSystem</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSystem</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>QualityOfComponents</Name>
+      <Definition>Adjustment of the service life resulting from the effect of the quality of components used.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DesignLevel</Name>
+      <Definition>Adjustment of the service life resulting from the effect of design level employed.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WorkExecutionLevel</Name>
+      <Definition>Adjustment of the service life resulting from the effect of the quality of work executed.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IndoorEnvironment</Name>
+      <Definition>Adjustment of the service life resulting from the effect of the indoor environment (where appropriate).</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OutdoorEnvironment</Name>
+      <Definition>Adjustment of the service life resulting from the effect of the outdoor environment (where appropriate)</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InUseConditions</Name>
+      <Definition>Adjustment of the service life resulting from the effect of the conditions in which components are operating.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaintenanceLevel</Name>
+      <Definition>Adjustment of the service life resulting from the effect of the level or degree of maintenance applied to dcomponents.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ProjectOrderChangeOrder</Name>
+  <Definition>A change order is an instruction to make a change to a product or work being undertake. Note that the change order status is defined in the same way as a work order status since a change order implies a work requirement.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProjectOrder/CHANGEORDER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProjectOrder/CHANGEORDER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ReasonForChange</Name>
+      <Definition>A description of the problem for why a change is needed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BudgetSource</Name>
+      <Definition>The budget source requested.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

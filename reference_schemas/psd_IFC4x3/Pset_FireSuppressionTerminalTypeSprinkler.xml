@@ -1,0 +1,158 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FireSuppressionTerminalTypeSprinkler</Name>
+  <Definition>Device for sprinkling water from a pipe under pressure over an area (BS6100 100 3432)</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFireSuppressionTerminal/SPRINKLER</ClassName>
+    <ClassName>IfcFireSuppressionTerminalType/SPRINKLER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFireSuppressionTerminal/SPRINKLER,IfcFireSuppressionTerminalType/SPRINKLER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SprinklerType</Name>
+      <Definition>Identifies the predefined types of sprinkler  from which the type required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SprinklerType">
+            <EnumItem>CEILING</EnumItem>
+            <EnumItem>CONCEALED</EnumItem>
+            <EnumItem>CUTOFF</EnumItem>
+            <EnumItem>PENDANT</EnumItem>
+            <EnumItem>RECESSEDPENDANT</EnumItem>
+            <EnumItem>SIDEWALL</EnumItem>
+            <EnumItem>UPRIGHT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Activation</Name>
+      <Definition>Identifies the predefined methods of sprinkler activation from which that required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SprinklerActivation">
+            <EnumItem>BULB</EnumItem>
+            <EnumItem>FUSIBLESOLDER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Response</Name>
+      <Definition>Identifies the predefined methods of sprinkler response from which that required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SprinklerResponse">
+            <EnumItem>QUICK</EnumItem>
+            <EnumItem>STANDARD</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ActivationTemperature</Name>
+      <Definition>The temperature at which the object is designed to activate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CoverageArea</Name>
+      <Definition>The area that is covered by the object.
+
+Indicates the area that the sprinkler is designed to protect.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasDeflector</Name>
+      <Definition>Indication of whether the sprinkler has a deflector (baffle) fitted to diffuse the discharge on activation (= TRUE) or not (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BulbLiquidColour</Name>
+      <Definition>The colour of the liquid in the bulb for a bulb activated sprinkler. Note that the liquid colour varies according to the activation temperature requirement of the sprinkler head. Note also that this property does not need to be asserted for quick response activated sprinklers.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SprinklerBulbLiquidColour">
+            <EnumItem>BLUE</EnumItem>
+            <EnumItem>GREEN</EnumItem>
+            <EnumItem>MAUVE</EnumItem>
+            <EnumItem>ORANGE</EnumItem>
+            <EnumItem>RED</EnumItem>
+            <EnumItem>YELLOW</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DischargeFlowRate</Name>
+      <Definition>The volumetric rate of fluid discharge.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ResidualFlowingPressure</Name>
+      <Definition>The residual flowing pressure in the pipeline at which the discharge flow rate is determined.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DischargeCoefficient</Name>
+      <Definition>The coefficient of flow at the sprinkler.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumWorkingPressure</Name>
+      <Definition>Maximum pressure that the object is manufactured to withstand.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConnectionSize</Name>
+      <Definition>The connection size of the object.
+
+Inlet connection to sprinkler.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

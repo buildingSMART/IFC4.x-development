@@ -1,0 +1,177 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_Address</Name>
+  <Definition>This Property Set represents an address for delivery of paper based mail and other postal deliveries.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcActor</ClassName>
+    <ClassName>IfcBuilding</ClassName>
+    <ClassName>IfcSite</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActor,IfcBuilding,IfcSite</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Purpose</Name>
+      <Definition>Indication of the purpose of this object</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AddressType">
+            <EnumItem>DISTRIBUTIONPOINT</EnumItem>
+            <EnumItem>HOME</EnumItem>
+            <EnumItem>OFFICE</EnumItem>
+            <EnumItem>SITE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Description</Name>
+      <Definition>The Description of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>UserDefinedPurpose</Name>
+      <Definition>Allows for specification of user specific purpose of the address beyond the enumeration values provided by Purpose attribute of type IfcAddressTypeEnum. When a value is provided for attribute UserDefinedPurpose, in parallel the attribute Purpose shall have enumeration value USERDEFINED.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InternalLocation</Name>
+      <Definition>An organization defined address for internal mail delivery.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AddressLines</Name>
+      <Definition>The postal address.NOTE  A postal address may occupy several lines (or elements) when recorded. It is expected that normal usage will incorporate relevant elements of the following address concepts: A location within a building (e.g. 3rd Floor) Building name (e.g. Interoperability House) Street number (e.g. 6400) Street name (e.g. Alliance Boulevard). Typical content of address lines may vary in different countries.</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcLabel"/>
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PostalBox</Name>
+      <Definition>An address that is implied by an identifiable mail drop.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Town</Name>
+      <Definition>The name of a town.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Region</Name>
+      <Definition>The name of a region.EXAMPLE  The counties of the United Kingdom and the states of North America are examples of regions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PostalCode</Name>
+      <Definition>The code that is used by the country's postal service.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Country</Name>
+      <Definition>The two letter country code (from ISO 3166).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TelephoneNumbers</Name>
+      <Definition>The list of telephone numbers at which telephone messages may be received.</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcLabel"/>
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FacsimileNumbers</Name>
+      <Definition>The list of fax numbers at which fax messages may be received.</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcLabel"/>
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PagerNumber</Name>
+      <Definition>The pager number at which paging messages may be received.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ElectronicMailAddresses</Name>
+      <Definition>The list of Email addresses at which Email messages may be received.</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcLabel"/>
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WWWHomePageURL</Name>
+      <Definition>The world wide web address at which the preliminary page of information for the person or organization can be located.NOTE  Information on the world wide web for a person or organization may be separated into a number of pages and across a number of host sites, all of which may be linked together. It is assumed that all such information may be referenced from a single page that is termed the home page for that person or organization.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcURIReference"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MessagingIDs</Name>
+      <Definition>IDs or addresses for any other means of telecommunication, for example instant messaging, voice-over-IP, or file transfer protocols. The communication protocol is indicated by the URI value with scheme designations such as irc:, sip:, or ftp:.</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcURIReference"/>
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

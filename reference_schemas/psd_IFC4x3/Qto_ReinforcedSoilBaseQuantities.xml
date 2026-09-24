@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_ReinforcedSoilBaseQuantities</Name>
+  <Definition>Quantity sets for Reinforced Soil Base.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcReinforcedSoil</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcReinforcedSoil</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Length</Name>
+      <Definition>The length of the object.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Width</Name>
+      <Definition>The width of the object. Only given, if the object has constant thickness (prismatic).</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Depth</Name>
+      <Definition>The depth of the object.
+
+Depth (one direction of the non-projected foot print area) of the slab. It shall only be provided, if the slab is rectangular.NOTE  Also referred to as width, but not to be confused with the &quot;Width&quot; quantity, that denotes the thickness in the context of the slab.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Area</Name>
+      <Definition>Calculated area for the object.</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Volume</Name>
+      <Definition>Volume of the element.</Definition>
+      <QtoType>Q_VOLUME</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

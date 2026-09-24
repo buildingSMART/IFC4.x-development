@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MarinePartChamberCommon</Name>
+  <Definition>Properties common to the definition of all occurrences of IfcMarinePart with the predefined type set to CHAMBER.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcMarinePart/CHAMBER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMarinePart/CHAMBER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>EffectiveChamberSize</Name>
+      <Definition>Volumetric measure defining the effective chamber size for operational and design activities.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>StructuralType</Name>
+      <Definition>Structural type of the object</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

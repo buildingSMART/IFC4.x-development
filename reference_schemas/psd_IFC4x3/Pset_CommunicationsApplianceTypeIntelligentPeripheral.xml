@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CommunicationsApplianceTypeIntelligentPeripheral</Name>
+  <Definition>Properties common to a intelligent peripheral. This property set is applied to a type or occurrence of IfcCommunicationsAppliance with predefined type of INTELLIGENT_PERIPHERAL.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCommunicationsAppliance/INTELLIGENTPERIPHERAL</ClassName>
+    <ClassName>IfcCommunicationsApplianceType/INTELLIGENTPERIPHERAL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCommunicationsAppliance/INTELLIGENTPERIPHERAL,IfcCommunicationsApplianceType/INTELLIGENTPERIPHERAL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>UserCapacity</Name>
+      <Definition>Indicates the user capacity of the device, defined as the maximum number of users that can be active at the same time.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

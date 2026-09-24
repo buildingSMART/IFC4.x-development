@@ -1,0 +1,178 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ConcreteElementGeneral</Name>
+  <Definition>General properties common to different types of concrete elements, including reinforced concrete elements. The property set can be used by a number of subtypes of IfcBuiltElement, indicated that such element is designed or constructed using a concrete construction method.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcBeam</ClassName>
+    <ClassName>IfcBuildingElementProxy</ClassName>
+    <ClassName>IfcChimney</ClassName>
+    <ClassName>IfcCivilElement</ClassName>
+    <ClassName>IfcColumn</ClassName>
+    <ClassName>IfcFooting</ClassName>
+    <ClassName>IfcMember</ClassName>
+    <ClassName>IfcPile</ClassName>
+    <ClassName>IfcPlate</ClassName>
+    <ClassName>IfcRailing</ClassName>
+    <ClassName>IfcRampFlight</ClassName>
+    <ClassName>IfcRamp</ClassName>
+    <ClassName>IfcRoof</ClassName>
+    <ClassName>IfcSlab</ClassName>
+    <ClassName>IfcStairFlight</ClassName>
+    <ClassName>IfcStair</ClassName>
+    <ClassName>IfcWall</ClassName>
+    <ClassName>IfcBeamType</ClassName>
+    <ClassName>IfcBuildingElementProxyType</ClassName>
+    <ClassName>IfcChimneyType</ClassName>
+    <ClassName>IfcCivilElementType</ClassName>
+    <ClassName>IfcColumnType</ClassName>
+    <ClassName>IfcFootingType</ClassName>
+    <ClassName>IfcMemberType</ClassName>
+    <ClassName>IfcPileType</ClassName>
+    <ClassName>IfcPlateType</ClassName>
+    <ClassName>IfcRailingType</ClassName>
+    <ClassName>IfcRampFlightType</ClassName>
+    <ClassName>IfcRampType</ClassName>
+    <ClassName>IfcRoofType</ClassName>
+    <ClassName>IfcSlabType</ClassName>
+    <ClassName>IfcStairFlightType</ClassName>
+    <ClassName>IfcStairType</ClassName>
+    <ClassName>IfcWallType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcCivilElement,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRampFlight,IfcRamp,IfcRoof,IfcSlab,IfcStairFlight,IfcStair,IfcWall,IfcBeamType,IfcBuildingElementProxyType,IfcChimneyType,IfcCivilElementType,IfcColumnType,IfcFootingType,IfcMemberType,IfcPileType,IfcPlateType,IfcRailingType,IfcRampFlightType,IfcRampType,IfcRoofType,IfcSlabType,IfcStairFlightType,IfcStairType,IfcWallType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AssemblyPlace</Name>
+      <Definition>Enumeration defining where the assembly is intended to take place, either in a factory, other offsite location or on the building site.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AssemblyPlace">
+            <EnumItem>FACTORY</EnumItem>
+            <EnumItem>OFFSITE</EnumItem>
+            <EnumItem>SITE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CastingMethod</Name>
+      <Definition>The method of casting the concrete into its designed form.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ConcreteCastingMethod">
+            <EnumItem>INSITU</EnumItem>
+            <EnumItem>MIXED</EnumItem>
+            <EnumItem>PRECAST</EnumItem>
+            <EnumItem>PRINTED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>StructuralClass</Name>
+      <Definition>The structural class defined for the concrete structure (e.g. '1').</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>StrengthClass</Name>
+      <Definition>Classification of the concrete strength in accordance with the concrete design code which is applied in the project.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ExposureClass</Name>
+      <Definition>Classification of exposure to environmental conditions, usually specified in accordance with the concrete design code which is applied in the project.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ReinforcementVolumeRatio</Name>
+      <Definition>The required ratio of the effective mass of the reinforcement to the effective volume of the concrete of a reinforced concrete structural element.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMassDensityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ReinforcementAreaRatio</Name>
+      <Definition>The required ratio of the effective area of the reinforcement to the effective area of the concrete At any section of a reinforced concrete structural element.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaDensityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DimensionalAccuracyClass</Name>
+      <Definition>Classification designation of the dimensional accuracy requirement according to local standards.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConstructionToleranceClass</Name>
+      <Definition>Classification designation of the on-site construction tolerances according to local standards.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConcreteCover</Name>
+      <Definition>The protective concrete cover at the reinforcing bars according to local building regulations.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConcreteCoverAtMainBars</Name>
+      <Definition>The protective concrete cover at the main reinforcing bars according to local building regulations.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConcreteCoverAtLinks</Name>
+      <Definition>The protective concrete cover at the reinforcement links according to local building regulations.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ReinforcementStrengthClass</Name>
+      <Definition>Classification of the reinforcement strength in accordance with the concrete design code which is applied in the project. The reinforcing strength class often combines strength and ductility.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

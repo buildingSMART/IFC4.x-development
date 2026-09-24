@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ProjectOrderPurchaseOrder</Name>
+  <Definition>Defines the requirements for purchase orders in a project.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProjectOrder/PURCHASEORDER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProjectOrder/PURCHASEORDER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>IsFOB</Name>
+      <Definition>Indication of whether contents of the purchase order are delivered 'Free on Board' (= True) or not (= False). FOB is a shipping term which indicates that the supplier pays the shipping costs (and usually also the insurance costs) from the point of manufacture to a specified destination, at which point the buyer takes responsibility.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ShipMethod</Name>
+      <Definition>Method of shipping that will be used for goods or services.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

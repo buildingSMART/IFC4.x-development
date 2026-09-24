@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_TankTypeSectional</Name>
+  <Definition>Fixed vessel constructed from sectional parts with one or more compartments for storing a liquid.Note (1): All sectional construction tanks are considered to be rectangular by default.
+Note (2): Generally, it is not expected that sectional construction tanks will be used for the purposes of gas storage.Pset renamed from Pset_TankTypeSectionalTank to Pset_TankTypeSectional in IFC2x2 Pset Addendum.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcTank</ClassName>
+    <ClassName>IfcTankType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcTank,IfcTankType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NumberOfSections</Name>
+      <Definition>Number of sections.
+
+Number of sections used in the construction of the tankNote: All sections assumed to be the same size.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SectionLength</Name>
+      <Definition>The length of a section used in the construction of the tank.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SectionWidth</Name>
+      <Definition>The width of a section used in the construction of the tank.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

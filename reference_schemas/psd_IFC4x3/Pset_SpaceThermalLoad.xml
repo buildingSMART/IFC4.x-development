@@ -1,0 +1,142 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SpaceThermalLoad</Name>
+  <Definition>The space thermal load defines all thermal losses and gains occurring within a space or zone.  The thermal load source attribute defines an enumeration of possible sources of the thermal load. The maximum, minimum, time series and app</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSpatialElement</ClassName>
+    <ClassName>IfcSpatialElementType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpatialElement,IfcSpatialElementType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>People</Name>
+      <Definition>Heat gains and losses from people.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Lighting</Name>
+      <Definition>Lighting loads.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EquipmentSensible</Name>
+      <Definition>Heat gains and losses from equipment.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VentilationIndoorAir</Name>
+      <Definition>Ventilation loads from indoor air.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VentilationOutdoorAir</Name>
+      <Definition>Ventilation loads from outdoor air.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RecirculatedAir</Name>
+      <Definition>Loads from recirculated air.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ExhaustAir</Name>
+      <Definition>Loads from exhaust air.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AirExchangeRate</Name>
+      <Definition>Loads from the air exchange rate.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DryBulbTemperature</Name>
+      <Definition>Dry bulb temperature of the object.
+
+Loads from the dry bulb temperature.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RelativeHumidity</Name>
+      <Definition>Loads from the relative humidity.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InfiltrationSensible</Name>
+      <Definition>Heat gains and losses from infiltration.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TotalSensibleLoad</Name>
+      <Definition>Total energy added or removed from air that affects its temperature.  If a value is less than zero (negative), then the thermal load is lost from the space. If a value is greater than zero (positive), then the thermal load is a gain to the space.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TotalLatentLoad</Name>
+      <Definition>Total energy added or removed from air that affects its humidity or concentration of water vapor.  If a value is less than zero (negative), then the thermal load is lost from the space. If a value is greater than zero (positive), then the thermal load is a gain to the space.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TotalRadiantLoad</Name>
+      <Definition>Total electromagnetic energy added or removed by emission or absorption.  If a value is less than zero (negative), then the thermal load is lost from the space. If a value is greater than zero (positive), then the thermal load is a gain to the space.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

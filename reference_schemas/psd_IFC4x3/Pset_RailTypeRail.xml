@@ -1,0 +1,140 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RailTypeRail</Name>
+  <Definition>Properties common to IfcRail types and occurrences with PredefinedType set to RAIL.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcRail/RAIL</ClassName>
+    <ClassName>IfcRailType/RAIL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcRail/RAIL,IfcRailType/RAIL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>PositionInTrack</Name>
+      <Definition>Indicates the relative position of the element in track, which lies to the left or right as facing in the direction of increasing stationing values.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RelativePosition">
+            <EnumItem>LEFT</EnumItem>
+            <EnumItem>MIDDLE</EnumItem>
+            <EnumItem>RIGHT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TechnicalStandard</Name>
+      <Definition>The technical standard which the element should comply with.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RailDeliveryState</Name>
+      <Definition>The delivery state of rail, which indicates the final treatment at the end in manufacturing.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RailDeliveryState">
+            <EnumItem>HEATTREATMENT</EnumItem>
+            <EnumItem>HOTROLLING</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RailCondition</Name>
+      <Definition>Assessment of the condition of the rail at point of installation.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RailCondition">
+            <EnumItem>NEWRAIL</EnumItem>
+            <EnumItem>REGENERATEDRAIL</EnumItem>
+            <EnumItem>REUSEDRAIL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DrillOnRail</Name>
+      <Definition>Indicates if the manufactured rail is drilled at its extremities or not. It can have holes on one, both or none of its extremities.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DrillOnRail">
+            <EnumItem>BOTHENDS</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>ONEEND</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RailElementaryLength</Name>
+      <Definition>The standardised length of rail supplied from the manufacturer.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RailElementaryLength">
+            <EnumItem>100M</EnumItem>
+            <EnumItem>108M</EnumItem>
+            <EnumItem>120M</EnumItem>
+            <EnumItem>12M</EnumItem>
+            <EnumItem>144M</EnumItem>
+            <EnumItem>18M</EnumItem>
+            <EnumItem>24M</EnumItem>
+            <EnumItem>25M</EnumItem>
+            <EnumItem>27M</EnumItem>
+            <EnumItem>30M</EnumItem>
+            <EnumItem>36M</EnumItem>
+            <EnumItem>400M</EnumItem>
+            <EnumItem>48M</EnumItem>
+            <EnumItem>54M</EnumItem>
+            <EnumItem>60M</EnumItem>
+            <EnumItem>6M</EnumItem>
+            <EnumItem>72M</EnumItem>
+            <EnumItem>75M</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MinimumTensileStrength</Name>
+      <Definition>Indicates the minimum tensile strength.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcForceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsStainless</Name>
+      <Definition>Indicates whether the rail is stainless or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InstallationPlan</Name>
+      <Definition>Reference to external information source about installation or construction plan of the element.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

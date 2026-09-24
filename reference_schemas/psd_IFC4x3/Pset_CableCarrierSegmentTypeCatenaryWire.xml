@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CableCarrierSegmentTypeCatenaryWire</Name>
+  <Definition>Properties of a catenary wire, which is a longtitudinal wire supporting the grooved contact wires. Properties in this property set are applicable to a type or an occurrence IfcCableCarrierSegment with predefined type of CATENARYWIRE.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableCarrierSegment/CATENARYWIRE</ClassName>
+    <ClassName>IfcCableCarrierSegmentType/CATENARYWIRE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableCarrierSegment/CATENARYWIRE,IfcCableCarrierSegmentType/CATENARYWIRE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ACResistance</Name>
+      <Definition>The resistance under AC.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricResistanceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>UltimateTensileStrength</Name>
+      <Definition>Indicates the maximum stress that a material or element can withstand before breaking while being stretched or pulled.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcForceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CatenaryWireType</Name>
+      <Definition>Indicate the type of Catenary wire.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ThermalExpansionCoefficient</Name>
+      <Definition>Quantity characterizing the variation with thermodynamic temperature T of the distance l between two points of a body, under given conditions (IEC 113-04-27). The ratio is defined per Kelvin.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermalExpansionCoefficientMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CurrentCarryingCapacity</Name>
+      <Definition>Maximum value of electric current which can be carried continuously by a conductor, a device or an apparatus, under specified conditions without its steady-state temperature exceeding a  specified value. Based on IEC60826-11-13. NOTE: The temperature specified value is maximum Design Ambient Temperature.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DCResistance</Name>
+      <Definition>The resistance under direct current and 20 degrees centigrade.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricResistanceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LayRatio</Name>
+      <Definition>The ratio between lay length and the diameter of the single conductor.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MassPerLength</Name>
+      <Definition>Mass per length, i.e. mass of a beam with a unit length of extrusion. For example measured in kg/m.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMassPerLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MechanicalTension</Name>
+      <Definition>Nominal value of mechanical force applied to a flow segment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcForceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PhysicalDescriptionReference</Name>
+      <Definition>Physical description as external reference of the equipment, including e.g.weight, shape, model, length, height, diameter.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>StrandingMethod</Name>
+      <Definition>Specifies the method used to strand the cable. Stranding is the process where a particular number of stranding elements are joined together while winding them round a common axis.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TensileStrength</Name>
+      <Definition>Indicates the ability to withstand breakage apart under applied force.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>YoungModulus</Name>
+      <Definition>A measure of the Young's modulus of elasticity of the material.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcModulusOfElasticityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CableSegmentTypeEarthingConductor</Name>
+  <Definition>Properties of earthing conductors used in overhead contact line systems. This property set is applicable to a type or occurrence of IfcCableSegment with predefined type CONDUCTORSEGMENT.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment/CONDUCTORSEGMENT</ClassName>
+    <ClassName>IfcCableSegmentType/CONDUCTORSEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment/CONDUCTORSEGMENT,IfcCableSegmentType/CONDUCTORSEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ResistanceToGround</Name>
+      <Definition>The resistance through earthing conductor to the ground. Real part of the impedance to earth [SOURCE IEC: 195-01-18]</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricResistanceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

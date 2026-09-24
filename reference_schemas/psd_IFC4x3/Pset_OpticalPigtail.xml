@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_OpticalPigtail</Name>
+  <Definition>Property set for optical pigtail. This property set is applicable to a type or occurrence of IfcCableSegment with predefined type OPTICALCABLESEGMENT.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment/OPTICALCABLESEGMENT</ClassName>
+    <ClassName>IfcCableSegmentType/OPTICALCABLESEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment/OPTICALCABLESEGMENT,IfcCableSegmentType/OPTICALCABLESEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>JacketColour</Name>
+      <Definition>Indicates the colour of the cable or fitting jacket.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FiberType</Name>
+      <Definition>Indicates the type of the single fiber.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FiberType">
+            <EnumItem>BEND_INSENSITIVEFIBER</EnumItem>
+            <EnumItem>CUTOFFSHIFTEDFIBER</EnumItem>
+            <EnumItem>DISPERSIONSHIFTEDFIBER</EnumItem>
+            <EnumItem>LOWWATERPEAKFIBER</EnumItem>
+            <EnumItem>NON_ZERODISPERSIONSHIFTEDFIBER</EnumItem>
+            <EnumItem>OM1</EnumItem>
+            <EnumItem>OM2</EnumItem>
+            <EnumItem>OM3</EnumItem>
+            <EnumItem>OM4</EnumItem>
+            <EnumItem>OM5</EnumItem>
+            <EnumItem>STANDARDSINGLEMODEFIBER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConnectorType</Name>
+      <Definition>Indicates the type of connector.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

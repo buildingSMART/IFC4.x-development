@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElementAssemblyTypeOCSSuspension</Name>
+  <Definition>Common energy suspension properties used in railway. The property set can be used by the predefined type SUSPENSION_ASSEMBLY of IfcElementAssembly.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElementAssembly/SUSPENSIONASSEMBLY</ClassName>
+    <ClassName>IfcElementAssemblyType/SUSPENSIONASSEMBLY</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElementAssembly/SUSPENSIONASSEMBLY,IfcElementAssemblyType/SUSPENSIONASSEMBLY</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ContactWireStagger</Name>
+      <Definition>Lateral displacement of the contact wire to opposite sides of the track centre at successive supports.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ContactWireHeight</Name>
+      <Definition>Distance from the top of the rail to the lower face of the contact wire, measured perpendicular to the track.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

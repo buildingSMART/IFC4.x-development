@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DoorTypeTurnstile</Name>
+  <Definition>Properties common to turnstiles or automatic gates used to control the flow of people or vehicles. This property set is applied to IfcDoor instances of predefined type TURNSTILE.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDoor/TURNSTILE</ClassName>
+    <ClassName>IfcDoorType/TURNSTILE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDoor/TURNSTILE,IfcDoorType/TURNSTILE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>IsBidirectional</Name>
+      <Definition>Indicates whether the turnstile is bidirectional.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TurnstileType</Name>
+      <Definition>Indicates the type of turnstile gate.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TurnstileType">
+            <EnumItem>SWINGGATEBRAKE</EnumItem>
+            <EnumItem>THREEPOLEROTARYBRAKE</EnumItem>
+            <EnumItem>WINGGATEBRAKE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NarrowChannelWidth</Name>
+      <Definition>Indicates the width of the narrow channel.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WideChannelWidth</Name>
+      <Definition>Indicates the width of the wide channel.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

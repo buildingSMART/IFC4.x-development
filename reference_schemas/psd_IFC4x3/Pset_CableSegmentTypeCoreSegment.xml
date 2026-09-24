@@ -1,0 +1,235 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CableSegmentTypeCoreSegment</Name>
+  <Definition>An assembly comprising a conductor with its own insulation (and screens if any)</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment/CORESEGMENT</ClassName>
+    <ClassName>IfcCableSegmentType/CORESEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment/CORESEGMENT,IfcCableSegmentType/CORESEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>OverallDiameter</Name>
+      <Definition>The overall diameter of a object.
+
+The overall diameter of a core (maximum space used).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RatedVoltage</Name>
+      <Definition>The range of allowed voltage that a device is certified to handle. The upper bound of this value is the maximum.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcElectricVoltageMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RatedTemperature</Name>
+      <Definition>The range of allowed temperature that a device is certified to handle. The upper bound of this value is the maximum.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ScreenDiameter</Name>
+      <Definition>The diameter of the screen around an object (if present).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CoreIdentifier</Name>
+      <Definition>The core identification used  Identifiers may be used such as by color (Black, Brown, Grey) or by number (1, 2, 3) or by IEC phase reference (L1, L2, L3) etc.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SheathColours</Name>
+      <Definition>Colour of the core (derived from IEC 60757). Note that the combined color 'GreenAndYellow' shall be used only as Protective Earth (PE) conductors according to the requirements of IEC 60446.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CoreColoursEnum">
+            <EnumItem>BLACK</EnumItem>
+            <EnumItem>BLUE</EnumItem>
+            <EnumItem>BROWN</EnumItem>
+            <EnumItem>GOLD</EnumItem>
+            <EnumItem>GREEN</EnumItem>
+            <EnumItem>GREENANDYELLOW</EnumItem>
+            <EnumItem>GREY</EnumItem>
+            <EnumItem>ORANGE</EnumItem>
+            <EnumItem>PINK</EnumItem>
+            <EnumItem>RED</EnumItem>
+            <EnumItem>SILVER</EnumItem>
+            <EnumItem>TURQUOISE</EnumItem>
+            <EnumItem>VIOLET</EnumItem>
+            <EnumItem>WHITE</EnumItem>
+            <EnumItem>YELLOW</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Weight</Name>
+      <Definition>Total weight of object
+
+Weight of core kg/km.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMassMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>UltimateTensileStrength</Name>
+      <Definition>Indicates the maximum stress that a material or element can withstand before breaking while being stretched or pulled.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcForceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SelfExtinguishing60332_1</Name>
+      <Definition>Self Extinguishing cable/core according to IEC 60332.1.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SelfExtinguishing60332_3</Name>
+      <Definition>Self Extinguishing cable/core according to IEC 60332.3.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HalogenProof</Name>
+      <Definition>Produces small amount of smoke and irritating Deaerator/Gas.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FunctionReliable</Name>
+      <Definition>Element (such as cable, bus, core) maintain given properties/functions over a given (tested) time and conditions. According to IEC standard.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Standard</Name>
+      <Definition>The designation of the standard applicable for the definition of the object used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ThermalExpansionCoefficient</Name>
+      <Definition>Quantity characterizing the variation with thermodynamic temperature T of the distance l between two points of a body, under given conditions (IEC 113-04-27). The ratio is defined per Kelvin.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermalExpansionCoefficientMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CurrentCarryingCapacity</Name>
+      <Definition>Maximum value of electric current which can be carried continuously by a conductor, a device or an apparatus, under specified conditions without its steady-state temperature exceeding a  specified value. Based on IEC60826-11-13. NOTE: The temperature specified value is maximum Design Ambient Temperature.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DCResistance</Name>
+      <Definition>The resistance under direct current and 20 degrees centigrade.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricResistanceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LayRatio</Name>
+      <Definition>The ratio between lay length and the diameter of the single conductor.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MassPerLength</Name>
+      <Definition>Mass per length, i.e. mass of a beam with a unit length of extrusion. For example measured in kg/m.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMassPerLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TensileStrength</Name>
+      <Definition>Indicates the ability to withstand breakage apart under applied force.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>YoungModulus</Name>
+      <Definition>A measure of the Young's modulus of elasticity of the material.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcModulusOfElasticityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ACResistance</Name>
+      <Definition>The resistance under AC.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricResistanceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>StrandingMethod</Name>
+      <Definition>Specifies the method used to strand the cable. Stranding is the process where a particular number of stranding elements are joined together while winding them round a common axis.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

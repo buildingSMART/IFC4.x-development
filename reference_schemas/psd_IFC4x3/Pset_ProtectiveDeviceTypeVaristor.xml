@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ProtectiveDeviceTypeVaristor</Name>
+  <Definition>A high voltage surge protection device.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDevice/VARISTOR</ClassName>
+    <ClassName>IfcProtectiveDeviceType/VARISTOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDevice/VARISTOR,IfcProtectiveDeviceType/VARISTOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>VaristorType</Name>
+      <Definition>A list of the available types of varistor  from which that required may be selected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_VaristorType">
+            <EnumItem>METALOXIDE</EnumItem>
+            <EnumItem>ZINCOXIDE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CharacteristicFunction</Name>
+      <Definition>The characteristic function to show the relationship between varistor current and voltage.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

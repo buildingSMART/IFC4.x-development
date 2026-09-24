@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SensorTypeHumiditySensor</Name>
+  <Definition>A device that senses or detects humidity. HISTORY: HumiditySensorSetPoint changed to SetPointHumidity. Range, accuracy and time constant deleted.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSensor/HUMIDITYSENSOR</ClassName>
+    <ClassName>IfcSensorType/HUMIDITYSENSOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSensor/HUMIDITYSENSOR,IfcSensorType/HUMIDITYSENSOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SetPointHumidity</Name>
+      <Definition>The humidity value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

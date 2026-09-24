@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DamperTypeSmokeDamper</Name>
+  <Definition>Smoke damper type attributes.
+Pset renamed from Pset_DamperTypeSmoke to Pset_DamperTypeSmokeDamper in IFC2x2 Pset Addendum.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDamper/SMOKEDAMPER</ClassName>
+    <ClassName>IfcDamperType/SMOKEDAMPER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDamper/SMOKEDAMPER,IfcDamperType/SMOKEDAMPER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ControlType</Name>
+      <Definition>The type controller, signal modification effected and applicable ports</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

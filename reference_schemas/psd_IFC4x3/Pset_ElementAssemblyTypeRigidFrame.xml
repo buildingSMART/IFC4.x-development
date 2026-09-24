@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElementAssemblyTypeRigidFrame</Name>
+  <Definition>Energy Cross Beam properties used in railway. The property set can be used by the predefined type RIGID_FRAME of IfcElementAssembly.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElementAssembly/RIGID_FRAME</ClassName>
+    <ClassName>IfcElementAssemblyType/RIGID_FRAME</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElementAssembly/RIGID_FRAME,IfcElementAssemblyType/RIGID_FRAME</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AssemblyInstruction</Name>
+      <Definition>Instructions to describe how the system / equipment / facility is assembled.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LoadCapacity</Name>
+      <Definition>Indicates the highest permissible load capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcForceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfTracksCrossed</Name>
+      <Definition>Indicates the number of tracks which OCS supporting system crosses.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Span</Name>
+      <Definition>Clear span for this object.The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence. For geometry editing applications, like CAD: this value should be write-only.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

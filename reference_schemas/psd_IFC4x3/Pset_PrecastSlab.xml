@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_PrecastSlab</Name>
+  <Definition>Layout and component information defining how prestressed slab components are laid out in a precast slab assembly. The values are global defaults for the slab as a whole, but can be overridden by local placements of the individual com</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSlab</ClassName>
+    <ClassName>IfcSlabType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSlab,IfcSlabType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>TypeDesignation</Name>
+      <Definition>Type designator for the element. The content depends on local standards. Eg. 'Bull nose', 'Half batter', 'Dropper', 'Chamfer' etc</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ToppingType</Name>
+      <Definition>Defines if a topping is applied and what kind. Values are “Full topping”, “Perimeter Wash”, “None”</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EdgeDistanceToFirstAxis</Name>
+      <Definition>The distance from the left (‘West’) edge of the slab (in the direction of span of the components) to the axis of the first component.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DistanceBetweenComponentAxes</Name>
+      <Definition>The distance between the axes of the components, measured along the ‘South’ edge of the slab.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AngleToFirstAxis</Name>
+      <Definition>The angle of rotation of the axis of the first component relative to the ‘West’ edge of the slab.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AngleBetweenComponentAxes</Name>
+      <Definition>The angle between the axes of each pair of components.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalThickness</Name>
+      <Definition>The nominal thickness of the object. The size information is provided in addition to the shape representation and the geometric parameters used within. In case of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalToppingThickness</Name>
+      <Definition>The nominal thickness of the topping.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

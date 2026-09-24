@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_WindowPanelProperties</Name>
+  <Definition>Properties of the window panel.HISTORY New property set in IFC4.3.2.0 to replace the entity IfcWindowPanelProperties</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcPlate</ClassName>
+    <ClassName>IfcWindow</ClassName>
+    <ClassName>IfcPlateType</ClassName>
+    <ClassName>IfcWindowType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcPlate,IfcWindow,IfcPlateType,IfcWindowType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>OperationType</Name>
+      <Definition>Type of operations. Also used to assign standard symbolic presentations according to national building standards.
+
+For a window, it is the type of window panel operations. Also used to assign standard symbolic presentations according to national building standards.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_WindowPanelOperationEnum">
+            <EnumItem>BOTTOMHUNG</EnumItem>
+            <EnumItem>FIXEDCASEMENT</EnumItem>
+            <EnumItem>OTHEROPERATION</EnumItem>
+            <EnumItem>PIVOTHORIZONTAL</EnumItem>
+            <EnumItem>PIVOTVERTICAL</EnumItem>
+            <EnumItem>REMOVABLECASEMENT</EnumItem>
+            <EnumItem>SIDEHUNGLEFTHAND</EnumItem>
+            <EnumItem>SIDEHUNGRIGHTHAND</EnumItem>
+            <EnumItem>SLIDINGHORIZONTAL</EnumItem>
+            <EnumItem>SLIDINGVERTICAL</EnumItem>
+            <EnumItem>TILTANDTURNLEFTHAND</EnumItem>
+            <EnumItem>TILTANDTURNRIGHTHAND</EnumItem>
+            <EnumItem>TOPHUNG</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PanelPosition</Name>
+      <Definition>Position of the panel.
+
+For a window, it is the position of the panel within the overall window style.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_WindowPanelPositionEnum">
+            <EnumItem>BOTTOM</EnumItem>
+            <EnumItem>LEFT</EnumItem>
+            <EnumItem>MIDDLE</EnumItem>
+            <EnumItem>RIGHT</EnumItem>
+            <EnumItem>TOP</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FrameDepth</Name>
+      <Definition>The length (or depth) of the frame.
+
+For a window, it is the depth of panel frame, measured from front face to back face horizontally (i.e. perpendicular to the window elevation plane).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FrameThickness</Name>
+      <Definition>The thickness of the frame.
+
+For a window, it is the width of panel frame, measured from inside of panel (at glazing) to outside of panel (at lining), i.e. parallel to the window (elevation) plane.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

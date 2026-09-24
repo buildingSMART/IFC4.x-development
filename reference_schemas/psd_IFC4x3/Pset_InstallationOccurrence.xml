@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_InstallationOccurrence</Name>
+  <Definition>Properties defining installation information for occurrences of element, asset or system.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAsset</ClassName>
+    <ClassName>IfcElement</ClassName>
+    <ClassName>IfcSystem</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAsset,IfcElement,IfcSystem</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>InstallationDate</Name>
+      <Definition>Date on which the element is installed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDate"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AcceptanceDate</Name>
+      <Definition>Date on which the element is accepted by the manager or administrator.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDate"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PutIntoOperationDate</Name>
+      <Definition>Date on which the element is put into operation.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDate"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

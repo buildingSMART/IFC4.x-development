@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DiscreteAccessoryTypeLock</Name>
+  <Definition>Properties of locking equipment. The property set can be used by the predefined type LOCK of IfcDiscreteAccessory.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDiscreteAccessory/LOCK</ClassName>
+    <ClassName>IfcDiscreteAccessoryType/LOCK</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDiscreteAccessory/LOCK,IfcDiscreteAccessoryType/LOCK</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>InstallationPlan</Name>
+      <Definition>Reference to external information source about installation or construction plan of the element.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RequiredClosureSpacing</Name>
+      <Definition>Required length of the closure spacing.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElectricFlowTreatmentDeviceTypeElectronicFilter</Name>
+  <Definition>Properties associated to electronic filter.
+An electronic filter is a device designed to transmit spectral components of signals according to a specified law, generally in order to pass the components in certain frequency bands and to attenuate those in other bands (IEC702-09-17)</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElectricFlowTreatmentDevice/ELECTRONICFILTER</ClassName>
+    <ClassName>IfcElectricFlowTreatmentDeviceType/ELECTRONICFILTER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElectricFlowTreatmentDevice/ELECTRONICFILTER,IfcElectricFlowTreatmentDeviceType/ELECTRONICFILTER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NominalPower</Name>
+      <Definition>A conventional value of apparent power determining a value of the rated current that may be carried with rated voltage applied, under specified conditions. ( IEV ref 421-04-04)</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ElectronicFilterType</Name>
+      <Definition>Type of electronic filter.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElectronicFilterType">
+            <EnumItem>BANDPASSFLITER</EnumItem>
+            <EnumItem>BANDSTOPFILTER</EnumItem>
+            <EnumItem>FILTERCAPACITOR</EnumItem>
+            <EnumItem>HARMONICFILTER</EnumItem>
+            <EnumItem>HIGHPASSFILTER</EnumItem>
+            <EnumItem>LOWPASSFILTER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalCurrent</Name>
+      <Definition>The nominal current that is designed to be measured.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PrimaryFrequency</Name>
+      <Definition>The frequency that is going to be transformed and that runs into the transformer on the primary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SecondaryFrequency</Name>
+      <Definition>The frequency that has been transformed and is running out of the transformer on the secondary side.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RatedVoltage</Name>
+      <Definition>The range of allowed voltage that a device is certified to handle. The upper bound of this value is the maximum.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcElectricVoltageMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

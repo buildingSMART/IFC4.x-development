@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CableSegmentTypeFiberTubeSegment</Name>
+  <Definition>Properties of Fiber tubes segments. This property set is applicable to a type or occurrence of IfcCableSegment with predefined type FIBERTUBESEGMENT.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment/FIBERTUBE</ClassName>
+    <ClassName>IfcCableSegmentType/FIBERTUBE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment/FIBERTUBE,IfcCableSegmentType/FIBERTUBE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>FiberTubeColour</Name>
+      <Definition>Indicates the colour of a single fiber tube.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FiberColour">
+            <EnumItem>AQUA</EnumItem>
+            <EnumItem>BLACK</EnumItem>
+            <EnumItem>BLUE</EnumItem>
+            <EnumItem>BROWN</EnumItem>
+            <EnumItem>GREEN</EnumItem>
+            <EnumItem>ORANGE</EnumItem>
+            <EnumItem>RED</EnumItem>
+            <EnumItem>ROSE</EnumItem>
+            <EnumItem>SLATE</EnumItem>
+            <EnumItem>VIOLET</EnumItem>
+            <EnumItem>WHITE</EnumItem>
+            <EnumItem>YELLOW</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfFibers</Name>
+      <Definition>Indicates the number of fibers in the single tube or cable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

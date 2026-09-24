@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DiscreteAccessoryTypeRailPad</Name>
+  <Definition>Properties of rail pads. The property set can be used by the predefined type RAILPAD of IfcDiscreteAccessory.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDiscreteAccessory/RAILPAD</ClassName>
+    <ClassName>IfcDiscreteAccessoryType/RAILPAD</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDiscreteAccessory/RAILPAD,IfcDiscreteAccessoryType/RAILPAD</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>RailPadStiffness</Name>
+      <Definition>Indicates the stiffness of a rail pad.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RailPadStiffness">
+            <EnumItem>MEDIUM</EnumItem>
+            <EnumItem>SOFT</EnumItem>
+            <EnumItem>STIFF</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

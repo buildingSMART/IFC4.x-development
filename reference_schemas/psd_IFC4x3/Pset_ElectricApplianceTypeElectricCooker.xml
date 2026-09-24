@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElectricApplianceTypeElectricCooker</Name>
+  <Definition>Common properties for electric cooker appliances.  HISTORY: Added in IFC4.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElectricAppliance/ELECTRICCOOKER</ClassName>
+    <ClassName>IfcElectricApplianceType/ELECTRICCOOKER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElectricAppliance/ELECTRICCOOKER,IfcElectricApplianceType/ELECTRICCOOKER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ElectricCookerType</Name>
+      <Definition>Type of electric cooker.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElectricApplianceElectricCookerType">
+            <EnumItem>COOKINGKETTLE</EnumItem>
+            <EnumItem>DEEPFRYER</EnumItem>
+            <EnumItem>OVEN</EnumItem>
+            <EnumItem>STEAMCOOKER</EnumItem>
+            <EnumItem>STOVE</EnumItem>
+            <EnumItem>TILTINGFRYINGPAN</EnumItem>
+            <EnumItem>UNKNOWN</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

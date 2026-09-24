@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_AxleCountingEquipment</Name>
+  <Definition>Properties that are applicable for IfcSensor with predefined type WHEELSENSOR, indicated that the wheel sensor is a axle counting equipment.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSensor/WHEELSENSOR</ClassName>
+    <ClassName>IfcSensorType/WHEELSENSOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSensor/WHEELSENSOR,IfcSensorType/WHEELSENSOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>FailureInformation</Name>
+      <Definition>The information for failure description.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DetectionRange</Name>
+      <Definition>The detection range of the equipment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OperationalTemperatureRange</Name>
+      <Definition>The temperature range in which the device operates normally.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NominalWeight</Name>
+      <Definition>Nominal weight of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMassMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AxleCountingEquipmentType</Name>
+      <Definition>The type of axle counting equipment.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AxleCountingEquipmentType">
+            <EnumItem>EVALUATOR</EnumItem>
+            <EnumItem>WHEELDETECTOR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ImpactParameter</Name>
+      <Definition>Impact parameter of the equipment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAccelerationMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RatedVoltage</Name>
+      <Definition>The range of allowed voltage that a device is certified to handle. The upper bound of this value is the maximum.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcElectricVoltageMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InsulationResistance</Name>
+      <Definition>Minimum resistance between one terminal or several terminals connected together and the case or enclosure of a component at specified voltage.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricResistanceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AxleCounterResponseTime</Name>
+      <Definition>The time that axle counter can detect the axles of locomotive and vehicle.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumVibration</Name>
+      <Definition>Maximum tolerable vibration level of the device.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

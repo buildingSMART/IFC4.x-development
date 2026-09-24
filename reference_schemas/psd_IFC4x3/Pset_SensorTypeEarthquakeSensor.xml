@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SensorTypeEarthquakeSensor</Name>
+  <Definition>Properties that are applicable for IfcSensor with predefined type EARTHQUAKESENSOR.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSensor/EARTHQUAKESENSOR</ClassName>
+    <ClassName>IfcSensorType/EARTHQUAKESENSOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSensor/EARTHQUAKESENSOR,IfcSensorType/EARTHQUAKESENSOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>MarginOfError</Name>
+      <Definition>Indicates the margin of error of the measurement.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LinearVelocityResolution</Name>
+      <Definition>Indicates the resolution of the detected linear velocity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLinearVelocityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SamplingFrequency</Name>
+      <Definition>Indicates the sampling frequency of the device.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>WorkingState</Name>
+      <Definition>Indicates the working state of device or system.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DataCollectionType</Name>
+      <Definition>Indicates the type or manner of data collection.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DataCollectionType">
+            <EnumItem>AUTOMATICANDCONTINUOUS</EnumItem>
+            <EnumItem>MANUALANDSINGLE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DegreeOfLinearity</Name>
+      <Definition>Indicates the degree of linearity of the earthquake sensor or accelerometer.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DynamicRange</Name>
+      <Definition>Indicates the dynamic range of the sensor.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcLinearVelocityMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EarthquakeSensorRange</Name>
+      <Definition>Indicates the measuring range of the earthquake sensor or accelerometer.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcLinearVelocityMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FullScaleOutput</Name>
+      <Definition>Indicates the full scale output of the earthquake sensor or accelerometer.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLinearVelocityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SerialInterfaceType</Name>
+      <Definition>Indicates the type of serial interface used by the device.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SerialInterfaceType">
+            <EnumItem>RS_232</EnumItem>
+            <EnumItem>RS_422</EnumItem>
+            <EnumItem>RS_485</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TransverseSensitivityRatio</Name>
+      <Definition>Indicates the transverse sensitivity ratio of the sensor.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>EarthquakeSensorType</Name>
+      <Definition>Indicates the type of earthquake sensor or accelerometer.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_EarthquakeSensorType">
+            <EnumItem>2DIRECTION</EnumItem>
+            <EnumItem>3DIRECTION</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

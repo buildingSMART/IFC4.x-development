@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CoveringFlooring</Name>
+  <Definition>Properties common to the definition of all occurrence and type objects of covering with the predefined type set to FLOORING.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCovering/FLOORING</ClassName>
+    <ClassName>IfcCoveringType/FLOORING</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCovering/FLOORING,IfcCoveringType/FLOORING</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>HasNonSkidSurface</Name>
+      <Definition>Indication whether the surface finish is designed to prevent slippery (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasAntiStaticSurface</Name>
+      <Definition>Indication whether the surface finish is designed to prevent electrostatic charge (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ProtectiveDeviceTrippingUnitTypeResidualCurrent</Name>
+  <Definition>Information on tripping units that are activated by residual current.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDeviceTrippingUnit/RESIDUALCURRENT</ClassName>
+    <ClassName>IfcProtectiveDeviceTrippingUnitType/RESIDUALCURRENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDeviceTrippingUnit/RESIDUALCURRENT,IfcProtectiveDeviceTrippingUnitType/RESIDUALCURRENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>TrippingUnitReleaseCurrent</Name>
+      <Definition>The value of tripping or residual current for which the device has the possibility to be equipped. The values are given in mA.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TrippingUnitReleaseCurrent">
+            <EnumItem>10</EnumItem>
+            <EnumItem>100</EnumItem>
+            <EnumItem>1000</EnumItem>
+            <EnumItem>30</EnumItem>
+            <EnumItem>300</EnumItem>
+            <EnumItem>500</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

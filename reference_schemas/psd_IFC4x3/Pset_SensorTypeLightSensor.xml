@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SensorTypeLightSensor</Name>
+  <Definition>A device that senses or detects light. HISTORY: LightSensorSensorSetPoint changed to SetPointIlluminance. Range, accuracy and time constant deleted.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSensor/LIGHTSENSOR</ClassName>
+    <ClassName>IfcSensorType/LIGHTSENSOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSensor/LIGHTSENSOR,IfcSensorType/LIGHTSENSOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SetPointIlluminance</Name>
+      <Definition>The illuminance value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcIlluminanceMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CableSegmentConnector</Name>
+  <Definition>Properties about cable connectors. This property set is applicable to a type or occurrence of IfcCableSegment, indicated that the cable segment has one or two connectors affiliated.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment</ClassName>
+    <ClassName>IfcCableSegmentType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment,IfcCableSegmentType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>ConnectorAColour</Name>
+      <Definition>Indicates the colour A- end of connector.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConnectorBColour</Name>
+      <Definition>Indicates the colour B- end of connector.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConnectorAType</Name>
+      <Definition>Indicates the type of A-end connector.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConnectorBType</Name>
+      <Definition>Indicates the type of B-end connector.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConnectorAGender</Name>
+      <Definition>Indicates the gender of A-end connector.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DistributionPortGender">
+            <EnumItem>FEMALE</EnumItem>
+            <EnumItem>MALE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConnectorBGender</Name>
+      <Definition>Indicates the gender of B-end connector.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DistributionPortGender">
+            <EnumItem>FEMALE</EnumItem>
+            <EnumItem>MALE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

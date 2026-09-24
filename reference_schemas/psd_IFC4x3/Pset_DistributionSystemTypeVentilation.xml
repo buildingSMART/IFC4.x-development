@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DistributionSystemTypeVentilation</Name>
+  <Definition>This property set is used to define the general characteristics of the duct design parameters within a system.
+HISTORY: New property set in IFC Release 2.0.  Renamed from Pset_DuctDesignCriteria in IFC4.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDistributionSystem/VENTILATION</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionSystem/VENTILATION</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>DesignName</Name>
+      <Definition>A name for the design values.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DuctSizingMethod</Name>
+      <Definition>Enumeration that identifies the methodology to be used to size system components.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DuctSizingMethod">
+            <EnumItem>CONSTANTFRICTION</EnumItem>
+            <EnumItem>CONSTANTPRESSURE</EnumItem>
+            <EnumItem>STATICREGAIN</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PressureClass</Name>
+      <Definition>Nominal pressure rating of the object.
+
+Nominal pressure rating of the system components.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LeakageClass</Name>
+      <Definition>Nominal leakage rating for the system components.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FrictionLoss</Name>
+      <Definition>The pressure loss due to friction per unit length. (Data type = PressureMeasure/LengthMeasure)</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ScrapFactor</Name>
+      <Definition>Sheet metal scrap factor.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DuctSealant</Name>
+      <Definition>Type of sealant used on the duct and fittings.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMaterialDefinition"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumVelocity</Name>
+      <Definition>The maximum design velocity of the air in the duct or fitting.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLinearVelocityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AspectRatio</Name>
+      <Definition>The default aspect ratio.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MinimumHeight</Name>
+      <Definition>The minimum duct height for rectangular, oval or round duct.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MinimumWidth</Name>
+      <Definition>The minimum duct width for oval or rectangular duct.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

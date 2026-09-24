@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_BerthCommon</Name>
+  <Definition>properties common to the definition of all occurrences of IfcSpace and types of IfcSpaceType with the predefined type set to BERTH</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSpace/BERTH</ClassName>
+    <ClassName>IfcSpaceType/BERTH</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpace/BERTH,IfcSpaceType/BERTH</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>BerthApproach</Name>
+      <Definition>How the vessel approaches the berth</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BerthApproach">
+            <EnumItem>END</EnumItem>
+            <EnumItem>SIDE</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BerthMode</Name>
+      <Definition>Orientation of vessel as it approaches berth</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BerthMode">
+            <EnumItem>BOW</EnumItem>
+            <EnumItem>STERN</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BerthingAngle</Name>
+      <Definition>Angle of approach for the vessel to the berth</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BerthingVelocity</Name>
+      <Definition>Velocity of the vessel as it berths</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLinearVelocityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AbnormalBerthingFactor</Name>
+      <Definition>Risk assessed safety factor</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

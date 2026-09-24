@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CoaxialCable</Name>
+  <Definition>Properties applicable to a coaxial cable, which is a copper cable with a variable number of copper coaxial pair conductors used to transmit data by means of electrical signals, especially at radio frequency. This property set is applicable to a type or occurrence of IfcCableSegment with predefined type CABLESEGMENT.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment/CABLESEGMENT</ClassName>
+    <ClassName>IfcCableSegmentType/CABLESEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment/CABLESEGMENT,IfcCableSegmentType/CABLESEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>CharacteristicImpedance</Name>
+      <Definition>A quantity defined for a mode of propagation at a given frequency in a specific uniform transmission line or uniform waveguide by one of the three following relations:
+Z1 = S/ |I|2
+Z2 = |U|2 / S
+Z3 = U / I
+where Z is the complex characteristic impedance, S the complex power and U and I are the values, usually complex, respectively of a voltage and a current conventionally defined for each type of mode by analogy with transmission line equations.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricResistanceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CouplingLoss</Name>
+      <Definition>Indicates the coupling loss of a leaky coaxial cable (radiating cable).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNormalisedRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumTransmissionAttenuation</Name>
+      <Definition>Indicates the Maximum transmission attenuation of feeder.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcSoundPowerLevelMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfCoaxialPairs</Name>
+      <Definition>Indicates the total number of coaxial pairs in the coaxial cable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PropagationSpeedCoefficient</Name>
+      <Definition>Indicates the propagation speed coefficient.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TransmissionLoss</Name>
+      <Definition>Indicates the transmission loss of the leaky coaxial cable (radiating cable).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNormalisedRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RadiantFrequency</Name>
+      <Definition>Indicates the radiant frequency of the leaky coaxial cable (radiating cable).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

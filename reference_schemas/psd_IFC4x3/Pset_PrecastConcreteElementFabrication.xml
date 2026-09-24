@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_PrecastConcreteElementFabrication</Name>
+  <Definition>Production and manufacturing related properties common to different types of precast concrete elements. The Pset applies to manufactured pieces. It can be used by a number of subtypes of IfcBuiltElement. If the precast concrete ele</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcBeam</ClassName>
+    <ClassName>IfcBuildingElementProxy</ClassName>
+    <ClassName>IfcChimney</ClassName>
+    <ClassName>IfcCivilElement</ClassName>
+    <ClassName>IfcColumn</ClassName>
+    <ClassName>IfcFooting</ClassName>
+    <ClassName>IfcMember</ClassName>
+    <ClassName>IfcPile</ClassName>
+    <ClassName>IfcPlate</ClassName>
+    <ClassName>IfcRampFlight</ClassName>
+    <ClassName>IfcRamp</ClassName>
+    <ClassName>IfcRoof</ClassName>
+    <ClassName>IfcSlab</ClassName>
+    <ClassName>IfcStairFlight</ClassName>
+    <ClassName>IfcStair</ClassName>
+    <ClassName>IfcWall</ClassName>
+    <ClassName>IfcBeamType</ClassName>
+    <ClassName>IfcBuildingElementProxyType</ClassName>
+    <ClassName>IfcChimneyType</ClassName>
+    <ClassName>IfcCivilElementType</ClassName>
+    <ClassName>IfcColumnType</ClassName>
+    <ClassName>IfcFootingType</ClassName>
+    <ClassName>IfcMemberType</ClassName>
+    <ClassName>IfcPileType</ClassName>
+    <ClassName>IfcPlateType</ClassName>
+    <ClassName>IfcRampFlightType</ClassName>
+    <ClassName>IfcRampType</ClassName>
+    <ClassName>IfcRoofType</ClassName>
+    <ClassName>IfcSlabType</ClassName>
+    <ClassName>IfcStairFlightType</ClassName>
+    <ClassName>IfcStairType</ClassName>
+    <ClassName>IfcWallType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcCivilElement,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRampFlight,IfcRamp,IfcRoof,IfcSlab,IfcStairFlight,IfcStair,IfcWall,IfcBeamType,IfcBuildingElementProxyType,IfcChimneyType,IfcCivilElementType,IfcColumnType,IfcFootingType,IfcMemberType,IfcPileType,IfcPlateType,IfcRampFlightType,IfcRampType,IfcRoofType,IfcSlabType,IfcStairFlightType,IfcStairType,IfcWallType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>TypeDesignation</Name>
+      <Definition>Type designator for the element. The content depends on local standards. Eg. 'Bull nose', 'Half batter', 'Dropper', 'Chamfer' etc</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ProductionLotId</Name>
+      <Definition>The manufacturer's production lot identifier.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SerialNumber</Name>
+      <Definition>The manufacturer's serial number assigned to an occurrence of a product.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PieceMark</Name>
+      <Definition>Defines a unique piece for production purposes. All pieces with the same piece mark value are identical and interchangeable. The piece mark may be composed of sub-parts that have specific locally defined meaning (e.g. B-1A may denote a beam, of generic type ‘1’ and specific shape ‘A’).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>AsBuiltLocationNumber</Name>
+      <Definition>Defines a unique location within a structure, the ‘slot’ into which the piece was installed. Where pieces share the same piece mark, they can be interchanged. The value is only known after erection.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ActualProductionDate</Name>
+      <Definition>Production date (stripped from form).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDateTime"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ActualErectionDate</Name>
+      <Definition>Date erected.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDateTime"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

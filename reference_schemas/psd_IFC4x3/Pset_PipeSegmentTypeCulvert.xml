@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_PipeSegmentTypeCulvert</Name>
+  <Definition>Covered channel or large pipe that forms a watercourse below ground level, usually under a road or railway (BS6100).</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcPipeSegment/CULVERT</ClassName>
+    <ClassName>IfcPipeSegmentType/CULVERT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcPipeSegment/CULVERT,IfcPipeSegmentType/CULVERT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>InternalWidth</Name>
+      <Definition>The internal width of the culvert.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ClearDepth</Name>
+      <Definition>The clear depth.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

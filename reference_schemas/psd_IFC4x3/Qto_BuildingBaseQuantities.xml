@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_BuildingBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of building.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcBuilding</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBuilding</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Height</Name>
+      <Definition>Characteristic height
+
+Standard gross height of this building, from the top surface of the construction floor, to the top surface of the construction floor or roof above. Only provided is there is a constant height.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>EavesHeight</Name>
+      <Definition>Standard net height of this storey, from the top surface of the construction floor, to the bottom surface of the construction floor or roof above. Only provided is there is a constant height.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>FootPrintArea</Name>
+      <Definition>Gross area of the site covered by the building(s).</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossFloorArea</Name>
+      <Definition>Sum of all gross floor areas within the spatial structure element.
+
+Includes the area of construction elements within the building. May be provided in addition to the quantities of the spaces and the construction elements assigned to the building. In case of inconsistencies, the individual quantities of spaces and construction elements take precedence.</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetFloorArea</Name>
+      <Definition>Sum of all net usable floor areas.
+
+It excludes the area of construction elements within the building. May be provided in addition to the quantities of the spaces assigned to the building. In case of inconsistencies, the individual quantities of spaces take precedence.</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossVolume</Name>
+      <Definition>Total gross volume of the object. Openings, recesses, enclosed objects and projections are not taken into account.
+
+Sum of all gross volumes of spaces enclosed. It includes the volumes of construction elements within the element. May be provided in addition to the quantities of the spaces and the construction elements assigned to the element. In case of inconsistencies, the individual quantities of spaces and construction elements take precedence.</Definition>
+      <QtoType>Q_VOLUME</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetVolume</Name>
+      <Definition>Total net volume of the object, taking into account possible processing features (cut-out's, etc.) or openings and recesses.
+
+Sum of all net volumes of spaces enclosed by the building. It excludes the volumes of construction elements within the building. May be provided in addition to the quantities of the spaces assigned to the building. In case of inconsistencies, the individual quantities of spaces take precedence.</Definition>
+      <QtoType>Q_VOLUME</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

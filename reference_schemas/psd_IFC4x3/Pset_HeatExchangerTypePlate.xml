@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_HeatExchangerTypePlate</Name>
+  <Definition>Plate heat exchanger type common attributes.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcHeatExchanger/PLATE</ClassName>
+    <ClassName>IfcHeatExchangerType/PLATE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcHeatExchanger/PLATE,IfcHeatExchangerType/PLATE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NumberOfPlates</Name>
+      <Definition>Number of plates used by the plate heat exchanger.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

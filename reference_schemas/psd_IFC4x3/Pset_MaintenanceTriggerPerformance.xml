@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MaintenanceTriggerPerformance</Name>
+  <Definition>Properties for performance based maintenance policies</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAsset</ClassName>
+    <ClassName>IfcElement</ClassName>
+    <ClassName>IfcSystem</ClassName>
+    <ClassName>IfcElementType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAsset,IfcElement,IfcSystem,IfcElementType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>TargetPerformance</Name>
+      <Definition>Target capacity or performance of the asset. Units of the performance value are specified through the propertyValue units attribute.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PerformanceMaintenanceLevel</Name>
+      <Definition>Performance level at which maintenance takes place</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ReplacementLevel</Name>
+      <Definition>Performance level at which replacement takes place</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DisposalLevel</Name>
+      <Definition>Performance level at which disposal takes place</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

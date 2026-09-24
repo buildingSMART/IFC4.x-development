@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FurnitureTypeTable</Name>
+  <Definition>HISTORY: First issued in IFC Release R1.5. Renamed from Pset_Table</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFurniture/TABLE</ClassName>
+    <ClassName>IfcFurnitureType/TABLE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFurniture/TABLE,IfcFurnitureType/TABLE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>WorksurfaceArea</Name>
+      <Definition>The value of the work surface area of the desk.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfChairs</Name>
+      <Definition>Maximum number of chairs that can fit with the table for normal use.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

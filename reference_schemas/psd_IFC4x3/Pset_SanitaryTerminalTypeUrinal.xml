@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SanitaryTerminalTypeUrinal</Name>
+  <Definition>Soil appliance that receives urine and directs it to a waste outlet (BS6100). HISTORY: In IFC4, Material property removed. Use materials capabilities from IfcMaterialResource schema. Prefix for color property removed. Datatype of color changed to IfcLabel (still a string value).  Mounting property added.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSanitaryTerminal/URINAL</ClassName>
+    <ClassName>IfcSanitaryTerminalType/URINAL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSanitaryTerminal/URINAL,IfcSanitaryTerminalType/URINAL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>UrinalType</Name>
+      <Definition>Selection of the type of urinal from the enumerated list of types where:-Bowl: Individual wall mounted urinal.
+Slab: Urinal that consists of a slab or sheet fixed to a wall and down which urinal flows into a floor channel.
+Stall: Floor mounted urinal that consists of an elliptically shaped sanitary stall fixed to a wall and down which urine flows into a floor channel.
+Trough: Wall mounted urinal of elongated rectangular shape on plan, that can be used by more than one person at a time.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_UrinalType">
+            <EnumItem>BOWL</EnumItem>
+            <EnumItem>SLAB</EnumItem>
+            <EnumItem>STALL</EnumItem>
+            <EnumItem>TROUGH</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Mounting</Name>
+      <Definition>The property enumeration Pset_SanitaryMountingEnum defines the forms of mounting or fixing of the sanitary terminal that may be specified within property sets used to define sanitary terminals (WC’s, basins, sinks, etc.) where:-BackToWall:     A pedestal mounted sanitary terminal that fits flush to the wall at the rear to cover its service connections
+Pedestal:   A floor mounted sanitary terminal that has an integral base
+CounterTop:     A sanitary terminal that is installed into a horizontal surface that is installed into a horizontal surface. Note: When applied to a wash hand basin, the term more normally used is ‘vanity’. See also Wash Hand Basin Type specification.
+WallHung:   A sanitary terminal cantilevered clear of the floor.Note that BackToWall, Pedestal and WallHung are allowable values for a bidet.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SanitaryMounting">
+            <EnumItem>BACKTOWALL</EnumItem>
+            <EnumItem>COUNTERTOP</EnumItem>
+            <EnumItem>PEDESTAL</EnumItem>
+            <EnumItem>WALLHUNG</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SpilloverLevel</Name>
+      <Definition>The level at which water spills out of the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

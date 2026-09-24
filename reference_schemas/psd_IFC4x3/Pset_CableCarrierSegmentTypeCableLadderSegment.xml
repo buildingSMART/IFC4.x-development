@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CableCarrierSegmentTypeCableLadderSegment</Name>
+  <Definition>An open carrier segment on which cables are carried on a ladder structure.
+HISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableCarrierSegment/CABLELADDERSEGMENT</ClassName>
+    <ClassName>IfcCableCarrierSegmentType/CABLELADDERSEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableCarrierSegment/CABLELADDERSEGMENT,IfcCableCarrierSegmentType/CABLELADDERSEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>LadderConfiguration</Name>
+      <Definition>Description of the configuration of the ladder structure used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

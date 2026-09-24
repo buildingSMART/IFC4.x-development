@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FlowMeterTypeWaterMeter</Name>
+  <Definition>Device that measures, indicates and sometimes records, the volume of water that passes through it without interrupting the flow.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFlowMeter/WATERMETER</ClassName>
+    <ClassName>IfcFlowMeterType/WATERMETER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFlowMeter/WATERMETER,IfcFlowMeterType/WATERMETER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Type</Name>
+      <Definition>Defines the allowed values for selection of the flow meter operation type.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_WaterMeterType">
+            <EnumItem>COMPOUND</EnumItem>
+            <EnumItem>INFERENTIAL</EnumItem>
+            <EnumItem>PISTON</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ConnectionSize</Name>
+      <Definition>The connection size of the object.
+
+Inlet and outlet pipe connections to the meter.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumFlowRate</Name>
+      <Definition>Maximum rate of flow which the meter is expected to pass.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumPressureLoss</Name>
+      <Definition>Pressure loss expected across the meter under conditions of maximum flow.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BackflowPreventerType</Name>
+      <Definition>Identifies the type of backflow preventer installed to prevent the backflow of contaminated or polluted water from an irrigation/reticulation system to a potable water supply.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BackflowPreventerType">
+            <EnumItem>ANTISIPHONVALVE</EnumItem>
+            <EnumItem>ATMOSPHERICVACUUMBREAKER</EnumItem>
+            <EnumItem>DOUBLECHECKBACKFLOWPREVENTER</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>PRESSUREVACUUMBREAKER</EnumItem>
+            <EnumItem>REDUCEDPRESSUREBACKFLOWPREVENTER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

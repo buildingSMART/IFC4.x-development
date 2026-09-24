@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_TrackBase</Name>
+  <Definition>Properties in this property set are applicable for IfcSlab with PredefinedType BASESLAB, indicated that the base slab is a track base slab.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSlab/BASESLAB</ClassName>
+    <ClassName>IfcSlabType/BASESLAB</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSlab/BASESLAB,IfcSlabType/BASESLAB</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>IsSurfaceGalling</Name>
+      <Definition>Indicates whether the surface is galling or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SurfaceGallingArea</Name>
+      <Definition>The galling area of the object surface.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

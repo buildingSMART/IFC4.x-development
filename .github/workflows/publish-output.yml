@@ -69,7 +69,7 @@ jobs:
         run: |
           set -euxo pipefail
           sudo apt-get update
-          sudo apt-get install -y graphviz rsync unzip
+          sudo apt-get install -y graphviz rsync unzip curl
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -87,7 +87,13 @@ jobs:
           python -m pip install --no-build-isolation "PyYAML==6.0"
           python -m pip install --no-build-isolation reversestem
           python -m pip install -r ifc43/code/requirements.txt nltk
-          python -m pip install ifcopenshell
+          python -m pip install typing_extensions lark
+
+          # get a recent ifcopenshell 0.8 build with the latest ifcopenshell.mvd changes
+          curl --silent --show-error --retry 5 -o /tmp/ifcopenshell_python.zip https://s3.amazonaws.com/ifcopenshell-builds/ifcopenshell-python-`python3 -c 'import sys;print("".join(map(str, sys.version_info[0:2])))'`-v0.8.6-f8da61b-linux64.zip
+          mkdir -p `python3 -c 'import site; print(site.getusersitepackages())'`
+          unzip -d `python3 -c 'import site; print(site.getusersitepackages())'` /tmp/ifcopenshell_python.zip
+          rm /tmp/ifcopenshell_python.zip
 
       - name: Auto merge IFC4.4 PRs
         if: github.ref_name == 'ifc4.4-preview'
@@ -119,7 +125,7 @@ jobs:
         with:
           repository: buildingSMART/IFC4.3.x-sample-models
           path: examples
-          fetch-depth: 1
+          fetch-depth: 0
 
       - name: Check out translations
         uses: actions/checkout@v4
@@ -132,7 +138,7 @@ jobs:
       - name: Check out output repository
         uses: actions/checkout@v4
         with:
-          repository: buildingSMART/IFC-output
+          repository: buildingSMART/Standards-builds
           path: output-repo
           fetch-depth: 1
           token: ${{ secrets.OUTPUT_2_TOKEN }}
@@ -168,6 +174,56 @@ jobs:
         run: |
           set -euxo pipefail
           python -m generators.json ../schemas/ifc4x3_add2.uml ../output/psd --output ../output/structure.json
+
+      - name: Determine EXPRESS parse cache key
+        id: parse-cache-key
+        shell: bash
+        run: |
+          set -euo pipefail
+          express_dir=$(python -c 'import os, ifcopenshell.express as e; print(os.path.dirname(e.__file__))' | tail -n 1)
+          echo "parser=$(cat "$express_dir"/*.py | sha256sum | cut -c1-16)" >> "$GITHUB_OUTPUT"
+          echo "pyparsing=$(python -c 'import pyparsing; print(pyparsing.__version__)')" >> "$GITHUB_OUTPUT"
+          echo "python=$(python -c 'import sys; print("%d.%d" % sys.version_info[:2])')" >> "$GITHUB_OUTPUT"
+
+      - name: Restore EXPRESS parse caches
+        uses: actions/cache@v4
+        with:
+          path: ifc43/reference_schemas/*.exp.cache.dat
+          key: express-parse-${{ hashFiles('ifc43/reference_schemas/*.exp') }}-${{ steps.parse-cache-key.outputs.parser }}-pyparsing${{ steps.parse-cache-key.outputs.pyparsing }}-py${{ steps.parse-cache-key.outputs.python }}
+
+      - name: Mark restored parse caches as newer than the checkout
+        shell: bash
+        # the parser ignores a cache older than its .exp file, and a restored
+        # cache keeps its original timestamp while the checkout is fresh
+        run: find ifc43/reference_schemas -name '*.exp.cache.dat' -exec touch {} +
+
+      - name: Generate change log data
+        working-directory: ifc43/code
+        shell: bash
+        run: |
+          set -euxo pipefail
+          python change_log.py ..
+
+      - name: Generate MVD concept data
+        working-directory: ifc43/code
+        shell: bash
+        run: |
+          set -euxo pipefail
+          python mvd_csv_to_json.py ../schemas
+
+      - name: Generate mvdXML
+        working-directory: ifc43/code
+        shell: bash
+        run: |
+          set -euxo pipefail
+          python templates_to_mvdxml.py ../output/IFC4.3.mvdxml ..
+
+      - name: Determine MVD scope
+        working-directory: ifc43/code
+        shell: bash
+        run: |
+          set -euxo pipefail
+          python determine_mvd_scope.py ../output/IFC.exp ../output/IFC4.3.mvdxml
 
       - name: Build static HTML site
         working-directory: ifc43/code

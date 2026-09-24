@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DistributionBoardTypeDistributionFrame</Name>
+  <Definition>Properties for IfcDistributionBoard with PredefinedType DISTRIBUTIONFRAME.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDistributionBoard/DISTRIBUTIONFRAME</ClassName>
+    <ClassName>IfcDistributionBoardType/DISTRIBUTIONFRAME</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionBoard/DISTRIBUTIONFRAME,IfcDistributionBoardType/DISTRIBUTIONFRAME</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>PortCapacity</Name>
+      <Definition>Indicates the number of ports in the passive device that can be used to interconnect cables.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

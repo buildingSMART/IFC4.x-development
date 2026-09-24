@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CommunicationsApplianceTypeTelecommand</Name>
+  <Definition>Properties common to a telecommand. This property set is applied to a type or occurrence of IfcCommunicationsAppliance with predefined type TELECOMMAND.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCommunicationsAppliance/TELECOMMAND</ClassName>
+    <ClassName>IfcCommunicationsApplianceType/TELECOMMAND</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCommunicationsAppliance/TELECOMMAND,IfcCommunicationsApplianceType/TELECOMMAND</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NumberOfWorkstations</Name>
+      <Definition>Indicates the types or purposes of workstations and their number in the equipment. The defined purpose can be e.g. 'Diagnostic and maintenance', 'Traffic and electric traction', etc.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcLabel"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcInteger"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfCPUs</Name>
+      <Definition>The number of CPUs used by the equipment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

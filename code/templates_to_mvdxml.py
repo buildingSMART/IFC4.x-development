@@ -44,7 +44,11 @@ def read_scope():
     nodes = (n for n in soup.h2.nextSiblingGenerator())
     return "\n".join(map(str, nodes)).strip()
 
-entity_supertype = json.load(open('entity_supertype.json'))
+structure_path = os.path.join(REPO_DIR, "output", "structure.json")
+if not os.path.exists(structure_path):
+    raise FileNotFoundError(f"Required schema structure not found: {structure_path}")
+structure = json.load(open(structure_path, encoding="utf-8"))
+entity_supertype = structure["entity_supertype"]
 
 def yield_supertypes(x):
     yield x
@@ -115,7 +119,7 @@ for fn in sorted(fns, key=len):
     if concept_blocks:
         block = concept_blocks[0]
 
-        edges = re.findall("([\:\w]+)\s*\->\s*([\-\:\w]+)", block)
+        edges = re.findall(r"([\:\w]+)\s*\->\s*([\-\:\w]+)", block)
         rule_bindings = dict(re.findall(r'(\w+:\w+)\[binding="(.+?)"\]', block))
         constraint_expressions = dict(re.findall(r'(constraint_[\d+])\[label="=(.+?)"\]', block))
                 
@@ -256,7 +260,8 @@ for templ in reversed(unapplicable_concepts):
         
 templates = [a[1] for a in sorted(root_level_concepts.items())]
 
-concept_associations = json.load(open("xmi_concepts.json", encoding='utf-8'))
+# generators.json writes the concept parametrizations into structure.json
+concept_associations = structure["xmi_concepts"]
 
 concepts_per_entity = defaultdict(lambda: defaultdict(list))
 

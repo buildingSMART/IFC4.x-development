@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FittingJunction</Name>
+  <Definition>Properties about Fitting Junction.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableFitting/JUNCTION</ClassName>
+    <ClassName>IfcDuctFitting/JUNCTION</ClassName>
+    <ClassName>IfcPipeFitting/JUNCTION</ClassName>
+    <ClassName>IfcCableCarrierFitting/JUNCTION</ClassName>
+    <ClassName>IfcCableFittingType/JUNCTION</ClassName>
+    <ClassName>IfcDuctFittingType/JUNCTION</ClassName>
+    <ClassName>IfcPipeFittingType/JUNCTION</ClassName>
+    <ClassName>IfcCableCarrierFittingType/JUNCTION</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableFitting/JUNCTION,IfcDuctFitting/JUNCTION,IfcPipeFitting/JUNCTION,IfcCableCarrierFitting/JUNCTION,IfcCableFittingType/JUNCTION,IfcDuctFittingType/JUNCTION,IfcPipeFittingType/JUNCTION,IfcCableCarrierFittingType/JUNCTION</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>JunctionType</Name>
+      <Definition>The type of junction. TEE=3 ports, CROSS = 4 ports.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FittingJunctionType">
+            <EnumItem>CROSS</EnumItem>
+            <EnumItem>TEE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>JunctionLeftAngle</Name>
+      <Definition>The change of direction of flow for the left junction.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositivePlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>JunctionLeftRadius</Name>
+      <Definition>The radius of bending for the left junction.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>JunctionRightAngle</Name>
+      <Definition>The change of direction of flow for the right junction where 0 indicates straight segment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositivePlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>JunctionRightRadius</Name>
+      <Definition>The radius of bending for the right junction where 0 indicates sharp bend.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

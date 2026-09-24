@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_UnitaryEquipmentTypeAirConditioningUnit</Name>
+  <Definition>Air conditioning unit equipment type attributes.
+Note that these attributes were formerly Pset_PackagedACUnit prior to IFC2x2.
+HeatingEnergySource attribute deleted in IFC2x2 Pset Addendum: Use IfcMaterialProperties instead.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcUnitaryEquipment/AIRCONDITIONINGUNIT</ClassName>
+    <ClassName>IfcUnitaryEquipmentType/AIRCONDITIONINGUNIT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcUnitaryEquipment/AIRCONDITIONINGUNIT,IfcUnitaryEquipmentType/AIRCONDITIONINGUNIT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SensibleCoolingCapacity</Name>
+      <Definition>Sensible cooling capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LatentCoolingCapacity</Name>
+      <Definition>Latent cooling capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CoolingEfficiency</Name>
+      <Definition>Coefficient of Performance: Ratio of cooling energy output to energy input under full load operating conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HeatingCapacity</Name>
+      <Definition>Heating capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HeatingEfficiency</Name>
+      <Definition>Heating efficiency under full load heating conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CondenserFlowrate</Name>
+      <Definition>Flow rate of fluid through the condenser.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CondenserEnteringTemperature</Name>
+      <Definition>Temperature of fluid entering condenser.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CondenserLeavingTemperature</Name>
+      <Definition>Temperature of fluid leaving condenser.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OutsideAirFlowrate</Name>
+      <Definition>Flow rate of outside air entering the unit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

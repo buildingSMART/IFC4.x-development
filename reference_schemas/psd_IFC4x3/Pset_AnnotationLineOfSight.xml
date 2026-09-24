@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_AnnotationLineOfSight</Name>
+  <Definition>Specifies the properties of the line of sight. For example, it can be used to define the line of sight visibility at the junction between two roads (particularly between an access road and a public road); or in the design of a stadium or theatre.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcAnnotation</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAnnotation</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SetbackDistance</Name>
+      <Definition>Setback distance from the point of connection on the major element along the axis of the minor element (e.g. distance from a public road at which the line of sigfht is measured.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VisibleAngleLeft</Name>
+      <Definition>Angle of visibility to the left of the access.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositivePlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VisibleAngleRight</Name>
+      <Definition>Angle of visibility to the right of the access.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositivePlaneAngleMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RoadVisibleDistanceLeft</Name>
+      <Definition>Distance visible to the left of the access.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RoadVisibleDistanceRight</Name>
+      <Definition>Distance visible to the right of the access.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

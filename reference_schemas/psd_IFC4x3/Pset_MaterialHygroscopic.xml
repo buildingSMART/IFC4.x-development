@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_MATERIALDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MaterialHygroscopic</Name>
+  <Definition>A set of hygroscopic properties of materials.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcMaterial</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMaterial</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>UpperVaporResistanceFactor</Name>
+      <Definition>The vapor permeability relationship of air/material (typically value &gt; 1), measured in high relative humidity (typically in 95/50 % RH).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LowerVaporResistanceFactor</Name>
+      <Definition>The vapor permeability relationship of air/material (typically value &gt; 1), measured in low relative humidity (typically in 0/50 % RH).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsothermalMoistureCapacity</Name>
+      <Definition>Based on water vapor density.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIsothermalMoistureCapacityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>VaporPermeability</Name>
+      <Definition>The rate of water vapor transmission per unit area per unit of vapor pressure differential under test conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVaporPermeabilityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MoistureDiffusivity</Name>
+      <Definition>Moisture diffusivity is a transport property that is frequently used in the hygrothermal analysis of building envelope components.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMoistureDiffusivityMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

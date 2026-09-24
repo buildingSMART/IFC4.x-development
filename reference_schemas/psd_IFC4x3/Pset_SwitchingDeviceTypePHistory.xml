@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SwitchingDeviceTypePHistory</Name>
+  <Definition>Indicates switch positions or levels over time, such as for energy management or surveillance.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSwitchingDevice</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSwitchingDevice</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SetPointHistory</Name>
+      <Definition>Indicates the switch position over time according to Pset_SwitchingDeviceTypeCommon.SetPoint.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries"/>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

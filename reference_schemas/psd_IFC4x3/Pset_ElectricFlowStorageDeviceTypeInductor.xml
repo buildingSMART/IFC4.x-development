@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ElectricFlowStorageDeviceTypeInductor</Name>
+  <Definition>Properties of inductors. The property set can be used by the predefined type INDUCTOR of IfcElectricFlowStorageDevice.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcElectricFlowStorageDevice/INDUCTOR</ClassName>
+    <ClassName>IfcElectricFlowStorageDeviceType/INDUCTOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElectricFlowStorageDevice/INDUCTOR,IfcElectricFlowStorageDeviceType/INDUCTOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>Inductance</Name>
+      <Definition>Measure of the Inductance.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInductanceMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfPhases</Name>
+      <Definition>Number of phases that the equipment operates on.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

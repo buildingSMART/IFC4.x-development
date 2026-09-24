@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MobileTelecommunicationsApplianceTypeMasterUnit</Name>
+  <Definition>Properties common to the definition of all occurrences of  IfcMobileTelecommunicationsAppliance and types of IfcMobileTelecommunicationsApplianceType with the predefined type set to MASTERUNIT.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcMobileTelecommunicationsAppliance/MASTERUNIT</ClassName>
+    <ClassName>IfcMobileTelecommunicationsApplianceType/MASTERUNIT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMobileTelecommunicationsAppliance/MASTERUNIT,IfcMobileTelecommunicationsApplianceType/MASTERUNIT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NumberOfInterfaces</Name>
+      <Definition>Indicates the types of interfaces and their number in the device.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression/>
+          <DefiningValue>
+            <DataType type="IfcLabel"/>
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcInteger"/>
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumNumberOfConnectedRUs</Name>
+      <Definition>Indicates the maximum number of remote units (RUs) which can be connected to the master unit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TransmissionType</Name>
+      <Definition>Indicates the data transmission type of the master unit.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TransmissionType">
+            <EnumItem>FIBER</EnumItem>
+            <EnumItem>RADIO</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TransmittedBandwidth</Name>
+      <Definition>Indicates the transmitted bandwidth of the master unit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TransmittedFrequency</Name>
+      <Definition>Indicates the transmitted frequency used by the master unit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>TransmittedSignal</Name>
+      <Definition>Indicates the type or standard of signal transmitted by the master unit.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TransmittedSignal">
+            <EnumItem>CDMA</EnumItem>
+            <EnumItem>GSM</EnumItem>
+            <EnumItem>LTE</EnumItem>
+            <EnumItem>TD_SCDMA</EnumItem>
+            <EnumItem>WCDMA</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MasterUnitType</Name>
+      <Definition>Indicates the master unit type.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_MasterUnitType">
+            <EnumItem>ANALOG</EnumItem>
+            <EnumItem>DIGITAL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

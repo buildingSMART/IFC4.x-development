@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_LightFixtureTypeSecurityLighting</Name>
+  <Definition>Properties that characterize security lighting.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcLightFixture/SECURITYLIGHTING</ClassName>
+    <ClassName>IfcLightFixtureType/SECURITYLIGHTING</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcLightFixture/SECURITYLIGHTING,IfcLightFixtureType/SECURITYLIGHTING</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SecurityLightingType</Name>
+      <Definition>The type of security lighting.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_LightFixtureSecurityLightingType">
+            <EnumItem>BLUEILLUMINATION</EnumItem>
+            <EnumItem>EMERGENCYEXITLIGHT</EnumItem>
+            <EnumItem>SAFETYLIGHT</EnumItem>
+            <EnumItem>WARNINGLIGHT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>FixtureHeight</Name>
+      <Definition>The height of the fixture, such as the text height of an exit sign.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SelfTestFunction</Name>
+      <Definition>The type of self test function.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SelfTestType">
+            <EnumItem>CENTRAL</EnumItem>
+            <EnumItem>LOCAL</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>BackupSupplySystem</Name>
+      <Definition>The type of backup supply system.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BackupSupplySystemType">
+            <EnumItem>CENTRALBATTERY</EnumItem>
+            <EnumItem>LOCALBATTERY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>PictogramEscapeDirection</Name>
+      <Definition>The direction of escape pictogram.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_PictogramEscapeDirectionType">
+            <EnumItem>DOWNARROW</EnumItem>
+            <EnumItem>LEFTARROW</EnumItem>
+            <EnumItem>RIGHTARROW</EnumItem>
+            <EnumItem>UPARROW</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Addressablility</Name>
+      <Definition>The type of addressability.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AddressabilityType">
+            <EnumItem>IMPLEMENTED</EnumItem>
+            <EnumItem>NOTIMPLEMENTED</EnumItem>
+            <EnumItem>UPGRADEABLETO</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

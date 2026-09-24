@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_SpaceBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of spaces.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSpace</ClassName>
+    <ClassName>IfcSpaceType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpace,IfcSpaceType</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Height</Name>
+      <Definition>Characteristic height
+
+Total height (from base slab without flooring to ceiling without suspended ceiling) for this space (measured from top of slab below to bottom of slab above). To be provided only if the space has a constant height.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>FinishCeilingHeight</Name>
+      <Definition>Height of the suspended ceiling (from top of flooring to the bottom of the suspended ceiling). To be provided only if the space has a suspended ceiling with constant height.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>FinishFloorHeight</Name>
+      <Definition>Height of the flooring (from base slab without flooring to the flooring height). To be provided only if the space has a constant flooring height.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossPerimeter</Name>
+      <Definition>Gross perimeter at the outer contour of the object.
+
+Measured at floor level with all sides of the space, including those parts of the perimeter that are created by virtual boundaries and openings (like doors).</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetPerimeter</Name>
+      <Definition>Net perimeter at the floor level of this space. It excludes those parts of the perimeter that are created by by virtual boundaries and openings (like doors). It is the measurement used for skirting boards and may include the perimeter of internal fixed objects like columns.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossFloorArea</Name>
+      <Definition>Sum of all gross floor areas within the spatial structure element.
+
+Includes the area covered by elements inside the space (columns, inner walls, etc.) and excludes the area covered by wall claddings.</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetFloorArea</Name>
+      <Definition>Sum of all net usable floor areas.
+
+It excludes the area covered  by elements inside the space (columns, inner walls, built-in's etc.), slab openings, or other protruding elements. Varying heights are not taking into account (i.e. no reduction for areas under a minimum headroom).</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossWallArea</Name>
+      <Definition>Sum of all wall (and other vertically bounding elements, like columns) areas bounded by the space. It includes the area covered by elements inside the wall area (doors, windows, other openings, etc.).</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetWallArea</Name>
+      <Definition>Sum of all wall (and other vertically bounding elements, like columns) areas bounded by the space. It excludes the area covered by elements inside the wall area (doors, windows, other openings, etc.).</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossCeilingArea</Name>
+      <Definition>Sum of all ceiling areas of the space. It includes the area covered by elementsinside the space (columns, inner walls, etc.). The ceiling area is the real (and not the projected) area (e.g. in case of sloped ceilings).</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetCeilingArea</Name>
+      <Definition>Sum of all ceiling areas of the space. It excludes the area covered by elementsinside the space (columns, inner walls, etc.). The ceiling area is the real (and not the projected) area (e.g. in case of sloped ceilings).</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossVolume</Name>
+      <Definition>Total gross volume of the object. Openings, recesses, enclosed objects and projections are not taken into account.</Definition>
+      <QtoType>Q_VOLUME</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetVolume</Name>
+      <Definition>Total net volume of the object, taking into account possible processing features (cut-out's, etc.) or openings and recesses.
+
+Net volume enclosed by the space, excluding the volume of construction elements inside the space.</Definition>
+      <QtoType>Q_VOLUME</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

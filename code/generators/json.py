@@ -373,7 +373,7 @@ if __name__ == "__main__":
     # Backfill from UML deps (CSVs deleted in f5f6abe2).
     _synthesize_pset_concepts_from_uml(xmi_concepts, psets, supertype)
 
-    json.dump({
+    payload = {
         "entity_supertype": supertype,
         "entity_to_package": entity_to_package,
         "hierarchy": hierarchy,
@@ -385,4 +385,10 @@ if __name__ == "__main__":
         "type_values": type_values,
         "entity_where_clauses": where_clauses,
         "xmi_concepts": xmi_concepts
-    }, open(args.output, "w", encoding="utf-8"))
+    }
+
+    # NB: the change log is folded into this payload afterwards by
+    # change_log.py, which runs after this generator in the publish pipeline.
+
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    json.dump(payload, open(args.output, "w", encoding="utf-8"))

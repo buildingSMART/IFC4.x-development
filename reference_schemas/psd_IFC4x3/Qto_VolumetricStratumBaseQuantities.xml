@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="QTO_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Qto_VolumetricStratumBaseQuantities</Name>
+  <Definition>Quantity measures associated to volumetric stratum such as in a geotechnical model. Uncertainty is documented in Pset_Uncertainty.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcGeotechnicalStratum</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcGeotechnicalStratum</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Area</Name>
+      <Definition>Calculated area for the object.
+
+Actual area of upper surface of shape.</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Mass</Name>
+      <Definition>Mass represented, if lower surface of stratum known.</Definition>
+      <QtoType>Q_WEIGHT</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>PlanArea</Name>
+      <Definition>Projected plan area of upper surface of model.</Definition>
+      <QtoType>Q_AREA</QtoType>
+    </QtoDef>
+    <QtoDef>
+      <Name>Volume</Name>
+      <Definition>Volume of the element.
+
+Volume represented, if lower surface of stratum known.</Definition>
+      <QtoType>Q_VOLUME</QtoType>
+    </QtoDef>
+  </QtoDefs>
+</QtoSetDef>

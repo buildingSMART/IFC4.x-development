@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_FireSuppressionTerminalTypeBreechingInlet</Name>
+  <Definition>Symmetrical pipe fitting that unites two or more inlets into a single pipe (BS6100 330 114 adapted).</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcFireSuppressionTerminal/BREECHINGINLET</ClassName>
+    <ClassName>IfcFireSuppressionTerminalType/BREECHINGINLET</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFireSuppressionTerminal/BREECHINGINLET,IfcFireSuppressionTerminalType/BREECHINGINLET</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>BreechingInletType</Name>
+      <Definition>Defines the type of breeching inlet.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BreechingInletType">
+            <EnumItem>FOURWAY</EnumItem>
+            <EnumItem>TWOWAY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>USERDEFINED</EnumItem>
+            <EnumItem>NOTDEFINED</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>InletDiameter</Name>
+      <Definition>The inlet diameter of the breeching inlet.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OutletDiameter</Name>
+      <Definition>The outlet diameter of the breeching inlet.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>CouplingType</Name>
+      <Definition>Defines the type coupling on the inlet of the breeching inlet.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BreechingInletCouplingType">
+            <EnumItem>INSTANTANEOUS_FEMALE</EnumItem>
+            <EnumItem>INSTANTANEOUS_MALE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>USERDEFINED</EnumItem>
+            <EnumItem>NOTDEFINED</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasCaps</Name>
+      <Definition>Does the inlet connection have protective caps.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

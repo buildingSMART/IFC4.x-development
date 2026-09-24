@@ -1,0 +1,148 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_RailwaySignalType</Name>
+  <Definition>Properties common to the definition of occurrences and types of IfcSignal applied in railways.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSignal</ClassName>
+    <ClassName>IfcSignalType</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSignal,IfcSignalType</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>SignalIndicatorType</Name>
+      <Definition>Type of the indicators on a signal, e.g. route indicator, speed restriction indicator etc.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SignalIndicatorType">
+            <EnumItem>DEPARTUREINDICATOR</EnumItem>
+            <EnumItem>DEPARTUREROUTEINDICATOR</EnumItem>
+            <EnumItem>DERAILINDICATOR</EnumItem>
+            <EnumItem>ROLLINGSTOCKSTOPINDICATOR</EnumItem>
+            <EnumItem>ROUTEINDICATOR</EnumItem>
+            <EnumItem>SHUNTINGINDICATOR</EnumItem>
+            <EnumItem>SWITCHINDICATOR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LensDiffuserType</Name>
+      <Definition>Type of the lens diffuser the signal is equipped with.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HasConductorRailGuardBoard</Name>
+      <Definition>Indicates if a guard board is provided.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MaximumDisplayDistance</Name>
+      <Definition>The maximum distance that can be displayed. The value relates only to the signal type, not to the circumstances at a special position.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RequiredDisplayDistance</Name>
+      <Definition>The required distance that has to be displayed. The value relates only to the signal type, not to the circumstances at a special position.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>IsHighType</Name>
+      <Definition>Indicates if the signal is high (TRUE) or dwarf (ground mounted) (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalHoodLength</Name>
+      <Definition>Nominal length of the signal hood, which is the signal lamp cover against glaring sun.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>HotStripOrientation</Name>
+      <Definition>Position of the hot strip, which indicates the direction of the focus of the light beam and is given in terms like &quot;left upper quadrant (LUQ)&quot; or &quot;5 o'clock&quot;.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>LensDiffuserOrientation</Name>
+      <Definition>Orientation the lens diffuser has to have, which indicates the direction of the lens diffuser and is given in terms like &quot;left upper quadrant (LUQ)&quot; or &quot;5 o'clock&quot;.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>NumberOfLamps</Name>
+      <Definition>Number of lamps the signal is composed of.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>SignalMessage</Name>
+      <Definition>All possible message available at this signal, e.g. &quot;3/4- display automatic blocking&quot;.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>RailwaySignalType</Name>
+      <Definition>The type of railway signal, e.g. home signal, starting signal, shunting signal, level crossing signal.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RailwaySignalType">
+            <EnumItem>APPROACHSIGNAL</EnumItem>
+            <EnumItem>BLOCKSIGNAL</EnumItem>
+            <EnumItem>DISTANTSIGNAL</EnumItem>
+            <EnumItem>HOMESIGNAL</EnumItem>
+            <EnumItem>HUMPAUXILIARYSIGANL</EnumItem>
+            <EnumItem>HUMPSIGNAL</EnumItem>
+            <EnumItem>LEVELCROSSINGSIGNAL</EnumItem>
+            <EnumItem>OBSTRUCTIONSIGNAL</EnumItem>
+            <EnumItem>REPEATINGSIGNAL</EnumItem>
+            <EnumItem>SHUNTINGSIGNAL</EnumItem>
+            <EnumItem>STARTINGSIGNAL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

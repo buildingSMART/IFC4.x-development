@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_UnitaryControlElementTypeThermostat</Name>
+  <Definition>Unitary control element type thermostat attributes.  HISTORY: Added in IFC4.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcUnitaryControlElement/THERMOSTAT</ClassName>
+    <ClassName>IfcUnitaryControlElementType/THERMOSTAT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcUnitaryControlElement/THERMOSTAT,IfcUnitaryControlElementType/THERMOSTAT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>TemperatureSetPoint</Name>
+      <Definition>The temperature setpoint range and default setpoint.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

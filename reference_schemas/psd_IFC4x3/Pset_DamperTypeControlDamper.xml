@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_DamperTypeControlDamper</Name>
+  <Definition>Control damper type attributes.
+Pset renamed from Pset_DamperTypeControl to Pset_DamperTypeControlDamper in IFC2x2 Pset Addendum.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcDamper/CONTROLDAMPER</ClassName>
+    <ClassName>IfcDamperType/CONTROLDAMPER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDamper/CONTROLDAMPER,IfcDamperType/CONTROLDAMPER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>TorqueRange</Name>
+      <Definition>Torque range: minimum operational torque to maximum allowable torque.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcTorqueMeasure"/>
+        </TypePropertyBoundedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ControlDamperOperation</Name>
+      <Definition>The inherent characteristic of the control damper operation.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ControlDamperOperation">
+            <EnumItem>EXPONENTIAL</EnumItem>
+            <EnumItem>LINEAR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

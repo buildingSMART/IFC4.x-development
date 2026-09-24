@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_ValveTypeMixing</Name>
+  <Definition>A valve where typically the temperature of the outlet is determined by mixing hot and cold water inlet flows.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcValve/MIXING</ClassName>
+    <ClassName>IfcValveType/MIXING</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcValve/MIXING,IfcValveType/MIXING</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>MixerControl</Name>
+      <Definition>Defines the form of control of the mixing valve.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_MixingValveControl">
+            <EnumItem>MANUAL</EnumItem>
+            <EnumItem>PREDEFINED</EnumItem>
+            <EnumItem>THERMOSTATIC</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>OutletConnectionSize</Name>
+      <Definition>Size of the outlet connection from the object.
+
+The size of the pipework connection from the mixing valve.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

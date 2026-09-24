@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_CableCarrierSegmentTypeCableTrunkingSegment</Name>
+  <Definition>An enclosed carrier segment with one or more compartments into which cables are placed.
+HISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcCableCarrierSegment/CABLETRUNKINGSEGMENT</ClassName>
+    <ClassName>IfcCableCarrierSegmentType/CABLETRUNKINGSEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableCarrierSegment/CABLETRUNKINGSEGMENT,IfcCableCarrierSegmentType/CABLETRUNKINGSEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>NumberOfCompartments</Name>
+      <Definition>The number of separate internal compartments within the trunking.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

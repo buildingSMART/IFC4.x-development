@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_MemberTypeOCSRigidSupport</Name>
+  <Definition>Properties of rigid catenary support used in railway overhead contact system.</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcMember/MEMBER</ClassName>
+    <ClassName>IfcMemberType/MEMBER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMember/MEMBER,IfcMemberType/MEMBER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>AssemblyInstruction</Name>
+      <Definition>Instructions to describe how the system / equipment / facility is assembled.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference"/>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>ContactWireStagger</Name>
+      <Definition>Lateral displacement of the contact wire to opposite sides of the track centre at successive supports.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>

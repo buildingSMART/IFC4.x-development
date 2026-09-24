@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3_ADD2"/>
+  <Name>Pset_SanitaryTerminalTypeWashHandBasin</Name>
+  <Definition>Waste water appliance for washing the upper parts of the body. HISTORY: In IFC4, Material property removed. Use materials capabilities from IfcMaterialResource schema. Datatype of color changed to IfcLabel (still a string value).</Definition>
+  <Applicability/>
+  <ApplicableClasses>
+    <ClassName>IfcSanitaryTerminal/WASHHANDBASIN</ClassName>
+    <ClassName>IfcSanitaryTerminalType/WASHHANDBASIN</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSanitaryTerminal/WASHHANDBASIN,IfcSanitaryTerminalType/WASHHANDBASIN</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef>
+      <Name>WashHandBasinType</Name>
+      <Definition>Defines the types of wash hand basin that may be specified where:DentalCuspidor: Waste water appliance that receives and flushes away mouth washings
+.
+HandRinse: Wall mounted wash hand basin that has an overall width of 500mm or less
+.
+Hospital: Wash hand basin that has a smooth easy clean surface without tapholes or overflow slot for use where hygiene is of prime importance.Tipup: Wash hand basin mounted on pivots so that it can be emptied by tilting.Vanity: Wash hand basin for installation into a horizontal surface.Washfountain: Wash hand basin that is circular, semi-circular or polygonal on plan, at which more than one person can wash at the same time.
+WashingTrough: Wash hand basin of elongated rectangular shape in plan, at which more than one person can wash at the same time.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_WashHandBasinType">
+            <EnumItem>DENTALCUSPIDOR</EnumItem>
+            <EnumItem>HANDRINSE</EnumItem>
+            <EnumItem>HOSPITAL</EnumItem>
+            <EnumItem>TIPUP</EnumItem>
+            <EnumItem>WASHFOUNTAIN</EnumItem>
+            <EnumItem>WASHINGTROUGH</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>Mounting</Name>
+      <Definition>The property enumeration Pset_SanitaryMountingEnum defines the forms of mounting or fixing of the sanitary terminal that may be specified within property sets used to define sanitary terminals (WC’s, basins, sinks, etc.) where:-BackToWall:     A pedestal mounted sanitary terminal that fits flush to the wall at the rear to cover its service connections
+Pedestal:   A floor mounted sanitary terminal that has an integral base
+CounterTop:     A sanitary terminal that is installed into a horizontal surface that is installed into a horizontal surface. Note: When applied to a wash hand basin, the term more normally used is ‘vanity’. See also Wash Hand Basin Type specification.
+WallHung:   A sanitary terminal cantilevered clear of the floor.Note that BackToWall, Pedestal and WallHung are allowable values for a bidet.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SanitaryMounting">
+            <EnumItem>BACKTOWALL</EnumItem>
+            <EnumItem>COUNTERTOP</EnumItem>
+            <EnumItem>PEDESTAL</EnumItem>
+            <EnumItem>WALLHUNG</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>DrainSize</Name>
+      <Definition>The size of the drain outlet connection from the object.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+    <PropertyDef>
+      <Name>MountingOffset</Name>
+      <Definition>For counter top mounted basins the vertical offset between the top of the sink and the counter top.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure"/>
+        </TypePropertySingleValue>
+      </PropertyType>
+    </PropertyDef>
+  </PropertyDefs>
+</PropertySetDef>
