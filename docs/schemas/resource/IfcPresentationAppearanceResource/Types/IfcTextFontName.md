@@ -12,7 +12,6 @@ Values of **<generic-family>**: In the example above, the last value is a generi
 * 'monospace' (Example: Courier)
 It is encouraged to offer a generic font family as a last alternative.
 
-{ .extDef}
 > NOTE Definition according to Cascading Style Sheets, level 1
 
 > NOTE Type adopted from **font-family** defined in [CSS-1](../content/bibliography.htm#CSS1).

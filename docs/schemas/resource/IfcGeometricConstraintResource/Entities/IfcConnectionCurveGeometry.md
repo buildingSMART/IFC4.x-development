@@ -11,10 +11,8 @@ The available geometry for the connection constraint may be further restricted t
 
 > HISTORY New entity in IFC1.5.
 
-{ .change-ifc2x}
 > IFC2x CHANGE Renamed from IfcLineConnectionGeometry.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The provision of topology with associated geometry, _IfcEdgeCurve_, is enabled by using the _IfcCurveOrEdgeCurve_.
 
 ## Attributes

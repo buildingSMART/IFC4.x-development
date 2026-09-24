@@ -18,5 +18,4 @@ Reference to an Port that is connected by the objectified relationship.
 
 ### RelatedElement
 Reference to an _IfcDistributionElement_ that has ports assigned.
-{ .change-ifc2x4}
 > IFC4 CHANGE Data type restricted to _IfcDistributionElement_.

@@ -9,7 +9,6 @@ A named and structured grouping with a corporate identity.
 
 > HISTORY New entity in IFC1.5.1.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute 'Id' renamed to _Identification_.
 
 ## Attributes

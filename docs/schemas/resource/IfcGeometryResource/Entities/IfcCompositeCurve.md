@@ -21,7 +21,6 @@ Then the parameterization of the composite curve is:
 
 
 
-{ .extDef}
 > NOTE Definition according to ISO 10303-42:
 > A composite curve is a collection of curves joined end-to-end. The individual segments of the curve are themselves defined as composite curve segments. The parameterization of the composite curve is an accumulation of the parametric ranges of the referenced bounded curves. The first segment is parameterized from _0_ to _l~<small>1</small>~_ and for _i__≤__2_, the _i^<small>th</small>^_ segment is parameterized from:
 >

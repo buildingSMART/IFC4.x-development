@@ -12,15 +12,12 @@ The _IfcMaterialDefinitionRepresentation_ can apply
 
 > HISTORY New entity in IFC2x3.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The entity _IfcMaterialDefinitionRepresentation_ has been added. Upward compatibility for file based exchange is guaranteed.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The assignment of curve, surface and other styles to an _IfcStyledItem_ has been simplified by _IfcStyleAssignmentSelect_. The use of intermediate _IfcPresentationStyleAssignment_ is deprecated.
 
 
 
-{ .use-head}
 Use definition
 
 ![use diagram](../../../../figures/ifcmaterialdefinitionrepresentation_01.png)

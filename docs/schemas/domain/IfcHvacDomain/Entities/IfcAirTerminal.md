@@ -5,7 +5,6 @@ An air terminal is a terminating or origination point for the transfer of air be
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

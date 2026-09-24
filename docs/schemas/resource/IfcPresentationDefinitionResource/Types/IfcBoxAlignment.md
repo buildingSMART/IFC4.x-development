@@ -27,7 +27,6 @@ Figure 2 — Box alignment examples
 
 > HISTORY New type in IFC2x2 Addendum2.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The _IfcBoxAlignment_ has been added.
 
 ## Formal Propositions

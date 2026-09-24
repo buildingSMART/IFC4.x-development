@@ -3,7 +3,6 @@
 The _IfcRepresentationItem_ is used within an _IfcRepresentation_ (directly or indirectly through other _IfcRepresentationItem_'s) to represent an _IfcProductRepresentation_. Most commonly these _IfcRepresentationItem_'s are geometric or topological representation items, that can (but not need to) have presentation style information assigned.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-43:1992
 > A representation item is an element of product data that participates in one or more representations or contributes to the definition of another representation item. A representation item contributes to the definition of another representation item when it is referenced by that representation item.
 
@@ -31,21 +30,17 @@ Figure 2 — Representation item style override
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The inverse attributes _StyledByItem_ and _LayerAssignments_ have been added. Upward compatibility for file based exchange is guaranteed.
 
 ## Attributes
 
 ### LayerAssignment
 Assignment of the representation item to a single or multiple layer(s). The _LayerAssignments_ can override a _LayerAssignments_ of the _IfcRepresentation_ it is used within the list of _Items_.
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The inverse attribute _LayerAssignments_ has been added.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse attribute _LayerAssignment_ has been restricted to max 1. Upward compatibility for file based exchange is guaranteed.
 
 ### StyledByItem
 Reference to the _IfcStyledItem_ that provides presentation information to the representation, e.g. a curve style, including colour and thickness to a geometric curve.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The inverse attribute _StyledByItem_ has been added.

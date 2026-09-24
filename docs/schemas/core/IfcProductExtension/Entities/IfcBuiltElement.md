@@ -28,7 +28,6 @@ The _IfcBuiltElement_ can be instantiated in the case when arbitrary built eleme
 There should be only a maximum of one material association assigned to an building element.
 > NOTE The material association can assign a single material, a set of material constituents, a set of material layers, or a set of material profiles by a single association relationship.
 
-{ .change-ifc2x4}
 > IFC2x4 CHANGE The where rule has been promoted from the subtype _IfcWall_.
 
 ## Concepts

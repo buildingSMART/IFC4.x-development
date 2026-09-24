@@ -5,7 +5,6 @@ A mechanical fasteners connecting building elements or parts mechanically. A sin
 
 > HISTORY New entity in IFC2x2
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Supertype changed from _IfcFastener_ to _IfcElementComponent_. Attribute _PredefinedType_ added. Attributes _NominalDiameter_ and _NominalLength_ deprecated.
 
 ## Attributes
@@ -13,13 +12,11 @@ A mechanical fasteners connecting building elements or parts mechanically. A sin
 ### NominalDiameter
 The nominal diameter describing the cross-section size of the fastener type.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Deprecated; the respective attribute of _IfcMechanicalFastenerType_ should be used instead.
 
 ### NominalLength
 The nominal length describing the longitudinal dimensions of the fastener type.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Deprecated; the respective attribute of _IfcMechanicalFastenerType_ should be used instead.
 
 ### PredefinedType

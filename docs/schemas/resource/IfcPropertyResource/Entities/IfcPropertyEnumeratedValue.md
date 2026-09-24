@@ -34,17 +34,14 @@ It is not mandatory to use an instance of _IfcPropertyEnumeration_ to hold the a
 
 > HISTORY  New entity in IFC2.0.
 
-{ .change-ifc2x}
 > IFC2x CHANGE Entity has been renamed from IfcEnumeratedProperty
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _EnumerationValues_ has been made OPTIONAL with upward compatibility for file based exchange.
 
 ## Attributes
 
 ### EnumerationValues
 Enumeration values, which shall be listed in the referenced _IfcPropertyEnumeration_, if such a reference is provided.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been made optional with upward compatibility for file based exchange.
 
 ### EnumerationReference

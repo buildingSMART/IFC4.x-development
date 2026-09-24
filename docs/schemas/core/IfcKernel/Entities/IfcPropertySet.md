@@ -18,7 +18,6 @@ An _IfcPropertySetTemplate_ may define the underlying structure, i.e. the requir
 
 > HISTORY New entity in IFC1.0
 
-{ .change-ifc2x4}
 > IFC4 CHANGE All statically defined property set entities are no longer subtypes of _IfcPropertySet_.
 
 ## Attributes

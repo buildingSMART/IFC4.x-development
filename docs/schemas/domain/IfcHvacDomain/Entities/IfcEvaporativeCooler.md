@@ -5,7 +5,6 @@ An evaporative cooler is a device that cools air by saturating it with water vap
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

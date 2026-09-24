@@ -7,7 +7,6 @@ Electric appliances may be fixed in place or may be able to be moved from one sp
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

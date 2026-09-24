@@ -12,12 +12,10 @@ It is used to define a tendon anchor type specification indicating the specific 
 
 > HISTORY New entity in IFC4.
 
-{ .use-head}
 Material Use Definition
 
 A material or material constituent set may be associated.
 
-{ .use-head}
 Geometry Use Definition
 
 The _IfcTendonAnchorType_ may define the shared geometric representation for many tendon anchor occurrences. The _RepresentationMaps_ attribute refers to a list of _IfcRepresentationMap_'s, that allow for multiple geometric representations.

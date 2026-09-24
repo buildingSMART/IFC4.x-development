@@ -13,5 +13,4 @@ Decompositions imply a dependency, i.e. the definition of the whole depends on t
 
 > HISTORY New entity in IFC1.5, it is a generalisation of the IFC2.0 entity _IfcRelNests_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The differentiation between the aggregation and nesting is determined to be a non-ordered or an ordered collection of parts. The attributes _RelatingObject_ and _RelatedObjects_ have been demoted to the subtypes.

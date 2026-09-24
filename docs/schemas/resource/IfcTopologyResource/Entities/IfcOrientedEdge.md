@@ -13,7 +13,6 @@ Figure 1 — Curve on surface representation of an
 
 > EXAMPLE Figure 1 illustrates an example where the <em>CurveOnSurface</em> is provided in addition to the curve geometry of the <em>IfcEdgeCurve</em>.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > An oriented edge is an edge constructed from another edge and contains a BOOLEAN direction flag to indicate whether or not the orientation of the constructed edge agrees with the orientation of the original edge. Except for perhaps orientation, the oriented edge is equivalent to the original edge.
 >
@@ -23,7 +22,6 @@ Figure 1 — Curve on surface representation of an
 
 > HISTORY New entity in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 Add2 CHANGE The attribute _CurveOnSurface_ has been added.
 
 ## Attributes

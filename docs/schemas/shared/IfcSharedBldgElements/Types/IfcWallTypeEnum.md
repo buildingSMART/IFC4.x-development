@@ -5,13 +5,10 @@ This enumeration defines the different types of walls that can further specify a
 
 > HISTORY New enumeration in IFC2x2.
 
-{ .change-ifc2x2}
 > IFC2x2 CHANGE The enumerator _POLYGON_ has been changed to _POLYGONAL_.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The enumerators _ELEMENTEDWALL_ and _PLUMBINGWALL_ have been added.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE New enumerators MOVABLE, PARAPET, PARTITIONING, and SOLIDWALL have been added.
 
 > NOTE The potentially misleading term _SHEAR_ shall not impose a particular resistance against shear forces, but a particular shape.
@@ -38,7 +35,6 @@ A massive wall construction for the wall core being the single layer or having m
 
 ### STANDARD
 A standard wall, extruded vertically with a constant thickness along the wall path.
-{ .deprecated}
 > IFC4 DEPRECATION The value is deprecated, it is expressed by using an _IfcMaterialLayerSet_ with _IfcMaterialLayerSetUsage_ in occurrences.
 
 ### POLYGONAL

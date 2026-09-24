@@ -5,7 +5,6 @@ A discrete accessory is a representation of different kinds of accessories inclu
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _PredefinedType_ added.
 
 ## Attributes

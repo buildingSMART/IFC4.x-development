@@ -5,10 +5,8 @@ _IfcLShapeProfileDef_ defines a section profile that provides the defining param
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE All profile origins are now in the center of the bounding box.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Types of _FilletRadius_ and _EdgeRadius_ were relaxed to allow for zero values.
 > Trailing attributes _CentreOfGravityInX_ and _CentreOfGravityInY_ deleted, use respective properties in _IfcProfileProperties_ instead.
 > WHERE rule which required _Width_ <= _Depth_ removed.

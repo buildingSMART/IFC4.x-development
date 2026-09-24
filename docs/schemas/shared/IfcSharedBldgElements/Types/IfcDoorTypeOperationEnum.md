@@ -9,7 +9,6 @@ In the most common case of swinging doors the _IfcDoorTypeOperationEnum_ defined
 
 > HISTORY New Enumeration in IFC4.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The new _IfcDoorTypeOperationEnum_ replaces the use of _IfcDoorStyleOperationEnum_ that is deprecated from IFC4 onwards.
 
 Note that:

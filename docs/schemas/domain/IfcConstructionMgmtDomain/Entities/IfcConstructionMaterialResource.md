@@ -5,7 +5,6 @@ _IfcConstructionMaterialResource_ identifies a material resource type in a const
 
 > HISTORY New entity in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _Suppliers_ has been deleted; use _IfcRelAssignsToResource_ to assign an _IfcActor_ to fulfill the role as a supplier. The attribute _UsageRatio_ has been deleted; use _BaseQuantityConsumed_ and _BaseQuantityProduced_ to indicate material usage.
 
 Occurrences of _IfcConstructionMaterialResource_ are consumed (wholly or partially), or occupied during a construction work task (_IfcTask_).
@@ -18,7 +17,6 @@ Similar to _IfcConstructionProductResource_, sometimes things such as 5000kg of 
 
 ### PredefinedType
 Defines types of construction material resources.
-{ .change-ifc2x4}
 > IFC4 New attribute.
 
 ## Formal Propositions

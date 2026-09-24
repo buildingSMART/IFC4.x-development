@@ -17,7 +17,6 @@ Further explanation that might be given to the quantity.
 
 ### HasExternalReferences
 Reference to an external reference, e.g. library, classification, or document information, that is associated to the quantity.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute.
 
 ### PartOfComplex

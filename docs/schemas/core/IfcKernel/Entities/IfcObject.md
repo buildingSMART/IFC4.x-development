@@ -23,7 +23,6 @@ Objects are independent pieces of information that might contain or reference ot
 
 > HISTORY New entity in IFC1.0
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse relationships _Declares_, _IsDeclaredBy_, and _IsTypedBy_ have been added. Types are no longer included in the _IsDefinesBy_ relationship. _IfcProject_ has been promoted to be a subtype of _IfcObjectDefinition_ -> _IfcContext_.
 
 **Informal Propositions**
@@ -37,22 +36,18 @@ The type denotes a particular type that indicates the object further. The use ha
 
 ### IsDeclaredBy
 Link to the relationship object pointing to the declaring object that provides the object definitions for this object occurrence. The declaring object has to be part of an object type decomposition. The associated _IfcObject_, or its subtypes, contains the specific information (as part of a type, or style, definition), that is common to all reflected instances of the declaring _IfcObject_, or its subtypes.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse relationship, change made with upward compatibility for file based exchange.
 
 ### Declares
 Link to the relationship object pointing to the reflected object(s) that receives the object definitions. The reflected object has to be part of an object occurrence decomposition. The associated _IfcObject_, or its subtypes, provides the specific information (as part of a type, or style, definition), that is common to all reflected instances of the declaring _IfcObject_, or its subtypes.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse relationship, change made with upward compatibility for file based exchange.
 
 ### IsTypedBy
 Set of relationships to the object type that provides the type definitions for this object occurrence. The then associated _IfcTypeObject_, or its subtypes, contains the specific information (or type, or style), that is common to all instances of _IfcObject_, or its subtypes, referring to the same type.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse relationship, the link to _IfcRelDefinesByType_ was previously included in the inverse relationship _IfcRelDefines_. Change made with upward compatibility for file based exchange.
 
 ### IsDefinedBy
 Set of relationships to property set definitions attached to this object. Those statically or dynamically defined properties contain alphanumeric information content that further defines the object.
-{ .change-ifc2x4}
 > IFC4 CHANGE The data type has been changed from _IfcRelDefines_ to _IfcRelDefinesByProperties_ with upward compatibility for file based exchange.
 
 ## Formal Propositions

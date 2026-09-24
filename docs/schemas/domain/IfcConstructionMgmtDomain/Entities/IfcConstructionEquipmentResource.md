@@ -13,7 +13,6 @@ Instances of any subtype of _IfcProduct_ may be assigned to the equipment resour
 
 ### PredefinedType
 Defines types of construction equipment resources.
-{ .change-ifc2x4}
 > IFC4 New attribute.
 
 ## Formal Propositions

@@ -7,7 +7,6 @@ Consider Application A will create an IFC dataset that it wants to publish to ot
 
 > HISTORY New enumeration in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Enumerators MODIFIEDADDED and MODIFIEDDELETED have been removed
 
 ## Items

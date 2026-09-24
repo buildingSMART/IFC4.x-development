@@ -9,7 +9,6 @@ The source for the currency exchange is defined as an instance of _IfcLibraryInf
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Subtyped from _IfcResourceLevelRelationship_, attribute order changed.
 
 ## Attributes
@@ -25,7 +24,6 @@ The currently agreed ratio of the amount of a related monetary unit that is equi
 
 ### RateDateTime
 The date and time at which an exchange rate applies.
-{ .change-ifc2x4}
 > IFC4 CHANGE Type changed from IfcDateTimeSelect. Attribute made optional.
 
 ### RateSource

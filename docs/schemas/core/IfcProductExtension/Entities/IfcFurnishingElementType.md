@@ -11,8 +11,6 @@ The occurrences of the _IfcFurnishingElementType_ are represented by instances o
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The entity has been made non-abstract
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The entity is marked as deprecated for instantiation - will be made ABSTRACT after IFC4.

@@ -7,7 +7,6 @@ A controller may be physical (having placement within a spatial structure) or lo
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

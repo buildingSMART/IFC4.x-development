@@ -7,7 +7,6 @@ Cables may be members of an electrical circuit (for electrical power systems) or
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes
@@ -45,7 +44,6 @@ Covering such as drywall applied to a wall or ceiling, for which the junction bo
 
 > EXAMPLE A switch, outlet, light fixture, or other component that may fit within one of the gangs of the junction box may be nested.
 
-{ .change-ifc4}
 > IFC4 ADD1 CHANGE Junction boxes no longer have ports defined, but rely on element nesting for indicating containment of electrical devices.
 
 ### Material Set

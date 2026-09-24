@@ -11,7 +11,6 @@ Decompositions imply a dependency, implying that the whole depends on the defini
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attributes _RelatingObject_ and _RelatedObjects_ are demoted from the supertype _IfcRelDecomposes_.
 
 ## Attributes
@@ -19,13 +18,11 @@ Decompositions imply a dependency, implying that the whole depends on the defini
 ### RelatingObject
 The object definition, either an object type or an object occurrence, that represents the aggregation. It is the whole within the whole/part relationship.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been demoted from the supertype _IfcRelDecomposes_ and defines the non-ordered aggregation relationship.
 
 ### RelatedObjects
 The object definitions, either object occurrences or object types, that are being aggregated. They are defined as the parts in the whole/part relationship. No order is implied between the parts.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been demoted from the supertype _IfcRelDecomposes_ and defines the non-ordered set of parts within the aggregation.
 
 ## Formal Propositions

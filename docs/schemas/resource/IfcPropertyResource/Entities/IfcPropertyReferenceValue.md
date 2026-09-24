@@ -5,7 +5,6 @@ The _IfcPropertyReferenceValue_ allows a property value to be of type of an reso
 
 > HISTORY New entity in IFC1.5. Entity has been renamed from IfcObjectReference in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _PropertyReference_ has been made OPTIONAL with upward compatibility for file based exchange.
 
 ## Attributes
@@ -15,5 +14,4 @@ Description of the use of the referenced value within the property. It is a desc
 
 ### PropertyReference
 Reference to another property entity through one of the select types in the _IfcObjectReferenceSelect_.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been made optional with upward compatibility for file based exchange.

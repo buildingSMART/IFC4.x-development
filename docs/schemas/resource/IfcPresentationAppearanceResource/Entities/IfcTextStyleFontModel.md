@@ -1,12 +1,10 @@
 # IfcTextStyleFontModel
 
-{ .extDef}
 <!-- end of short definition -->
 
 > Definition according to W3C for Cascading Style Sheets:
 > Setting font properties will be among the most common uses of style sheets. Unfortunately, there exists no well-defined and universally accepted taxonomy for classifying fonts, and terms that apply to one font family may not be appropriate for others. For example, 'italic' is commonly used to label slanted text, but slanted text may also be labeled as being _Oblique_, _Slanted_, _Incline_, _Cursive_ or _Kursiv_. Therefore it is not a simple problem to map typical font selection properties to a specific font.
 
-{ .extDef}
 > **Font matching**
 > Because there is no accepted, universal taxonomy of font properties, matching of properties to font faces must be done carefully. The properties are matched in a well-defined order to ensure that the results of this matching process are as consistent as possible across user agents (assuming that the same library of font faces is presented to each of them).
 
@@ -35,7 +33,6 @@ The inherited _Name_ attribute is used to define the font name, particularly in 
 
 ### FontFamily
 The value is a prioritized list of font family names and/or generic family names. The first list entry has the highest priority, if this font fails, the next list item shall be used. The last list item should (if possible) be a generic family.
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute changed to being mandatory.
 
 ### FontStyle

@@ -13,7 +13,6 @@ The visibility control allows to define a layer to be either 'on' or 'off', and/
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The attributes have been modified without upward compatibility.
 
 ## Attributes
@@ -31,12 +30,10 @@ A logical setting, TRUE indicates that the layer is set to 'Blocked', FALSE that
 Assignment of presentation styles to the layer to provide a default style for representation items.
 > NOTE In most cases the assignment of styles to a layer is restricted to an _IfcCurveStyle_ representing the layer curve colour, layer curve thickness, and layer curve type.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The data type has been changed from _IfcPresentationStyleSelect_ (now deprecated) to _IfcPresentationStyle_.
 
 ## Formal Propositions
 
 ### ApplicableOnlyToItems
 The _IfcPresentationLayerWithStyle_ shall only be used to assign subtypes of _IfcGeometricRepresentationItem_'s and to _IfcMappedItem_. There shall be no instance of subtypes of _IfcRepresentation_ in the set of _AssignedItem_'s.
-{ .change-ifc2x4}
 > IFC4 CHANGE New where rule.

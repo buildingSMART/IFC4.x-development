@@ -15,7 +15,6 @@ As shown in Figure 1, the panel is applied to the position within the lining as 
 
 > HISTORY New entity in IFC2.0, it had been renamed from IfcWindowPanel in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Supertype changed to new _IfcPreDefinedPropertySet_.
 
 > IFC4.3.2.0 DEPRECATION This entity, and most other subtypes of IfcPredefinedPropertySet, are now deprecated. Use Pset_WindowPanelProperties instead.
@@ -36,7 +35,6 @@ Width of panel frame, measured from inside of panel (at glazing) to outside of p
 
 ### ShapeAspectStyle
 Optional link to a shape aspect definition, which points to the part of the geometric representation of the window style, which is used to represent the panel.
-{ .deprecated}
 > DEPRECATION The attribute is deprecated and shall no longer be used, i.e. the value shall be NIL ($).
 
 ## Formal Propositions

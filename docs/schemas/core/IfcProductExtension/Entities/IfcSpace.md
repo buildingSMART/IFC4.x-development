@@ -51,7 +51,6 @@ Predefined generic types for a space that are specified in an enumeration. There
 
 > NOTE Previous use had been to indicates whether the _IfcSpace_ is an interior space by value INTERNAL, or an exterior space by value EXTERNAL. This use is now deprecated, the property 'IsExternal' at 'Pset_SpaceCommon' should be used instead.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been renamed from _InteriorOrExteriorSpace_ with upward compatibility for file based exchange.
 
 ### ElevationWithFlooring
@@ -62,7 +61,6 @@ Reference to _IfcCovering_ by virtue of the objectified relationship _IfcRelCove
 
 > NOTE Coverings are often managed by the space, and not by the building element, which they cover.
 
-{ .change-ifc2x3}
 > IFC2x Edition3 CHANGE New inverse relationship. Upward compatibility for file based exchange is guaranteed.
 
 ### BoundedBy

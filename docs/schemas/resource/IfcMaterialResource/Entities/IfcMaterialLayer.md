@@ -13,7 +13,6 @@ The _IfcMaterialLayer_ may have a material layer name which may differ from the 
 
 > HISTORY New entity in IFC1.5
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attributes _Name_, _Description_, _Category_, _Priority_ have been added at the end of attribute list. Data type of _LayerThickness_ relaxed to _IfcNonNegativeLengthMeasure_.
 
 ## Attributes
@@ -26,7 +25,6 @@ The thickness of the material layer. The meaning of "thickness" depends on its u
 
 > NOTE The attribute value can be 0. for material thicknesses very close to zero, such as for a membrane. Material layers with thickess 0. may not be rendered in the geometric representation.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute datatype has been changed to _IfcNonNegativeLengthMeasure_ allowing for 0. as thickness.
 
 ### IsVentilated

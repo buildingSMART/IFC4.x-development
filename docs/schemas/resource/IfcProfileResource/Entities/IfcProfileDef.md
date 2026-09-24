@@ -10,7 +10,6 @@ _IfcProfileDef_ is the supertype of all definitions of standard and arbitrary pr
 
 > HISTORY New entity in IFC1.5, the capabilities have been extended in IFC2x. Profiles can now support swept surfaces and swept area solids with inner boundaries. It had been renamed from IfcAttDrivenProfileDef.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Changed from ABSTRACT to non-abstract for uses which do not require an explicitly defined geometry. Added inverse attributes _HasProperties_ and _HasExternalReference_.
 
 **Use in material association**
@@ -110,12 +109,10 @@ Human-readable name of the profile, for example according to a standard profile 
 
 ### HasExternalReference
 Reference to external information, e.g. library, classification, or document information, which is associated with the profile.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute
 
 ### HasProperties
 Additional properties of the profile, for example mechanical properties.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute
 
 ## Concepts

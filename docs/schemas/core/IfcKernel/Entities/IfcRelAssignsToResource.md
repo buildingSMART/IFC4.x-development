@@ -13,7 +13,6 @@ The objectified relationship _IfcRelAssignsToResource_ handles the assignment of
 
 Reference to the resource to which the objects are assigned.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Datatype expanded to include _IfcResource_ and _IfcTypeResource_.
 
 ## Formal Propositions

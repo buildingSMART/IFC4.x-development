@@ -17,5 +17,4 @@ The table datatype is general purpose and may be used for any two dimensional ma
 
 > HISTORY  The various types of registries were removed from this schema in IFC2.0 since the method used within applications to store those types of information could differ between different applications.
 
-{ .change-ifc2x}
 > IFC2x CHANGE  This schema was significantly simplified in IFC2x to reduce overhead.

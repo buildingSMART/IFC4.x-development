@@ -5,5 +5,4 @@ _IfcObjectReferenceSelect_ is a select type, that holds a list of resource level
 
 > HISTORY New select type in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE _IfcTable_ added to the select.

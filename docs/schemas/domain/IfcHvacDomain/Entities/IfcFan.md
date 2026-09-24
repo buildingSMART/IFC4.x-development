@@ -5,7 +5,6 @@ A fan is a device which imparts mechanical work on a gas. A typical usage of a f
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

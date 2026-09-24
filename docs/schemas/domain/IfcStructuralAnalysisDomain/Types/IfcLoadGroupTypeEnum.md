@@ -5,7 +5,6 @@ This enumeration is used to distinguish between different levels of load groupin
 
 > HISTORY New enumeration in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE LOAD_COMBINATION_GROUP deprecated. Load cases are directly assigned to load combinations with different factors for each load case—load combination pair by means of _IfcRelAssignsToGroupByFactor_.
 
 ## Items

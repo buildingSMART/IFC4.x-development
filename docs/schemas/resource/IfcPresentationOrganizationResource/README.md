@@ -17,6 +17,6 @@ The following is within the scope of the presentation resource schemas:
 * support of textures aüülied to surfaces and csg primitives;
 * image control by a layer mechanism.
 
-> NOTE  Some definitions of this resource schema have been adopted from [ISO 10303-46](../content/bibliography.htm#iso-10303-46){ .int-ref}. The _IfcPresentationOrganizationResource_ refers to the clause 4, "Presentation organization" of the standard. The definitions, when quoted from ISO 10303-46, are explicitly excluded from the copyright of this specification.
+> NOTE  Some definitions of this resource schema have been adopted from [ISO 10303-46](../content/bibliography.htm#iso-10303-46). The _IfcPresentationOrganizationResource_ refers to the clause 4, "Presentation organization" of the standard. The definitions, when quoted from ISO 10303-46, are explicitly excluded from the copyright of this specification.
 
-> NOTE  Some definitions of this resource schema have also been adopted from [ISO/IEC 14772-1](../content/bibliography.htm#IEC-14772-1){ .int-ref}, in particular for the lighting sources. The definitions, when quoted from ISO/IEC 14772-1, are explicitly excluded from the copyright of this specification.
+> NOTE  Some definitions of this resource schema have also been adopted from [ISO/IEC 14772-1](../content/bibliography.htm#IEC-14772-1), in particular for the lighting sources. The definitions, when quoted from ISO/IEC 14772-1, are explicitly excluded from the copyright of this specification.

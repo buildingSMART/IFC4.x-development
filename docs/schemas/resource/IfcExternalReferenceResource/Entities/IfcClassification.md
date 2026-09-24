@@ -14,7 +14,6 @@ There are two methods to define and reference a classification system:
 
 > HISTORY New entity in IFC1.5
 
-{ .change-ifc2x4}
 > IFC 2x4 CHANGE Attribute _Edition_ made optional. Attributes: _Description_, _Location_, and _ReferenceTokens_ and inverse attribute _HasReferences_ added.
 
 ## Attributes
@@ -27,14 +26,12 @@ Source (or publisher) for this classification.
 The edition or version of the classification system from which the classification notation is derived.
 > NOTE the version labeling system is specific to the classification system.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been changed to be optional.
 
 ### EditionDate
 The date on which the edition of the classification used became valid.
 > NOTE The indication of edition may be sufficient to identify the classification source uniquely but the edition date is provided as an optional attribute to enable more precise identification where required.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The data type has been changed to _IfcDate_, the date string according to ISO8601.
 
 ### Name
@@ -43,7 +40,6 @@ The name or label by which the classification used is normally known.
 
 ### Description
 Additional description provided for the classification.
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute added at the end of the attribute list.
 
 ### Specification
@@ -64,12 +60,10 @@ conjunction with _IfcClassificationReference_'s. If only one _ReferenceToken_ is
 
 > EXAMPLE 2 The use of _ReferenceTokens_ can also be extended to include masks. The use need to be agreed in view definitions or implementer agreements that stipulates a "mask syntax" that should be used.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute added at the end of the attribute list.
 
 ### ClassificationForObjects
 The classification with which objects are associated.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute.
 
 ### HasReferences

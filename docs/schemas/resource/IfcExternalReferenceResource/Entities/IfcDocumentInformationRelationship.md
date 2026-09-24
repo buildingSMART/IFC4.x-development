@@ -5,7 +5,6 @@ An _IfcDocumentInformationRelationship_ is a relationship entity that enables a 
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Subtyped from _IfcResourceLevelRelationship_, order of attributes changed.
 
 ## Attributes

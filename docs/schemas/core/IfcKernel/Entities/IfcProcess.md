@@ -3,7 +3,6 @@
 _IfcProcess_ is defined as one individual activity or event, that is ordered in time, that has sequence relationships with other processes, which transforms input in output, and may connect to other processes through input output relationships. An _IfcProcess_ can be an activity (or task), or an event. It takes usually place in building construction with the intent of designing, costing, acquiring, constructing, or maintaining products or other and similar tasks or procedures. Figure 1 illustrates process relationships.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO9000:
 > A process is a set of activities that are interrelated or that interact with one another. Processes use resources to transform inputs into outputs. Processes are interconnected because the output from one process becomes the input for another process. In effect, processes are "glued" together by means of such input output relationships.
 
@@ -21,10 +20,8 @@ Process information relates to other objects by establishing the following relat
 
 > HISTORY New entity in IFC1.0.
 
-{ .change-ifc2x}
 > IFC2x CHANGE The attribute _Productivity_ has been removed.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _Identification_ has been promoted from subtypes _IfcTask_ and others.
 
 ## Attributes
@@ -33,12 +30,10 @@ Process information relates to other objects by establishing the following relat
 An identifying designation given to a process or activity.
   It is the identifier at the occurrence level.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute promoted from subtypes.
 
 ### LongDescription
 An extended description or narrative that may be provided.
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute.
 
 ### IsPredecessorTo

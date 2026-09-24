@@ -16,5 +16,4 @@ The following are outside of the scope of this part of the specifications:
 
 * Transaction details that may be supported by or support electronic commerce.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE  The former schema _IfcFacilitiesMgmtDomain_ has been merged into this schema to include the entities _IfcPermit_ and _IfcActionRequest_, as each entity now also supports use in construction as well as facilities management.

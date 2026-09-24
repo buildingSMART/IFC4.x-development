@@ -13,7 +13,6 @@ The measure values for font pattern and curve width apply to the model space wit
 
 An _IfcCurveStyle_ can be assigned to _IfcGeometricRepresentationItem_'s via the _IfcStyledItem_.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-46:1992
 > A curve style specifies the visual appearance of curves.
 
@@ -34,7 +33,6 @@ The colour of the visible part of the curve. If not given, then the colour shoul
 
 ### ModelOrDraughting
 Indication whether the length measures provided for the presentation style are model based, or draughting based.
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute.
 
 ## Formal Propositions

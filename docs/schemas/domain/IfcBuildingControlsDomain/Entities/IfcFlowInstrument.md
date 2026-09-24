@@ -7,7 +7,6 @@ Instrumentation is typically for the purpose of determining the value of the pro
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

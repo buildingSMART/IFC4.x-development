@@ -5,7 +5,6 @@ This enumeration defines the different predefined types of beams that can furthe
 
 > HISTORY New enumeration type in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The enumerators HOLLOWCORE and SPANDREL have been added.
 
 ## Items

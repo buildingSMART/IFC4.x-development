@@ -20,7 +20,6 @@ Table 1 - How attributes affect the door shape
 
 > HISTORY New entity in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Supertype changed to new _IfcPreDefinedPropertySet_.
 
 > IFC4.3.2.0 DEPRECATION This entity, and most other subtypes of IfcPredefinedPropertySet, are now deprecated. Use Pset_DoorPanelProperties instead.
@@ -41,7 +40,6 @@ Position of this panel within the door. The _PanelPosition_ of the door panel ha
 
 ### ShapeAspectStyle
 Pointer to the shape aspect, if given. The shape aspect reflects the part of the door shape, which represents the door panel.
-{ .deprecated}
 > DEPRECATION The attribute is deprecated and shall no longer be used, i.e. the value shall be NIL ($).
 
 ## Formal Propositions

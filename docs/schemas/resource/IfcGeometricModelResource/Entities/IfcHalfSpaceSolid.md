@@ -7,7 +7,6 @@ Figure 1 illustrates the definition of the _IfcHalfSpaceSolid_ within a given co
 
 ![half space solid](../../../../figures/ifchalfspacesolid-layout1.gif "Figure 1 — Half space solid geometry")
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A half space solid is defined by the half space which is the regular subset of the domain which lies on one side of an unbounded surface. The side of the surface which is in the half space is determined by the surface normal and the agreement flag. If the agreement flag is TRUE, then the subset is the one the normal points away from. If the agreement flag is FALSE, then the subset is the one the normal points into.
 >

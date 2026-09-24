@@ -5,7 +5,6 @@ A cable carrier segment is a flow segment that is specifically used to carry and
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

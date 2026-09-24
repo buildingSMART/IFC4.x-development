@@ -18,7 +18,6 @@ _IfcBuildingElementProxy_ may be used:
 Predefined generic type for a building element proxy that is specified in an enumeration. There may be a property set given specifically for the predefined types.
 > NOTE The _PredefinedType_ shall only be used, if no _IfcBuildingElementProxyType_ is assigned, providing its own _IfcBuildingElementProxyType.PredefinedType_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _CompositionType_ has been replaced by _PredefinedType_, being a superset of the enumerators.
 
 ## Formal Propositions

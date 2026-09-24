@@ -5,7 +5,6 @@ An air terminal box typically participates in an HVAC duct distribution system a
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

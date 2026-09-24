@@ -29,7 +29,6 @@ There are two main representations for slab occurrences:
 Predefined generic type for a slab that is specified in an enumeration. There may be a property set given specifically for the predefined types.
 > NOTE The _PredefinedType_ shall only be used, if no _IfcSlabType_ is assigned, providing its own _IfcSlabType.PredefinedType_.
 
-{ .change-ifc2x}
 > IFC2x CHANGE The attribute has been changed into an OPTIONAL attribute.
 
 ## Formal Propositions

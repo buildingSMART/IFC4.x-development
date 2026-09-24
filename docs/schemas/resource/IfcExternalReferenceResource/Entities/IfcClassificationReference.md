@@ -18,32 +18,26 @@ The _IfcClassificationReference_ can either be assigned directly to the _IfcClas
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _Description_ and inverse attribute _HasReferences_ are added. The attribute _Identification_ has been renamed from ItemReference.
 
 ## Attributes
 
 ### ReferencedSource
 The classification system or source that is referenced.
-{ .change-ifc2x4}
 > IFC4 CHANGE Data type changed to _IfcClassificationReferenceSelect_.
 
 ### Description
 Description of the classification reference for informational purposes.
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute added at the end of the attribute list.
 
 ### Sort
 Optional identifier to sort the set of classification references within the referenced source (either a classification facet of higher level, or the classification system itself).
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute added at the end of the attribute list.
 
 ### ClassificationRefForObjects
 The classification reference with which objects are associated.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute.
 
 ### HasReferences
 The parent classification references to which this child classification reference applies. It can either be the final classification item leaf node, or an intermediate classification item.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute.

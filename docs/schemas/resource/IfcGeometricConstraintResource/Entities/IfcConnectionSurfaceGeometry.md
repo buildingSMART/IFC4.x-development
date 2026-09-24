@@ -7,7 +7,6 @@ The _IfcSurface_ (or the _IfcFaceSurface_ with an associated _IfcSurface_) at th
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The provision of topology with associated geometry, _IfcFaceSurface_, is enabled by using the _IfcSurfaceOrFaceSurface_.
 
 ## Attributes

@@ -23,7 +23,6 @@ Figure 2 — Example of using geometric representation contexts
 
 Use of representation contexts defined at <em>IfcProject</em> for 3D model and 2D plan context, including sub context definitions for different target scales. There shall always be a maximum of one geometric representation context for 2D and for 3D coordinate space.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A geometric representation context is a representation context in which the geometric representation items are geometrically founded.
 
@@ -31,10 +30,8 @@ Use of representation contexts defined at <em>IfcProject</em> for 3D model and 2
 
 > HISTORY New entity in IFC2.0.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE Applicable values for _ContextType_ are only 'Model', 'Plan', and 'NotDefined'. All other contexts are now handled by _IfcGeometricRepresentationSubContext_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Mapping to Geographic coordinate system added by inverse attribute _HasCoordinateOperation_.
 
 ## Attributes
