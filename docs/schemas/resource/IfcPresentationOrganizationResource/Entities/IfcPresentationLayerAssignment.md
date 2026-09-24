@@ -11,7 +11,6 @@ Visibility and access control and layer style assignment (colour, line style, li
 
 > HISTORY New entity in IFC2x2.
 
-{ .use-head}
 Attribute use definition
 
 Figure 1 illustrates assignment of items by shape representation or representation item. The set of _AssignedItems_ can either include a whole shape representation, or individual geometric representation items. If both, the _IfcShapeRepresentation_ has a layer assignment, and an individual geometric representation item in the set of _IfcShapeRepresentation_.Items, then the layer assignment of the _IfcGeometricRepresentationItem_ overrides the layer assignment of the _IfcShapeRepresentation_.
@@ -36,5 +35,4 @@ An (internal) identifier assigned to the layer.
 
 ### ApplicableItems
 The items within the set of _AssignedItems_ that can be assigned to a presentation layer shall be geometric shape representation or representation items.
-{ .change-ifc2x4}
 > IFC4 CHANGE The where rule has been added.

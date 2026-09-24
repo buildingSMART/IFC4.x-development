@@ -11,7 +11,6 @@ Identification of people and equipment of a crew is achieved through their speci
 
 ### PredefinedType
 Defines types of crew resources.
-{ .change-ifc2x4}
 > IFC4 New attribute.
 
 ## Formal Propositions

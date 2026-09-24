@@ -5,7 +5,6 @@ A structural reaction is a structural activity that results from a structural ac
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Inverse attribute _Causes_ deleted; use _IfcRelAssignsToProduct_ via _HasAssignments_ instead.
 
 Structural reactions are grouped into _IfcStructuralResultGroup_s via the inverse relationship _HasAssignments_ and an _IfcRelAssignsToGroup_ relationship object. _IfcStructuralResultGroup.ResultGroupFor_ finally refers to the structural analysis model in which the results occur.

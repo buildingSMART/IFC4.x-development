@@ -5,7 +5,6 @@ A cooling tower is a device which rejects heat to ambient air by circulating a f
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

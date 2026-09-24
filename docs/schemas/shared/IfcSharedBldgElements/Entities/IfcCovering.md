@@ -3,7 +3,6 @@
 A covering is an element which covers some part of another element and is fully dependent on that other element. The _IfcCovering_ defines the occurrence of a covering type, that (if given) is expressed by the _IfcCoveringType_.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO ISO 6707-1: final coverings and treatments of surfaces and their intersections.
 
 Coverings are elements with relationships to the covered element and the space on the other side, they may contain openings, assigned by _IfcRelVoidsElement_, material information, assigned by _IfcRelAssociatesMaterial_, and others.
@@ -31,7 +30,6 @@ The following guideline shall apply:
 
 > HISTORY New entity in IFC1.0.
 
-{ .change-ifc2x}
 > IFC2x CHANGE The attribute _PredefinedType_ is now optional and should only be inserted when no type information, given by _IfcCoveringType_, is assigned to the _IfcCovering_ occurrence by _IfcRelDefinesByType_.
 
 ## Attributes
@@ -45,7 +43,6 @@ Reference to the objectified relationship that handles the relationship of the c
 
 ### CoversElements
 Reference to the objectified relationship that handles the relationship of the covering to the covered element.
-{ .change-ifc2x4}
 > IFC4 CHANGE Renamed into _CoversElements_ for consistency.
 
 ## Formal Propositions

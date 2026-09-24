@@ -5,7 +5,6 @@ Enumeration defining standard types for the role, purpose or usage of the bar, i
 
 > HISTORY New type in IFC2x2
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Item ANCHORING added. Enumeration renamed in IFC4 from _IfcReinforcingBarRoleEnum_ without changes to the range of enumeration items.
 
 ## Items

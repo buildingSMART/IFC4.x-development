@@ -14,7 +14,6 @@ The 1st level space boundary defines the physical or virtual delimiter of a spac
 
 > HISTORY New entity in IFC4.
 
-{ .use-head}
 Relationship Use Definitions
 
 As shown in Figure 1, the attribute _ParentBoundary_ with inverse _InnerBoundaries_ is provided to link the space boundaries of doors, windows, and openings to the parent boundary, such as of a wall or slab.
@@ -23,7 +22,6 @@ As shown in Figure 1, the attribute _ParentBoundary_ with inverse _InnerBoundari
 
 ![IfcRelSpaceBoundary1stLevel](../../../../figures/ifcrelspaceboundary1stlevel-fig1.png "Figure 1 — Space boundary first level relationships")
 
-{ .use-head}
 Geometry Use Definitions
 
 See the definition at the supertype IfcRelSpaceBoundary for guidance on using the connection geometry for first level space boundaries.

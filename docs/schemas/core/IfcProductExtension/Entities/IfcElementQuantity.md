@@ -32,7 +32,6 @@ The following general agreements apply for each base quantity set
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Subtyped from new intermediate _IfcQuantitySet_ supertype.
 
 ## Attributes
@@ -40,7 +39,6 @@ The following general agreements apply for each base quantity set
 ### MethodOfMeasurement
 Name of the method of measurement used to calculate the element quantity. The method of measurement attribute has to be made recognizable by further agreements.
 
-{ .change-ifc2x2}
 > IFC2x2-Addendum-1 change: The attribute has been changed to be optional
 
 ### Quantities

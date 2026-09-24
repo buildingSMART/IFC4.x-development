@@ -7,7 +7,6 @@ Coils may also be used for non-airflow cases such as embedded in a floor slab.
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

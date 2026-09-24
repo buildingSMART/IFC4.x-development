@@ -16,7 +16,6 @@ The _IfcDistributionElement_ is further specialized in the IFC specification. Di
 
 > HISTORY New entity in IFC1.5.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The entity is marked as deprecated for instantiation - will be made ABSTRACT in future releases.
 
 ## Attributes
@@ -24,7 +23,6 @@ The _IfcDistributionElement_ is further specialized in the IFC specification. Di
 ### HasPorts
 Reference to the element to port connection relationship. The relationship then refers to the port which is contained in this element.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse attribute is deprecated. Relationship to ports, contained within the _IfcDistributionElement_ is now realized by the inverse relationship _NestedBy_ referencing _IfcRelNests_.
 
 ## Concepts

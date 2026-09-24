@@ -5,7 +5,6 @@ Unitary equipment typically combine a number of components into a single product
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

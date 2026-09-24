@@ -11,13 +11,10 @@ Several subtypes of _IfcParameterizedProfileDef_ provide shape parameters which 
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x}
 > IFC2x CHANGE The _IfcParameterizedProfileDef_ is introduced as an intermediate new abstract entity that unifies the definition and usage of the position coordinate system for all parameterized profiles. The Position attribute has been removed at all subtypes (like _IfcRectangleProfileDef_, _IfcCircleProfileDef_, etc.).
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE All profile origins are now in the center of the bounding box.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE _Position_ attribute made optional (default: identity transformation).
 > Several radius parameters in subtypes have been changed from optional _IfcPositiveLengthMeasure_ (assumed default: 0.) to optional _IfcNonNegativeLengthMeasure_ (default: unspecified). This change allows to explicitly specify zero radius. Sending systems shall export 0. values if parameters are known to be 0.
 > Subtypes _IfcCraneRailAShapeProfileDef_ and _IfcCraneRailFShapeProfileDef_ deleted. Rail profiles shall be modeled as _IfcArbitraryClosedProfileDef_ or as _IfcAsymmetricIShapeProfileDef_ together with appropriate external reference.

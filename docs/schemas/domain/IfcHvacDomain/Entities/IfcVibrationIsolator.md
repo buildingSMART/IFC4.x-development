@@ -5,7 +5,6 @@ A vibration isolator is a device used to minimize the effects of vibration trans
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

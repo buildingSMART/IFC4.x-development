@@ -12,7 +12,6 @@ It is used to define a system furniture element type specification indicating th
 
 > HISTORY New entity in IFC2x2
 
-{ .note}
 >
 
 ## Attributes

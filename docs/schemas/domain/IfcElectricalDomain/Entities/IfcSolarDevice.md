@@ -5,7 +5,6 @@ A solar device converts solar radiation into other energy such as electric curre
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

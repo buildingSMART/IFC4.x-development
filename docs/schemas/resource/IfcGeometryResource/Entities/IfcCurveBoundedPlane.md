@@ -9,7 +9,6 @@ The _BasisSurface_ is an _IfcPlane_ that establishes the position coordinate sys
 
 > HISTORY New entity in IFC1.5
 
-{ .change-ifc2x}
 > IFC2x CHANGE The data type of the attribute _OuterBoundary_ and _InnerBoundaries_ has been changed from _Ifc2DCompositeCurve_ to supertype _IfcCurve_.
 
 ## Attributes

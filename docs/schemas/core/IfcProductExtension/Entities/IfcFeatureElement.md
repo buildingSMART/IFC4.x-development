@@ -9,7 +9,6 @@ In contrary to the aggregation, as used in _IfcElementAssembly_, that defines th
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x2}
 > IFC2x2 CHANGE The entity is introduced as an upward compatible extension of the IFC2x platform. It is an intermediate abstract supertype without defining its own explicit attributes.
 
 ## Formal Propositions

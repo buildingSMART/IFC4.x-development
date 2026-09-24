@@ -5,7 +5,6 @@ _IfcMonetaryUnit_ is a unit to define currency for money.
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Type of the attribute Currency changed.
 
 ## Attributes

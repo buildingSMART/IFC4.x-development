@@ -7,7 +7,6 @@ The standard use of instances of _IfcVoidingFeature_ is as a part of element typ
 
 > HISTORY New entity in IFC4.
 
-{ .use-head}
 Containment Use Definition
 
 Voiding features shall have no spatial containment relationship to the spatial structure since they are dependent on element types without spatial containment relationships or on an element occurrence with own spatial containment relationship.

@@ -7,7 +7,6 @@ _IfcControl_ is the abstract generalization of all concepts that control or cons
 
 > HISTORY New entity in IFC1.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _Identification_ added.
 
 ## Attributes
@@ -16,7 +15,6 @@ _IfcControl_ is the abstract generalization of all concepts that control or cons
 An identifying designation given to a control
   It is the identifier at the occurrence level.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute unified by promoting from various subtypes of _IfcControl_.
 
 ### Controls

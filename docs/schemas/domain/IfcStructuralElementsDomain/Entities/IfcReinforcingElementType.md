@@ -12,7 +12,6 @@ It is used to define a reinforcing element type specification indicating the spe
 
 > HISTORY New entity in IFC2x2.
 
-{ .use-head}
 Material Use Definition
 
 An associated material denotes the steel grade, preferably using material classification.

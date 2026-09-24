@@ -7,7 +7,6 @@ _IfcTransformer_ is used to transform electric power; conversion of electric sig
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

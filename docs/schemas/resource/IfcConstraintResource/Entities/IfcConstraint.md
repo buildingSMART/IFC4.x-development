@@ -13,7 +13,6 @@ A constraint may also have additional external information (such as classificati
 
 > HISTORY New entity in IFC2.0
 
-{ .change-ifc2x4}
 > IFC4 CHANGE CreationTime changed to IfcDateTime for ISO 8601 representation, HasExternalReferences new inverse attribute.
 
 ## Attributes
@@ -42,7 +41,6 @@ When a value is provided for attribute UserDefinedGrade in parallel the attribut
 
 ### HasExternalReferences
 Reference to an external references, e.g. library, classification, or document information, that are associated to the constraint.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute.
 
 ### PropertiesForConstraint

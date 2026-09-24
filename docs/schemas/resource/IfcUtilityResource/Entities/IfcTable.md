@@ -19,7 +19,6 @@ Figure 2 — Table use alternative
 
 > HISTORY New entity in IFC1.5.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Columns attribute added.
 
 ## Attributes

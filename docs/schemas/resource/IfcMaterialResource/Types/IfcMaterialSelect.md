@@ -18,5 +18,4 @@ _IfcMaterialSelect_ provides selection of either a material definition or a mate
 
 > HISTORY New select in IFC1.0
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The select now includes two new abstract entities _IfcMaterialDefinition_ and _IfcMaterialUsageDefinition_ with upward compatibility. The use of _IfcMaterialList_ is deprecated from IFC4 onwards.

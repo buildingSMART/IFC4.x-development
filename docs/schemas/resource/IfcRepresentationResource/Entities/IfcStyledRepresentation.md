@@ -13,5 +13,4 @@ A styled representation has to include one or several styled items with the asso
 
 ### OnlyStyledItems
 Only _IfcStyledItem_'s (or subtypes) are allowed as members in the list of _Items_, inherited from _IfcRepresentation_.
-{ .change-ifc2x3}
 > IFC2x3 CHANGE New where rule to ensure the usage for material definition representations, and other non-shape representations

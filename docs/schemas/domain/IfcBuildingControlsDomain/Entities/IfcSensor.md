@@ -5,7 +5,6 @@ A sensor is a device that measures a physical quantity and converts it into a si
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

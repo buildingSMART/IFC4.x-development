@@ -1,6 +1,5 @@
 # IfcLightSource
 
-{ .extDef}
 <!-- end of short definition -->
 
 > NOTE Definition according to ISO 10303-46:

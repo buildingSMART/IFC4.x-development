@@ -5,7 +5,6 @@ The _IfcSizeSelect_ provides for the selection between different measure types u
 
 > NOTE global units are defined at the single _IfcProject_ instance, given by _UnitsInContext:IfcUnitAssignment_, the same units are used for the geometric representation items and for the style definitions.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-46:1992
 > The size select is a selection of a specific positive length measure.
 
@@ -13,5 +12,4 @@ The _IfcSizeSelect_ provides for the selection between different measure types u
 
 > HISTORY New select type in IFC2x2.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The SELECT item _IfcMeasureWithUnit_ has been removed from the _IfcSizeSelect_, the _IfcRatioMeasure_ and _IfcDescriptiveMeasure_ have been added.

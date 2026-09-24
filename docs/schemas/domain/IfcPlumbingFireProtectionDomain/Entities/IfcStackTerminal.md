@@ -5,7 +5,6 @@ A stack terminal is placed at the top of a ventilating stack (such as to prevent
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

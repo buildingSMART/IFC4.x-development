@@ -52,7 +52,6 @@ Figure 3 illustrates the case where <em>PlacementRefDirection</em> is given as a
 
 > HISTORY  New entity in IFC1.5. The entity name was changed from IfcConstrainedPlacement in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute data type of _PlacementRefDirection_ has been changed to _IfcGridPlacementDirectionSelect_.
 
 ## Attributes
@@ -62,5 +61,4 @@ Placement of the object coordinate system defined by the intersection of two gri
 
 ### PlacementRefDirection
 Reference to either an explicit direction, or a second grid axis intersection, which defines the orientation of the grid placement.
-{ .change-ifc2x4}
 > IFC4 CHANGE The select of an explicit direction has been added.

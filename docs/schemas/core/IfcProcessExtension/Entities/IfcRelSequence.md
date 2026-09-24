@@ -34,7 +34,6 @@ The way in which the time lag applies to the sequence.
 ### UserDefinedSequenceType
 Allows for specification of user defined type of the sequence beyond the enumeration values (_START_START_, _START_FINISH_ _FINISH_START_, _FINISH_FINISH_) provided by _SequenceType_ attribute of type _IfcSequenceEnum_. When a value is provided for attribute _UserDefinedSequenceType_ in parallel the attribute _SequenceType_ shall have enumeration value _USERDEFINED_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute added
 
 ## Formal Propositions

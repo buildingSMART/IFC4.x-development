@@ -5,7 +5,6 @@ A cable fitting is a fitting that is placed at a junction, transition or termina
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

@@ -1,6 +1,5 @@
 # IfcContextDependentUnit
 
-{ .extDef}
 <!-- end of short definition -->
 
 > NOTE Definition according to ISO/CD 10303-41:1992
@@ -19,5 +18,4 @@ The word, or group of words, by which the context dependent unit is referred to.
 
 ### HasExternalReference
 Reference to external information, e.g. library, classification, or document information, which is associated with the context dependent unit.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute

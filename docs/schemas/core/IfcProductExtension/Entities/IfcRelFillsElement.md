@@ -18,5 +18,4 @@ Opening Element being filled by virtue of this relationship.
 
 ### RelatedBuildingElement
 Reference to element that occupies fully or partially the associated opening.
-{ .change-ifc2x}
 > IFC2x CHANGE The data type has been changed from _IfcBuildingElement_ to _IfcElement_ with upward compatibility for file based exchange.

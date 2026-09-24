@@ -9,7 +9,6 @@ The aim of _IfcObjective_ is to specify the purpose for which the constraint is 
 
 > HISTORY New entity in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _BenchmarkValues_ modified to be a LIST of _IfcConstraint_, attribute _ResultValues_ replaced with _IfcLogicalOperatorEnum_.
 
 ## Attributes
@@ -17,13 +16,11 @@ The aim of _IfcObjective_ is to specify the purpose for which the constraint is 
 ### BenchmarkValues
 A list of nested constraints.
 
-{ .change-ifc2x4}
 > IFC2X4 CHANGE Modified to be a LIST of nested constraints, which replaces the former _IfcConstraintAggregationRelationship_.
 
 ### LogicalAggregator
 Enumeration that identifies the logical type of aggregation for the benchmark metrics.
 
-{ .change-ifc2x4}
 > IFC2X4 CHANGE This attribute replaces replaces the former _ResultValues_ attribute and indicates the aggregation behaviour formerly defined at _IfcConstraintAggregationRelationship_.
 
 ### ObjectiveQualifier

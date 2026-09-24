@@ -9,7 +9,6 @@ An _IfcDocumentReference_ is a reference to the location of a document. The refe
 
 ### Description
 Description of the document reference for informational purposes.
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute added at the end of the attribute list.
 
 ### ReferencedDocument
@@ -17,7 +16,6 @@ The document that is referenced.
 
 ### DocumentRefForObjects
 The document reference with which objects are associated.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute.
 
 ## Formal Propositions

@@ -5,10 +5,8 @@ An _IfcProcedure_ is a logical set of actions to be taken in response to an even
 
 > HISTORY New entity in IFC2x2
 
-{ .change-ifc2x4}
 > IFC4 CHANGE _ProcedureType_ renamed to _PredefinedType_ and made optional (upward compatible). Where rules WR1 and WR2 have been removed.
 
-{ .use-head}
 ### Use definitions
 
 _IfcProcedure_ is used to capture information about stepped processes such as calibration, start/stop procedures for equipment items, designated actions to take in the event of an emergency etc. A procedure is not a task, but may describe a set of tasks and their order of occurrence in response to or to cause an event.

@@ -3,7 +3,6 @@
 A footing is a part of the foundation of a structure that spreads and transmits the load to the soil. A footing is also characterized as shallow foundation, where the loads are transferred to the ground near the surface.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO 6707-1: stepped construction that spreads the load at the foot of a wall or column.
 
 > HISTORY New entity in IFC2x2.
@@ -15,7 +14,6 @@ A footing is a part of the foundation of a structure that spreads and transmits 
 ### PredefinedType
 The generic type of the footing.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute made optional. Type information can be provided by _IfcRelDefinesByType_ and _IfcFootingType_.
 
 ## Formal Propositions

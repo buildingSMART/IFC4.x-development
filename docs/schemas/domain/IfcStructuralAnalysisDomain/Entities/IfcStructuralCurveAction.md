@@ -5,7 +5,6 @@ A structural curve action defines an action which is distributed over a curve. A
 
 > HISTORY New entity in IFC4.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Former entity _IfcStructuralLinearActionVarying_ from IFC2x2 has been removed and are replaced by this entity.
 
 ****Coordinate Systems****:

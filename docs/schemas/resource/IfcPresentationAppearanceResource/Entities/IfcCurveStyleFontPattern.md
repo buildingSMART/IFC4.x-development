@@ -1,6 +1,5 @@
 # IfcCurveStyleFontPattern
 
-{ .extDef}
 <!-- end of short definition -->
 
 > NOTE Definition according to ISO/CD 10303-46:1992
@@ -16,7 +15,6 @@
 The length of the visible segment in the pattern definition.
 > NOTE For a visible segment representing a point, the value 0. should be assigned.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The datatype has been changed to IfcLengthMeasure with upward compatibility for file-based exchange.
 
 ### InvisibleSegmentLength

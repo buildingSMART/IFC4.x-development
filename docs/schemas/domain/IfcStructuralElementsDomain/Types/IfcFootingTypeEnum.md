@@ -5,7 +5,6 @@ Enumeration defining the generic footing type.
 
 > HISTORY New type in IFC2x2
 
-{ .change-ifc2x4}
 > IFC 2x4 CHANGE: Item CAISSON_FOUNDATION added.
 
 ## Items
@@ -13,7 +12,6 @@ Enumeration defining the generic footing type.
 ### CAISSON_FOUNDATION
 A foundation construction type used in underwater construction.
 
-{ .change-ifc4x2}
 > IFC4x2 CHANGE Enum made optional and deprecated. Use the dedicated class _IfcCaissonFoundation_ instead.
 
 ### FOOTING_BEAM

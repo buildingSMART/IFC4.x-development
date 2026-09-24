@@ -7,7 +7,6 @@ Relationships between elements in the building model and structural items as the
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Use definitions and informal proposition added.
 
 ****Coordinate Systems****:

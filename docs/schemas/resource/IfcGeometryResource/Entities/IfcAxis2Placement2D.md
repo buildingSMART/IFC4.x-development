@@ -9,7 +9,6 @@ Figure 1 — Axis2 placement 2D
 
 Figure 1 illustrates the definition of the <em>IfcAxis2Placement2D</em> within the two-dimensional coordinate system.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > The location and orientation in two dimensional space of two mutually perpendicular axes. An axis2_placement_2d is defined in terms of a point, (inherited from the placement supertype), and an axis. It can be used to locate and originate an object in two dimensional space and to define a placement coordinate system. The entity includes a point which forms the origin of the placement coordinate system. A direction vector is required to complete the definition of the placement coordinate system. The reference direction defines the placement X axis direction, the placement Y axis is derived from this.
 

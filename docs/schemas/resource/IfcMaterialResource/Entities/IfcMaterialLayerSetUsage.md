@@ -9,7 +9,6 @@ The _IfcMaterialLayerSetUsage_ determines the usage of _IfcMaterialLayerSet_ in 
 
 The _IfcMaterialLayerSetUsage_ is always assigned to an individual occurrence object (and only to relevant subtypes of _IfcElement_). The _IfcMaterialLayerSet_, referenced by _ForLayerSet_, can however be shared among several occurrence objects. If the element type is available (in other words, an instance of the relevant subtype of _IfcElementType_ exists), then the _IfcMaterialLayerSet_ can be assigned to the element type. The assignment between a subtype of _IfcElement_ and the _IfcMaterialLayerSetUsage_ is handled by _IfcRelAssociatesMaterial_.
 
-{ .use-head}
 Attribute use definition
 
 The _IfcMaterialLayerSetUsage_ is primarily intended to be associated with planar building elements having a constant thickness. With further agreements on the interpretation of _LayerSetDirection_, the usage can be extended also to other cases, for example to curved building elements, provided that the material layer thicknesses are constant.
@@ -71,7 +70,6 @@ Offset of the material layer set base line (MlsBase) from reference geometry (li
 ### ReferenceExtent
 Extent of the extrusion of the elements body shape representation to which the _IfcMaterialLayerSetUsage_ applies. It is used as the reference value for the upper _OffsetValues[2]_ provided by the _IfcMaterialLayerWithOffsets_ subtype for included material layers.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute added to the end of attribute list.
 
 > NOTE The attribute _ReferenceExtent_ shall be asserted, if an _IfcMaterialLayerWithOffsets_ is included in the _ForLayerSet.MaterialLayers_ list of material layers.

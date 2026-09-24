@@ -5,7 +5,6 @@ A damper typically participates in an HVAC duct distribution system and is used 
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

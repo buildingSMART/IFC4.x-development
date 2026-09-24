@@ -15,10 +15,8 @@ Figure 1 — Relationship for element voiding
 
 ### RelatingBuildingElement
 Reference to the element in which a void is created by the associated feature subtraction element.
-{ .change-ifc2x}
 > IFC2x CHANGE The data type has been changed from _IfcBuildingElement_ to _IfcElement_ with upward compatibility for file based exchange.
 
 ### RelatedOpeningElement
 Reference to the feature subtraction element which defines a void in the associated element.
-{ .change-ifc2x}
 > IFC2x CHANGE The data type has been changed from _IfcOpeningElement_ to _IfcFeatureElementSubtraction_ with upward compatibility for file based exchange.

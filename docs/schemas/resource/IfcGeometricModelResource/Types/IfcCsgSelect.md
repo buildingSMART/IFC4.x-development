@@ -3,7 +3,6 @@
 Select type enabling the choice between _IfcBooleanResult_ and subtypes of _IfcCsgPrimitive3D_ as potential root tree expression at _IfcCsgSolid_.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition from ISO 10303-42:
 > This type identifies the types of entity which may be selected as the root of a CSG tree including a single CSG primitive as a special case.
 

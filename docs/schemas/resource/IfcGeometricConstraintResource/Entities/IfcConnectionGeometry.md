@@ -14,5 +14,4 @@ The _IfcConnectionGeometry_ allows for the provision of connection constraints b
 
 > HISTORY New entity in IFC1.5.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The definition of the subtypes has been enhanced by allowing either geometric representation items (point | curve | surface) or topological representation items with associated geometry (vertex point | edge curve | face surface).
