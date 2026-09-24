@@ -47,7 +47,8 @@ def read_scope():
 structure_path = os.path.join(REPO_DIR, "output", "structure.json")
 if not os.path.exists(structure_path):
     raise FileNotFoundError(f"Required schema structure not found: {structure_path}")
-entity_supertype = json.load(open(structure_path, encoding="utf-8"))["entity_supertype"]
+structure = json.load(open(structure_path, encoding="utf-8"))
+entity_supertype = structure["entity_supertype"]
 
 def yield_supertypes(x):
     yield x
@@ -259,7 +260,8 @@ for templ in reversed(unapplicable_concepts):
         
 templates = [a[1] for a in sorted(root_level_concepts.items())]
 
-concept_associations = json.load(open("xmi_concepts.json", encoding='utf-8'))
+# generators.json writes the concept parametrizations into structure.json
+concept_associations = structure["xmi_concepts"]
 
 concepts_per_entity = defaultdict(lambda: defaultdict(list))
 

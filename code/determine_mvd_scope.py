@@ -39,19 +39,17 @@ def run(schema_fn, mvdxml_fn, concept_subset=None, additional=None):
     # ``parse`` returns immutable concept_root objects; every concept carries
     # its fully parsed (template-reference-resolved) template. Templates are
     # deduplicated because a template may be instantiated by several roots.
-    items = mvd.parse(mvdxml_fn)
+    items = mvd.parse(mvdxml_fn, include_templates=True)
     templates = []
     seen = set()
     for item in items:
-        if not isinstance(item, mvd.concept_root):
+        if not isinstance(item, mvd.template):
             continue
-        for concept in item.concepts():
-            tpl = concept.template()
-            key = tpl.uuid or id(tpl)
-            if key in seen:
-                continue
-            seen.add(key)
-            templates.append(tpl)
+        key = item.uuid or id(item)
+        if key in seen:
+            continue
+        seen.add(key)
+        templates.append(item)
 
     builder = express_parse(schema_fn)
     ifcopenshell.register_schema(builder)
@@ -67,7 +65,7 @@ def run(schema_fn, mvdxml_fn, concept_subset=None, additional=None):
 
         t.traverse(functools.partial(collect_entities_mvdxml, t.name))
 
-        if additional and (bindings := additional.get(normalize(t.name))):
+        if additional and (bindings := additional.get(t.name.replace(" ", ""))):
             for x in set(filter(wrap_try(S.declaration_by_name), itertools.chain.from_iterable(b.values() for b in bindings))):
                 collect_entities(t.name, x)
 
@@ -140,13 +138,23 @@ if __name__ == "__main__":
     import sys
     import json
 
+    import os
+
     schema_fn, mvdxml_fn = sys.argv[1:]
 
     with open("xmi_mvd_concepts.json", "r") as f:
         mvds = json.load(f)
 
-    with open("xmi_concepts.json", "r") as f:
-        additional = json.load(f)["GeneralUsage"]
+    # generators.json writes the concept parametrizations into structure.json,
+    # which lives next to the generated mvdXML; the standalone xmi_concepts.json
+    # of the legacy flow is still accepted.
+    structure_path = os.path.join(os.path.dirname(os.path.abspath(mvdxml_fn)), "structure.json")
+    if os.path.exists(structure_path):
+        with open(structure_path, "r", encoding="utf-8") as f:
+            additional = json.load(f)["xmi_concepts"]["GeneralUsage"]
+    else:
+        with open("xmi_concepts.json", "r") as f:
+            additional = json.load(f)["GeneralUsage"]
 
     usage = {}
     for nm, concepts in mvds.items():
