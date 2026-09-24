@@ -387,10 +387,8 @@ if __name__ == "__main__":
         "xmi_concepts": xmi_concepts
     }
 
-    for sidecar_name in ("changes_by_schema", "changes_by_type"):
-        sidecar_path = CODE_DIR / f"{sidecar_name}.json"
-        if sidecar_path.exists():
-            payload[sidecar_name] = json.loads(sidecar_path.read_text(encoding="utf-8"))
+    # NB: the change log is folded into this payload afterwards by
+    # change_log.py, which runs after this generator in the publish pipeline.
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     json.dump(payload, open(args.output, "w", encoding="utf-8"))

@@ -2051,9 +2051,11 @@ class StaticSiteBuilder:
 
         structure_path = self.config.repo_root / "output" / "structure.json"
         self.structure = json.loads(structure_path.read_text(encoding="utf-8"))
-        # Precomputed change-log and MVD data are emitted as standalone sidecars
-        # by the workflow; fold them in so the templates can render them.
-        for sidecar in ("changes_by_schema", "changes_by_type", "mvd_entity_usage", "xmi_mvd_concepts"):
+        # MVD data is emitted as standalone sidecars by later workflow steps
+        # (mvd_csv_to_json / determine_mvd_scope); fold it in so the templates
+        # can render it. Change-log data is embedded in structure.json itself
+        # by change_log.py, which runs before this builder.
+        for sidecar in ("mvd_entity_usage", "xmi_mvd_concepts"):
             sidecar_path = self.config.code_dir / f"{sidecar}.json"
             if sidecar_path.exists():
                 self.structure.setdefault(sidecar, json.loads(sidecar_path.read_text(encoding="utf-8")))

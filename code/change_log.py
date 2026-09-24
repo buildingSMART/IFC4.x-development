@@ -356,58 +356,54 @@ def compare_psets(dir0, dir1):
             
 
 if __name__ == "__main__":
-    
-    if len(sys.argv) == 2:    
-        repo_dir = sys.argv[1]
-    elif len(sys.argv) == 3:
-        files = sys.argv[1:]
+    repo_dir = sys.argv[1]
         
     build_rename_messages()
 
-    if repo_dir:
-        ref_schema_dir = os.path.join(repo_dir, "reference_schemas")
-        names = [
-                "ifc4", "IFC4_ADD2_TC1.exp", "deprecated_entities_Ifc4.0.2.2.json", "psd_IFC4_ADD2_TC1",
-        ]
-        
-        if not is_iso:
-            names = ["ifc23", "IFC2X3_TC1.exp", "deprecated_entities_Ifc2.3.0.1.json", "psd_IFC2x3"] + names
+    ref_schema_dir = os.path.join(repo_dir, "reference_schemas")
+    names = [
+            "ifc4", "IFC4_ADD2_TC1.exp", "deprecated_entities_Ifc4.0.2.2.json", "psd_IFC4_ADD2_TC1",
+    ]
 
-            names += [
-                # no IfcDoc branch for 4x1
-                "ifc41", "IFC4x1.exp", "deprecated_entities_Ifc4.0.2.2.json", "psd_IFC4x1",
-                "ifc42", "IFC4x2.exp", "deprecated_entities_Ifc4.2.0.1.json", "psd_IFC4x2"
-            ]
+    if not is_iso:
+        names = ["ifc23", "IFC2X3_TC1.exp", "deprecated_entities_Ifc2.3.0.1.json", "psd_IFC2x3"] + names
 
         names += [
-            "ifc43", "IFC4X3_ADD2.exp", "deprecated_entities_Ifc4.3.2.0.json", "psd_IFC4x3"
+            # no IfcDoc branch for 4x1
+            "ifc41", "IFC4x1.exp", "deprecated_entities_Ifc4.0.2.2.json", "psd_IFC4x1",
+            "ifc42", "IFC4x2.exp", "deprecated_entities_Ifc4.2.0.1.json", "psd_IFC4x2"
         ]
-            
-        files = list(map(functools.partial(os.path.join, ref_schema_dir), names))
 
-        # Current-schema artefacts are generated into <repo>/output by the
-        # generators; fall back to the code directory for the legacy layout.
-        def current(name):
-            for candidate in (
-                os.path.join(repo_dir, "output", name),
-                os.path.join(os.path.dirname(os.path.abspath(__file__)), name),
-                name,
-            ):
-                if os.path.exists(candidate):
-                    return candidate
-            return os.path.join(repo_dir, "output", name)
+    names += [
+        "ifc43", "IFC4X3_ADD2.exp", "deprecated_entities_Ifc4.3.2.0.json", "psd_IFC4x3"
+    ]
 
-        structure_path = os.path.join(repo_dir, "output", "structure.json")
-        if not os.path.exists(structure_path):
-            raise FileNotFoundError(f"Required schema structure not found: {structure_path}")
-        deprecated_entities = json.load(open(structure_path, encoding="utf-8"))["deprecated_entities"]
+    files = list(map(functools.partial(os.path.join, ref_schema_dir), names))
 
-        files += [
-            "ifc44",
-            current("IFC.exp"),
-            deprecated_entities,
-            current("psd"),
-        ]
+    # Current-schema artefacts are generated into <repo>/output by the
+    # generators; fall back to the code directory for the legacy layout.
+    def current(name):
+        for candidate in (
+            os.path.join(repo_dir, "output", name),
+            os.path.join(os.path.dirname(os.path.abspath(__file__)), name),
+            name,
+        ):
+            if os.path.exists(candidate):
+                return candidate
+        return os.path.join(repo_dir, "output", name)
+
+    structure_path = os.path.join(repo_dir, "output", "structure.json")
+    if not os.path.exists(structure_path):
+        raise FileNotFoundError(f"Required schema structure not found: {structure_path}")
+    structure = json.load(open(structure_path, encoding="utf-8"))
+    deprecated_entities = structure["deprecated_entities"]
+
+    files += [
+        "ifc44",
+        current("IFC.exp"),
+        deprecated_entities,
+        current("psd"),
+    ]
 
     def load_deprecations(depr):
         # Historical schemas point at standalone reference JSON files; the
@@ -427,5 +423,8 @@ if __name__ == "__main__":
         for ty, changes in itertools.groupby(differences, key=operator.itemgetter(0)):
             changes_by_type[ty][schema_name] = [x[1:] for x in changes]
     
-    json.dump(changes_by_schema, open("changes_by_schema.json", "w"), indent=2)
-    json.dump(changes_by_type, open("changes_by_type.json", "w"), indent=2)
+    # Fold the change log into the structure payload and write back.
+    structure["changes_by_schema"] = changes_by_schema
+    structure["changes_by_type"] = changes_by_type
+    with open(structure_path, "w", encoding="utf-8") as f:
+        json.dump(structure, f)
