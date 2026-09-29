@@ -30,14 +30,8 @@ except:
 
 spec_version_string_full = f"{spec_version_string} build {suffix}"
 
-# The EXPRESS schema name. Official builds carry the plain name (IFC4X3_ADD2).
-# Development and preview builds carry the publication level and the date of the
-# last schema change, e.g. IFC4X4_PREVIEW_20260525, so that a draft schema, and
-# every IFC file written against it, can never be mistaken for the release.
-# The date is the author date of the last non-merge commit that touched
-# schemas/*.uml: it does not move on documentation-only commits. Merge commits are
-# skipped because the preview build merges the pending pull requests at build time;
-# those merge commits carry the build date and would rename the schema on every run.
+# Non-official builds get level + date of the last schema change, e.g. IFC4X4_DEV_20260525.
+# --no-merges: the preview's build-time merges would otherwise set the date to today.
 SCHEMA_LEVELS = {'DEVELOPMENT': 'DEV', 'PREVIEW': 'PREVIEW'}
 schema_level = '' if status == 'OFFICIAL' else SCHEMA_LEVELS.get(status, 'DRAFT')
 try:

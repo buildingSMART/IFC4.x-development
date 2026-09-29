@@ -18,8 +18,7 @@ def flatmap(func, *iterable):
     return itertools.chain.from_iterable(map(func, *iterable))
 
 def _schema_namespace(schema_name):
-    # IFC4X3_ADD2 -> .../IFC/RELEASE/IFC4/3/ADD2 (the published convention);
-    # IFC4X4_PREVIEW_20260525 -> .../IFC/DEV/IFC4/4/PREVIEW/20260525
+    # drafts live under /IFC/DEV/, releases under /IFC/RELEASE/
     m = re.fullmatch(r"(.+?)_(DEV|PREVIEW|DRAFT)_(\w+)", schema_name)
     if m:
         return f"https://standards.buildingsmart.org/IFC/DEV/{'/'.join(re.split('_|X', m.group(1)))}/{m.group(2)}/{m.group(3)}"

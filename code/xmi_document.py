@@ -30,8 +30,7 @@ is_package = os.environ.get('PACKAGE', '0') == '1'
 if is_package or is_iso:
     SCHEMA_NAME = "IFC4X3_ADD2"
 else:
-    # code/version.py derives the name from version.json: the plain name for
-    # official builds, name + level + date of the last schema change otherwise.
+    # derived in code/version.py
     if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
         sys.path.append(os.path.dirname(os.path.abspath(__file__)))
     from version import schema_name as SCHEMA_NAME
