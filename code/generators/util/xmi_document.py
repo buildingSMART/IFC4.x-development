@@ -30,27 +30,12 @@ is_package = os.environ.get('PACKAGE', '0') == '1'
 if is_package or is_iso:
     SCHEMA_NAME = "IFC4X3_ADD2"
 else:
-    # Derive the schema name from code/version.json (same recipe as code/version.py),
-    # so where rules, functions and the SCHEMA header all carry the real name
-    # (IFC4X4) instead of a per-commit dev placeholder.
-    try:
-        import json as _json
-        _version_tuple = _json.load(open(os.path.join(os.path.dirname(__file__), "..", "..", "version.json"), encoding="utf-8"))
-        if isinstance(_version_tuple, dict):
-            # PR #1170 turns version.json into {"version": [...], "status": ...}
-            _version_tuple = _version_tuple["version"]
-        _prefixes = ("IFC", "X", "_ADD", "_TC")
-        SCHEMA_NAME = "".join("".join(map(str, t)) if t[1] else "" for t in zip(_prefixes, _version_tuple))
-    except Exception:
-        SCHEMA_NAME = "IFC4X3_DEV"
-        try:
-            if os.environ.get("REPO_DIR"):
-                repo_dir = "-C", os.environ.get("REPO_DIR")
-            else:
-                repo_dir = []
-            sha = subprocess.check_output(["git", *repo_dir, "rev-parse", "--short", "HEAD"]).decode('ascii').strip()
-            SCHEMA_NAME += f"_{sha}"
-        except: pass
+    # code/version.py derives the name from version.json: the plain name for
+    # official builds, name + level + date of the last schema change otherwise.
+    _code_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    if _code_dir not in sys.path:
+        sys.path.append(_code_dir)
+    from version import schema_name as SCHEMA_NAME
 
 def unescape(s):
     # @todo this is bizarre encoding, what happened here?
