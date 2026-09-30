@@ -31,8 +31,6 @@ if is_package or is_iso:
     SCHEMA_NAME = "IFC4X3_ADD2"
 else:
     # derived in code/version.py
-    if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
-        sys.path.append(os.path.dirname(os.path.abspath(__file__)))
     from version import schema_name as SCHEMA_NAME
 
 def unescape(s):
