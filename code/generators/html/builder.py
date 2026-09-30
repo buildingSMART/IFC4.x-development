@@ -34,13 +34,7 @@ from ..util.xmi_document import SCHEMA_NAME
 from . import md as mdp
 from git_history import page_history
 
-def _default_repo_branch():
-    v = json.load(open(Path(__file__).resolve().parents[2] / "version.json", encoding="utf-8"))
-    v = v["version"] if isinstance(v, dict) else v
-    return f"ifc{v[0]}.{v[1]}-main"
-
-
-REPO_BRANCH = os.environ.get("REPO_BRANCH") or _default_repo_branch()
+from version import target_branch as REPO_BRANCH
 REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
 DOC_ANNOTATION_PATTERN = re.compile(r"\{\s*\..+?\}")
 
