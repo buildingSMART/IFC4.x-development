@@ -1,18 +1,17 @@
 import csv
+import json
 import os
-
-from pathlib import Path as _Path
-import json as _json
+from pathlib import Path
 
 
 def _default_repo_branch():
-    v = _json.load(open(_Path(__file__).resolve().parent / "version.json", encoding="utf-8"))
+    v = json.load(open(Path(__file__).resolve().parent / "version.json", encoding="utf-8"))
     v = v["version"] if isinstance(v, dict) else v
     return f"ifc{v[0]}.{v[1]}-main"
 
 
 REPO_URL = f"https://github.com/buildingSMART/IFC4.x-development/edit/{os.environ.get('REPO_BRANCH') or _default_repo_branch()}/"
-from pathlib import Path
+
 import re
 import sys
 import html
