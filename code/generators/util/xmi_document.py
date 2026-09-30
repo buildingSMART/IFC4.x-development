@@ -1,7 +1,7 @@
-REPO_URL = "https://github.com/buildingSMART/IFC4.3.x-development/edit/xmi-refresh/"
-
 import csv
 import os
+
+REPO_URL = f"https://github.com/buildingSMART/IFC4.x-development/edit/{os.environ.get('REPO_BRANCH', 'ifc4.4-main')}/"
 from pathlib import Path
 import re
 import sys
