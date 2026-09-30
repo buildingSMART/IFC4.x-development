@@ -35,9 +35,11 @@ jobs:
           case "${GITHUB_REF_NAME}" in
             ifc4.3-main)
               echo "TARGET_SITE_DIR=${GITHUB_WORKSPACE}/output-repo/IFC/DEV/IFC4_3/HTML" >> "$GITHUB_ENV"
+              echo "REPO_BRANCH=ifc4.3-main" >> "$GITHUB_ENV"
               ;;
             ifc4.4-main)
               echo "TARGET_SITE_DIR=${GITHUB_WORKSPACE}/output-repo/IFC/DEV/IFC4_4/HTML" >> "$GITHUB_ENV"
+              echo "REPO_BRANCH=ifc4.4-main" >> "$GITHUB_ENV"
               ;;
             *)
               echo "Unsupported branch: ${GITHUB_REF_NAME}"

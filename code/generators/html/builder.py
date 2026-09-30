@@ -34,7 +34,7 @@ from ..util.xmi_document import SCHEMA_NAME
 from . import md as mdp
 from git_history import page_history
 
-REPO_BRANCH = os.environ.get("REPO_BRANCH", "xmi-refresh")
+REPO_BRANCH = os.environ.get("REPO_BRANCH", "ifc4.4-main")
 REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
 DOC_ANNOTATION_PATTERN = re.compile(r"\{\s*\..+?\}")
 
