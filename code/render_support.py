@@ -2635,7 +2635,7 @@ def get_index_index(kind):
 
 @app.context_processor
 def inject_variables():
-    from version import schema_version_string, spec_version_string, spec_version_string_full
+    from version import schema_version_string, spec_version_string, spec_version_string_full, target_repo
     
     return {
         'base': base,
@@ -2645,6 +2645,7 @@ def inject_variables():
         'spec_version_string': spec_version_string,
         'spec_version_string_full': spec_version_string_full,
         'branch': REPO_BRANCH,
+        'target_repo': target_repo,
         'get_language_icon': translate.get_language_icon,  
         'current_lang_slug': slugify(request.cookies.get('languagePreference', 'English (default)')),
         'languages': translate.list_languages(),

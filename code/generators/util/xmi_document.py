@@ -1,5 +1,5 @@
-from version import target_branch
-REPO_URL = f"https://github.com/buildingSMART/IFC4.x-development/edit/{target_branch}/"
+from version import target_repo, target_branch
+REPO_URL = f"https://github.com/{target_repo}/edit/{target_branch}/"
 
 import csv
 import os
