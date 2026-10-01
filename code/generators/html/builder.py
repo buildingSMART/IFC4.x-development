@@ -34,7 +34,7 @@ from ..util.xmi_document import SCHEMA_NAME
 from . import md as mdp
 from git_history import page_history
 
-REPO_BRANCH = os.environ.get("REPO_BRANCH", "xmi-refresh")
+from version import target_branch as REPO_BRANCH
 REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
 DOC_ANNOTATION_PATTERN = re.compile(r"\{\s*\..+?\}")
 
@@ -436,6 +436,7 @@ class StaticTemplateRenderer(markdown_mixin):
             "spec_version_string": self.version.spec_version_string,
             "spec_version_string_full": self.version.spec_version_string_full,
             "branch": REPO_BRANCH,
+            "target_repo": self.version.target_repo,
             "get_language_icon": translate.get_language_icon,
             "current_lang_slug": slugify("English (default)"),
             "languages": translate.list_languages(),

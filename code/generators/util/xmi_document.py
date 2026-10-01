@@ -1,4 +1,5 @@
-REPO_URL = "https://github.com/buildingSMART/IFC4.3.x-development/edit/xmi-refresh/"
+from version import target_repo, target_branch
+REPO_URL = f"https://github.com/{target_repo}/edit/{target_branch}/"
 
 import csv
 import os

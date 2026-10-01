@@ -59,7 +59,7 @@
                                 Help improve the next version
                             </a>
                         {% else %}
-                            <a href="https://github.com/buildingSMART/IFC4.3.x-development/issues/">
+                            <a href="https://github.com/{{ target_repo }}/issues/">
                                 <i data-feather="message-circle"></i>
                                 Help suggest improvements
                             </a>
@@ -127,7 +127,7 @@
                 {% if path %}
                 <div class="card fluid shadowed">
                     <p>
-                        <a class="button primary edit-github" href='https://github.com/{{ repo or 'buildingSMART/IFC4.3.x-development' }}/blob/{{ branch }}/{{ path }}'><span class="icon-edit inverse"></span> Edit on Github</a>
+                        <a class="button primary edit-github" href='https://github.com/{{ repo or target_repo }}/blob/{{ branch }}/{{ path }}'><span class="icon-edit inverse"></span> Edit on Github</a>
                     </p>
                     <p>
                         <small>
@@ -142,7 +142,7 @@
                     </p>
                     <p>
                         <small>
-                            Is this page difficult to understand? <a href="https://github.com/buildingSMART/IFC4.3.x-development/issues/371">Let us know!</a>
+                            Is this page difficult to understand? <a href="https://github.com/{{ target_repo }}/issues/371">Let us know!</a>
                         </small>
                     </p>
                 </div>
@@ -208,7 +208,7 @@
         window.appconfig = {
             'path': '{{ path }}',
             'base': '{{ base }}',
-            'repo': '{{ repo or "buildingSMART/IFC4.3.x-development" }}',
+            'repo': '{{ repo or target_repo }}',
             'resourceApi': null,
         };
     </script>
