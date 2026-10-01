@@ -237,6 +237,11 @@ END_FUNCTION;
         Count := SIZEOF(QUERY(temp &lt;* Items | ('IFC4X3_ADD2.IFCMANIFOLDSOLIDBREP' IN TYPEOF(temp))));      
       END;
 
+    'Voxel' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp &lt;* Items | ('IFC4X4.IFCVOXELGRID' IN TYPEOF(temp))));
+      END;
+
     'BoundingBox' :
       BEGIN
         Count := SIZEOF(QUERY(temp &lt;* Items | ('IFC4X3_ADD2.IFCBOUNDINGBOX' IN TYPEOF(temp))));
