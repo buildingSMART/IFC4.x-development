@@ -1,4 +1,4 @@
-BoreHolePurpose
+BoreholePurpose
 ===============
 
-Purpose for which the borehole, section or volumetric model was created. (EU Inspire, boreholeML).
+The purpose property reports the purpose for which the borehole was drilled.
