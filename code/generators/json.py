@@ -41,6 +41,7 @@ hierarchy = [
         ("IfcPortsAndWaterwaysDomain", defaultdict(list)),
         ("IfcRailDomain", defaultdict(list)),
         ("IfcRoadDomain", defaultdict(list)),
+        ("IfcTunnelDomain", defaultdict(list)),
         ("IfcStructuralAnalysisDomain", defaultdict(list)),
         ("IfcStructuralElementsDomain", defaultdict(list)),
     ]),
