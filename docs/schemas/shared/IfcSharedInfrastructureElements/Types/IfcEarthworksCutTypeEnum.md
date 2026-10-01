@@ -37,3 +37,13 @@ User-defined type.
 
 ### NOTDEFINED
 Undefined type.
+
+### ANCHOREDOPENEXCAVATION
+A confined open excavation where the vertical walls are anchored.
+
+### BRACEDOPENEXCAVATION
+A confined open excavation where the vertical walls are braced.
+
+### CONFINEDOPENEXCAVATION
+An open slope excavation where the sides are vertical or near vertical.
+

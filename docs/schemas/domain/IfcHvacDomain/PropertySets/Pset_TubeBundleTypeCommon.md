@@ -17,3 +17,10 @@ Number of parallel fluid tube circuits.
 
 Total volume of fluid in the tubes and their headers.
 
+### HorizontalSpacing
+
+Concerns the spacing between tubes in the tube bundle.
+
+### VerticalSpacing
+
+Concerns the spacing between tubes in the tube bundle.

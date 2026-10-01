@@ -74,6 +74,7 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDistributionSystemEnum_WATERSUPPLY" name="WATERSUPPLY"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDistributionSystemEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDistributionSystemEnum_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDistributionSystemEnum_SAFETY" name="SAFETY"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcFlowDirectionEnum" name="IfcFlowDirectionEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcFlowDirectionEnum_SINK" name="SINK"/>
@@ -1984,5 +1985,8 @@
       <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcBuilding"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_DistributionChamberElementBaseQuantities_IfcDistributionChamberElement" client="cl_Qto_DistributionChamberElementBaseQuantities" supplier="cl_IfcDistributionChamberElement"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDistributionSystemEnum_SAFETY" name="IfcDistributionSystemEnum.SAFETY">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDistributionSystemEnum_SAFETY_gen_IfcDistributionSystem" general="cl_IfcDistributionSystem"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>

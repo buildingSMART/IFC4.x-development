@@ -42,3 +42,7 @@ User-defined linear element.
 
 ### NOTDEFINED
 Undefined linear element.
+
+### LAGGING
+Lagging is the structural material (most often wood) that spans the distance between spars at an excavation site. Lagging, and the steel spars they connect to, provides temporary ground support as a safety measure during tunneling. The lagging is installed horizontally between vertically installed spars.
+

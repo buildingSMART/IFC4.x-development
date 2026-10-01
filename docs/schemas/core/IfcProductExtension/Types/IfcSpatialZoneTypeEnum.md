@@ -42,3 +42,36 @@ User defined type spatial zone.
 
 ### NOTDEFINED
 Undefined type spatial zone.
+
+### ANNULARGAP
+Clearance between excavated surface and lining in tunneling.
+
+### CLEARANCE
+The space required for the safe operation of vehicles such as trains along a fixed track.
+
+### COMPARTMENT
+A separate section or part of a structure or container.
+
+>EXAMPLE: A tunnel compartment achieved by cut-offs to compartmentalize water.
+
+### INSTALLATION
+Space used for installations, e.g. electrical, ventilation.
+
+### INTERIOR
+Available space for activities, e.g. the available space in a tunnel when lining has been installed.
+
+### INVERT
+The lowest section of a tunnel (floor space).
+
+### LINING
+A layer of different material covering the inside surface of something, e.g. the space in a tunnel used for lining.
+
+### MAPPEDZONE
+A spatial zone used for collecting and recording observations of different kinds.
+
+### SERVICE
+Space for e.g. a service gallery in a tunnel.
+
+### TESTEDZONE
+A limited zone subjected to in situ tests. Space to carry the related information on test results, methodology and other metadata. Used similar to sample, but for In-situ test.
+
