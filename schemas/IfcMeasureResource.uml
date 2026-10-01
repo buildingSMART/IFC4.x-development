@@ -1150,6 +1150,7 @@ OR
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcElectricConductanceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricConductanceMeasure"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcElectricResistanceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricResistanceMeasure"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcElectricVoltageMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricVoltageMeasure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcElectricalResistivityMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcElectricalResistivityMeasure"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcEnergyMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcEnergyMeasure"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcForceMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcForceMeasure"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDerivedMeasureValue_IfcFrequencyMeasure" client="un_IfcDerivedMeasureValue" supplier="dt_IfcFrequencyMeasure"/>
@@ -1387,6 +1388,11 @@ OR
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcConversionBasedUnit_ConversionFactor_target_end_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConversionBasedUnit_ConversionFactor_target_end_upper" value="1"/>
       </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="dt_IfcElectricalResistivityMeasure" name="IfcElectricalResistivityMeasure">
+      <generalization xmi:type="uml:Generalization" xmi:id="dt_IfcElectricalResistivityMeasure_gen_real">
+        <general xmi:type="uml:DataType" href="ifc4x3_add2.uml#dt_real"/>
+      </generalization>
     </packagedElement>
   </packagedElement>
 </uml:Model>
