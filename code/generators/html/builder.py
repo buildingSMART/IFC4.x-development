@@ -432,6 +432,7 @@ class StaticTemplateRenderer(markdown_mixin):
             "is_iso": False,
             "is_package": False,
             "schema_version_string": self.version.schema_version_string,
+            "schema_name": SCHEMA_NAME,
             "spec_version_string": self.version.spec_version_string,
             "spec_version_string_full": self.version.spec_version_string_full,
             "branch": REPO_BRANCH,

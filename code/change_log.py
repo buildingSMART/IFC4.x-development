@@ -420,7 +420,8 @@ if __name__ == "__main__":
         differences = sorted(compare_schemas(schema_a, depr_a, schema_b, depr_b, ver_b)) \
             + sorted(compare_psets(psd_a, psd_b))
             
-        schema_name = schema_b.schema.name.replace("X", ".")
+        # heading without the draft postfix
+        schema_name = re.sub(r"_(DEV|PREVIEW|DRAFT)_\w+$", "", schema_b.schema.name).replace("X", ".")
         
         changes_by_schema.append((schema_name, differences))
         

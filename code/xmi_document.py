@@ -30,16 +30,8 @@ is_package = os.environ.get('PACKAGE', '0') == '1'
 if is_package or is_iso:
     SCHEMA_NAME = "IFC4X3_ADD2"
 else:
-    SCHEMA_NAME = "IFC4X3_DEV"
-
-    try:
-        if os.environ.get("REPO_DIR"):
-            repo_dir = "-C", os.environ.get("REPO_DIR")
-        else:
-            repo_dir = []
-        sha = subprocess.check_output(["git", *repo_dir, "rev-parse", "--short", "HEAD"]).decode('ascii').strip()
-        SCHEMA_NAME += f"_{sha}"
-    except: pass
+    # derived in code/version.py
+    from version import schema_name as SCHEMA_NAME
 
 def unescape(s):
     # @todo this is bizarre encoding, what happened here?
