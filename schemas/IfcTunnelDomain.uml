@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcTunnelDomain" name="IfcTunnelDomain">
+  <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcTunnelDomain" name="IfcTunnelDomain">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcTunnelPartTypeEnum" name="IfcTunnelPartTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelPartTypeEnum_TUNNELSECTION" name="TUNNELSECTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelPartTypeEnum_CROSSWAY" name="CROSSWAY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelPartTypeEnum_RINGSECTION" name="RINGSECTION"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelPartTypeEnum_PORTAL" name="PORTAL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelPartTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelPartTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcTunnelTypeEnum" name="IfcTunnelTypeEnum">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_ACCESSTUNNEL" name="ACCESSTUNNEL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_SHAFT" name="SHAFT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_UTILITIES" name="UTILITIES"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_RAILWAY" name="RAILWAY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_ROAD" name="ROAD"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_PEDESTRIAN" name="PEDESTRIAN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_METRO" name="METRO"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_BICYCLE" name="BICYCLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_BYPASS" name="BYPASS"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_MAINTENANCE" name="MAINTENANCE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_UNDERGROUND_FACILITIES" name="UNDERGROUND_FACILITIES"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_RAMP" name="RAMP"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcTunnelTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnel" name="IfcTunnel">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnel_gen_IfcFacility">
+        <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcFacility"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTunnel_PredefinedType" name="PredefinedType" type="en_IfcTunnelTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTunnel_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTunnel_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelPart" name="IfcTunnelPart">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelPart_gen_IfcFacilityPart">
+        <general xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcFacilityPart"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcTunnelPart_PredefinedType" name="PredefinedType" type="en_IfcTunnelPartTypeEnum">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcTunnelPart_PredefinedType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcTunnelPart_PredefinedType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_ACCESSTUNNEL" name="IfcTunnelTypeEnum.ACCESSTUNNEL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_ACCESSTUNNEL_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_SHAFT" name="IfcTunnelTypeEnum.SHAFT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_SHAFT_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_UTILITIES" name="IfcTunnelTypeEnum.UTILITIES">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_UTILITIES_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_RAILWAY" name="IfcTunnelTypeEnum.RAILWAY">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_RAILWAY_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_ROAD" name="IfcTunnelTypeEnum.ROAD">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_ROAD_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_PEDESTRIAN" name="IfcTunnelTypeEnum.PEDESTRIAN">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_PEDESTRIAN_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_METRO" name="IfcTunnelTypeEnum.METRO">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_METRO_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_BICYCLE" name="IfcTunnelTypeEnum.BICYCLE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_BICYCLE_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_BYPASS" name="IfcTunnelTypeEnum.BYPASS">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_BYPASS_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_MAINTENANCE" name="IfcTunnelTypeEnum.MAINTENANCE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_MAINTENANCE_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_UNDERGROUND_FACILITIES" name="IfcTunnelTypeEnum.UNDERGROUND_FACILITIES">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_UNDERGROUND_FACILITIES_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_RAMP" name="IfcTunnelTypeEnum.RAMP">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_RAMP_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_USERDEFINED" name="IfcTunnelTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_USERDEFINED_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelTypeEnum_NOTDEFINED" name="IfcTunnelTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelTypeEnum_NOTDEFINED_gen_IfcTunnel" general="cl_IfcTunnel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelPartTypeEnum_TUNNELSECTION" name="IfcTunnelPartTypeEnum.TUNNELSECTION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelPartTypeEnum_TUNNELSECTION_gen_IfcTunnelPart" general="cl_IfcTunnelPart"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelPartTypeEnum_CROSSWAY" name="IfcTunnelPartTypeEnum.CROSSWAY">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelPartTypeEnum_CROSSWAY_gen_IfcTunnelPart" general="cl_IfcTunnelPart"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelPartTypeEnum_RINGSECTION" name="IfcTunnelPartTypeEnum.RINGSECTION">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelPartTypeEnum_RINGSECTION_gen_IfcTunnelPart" general="cl_IfcTunnelPart"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelPartTypeEnum_PORTAL" name="IfcTunnelPartTypeEnum.PORTAL">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelPartTypeEnum_PORTAL_gen_IfcTunnelPart" general="cl_IfcTunnelPart"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelPartTypeEnum_USERDEFINED" name="IfcTunnelPartTypeEnum.USERDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelPartTypeEnum_USERDEFINED_gen_IfcTunnelPart" general="cl_IfcTunnelPart"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcTunnelPartTypeEnum_NOTDEFINED" name="IfcTunnelPartTypeEnum.NOTDEFINED">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcTunnelPartTypeEnum_NOTDEFINED_gen_IfcTunnelPart" general="cl_IfcTunnelPart"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

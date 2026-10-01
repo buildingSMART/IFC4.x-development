@@ -43,6 +43,7 @@ hierarchy = [
         ("IfcRoadDomain", defaultdict(list)),
         ("IfcStructuralAnalysisDomain", defaultdict(list)),
         ("IfcStructuralElementsDomain", defaultdict(list)),
+        ("IfcTunnelDomain", defaultdict(list)),
     ]),
     ("Resource definition data schemas", [
         ("IfcActorResource", defaultdict(list)),

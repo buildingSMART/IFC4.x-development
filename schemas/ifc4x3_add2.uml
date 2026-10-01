@@ -129,6 +129,9 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="ip_propertytypes">
     <importedPackage xmi:type="uml:Package" href="propertytypes.uml#pk_propertytypes"/>
   </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="ip_IfcTunnelDomain">
+    <importedPackage xmi:type="uml:Package" href="IfcTunnelDomain.uml#pk_IfcTunnelDomain"/>
+  </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="pk_base" name="base">
     <packagedElement xmi:type="uml:DataType" xmi:id="dt_binary" name="binary"/>
     <packagedElement xmi:type="uml:DataType" xmi:id="dt_boolean" name="boolean"/>
