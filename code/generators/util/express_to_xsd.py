@@ -17,10 +17,18 @@ X = xml_dict.xml_node
 def flatmap(func, *iterable):
     return itertools.chain.from_iterable(map(func, *iterable))
 
+def _schema_namespace(schema_name):
+    # drafts live under /IFC/DEV/, releases under /IFC/RELEASE/
+    m = re.fullmatch(r"(.+?)_(DEV|PREVIEW|DRAFT)_(\w+)", schema_name)
+    if m:
+        return f"https://standards.buildingsmart.org/IFC/DEV/{'/'.join(re.split('_|X', m.group(1)))}/{m.group(2)}/{m.group(3)}"
+    return f"https://standards.buildingsmart.org/IFC/RELEASE/{'/'.join(re.split('_|X', schema_name))}"
+
+
 namespaces = {
     'xs': "http://www.w3.org/2001/XMLSchema",
     'xlink': "http://www.w3.org/1999/xlink",
-    'ifc': f"https://standards.buildingsmart.org/IFC/RELEASE/{'/'.join(re.split('_|X', SCHEMA_NAME))}"
+    'ifc': _schema_namespace(SCHEMA_NAME)
 }
 
 express_xsd_mapping = {

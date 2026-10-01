@@ -14,7 +14,7 @@ fn1, fn2, output = sys.argv[1:]
 
 print("Running difference", *sys.argv[1:])
 
-schema_name_re = re.compile(r"ifc4x\d_\w+")
+schema_name_re = re.compile(r"ifc4x\d(_\w+)?")
 notexists_re = re.compile(r"not\s*\(\s*exists\s*\(([^()]*)\)\s*\)")
 
 ERROR_TYPES_LABELS = "Missing data", "Type definitions", "Entity definitions", "Constraints"
