@@ -3,7 +3,6 @@
 The IfcSurfaceOfRevolution is a surface derived by rotating a curve about an axis.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A surface of revolution is the surface obtained by rotating a curve one complete revolution about an axis. The data shall be interpreted as below.
 >

@@ -9,7 +9,6 @@ This entity describes edge members with varying profile properties. Each instanc
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Use definition changed.
 
 ****Coordinate Systems****:

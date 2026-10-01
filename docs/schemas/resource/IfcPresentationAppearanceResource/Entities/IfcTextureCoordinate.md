@@ -9,10 +9,8 @@ The _IfcTextureCoordinate_ is an abstract supertype of the different kinds to ap
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The attribute Texture is deleted.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse attribute AnnotatedSurface isdeleted, and the attribute _Maps_ is added.
 
 ## Attributes

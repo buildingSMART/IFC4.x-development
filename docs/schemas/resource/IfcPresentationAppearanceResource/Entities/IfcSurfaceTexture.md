@@ -62,7 +62,6 @@ Table 1 — Which texture nodes are applicable in different reflectance methods.
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4.3.0.0 CHANGE Definition and attributes have been updated in line with texture usage in X3D.
 
 > IFC4 CHANGE Attribute TextureType replaces by _Mode_, attributes _Parameter_ and _MapsTo_ added, new inverse attribute _UsedInStyle_.
@@ -80,7 +79,6 @@ Mode shall hold the type of map this corresponds to, chosen from the following l
 
 If Mode is omitted, DIFFUSE is assumed.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute replacing previous TextureType.
 
 > IFC4.3.0.0 CHANGE Attribute has been repurposed to store the type of texture.
@@ -93,7 +91,6 @@ The _TextureTransform_ defines a 2D transformation that is applied to the textur
 
 ### IsMappedBy
 Texture coordinates, either provided by a corresponding list of texture vertices to vertex-based geometric items or by a texture coordinate generator, that applies the surface texture to the surfaces of the geometric items.
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute added at the end of the attribute list.
 
 ### UsedInStyles

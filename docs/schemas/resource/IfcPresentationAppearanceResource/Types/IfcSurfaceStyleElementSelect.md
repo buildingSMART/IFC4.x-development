@@ -5,7 +5,6 @@ The _IfcSurfaceStyleElementSelect_ provides a selection between different surfac
 
 > NOTE The _IfcSurfaceStyleLighting_ are needed for exact lighting calculation, because physically based lighting calculation algorithms need exact physically based parameters. The factors in _IfcSurfaceStyleRendering_ lack the physical base, they are intended for rendering calculations, but a lighting calculation based software cannot use these values.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-46:1992
 > The surface style element select is a selection of the different surface styles to use in the presentation of the side of a surface.
 

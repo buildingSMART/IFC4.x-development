@@ -5,7 +5,6 @@ A filter is an apparatus used to remove particulate or gaseous matter from fluid
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

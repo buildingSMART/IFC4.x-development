@@ -7,7 +7,6 @@ The _IfcMappedItem_ is the inserted instance of a source definition (to be compa
 
 > EXAMPLE An _IfcMappedItem_ can reuse other mapped items (ako nested blocks), doing so the _IfcRepresentationMap_ is based on an _IfcShapeRepresentation_ including one or more _IfcMappedItem_'s.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-43:1992
 > A mapped item is a type of representation item that specifies the mapping of a representation as an element of the items of a second representation.
 

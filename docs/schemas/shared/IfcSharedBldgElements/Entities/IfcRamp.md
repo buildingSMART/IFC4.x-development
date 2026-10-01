@@ -3,7 +3,6 @@
 A ramp is a vertical passageway which provides a human or vehicle circulation link between one floor level and another floor level at a different elevation. It may include a landing as an intermediate floor slab. A ramp normally does not include steps.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO 6707-1: Inclined way or floor joining two surfaces at different levels.
 
 The _IfcRamp_ shall either be represented:
@@ -17,7 +16,6 @@ The _IfcRamp_ shall either be represented:
 
 > HISTORY New entity in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _ShapeType_ renamed to _PredefinedType_
 
 ## Attributes
@@ -26,7 +24,6 @@ The _IfcRamp_ shall either be represented:
 Predefined generic types for a ramp that are specified in an enumeration. There may be a property set given for the predefined types.
 > NOTE The _PredefinedType_ shall only be used, if no _IfcRampType_ is assigned, providing its own _IfcRampType.PredefinedType_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been renamed from _ShapeType_ and changed to be OPTIONAL with upward compatibility for file based exchange.
 
 ## Formal Propositions

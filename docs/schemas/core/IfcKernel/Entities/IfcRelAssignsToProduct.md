@@ -8,14 +8,12 @@ The objectified relationship _IfcRelAssignsToProduct_ handles the assignment of
 
 > HISTORY New entity in IFC2x
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE  The reference of a product within a spatial structure is now handled by a new relationship object _IfcRelReferencedInSpatialStructure_. The _IfcRelAssignsToProduct_ shall not be used to represent this relation from IFC2x3 onwards.
 
 ## Attributes
 
 ### RelatingProduct
 Reference to the product or product type to which the objects are assigned.
-{ .change-ifc2x4}
 > IFC4 CHANGE Datatype expanded to include _IfcProduct_ and _IfcTypeProduct_.
 
 ## Formal Propositions

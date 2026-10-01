@@ -5,7 +5,6 @@ An _IfcLaborResource_ is used in construction with particular skills or crafts r
 
 > HISTORY New entity in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _Skillset_ has been deleted; use LongDescription to describe the skillset.
 
 The purpose of an _IfcLaborResource_ is to identify a skillset that may be required or used. The skillset identified may be (for instance) charge-hand, foreman, labourer, plumbers mate etc. and provides a designation of a particular level of skill. It can be used to identify the generic type of labour resource that is required for a purpose without having to be specific about the actor (person or organization) providing the resource occurrence. It may be particularly useful when creating an overall plan for a process or processes. For instance, within maintenance or work planning there may be a known task that needs to be done which is planned to require a 'chargehand pipe fitter'. There may be several such labour resources available and so the need to identify which will be used is not necessary at the planning stage.
@@ -16,7 +15,6 @@ At a later stage, individual actors can be determined for the labour resources. 
 
 ### PredefinedType
 Defines types of labour resources.
-{ .change-ifc2x4}
 > IFC4 New attribute.
 
 ## Formal Propositions

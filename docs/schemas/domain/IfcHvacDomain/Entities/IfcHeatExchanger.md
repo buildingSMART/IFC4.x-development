@@ -7,7 +7,6 @@ _IfcHeatExchanger_ is commonly used on water-side distribution systems to recove
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

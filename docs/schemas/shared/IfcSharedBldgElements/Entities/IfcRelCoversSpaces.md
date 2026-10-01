@@ -22,7 +22,6 @@ Whether the relationship between the covering and the space, or between the cove
 
 ### RelatingSpace
 Relationship to the space object that is covered.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute name has been changed from _RelatedSpace_ to _RelatingSpace_ with upward compatibility for file based exchange.
 
 ### RelatedCoverings

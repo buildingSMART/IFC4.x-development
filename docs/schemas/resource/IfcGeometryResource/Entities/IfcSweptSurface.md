@@ -8,7 +8,6 @@ An _IfcSweptSurface_ is a surface defined by sweeping a curve. The swept surface
 
 The optional _Positio_n coordinate system allows for re-positioning the resulting swept surface relative to the object coordinate system.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A swept surface is one that is constructed by sweeping a curve along another curve.
 
@@ -16,7 +15,6 @@ The optional _Positio_n coordinate system allows for re-positioning the resultin
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _Position_ has been changed to OPTIONAL with upward compatibility for file-based exchange.
 
 ## Attributes
@@ -26,7 +24,6 @@ The curve to be swept in defining the surface. The curve is defined as a profile
 
 ### Position
 Position coordinate system for the swept surface, provided by a profile definition within the XY plane of the _Position_ coordinates. If not provided, the position of the profile being swept is determined by the object coordinate system. In this case, the swept surface is not repositioned.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been changed to OPTIONAL with upward compatibility for file-based exchange.
 
 ## Formal Propositions

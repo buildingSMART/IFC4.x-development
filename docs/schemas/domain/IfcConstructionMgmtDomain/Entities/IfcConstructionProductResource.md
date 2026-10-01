@@ -11,7 +11,6 @@ Occurrences of _IfcConstructionProductResource_ are usage of products to assist 
 
 ### PredefinedType
 Defines types of construction product resources.
-{ .change-ifc2x4}
 > IFC4 New attribute.
 
 ## Formal Propositions

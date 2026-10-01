@@ -5,10 +5,8 @@ A reinforcing bar is usually made of steel with manufactured deformations in the
 
 > HISTORY New entity in IFC2x2
 
-{ .change-ifc2x4}
 > IFC 2x4 CHANGE All attributes are optional now. Several attributes are deprecated; their information now provided by _IfcReinforcingBarType_. Attribute _BarRole_ renamed to _PredefinedType_.
 
-{ .use-head}
 Geometry Use Definition
 
 Placement and representation are defined at the supertype _IfcElementComponent_.
@@ -20,31 +18,26 @@ The representation map of a mapped 'Body' representation should contain a repres
 ### NominalDiameter
 Deprecated.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute made optional and deprecated. Use respective attribute at _IfcReinforcingBarType_ instead.
 
 ### CrossSectionArea
 The effective cross-section area of the reinforcing bar or group of bars.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute made optional.
 
 ### BarLength
 Deprecated.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute deprecated. Use respective attribute at _IfcReinforcingBarType_ instead.
 
 ### PredefinedType
 The role, purpose or usage of the bar, i.e. the kind of loads and stresses it is intended to carry.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute renamed from _BarRole_ to _PredefinedType_ and made optional. Type changed from _IfcReinforcingBarRoleEnum_ without changes to the range of enumeration items.
 
 ### BarSurface
 Deprecated.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute made optional and deprecated. Use respective attribute at _IfcReinforcingBarType_ instead.
 
 ## Formal Propositions

@@ -19,13 +19,10 @@ In any case the object placement has to unambiguously define the object coordina
 ### PlacesObject
 The _IfcObjectPlacement_ shall be used to provide a placement and
 an object coordinate system for instances of _IfcProduct_.
-{ .note}
 > If an _IfcObjectPlacement_ is shared by many instances of _IfcProduct_ it does not apply a semantic meaning of being a shared placement that needs to be maintained. The same instance of _IfcObjectPlacement_ could simply be used to reduce exchange file size.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE New inverse attribute.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The cardinality has changed to 0..n to allow reuse of instances of _IfcObjectPlacement_ as placement object in one to many products. It takes also into account that it can act as a placement for _IfcStructuralAnalysisModel_.
 
 ### PlacementRelTo

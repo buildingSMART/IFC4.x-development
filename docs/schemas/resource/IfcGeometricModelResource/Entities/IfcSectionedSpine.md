@@ -23,7 +23,6 @@ Figure 2 illustrates the final result of the _IfcSectionedSpine_. The body (show
 
 Figure 2 — Sectioned spine result
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A sectioned spine is a representation of the shape of a three dimensional object composed of a spine curve and a number of planar cross sections. The shape is defined between the first element of cross sections and the last element of this set.
 >

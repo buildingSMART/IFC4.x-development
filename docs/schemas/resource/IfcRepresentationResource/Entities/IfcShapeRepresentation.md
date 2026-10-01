@@ -61,12 +61,10 @@ Several representation types for shape representation are included as predefined
 
 Table 2 — Representation types
 
-{ .extDef}
 > NOTE The definition relates to **shape_representation** defined in ISO 10303-41.
 
 > HISTORY New entity in IFC1.5.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The _RepresentationType_'s 'Point', 'PointCloud', 'Curve', 'Curve3D', 'Surface', 'Surface2D', 'Surface3D', 'FillArea', 'Text', 'Tessellation', 'AdvancedBrep', 'LightSource', and the _RepresentationIdentifier_ 'Body-FallBack', 'Profile', 'Clearance', 'Lighting' have been added.
 
 ## Formal Propositions

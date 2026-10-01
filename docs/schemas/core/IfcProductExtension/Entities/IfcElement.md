@@ -32,14 +32,12 @@ Reference to the element connection relationship. The relationship then refers t
 Reference to the interference relationship to indicate the element that is interfered. The relationship, if provided, indicates that this element has an interference with one or many other elements.
 > NOTE There is no indication of precedence between _IsInterferedByElements_ and _InterferesElements_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse relationship.
 
 ### InterferesElements
 Reference to the interference relationship to indicate the element that interferes. The relationship, if provided, indicates that this element has an interference with one or many other elements.
 > NOTE There is no indication of precedence between _IsInterferedByElements_ and _InterferesElements_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse relationship.
 
 ### HasProjections

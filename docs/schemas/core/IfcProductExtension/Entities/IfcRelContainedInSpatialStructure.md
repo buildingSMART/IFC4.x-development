@@ -19,19 +19,16 @@ Figure 1 shows the use of _IfcRelContainedInSpatialStructure_ to assign a stair 
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x}
 > IFC2x CHANGE The data type of the attribute _RelatedElements_ has been changed from _IfcElement_ to its supertype _IfcProduct_ with upward compatibility for file based exchange.
 
 ## Attributes
 
 ### RelatedElements
 Set of products, which are contained within this level of the spatial structure hierarchy.
-{ .change-ifc2x}
 > IFC2x CHANGE The data type has been changed from _IfcElement_ to _IfcProduct_ with upward compatibility
 
 ### RelatingStructure
 Spatial structure element, within which the element is contained. Any element can only be contained within one element of the project spatial structure.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _RelatingStructure_ as been promoted to the new supertype _IfcSpatialElement_ with upward compatibility for file based exchange.
 
 ## Formal Propositions

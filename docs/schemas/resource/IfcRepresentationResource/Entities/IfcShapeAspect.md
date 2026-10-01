@@ -11,7 +11,6 @@ Figure 1 indicates the association of material characteristics to shape aspects.
 
 ![shape](../../../../figures/ifcshapeaspect_fig1.png "Figure 1 — shape aspects for associating material")
 
-{ .extDef}
 > NOTE Definition from ISO 10303-41:
 > A shape aspect is an identifiable element of the shape of an object.
 
@@ -19,7 +18,6 @@ Figure 1 indicates the association of material characteristics to shape aspects.
 
 > HISTORY New entity in IFC2.0
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _PartOfProductDefinitionShape_ declared OPTIONAL and extended to type _IfcProductRepresentationSelect_ with upward compatibility for file based exchange.
 
 **Informal Propositions**
@@ -31,7 +29,6 @@ Figure 1 indicates the association of material characteristics to shape aspects.
 
 ### ShapeRepresentations
 List of ~~shape~~ representations. Each member defines a valid representation of a particular type within a particular representation context as being an aspect (or part) of a product definition.
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The data type has been changed from _IfcShapeRepresentation_ to _IfcShapeModel_ with upward compatibility
 
 ### Name
@@ -48,7 +45,6 @@ UNKNOWN: it cannot be asserted either way.
 
 ### PartOfProductDefinitionShape
 Reference to the _IfcProductDefinitionShape_ or the _IfcRepresentationMap_ of which this shape is an aspect.
-{ .change-ifc2x4}
 > IFC4 CHANGE Data type modified to be _IfcProductRepresentationSelect_ allowing the assignment also to _IfcRepresentationMap_.
 
 ### HasExternalReferences

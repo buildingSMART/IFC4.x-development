@@ -41,7 +41,6 @@ Figure 3 illustrates an example of a negative offset where the figure shows the 
 
 > HISTORY New entity in IFC1.5.
 
-{ .change-ifc2x}
 > IFC2x CHANGE Renamed from IfcConstraintRelIntersection.
 
 **Informal Propositions**

@@ -7,14 +7,12 @@ The same _IfcDocumentInformation_ can be referenced from the exchange structure 
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _HasDocumentReferences_ changed to be inverse, attribute _Location_ added, and attribute _ElectronicFormat_ modified.
 
 ## Attributes
 
 ### Identification
 Identifier that uniquely identifies a document.
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute renamed from _DocumentId_.
 
 ### Name
@@ -25,7 +23,6 @@ Description of document and its content.
 
 ### Location
 Resource identifier or locator, provided as URI, URN or URL, of the document information for online references.
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute added at the place of the removed attribute _DocumentReferences_.
 
 ### Purpose
@@ -48,12 +45,10 @@ The persons and/or organizations who have created this document or contributed t
 
 ### CreationTime
 Date and time stamp when the document was originally created.
-{ .change-ifc2x4}
 > IFC4 CHANGE The data type has been changed to _IfcDateTime_, the date time string according to ISO8601.
 
 ### LastRevisionTime
 Date and time stamp when this document version was created.
-{ .change-ifc2x4}
 > IFC4 CHANGE The data type has been changed to _IfcDateTime_, the date time string according to ISO8601.
 
 ### ElectronicFormat
@@ -62,17 +57,14 @@ Describes the media type used in various internet protocols, also referred to as
 
 > EXAMPLE 'image/png' denotes an image type of png (Portable Network Graphics) subtype, 'application/pdf' denotes an application specific type of pdf (Portable Document Format) subtype
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The data type has been changed from entity data type to _IfcIdentifier_.
 
 ### ValidFrom
 Date when the document becomes valid.
-{ .change-ifc2x4}
 > IFC4 CHANGE The data type has been changed to _IfcDate_, the date string according to ISO8601.
 
 ### ValidUntil
 Date until which the document remains valid.
-{ .change-ifc2x4}
 > IFC4 CHANGE The data type has been changed to _IfcDate_, the date string according to ISO8601.
 
 ### Confidentiality
@@ -87,7 +79,6 @@ The current status of the document. Examples of status values that might be used
 
 ### DocumentInfoForObjects
 The document information with which objects are associated.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute.
 
 ### HasDocumentReferences

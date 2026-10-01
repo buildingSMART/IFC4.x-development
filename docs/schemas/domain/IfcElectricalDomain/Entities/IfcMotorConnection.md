@@ -5,7 +5,6 @@ A motor connection provides the means for connecting a motor as the driving devi
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

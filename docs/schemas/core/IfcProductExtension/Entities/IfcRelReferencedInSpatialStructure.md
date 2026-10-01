@@ -36,5 +36,4 @@ Spatial structure element, within which the objects are referenced. An object ca
 
 ### AllowedRelatedElements
 The relationship object shall not be used to include other spatial structure elements into a spatial structure element. The hierarchy of the spatial structure is defined using _IfcRelAggregates_. Exception: an _IfcSpace_ can be referenced by another spatial structure element, in particular by an _IfcSpatialZone_.
-{ .change-ifc2x4}
 > IFC4 CHANGE The relaxation to allow _IfcSpace_ has been included.

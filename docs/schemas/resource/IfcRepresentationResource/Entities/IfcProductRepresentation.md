@@ -7,10 +7,8 @@ _IfcProductRepresentation_ defines a representation of a product, including its 
 
 > HISTORY New entity in IFC2.0
 
-{ .change-ifc2x3}
 > IFC2x3 NOTE  Users should not instantiate the entity from IFC2x3 onwards.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Entity made abstract.
 
 ## Attributes

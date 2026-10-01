@@ -7,7 +7,6 @@ _IfcRoot_ is the most abstract and root class for all entity definitions that ar
 
 > HISTORY New entity in IFC1.0
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _OwnerHistory_ has been made OPTIONAL.
 
 ## Attributes
@@ -20,7 +19,6 @@ Assignment of the information about the current ownership of that object, includ
 
 > NOTE Only the last modification is stored - either as addition, deletion or modification.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been changed to be OPTIONAL.
 
 ### Name

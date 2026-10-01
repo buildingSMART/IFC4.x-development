@@ -5,7 +5,6 @@ An interceptor is a device designed and installed in order to separate and retai
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

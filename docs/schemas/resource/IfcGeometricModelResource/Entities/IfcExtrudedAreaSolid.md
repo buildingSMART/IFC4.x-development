@@ -27,7 +27,6 @@ Figure 2 — Repositioned extruded area solid geometry
   * a 2D profile position coordinate system is provided that positions the profile relative to the xy plane (here at a corner of the rectangle)
  * The resulting swept solid is repositioned, here it is moved into local z and rotated by 15' along the y axis.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > An extruded area solid is a solid defined by sweeping a bounded planar surface. The direction of translation is defined by a direction vector, and the length of the translation is defined by a distance depth. The planar area may have holes which will sweep into holes in the solid.
 
@@ -35,7 +34,6 @@ Figure 2 — Repositioned extruded area solid geometry
 
 > HISTORY New entity in IFC1.5
 
-{ .use-head}
 Texture use definition
 
 For side faces, textures are aligned facing upright continuously along the sides with origin at the first point of an arbitrary profile, and following the outer bound of the profile counter-clockwise (as seen from above). For parameterized profiles, the origin is defined at the +Y extent for rounded profiles (having no sharp edge) and the first sharp edge counter-clockwise from the +Y extent for all other profiles. Textures are stretched or repeated on each side along the outer boundary of the profile according to _RepeatS_. Textures are stretched or repeated on each side along the extrusion axis according to _RepeatT_.

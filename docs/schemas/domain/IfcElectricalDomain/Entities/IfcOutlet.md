@@ -7,7 +7,6 @@ Power outlets are commonly connected within a junction box; data outlets may be 
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

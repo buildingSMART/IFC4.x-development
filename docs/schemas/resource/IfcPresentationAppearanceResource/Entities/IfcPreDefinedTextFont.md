@@ -9,5 +9,4 @@ The pre defined text font determines those qualified names which can be used for
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The _IfcTextStyleFontModel_ has been added as new subtype.

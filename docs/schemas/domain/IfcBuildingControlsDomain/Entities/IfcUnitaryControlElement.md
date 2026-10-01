@@ -7,7 +7,6 @@ A unitary control element provides a housing for an aggregation of control or el
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

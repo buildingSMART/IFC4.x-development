@@ -21,7 +21,6 @@ It defines the assignment of two offset values for a material layer in its inten
 
 2. The attribute ReferenceExtent shall be asserted at the corresponding _IfcMaterialLayerSetUsage_.
 
-{ .use-head}
 The _OffsetValues_ and _OffsetDirection_ correspond to the definitions _ReferenceExtent_ and _LayerSetDirection_ at the _IfcMaterialLayerSetUsage_. Figure 1 shows an example of applying the _OffsetValues_ to the material layers of a layered wall.
 
 ![IfcMaterialLayerWithOffsets_fig-1](../../../../figures/ifcmateriallayerwithoffsets_fig-1.png "Figure 1 — Material layer with offsets")

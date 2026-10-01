@@ -3,7 +3,6 @@
 The _IfcSurfaceOfLinearExtrusion_ is a surface derived by sweeping a curve along a vector.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > This surface is a simple swept surface or a generalized cylinder obtained by sweeping a curve in a given direction. The parameterization is as follows where the curve has a parameterization λ(_u_):
 >

@@ -5,7 +5,6 @@ An _IfcPlacement_ is an abstract supertype of placement subtypes that define the
 
 > NOTE Cartesian transformations including mirroring and scaling are supported by _IfcCartesianTransformationOperator_
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A placement locates a geometric item with respect to the coordinate system of its geometric context. It locates the item to be defined and, in the case of the axis placement subtypes, gives its orientation.
 

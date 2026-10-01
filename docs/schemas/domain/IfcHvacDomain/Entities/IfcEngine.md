@@ -5,7 +5,6 @@ An engine is a device that converts fuel into mechanical energy through combusti
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

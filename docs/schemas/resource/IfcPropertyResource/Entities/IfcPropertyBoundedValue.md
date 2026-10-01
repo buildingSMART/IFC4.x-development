@@ -24,10 +24,8 @@ Table 1 — Bounded property with values, measure types and units. Where rules e
 
 > HISTORY  New entity in IFC2x.
 
-{ .change-ifc2x2}
 > IFC2x2 CHANGE The attribute type of the attribute _UpperBoundValue_ and _LowerBoundValue_ has been made optional with upward compatibility for file based exchange.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _SetPointValue_ has been added.
 
 **Informal Propositions**
@@ -47,7 +45,6 @@ Unit for the upper and lower bound values, if not given, the default value for t
 
 ### SetPointValue
 Set point value as typically used for operational value setting.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added at the end of the attribute list.
 
 ## Formal Propositions

@@ -7,5 +7,4 @@ The _IfcClassificationSelect_ enables selection of whether a classification refe
 
 > HISTORY New select type in IFC2x
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Select renamed from IfcClassificationNotationSelect.

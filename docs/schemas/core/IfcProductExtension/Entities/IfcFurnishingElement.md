@@ -10,7 +10,6 @@ Thus furnishing elements can either be movable, or not (as the built-ins).
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The entity is marked as deprecated for instantiation - will be made ABSTRACT after IFC4.
 
 ## Concepts

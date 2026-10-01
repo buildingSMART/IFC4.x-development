@@ -3,7 +3,6 @@
 The _IfcKnotType_ indicates the particular form of b-spline knots.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > This type indicates that the B-spline knots shall have a particularly simple form enabling the knots themselves to be defaulted.
 

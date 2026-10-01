@@ -5,7 +5,6 @@ A valve is used in a building services piping distribution system to control or 
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

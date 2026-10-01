@@ -9,7 +9,7 @@ The _IfcMeasureResource_ schema specifies units and defined measure types that m
 
 In different types of units there are five basic cases:
 
-* Basic SI-units, which cover a number of fundamental units of mainly physical quantities defined by [ISO-1000](../content/bibliography.htm#iso-1000){ .int-ref} such as meter or millimeter as unit for length measure or square meter as a unit for area measure. The unit may have a scaling prefix (for example: milli, kilo).
+* Basic SI-units, which cover a number of fundamental units of mainly physical quantities defined by [ISO-1000](../content/bibliography.htm#iso-1000) such as meter or millimeter as unit for length measure or square meter as a unit for area measure. The unit may have a scaling prefix (for example: milli, kilo).
 * Derived SI-units, which are defined as a derivation of the basic SI-units, for example, Newton (kg m / s2) as a unit of force. Both basic and derived SI-units are in the IFCs represented by IfcSIUnit.
 * Conversion based units, which can be derived from SI-units by a scaling factor; e.g. inch which can be defined using SI-unit for length measure, i.e. an inch is 25.4 millimeters.
 * Derived units, which can be defined as a derivation or combination of a number of basic units. In a derived unit each of the basic unit "component" has a dimensional exponent in defining the derived unit; e.g. kg / m2, where kilogram (kg) has dimensional exponent 1 and meter (m) has exponent -2.

@@ -9,7 +9,6 @@ The entity _IfcStructuralLoadGroup_ is used to structure the physical impacts. B
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Subtype _IfcStructuralLoadCase_ added. Informal propositions and WHERE rule added. Predefined type LOAD_COMBINATION_GROUP made obsolete and removed.
 
 **Informal Propositions**

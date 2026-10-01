@@ -3,7 +3,6 @@
 The _IfcPreferredSurfaceCurveRepresentation_ indicates the preferred form of an edge curve representation.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > The preferred surface curve representation type is used to indicate the preferred form of representation for a surface curve, which is either a curve in geometric space or in the parametric space of the underlying surfaces.
 

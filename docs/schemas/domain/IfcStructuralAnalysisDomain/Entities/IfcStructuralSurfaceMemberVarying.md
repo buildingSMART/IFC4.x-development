@@ -7,7 +7,6 @@ This entity describes surface members with varying section properties. The prope
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Use definition changed and attributes deleted.
 
 ****Coordinate Systems****:

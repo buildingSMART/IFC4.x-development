@@ -13,10 +13,8 @@ Object types may be exchanged without being already assigned to objects. An obje
 
 > HISTORY New entity in IFC2x
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The _IfcTypeObject_ is now subtyped from the new supertype _IfcObjectDefinition_, and the attribute _HasPropertySets_ has been changed from a LIST into a SET.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The entity _IfcTypeObject_ shall not be instantiated from IFC4 onwards. It will be changed into an ABSTRACT supertype in future releases of IFC. The inverse attribute _Types_ has been renamed from _ObjectTypeOf_.
 
 ## Attributes
@@ -32,7 +30,6 @@ The attribute optionally defines the data type of the occurrence object, to whic
 
 ### HasPropertySets
 Set of unique property sets that are associated with the object type and are common to all object occurrences referring to this object type.
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The attribute aggregate type has been changed from LIST to SET.
 
 ### Types

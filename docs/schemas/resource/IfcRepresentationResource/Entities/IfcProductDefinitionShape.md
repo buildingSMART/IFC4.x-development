@@ -16,10 +16,8 @@ The _IfcProductDefinitionShape_ defines all shape relevant information about an 
 
 ### ShapeOfProduct
 The _IfcProductDefinitionShape_ shall be used to provide a representation for a one or more instances of _IfcProduct_.
-{ .change-ifc2x3}
 > IFC2x3 CHANGE New inverse attribute.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Inverse relationship cardinality relaxed to be 1:N.
 
 ### HasShapeAspects

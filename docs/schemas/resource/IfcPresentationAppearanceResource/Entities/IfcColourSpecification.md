@@ -1,6 +1,5 @@
 # IfcColourSpecification
 
-{ .extDef}
 <!-- end of short definition -->
 
 > NOTE Definition according to ISO/CD 10303-46:1992
@@ -16,5 +15,4 @@
 Optional name given to a particular colour specification in addition to the colour components (like the RGB values).
 > EXAMPLE Names of a industry colour classification, such as RAL.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE Attribute added.

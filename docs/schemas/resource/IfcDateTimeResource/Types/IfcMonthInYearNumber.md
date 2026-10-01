@@ -22,7 +22,6 @@ Type: INTEGER
 
 > NOTE See definition of **calendar month** as defined in ISO 8601.
 
-{ .note}
 > HISTORY New type in IFC1.5.1.
 
 ## Formal Propositions

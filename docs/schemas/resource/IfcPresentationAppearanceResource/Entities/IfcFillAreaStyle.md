@@ -34,7 +34,6 @@ The measure values for hatch or tile pattern apply to the model space with a tar
 
 > NOTE the target plot scale is given by _IfcGeometricRepresentationSubContext.TargetScale_.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-46:1992
 > The style for filling visible curve segments, annotation fill areas or surfaces with tiles or hatches.
 
@@ -42,7 +41,6 @@ The measure values for hatch or tile pattern apply to the model space with a tar
 
 > HISTORY New entity in IFC2x2.
 
-{ .deprecated}
 > DEPRECATION The use of IfcFillAreaStyleTiles is deprecated, as its definition might change is future releases.
 
 ## Attributes
@@ -52,7 +50,6 @@ The set of fill area styles to use in presenting visible curve segments, annotat
 
 ### ModelOrDraughting
 Indication whether the length measures provided for the presentation style are model based, or draughting based.
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute.
 
 ## Formal Propositions

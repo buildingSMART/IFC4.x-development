@@ -29,7 +29,6 @@ Indication whether the pixel values contain a 1, 2, 3, or 4 colour component.
 
 ### Pixel
 Flat list of hexadecimal values, each describing one pixel by 1, 2, 3, or 4 components.
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The data type has been changed from STRING to BINARY.
 
 ## Formal Propositions

@@ -15,14 +15,12 @@ The _IfcProjectionElement_ shall not participate in the containment relationship
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _PredefinedType_ has been added at the end of the attribute list.
 
 ## Attributes
 
 ### PredefinedType
 Predefined generic type for a projection element that is specified in an enumeration. There may be a property set given specifically for the predefined types.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added at the end of the entity definition.
 
 ## Formal Propositions
