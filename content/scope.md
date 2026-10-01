@@ -6,7 +6,7 @@ The coverage of infrastructure facilities now incorporated into IFC includes bri
 The IFC comprises the publication of a data schema, its documentation, the property and quantity set definitions and the mechanism of an exchange file format structure.
 The schema, property and quantity sets and usage constraints are internally authored as a UML Class diagram
 {%- if not is_iso %}
-[available as XMI file](https://github.com/buildingSMART/IFC4.x-development/tree/{{ branch }}/schemas)
+[available as XMI file](https://github.com/{{ target_repo }}/tree/{{ branch }}/schemas)
 {%- endif %}
 {% if is_iso -%}
 and published as the following computer interpretable schemas:

@@ -435,6 +435,7 @@ class StaticTemplateRenderer(markdown_mixin):
             "spec_version_string": self.version.spec_version_string,
             "spec_version_string_full": self.version.spec_version_string_full,
             "branch": REPO_BRANCH,
+            "target_repo": self.version.target_repo,
             "get_language_icon": translate.get_language_icon,
             "current_lang_slug": slugify("English (default)"),
             "languages": translate.list_languages(),
