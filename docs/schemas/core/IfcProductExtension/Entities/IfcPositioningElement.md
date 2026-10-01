@@ -1,6 +1,7 @@
 # IfcPositioningElement
 
-New and abstract entity definition for positioning and annotating elements that are used to position other elements relatively.
+An abstract entity definition used to position other elements.
+
 <!-- end of short definition -->
 
 > EXAMPLE A grid is a positioning element to position building components mainly in vertical structures, an alignment is a linear positioning element to position geographic and civil elements mainly in infrastructure works.
@@ -18,9 +19,9 @@ Relationship to a spatial structure element, to which the positioning element is
 > IFC4 CHANGE The inverse relationship has been promoted from _IfcGrid_ to this new supertype with upward compatibility
 
 ### Positions
-
+Relationship to a product which is positioned by this positioning element.
 
 ## Formal Propositions
 
 ### HasPlacement
-The placement for the grid has to be given.
+The ObjectPlacement is required.
