@@ -45,6 +45,9 @@ jobs:
               ;;
           esac
 
+          # edit links follow the published branch; the preview's edits go to main
+          echo "REPO_BRANCH=${GITHUB_REF_NAME/%-preview/-main}" >> "$GITHUB_ENV"
+
       - name: Check out source repository
         uses: actions/checkout@v4
         with:

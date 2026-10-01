@@ -9,7 +9,7 @@ This is the **latest available, work-in-progress** documentation of the IFC 4.4.
 ## Contributing 
 For those interested in contributing, use the `edit on GitHub` button to suggest changes.
 
-This HTML is automatically generated from the latest published source files, namely: [UML IFC schema files](https://github.com/buildingSMART/IFC4.x-development/tree/ifc4.4-main/schemas) and [Markdown content](https://github.com/buildingSMART/IFC4.x-development/tree/ifc4.4-main/docs) (with the definitions and documentations).
+This HTML is automatically generated from the latest published source files, namely: [UML IFC schema files](https://github.com/{{ target_repo }}/tree/{{ branch }}/schemas) and [Markdown content](https://github.com/{{ target_repo }}/tree/{{ branch }}/docs) (with the definitions and documentations).
 
 ## Copyright
 
