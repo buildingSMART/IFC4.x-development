@@ -90,9 +90,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip wheel setuptools
           python -m pip install --no-build-isolation "PyYAML==6.0"
-          python -m pip install reversestem
-          python -m pip install -r code/requirements.txt nltk rdflib
+          python -m pip install -r code/requirements.txt rdflib
           python -m pip install ifcopenshell
+
+      - name: Unit tests
+        run: python -m pytest code/tests -q --ignore=code/tests/test_translations.py
 
       # ----------------------------------------------------------------
       # Diff & detection
