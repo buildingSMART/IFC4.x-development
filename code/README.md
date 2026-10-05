@@ -411,3 +411,28 @@ Python modules are all captured in `requirements.txt`
 ## Development
 
 Developer documentation still need to recreated after the migration from a flask-based server to a static html generator (`./code/generators/html`)
+
+### Generators
+
+`code/generators/` turns the UML schema into the published files. Run from `code/`:
+
+```sh
+python -m generators ../schemas/ifc4x3_add2.uml --output ../output              # all steps
+python -m generators ../schemas/ifc4x3_add2.uml --output ../output --only pset json
+python -m generators.express ../schemas/ifc4x3_add2.uml -o ../output/IFC.exp    # one generator
+```
+
+| Step | Writes under `--output` | Reads |
+|---|---|---|
+| `express` | `IFC.exp` | UML |
+| `xsd` | `IFC.xsd` (ifcXML schema) | `IFC.exp` |
+| `pset` | `psd/*.xml` | UML |
+| `json` | `structure.json` | UML, `psd/` |
+| `bsdd` | `bsdd/IFC.json` | UML |
+| `pot` | `bsdd/pot/*.pot` | UML |
+
+- `generators/__main__.py` parses the UML once and calls each step's `run(doc, output_dir)` in the order of `STEPS`. The comments there name the order dependencies.
+- Each step module also has `main(argv)`, so `python -m generators.<step>` runs it on its own.
+- Shared code lives in `generators/util/` (XMI parsing, `xmi_document`, markdown, name splitting). Scripts outside the package import it as `generators.util`.
+- A new generator is a module with `run(doc, output_dir)` and `main(argv)`, plus one entry in `STEPS`.
+- `generators.html` builds the website. It is not a step: CI runs it after `change_log.py` and the MVD scripts, which it also reads.

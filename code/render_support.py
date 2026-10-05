@@ -50,7 +50,7 @@ from flask import (
     g as X
 )
 
-import md as mdp
+from generators.util import md as mdp
 from extract_concepts_from_xmi import parse_bindings
 
 import translate
@@ -2027,7 +2027,7 @@ def content(s):
         body_class=re.sub('[^a-z0-9]+', '-', s.lower())
     )
 
-from xmi_document import SCHEMA_NAME
+from generators.util.xmi_document import SCHEMA_NAME
 
 @app.route(make_url("annex-a.html"))
 def annex_a():

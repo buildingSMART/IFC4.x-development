@@ -1,7 +1,7 @@
 import sys
 import operator
 
-import xml_dict
+from generators.util import xml_dict
 
 fns = sys.argv[1:]
 xds = list(map(xml_dict.read, fns))

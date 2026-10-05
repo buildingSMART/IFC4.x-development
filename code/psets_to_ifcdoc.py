@@ -16,9 +16,9 @@ from dataclasses import dataclass, field
 
 import ifcopenshell
 
-from xmi_document import xmi_document, SCHEMA_NAME
+from generators.util.xmi_document import xmi_document, SCHEMA_NAME
 from parse_xmi import hierarchy
-import md as mdp
+from generators.util import md as mdp
 
 
 property_types = Enum("property_types", "single bounded list enumerated reference table quantity")

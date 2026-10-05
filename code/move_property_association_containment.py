@@ -1,8 +1,8 @@
 from collections import defaultdict
 
-import xml_dict
+from generators.util import xml_dict
 
-from append_xmi import XMI, uml_package, context as xmi_context
+from generators.util.append_xmi import XMI, uml_package, context as xmi_context
 
 D = xml_dict.read("..\schemas\IFC.xml")
 

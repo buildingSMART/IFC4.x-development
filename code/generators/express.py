@@ -19,10 +19,9 @@ def sort_key(tup):
     return (EXPRESS_ORDER.index(tup.type), tup.name)
 
 
-def run(schema_path: Path, output_path: Path) -> Path:
+def write_express(doc, output_path: Path) -> None:
     emitted = set()
-    xdoc = xmi_document(str(schema_path))
-    definitions = sorted((x for x in xdoc if x.type in EXPRESS_ORDER), key=sort_key)
+    definitions = sorted((x for x in doc if x.type in EXPRESS_ORDER), key=sort_key)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8") as output:
@@ -40,7 +39,9 @@ def run(schema_path: Path, output_path: Path) -> Path:
 
         print("END_SCHEMA;", file=output)
 
-    return output_path
+
+def run(doc, output_dir: Path) -> None:
+    write_express(doc, output_dir / "IFC.exp")
 
 
 def main(argv=None):
@@ -53,26 +54,9 @@ def main(argv=None):
         default=REPO_ROOT / "output" / "IFC.exp",
         help="Path to the generated EXPRESS file.",
     )
-    parser.add_argument(
-        "--with-xsd",
-        action="store_true",
-        help="Also generate an XSD file from the generated EXPRESS schema.",
-    )
-    parser.add_argument(
-        "--xsd-output",
-        type=Path,
-        default=None,
-        help="Path to the generated XSD file. Defaults to the EXPRESS output path with a .xsd suffix.",
-    )
     args = parser.parse_args(argv)
 
-    express_path = run(args.schema, args.output)
-    if args.with_xsd:
-        from .util.express_to_xsd import run as run_xsd
-
-        xsd_output = args.xsd_output or express_path.with_suffix(".xsd")
-        xsd_output.parent.mkdir(parents=True, exist_ok=True)
-        run_xsd(express_path, xsd_output)
+    write_express(xmi_document(str(args.schema)), args.output)
 
 
 if __name__ == "__main__":

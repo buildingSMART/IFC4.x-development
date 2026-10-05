@@ -13,8 +13,8 @@ from collections import defaultdict, namedtuple
 from shutil import copyfile
 from typing import Optional
 
-import xmi
-from xmi_document import xmi_document
+from generators.util import xmi
+from generators.util.xmi_document import xmi_document
 import express
 import json
 

@@ -4,13 +4,13 @@ import glob
 import operator
 import itertools
 
-import xmi_document
-import xml_dict
-import append_xmi
+from generators.util import xmi_document
+from generators.util import xml_dict
+from generators.util import append_xmi
 import concept_extractor
 import concept_interpretation
 
-from append_xmi import XMI
+from generators.util.append_xmi import XMI
 
 def norm(v):
     return v.lower().replace(" ", "").replace("_", "")

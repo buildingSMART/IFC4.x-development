@@ -10,7 +10,7 @@ from collections import namedtuple, defaultdict
 import html2text
 import tabulate
 
-from xmi_document import xmi_document
+from generators.util.xmi_document import xmi_document
 
 try:
     fn = sys.argv[1]

@@ -31,7 +31,7 @@ from .refiner import BeautifulSoup, HtmlRefiner, ListingCollector
 from .search import SearchIndexBuilder
 from . import translate
 from ..util.xmi_document import SCHEMA_NAME
-from . import md as mdp
+from ..util import md as mdp
 from git_history import page_history
 
 from version import target_branch as REPO_BRANCH

@@ -97,6 +97,10 @@ def format_TypeComplexProperty(prop):
 
 format_TypePropertyBoundedValue = format_TypePropertySingleValue
 
+def child_by_tag(node, tag):
+    return [c for c in node["_children"] if c['#tag'] == tag][0]
+
+
 def get_schema(name):
     for cat, schemas in hierarchy:
         for schema_name, members in schemas:
@@ -159,21 +163,10 @@ def _synthesize_pset_concepts_from_uml(xmi_concepts, psets, supertype_map):
             })
 
 
-if __name__ == "__main__":
-
-    parser = argparse.ArgumentParser(description="Generate IFC bSDD export files.")
-    parser.add_argument("schema", type=Path, help="Path to the input schema XML.")
-    parser.add_argument("psets", type=Path, help="Path to the input pset XML files.")
-    parser.add_argument(
-        "-o",
-        "--output",
-        type=Path,
-        default=REPO_ROOT / "output" / "structure.json",
-        help="Output directory for generated bSDD files.",
-    )
-    args = parser.parse_args()
-
-    xmi_doc = xmi_document(args.schema)
+def write_structure(xmi_doc, psd_dir: Path, output_path: Path) -> None:
+    for cat, schemas in hierarchy:
+        for schema_name, members in schemas:
+            members.clear()
 
     entity_to_package = {}
     supertype = {}
@@ -264,10 +257,8 @@ if __name__ == "__main__":
             else:
                 get_schema(item_package)['Quantity Sets'].append(item.name)
 
-    def child_by_tag(node, tag):
-        return [c for c in node["_children"] if c['#tag'] == tag][0]
         
-    for fn in args.psets.glob("*.xml"):
+    for fn in psd_dir.glob("*.xml"):
         xml = read_psd(fn)
         
         psetname = child_by_tag(xml, "Name")["#text"]
@@ -371,5 +362,28 @@ if __name__ == "__main__":
         if sidecar_path.exists():
             payload[sidecar_name] = json.loads(sidecar_path.read_text(encoding="utf-8"))
 
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    json.dump(payload, open(args.output, "w", encoding="utf-8"))
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    json.dump(payload, open(output_path, "w", encoding="utf-8"))
+
+
+def run(doc, output_dir: Path) -> None:
+    write_structure(doc, output_dir / "psd", output_dir / "structure.json")
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Generate structure.json, the schema summary the HTML site reads.")
+    parser.add_argument("schema", type=Path, help="Path to the input schema XML.")
+    parser.add_argument("psets", type=Path, help="Directory with the generated pset XML files.")
+    parser.add_argument(
+        "-o",
+        "--output",
+        type=Path,
+        default=REPO_ROOT / "output" / "structure.json",
+        help="Path to the generated structure.json.",
+    )
+    args = parser.parse_args(argv)
+    write_structure(xmi_document(args.schema), args.psets, args.output)
+
+
+if __name__ == "__main__":
+    main()

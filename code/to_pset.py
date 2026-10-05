@@ -11,8 +11,8 @@ import xml.etree.ElementTree as ET
 from xml.dom import minidom
 from collections import defaultdict
 
-from xmi_document import xmi_document, SCHEMA_NAME
-import md as mdp
+from generators.util.xmi_document import xmi_document, SCHEMA_NAME
+from generators.util import md as mdp
 
 GUID_PATTERN = re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$')
 HTML_TAG_PATTERN = re.compile('<.*?>')

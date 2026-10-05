@@ -109,8 +109,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install "Cython<3" wheel setuptools
           python -m pip install --no-build-isolation "PyYAML==6.0"
-          python -m pip install --no-build-isolation reversestem
-          python -m pip install -r ifc43/code/requirements.txt nltk
+          python -m pip install -r ifc43/code/requirements.txt
           python -m pip install typing_extensions lark
           
           # get a recent ifcopenshell 0.8 build with the latest ifcopenshell.mvd changes
@@ -119,37 +118,12 @@ jobs:
           unzip -d `python3 -c 'import site; print(site.getusersitepackages())'` /tmp/ifcopenshell_python.zip
           rm /tmp/ifcopenshell_python.zip
 
-      - name: Generate EXPRESS and XSD
+      - name: Generate EXPRESS, XSD, property sets, JSON, bSDD and pot
         working-directory: ifc43/code
         shell: bash
         run: |
           set -euxo pipefail
-          python -m generators.express ../schemas/ifc4x3_add2.uml \
-            --output ../output/IFC.exp \
-            --with-xsd \
-            --xsd-output ../output/IFC.xsd
-
-      - name: Generate property sets
-        working-directory: ifc43/code
-        shell: bash
-        run: |
-          set -euxo pipefail
-          mkdir -p ../output/psd
-          python -m generators.pset ../schemas/ifc4x3_add2.uml --output ../output/psd
-
-      - name: Generate bSDD export
-        working-directory: ifc43/code
-        shell: bash
-        run: |
-          set -euxo pipefail
-          python -m generators.bsdd ../schemas/ifc4x3_add2.uml --output ../output/bsdd
-
-      - name: Generate JSON schema structure
-        working-directory: ifc43/code
-        shell: bash
-        run: |
-          set -euxo pipefail
-          python -m generators.json ../schemas/ifc4x3_add2.uml ../output/psd --output ../output/structure.json
+          python -m generators ../schemas/ifc4x3_add2.uml --output ../output
 
       - name: Determine EXPRESS parse cache key
         id: parse-cache-key

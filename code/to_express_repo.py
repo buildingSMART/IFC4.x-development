@@ -12,7 +12,7 @@ import functools
 
 from collections import defaultdict, namedtuple
 
-import xmi
+from generators.util import xmi
 import express
 import json
 

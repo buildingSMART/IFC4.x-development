@@ -8,11 +8,11 @@ import operator
 import itertools
 import subprocess
 
-from md import parse_document
+from generators.util.md import parse_document
 
 import rdflib
 
-import xmi
+from generators.util import xmi
 
 from rdflib import Namespace
 from rdflib.namespace import RDF, RDFS

@@ -5,7 +5,7 @@ import sys
 import glob
 import json
 
-import xml_dict
+from generators.util import xml_dict
 
 dr = sys.argv[1]
 xmls = os.path.join(dr, "IFC4x3", "Sections", "**", "*.xml")

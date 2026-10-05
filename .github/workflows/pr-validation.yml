@@ -90,9 +90,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip wheel setuptools
           python -m pip install --no-build-isolation "PyYAML==6.0"
-          python -m pip install reversestem
-          python -m pip install -r code/requirements.txt nltk rdflib
+          python -m pip install -r code/requirements.txt rdflib
           python -m pip install ifcopenshell
+
+      - name: Unit tests
+        run: python -m pytest code/tests -q --ignore=code/tests/test_translations.py --ignore=code/tests/test_translations_poller.py
 
       # ----------------------------------------------------------------
       # Diff & detection
@@ -156,34 +158,32 @@ jobs:
       # ----------------------------------------------------------------
       # Baseline generation (best-effort -- failure does not block)
       # ----------------------------------------------------------------
-      # Baseline EXPRESS+XSD depends only on BASE_REF SHA; cache by that
+      # Baseline EXPRESS depends only on BASE_REF SHA; cache by that
       # key so retries on the same PR (and other PRs against the same
       # ifc4.4-main commit) skip the ~3-4 min regen.
-      - name: Cache baseline EXPRESS + XSD
+      - name: Cache baseline EXPRESS
         if: steps.diff.outputs.have_base == 'true'
         uses: actions/cache@v4
         id: cache_baseline
         with:
           path: |
             /tmp/baseline.exp
-            /tmp/baseline.xsd
-          key: baseline-exp-xsd-${{ github.event.pull_request.base.sha || github.sha }}
+          key: baseline-exp-${{ github.event.pull_request.base.sha || github.sha }}
 
-      - name: Generate or restore baseline EXPRESS (+ XSD)
+      - name: Generate or restore baseline EXPRESS
         if: steps.diff.outputs.have_base == 'true'
         id: baseline
         continue-on-error: true
         run: |
           if [ -f /tmp/baseline.exp ]; then
-            echo "Cache hit -- restored baseline.exp + baseline.xsd"
+            echo "Cache hit -- restored baseline.exp"
           else
             echo "Cache miss -- generating baseline from BASE_REF=$BASE_REF"
             BASE_TMP=$(mktemp -d)
             git worktree add "$BASE_TMP" "$BASE_REF"
             cd "$BASE_TMP/code"
             python -m generators.express ../schemas/ifc4x3_add2.uml \
-              -o /tmp/baseline.exp \
-              --with-xsd --xsd-output /tmp/baseline.xsd 2>&1 | tee /tmp/baseline.log | tail -5
+              -o /tmp/baseline.exp 2>&1 | tee /tmp/baseline.log | tail -5
           fi
           base_lines=$(wc -l < /tmp/baseline.exp)
           echo "lines=$base_lines" >> "$GITHUB_OUTPUT"
@@ -192,19 +192,19 @@ jobs:
       # ----------------------------------------------------------------
       # PR head generation
       # ----------------------------------------------------------------
-      - name: Generate EXPRESS (+ XSD) from PR head
+      - name: Generate EXPRESS and XSD from PR head
         id: gen_express
         run: |
           cd code
           python -m generators.express ../schemas/ifc4x3_add2.uml \
-            -o /tmp/pr.exp \
-            --with-xsd --xsd-output /tmp/pr.xsd 2>&1 | tee /tmp/express.log | tail -50 || true
+            -o /tmp/pr.exp 2>&1 | tee /tmp/express.log | tail -50 || true
           if [ ! -f /tmp/pr.exp ]; then
             echo "::error::generators.express did not produce /tmp/pr.exp"
             echo "--- last 80 lines of full output ---"
             tail -80 /tmp/express.log
             exit 1
           fi
+          python -m generators.xsd /tmp/pr.exp /tmp/pr.xsd 2>&1 | tee -a /tmp/express.log | tail -5 || true
           echo "lines=$(wc -l </tmp/pr.exp)" >> "$GITHUB_OUTPUT"
           echo "tail=$(tail -1 /tmp/pr.exp)" >> "$GITHUB_OUTPUT"
 
@@ -542,7 +542,6 @@ jobs:
             /tmp/pr.exp
             /tmp/baseline.exp
             /tmp/pr.xsd
-            /tmp/baseline.xsd
             /tmp/express_diff.md
             /tmp/schema_shacl.log
             output/shacl-result.md

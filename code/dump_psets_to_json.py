@@ -5,7 +5,7 @@ import operator
 
 from collections import defaultdict
 
-import xml_dict
+from generators.util import xml_dict
 
 enumeration_properties = {}
 complex_properties = {}

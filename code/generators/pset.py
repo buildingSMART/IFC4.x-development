@@ -211,7 +211,7 @@ def construct_xml(xmi_doc, pset, path, by_id, by_name):
                 .toprettyxml(indent="  ")
         )
         
-def run(xmi_doc, path):
+def write_psd(xmi_doc, path):
     psets = []
     by_id = {}
     by_name = {}
@@ -229,6 +229,12 @@ def run(xmi_doc, path):
         construct_xml(xmi_doc, item, path, by_id, by_name)
             
             
+def run(doc, output_dir: Path) -> None:
+    psd_dir = output_dir / "psd"
+    psd_dir.mkdir(parents=True, exist_ok=True)
+    write_psd(doc, str(psd_dir))
+
+
 def compare(path1, path2, output):
     with open(output, "w") as f:
         fn1, fn2 = map(lambda fn: list(map(os.path.basename, glob.glob(os.path.join(fn, "*.xml")))), (path1, path2))
@@ -250,7 +256,7 @@ def compare(path1, path2, output):
             print(p, file=sys.stderr)
             data = subprocess.check_output([
                 sys.executable,
-                str(CODE_DIR / "compare_pset.py"),
+                str(Path(__file__).parent / "util" / "compare_pset.py"),
                 os.path.join(path1, p),
                 os.path.join(path2, p)])
             if data:
@@ -297,7 +303,7 @@ def main(argv=None):
     if args.schema is None:
         parser.error("schema is required unless --compare is used")
 
-    run(xmi_document(str(args.schema)), str(args.output))
+    write_psd(xmi_document(str(args.schema)), str(args.output))
 
 
 if __name__ == "__main__":
