@@ -54,24 +54,9 @@ def main(argv=None):
         default=REPO_ROOT / "output" / "IFC.exp",
         help="Path to the generated EXPRESS file.",
     )
-    parser.add_argument(
-        "--with-xsd",
-        action="store_true",
-        help="Also generate an XSD file from the generated EXPRESS schema.",
-    )
-    parser.add_argument(
-        "--xsd-output",
-        type=Path,
-        default=None,
-        help="Path to the generated XSD file. Defaults to the EXPRESS output path with a .xsd suffix.",
-    )
     args = parser.parse_args(argv)
 
     write_express(xmi_document(str(args.schema)), args.output)
-    if args.with_xsd:
-        from . import xsd
-
-        xsd.write_xsd(args.output, args.xsd_output or args.output.with_suffix(".xsd"))
 
 
 if __name__ == "__main__":
