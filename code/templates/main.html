@@ -1,3 +1,5 @@
+{# Typeform id of the IFC 4.4 consultation form (preview builds only) #}
+{% set feedback_form = '01M4CDRS1XR9AX6GHFRRZ6XXAK' %}
 <html lang="en">
 <head>
     <link rel="stylesheet" href="{{ relative_base }}/assets/css/mini-default.css">
@@ -127,7 +129,12 @@
                 {% if path %}
                 <div class="card fluid shadowed">
                     <p>
+                        {% if status == 'PREVIEW' %}
+                        {# public consultation: feedback goes to a Typeform popup, not to GitHub edits #}
+                        <button class="button primary" data-tf-popup="{{ feedback_form }}" data-tf-opacity="100" data-tf-size="70" data-tf-iframe-props="title=IFC 4.4 feedback"><span data-feather="message-square"></span> Give feedback on IFC 4.4</button>
+                        {% else %}
                         <a class="button primary edit-github" href='https://github.com/{{ repo or target_repo }}/blob/{{ branch }}/{{ path }}'><span class="icon-edit inverse"></span> Edit on Github</a>
+                        {% endif %}
                     </p>
                     <p>
                         <small>
@@ -223,6 +230,7 @@
         };
     </script>
     <script src="{{ base }}/assets/lib/feather-icons/feather.min.js"></script>
+    {% if status == 'PREVIEW' %}<script src="//embed.typeform.com/next/embed.js"></script>{% endif %}
     <script id="MathJax-script" async src="{{ base }}/assets/lib/mathjax/tex-mml-svg.js"></script>
     {% block pagescripts %}{% endblock %}
     <script type="text/javascript" src="{{ base }}/assets/js/app.js"></script>

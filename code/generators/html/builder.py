@@ -443,6 +443,7 @@ class StaticTemplateRenderer(markdown_mixin):
             "get_page_history": lambda path: page_history(context.get("repo_dir", self.config.repo_root), path),
             "header_color": color,
             "status_message": version.status_message,
+            "status": version.status,
         }
         payload.update(context)
         return payload
