@@ -8,9 +8,12 @@ _IfcBuildingElementProxy_ may be used:
 * To exchange special types of building elements for which the current specification does not yet provide a semantic definition.
 * To represent building elements for which the participating applications can not provide a semantic definition.
 
+> HISTORY  New entity in IFC2x.
+
 > IFC4.3.0.0 CHANGE _IfcBuildingElementProxy_ should no longer be used as spatial placeholders or provisions. Use _IfcVirtualElement_ instead.
 
-> HISTORY New entity in IFC2x.
+> NOTE  It is advised not to use _IfcBuildingElementProxy_ to represent an arbitrary built element, but to use a direct instantiation of _IfcBuiltElement_ instead.
+
 
 ## Attributes
 

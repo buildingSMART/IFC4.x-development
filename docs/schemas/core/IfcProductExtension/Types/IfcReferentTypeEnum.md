@@ -12,7 +12,7 @@ Kilo point.
 Mile point.
 
 ### STATION
-Station.
+A referent that defines the stationing (chainage) system along a linear element, either by establishing the station origin or by recording a station equation (gap or overlap discontinuity) where stationing is non-continuous.
 
 ### REFERENCEMARKER
 The reference marker is a notation referent, typically located in the right of way of the road, rail or other transportation system. Usually reference markers are initially spaced at a uniform distance along the linear element being measured, though subsequent re-alignments can result in uneven spacing between the markers.
