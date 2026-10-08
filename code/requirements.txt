@@ -1,7 +1,4 @@
-# Web / runtime / services 
-Flask 
-gunicorn
-redis
+# Runtime
 cachetools
 
 # HTML / parsing 
@@ -17,10 +14,6 @@ xmlschema
 Babel
 polib
 python-slugify
-
-# Search 
-pysolr         
-solrq        
 
 # Graphs / diagrams
 pydot

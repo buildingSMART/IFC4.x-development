@@ -34,7 +34,7 @@ def test_build_cache_first_and_incremental(tmp_path, monkeypatch):
     monkeypatch.setenv("PO_HASH_PATH", po_hash.as_posix())
 
     # Import fresh module after setting env
-    translate = importlib.import_module("translate")
+    translate = importlib.import_module("generators.html.translate")
     importlib.reload(translate)
 
     # 1) create a minimal .po (Dutch)
@@ -66,6 +66,7 @@ def test_build_cache_first_and_incremental(tmp_path, monkeypatch):
         "IfcWall_DEFINITION": "Definitie",
     })
     rc2 = translate.build_cache(jobs=JOBS, pool="thread")
+    translate.clear_translation_caches()
     assert rc2 == 0
 
     out2 = translate.translate_resource("Dutch", "IfcWall")
@@ -84,7 +85,7 @@ def test_compiled_lang_dir_for_and_iter_mo(tmp_path, monkeypatch):
     monkeypatch.setenv("TRANSLATIONS_BUILD_DIR", build.as_posix())
     monkeypatch.setenv("PO_HASH_PATH", po_hash.as_posix())
 
-    translate = importlib.import_module("translate")
+    translate = importlib.import_module("generators.html.translate")
     importlib.reload(translate)
 
     po_nl = src / "nl-NL" / "IfcDoor_(Dutch).po"
@@ -116,7 +117,7 @@ def test_list_languages_cached(tmp_path, monkeypatch):
     
     monkeypatch.setenv("LANG_MAP_TTL", "1")
 
-    translate = importlib.import_module("translate")
+    translate = importlib.import_module("generators.html.translate")
     importlib.reload(translate)
 
     write_po(src / "nl-NL" / "IfcWall_(Dutch).po", {"IfcWall": "Wand"})
@@ -152,9 +153,9 @@ def test_build_cache_against_live_repo(tmp_path, monkeypatch):
     monkeypatch.setenv("TRANSLATIONS_BUILD_DIR", build.as_posix())
     monkeypatch.setenv("PO_HASH_PATH", po_hash.as_posix())
 
-    if "translate" in sys.modules:
-        del sys.modules["translate"]
-    translate = importlib.import_module("translate")
+    if "generators.html.translate" in sys.modules:
+        del sys.modules["generators.html.translate"]
+    translate = importlib.import_module("generators.html.translate")
 
     rc = translate.build_cache(clean=True, jobs=JOBS, pool="process")
     assert rc == 0

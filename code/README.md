@@ -89,13 +89,6 @@ Process](https://github.com/buildingSMART/IFC4.3.x-development/wiki/IFC-4.3.x-Ch
 
 ### Website
 
- - **Preprocessor** - The _Schema_ cannot be immediately accessed by the web
-   application due to its complexity. This requires a preprocessing step in
-   `code/create_resources.sh`.  This breaks down the complex UML / XMI data into
-   simple JSON data that the website can query.
- - **Backend** - The website itself is a Python Flask application which begins
-   in `server.py`. This website renders the preprocessed _Schema_ data
-   with _Documentation_ using _Frontend_ templates.
  - **Frontend** - The _Documentation_ is turned into a website
    layout using templates. Templates are defined in HTML templates in
    `code/templates/`, as well as CSS, Javascript, and images in `docs/assets/`
@@ -392,19 +385,12 @@ See an [example diagram on a live page](http://ifc43-docs.standards.buildingsmar
 
 ## Dependencies
 
-See `Dockerfile` for more detail on how these dependencies are set up.
-
 System dependencies:
 
- * `docker` - container management (optional)
  * `graphviz` - diagram generator
- * `gunicorn` - http server (optional)
  * `ifcopenshell` - used in a minor capacity which can probably be removed in the future
  * `imagemagick` - automatic image conversion
  * `python` - to run the website
- * `redis` - database for building indexes (optional)
- * `solr` - search database (optional)
- * `supervisord` - process control (optional)
 
 Python modules are all captured in `requirements.txt`
 
