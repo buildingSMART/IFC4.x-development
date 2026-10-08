@@ -56,7 +56,6 @@ The depth of the transom is identical to the depth of the lining and not given a
 
 > HISTORY New entity in IFC2.0. Has been renamed from _IfcDoorLining_ in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The following attributes have been added _LiningToPanelOffsetX_, _LiningToPanelOffsetY_. The attribute _ShapeAspectStyle_ is deprecated and shall no longer be used. Supertype changed to new _IfcPreDefinedPropertySet_.
 
 > IFC4.3.2.0 DEPRECATION This entity, and most other subtypes of IfcPreDefinedPropertySet, are now deprecated. Use Pset_DoorLiningProperties instead.
@@ -68,7 +67,6 @@ Depth of the door lining, measured perpendicular to the plane of the door lining
 
 ### LiningThickness
 Thickness of the door lining as explained in the figure above. If _LiningThickness_ value is 0. (zero) it denotes a door without a lining (all other lining parameters shall be set to NIL in this case). If the _LiningThickness_ is NIL it denotes that the value is not available.
-{ .change-ifc2x4}
 > IFC4 CHANGE Data type modified to be _IfcNonNegativeLengthMeasure_.
 
 ### ThresholdDepth
@@ -76,13 +74,11 @@ Depth (dimension in plane perpendicular to door leaf) of the door threshold. Onl
 
 ### ThresholdThickness
 Thickness of the door threshold as explained in the figure above. If _ThresholdThickness_ value is 0. (zero) it denotes a door without a threshold (_ThresholdDepth_ shall be set to NIL in this case). If the _ThresholdThickness_ is NIL it denotes that the information about a threshold is not available.
-{ .change-ifc2x4}
 > IFC4 CHANGE Data type modified to be _IfcNonNegativeLengthMeasure_.
 
 ### TransomThickness
 Thickness (width in plane parallel to door leaf) of the transom (if provided - that is, if the _TransomOffset_ attribute is set), which divides the door leaf from a glazing (or window) above.
 If the _TransomThickness_ is set to zero (and the _TransomOffset_ set to a positive length), then the door is divided vertically into a leaf and transom window area without a physical frame.
-{ .change-ifc2x4}
 > IFC4 CHANGE Data type changed to _IfcNonNegativeLengthMeasure_.
 
 ### TransomOffset
@@ -102,17 +98,14 @@ Depth of the casing (dimension in plane perpendicular to door leaf). If given it
 
 ### ShapeAspectStyle
 Pointer to the shape aspect, if given. The shape aspect reflects the part of the door shape, which represents the door lining.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute is deprecated and shall no longer be used, i.e. the value shall be NIL ($).
 
 ### LiningToPanelOffsetX
 Offset between the lining and the window panel measured along the x-axis of the local placement.
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute added at the end of the entity definition.
 
 ### LiningToPanelOffsetY
 Offset between the lining and the door panel measured along the y-axis of the local placement.
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute added at the end of the entity definition.
 
 ## Formal Propositions
@@ -121,14 +114,12 @@ Offset between the lining and the door panel measured along the y-axis of the lo
 Either both parameter, _LiningDepth_ and _LiningThickness_ are given, or only the _LiningThickness_, then the _LiningDepth_ is variable. It is not valid to only assert the _LiningDepth_.
 > NOTE A _LiningDepth_ with NIL ($) value indicates a door style with a lining equal to the wall thickness.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Rule corrected.
 
 ### WR32
 Either both parameter, _ThresholdDepth_ and _ThresholdThickness_ are given, or only the _ThresholdThickness_, then the _ThresholdDepth_ is variable. It is not valid to only assert the _ThresholdDepth_.
 > NOTE A _ThresholdDepth_ with NIL ($) value indicates a door style with a lining equal to the wall thickness.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Rule corrected.
 
 ### WR33

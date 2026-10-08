@@ -7,7 +7,6 @@ The entity _IfcRelConnectsWithEccentricity_ adds the definition of eccentricity 
 
 > HISTORY New entity in IFC2x3.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Use definitions changed to always require two topology items.
 
 **Use Definition**

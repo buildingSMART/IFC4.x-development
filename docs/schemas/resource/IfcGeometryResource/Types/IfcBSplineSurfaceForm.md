@@ -3,7 +3,6 @@
 The _IfcBSplineSurfaceForm_ represents a part of a surface of some specific form.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > This type is used to indicate that the B-spline surface represents a part of a surface of some specific form.
 

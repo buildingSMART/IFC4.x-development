@@ -5,7 +5,6 @@ An _IfcWorkSchedule_ represents a task schedule of a work plan, which in turn ca
 
 > HISTORY New entity in IFC2.0.
 
-{ .use-head}
 Declaration Use Definition
 
 _IfcWorkSchedule_ can reference a project (the single _IfcProject_ instance) via _IfcRelDeclares_.

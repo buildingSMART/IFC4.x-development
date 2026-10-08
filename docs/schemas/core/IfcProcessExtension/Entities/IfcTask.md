@@ -9,20 +9,16 @@ Quantities of resources consumed by the task are dealt with by defining the _Ifc
 
 > HISTORY New entity in IFC1.0. Renamed from _IfcWorkTask_ in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attributes _TaskTime_ and _PredefinedType_ added. _IfcMove_ and _IfcOrderRequest_ have been removed in IFC4 and are now represented by _IfcTask_. _IfcRelAssignsTasks_ relationship has been removed as well.
 
-{ .use-head}
 ### Attribute use definition
 
 Each occurrence of _IfcTask_ is given a name that is indicative of its content (_IfcRoot.Name_). A textual description of the task may be provided and this may be further elaborated by a narrative long description (_IfcProcess.LongDescription_). A work method may be declared for the method of work used in carrying out a task. A task is identified as being either a milestone task or not. A milestone task is defined by the marker _IsMilestone_. and has no duration. A status and priority for each task may also be set.
 
-{ .use-head}
 ### Time and duration use definition
 
 Compared to previous IFC releases, basic task time information (scheduled start time, scheduled finish time, duration) is now directly attached to _IfcTask_ through the _TaskTime_ attribute. Regular tasks are defined through _IfcTaskTime_. Recurring tasks are defined through _IfcTaskTimeRecurring_. In case a regular task is derived from a recurring task both tasks should be linked together through a _IfcRelNests_ relationship, where _IfcRelNests.IsNestedBy_ points to the recurring task and _IfcRelNests.Nests_ points to all regular tasks that have been derived from the recurring task.
 
-{ .use-head}
 ### Representation of other activities
 
 The use definitions for _IfcTask_ have been generalised to represent other activities as well, including activities that had been defined by own entities in previous IFC releases. This includes
@@ -61,13 +57,11 @@ A value that indicates the relative priority of the task (in comparison to the p
 ### TaskTime
 Time related information for the task.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute added
 
 ### PredefinedType
 Identifies the predefined types of a task from which the type required may be set.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute added
 
 ## Formal Propositions

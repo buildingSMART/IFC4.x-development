@@ -3,7 +3,6 @@
 The _IfcBSplineCurveForm_ represents a part of a curve of some sppecific form.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > This type is used to indicate that the B-spline curve represents a part of a curve of some specific form.
 

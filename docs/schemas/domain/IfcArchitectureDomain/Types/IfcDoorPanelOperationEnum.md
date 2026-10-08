@@ -11,7 +11,6 @@ The opening direction of the door panels is given by the local placement of the 
 
 > HISTORY New enumeration in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Enumerator FIXEDPANEL added.
 
 ## Items

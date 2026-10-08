@@ -5,7 +5,6 @@ A cooled beam (or chilled beam) is a device typically used to cool air by circul
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

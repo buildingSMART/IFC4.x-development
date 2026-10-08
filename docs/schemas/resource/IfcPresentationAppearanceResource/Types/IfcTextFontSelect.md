@@ -7,5 +7,4 @@ _IfcTextFontSelect_ allows for either a predefined text font, a text font model 
 
 > HISTORY New select type in IFC2x2.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The select type has been renamed from IfcFontSelect.

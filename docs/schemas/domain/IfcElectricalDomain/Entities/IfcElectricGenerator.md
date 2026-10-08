@@ -5,7 +5,6 @@ An electric generator is an engine that is a machine for converting mechanical e
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

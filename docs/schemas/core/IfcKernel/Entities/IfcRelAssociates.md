@@ -15,12 +15,10 @@ The association relationship establishes an association between one to many obje
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Entity has been changed into an ABSTRACT supertype
 
 ## Attributes
 
 ### RelatedObjects
 Set of object or property definitions to which the external references or information is associated. It includes object and type objects, property set templates, property templates and property sets and contexts.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute datatype has been changed from _IfcRoot_ to _IfcDefinitionSelect_.

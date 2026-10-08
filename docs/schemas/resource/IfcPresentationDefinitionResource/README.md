@@ -17,4 +17,4 @@ The following is within the scope of the presentation resource schemas:
 * support of textures aüülied to surfaces and csg primitives;
 * image control by a layer mechanism.
 
-> NOTE  The definitions of this resource of the IFC model have been taken from [ISO 10303-46](../content/bibliography.htm#iso-10303-46){ .int-ref}. The _IfcPresentationDefinitionResource_ refers to the clause 5, "Presentation definition" of the standard.
+> NOTE  The definitions of this resource of the IFC model have been taken from [ISO 10303-46](../content/bibliography.htm#iso-10303-46). The _IfcPresentationDefinitionResource_ refers to the clause 5, "Presentation definition" of the standard.

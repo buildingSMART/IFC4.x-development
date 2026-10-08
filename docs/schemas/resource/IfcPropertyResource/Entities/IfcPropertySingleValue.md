@@ -19,10 +19,8 @@ Table 1 — Single value properties with values, measure types and units
 
 > HISTORY  New entity in IFC1.0.
 
-{ .change-ifc2x}
 > IFC2x CHANGE Entity has been renamed from IfcSimpleProperty.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE  Attribute _NominalValue_ has been made OPTIONAL with upward compatibility for file based exchange.
 
 ## Attributes
@@ -31,7 +29,6 @@ Table 1 — Single value properties with values, measure types and units
 Value and measure type of this property.
 > NOTE By virtue of the defined data type, that is selected from the SELECT _IfcValue_, the appropriate unit can be found within the _IfcUnitAssignment_, defined for the project if no value for the unit attribute is given.
 
-{ .note}
 > IFC2x3 CHANGE The attribute has been made optional with upward compatibility for file based exchange.
 
 ### Unit

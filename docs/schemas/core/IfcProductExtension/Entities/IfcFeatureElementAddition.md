@@ -11,7 +11,6 @@ The local placement for _IfcFeatureElementAddition_ is defined in its supertype 
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x2}
 > IFC2x2 CHANGE The entity is introduced as an upward compatible extension of the IFC2x platform. It is an intermediate abstract supertype without defining its own explicit attributes.
 
 ## Attributes

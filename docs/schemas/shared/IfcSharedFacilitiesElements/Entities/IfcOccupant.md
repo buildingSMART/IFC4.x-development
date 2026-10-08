@@ -12,7 +12,6 @@ The principal purpose of **IfcOccupant** is to determine the nature of occupancy
 ### PredefinedType
 Predefined occupant types from which that required may be set.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute made optional.
 
 ## Formal Propositions

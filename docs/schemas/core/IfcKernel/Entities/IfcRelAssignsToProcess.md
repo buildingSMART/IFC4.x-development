@@ -11,14 +11,12 @@ The inherited attribute _RelatedObjects_ gives the references to the objects, or
 
 > HISTORY New entity in IFC1.5. Has been renamed from _IfcRelProcessOperatesOn_ in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The data type _RelatingProcess_ has been extended to cover also _IfcTypeProcess_
 
 ## Attributes
 
 ### RelatingProcess
 Reference to the process to which the objects are assigned.
-{ .change-ifc2x4}
 > IFC4 CHANGE Datatype expanded to include _IfcProcess_ and _IfcTypeProcess_.
 
 ### QuantityInProcess

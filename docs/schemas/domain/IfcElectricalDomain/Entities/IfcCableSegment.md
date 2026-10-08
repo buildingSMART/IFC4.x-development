@@ -7,7 +7,6 @@ A cable segment is used to typically join two sections of an electrical network 
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

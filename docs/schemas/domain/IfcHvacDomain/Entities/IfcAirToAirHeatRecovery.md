@@ -5,7 +5,6 @@ An air-to-air heat recovery device employs a counter-flow heat exchanger between
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

@@ -7,7 +7,6 @@ _IfcBoiler_ is a vessel solely used for heating of water or other fluids. Storag
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

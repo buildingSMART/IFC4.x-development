@@ -17,5 +17,4 @@ The _IfcDateTimeResource_ schema defines several generic date and time specific 
 
 > HISTORY  This schema has been significantly modified in IFC4. The original concepts of _IfcDateTimeResource_ and _IfcTimeSeriesResource_ were introduced in IFC2.0 and IFC2x2 and merged into the _IfcDateTimeResource_ in IFC4.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE  The new types _IfcDate_, _IfcTime_, _IfcDateTime_ and _IfcDuration_ cancel and replace the previous entities _IfcCalendarDate_, _IfcDateAndTime_, _IfcLocalTime_, and _IfcCoordinatedUniversalTimeOffset_.

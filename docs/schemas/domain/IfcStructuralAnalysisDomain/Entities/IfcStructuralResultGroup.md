@@ -5,7 +5,6 @@ Instances of the entity _IfcStructuralResultGroup_ are used to group results of 
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE WHERE rule added.
 
 ## Attributes

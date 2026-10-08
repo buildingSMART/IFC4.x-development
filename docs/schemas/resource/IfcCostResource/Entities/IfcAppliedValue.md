@@ -13,7 +13,6 @@ Applied values may be referenced from a document (such as a price list). The rel
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Entity made non-abstract to support general formula expressions of constraints, data type of date-based attributes changed into _IfcDate_, _ValueType_ and _Condition_ promoted from _IfcCostValue_, _Components_ and _ArithmeticOperator_ attributes added to replace _IfcAppliedValueRelationship_ for more efficient encoding and reference tracking.
 
 **Informal Propositions**
@@ -40,12 +39,10 @@ Note: This attribute should be asserted for all circumstances where the cost to 
 
 ### ApplicableDate
 The date on or from which an applied value is applicable.
-{ .change-ifc2x4}
 > IFC4 CHANGE Type changed from IfcDateTimeSelect.
 
 ### FixedUntilDate
 The date until which applied value is applicable.
-{ .change-ifc2x4}
 > IFC4 CHANGE Type changed from IfcDateTimeSelect.
 
 ### Category
@@ -70,5 +67,4 @@ Optional component values from which _AppliedValue_ is calculated.
 
 ### HasExternalReference
 Reference to an external reference, e.g. library, classification, or document information, that is associated to the IfcAppliedValue.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute.

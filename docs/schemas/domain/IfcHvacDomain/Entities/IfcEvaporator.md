@@ -5,7 +5,6 @@ An evaporator is a device in which a liquid refrigerent is vaporized and absorbs
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

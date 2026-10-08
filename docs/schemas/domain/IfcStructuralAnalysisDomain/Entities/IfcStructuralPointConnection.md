@@ -5,7 +5,6 @@ Instances of _IfcStructuralPointConnection_ describe structural nodes or point s
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _ConditionCoordinateSystem_ added, allowing for skewed supports. Use definitions added.
 
 ****Coordinate Systems****:

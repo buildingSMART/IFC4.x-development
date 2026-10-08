@@ -5,7 +5,6 @@ An _IfcVector_ is a geometric representation item having both a magnitude and di
 
 > NOTE The _DirectionRatios_ of the _Orientation_ attribute are not used to define the magnitude.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > The vector is defined in terms of the direction and magnitude of the vector. The value of the magnitude attribute defines the magnitude of the vector. The magnitude of the vector can not be reliable calculated from the components of the orientation attribute. This form of representation was selected to reduce problems with numerical instability. For example a vector of magnitude 2.0 mm and equally inclined to the coordinate axes could be represented with Orientation attribute of (1.0,1.0,1.0).
 

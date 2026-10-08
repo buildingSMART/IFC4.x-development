@@ -5,7 +5,6 @@ A light fixture is a container that is designed for the purpose of housing one o
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

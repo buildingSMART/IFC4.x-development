@@ -30,8 +30,6 @@ The following material properties and information sets can be assigned to an _If
 
 > HISTORY  New schema in IFC1.0
 
-{ .change-ifc2x4}
 > IFC4 CHANGE  Definition of material properties and their assignment to _IfcMaterial_ or other appropriate options in _IfcMaterialSelect_ is now fully captured by _IfcMaterialProperties_ using the general _IfcProperty_ approach. Specific predefined subtypes of _IfcMaterialProperties_ are no longer available.
 
-{ .deprecated}
 > DEPRECATION  Material designation by using _IfcMaterialList_ is deprecated and should not be used. The classification of materials should not be done using _IfcMaterialClassificationRelationship_ anymore (entity type deprecated); the _IfcExternalReferenceRelationship_ in _IfcExternalReferenceResource_ schema should be used instead.

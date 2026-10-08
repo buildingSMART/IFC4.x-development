@@ -15,34 +15,27 @@ An _IfcTextStyle_ is assigned to _IfcTextLiteral_ through the _IfcStyledItem_ en
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The _IfcTextStyle_ has been changed by adding _TextFontStyle_ and different data types for _TextStyle_ and _IfcTextCharacterAppearance_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The _IfcTextStyle_ has been simplified by removing old vector based text style definitions.
 
 ## Attributes
 
 ### TextCharacterAppearance
 A character style to be used for presented text.
-{ .change-ifc2x4}
 > IFC4 CHANGE Superfluous select type IfcCharacterStyleSelect has been removed.
 
 ### TextStyle
 The style applied to the text block for its visual appearance.
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The attribute _TextBlockStyle_ has been changed from SET[1:?] to a non-aggregated optional and renamed into _TextStyles_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The IfcTextStyleWithBoxCharacteristics and the now superfluous select type IfcTextStyleSelect have been removed.
 
 ### TextFontStyle
 The style applied to the text font for its visual appearance. It defines the font family, font style, weight and size.
 
-{ .change-ifc2x2}
 > IFC2x2 Add2 CHANGE The attribute _TextFontStyle_ is a new attribute attached to _IfcTextStyle_.
 
 ### ModelOrDraughting
 Indication whether the length measures provided for the presentation style are model based, or draughting based.
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute.

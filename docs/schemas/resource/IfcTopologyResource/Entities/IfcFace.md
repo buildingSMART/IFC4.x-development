@@ -5,7 +5,6 @@ An _IfcFace_ is topological entity used to define surface, bounded by loops, of 
 
 > NOTE In a correctly constructed boundary representation model the face normals will point out of the solid and every single edge is used twice once forwards and once backwards. The face normal is solely defined by the consecutive orientations of the _IfcEdge_'s and _IfcOrientedEdge_'s that bound the face. If all the edges of the face are connected in a counter clockwise manner following the edge orientations the face normal will point outward. The orientation of the _IfcFaceSurface_, or the value of the _IfcFaceSurface.SameSense_ attribute have no effect on the orientation of the face.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A face is a topological entity of dimensionality 2 corresponding to the intuitive notion of a piece of surface bounded by loops. Its domain, if present, is an oriented, connected, finite 2-manifold in _R^m^_. A face domain shall not have handles but it may have holes, each hole bounded by a loop. The domain of the underlying geometry of the face, if present, does not contain its bounds, and 0 < Ξ < ∞.
 >

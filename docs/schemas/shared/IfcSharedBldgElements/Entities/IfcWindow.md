@@ -49,14 +49,12 @@ Overall measure of the width, it reflects the X Dimension of a bounding box, enc
 Predefined generic type for a window that is specified in an enumeration. There may be a property set given specifically for the predefined types.
 > NOTE The _PredefinedType_ shall only be used, if no _IfcWindowType_ is assigned, providing its own _IfcWindowType.PredefinedType_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added at the end of the entity definition.
 
 ### PartitioningType
 Type defining the general layout of the window in terms of the partitioning of panels.
 > NOTE The _PartitioningType_ shall only be used, if no type object _IfcWindowType_ is assigned, providing its own _IfcWindowType.PartitioningType_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added at the end of the entity definition.
 
 ### UserDefinedPartitioningType

@@ -13,7 +13,6 @@ As shown in Figure 1, the pyramid is positioned within its own placement coordin
 
 > HISTORY New entity in IFC2x3
 
-{ .use-head}
 Texture use definition
 
 On each triangular side face, textures are aligned facing upright. Textures are stretched or repeated to the extent of the base of each face according to RepeatS. Textures are stretched or repeated towards the top point according to Repeat T, where the top point has coordinates of (0.5,1.0) if RepeatT is False.
@@ -22,7 +21,6 @@ On the bottom face, textures are aligned facing front-to-back.
 
 Figure 2 illustrates default texture mapping with a clamped texture (RepeatS=False and RepeatT=False). The image on the left shows the texture where the S axis points to the right and the T axis points up. The image on the right shows the texture applied to the geometry where the X axis points back to the right, the Y axis points back to the left, and the Z axis points up.
 
-{ .gridtable}
 
 ![texture](../../../../figures/ifcrectangularpyramid-texture.png)
 

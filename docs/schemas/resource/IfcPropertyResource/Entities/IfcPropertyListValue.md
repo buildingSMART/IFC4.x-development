@@ -20,14 +20,12 @@ Table 1 — List property with values, measure types and units
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _ListValues_ has been made OPTIONAL with upward compatibility for file based exchange.
 
 ## Attributes
 
 ### ListValues
 List of property values.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been made optional with upward compatibility for file based exchange.
 
 ### Unit

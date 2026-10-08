@@ -7,7 +7,6 @@ The _IfcOrganizationRelationship_ establishes an association between one relatin
 
 > HISTORY New entity in IFC2x
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attributes _Name_ and _Description_ promoted to new supertype _IfcResourceLevelRelationship_.
 
 ## Attributes

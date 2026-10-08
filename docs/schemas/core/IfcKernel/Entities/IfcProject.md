@@ -15,7 +15,6 @@ The context provided by the _IfcProject_ includes:
 
 > HISTORY New entity in IFC1.0
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attributes _RepresentationContexts_ and _UnitsInContext_ are made optional and are promoted to supertype _IfcContext_.
 
 ## Formal Propositions

@@ -5,7 +5,6 @@ An electric flow storage device is a device in which electrical energy is stored
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

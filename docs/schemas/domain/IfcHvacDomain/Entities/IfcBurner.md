@@ -5,7 +5,6 @@ A burner is a device that converts fuel into heat through combustion. It include
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

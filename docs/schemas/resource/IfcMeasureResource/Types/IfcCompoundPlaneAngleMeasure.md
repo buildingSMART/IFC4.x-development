@@ -11,7 +11,6 @@ _IfcCompoundPlaneAngleMeasure_ is a compound measure of plane angle in degrees, 
 
 Type: LIST [3:4] OF INTEGER
 
-{ .use-head}
 Value restrictions
 
 * The first integer measure is the number of degrees and is generally not range-restricted. However, when _IfcCompoundPlaneAngleMeasure_ is used to express geographic coordinates, only latitudes of [-90, 90] and longitudes of [-180, 180] are used in practice.
@@ -19,7 +18,6 @@ Value restrictions
 * The third integer measure is the number of seconds and shall be in the range (-60, 60).
 * The optional fourth integer measure is the number of millionth-seconds and shall be in the range (-1 000 000, 1 000 000).
 
-{ .use-head}
 Signedness
 
 All measure components have the same sign (positive or negative). It is therefore trivial to convert between floating point representation (decimal degrees) and compound representation regardless whether the angle is greater or smaller than zero. Example:
@@ -46,7 +44,6 @@ LOCAL
 > ```
 
 
-{ .use-head}
 Use in string representations
 
 When a compound plane angle measure is formatted for display or printout, the signs of the fractional components will usually be discarded because, to a human reader, the sign of the first component alone already indicates the sense of the angle:

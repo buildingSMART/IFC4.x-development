@@ -19,7 +19,6 @@ Figure 1 illustrates an example.
 
 ![disk solid](../../../../figures/ifcsweptdisksolid-layout1.png "Figure 1 — Swept disk solid geometry")
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A swept disk solid is the solid produced by sweeping a circular disk along a three dimensional curve. During the sweeping operation the normal to the plane of the circular disk is in the direction of the tangent to the directrix curve and the center of the disk lies on the directrix. The circular disk may, optionally, have a central hole, in this case the resulting solid has a through hole, or, an internal void when the directrix forms a close curve.
 
@@ -27,7 +26,6 @@ Figure 1 illustrates an example.
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _StartParam_ and _EndParam_ have been made optional.
 
 **Informal Propositions**
@@ -50,13 +48,11 @@ This attribute is optional, if present it defines the radius of a circular hole 
 ### StartParam
 The parameter value on the _Directrix_ at which the sweeping operation commences. If no value is provided the start of the sweeping operation is at the start of the _Directrix_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been changed to OPTIONAL with upward compatibility for file-based exchange.
 
 ### EndParam
 The parameter value on the _Directrix_ at which the sweeping operation ends. If no value is provided the end of the sweeping operation is at the end of the _Directrix_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been changed to OPTIONAL with upward compatibility for file-based exchange.
 
 ## Formal Propositions
@@ -70,5 +66,4 @@ If _InnerRadius_ exists then _Radius_ denoting the outer radius shall be greater
 ### DirectrixBounded
 If the values for _StartParam_ or _EndParam_ are omitted, then the _Directrix_ has to be a bounded or closed curve.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE New WHERE rule.

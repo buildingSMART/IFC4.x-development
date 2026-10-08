@@ -5,7 +5,6 @@ A duct fitting is a junction or transition in a ducted flow distribution system 
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

@@ -16,7 +16,6 @@ An _IfcTypeProduct_ may be exchanged without being already assigned to subtypes 
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The entity _IfcTypeProduct_ shall not be instantiated from IFC4 onwards. It will be changed into an ABSTRACT supertype in future releases of IFC.
 
 ## Attributes
@@ -29,7 +28,6 @@ The tag (or label) identifier at the particular type of a product, e.g. the arti
 
 ### ReferencedBy
 Reference to the _IfcRelAssignsToProduct_ relationship, by which other products, processes, controls, resources or actors (as subtypes of _IfcObjectDefinition_) can be related to this product type.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse relationship.
 
 ## Formal Propositions

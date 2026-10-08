@@ -9,7 +9,6 @@ For interpretation of the texture nodes see _IfcImageTexture_ definition.
 
 > HISTORY New entity in IFC2x3.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Data type of _RasterCode_ has been corrected to BINARY.
 
 ## Attributes

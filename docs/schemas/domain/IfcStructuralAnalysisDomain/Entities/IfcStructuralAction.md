@@ -5,10 +5,8 @@ A structural action is a structural activity that acts upon a structural item or
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _DestabilizingLoad_ made optional. Attribute _CausedBy_ deleted; use _IfcRelAssignsToProduct_ via _ReferencedBy_ instead.
 
-{ .use-head}
 Relationship use definition
 
 Structural actions are grouped into either an _IfcStructuralLoadGroup_ of predefined type LOAD_GROUP or, more often, an _IfcStructuralLoadCase_. This is accomplished via the inverse relationship _HasAssignments_ and an _IfcRelAssignsToGroup_ relationship object. _IfcStructuralLoadGroup.LoadGroupFor_ or _IfcStructuralLoadCase.LoadGroupFor_ respectively refers to the structural analysis model(s) in which the loads are used.

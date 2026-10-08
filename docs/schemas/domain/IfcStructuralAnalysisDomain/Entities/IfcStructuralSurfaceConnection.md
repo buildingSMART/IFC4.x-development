@@ -5,7 +5,6 @@ Instances of _IfcStructuralSurfaceConnection_ describe face 'nodes', i.e. faces 
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Use definitions added.
 
 ****Coordinate Systems****:

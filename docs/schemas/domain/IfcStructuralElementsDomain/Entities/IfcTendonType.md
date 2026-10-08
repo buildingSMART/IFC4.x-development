@@ -12,12 +12,10 @@ It is used to define a tendon type specification indicating the specific product
 
 > HISTORY New entity in IFC4.
 
-{ .use-head}
 Material Use Definition
 
 An associated material denotes the steel grade, preferably via material classification. A material constituent set or material profile set may be associated if the cable, bonding mortar or corrosion protection, and tendon sheeth are to be described together by the material association.
 
-{ .use-head}
 Geometry Use Definition
 
 The _IfcTendonType_ may define the shared geometric representation for many tendon occurrences. The _RepresentationMaps_ attribute refers to a list of _IfcRepresentationMap_'s, that allow for multiple geometric representations.

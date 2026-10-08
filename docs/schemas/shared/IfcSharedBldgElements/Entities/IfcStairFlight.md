@@ -11,31 +11,26 @@ An _IfcStairFlight_ is normally aggregated by an _IfcStair_ through the _IfcRelA
 
 ### NumberOfRisers
 Number of the risers included in the stair flight
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use _Pset_StairFlightCommon.NumberOfRisers_ instead.
 
 ### NumberOfTreads
 Number of treads included in the stair flight.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use _Pset_StairFlightCommon.NumberOfTreads_ instead.
 
 ### RiserHeight
 Vertical distance from tread to tread. The riser height is supposed to be equal for all stairs in a stair flight.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use _Pset_StairFlightCommon.RiserHeight_ instead.
 
 ### TreadLength
 Horizontal distance from the front to the back of the tread. The tread length is supposed to be equal for all steps of the stair flight.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been deprecated it shall only be exposed with a NIL value. Use _Pset_StairFlightCommon.TreadLength_ instead.
 
 ### PredefinedType
 Predefined generic type for a stair flight that is specified in an enumeration. There may be a property set given specifically for the predefined types.
 > NOTE The _PredefinedType_ shall only be used, if no _IfcStairFlightType_ is assigned, providing its own _IfcStairFlightType.PredefinedType_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added at the end of the entity definition.
 
 ## Formal Propositions

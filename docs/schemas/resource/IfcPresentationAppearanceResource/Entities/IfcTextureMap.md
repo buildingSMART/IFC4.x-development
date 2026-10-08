@@ -15,7 +15,6 @@ The _IfcTextureMap_ has a list of _TextureVertex_, that corresponds to the point
 
 Each _IfcTextureVertex_ (given as S, T coordinates of the 2-dimension texture coordinate system) corresponds to the geometric coordinates of the _IfcCartesianPoint_ (given as 3-dimension X, Y, and Z coordinates within the object coordinate system of the geometric item).
 
-{ .extDef}
 > NOTE Definition according to ISO/IEC 19775-1:
 > The TextureCoordinate node is a geometry property node that specifies a set of 2D texture coordinates used by vertex-based geometry nodes to map textures to vertices.
 
@@ -29,10 +28,8 @@ Figure 1 illustrates applying a texture map to a vertex based geometry.
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The attribute Texture is deleted, and the attribute TextureMaps is added.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute TextureMap is replaced by _Vertices_, and the attribute _AppliedTo_ is added.
 
 **Informal Propositions**

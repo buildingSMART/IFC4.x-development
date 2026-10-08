@@ -13,5 +13,4 @@ _IfcRelDefines_ is a generic and abstract relationship which subtypes are used t
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _RelatedObjects_ has been demoted to the subtypes _IfcRelDefinesByProperties_ and _IfcRelDefinesByType_.

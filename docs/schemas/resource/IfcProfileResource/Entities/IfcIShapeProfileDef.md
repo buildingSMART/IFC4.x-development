@@ -5,7 +5,6 @@ _IfcIShapeProfileDef_ defines a section profile that provides the defining param
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Type of _FilletRadius_ relaxed to allow for zero radius. Attributes _FlangeEdgeRadius_ and _FlangeSlope_ added.
 
 Figure 1 illustrates parameters of the I-shape profile definition.

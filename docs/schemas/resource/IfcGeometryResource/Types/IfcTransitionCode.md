@@ -11,7 +11,6 @@ Figure 1 illustrates transition types
 
 ![transition code](../../../../figures/ifctransitioncode.gif "Figure 1 — Transition code")
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > This type conveys the continuity properties of a composite curve or surface. The continuity referred to is geometric, not parametric continuity.
 

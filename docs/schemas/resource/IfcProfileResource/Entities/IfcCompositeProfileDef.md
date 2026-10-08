@@ -19,7 +19,6 @@ Or in case of sectioned spines it is the xy plane of each list member of _IfcSec
 
 ![composite](../../../../figures/ifccompositeprofiledef-layout1.gif "Figure 314")
 
-{ .use-head}
 Twin profiles special case
 
 If twin profiles are modeled by profile composition, the base profile should only be specified once. It is then included into the composite profile directly and additionally indirectly via _IfcMirroredProfileDef_. For example, a double angle made of two L100x10 with 10mm air gap between them, i.e. a _| |_ shape, can be modeled as

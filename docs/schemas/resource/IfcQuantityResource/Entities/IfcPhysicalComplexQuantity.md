@@ -9,7 +9,6 @@ A section "Quantity Use Definition" at individual entities as subtypes of _IfcBu
 
 > HISTORY New entity in IFC2x2 Addendum 1.
 
-{ .change-ifc2x2}
 > IFC2x2 ADDENDUM 1 CHANGE The entity _IfcPhysicalComplexQuantity_ has been added. Upward compatibility for file based exchange is guaranteed.
 
 ## Attributes

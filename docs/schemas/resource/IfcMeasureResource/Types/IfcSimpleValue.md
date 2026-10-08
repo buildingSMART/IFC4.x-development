@@ -23,7 +23,6 @@ SELECT
 
 > _HISTORY New type in IFC2x._
 
-{ .change-ifc2x4}
 > _IFC4 CHANGE Items _IfcBinary_,
    _IfcDate_, _IfcDateTime_, _IfcDuration_,
    _IfcPositiveInteger_, _IfcTime_, _IfcTimeStamp_ added._

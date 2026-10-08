@@ -13,7 +13,6 @@ The planar extent defines the box model within which the text is placed. Padding
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The _IfcTextLiteralWithExtent_ has been changed by adding _BoxAlignment_.
 
 ## Attributes

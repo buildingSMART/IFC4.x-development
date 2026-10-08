@@ -7,7 +7,6 @@ The objectified relationship _IfcRelConnectsPorts_ is required for defining how 
 
 > HISTORY New entity in IFC2.0, modified in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Previously the containment of the _IfcPort_ within the _IfcDistributionElement_ had been realized using the _IfcRelConnectsPortToElement_ relationship.
 
 ## Attributes

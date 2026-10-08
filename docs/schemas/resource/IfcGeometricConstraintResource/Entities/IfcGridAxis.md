@@ -28,22 +28,18 @@ Defines whether the original sense of curve is used or whether it is reversed in
 
 ### PartOfW
 If provided, the _IfcGridAxis_ is part of the _WAxes_ of _IfcGrid_.
-{ .change-ifc2x3}
 > IFC2x3 CHANGE New inverse attribute.
 
 ### PartOfV
 If provided, the _IfcGridAxis_ is part of the _VAxes_ of _IfcGrid_.
-{ .change-ifc2x3}
 > IFC2x3 CHANGE New inverse attribute.
 
 ### PartOfU
 If provided, the _IfcGridAxis_ is part of the _UAxes_ of _IfcGrid_.
-{ .change-ifc2x3}
 > IFC2x3 CHANGE New inverse attribute.
 
 ### HasIntersections
 The reference to a set of <IfcVirtualGridIntersection's, that connect other grid axes to this grid axis.
-{ .change-ifc2x3}
 > IFC2x3 CHANGE New inverse attribute.
 
 ## Formal Propositions

@@ -5,7 +5,6 @@ A tube bundle is a device consisting of tubes and bundles of tubes used for heat
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

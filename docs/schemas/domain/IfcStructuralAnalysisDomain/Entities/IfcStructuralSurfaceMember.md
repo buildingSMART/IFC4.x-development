@@ -5,7 +5,6 @@ Instances of _IfcStructuralSurfaceMember_ describe face members, that is, struct
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Use definitions changed, WHERE rule added.
 
 ****Coordinate Systems****:

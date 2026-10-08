@@ -7,7 +7,6 @@ A fire suppression terminal provides for all forms of sprinkler, spreader and ot
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

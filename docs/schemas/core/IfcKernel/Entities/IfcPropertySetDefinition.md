@@ -15,7 +15,6 @@ Property set definitions define information that is shared among multiple instan
 
 > HISTORY New entity in IFC2x
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The subtype _IfcPreDefinedPropertySet_ has been added.
 
 ## Attributes
@@ -24,15 +23,12 @@ Property set definitions define information that is shared among multiple instan
 The type object to which the property set is assigned. The property set acts as a shared property set to all occurrences of the type object.
 > NOTE The relationship between the _IfcPropertySetDefinition_ and the _IfcTypeObject_ is a direct relationship, not utilizing _IfcRelDefinesByProperties_, for maintaining compatibility with earlier releases of this standard.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The cardinality has been changed from 0..1 to 0..n with upward compatibility for file-based exchange.
 
 ### IsDefinedBy
 Relation to the property set template, via the objectified relationship _IfcRelDefinesByTemplate_, that, if given, provides the definition template for the property set or quantity set and its properties.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse relationship, change made with upward compatibility for file-based exchange.
 
 ### DefinesOccurrence
 Reference to the relation to one or many object occurrences that are characterized by the property set definition. A single property set can be assigned to multiple object occurrences using the objectified relationship _IfcRelDefinesByProperties_.
-{ .change-ifc2x4}
 > IFC4 CHANGE Inverse attribute renamed from _PropertyDefinitionOf_ with upward compatibility for file-based exchange.

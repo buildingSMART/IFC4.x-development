@@ -9,7 +9,6 @@ The TextureCoordinateGenerator supports the automatic generation of texture coor
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x2}
 > IFC2x2 Add2 CHANGE The attribute Texture has been deleted.
 
 ## Attributes
@@ -22,7 +21,6 @@ The _Mode_ attribute describes the algorithm used to compute texture coordinates
 
 ### Parameter
 The parameters used as arguments by the function as specified by _Mode_.
-{ .change-ifc2x4}
 > IFC4 CHANGE : Data type restricted to REAL.
 
 > IFC4.3.0.0 DEPRECATION This attribute is deprecated and shall no longer be used.
