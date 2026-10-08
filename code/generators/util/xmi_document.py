@@ -657,5 +657,5 @@ class xmi_document:
                     "ENTITY", c.name, 
                     express_entity, c, children,
                     document=self,
-                    supertypes=subtypes
+                    supertypes=supertypes
                 )
