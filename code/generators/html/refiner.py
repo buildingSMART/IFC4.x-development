@@ -452,7 +452,8 @@ class HtmlRefiner:
             code["class"] = classes
             code["data-highlighted"] = "generator"
 
-            fragment = BeautifulSoup(f"<code>{rendered}</code>")
+            # The <pre> tag is necessary to have the lxml parses retain whitespace for indentation
+            fragment = BeautifulSoup(f"<pre><code>{rendered}</code></pre>")
             highlighted = fragment.code
             code.clear()
             for child in list(highlighted.contents):
