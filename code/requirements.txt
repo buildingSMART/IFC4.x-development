@@ -2,6 +2,7 @@
 cachetools
 
 # HTML / parsing 
+Jinja2
 beautifulsoup4<4.12
 lxml
 Markdown
