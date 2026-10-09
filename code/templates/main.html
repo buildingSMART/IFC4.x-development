@@ -1,4 +1,4 @@
-{# Typeform id of the IFC 4.4 consultation form (preview builds only) #}
+{# Typeform live-embed id of the IFC 4.4 consultation form (preview builds only); the form's own id is PZ1VdVG9 #}
 {% set feedback_form = '01M4CDRS1XR9AX6GHFRRZ6XXAK' %}
 <html lang="en">
 <head>
@@ -130,8 +130,8 @@
                 <div class="card fluid shadowed">
                     <p>
                         {% if status == 'PREVIEW' %}
-                        {# public consultation: feedback goes to a Typeform popup, not to GitHub edits #}
-                        <button class="button primary" data-tf-popup="{{ feedback_form }}" data-tf-opacity="100" data-tf-size="70" data-tf-iframe-props="title=IFC 4.4 feedback"><span data-feather="message-square"></span> Give feedback on IFC 4.4</button>
+                        {# public consultation: feedback goes to the Typeform popup, not to GitHub edits #}
+                        <div data-tf-live="{{ feedback_form }}"></div>
                         {% else %}
                         <a class="button primary edit-github" href='https://github.com/{{ repo or target_repo }}/blob/{{ branch }}/{{ path }}'><span class="icon-edit inverse"></span> Edit on Github</a>
                         {% endif %}
@@ -147,11 +147,19 @@
                             {% endif %}
                         </small>
                     </p>
+                    {% if status == 'PREVIEW' %}
+                    <p>
+                        <small>
+                            This is a preview version of the IFC specification where open 'Pull Requests' are being integrated into a temporary version. Therefore, the direct edit button that you might have seen on other editions is not available, but we invite you to provide feedback using the button above.
+                        </small>
+                    </p>
+                    {% else %}
                     <p>
                         <small>
                             Is this page difficult to understand? <a href="https://github.com/{{ target_repo }}/issues/371">Let us know!</a>
                         </small>
                     </p>
+                    {% endif %}
                 </div>
                 {% endif %}
                 {% endif %}
