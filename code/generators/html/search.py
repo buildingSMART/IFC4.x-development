@@ -4,7 +4,30 @@ import json
 import re
 from pathlib import Path
 
+import wordninja
+
 from .refiner import BeautifulSoup
+
+CAMEL_BOUNDARY = re.compile(
+    r"(?<=[a-z])(?=[A-Z0-9])"
+    r"|(?<=[A-Z][A-Z])(?=[0-9])"
+    r"|(?<=[0-9])(?=[a-z])"
+    r"|(?<=[0-9])(?=[A-Z][A-Za-z])"
+    r"|(?<=[A-Z])(?=[A-Z][a-z])"
+)
+WORD_SEPARATOR = re.compile(r"[\W_]+")
+
+
+def split_words(text: str) -> list[str]:
+    words = []
+    for piece in WORD_SEPARATOR.split(text):
+        for token in CAMEL_BOUNDARY.split(piece):
+            if token.isalpha() and token.isupper() and len(token) > 4:
+                parts = wordninja.split(token.lower())
+            else:
+                parts = [token.lower()]
+            words.extend(p for part in parts if (p := part.removeprefix("ifc")))
+    return words
 
 
 class SearchIndexBuilder:
@@ -64,8 +87,9 @@ class SearchIndexBuilder:
         for element in root.find_all(["script", "style"]):
             element.decompose()
 
-        title = self._extract_title(public_path, soup, root)
-        headings = self._normalize_text(" ".join(node.get_text(" ", strip=True) for node in root.find_all(["h2", "h3", "h4", "h5", "h6"])))
+        title = re.sub(r'^\d+(\.\d+)*\s+', '', self._extract_title(public_path, soup, root))
+        heading_texts = [self._normalize_text(node.get_text(" ", strip=True)) for node in root.find_all(["h2", "h3", "h4", "h5", "h6"])]
+        headings = " ".join(filter(None, heading_texts + [self._added_words(heading) for heading in heading_texts]))
 
         first_heading = root.find("h1")
         if first_heading is not None:
@@ -79,9 +103,9 @@ class SearchIndexBuilder:
             "id": public_path,
             "path": public_path,
             "title": title,
+            "title_words": self._added_words(title),
             "kind": self._kind_for(public_path),
             "headings": headings,
-            "summary": self._summarize(text),
             "text": text,
         }
 
@@ -130,8 +154,7 @@ class SearchIndexBuilder:
     def _normalize_text(self, value: str) -> str:
         return re.sub(r"\s+", " ", value).strip()
 
-    def _summarize(self, text: str, limit: int = 280) -> str:
-        if len(text) <= limit:
-            return text
-        clipped = text[:limit].rsplit(" ", 1)[0].strip()
-        return clipped + "..."
+    def _added_words(self, value: str) -> str:
+        words = split_words(value)
+        plain = [word for word in WORD_SEPARATOR.split(value.lower()) if word]
+        return " ".join(words) if words != plain else ""
