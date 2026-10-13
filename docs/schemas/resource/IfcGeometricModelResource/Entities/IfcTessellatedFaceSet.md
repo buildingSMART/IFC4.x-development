@@ -33,8 +33,5 @@ An ordered list of Cartesian points used by the coordinate index defined at the 
 ### Dim
 The space dimensionality of this geometric representation item, it is always 3.
 
-### HasColours
-Reference to the indexed colour map providing the corresponding colour RGB values to the faces of the subtypes of _IfcTessellatedFaceSet_.
-
 ### HasTextures
 Reference to the indexed texture map providing the corresponding texture coordinates to the vertices bounding the faces of the subtypes of _IfcTessellatedFaceSet_.
