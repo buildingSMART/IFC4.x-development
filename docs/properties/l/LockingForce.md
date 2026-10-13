@@ -1,4 +1,4 @@
 LockingForce
 ============
 
-Locking force of the point machine motor.
+Locking force of the element.
