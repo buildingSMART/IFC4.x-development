@@ -901,6 +901,12 @@ AND
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAlignment" name="IfcAlignment">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_HHaMQFYREfGH-_YNMz-WNw" name="AlignmentRepresentation">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_HHfEwFYREfGH-_YNMz-WNw" name="AlignmentRepresentation">
+          <language>EXPRESS_WHERE</language>
+          <body>IfcAlignmentRepresentation(SELF)</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAlignment_gen_IfcLinearPositioningElement" general="cl_IfcLinearPositioningElement"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcAlignment_PredefinedType" name="PredefinedType" type="en_IfcAlignmentTypeEnum">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcAlignment_PredefinedType_lower"/>
@@ -3843,5 +3849,74 @@ AND
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ProjectionElementBaseQuantities_IfcProjectionElement" client="cl_Qto_ProjectionElementBaseQuantities" supplier="cl_IfcProjectionElement"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SiteBaseQuantities_IfcSite" client="cl_Qto_SiteBaseQuantities" supplier="cl_IfcSite"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SpaceBaseQuantities_IfcSpace" client="cl_Qto_SpaceBaseQuantities" supplier="cl_IfcSpace"/>
+    <packagedElement xmi:type="uml:Constraint" xmi:id="ct_IfcAlignmentRepresentation" name="IfcAlignmentRepresentation">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="ct_IfcAlignmentRepresentation_expr" name="IfcAlignmentRepresentation">
+        <language>EXPRESS_FUNCTION</language>
+        <body>FUNCTION IfcAlignmentRepresentation
+(Alignment : IfcAlignment) : IfcBoolean;
+	
+	LOCAL
+		AlignmentRepresentations : SET OF IfcShapeRepresentation;
+		TwoDRep : SET OF IfcShapeRepresentation;
+		ThreeDRep : SET OF IfcShapeRepresentation;
+		CurveTwoD : SET OF IfcCompositeCurve;
+		CurveThreeD : SET OF IfcGradientCurve;
+	END_LOCAL;
+
+	(* no representation is okay *)
+	IF NOT EXISTS(Alignment.Representation) THEN
+		RETURN(TRUE);
+	END_IF;
+	
+	(* Alignment.Representation exists so assign *)
+	AlignmentRepresentations := Alignment.Representation.Representations;
+
+	(* one representation is either Curve2D or 3D *)
+	IF SIZEOF(AlignmentRepresentations) = 1 THEN
+		IF SIZEOF(AlignmentRepresentations[1].Items) &lt;> 1 THEN
+			RETURN (FALSE);
+		END_IF;
+		IF SIZEOF(QUERY(twoDee &lt;* AlignmentRepresentations | twoDee.RepresentationType = 'Curve2D')) = 1 THEN
+			CASE TRUE OF
+				'IFC4X4.IFCCOMPOSITECURVE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+				'IFC4X4.IFCOFFSETCURVEBYDISTANCES' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+				'IFC4X4.IFCPOLYLINE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+			END_CASE;
+		END_IF;
+		IF SIZEOF(QUERY(threeDee &lt;* AlignmentRepresentations | threeDee.RepresentationType = 'Curve3D')) = 1 THEN
+			CASE TRUE OF
+				'IFC4X4.IFCGRADIENTCURVE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+				'IFC4X4.IFCOFFSETCURVEBYDISTANCES' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+				'IFC4X4.IFCSEGMENTEDREFERENCECURVE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+				'IFC4X4.IFCPOLYLINE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+			END_CASE;
+		END_IF;
+	END_IF;
+	
+	(* 2 representations and 3D BaseCurve reference equals 2D representation *)
+	IF SIZEOF(AlignmentRepresentations) = 2 THEN
+	
+		TwoDRep := QUERY(twoDee &lt;* AlignmentRepresentations | twoDee.RepresentationType = 'Curve2D');
+		CurveTwoD := QUERY(item &lt;* TwoDRep[1].Items | 'IFC4X4.IFCCOMPOSITECURVE' in TYPEOF(item));
+		ThreeDRep := QUERY(threeDee &lt;* AlignmentRepresentations | threeDee.RepresentationType = 'Curve3D');
+		CurveThreeD := QUERY(item &lt;* ThreeDRep[1].Items | 'IFC4X4.IFCGRADIENTCURVE' in TYPEOF(item));
+		
+		RETURN((SIZEOF(CurveThreeD) = 1) AND (SIZEOF(CurveTwoD) = 1) AND (CurveThreeD[1].BaseCurve :=: CurveTwoD[1]));
+	
+	END_IF;
+	(* Missing an IFCSEGMENTEDREFERENCECURVE various placement option implementation. *)
+
+	RETURN(FALSE);
+END_FUNCTION;
+</body>
+      </specification>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
