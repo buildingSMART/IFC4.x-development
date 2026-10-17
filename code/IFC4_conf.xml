@@ -338,9 +338,9 @@
     <cnf:attribute select="ShapeAspectStyle" exp-attribute="attribute-tag" />
   </cnf:entity>
   <cnf:entity select="IfcPerson">
-    <cnf:attribute select="MiddleNames" tagless="true" />
-    <cnf:attribute select="PrefixTitles" tagless="true" />
-    <cnf:attribute select="SuffixTitles" tagless="true" />
+    <cnf:attribute select="MiddleNames" exp-attribute="double-tag" />
+    <cnf:attribute select="PrefixTitles" exp-attribute="double-tag" />
+    <cnf:attribute select="SuffixTitles" exp-attribute="double-tag" />
   </cnf:entity>
   <cnf:entity select="IfcPersonAndOrganization">
     <cnf:attribute select="ThePerson" exp-attribute="attribute-tag" />
@@ -617,7 +617,7 @@
   </cnf:entity>
   <cnf:entity select="IfcSurfaceTexture">
     <cnf:attribute select="TextureTransform" exp-attribute="attribute-tag" />
-    <cnf:attribute select="Parameter" exp-attribute="attribute-content" tagless="true" />
+    <cnf:attribute select="Parameter" exp-attribute="double-tag" />
   </cnf:entity>
   <cnf:entity select="IfcSweptAreaSolid">
     <cnf:attribute select="SweptArea" exp-attribute="attribute-tag" />
@@ -640,10 +640,10 @@
     <cnf:attribute select="Recurrence" exp-attribute="attribute-tag" />
   </cnf:entity>
   <cnf:entity select="IfcTelecomAddress">
-    <cnf:attribute select="TelephoneNumbers" tagless="true" />
-    <cnf:attribute select="FacsimileNumbers" tagless="true" />
-    <cnf:attribute select="ElectronicMailAddresses" tagless="true" />
-    <cnf:attribute select="MessagingIDs" tagless="true" />
+    <cnf:attribute select="TelephoneNumbers" exp-attribute="double-tag" />
+    <cnf:attribute select="FacsimileNumbers" exp-attribute="double-tag" />
+    <cnf:attribute select="ElectronicMailAddresses" exp-attribute="double-tag" />
+    <cnf:attribute select="MessagingIDs" exp-attribute="double-tag" />
   </cnf:entity>
   <cnf:entity select="IfcTessellatedFaceSet">
     <cnf:attribute select="Coordinates" exp-attribute="attribute-tag" />

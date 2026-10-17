@@ -10,7 +10,6 @@ from dataclasses import dataclass
 
 from .append_xmi import namespace
 from ifcopenshell.express import express_parser
-from .xmi_document import SCHEMA_NAME
 
 X = xml_dict.xml_node
 
@@ -28,7 +27,6 @@ def _schema_namespace(schema_name):
 namespaces = {
     'xs': "http://www.w3.org/2001/XMLSchema",
     'xlink': "http://www.w3.org/1999/xlink",
-    'ifc': _schema_namespace(SCHEMA_NAME)
 }
 
 express_xsd_mapping = {
@@ -52,7 +50,6 @@ entity_configuration = {
 
 XS = namespace(namespaces['xs'])
 XLINK = namespace(namespaces['xlink'])
-IFC = namespace(namespaces['ifc'])
 
 class xml_serializable:
     def to_xml(self):
@@ -118,6 +115,7 @@ def do_try(fn):
 
 defined_sequences = []
 referenced_wrappers = set()
+derived_forward_attributes = set()
 
 def literal_bound(b):
     # Numeric bound -> int; '?' or symbolic expression -> None (unbounded). (mirrors IfcOpenShell #8039)
@@ -153,6 +151,10 @@ def create_attribute(entity, a, name_override=None):
                 )]
             )]
             return elm
+        # Named aggregates also have a complex representation carrying the
+        # aggregate metadata. XML attributes must use its simple list type.
+        if isinstance(schema.simpletypes.get(ty), express_parser.AggregationType):
+            ty = f"List-{ty}"
         return attribute(a.name, f"ifc:{ty}", "optional").to_xml()
         
     elif isinstance(a_type, express_parser.SimpleType):
@@ -195,15 +197,19 @@ def create_attribute(entity, a, name_override=None):
                 aggregate_type_prefix = aggregate_type(a_type) + " "
                 a_type = a_type.type
 
-        #                                            # v this should probably be enabled, but discussion pending in issue #462
-                # if : # and not isinstance(mapping.flatten_type(a_type.type).type, express_parser.StringType):
-        
         def undecorate_until_string(x):
             if isinstance(x, str):
                 return x
             return undecorate_until_string(x.type)
         
         is_list = undecorate_until_string(a_type) in schema.simpletypes and not (entity and entity_configuration.get(entity.name, {}).get(a.name, {}).get('exp-attribute') == 'double-tag')
+        # XML Schema lists split on whitespace and cannot distinguish a string
+        # containing spaces from multiple items, or preserve empty items (#462).
+        base_type = mapping.flatten_type(undecorate_until_string(a_type))
+        if isinstance(base_type, express_parser.SimpleType):
+            base_type = base_type.type
+        if isinstance(base_type, express_parser.StringType):
+            is_list = False
         
         is_elem = entity and entity_configuration.get(entity.name, {}).get(a.name, {}).get('exp-attribute') == 'attribute-tag'
             
@@ -288,7 +294,13 @@ def create_attribute(entity, a, name_override=None):
             attr = attribute(a.name, None, "optional").to_xml()
             
             xsd_type = undecorate_until_string(a_type)
-            xsd_type = express_xsd_mapping.get(xsd_type, f'ifc:{xsd_type}')
+            # IfcBinary is a complex type (it carries extraBits). Pixel values
+            # are byte-aligned by IfcPixelTexture's EXPRESS constraints, so the
+            # XML Schema simple hexBinary lexical space is sufficient here.
+            if entity and entity.name == "IfcPixelTexture" and a.name == "Pixel":
+                xsd_type = "xs:hexBinary"
+            else:
+                xsd_type = express_xsd_mapping.get(xsd_type, f'ifc:{xsd_type}')
             
             attr.children = [X(
                 XS.simpleType,               
@@ -394,6 +406,12 @@ def convert(e, name_override=None, excluded_attributes=(), restriction=None, inc
         yield element(e.name, f"ifc:{e.name}", substitutionGroup=f"ifc:{subGroup}", nillable="true", minOccurs=None, **abstract_if_abstract).to_xml()    
     
     attrs = [create_attribute(e, a) for a in attributes]
+    # A subtype can redeclare an explicit attribute as derived. Its XSD
+    # restriction may omit that particle only when the base particle is
+    # optional. EXPRESS remains responsible for mandatory non-derived values.
+    for a, node in zip(attributes, attrs):
+        if id(a) in derived_forward_attributes and node.tag == XS.element:
+            node.attributes['minOccurs'] = '0'
     elems = [e for e in attrs if e.tag == XS.element]
     attrs = [e for e in attrs if e.tag == XS.attribute]
     
@@ -666,13 +684,22 @@ def run(express_path, xsd_path):
 
     defined_sequences.clear()
     referenced_wrappers.clear()
+    derived_forward_attributes.clear()
 
     mapping = express_parser.parse(str(express_path))
     schema = mapping.schema
+    namespaces['ifc'] = _schema_namespace(schema.name)
     entities = list(schema.entities.values())
     selects = list(schema.selects.items())
     enums = list(schema.enumerations.items())
     simpletypes = list(schema.simpletypes.items())
+    for entity in entities:
+        derived = set(mapping.derived_in_supertype(entity))
+        ancestors = list(entity.supertypes)
+        while ancestors:
+            ancestor = schema.entities[ancestors.pop()]
+            derived_forward_attributes.update(id(a) for a in ancestor.attributes if a.name in derived)
+            ancestors.extend(ancestor.supertypes)
 
     header = complex_type(
         [
