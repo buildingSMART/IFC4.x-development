@@ -119,9 +119,11 @@ def run(schema_fn, mvdxml_fn, concept_subset=None, additional=None):
         visited.add(en.name())
         entities.add(en.name())
         causes[en.name()].add(cause)
-        # print(en.name())
+        # Include entity ancestors discovered through attributes, because
+        # en.attributes() includes only attributes directly declared on the entity.
+        if en.supertype():
+            visit_entity(en.supertype(), cause=en.name())
         for attr in en.attributes():
-            # print(attr.name())
             visit_typedecl(attr.type_of_attribute(), f"{en.name()}.{attr.name()}")
 
     for en in list(entities):
