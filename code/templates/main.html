@@ -32,7 +32,9 @@
                 {% endif %}
                 
                 {% if not is_iso %}
-                <ul>
+                <button class="header-menu-toggle" type="button" aria-label="Toggle header menu" aria-expanded="false" aria-controls="header-menu"
+                        onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true')">&#9776;</button>
+                <ul id="header-menu">
                     <li>
                         <select id="language-selector"
                                 onchange="setLanguagePreference(this.value)"
@@ -85,7 +87,6 @@
         </div>
         <div class="row">
             <div class="col-md-2">
-                {% if not is_iso and not is_package %}
                 {% block searchbar %}
                 <form method='get' action='{{ base }}/search.html' style="padding:0px;" class="search">
                     <div class="row">
@@ -100,7 +101,6 @@
                     </div>
                 </form>
                 {% endblock %}
-                {% endif %}
                 <nav>
                     {% for section in navigation %}
                     <div>
@@ -123,7 +123,7 @@
                 {% endblock %}
             </div>
             <div class="col-md-2 rightpanel">
-                {% if not is_iso %}
+                {% if not is_iso and not is_preview %}
                 {% if path %}
                 <div class="card fluid shadowed">
                     <p>

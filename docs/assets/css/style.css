@@ -22,6 +22,15 @@ header {
 header p {
     align-self: center;
 }
+header p.header-title {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+header .header-menu-toggle {
+    display: none;
+}
 header img {
     align-self: flex-end;
     height: 100%;
@@ -29,6 +38,7 @@ header img {
     box-shadow: none !important;
 }
 header div {
+    flex-shrink: 0;
     height: 100%;
     box-sizing: border-box;
     padding: 0.6rem 1rem;
@@ -57,6 +67,43 @@ header ul>li svg {
     vertical-align: middle;
     width: 16px;
     height: 16px;
+}
+@media (max-width: 1200px) {
+    header {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    header div {
+        height: 3.1875rem;
+    }
+    header .header-menu-toggle {
+        display: block;
+        flex-shrink: 0;
+    }
+    header ul {
+        display: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        white-space: normal;
+        text-align: right;
+    }
+    header .header-menu-toggle[aria-expanded="true"] + ul {
+        display: block;
+    }
+    header ul>li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-height: 2.5rem;
+        box-sizing: border-box;
+        border-left: 0;
+    }
+    header select {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+    }
 }
 nav div {
     border-bottom: 1px solid var(--border-color);
