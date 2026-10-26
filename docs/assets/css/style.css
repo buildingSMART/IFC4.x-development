@@ -496,15 +496,18 @@ ul.classes li.current a {
     background-color: var(--blue);
     color: #fff;
 }
+ul.classes.legend {
+    padding-left: 0;
+    font-size: .85em;
+}
 ul.classes.legend li {
-    display: block;
     opacity: 1;
+    margin-right: calc(2 * var(--universal-margin));
 }
 ul.classes.legend li a {
-    width: auto;
-}
-.legend-arrow .feather-arrow-up {
-    color: var(--blue);
+    width: 1.6em;
+    height: 1em;
+    padding: 0;
     vertical-align: middle;
 }
 td p:nth-child(1) {
