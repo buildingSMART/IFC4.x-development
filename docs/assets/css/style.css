@@ -504,6 +504,9 @@ ul.classes.legend li {
     opacity: 1;
     margin-right: calc(2 * var(--universal-margin));
 }
+ul.classes.legend li.legend-title {
+    font-weight: bold;
+}
 ul.classes.legend li a {
     width: 1.6em;
     height: 1em;
