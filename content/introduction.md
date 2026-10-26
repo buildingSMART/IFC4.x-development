@@ -25,17 +25,6 @@ The IFC specification includes terms, concepts and data specification items that
 * the property set definitions that are part of this standard start with the prefix "Pset_" and continue with the English words in CamelCase naming convention;
 * the quantity set definitions that are part of this standard start with the prefix "Qto_" and continue with the English words in CamelCase naming convention.
 
-Entity inheritance diagrams use the following colour coding:
-
-<ul class="classes legend">
-<li class="abstract"><a>Abstract entity</a></li>
-<li><a>Instantiable entity</a></li>
-<li class="current"><a>Entity on this page</a></li>
-<li class="deprecated"><a>Deprecated entity</a></li>
-</ul>
-
-Hierarchical entity class relationships are indicated with an upwards blue arrow (<span class="legend-arrow"><i data-feather="arrow-up"></i></span>).
-
 {% if not is_iso %}
 buildingSMART International publishes translations of those terms and concepts into other human languages on [translations.buildingsmart.org](https://translations.buildingsmart.org).
 {% endif %}
