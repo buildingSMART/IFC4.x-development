@@ -5,17 +5,7 @@
 name: PR Validation Comment
 
 on:
-  pull_request_target:
-    branches:
-      - ifc4.4-main
-      - ifc4.3-main
-    types: [opened, synchronize, reopened]
-    paths:
-      - 'schemas/**'
-      - 'docs/**'
-      - 'reference_schemas/psd/**'
-      - 'code/**'
-      - '.github/workflows/pr-validation.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read
