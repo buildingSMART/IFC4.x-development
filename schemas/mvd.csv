@@ -180,12 +180,12 @@ empty,174,4,4.1.7.4.1   Product Grid Placement,,
 ,178,4,4.1.7.5.1   Reference Topology,,
 ,179,2,4.1.8   Product Type Shape,,
 half empty,180,3,4.1.8.1   Product Type Geometric Representation,,
-,181,4,4.1.8.1.1   Type Axis Geometry,,
-,182,4,4.1.8.1.2   Type Body Geometry,,
+,181,4,4.1.8.1.1   Type Axis Geometry,RV,AbV
+,182,4,4.1.8.1.2   Type Body Geometry,RV,AbV
 ,183,5,4.1.8.1.2.1   Type Body AdvancedBrep Geometry,,
-,184,5,4.1.8.1.2.2   Type Body Brep Geometry,,
+,184,5,4.1.8.1.2.2   Type Body Brep Geometry,RV,AbV
 ,185,5,4.1.8.1.2.3   Type Body CSG Geometry,,
-,186,5,4.1.8.1.2.4   Type Body Tessellated Geometry,,
+,186,5,4.1.8.1.2.4   Type Body Tessellated Geometry,RV,AbV
 ,187,4,4.1.8.1.3   Type Clearance Geometry,,
 ,188,4,4.1.8.1.4   Type Lighting Geometry,,
 half empty,189,2,4.1.9   Project Context,,
