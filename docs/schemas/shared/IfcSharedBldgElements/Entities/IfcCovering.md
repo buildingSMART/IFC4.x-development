@@ -14,13 +14,12 @@ Coverings are elements with relationships to the covered element and the space o
 Coverings can be assigned to
 
 - a space represented by _IfcSpace_ using the inverse relationship _ReferencedInStructures_ pointing to _IfcRelContainedInSpatialStructure_.  The space is then accessible via _IfcRelContainedInSpatialStructure.RelatingStructure_.
-
-> EXAMPLE This relationship (e.g. this room has carpet) may typically be used in facility management usecases and room data sheets, such as when creating room finishes schedules.
+  > EXAMPLE This relationship (e.g. this room has carpet) may typically be used in facility management usecases and room data sheets, such as when creating room finishes schedules.
 
 - a space boundary represented by _IfcRelSpaceBoundary_ using the inverse relationship _ProvidesBoundaries_ pointing to _IfcRelSpaceBoundary._ The space is then accessible via _IfcRelSpaceBoundary.RelatingSpace_. 
-- a built element represented by _IfcBuiltElement_ using the inverse relationship _Decomposes_ pointing to _IfcRelAggregates_. The built element is then accessible via _IfcRelAggregates.RelatingObject_.
 
-> EXAMPLE _IfcRelAggregates_ would be used to relate a covering (e.g. cladding) to its "covered element" (e.g. wall).
+- a built element represented by _IfcBuiltElement_ using the inverse relationship _Decomposes_ pointing to _IfcRelAggregates_. The built element is then accessible via _IfcRelAggregates.RelatingObject_.
+  > EXAMPLE _IfcRelAggregates_ would be used to relate a covering (e.g. cladding) to its "covered element" (e.g. wall).
 
 In addition to these relationships, if a covering has a shape representation and the space it is related to contains space boundaries, then the _IfcRelSpaceBoundary_ relationship should be used to relate the covering to the space. For example, this may be used in energy analysis where it is important to know the exact materials and elements that separate spaces at their boundaries.
 
