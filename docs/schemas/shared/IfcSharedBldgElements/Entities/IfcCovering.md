@@ -11,7 +11,7 @@ Coverings are elements with relationships to the covered element and the space o
 
 > NOTE A more basic information about claddings, floorings, and ceilings of a space can be attached to _IfcSpace_'s using the _Pset_SpaceCommon_ properties. Then only a name can be provided and the covering quantities would be interpreted from the space quantities.
 
-To relate a covering (e.g. cladding) to its "covered element" (e.g. wall), use the the _IfcRelAggregates_ relationship.
+Coverings can be assigned to
 
 To relate a covering to a space (e.g. this room has carpet), use the _IfcRelContainedInSpatialStructure_ relationship. This may typically be used in facility management usecases and room data sheets, such as when creating room finishes schedules.
 
