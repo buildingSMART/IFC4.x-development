@@ -13,7 +13,7 @@ Coverings are elements with relationships to the covered element and the space o
 
 Coverings can be assigned to
 
-- a space represented by _IfcSpace_ using the inverse relationship _ReferencedInStructures_ pointing to _IfcRelContainedInSpatialStructure_.  The space is then accessible via _IfcRelContainedInSpatialStructure.RelatingStructure_.
+- a space represented by _IfcSpace_ using the inverse relationship _ContainedInStructure_ pointing to _IfcRelContainedInSpatialStructure_.  The space is then accessible via _IfcRelContainedInSpatialStructure.RelatingStructure_.
   > EXAMPLE This relationship (e.g. this room has carpet) may typically be used in facility management usecases and room data sheets, such as when creating room finishes schedules.
 
 - a space boundary represented by _IfcRelSpaceBoundary_ using the inverse relationship _ProvidesBoundaries_ pointing to _IfcRelSpaceBoundary._ The space is then accessible via _IfcRelSpaceBoundary.RelatingSpace_. 
