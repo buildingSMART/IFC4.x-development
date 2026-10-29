@@ -5,7 +5,6 @@ An electric time control is a device that applies control to the provision or fl
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

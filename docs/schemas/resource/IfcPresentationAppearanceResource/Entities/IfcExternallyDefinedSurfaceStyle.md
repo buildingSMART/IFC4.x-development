@@ -7,5 +7,4 @@ _IfcExternallyDefinedSurfaceStyle_ is a definition of a surface style through re
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The spelling has been corrected from IfcExternallyDefinedSufaceStyle with no upward compatibility.

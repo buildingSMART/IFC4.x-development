@@ -3,7 +3,7 @@
 The _IfcAdvancedBrepWithVoids_ is a specialization of an advanced B-rep which contains one or more voids in its interior. The voids are represented as closed shells which are defined so that the shell normal point into the void.
 <!-- end of short definition -->
 
-> NOTE Entity adapted from **advanced_brep_shape_representation** defined in ISO 10303-42.
+> NOTE Entity adapted from **advanced_brep_shape_representation** defined in ISO 10303-514.
 
 > HISTORY  New entity in IFC4
 

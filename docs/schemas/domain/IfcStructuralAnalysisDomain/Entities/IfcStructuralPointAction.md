@@ -5,7 +5,6 @@ This entity defines an action which acts on a point. A point action is typically
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attributes in the supertypes _IfcStructuralActivity_ and _IfcStructuralAction_ changed. Use definitions changed, informal propositions added.
 
 ****Coordinate Systems****:

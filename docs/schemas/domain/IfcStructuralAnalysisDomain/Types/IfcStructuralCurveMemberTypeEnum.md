@@ -5,7 +5,6 @@ This enumeration distinguishes between different types of structural 'curve' mem
 
 > HISTORY New enumeration in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Renamed from _IfcStructuralCurveTypeEnum_.
 
 ## Items

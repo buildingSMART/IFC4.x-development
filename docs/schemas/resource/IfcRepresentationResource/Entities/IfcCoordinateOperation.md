@@ -19,7 +19,6 @@ An _IfcCoordinateOperation_ allows to connect:
 
 > NOTE _IfcProjectedCRS_ can be used to represent a projected CRS or a compound CRS, comprising of a projected CRS with a vertical CRS. See _IfcProjectedCRS_ for further details.
 
-{ .extDef}
 > NOTE Definition from OpenGIS Abstract Specification, Topic 2:
 > If the relationship between any two coordinate reference systems is known, coordinates can be transformed or converted to another coordinate reference system. Coordinate operations are divided into two subtypes:
 >

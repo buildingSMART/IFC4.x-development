@@ -7,7 +7,6 @@ Switches include those used for electrical power, communications, audio-visual, 
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

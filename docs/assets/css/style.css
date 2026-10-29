@@ -14,17 +14,44 @@ html {
      font-size: 0.95rem;
 }
 header {
+    display: flex;
+    align-items: center;
     width: 100%;
     margin-bottom: var(--universal-margin);
 }
 header p {
-    float: left;
+    align-self: center;
+}
+header p.header-title {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+header .header-menu-toggle {
+    display: none;
+}
+header img {
+    align-self: flex-end;
+    height: 100%;
+    width: auto;
+    box-shadow: none !important;
+}
+header div {
+    flex-shrink: 0;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0.6rem 1rem;
 }
 ul {
     list-style-type: "\2014\a0";
 }
 header ul {
-    float: right;
+    margin-left: auto;
+    align-self: center;
+}
+header .header-iso-title {
+    margin-left: auto;
 }
 header ul>li {
     display: inline-block;
@@ -40,6 +67,43 @@ header ul>li svg {
     vertical-align: middle;
     width: 16px;
     height: 16px;
+}
+@media (max-width: 1200px) {
+    header {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    header div {
+        height: 3.1875rem;
+    }
+    header .header-menu-toggle {
+        display: block;
+        flex-shrink: 0;
+    }
+    header ul {
+        display: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        white-space: normal;
+        text-align: right;
+    }
+    header .header-menu-toggle[aria-expanded="true"] + ul {
+        display: block;
+    }
+    header ul>li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-height: 2.5rem;
+        box-sizing: border-box;
+        border-left: 0;
+    }
+    header select {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+    }
 }
 nav div {
     border-bottom: 1px solid var(--border-color);
@@ -104,16 +168,18 @@ code, code * {
     font-size: 10pt !important;
     font-family: monospace !important;
 }
-svg text {
+/* Preserve Graphviz's font sizes in the interactive concept canvas. */
+svg:not(.concept-diagram-canvas svg) text {
     font-size: 75%;
 }
-svg g.edge text {
+svg:not(.concept-diagram-canvas svg) g.edge text {
     font-size: 60%;
 }
 
 /* Concept diagram canvas */
 .concept-diagram-canvas {
     position: relative;
+    box-sizing: border-box;
     width: 100%;
     height: 60vh;
     min-height: 420px;
@@ -135,6 +201,19 @@ svg g.edge text {
 }
 .concept-diagram-canvas svg {
     display: block;
+}
+.concept-diagram-canvas svg text {
+    font-family: Arial, sans-serif;
+}
+.concept-diagram-canvas svg a:has(text[fill="white"]) {
+    color: white;
+    /* Decorate the text itself: SVG anchor decorations can render black. */
+    text-decoration: none;
+}
+.concept-diagram-canvas svg a:hover text[fill="white"],
+.concept-diagram-canvas svg a:focus text[fill="white"] {
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 /* Make the concept table borders lighter */
@@ -478,6 +557,23 @@ ul.classes li.deprecated a {
 ul.classes li.current a {
     background-color: var(--blue);
     color: #fff;
+}
+ul.classes.legend {
+    padding-left: 0;
+    font-size: .85em;
+}
+ul.classes.legend li {
+    opacity: 1;
+    margin-right: calc(2 * var(--universal-margin));
+}
+ul.classes.legend li.legend-title {
+    font-weight: bold;
+}
+ul.classes.legend li a {
+    width: 1.6em;
+    height: 1em;
+    padding: 0;
+    vertical-align: middle;
 }
 td p:nth-child(1) {
     /* So that paragraphs in tds and simple tds line up */
@@ -900,4 +996,9 @@ body.cover.iso #main-content * {
 
 .rightpanel div {
     pointer-events: auto;
+}
+
+header small {
+    padding: 4px 8px;
+    border-radius: 6px;
 }

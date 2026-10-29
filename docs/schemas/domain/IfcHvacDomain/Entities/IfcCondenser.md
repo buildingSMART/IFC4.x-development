@@ -5,7 +5,6 @@ A condenser is a device that is used to dissipate heat, typically by condensing 
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

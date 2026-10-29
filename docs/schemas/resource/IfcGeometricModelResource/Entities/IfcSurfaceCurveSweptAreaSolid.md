@@ -29,7 +29,6 @@ Figure 1 — Surface curve wept area solid parameter
 
 Figure 2 — Surface curve wept area solid results
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A surface curve swept area solid is a type of swept area solid which is the result of sweeping a face along a _Directrix_ lying on a _ReferenceSurface_. The orientation of the _SweptArea_ is related to the direction of the surface normal.
 >

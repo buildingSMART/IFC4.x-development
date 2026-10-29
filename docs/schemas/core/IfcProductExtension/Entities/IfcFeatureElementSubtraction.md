@@ -13,7 +13,6 @@ The local placement for _IfcFeatureElementSubtraction_ is defined in its superty
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x2}
 > IFC2x2 CHANGE The entity is introduced as an upward compatible extension of the IFC2x scheme. It is an intermediate abstract supertype without defining its own explicit attributes.
 
 ## Attributes

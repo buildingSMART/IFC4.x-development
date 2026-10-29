@@ -16,7 +16,6 @@ representation.
 
 > NOTE An elliptical arc segment is defined by using the _IfcTrimmedCurve_ with _BasisCurve_ being an _IfcEllipse_.
 
-{ .extDef}
 > REFERENCE Definition according to ISO/CD 10303-42:1992
 
 An ellipse is a conic section defined by the lengths of the semi-major and semi-minor diameters and the position (center or mid point of the line joining the foci) and orientation of the curve. Interpretation of the data shall be as follows:

@@ -22,7 +22,6 @@ Figure 3 — Grid triangular layout
 
 > HISTORY New entity in IFC1.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _PredefinedType_ has been added at the end of the attribute list.
 
 
@@ -50,7 +49,6 @@ List of grid axes defining the third row of grid lines. It may be given in the c
 
 ### PredefinedType
 Predefined types to define the particular type of the grid.
-{ .change-ifc4}
 > IFC4 Change New attribute.
 
 ## Concepts

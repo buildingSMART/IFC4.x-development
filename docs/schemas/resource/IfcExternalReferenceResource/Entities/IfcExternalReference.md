@@ -9,14 +9,12 @@ _IfcExternalReference_ is an abstract supertype of all external reference entiti
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC 2x4 CHANGE Attribute _Identification_ renamed from ItemReference, attribute _Location_ datatype changed, and inverse attribute _ExternalReferenceForResources_ added.
 
 ## Attributes
 
 ### Location
 Location, where the external source (classification, document or library) can be accessed by electronic means. The electronic location is provided as an URI, and would normally be given as an URL location string.
-{ .change-ifc2x4}
 > IFC4 CHANGE The data type has been changed from _IfcLabel_ to _IfcURIReference_
 > .
 
@@ -28,7 +26,6 @@ The _Identification_ provides a unique identifier of the referenced item within 
 
 
 It may be human readable (such as a key) or not (such as a handle or uuid) depending on the context of its usage (which has to be determined by local agreement).
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute renamed from _ItemReference_ for consistency.
 >
 
@@ -38,7 +35,6 @@ Optional name to further specify the reference. It can provide a human readable 
 ### ExternalReferenceForResources
 Reference to all associations between this external reference and objects within the _IfcResourceObjectSelect_ that are tagged by the external reference.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute added with upward compatibility.
 >
 

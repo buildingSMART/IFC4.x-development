@@ -89,13 +89,6 @@ Process](https://github.com/buildingSMART/IFC4.3.x-development/wiki/IFC-4.3.x-Ch
 
 ### Website
 
- - **Preprocessor** - The _Schema_ cannot be immediately accessed by the web
-   application due to its complexity. This requires a preprocessing step in
-   `code/create_resources.sh`.  This breaks down the complex UML / XMI data into
-   simple JSON data that the website can query.
- - **Backend** - The website itself is a Python Flask application which begins
-   in `server.py`. This website renders the preprocessed _Schema_ data
-   with _Documentation_ using _Frontend_ templates.
  - **Frontend** - The _Documentation_ is turned into a website
    layout using templates. Templates are defined in HTML templates in
    `code/templates/`, as well as CSS, Javascript, and images in `docs/assets/`
@@ -392,147 +385,15 @@ See an [example diagram on a live page](http://ifc43-docs.standards.buildingsmar
 
 ## Dependencies
 
-See `Dockerfile` for more detail on how these dependencies are set up.
-
 System dependencies:
 
- * `docker` - container management (optional)
  * `graphviz` - diagram generator
- * `gunicorn` - http server (optional)
  * `ifcopenshell` - used in a minor capacity which can probably be removed in the future
  * `imagemagick` - automatic image conversion
  * `python` - to run the website
- * `redis` - database for building indexes (optional)
- * `solr` - search database (optional)
- * `supervisord` - process control (optional)
 
 Python modules are all captured in `requirements.txt`
 
 ## Development
 
-To run the website on your local machine for development, you can do:
-
-```bash
-$ cd code/
-$ pip install -r requirements.txt
-$ ./create_resources.sh
-$ FLASK_APP=server.py FLASK_ENV=development flask run
- * Serving Flask app "server.py" (lazy loading)
- * Environment: development
- * Debug mode: on
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 155-459-101
-```
-
-To load example files, you can clone the sample files into a directory called
-`examples` one level up from this repository:
-
-```bash
-$ cd /path/to/IFC4.3.x-development
-$ cd ..
-$ git clone https://github.com/buildingSMART/IFC4.3.x-sample-models examples
-```
-
-You can now visit `http://127.0.0.1:5000/` to see the running website.
-
-## Publishing
-
-For publishing a static HTML snapshot of the documentation, you may enable ISO
-mode. This disables dynamic features such as the Git edit history and search.
-You can preview what ISO mode looks like by adding `?iso=1` to any page.
-
-Prior to publishing, enable ISO mode by setting `is_iso = True` in `server.py`.
-One option of publishing is by using `wget`:
-
-```
-$ wget -r -l inf -E -k -p -H -Draw.githubusercontent.com,unpkg.com,polyfill.io,cdn.jsdelivr.net,cdnjs.cloudflare.com,i.creativecommons.org,localhost http://localhost:5000
-```
-
-The options used are:
-
- * -r recursive
- * -l infinite recursion depth
- * -E adjust extension, to enforce ".html" extension
- * -k convert links, to ensure links are relative and work offline
- * -p page requisites, downloads assets such as inline images and stylesheets
- * -H span hosts, to allow downloading assets outside localhost
- * -D comma separated lists of hosts where content may exist
-
-It takes a while to run, so for testing you may limit the recursion depth by
-setting `-l 2` or another low number.
-
-Afterwards, run the following procedures to change the directory structure and add the necessary mathjax plugins.
-
-~~~
-mkdir -p localhost/lib
-mv cdn.jsdelivr.net cdnjs.cloudflare.com i.creativecommons.org polyfill.io raw.githubusercontent.com unpkg.com localhost/lib
-find . -type f \( -name '*.html' -o -name '*.htm' \) \
-    -exec sed s,../cdn.jsdelivr.net,lib/cdn.jsdelivr.net,g -i {} \; \
-    -exec sed s,../cdnjs.cloudflare.com,lib/cdnjs.cloudflare.com,g -i  {} \; \
-    -exec sed s,../i.creativecommons.org,lib/i.creativecommons.org,g -i  {} \; \
-    -exec sed s,../polyfill.io,lib/polyfill.io,g -i  {} \; \
-    -exec sed s,../raw.githubusercontent.com,lib/raw.githubusercontent.com,g -i  {} \; \
-    -exec sed s,../unpkg.com,lib/unpkg.com,g -i  {} \;
-mkdir -p localhost/lib/cdn.jsdelivr.net/npm/mathjax\@3/es5/output/svg/fonts
-mkdir -p localhost/lib/cdn.jsdelivr.net/npm/mathjax\@3/es5/output/chtml/fonts/woff-v2/
-cd localhost/lib/cdn.jsdelivr.net/npm/mathjax\@3/es5/output/
-wget https://cdn.jsdelivr.net/npm/mathjax\@3.2.0/es5/output/svg.js
-cd svg/fonts
-wget https://cdn.jsdelivr.net/npm/mathjax\@3.2.0/es5/output/svg/fonts/tex.js
-cd ../../chtml/fonts/woff-v2/
-wget https://cdn.jsdelivr.net/npm/mathjax\@3.2.0/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff
-wget https://cdn.jsdelivr.net/npm/mathjax\@3.2.0/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff
-wget https://cdn.jsdelivr.net/npm/mathjax\@3.2.0/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff
-wget https://cdn.jsdelivr.net/npm/mathjax\@3.2.0/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff
-~~~
-
-or with PACKAGE option:
-
-~~~
-find . -type f \( -name '*.html' -o -name '*.htm' \) \
-    -exec sed s,cdn.jsdelivr.net,lib/cdn.jsdelivr.net,g -i {} \; \
-    -exec sed s,cdnjs.cloudflare.com,lib/cdnjs.cloudflare.com,g -i  {} \; \
-    -exec sed s,i.creativecommons.org,lib/i.creativecommons.org,g -i  {} \; \
-    -exec sed s,polyfill.io,lib/polyfill.io,g -i  {} \; \
-    -exec sed s,raw.githubusercontent.com,lib/raw.githubusercontent.com,g -i  {} \; \
-    -exec sed s,unpkg.com,lib/unpkg.com,g -i  {} \;
-
-find . -type f \( -name '*.html' -o -name '*.htm' \) \
-    -exec sed s,IFC/RELEASE/,RELEASE/,g -i {} \;
-~~~
-
-## Deployment
-
-Typically for hosting a production version of this website, you can choose to
-deploy a container running the website using Docker.
-
-The system uses docker-compose with nginx for serving HTTPS and HTTP
-basic auth. It requires running the following steps:
-
-```
-# in case of ISO mode
-htpasswd -b proxy/auth/.htpasswd $USERNAME $PASSWORD
-
-docker run -it -v $PWD/proxy/cert:/etc/letsencrypt \
-  -p 80:80 \
-  certbot/certbot certonly --standalone --register-unsafely-without-email --agree-tos --cert-name host \
-  -d $DOMAIN_NAME
-
-docker compose up -d --build
-```
-
-### Faster redeployment
-
-Rebuilding the various schema, pset and changelog artefacts takes a considerable amount of time during which the webserver is only partially available. The overall process of redeployment can be sped up by taking these resources from an existing container:
-
-```
-mkdir -p /tmp/ifc43-resources
-docker exec $(docker ps -q --filter name=app) /bin/sh -c 'tar -cf - /code/*.json' | tar -xvf - -C /tmp/ifc43-resources --strip-components=1
-docker compose down
-docker compose up -d --build --force-recreate
-find -type f /tmp/ifc43-resources | xargs -n1 -I{} docker cp {} $(docker ps -q --filter name=app):/code
-```
-
-Note that this doesn't include all resources and also doesn't populate the search index (but shouldn't interfere with these being created).
+Developer documentation still need to recreated after the migration from a flask-based server to a static html generator (`./code/generators/html`)

@@ -5,7 +5,6 @@ An _IfcApproval_ represents information about approval processes such as for a p
 
 > HISTORY New entity in IFC2.0
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attributes Identifier and Name made optional, where rule added to require at least one of them being asserted. Inverse attributes ApprovedObjects, ApprovedResources and HasExternalReferences added. Inverse attribute Properties deleted (more general relationship via inverse ApprovedResources to be used instead).
 
 ## Attributes
@@ -21,7 +20,6 @@ A general textual description of a design, work task, plan, etc. that is being a
 
 ### TimeOfApproval
 Date and time when the result of the approval process is produced.
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute data type changed to _IfcDateTime_ using ISO 8601 representation, renamed from ApprovalDateTime and made OPTIONAL.
 
 ### Status
@@ -35,17 +33,14 @@ Textual description of special constraints or conditions for the approval.
 
 ### RequestingApproval
 The actor that is acting in the role specified at _IfcOrganization_ or individually at _IfcPerson_ and requesting an approval.
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute for approval request replacing IfcApprovalActorRelationship (being deleted).
 
 ### GivingApproval
 The actor that is acting in the role specified at _IfcOrganization_ or individually at _IfcPerson_ and giving an approval.
-{ .change-ifc2x4}
 > IFC4 CHANGE New attribute for approval provision replacing IfcApprovalActorRelationship (being deleted).
 
 ### HasExternalReferences
 Reference to external references, e.g. library, classification, or document information, that are associated to the Approval.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute.
 
 ### ApprovedObjects

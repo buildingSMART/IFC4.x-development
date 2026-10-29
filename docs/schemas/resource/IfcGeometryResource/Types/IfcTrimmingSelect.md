@@ -3,7 +3,6 @@
 The IfcTrimmingSelect allows for a choice between two ways of trimming a curve.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > This select type identifies the two possible ways of trimming a parametric curve; by a Cartesian point on the curve, or by a REAL number defining a parameter value within the parametric range of the curve.
 

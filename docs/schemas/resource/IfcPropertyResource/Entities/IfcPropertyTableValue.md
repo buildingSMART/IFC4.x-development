@@ -28,7 +28,6 @@ Table 1 — Table value property with values, measure types and units
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attributes _DefiningValues_ and _DefinedValues_ have been made OPTIONAL with upward compatibility for file based exchange. The attribute _CurveInterpolation_ has been added.
 
 
@@ -41,12 +40,10 @@ Table 1 — Table value property with values, measure types and units
 
 ### DefiningValues
 List of defining values, which determine the defined values. This list shall have unique values only.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been made optional with upward compatibility for file based exchange.
 
 ### DefinedValues
 Defined values which are applicable for the scope as defined by the defining values.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been made optional with upward compatibility for file based exchange.
 
 ### Expression
@@ -60,7 +57,6 @@ Unit for the defined values, if not given, the default value for the measure typ
 
 ### CurveInterpolation
 Interpolation of the curve between two defining and defined values that are provided. if not provided a linear interpolation is assumed.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added at the end of the attribute list.
 
 ## Formal Propositions

@@ -5,7 +5,6 @@ A protective device tripping unit breaks an electrical circuit at a separate bre
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

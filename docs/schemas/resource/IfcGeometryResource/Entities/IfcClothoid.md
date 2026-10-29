@@ -3,7 +3,6 @@
 A clothoid is a planar curve in the form of a spiral. This curve has the property that the curvature varies linearly with the arc length.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO 10303-42:2003
 
 Interpretation of the data shall be as follows:
@@ -35,7 +34,6 @@ $$ A=\sqrt{LR}$$
 
 where, L is the length measured from the inflection point; and R is the radius of the clothoid.
 
-{ .extDef}
 > NOTE Formulae adapted from **clothoid** defined in ISO 10303-42
 
 ## Attributes

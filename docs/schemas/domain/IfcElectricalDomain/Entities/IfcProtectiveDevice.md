@@ -7,7 +7,6 @@ A protective device provides protection against electrical current only (not as 
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

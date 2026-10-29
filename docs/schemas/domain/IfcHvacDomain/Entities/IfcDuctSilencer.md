@@ -5,7 +5,6 @@ A duct silencer is a device that is typically installed inside a duct distributi
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

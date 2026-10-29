@@ -12,7 +12,6 @@ It is used to define a furniture type specification indicating the specific prod
 
 > HISTORY New entity in IFC2x2
 
-{ .note}
 >
 
 ## Attributes

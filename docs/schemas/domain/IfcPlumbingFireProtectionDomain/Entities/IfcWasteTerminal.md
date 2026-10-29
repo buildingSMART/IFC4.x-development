@@ -7,7 +7,6 @@ A waste terminal provides for all forms of trap and waste point that collects di
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

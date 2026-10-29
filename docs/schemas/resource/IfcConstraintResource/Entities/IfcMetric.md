@@ -35,7 +35,6 @@ Figure USERDEFCONSTRAINT — An example user defined constraint.
 
 > HISTORY New entity in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE ReferencePath attribute added for indicating the value to be constrained along a path of attribute references.
 
 ## Attributes
@@ -50,7 +49,6 @@ If _DataValue_ refers to an _IfcTable_, this attribute identifies the relevant c
 
 ### DataValue
 The value to be compared on associated objects. A null value indicates comparison to null.
-{ .change-ifc4}
 > IFC4 ADD1 CHANGE This attribute is now optional.
 
 ### ReferencePath

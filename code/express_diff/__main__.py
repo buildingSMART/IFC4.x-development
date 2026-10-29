@@ -14,7 +14,7 @@ fn1, fn2, output = sys.argv[1:]
 
 print("Running difference", *sys.argv[1:])
 
-schema_name_re = re.compile(r"ifc4x\d_\w+")
+schema_name_re = re.compile(r"ifc4x\d(_\w+)?")
 
 ERROR_TYPES_LABELS = "Missing data", "Type definitions", "Entity definitions", "Constraints"
 MISSING_DATA, TYPE_DEFINITIONS, ENTITY_DEFINITIONS, CONSTRAINTS = ERROR_TYPES_LABELS

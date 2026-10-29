@@ -26,7 +26,6 @@ A textual description relating the nature of the role played by an actor.
 
 ### HasExternalReference
 Reference to external information, e.g. library, classification, or document information, which is associated with the actor role.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute.
 
 ## Formal Propositions

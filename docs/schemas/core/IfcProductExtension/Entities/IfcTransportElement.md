@@ -16,10 +16,8 @@ Depending on local classification systems transport elements and transportation 
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x}
 > IFC2x CHANGE The attribute _PredefinedType_ (previously OperationType) is made optional.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The last attributes CapacityByWeight and CapacityByNumber are removed, use Pset_TransportElementCommon instead.
 
 ## Attributes

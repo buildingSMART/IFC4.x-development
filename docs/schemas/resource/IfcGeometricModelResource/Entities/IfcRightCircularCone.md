@@ -15,7 +15,6 @@ Figure 1 illustrates geometric parameters of the cone. The cone is positioned wi
 
 > HISTORY New entity in IFC2x3
 
-{ .use-head}
 Texture use definition
 
 On the circular side, textures are aligned facing upright with origin at the back (+Y direction) revolving counter-clockwise. Textures are stretched or repeated to the extent of the base circumference according to RepeatS. Textures are compressed linearly going upwards towards the top point according to RepeatT.

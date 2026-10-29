@@ -5,7 +5,6 @@ A chiller is a device used to remove heat from a liquid via a vapor-compression 
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

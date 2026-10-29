@@ -5,7 +5,6 @@ _IfcRoundedRectangleProfileDef_ defines a rectangle with equally rounded corners
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x}
 > IFC2x CHANGE The _IfcRoundedRectangleProfileDef_ is now subtyped from _IfcRectangleProfileDef_. The _XDim_ and _YDim_ attributes have been removed (now inherited from supertype).
 
 Figure 1 illustrates parameters of the rounded rectangle profile definition.

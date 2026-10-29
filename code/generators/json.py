@@ -1,4 +1,7 @@
 import argparse
+import csv
+import glob
+import os
 from pathlib import Path
 import re
 import json
@@ -101,6 +104,60 @@ def get_schema(name):
 
 # remove trailing semi-colon if any
 trailing_semi = lambda s: s[:-1] if s.endswith(";") else s
+
+
+def _entity_in_subtree(entity, root, supertype_map):
+    cur = entity
+    seen = set()
+    while cur and cur not in seen:
+        if cur == root:
+            return True
+        seen.add(cur)
+        cur = supertype_map.get(cur)
+    return False
+
+
+def _bucket_for_pset(pset_name, applicability_entries, supertype_map):
+    """Route a Pset to its GeneralUsage bucket — mirrors the CSVs deleted in f5f6abe2."""
+    if pset_name.startswith("Qto"):
+        return ("GeneralUsage", "QuantitySets")
+    if "PHistory" in pset_name:
+        return ("GeneralUsage", "PropertySetsforPerformance")
+    for entry in applicability_entries:
+        entity = entry.split("/", 1)[0]
+        if _entity_in_subtree(entity, "IfcMaterialDefinition", supertype_map):
+            return ("GeneralUsage", "PropertySetsforMaterials")
+        if _entity_in_subtree(entity, "IfcProfileDef", supertype_map):
+            return ("GeneralUsage", "PropertySetsforProfiles")
+        if _entity_in_subtree(entity, "IfcContext", supertype_map):
+            return ("GeneralUsage", "PropertySetsforContexts")
+    return ("GeneralUsage", "PropertySetsforObjects")
+
+
+def _synthesize_pset_concepts_from_uml(xmi_concepts, psets, supertype_map):
+    """Backfill xmi_concepts from UML-resolved Pset applicability (replaces CSVs deleted in f5f6abe2)."""
+    for pset_name, pset_def in psets.items():
+        applicability = pset_def.get("applicability") or []
+        if not applicability:
+            continue
+        view, concept = _bucket_for_pset(pset_name, applicability, supertype_map)
+        bucket = xmi_concepts.setdefault(view, {}).setdefault(concept, [])
+        seen = {(r.get("ApplicableEntity", ""), r.get("PredefinedType", ""), r.get("PsetName", "")) for r in bucket}
+        for entry in applicability:
+            if "/" in entry:
+                entity, predef = entry.split("/", 1)
+            else:
+                entity, predef = entry, ""
+            key = (entity, predef, pset_name)
+            if key in seen:
+                continue
+            seen.add(key)
+            bucket.append({
+                "ApplicableEntity": entity,
+                "PredefinedType": predef,
+                "PsetName": pset_name,
+            })
+
 
 if __name__ == "__main__":
 
@@ -281,7 +338,21 @@ if __name__ == "__main__":
         for x in sorted(roots):
             do_print(x)
 
-    json.dump({
+    mvd_root = REPO_ROOT / "schemas" / "mvd"
+    xmi_concepts = {}
+    for fp in sorted(glob.glob(str(mvd_root / "**" / "*.csv"), recursive=True)):
+        rel = os.path.relpath(fp, mvd_root)
+        keys = [x.split('.')[0] for x in rel.split(os.sep)]
+        cur = xmi_concepts
+        for k in keys[:-1]:
+            cur = cur.setdefault(k, {})
+        with open(fp, newline='', encoding='utf-8') as cf:
+            cur[keys[-1]] = list(csv.DictReader(cf))
+
+    # Backfill from UML deps (CSVs deleted in f5f6abe2).
+    _synthesize_pset_concepts_from_uml(xmi_concepts, psets, supertype)
+
+    payload = {
         "entity_supertype": supertype,
         "entity_to_package": entity_to_package,
         "hierarchy": hierarchy,
@@ -291,5 +362,14 @@ if __name__ == "__main__":
         "deprecated_entities": deprecated_entities,
         "abstract_entities": abstract_entities,
         "type_values": type_values,
-        "entity_where_clauses": where_clauses
-    }, open(args.output, "w", encoding="utf-8"))
+        "entity_where_clauses": where_clauses,
+        "xmi_concepts": xmi_concepts
+    }
+
+    for sidecar_name in ("changes_by_schema", "changes_by_type"):
+        sidecar_path = CODE_DIR / f"{sidecar_name}.json"
+        if sidecar_path.exists():
+            payload[sidecar_name] = json.loads(sidecar_path.read_text(encoding="utf-8"))
+
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    json.dump(payload, open(args.output, "w", encoding="utf-8"))

@@ -9,7 +9,6 @@ Figure 1 illustrates a B-spline curve.
 
 ![control points](../../../../figures/ifcbsplinecurve-fig1.gif "Figure 1 — B-spline curve")
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 
 A B-spline curve is a piecewise parametric polynomial or rational curve described in terms of control points and basis functions. The B-spline curve has been selected as the most stable format to represent all types of polynomial or rational parametric curves. With appropriate attribute values it is capable of representing single span or spline curves of explicit polynomial, rational, Bezier or B-spline type.

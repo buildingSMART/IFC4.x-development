@@ -5,7 +5,6 @@ The _IfcHatchLineDistanceSelect_ is a selection between different ways to determ
 
 The vector, if selected, acts as a one time repeat factor in the fill area style hatching for determining the origin of the repeated hatch line relative to the origin of the previous hatch line, Given the initial position of any hatch line, the one direction repeat factor determines two new positions according to the equation:
 
-{ .extDef}
 > NOTE Definition according to ISO 10303-46:
 >
 > I + k \* R  k ∈{-1,1}

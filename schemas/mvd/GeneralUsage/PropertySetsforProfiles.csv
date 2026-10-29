@@ -1,4 +1,0 @@
-ApplicableEntity,PsetName
-IfcArbitraryClosedProfileDef,Pset_ProfileArbitraryDoubleT
-IfcArbitraryProfileDefWithVoids,Pset_ProfileArbitraryHollowCore
-IfcProfileDef,Pset_ProfileMechanical

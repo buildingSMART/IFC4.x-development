@@ -9,12 +9,10 @@ A construction resource type captures common productivities and cost rates for a
 
 > HISTORY New entity in IFC4.
 
-{ .use-head}
 Composition use definition
 
 Resource types may be decomposed into nested resource types indicating productivities when applying the resource to specific task types using the _IfcRelNests_ relationship where _IfcRelNests.RelatingObject_ refers to the general resource type and _IfcRelNests.RelatedObjects_ refers to one or more task-specific productivities. For example, an _IfcLaborResourceType_ may be defined for "Carpenter" which may have a nested _IfcLaborResourceType_ for "Carpenter - Wall Framing" and another nested _IfcLaborResourceType_ for "Carpenter - Drywall", each of which may have productivities based according to specific task types (_IfcTaskType_).
 
-{ .use-head}
 Assignment use definition
 
 Resource types may be assigned to process types (_IfcTypeProcess_ subtypes) using the _IfcRelAssignsToProcess_ relationship as shown in Figure 1. Such relationship indicates that the resource type applies to the process type for the use indicated (e.g. _IfcTaskType.PredefinedType_). Such relationship enables a scenario of placing an _IfcProduct_ of a particular _IfcTypeProduct_, querying for a set of _IfcTypeProcess_ process types for constructing such product (e.g. _IfcTaskTypeEnum.CONSTRUCTION_), querying each _IfcTypeProcess_ for a set of _IfcTypeResource_ resource types for carrying out the process, and finally choosing an _IfcTypeProcess_ and _IfcTypeResource_ combination resulting in the shortest time for instantiated _IfcTask_ occurrence(s) and/or lowest-cost for instantiated _IfcConstructionResource_ occurrence(s).

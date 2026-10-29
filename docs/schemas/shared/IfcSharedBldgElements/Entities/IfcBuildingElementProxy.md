@@ -8,9 +8,12 @@ _IfcBuildingElementProxy_ may be used:
 * To exchange special types of building elements for which the current specification does not yet provide a semantic definition.
 * To represent building elements for which the participating applications can not provide a semantic definition.
 
+> HISTORY  New entity in IFC2x.
+
 > IFC4.3.0.0 CHANGE _IfcBuildingElementProxy_ should no longer be used as spatial placeholders or provisions. Use _IfcVirtualElement_ instead.
 
-> HISTORY New entity in IFC2x.
+> NOTE  It is advised not to use _IfcBuildingElementProxy_ to represent an arbitrary built element, but to use a direct instantiation of _IfcBuiltElement_ instead.
+
 
 ## Attributes
 
@@ -18,7 +21,6 @@ _IfcBuildingElementProxy_ may be used:
 Predefined generic type for a building element proxy that is specified in an enumeration. There may be a property set given specifically for the predefined types.
 > NOTE The _PredefinedType_ shall only be used, if no _IfcBuildingElementProxyType_ is assigned, providing its own _IfcBuildingElementProxyType.PredefinedType_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _CompositionType_ has been replaced by _PredefinedType_, being a superset of the enumerators.
 
 ## Formal Propositions

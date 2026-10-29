@@ -1,4 +1,8 @@
 {% extends "main.html" %}
+
+{# The search page has its own (larger) search form; suppress/overwrite the sidebar one from main.html. #}
+{% block searchbar %}{% endblock %}
+
 {% block pagecontent %}
 
 <h1>Search</h1>

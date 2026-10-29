@@ -11,10 +11,8 @@ New and abstract entity definition for positioning and annotating elements that 
 
 ### ContainedInStructure
 Relationship to a spatial structure element, to which the positioning element is primarily associated.
-{ .change-ifc2x}
 > IFC2x CHANGE The inverse relationship has been added to _IfcGrid_ with upward compatibility
 
-{ .change-ifc4}
 > IFC4 CHANGE The inverse relationship has been promoted from _IfcGrid_ to this new supertype with upward compatibility
 
 ### Positions

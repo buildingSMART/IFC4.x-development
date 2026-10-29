@@ -11,7 +11,6 @@ import hashlib
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor, as_completed
 from cachetools import TTLCache, cached
 from threading import RLock
-from flask import request, has_request_context
 from pathlib import Path
 
 try:
@@ -411,8 +410,6 @@ def get_language_icon(language):
     def _flag_map():
         return build_language_flag_map()
 
-    if not language and has_request_context():
-        language = request.cookies.get("languagePreference", "English (default)")
     return _flag_map().get(language or "English (default)", "🌐")
 
 

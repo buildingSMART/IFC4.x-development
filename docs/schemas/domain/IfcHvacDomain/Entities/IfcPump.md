@@ -5,7 +5,6 @@ A pump is a device which imparts mechanical work on fluids or slurries to move t
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

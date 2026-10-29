@@ -7,7 +7,6 @@ The swept area is defined by a cross section, represented by a subtype if _IfcPr
 
 The optional _Position_ coordinate system allows for re-positioning the resulting swept solid relative to the object coordinate system.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > The swept area solid entity collects the entities which are defined procedurally by sweeping action on planar bounded surfaces. The position is space of the swept solid will be dependent upon the position of the swept area. The swept area will be a face of the resulting swept area solid, except for the case of a revolved area solid with angle equal to 2π (or 360 degrees).
 
@@ -15,7 +14,6 @@ The optional _Position_ coordinate system allows for re-positioning the resultin
 
 > HISTORY New entity in IFC1.5
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _Position_ has been changed to OPTIONAL with upward compatibility for file-based exchange.
 
 ## Attributes
@@ -25,7 +23,6 @@ The surface defining the area to be swept. It is given as a profile definition w
 
 ### Position
 Position coordinate system for the resulting swept solid of the sweeping operation. The position coordinate system allows for re-positioning of the swept solid. If not provided, the swept solid remains within the position as determined by the cross section or by the directrix used for the sweeping operation.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been changed to OPTIONAL with upward compatibility for file-based exchange.
 
 ## Formal Propositions

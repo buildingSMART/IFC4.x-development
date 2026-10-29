@@ -10,6 +10,7 @@
     <title>{{ spec_version_string }} Documentation {{ relative_base }} {{ relative_base }}</title>
     {% endif %}
     <link rel="icon" type="image/x-icon" href="{{ relative_base }}/assets/img/favicon.ico">
+    <link id="site-root" href="{{ relative_base }}/">
     <script>window.is_iso = {% if is_iso %}true{% else %}false{% endif %};</script>
 </head>
 <body class="{{body_class or ''}}">
@@ -17,26 +18,23 @@
         <div class="row">
             <header>
                 {% if is_iso %}
-                    <p style='float: right; text-align: right'>International Organization for Standardization</p>
+                    <p class="header-iso-title" style="text-align: right">International Organization for Standardization</p>
                     <p>ISO 16739-1:2023(E)</p>
                 {% else %}
-                    <img class="logo" src="https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/master/docs/assets/img/IFC4x3-logo1.1-wide.png" width="100" style="
-                        display: inline-flex;
-                        padding-bottom: 0px;
-                        padding-top: 0px;
-                        float: left;
-                    ">
-                    <p style="display: inline-block; vertical-align: top;">{{ spec_version_string_full }} ({{ schema_version_string }})
+                    <div><img src="{{ relative_base }}/assets/img/buildingSMART_RGB_IFC4_3_v4_transparent.png"></div>
+                    <p class="header-title">{{ spec_version_string_full }} ({{ schema_name or schema_version_string }})
                         {% if is_package %}
                             <small>official</small>
                         {% else %}
-                            <small>under development</small>
+                            <small style="background-color: {{ header_color }};">{{ status_message }}</small>
                         {% endif %}
                     </p>
                 {% endif %}
                 
                 {% if not is_iso %}
-                <ul>
+                <button class="header-menu-toggle" type="button" aria-label="Toggle header menu" aria-expanded="false" aria-controls="header-menu"
+                        onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true')">&#9776;</button>
+                <ul id="header-menu">
                     <li>
                         <select id="language-selector"
                                 onchange="setLanguagePreference(this.value)"
@@ -63,7 +61,7 @@
                                 Help improve the next version
                             </a>
                         {% else %}
-                            <a href="https://github.com/buildingSMART/IFC4.3.x-development/issues/">
+                            <a href="https://github.com/{{ target_repo }}/issues/">
                                 <i data-feather="message-circle"></i>
                                 Help suggest improvements
                             </a>
@@ -89,7 +87,6 @@
         </div>
         <div class="row">
             <div class="col-md-2">
-                {% if not is_iso and not is_package %}
                 {% block searchbar %}
                 <form method='get' action='{{ base }}/search.html' style="padding:0px;" class="search">
                     <div class="row">
@@ -104,7 +101,6 @@
                     </div>
                 </form>
                 {% endblock %}
-                {% endif %}
                 <nav>
                     {% for section in navigation %}
                     <div>
@@ -127,21 +123,26 @@
                 {% endblock %}
             </div>
             <div class="col-md-2 rightpanel">
-                {% if not is_iso %}
+                {% if not is_iso and not is_preview %}
                 {% if path %}
                 <div class="card fluid shadowed">
                     <p>
-                        <a class="button primary edit-github" href='https://github.com/{{ repo or 'buildingSMART/IFC4.3.x-development' }}/blob/{{ branch }}/{{ path }}'><span class="icon-edit inverse"></span> Edit on Github</a>
+                        <a class="button primary edit-github" href='https://github.com/{{ repo or target_repo }}/blob/{{ branch }}/{{ path }}'><span class="icon-edit inverse"></span> Edit on Github</a>
                     </p>
                     <p>
                         <small>
-                            <span id="contributors"></span><br />
-                            <span id="last-change"></span>
+                            {% set page_history = get_page_history(path) %}
+                            {% if page_history %}
+                            <span id="contributors">{{ page_history.contributors|length }} contributor(s):
+                                {% for contributor in page_history.contributors %}<img src="{{ contributor.avatar_url }}" class="contributor-icon" alt="{{ contributor.name }}" title="{{ contributor.name }}">{% endfor %}
+                            </span><br />
+                            <span id="last-change">Last change: <em>{{ page_history.last_change.message }}</em> by {{ page_history.last_change.name }} on {{ page_history.last_change.date }}</span>
+                            {% endif %}
                         </small>
                     </p>
                     <p>
                         <small>
-                            Is this page difficult to understand? <a href="https://github.com/buildingSMART/IFC4.3.x-development/issues/371">Let us know!</a>
+                            Is this page difficult to understand? <a href="https://github.com/{{ target_repo }}/issues/371">Let us know!</a>
                         </small>
                     </p>
                 </div>
@@ -207,9 +208,8 @@
         window.appconfig = {
             'path': '{{ path }}',
             'base': '{{ base }}',
-            'repo': '{{ repo or "buildingSMART/IFC4.3.x-development" }}',
+            'repo': '{{ repo or target_repo }}',
             'resourceApi': null,
-            'searchIndex': '{{ base }}/assets/search/search-index.json',
         };
     </script>
     <script>

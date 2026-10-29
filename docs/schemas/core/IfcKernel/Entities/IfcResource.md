@@ -13,7 +13,6 @@ The inherited attribute _ObjectType_ is used as a textual code that identifies t
 
 > HISTORY New entity in IFC1.0
 
-{ .change-ifc2x}
 > IFC2x CHANGE The attributes BaseUnit and ResourceConsumption have been removed from the abstract entity; they are reintroduced at a lower level in the hierarchy.
 
 ## Attributes
@@ -21,12 +20,10 @@ The inherited attribute _ObjectType_ is used as a textual code that identifies t
 ### Identification
 An identifying designation given to a resource at the occurrence level.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute promoted from subtype _IfcConstructionResource_.
 
 ### LongDescription
 A detailed description of the resource (e.g. the skillset for a labor resource).
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _LongDescription_ has been added, replacing the _ResourceGroup_ attribute at subtype _IfcConstructionResource_.
 
 ### ResourceOf

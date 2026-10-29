@@ -11,7 +11,6 @@ Figure 1 shows the four arcs (dashed blue and green lines with arrow showing dif
 
 > NOTE Since the _BasisCurve_ is closed (type _IfcCircle_), the exception of the informal proposition IP3 applies, i.e. the sense flag is not required to be consistent with the parameter values of _Trim1_ and _Trim1_, so the rule (sense = parameter 1 < parameter 2) may not be fulfilled.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A trimmed curve is a bounded curve which is created by taking a selected portion, between two identified points, of the associated basis curve. The basis curve itself is unaltered and more than one trimmed curve may reference the same basis curve. Trimming points for the curve may be identified by:
 >

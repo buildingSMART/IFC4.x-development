@@ -25,7 +25,6 @@ The degree of diffusion of the reflected light. In the case of specular surfaces
 
 ### TransmissionColour
 Describes how the light falling on a body is totally or partially transmitted.
-{ .note}
 > The factor can be measured physically and has three ratios for the red, green and blue part of the light.
 
 ### ReflectanceColour

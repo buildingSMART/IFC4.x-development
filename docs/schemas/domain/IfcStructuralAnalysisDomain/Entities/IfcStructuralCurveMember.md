@@ -5,7 +5,6 @@ Instances of _IfcStructuralCurveMember_ describe edge members, i.e. structural a
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _Axis_ and WHERE rule added. Use definitions changed.
 
 ### Coordinate Systems

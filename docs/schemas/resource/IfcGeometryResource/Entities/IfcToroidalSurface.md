@@ -7,7 +7,6 @@ The _IfcToroidalSurface_ is a bounded elementary surface. It is constructed by c
 * _SELF\IfcElementarySurface.Position.Position[3]:_ The axis of revolution of the toroidal surface
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > An _IfcToroidalSurface_ is a type of elementary surface, which could be produced by revolving a circle about a line in its plane. The radius of the circle being revolved is referred to here as the _MinorRadius_ and the _MajorRadius_ is the distance from the centre of this circle to the axis of revolution. A toroidal surface is defined by the major and minor radii and the position and orientation of the surface.
 >

@@ -11,7 +11,6 @@ There are a number of costs that can be associated with an asset, each cost havi
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE All attributes made optional and date values changed to use _IfcDate_.
 
 ## Attributes
@@ -43,7 +42,6 @@ The person designated to be responsible for the asset.
 The date on which an asset was incorporated into the works, installed, constructed, erected or completed.
 > NOTE This is the date on which an asset is considered to start depreciating.
 
-{ .history}
 > IFC4 CHANGE Type changed from IfcDateTimeSelect.
 
 ### DepreciatedValue

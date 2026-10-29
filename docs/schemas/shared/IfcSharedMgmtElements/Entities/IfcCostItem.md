@@ -9,7 +9,6 @@ An _IfcCostItem_ can link one or many _IfcCostValue_'s representing a unit cost,
 
 > HISTORY New entity in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _PredefinedType_, _CostValues_, and _CostQuantities_ added.
 
 ## Attributes
@@ -17,7 +16,6 @@ An _IfcCostItem_ can link one or many _IfcCostValue_'s representing a unit cost,
 ### PredefinedType
 Predefined generic type for a cost item that is specified in an enumeration. There may be a property set given specifically for the predefined types.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added.
 
 ### CostValues
@@ -27,12 +25,10 @@ If _CostQuantities_ is provided then values indicate unit costs, otherwise value
 
 For calculation purposes, the cost values may be directly added unless they have qualifications. Cost values with qualifications (e.g. _IfcCostValue.ApplicableDate_, _IfcCostValue.FixedUntilDate_) should be excluded from such calculation if they do not apply.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added.
 
 ### CostQuantities
 Component quantities of the same type for which the total quantity for the cost item is calculated as the sum.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added.
 
 ## Concepts

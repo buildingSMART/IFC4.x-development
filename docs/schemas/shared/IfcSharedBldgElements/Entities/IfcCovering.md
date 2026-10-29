@@ -3,7 +3,6 @@
 A covering is an element which covers some part of another element and is fully dependent on that other element. The _IfcCovering_ defines the occurrence of a covering type, that (if given) is expressed by the _IfcCoveringType_.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO ISO 6707-1: final coverings and treatments of surfaces and their intersections.
 
 Coverings are elements with relationships to the covered element and the space on the other side, they may contain openings, assigned by _IfcRelVoidsElement_, material information, assigned by _IfcRelAssociatesMaterial_, and others.
@@ -14,24 +13,17 @@ Coverings are elements with relationships to the covered element and the space o
 
 Coverings can be assigned to
 
-* a space represented by _IfcSpace_
-  * using the inverse relationship _CoversSpaces_ pointing to _IfcRelCoversSpaces_. The space is then accessible via _IfcRelCoversSpaces.RelatedSpace_. It defines to which space a covering is facing towards.
-* a space boundary represented by _IfcRelSpaceBoundary_
-  * using the inverse relationship _ProvidesBoundaries_ pointing to _IfcRelSpaceBoundary._ The space is then accessible via _IfcRelSpaceBoundary.RelatingSpace_.
-* a built element represented by _IfcBuiltElement_
-  * using the inverse relationship _Covers_ pointing to _IfcRelCoversBldgElements_. The building element is then accessible via _IfcRelCoversBldgElements.RelatingBuildingElement_.
+- a space represented by _IfcSpace_ using the inverse relationship _ContainedInStructure_ pointing to _IfcRelContainedInSpatialStructure_.  The space is then accessible via _IfcRelContainedInSpatialStructure.RelatingStructure_.
+  > EXAMPLE This relationship (e.g. this room has carpet) may typically be used in facility management usecases and room data sheets, such as when creating room finishes schedules.
 
-> NOTE The mere containment relationship between an _IfcCovering_ and an _IfcSpace_ is created by using _IfcRelContainedInSpatialStructure_
+- a built element represented by _IfcBuiltElement_ using the inverse relationship _Decomposes_ pointing to _IfcRelAggregates_. The built element is then accessible via _IfcRelAggregates.RelatingObject_.
+  > EXAMPLE _IfcRelAggregates_ would be used to relate a covering (e.g. cladding) to its "covered element" (e.g. wall).
 
-The following guideline shall apply:
-
-* (default) if the space has coverings that may not have their own shape representation and no defined relationships to the building elements they cover, then the _IfcCovering_ shall be assigned to _IfcSpace_ using the _IfcRelCoversSpaces_ relationship,
-* if the space has coverings that have an own shape representation and the space has defined space boundaries, then the covering, which relates to that space, shall be contained in the space using _IfcRelContainedInSpatialStructure_. It may be assigned to the space boundaries using the _IfcRelSpaceBoundary_.
-* if the covering does not relate to a space, then the covering should be assigned to the building element or a distribution element using the _IfcRelCoversBldgElements_ relationship.
+- a space boundary represented by _IfcRelSpaceBoundary_ using the inverse relationship _ProvidesBoundaries_ pointing to _IfcRelSpaceBoundary._ The space is then accessible via _IfcRelSpaceBoundary.RelatingSpace_. Contrary to the two assignment relationships above, space boundaries are non-hierarchical and independent of the main spatial decomposition tree consisting of containment and decomposition relationships.
+  > EXAMPLE This may be used in energy analysis where it is important to know the exact materials and elements that separate spaces at their boundaries.
 
 > HISTORY New entity in IFC1.0.
 
-{ .change-ifc2x}
 > IFC2x CHANGE The attribute _PredefinedType_ is now optional and should only be inserted when no type information, given by _IfcCoveringType_, is assigned to the _IfcCovering_ occurrence by _IfcRelDefinesByType_.
 
 ## Attributes
@@ -45,7 +37,6 @@ Reference to the objectified relationship that handles the relationship of the c
 
 ### CoversElements
 Reference to the objectified relationship that handles the relationship of the covering to the covered element.
-{ .change-ifc2x4}
 > IFC4 CHANGE Renamed into _CoversElements_ for consistency.
 
 ## Formal Propositions

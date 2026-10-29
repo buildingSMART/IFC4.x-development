@@ -11,7 +11,6 @@ Figure 1 illustrates geometric parameters of the cylinder. The cylinder is posit
 
 ![cylinder](../../../../figures/ifcrightcircularcylinder-layout1.png "Figure 1 — Right circular cylinder geometry")
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A right circular cylinder is a CSG primitive in the form of a solid cylinder of finite height. It is defined by an axis point at the centre of one planar circular face, an axis, a height, and a radius. The faces are perpendicular to the axis and are circular discs with the specified radius. The height is the distance from the first circular face centre in the positive direction of the axis to the second circular face centre.
 
@@ -19,7 +18,6 @@ Figure 1 illustrates geometric parameters of the cylinder. The cylinder is posit
 
 > HISTORY New entity in IFC2x3.
 
-{ .use-head}
 Texture use definition
 
 On the circular side, textures are aligned facing upright with origin at the back (+Y direction) revolving counter-clockwise. Textures are stretched or repeated to the extent of the circumference according to RepeatS. Textures are stretched or repeated to the extent of the _Height_ according to RepeatT.
@@ -28,7 +26,6 @@ On the top and bottom faces, textures are aligned facing front-to-back, with the
 
 Figure 2 illustrates default texture mapping with a clamped texture (RepeatS=False and RepeatT=False). The image on the left shows the texture where the S axis points to the right and the T axis points up. The image on the right shows the texture applied to the geometry where the X axis points back to the right, the Y axis points back to the left, and the Z axis points up.
 
-{ .gridtable}
 
 ![texture](../../../../figures/ifcrightcircularcylinder-texture.png)
 

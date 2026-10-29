@@ -1,26 +1,20 @@
-# Web / runtime / services 
-Flask 
-gunicorn
-redis
+# Runtime
 cachetools
 
 # HTML / parsing 
+Jinja2
 beautifulsoup4<4.12
 lxml
 Markdown
 markdown-it-py==1.1.0
 Pygments
-pyparsing<3
+pyparsing>=3
 xmlschema
 
 # Translations
 Babel
 polib
 python-slugify
-
-# Search 
-pysolr         
-solrq        
 
 # Graphs / diagrams
 pydot
@@ -29,6 +23,7 @@ networkx
 # Data / utils
 numpy
 tabulate
+wordninja==2.0.0
 deepdiff
 hilbertcurve==1.0.5
 python-dotenv

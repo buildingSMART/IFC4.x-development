@@ -1,12 +1,10 @@
 # IfcLightSourceDirectional
 
-{ .extDef}
 <!-- end of short definition -->
 
 > NOTE Definition according to ISO 10303-46:
 > The light source directional is a subtype of light source. This entity has a light source direction. With a conceptual origin at infinity, all the rays of the light are parallel to this direction. This kind of light source lights a surface based on the surface's orientation, but not position.
 
-{ .extDef}
 > NOTE Definition according to ISO/IEC 14772-1:1997:
 > The directional light node defines a directional light source that illuminates along rays parallel to a given 3-dimensional vector. Directional light nodes do not attenuate with distance. Directional light nodes are specified in the local coordinate system and are affected by ancestor transformations.
 

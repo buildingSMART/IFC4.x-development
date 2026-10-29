@@ -40,7 +40,7 @@ html, svg *  {
   -webkit-text-size-adjust: 100%;
 }
 
-svg * {
+svg:not(.concept-diagram-canvas svg) * {
   font-size: 1rem;
 }
 

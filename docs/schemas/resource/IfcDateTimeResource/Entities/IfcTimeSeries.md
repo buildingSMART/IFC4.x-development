@@ -35,5 +35,4 @@ The unit to be assigned to all values within the time series. Note that mixing u
 
 ### HasExternalReference
 Reference to an external reference, e.g. library, classification, or document information, that is associated to the IfcTimeSeries.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute.

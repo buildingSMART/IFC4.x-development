@@ -7,7 +7,6 @@ An _IfcResourceConstraintRelationship_ allows for the specification of a constra
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Renamed from IfcResourceConstraintRelationship and extended to apply to all resource level entities. Subtyped from _IfcResourceLevelRelationship_.
 
 ## Attributes

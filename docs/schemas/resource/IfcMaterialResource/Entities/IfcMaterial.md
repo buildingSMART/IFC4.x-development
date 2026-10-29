@@ -13,7 +13,6 @@ An _IfcMaterial_ may also have presentation information associated. Such present
 
 > HISTORY New entity in IFC4
 
-{ .change-ifc2x4}
 > IFC4 CHANGE  The attributes _Description_ and _Category_ have been added.
 
 ## Attributes
@@ -26,7 +25,6 @@ Name of the material.
 
 ### Description
 Definition of the material in more descriptive terms than given by attributes _Name_ or _Category_.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added at the end of attribute list.
 
 ### Category
@@ -34,23 +32,19 @@ Definition of the category (group or type) of material, in more general terms th
 
 It is recommended to use common terms for the material category, the following list constitutes such a recommendation: 'concrete', 'steel', 'aluminium', 'block', 'brick', 'stone', 'wood', 'glass', 'gypsum', 'plastic', 'earth'.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added at the end of attribute list.
 
 ### HasRepresentation
 Reference to the _IfcMaterialDefinitionRepresentation_ that provides presentation information to a representation common to this material in style definitions.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The inverse attribute _HasRepresentation_ has been added.
 
 ### IsRelatedWith
 Reference to a material relationship indicating that this material is a part (or constituent) in a material composite.
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse attribute has been added.
 
 ### RelatesTo
 Reference to a material relationship indicating that this material composite has parts (or constituents).
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse attribute has been added.
 
 ## Concepts

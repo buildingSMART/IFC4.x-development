@@ -7,7 +7,6 @@ The _IfcFacetedBrepWithVoids_ is a specialization of a faceted B-rep which conta
 
 > HISTORY New entity in IFC1.0
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Subtyping changed from _IfcManifoldSolidBrep_ to _IfcFacetedBrep_ with upward compatibility for file based exchange.
 
 

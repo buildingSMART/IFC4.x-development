@@ -13,7 +13,6 @@ Figure 1 — Sphere geometry
 
 > EXAMPLE Figure 1 illustrates geometric parameters of the sphere. The sphere is positioned within its own placement coordinate system relative to the object coordinate system. The origin is the center of the sphere.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A sphere is a CSG primitive with a spherical shape defined by a centre and a radius.
 
@@ -21,14 +20,12 @@ Figure 1 — Sphere geometry
 
 > HISTORY New entity in IFC2x3.
 
-{ .use-head}
 Texture Use Definition
 
 Textures are aligned facing upright with origin at the back (+Y direction) revolving counter-clockwise. Textures are stretched or repeated to the extent of the circumference at the equator according to RepeatS and RepeatT.
 
 Figure 2 illustrates default texture mapping with a clamped texture (RepeatS=False and RepeatT=False). The image on the left shows the texture where the S axis points to the right and the T axis points up. The image on the right shows the texture applied to the geometry where the X axis points back to the right, the Y axis points back to the left, and the Z axis points up.
 
-{ .gridtable}
 
 ![texture](../../../../figures/ifcsphere-texture.png)
 

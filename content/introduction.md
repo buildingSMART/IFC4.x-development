@@ -55,7 +55,7 @@ The IFC documentation is deposited at [standards.buildingsmart.org](https://stan
   
 The data schema architecture of IFC defines four conceptual layers, each individual schema is assigned to exactly one conceptual layer. The figure below shows the schema architecture of the IFC layered architecture.
 
-![Figure 1 — Data schema architecture with conceptual layers](https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/master/content/IFC4_layered_architecture.png)
+![Figure 1 — Data schema architecture with conceptual layers](../../../../figures/ifc4_layered_architecture.png)
 
 1. **Resource layer** — the lowest layer includes all individual schemas containing resource definitions, those definitions do not include a globally unique identifier and shall not be used independently of a definition declared at a higher layer;
 2. **Core layer** — the next layer includes the kernel schema and the core extension schemas, containing the most general entity definitions, all entities defined at the core layer, or above carry a globally unique id and optionally owner and history information;

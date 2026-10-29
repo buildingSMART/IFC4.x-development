@@ -32,7 +32,7 @@ concept {
     IfcClassification:ReferenceTokens -> IfcIdentifier_1
     IfcClassification:Edition -> IfcLabel_3
     IfcClassification:Description -> IfcText_1
-    IfcClassification:Location -> IfcURIReference_0
+    IfcClassification:Specification -> IfcURIReference_0
     IfcClassification:EditionDate -> IfcDate
     IfcClassificationReference:Identification[binding="Identification"]
     IfcClassificationReference:Name[binding="Name"]

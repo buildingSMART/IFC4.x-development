@@ -11,7 +11,6 @@ The entity _IfcSurfaceStyleWithTextures_ allows to include image textures in sur
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE inverse attribute _HasTextureCoordinates_ deleted.
 
 ## Attributes

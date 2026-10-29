@@ -7,7 +7,6 @@ Pipe fittings include elbows, junctions, manifolds, and plumbing boxes.
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

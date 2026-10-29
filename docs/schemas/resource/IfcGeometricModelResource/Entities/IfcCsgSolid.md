@@ -10,7 +10,6 @@ An _IfcCsgSolid_ is the representation of a 3D shape using constructive solid ge
 * CSG primitives, the subtypes of _IfcCsgPrimitive3D_.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A solid represented as a CSG model is defined by a collection of so-called primitive solids, combined using regularized Boolean operations. The allowed operations are intersection, union, and difference. As a special case a CSG solid can also consists of a single CSG primitive.
 >

@@ -5,7 +5,6 @@ This entity defines a reaction which occurs at a point. A point reaction is typi
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attributes in the supertypes _IfcStructuralActivity_ and _IfcStructuralReaction_ changed. Use definitions changed, informal propositions added.
 
 ****Coordinate Systems****:

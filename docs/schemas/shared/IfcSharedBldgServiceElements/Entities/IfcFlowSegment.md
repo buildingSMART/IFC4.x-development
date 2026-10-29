@@ -7,7 +7,6 @@ The _IfcFlowSegment_ defines a particular occurrence of a segment inserted in th
 
 > HISTORY New entity in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE This entity has been deprecated for instantiation and will become ABSTRACT in a future release; new subtypes should now be used instead.
 
 ## Concepts

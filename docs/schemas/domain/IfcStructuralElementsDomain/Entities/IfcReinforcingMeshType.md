@@ -12,7 +12,6 @@ It is used to define a reinforcing mesh type specification indicating the specif
 
 > HISTORY New entity in IFC4.
 
-{ .use-head}
 Geometry Use Definition
 
 The _IfcReinforcingMeshType_ may define the shared geometric representation for many mesh occurrences. The _RepresentationMaps_ attribute refers to a list of _IfcRepresentationMap_'s, that allow for multiple geometric representations.

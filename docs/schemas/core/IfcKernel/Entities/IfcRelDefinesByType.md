@@ -26,7 +26,6 @@ ExtendToStructure = TRUE | ExtendToStructure = FALSE | ExtendToStructure = FALSE
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _RelatedObjects_ had been demoted from the supertype _IfcRelDefines_ to _IfcRelDefinesByType_.
 
 ## Attributes

@@ -23,14 +23,12 @@ _IfcGroup_ does not define an own object coordinate system, nor does it have an 
 
 > HISTORY New entity in IFC1.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse _IsGroupedBy_ relationship is set to 0..n
 
 ## Attributes
 
 ### IsGroupedBy
 Reference to the relationship _IfcRelAssignsToGroup_ that assigns the one to many group members to the _IfcGroup_ object.
-{ .change-ifc2x4}
 > IFC4 CHANGE The cardinality has been changed from 1..1 to 0..n in order to allow the exchange of a group concept without having already group members assigned. It now also allows the use of many instances of _IfcRelAssignsToGroup_ to assign the group members. The change has been done with upward compatibility for file based exchange.
 
 ### ReferencedInStructures

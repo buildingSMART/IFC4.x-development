@@ -3,7 +3,6 @@
 The _IfcRectangularTrimmedSurface_ is a surface created by bounding its _BasisSurface_ along two pairs of parallel curves defined within the parametric space of the referenced surface.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > The trimmed surface is a simple bounded surface in which the boundaries are the constant parametric lines _u_~1~ = u1, _u_~2~ = u2, _v_~1~ = v1 and _v_~2~ = v2. All these values shall be within the parametric range of the referenced surface. Cyclic properties of the parameter range are assumed. The rectangular trimmed surface inherits its parameterization directly from the basis surface and has parameter ranges from 0 to |_u_~2~ - _u_~1~| and 0 to|_v_~2~-_v_~1~|.
 

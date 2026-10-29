@@ -53,7 +53,6 @@ Table 5 - LOGICALNOTOR(A,B,C)
 
 > HISTORY New enumeration in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Extended to include LOGICALXOR, LOGICALNOTAND and LOGICALNOTOR.
 
 ## Items

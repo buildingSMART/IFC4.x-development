@@ -17,7 +17,6 @@ Describes the applicable building life-cycle phase. Typical values should be DES
 
 ### PredefinedType
 Predefined generic type for a performance history that is specified in an enumeration.
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added at the end of the entity definition.
 
 ## Concepts

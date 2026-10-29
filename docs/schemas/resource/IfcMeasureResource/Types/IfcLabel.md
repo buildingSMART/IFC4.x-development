@@ -9,10 +9,8 @@ Type: STRING of up to 255 characters
 
 > HISTORY New type in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Previously recommended size restriction of 255 characters is now mandatory.
 
-{ .use-head}
 Value restrictions
 
 As a human-readable string for naming purposes, a label is usually human-specified and locale-dependent (in contrast to purely machine-readable identifiers, _IfcIdentifier_).

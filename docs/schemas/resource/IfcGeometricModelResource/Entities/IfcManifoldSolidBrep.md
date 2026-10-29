@@ -5,7 +5,6 @@ The _IfcManifoldSolidBrep_ is a solid represented as a collection of connected s
 
 Instances of type _IfcManifoldSolidBrep_ shall be of type _IfcFacetedBrep_, using only _IfcPolyLoop_ for the bounds of _IfcFaceBound_, or of type _IfcAdvancedBrep_, using only _IfcAdvancedFace_ for the face geometry, and _IfcEdgeCurve_ for the edges.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A manifold solid b-rep is a finite, arcwise connected volume bounded by one or more surfaces, each of which is a connected, oriented, finite, closed 2-manifold. There is no restriction on the genus of the volume, nor on the number of voids within the volume.
 >

@@ -1,4 +1,5 @@
-REPO_URL = "https://github.com/buildingSMART/IFC4.3.x-development/edit/xmi-refresh/"
+from version import target_repo, target_branch
+REPO_URL = f"https://github.com/{target_repo}/edit/{target_branch}/"
 
 import csv
 import os
@@ -30,16 +31,8 @@ is_package = os.environ.get('PACKAGE', '0') == '1'
 if is_package or is_iso:
     SCHEMA_NAME = "IFC4X3_ADD2"
 else:
-    SCHEMA_NAME = "IFC4X3_DEV"
-
-    try:
-        if os.environ.get("REPO_DIR"):
-            repo_dir = "-C", os.environ.get("REPO_DIR")
-        else:
-            repo_dir = []
-        sha = subprocess.check_output(["git", *repo_dir, "rev-parse", "--short", "HEAD"]).decode('ascii').strip()
-        SCHEMA_NAME += f"_{sha}"
-    except: pass
+    # derived in code/version.py
+    from version import schema_name as SCHEMA_NAME
 
 def unescape(s):
     # @todo this is bizarre encoding, what happened here?
@@ -454,7 +447,7 @@ class xmi_document:
                     ty = self.xmi.by_id[(attr.resolve("type"))]
                     
                     if c.name.startswith("Pset"):
-                        bounds = ((attr|"lowerValue").value, (attr|"upperValue").value)
+                        bounds = ((attr|"lowerValue").value or "0", (attr|"upperValue").value or "1")
                         prop_args = {"Type": re.split(r'_\w\[', ty.name)[0]}
 
                         allowed_reference_types = {"IfcAddress", "IfcAppliedValue", "IfcExternalReference", "IfcMaterialDefinition", "IfcOrganization", "IfcPerson", "IfcPersonAndOrganization", "IfcTable", "IfcTimeSeries"}
@@ -553,7 +546,7 @@ class xmi_document:
 
                 is_abstract = c.isAbstract == "true"
 
-                attributes, inverses, derived, children = [], [], [], []
+                attributes, inverses, derived = [], [], []
 
                 subtypes = [*map(operator.attrgetter('name'), filter(lambda n: n.xmi_type == 'uml:Class', filter(lambda n: '.' not in n.name, (self.xmi.by_id[x] for x in self.generalizations_in.get(c.id, [])))))]
                 supertypes = [self.xmi.by_id[x].name for x in self.generalizations_out.get(c.id, [])]
@@ -570,7 +563,7 @@ class xmi_document:
                     else:
                         name, *aggr = a.name.split('_')
                         parts = []
-                        if (a|'lowerValue').value == "0":
+                        if ((a|'lowerValue').value or "0") == "0":
                             parts.append("OPTIONAL")
                         for ag in aggr:
                             parts.extend(format_aggr(ag))
@@ -662,7 +655,7 @@ class xmi_document:
                              
                 yield xmi_item(
                     "ENTITY", c.name, 
-                    express_entity, c, children,
+                    express_entity, c, [(a.name, a) for a in c/"ownedAttribute"],
                     document=self,
-                    supertypes=subtypes
+                    supertypes=supertypes
                 )

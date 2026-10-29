@@ -22,7 +22,6 @@ concept {
     IfcIndexedPolyCurve:Segments -> IfcLineIndex
     IfcIndexedPolyCurve:SelfIntersect -> IfcBoolean_0
     IfcCartesianPointList2D:CoordList -> IfcLengthMeasure
-    IfcBoolean_0:RelatedOpeningElement -> IfcVoidingFeature
     IfcCurveBoundedPlane:BasisSurface -> IfcPlane
     IfcPlane:Position -> IfcAxis2Placement3D_0
     IfcCurveBoundedSurface:BasisSurface -> IfcCylindricalSurface

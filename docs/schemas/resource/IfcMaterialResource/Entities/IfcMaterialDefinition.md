@@ -17,15 +17,12 @@ Each instantiable subtype of _IfcMaterialDefinition_ may have material propertie
 
 ### AssociatedTo
 Use of the _IfcMaterialDefinition_ subtypes within the material association of an element occurrence or element type. The association is established by the _IfcRelAssociatesMaterial_ relationship.
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse attribute has been added.
 
 ### HasExternalReferences
 Reference to external references, e.g. library, classification, or document information, that are associated to the material.
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse attribute has been added.
 
 ### HasProperties
 Material properties assigned to instances of subtypes of _IfcMaterialDefinition_.
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse attribute has been added.

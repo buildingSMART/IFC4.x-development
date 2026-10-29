@@ -228,6 +228,7 @@ class HtmlRefiner:
         "style",
         "title",
         "textarea",
+        "h1", # exclude so there are no self links
     }
     _HEADING_TAGS = ("h1", "h2", "h3", "h4", "h5", "h6")
 
@@ -272,7 +273,7 @@ class HtmlRefiner:
             title.string = f"{h1.get_text(strip=True)} - {title.get_text(strip=True)}"
 
     def _normalize_urls(self, soup, public_path: str) -> None:
-        for tag, attr in (("a", "href"), ("img", "src"), ("script", "src"), ("link", "href")):
+        for tag, attr in (("a", "href"), ("a", "xlink:href"), ("img", "src"), ("script", "src"), ("link", "href"), ("form", "action")):
             for element in soup.find_all(tag):
                 if value := element.get(attr):
                     if normalized := self._normalize_url(public_path, value):
@@ -331,6 +332,12 @@ class HtmlRefiner:
                 token = str(uuid.uuid4())
                 figcaption.string = "Figure " + token
                 parent.append(figcaption)
+
+            # Keep the caption and figure anchor outside the zoom/pan viewport.
+            canvas = parent.find_parent("div", class_="concept-diagram-canvas")
+            if canvas is not None and img.name == "svg":
+                canvas.insert_before(parent.extract())
+                img.wrap(canvas.extract())
 
         for table in main_content.find_all("table"):
             figure = soup.new_tag("figure")

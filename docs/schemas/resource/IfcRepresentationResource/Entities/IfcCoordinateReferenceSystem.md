@@ -3,7 +3,6 @@
 The _IfcCoordinateReferenceSystem_ is a definition of a coordinate reference system by means of qualified identifiers only. The interpretation of the identifier is expected to be well-known to the receiving software.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition from OpenGIS Abstract Specification, Topic 2:
 > A coordinate reference system is a coordinate system which is related to the real world by a datum. The coordinate system is composed of a set of coordinate axes with specified units of measure. The datum specifies the relationship of a coordinate system to the earth. The resulting combination of coordinate system and datum is a coordinate reference system.
 

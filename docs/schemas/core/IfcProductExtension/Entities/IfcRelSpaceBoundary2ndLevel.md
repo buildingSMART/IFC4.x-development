@@ -18,7 +18,6 @@ The 2nd level space boundary defines the physical or virtual delimiter of a spac
 
 > HISTORY New entity in IFC4.
 
-{ .use-head}
 Relationship Use Definitions
 
 As shown in Figure 1, the attribute _ParentBoundary_ with inverse _InnerBoundaries_ is provided to link the space boundaries of doors, windows, and openings to the parent boundary, such as of a wall or slab.
@@ -31,7 +30,6 @@ The attribute _CorrespondingBoundary_ with inverse _Corresponds_ is provided to 
 
 ![IfcRelSpaceBoundary2ndLevel](../../../../figures/ifcrelspaceboundary2ndlevel-fig1.png "Figure 1 — Space boundary second level relationships")
 
-{ .use-head}
 Geometry Use Definitions
 
 See the definition at the supertype _IfcRelSpaceBoundary_ for guidance on using the connection geometry for second level space boundaries.

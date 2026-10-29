@@ -7,7 +7,6 @@ Requests may take many forms depending on the need including fault reports for m
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _RequestID_ renamed to _Identification_ and promoted to supertype _IfcControl_, attributes _PredefinedType_, _Status_, and _LongDescription_ added.
 
 ## Attributes
@@ -15,7 +14,6 @@ Requests may take many forms depending on the need including fault reports for m
 ### PredefinedType
 Identifies the predefined type of sources through which a request can be made.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added.
 
 ### Status
@@ -24,13 +22,11 @@ Hold: wait to see if further requests are received before deciding on action
 NoAction: no action is required on this request
 Schedule: plan action to take place as part of maintenance or other task planning/scheduling
 Urgent: take action immediately
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added.
 
 ### LongDescription
 Detailed description of the permit.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added.
 
 ## Concepts

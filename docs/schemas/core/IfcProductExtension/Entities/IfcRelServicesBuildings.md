@@ -23,8 +23,6 @@ System that services the Buildings.
 
 ### RelatedBuildings
 Spatial structure elements (including site, building, storeys) that are serviced by the system.
-{ .change-ifc2x}
 > IFC2x CHANGE The data type has been changed from _IfcBuilding_ to _IfcSpatialStructureElement_ with upward compatibility for file based exchange.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The data type has been changed from _IfcSpatialStructureElement_ to _IfcSpatialElement_ with upward compatibility for file based exchange.

@@ -11,7 +11,6 @@ Figure 1 illustrates the definition of _IfcCircle_ within a three-dimensional po
 
 
 
-{ .extDef}
 > REFERENCE Definition according to ISO/CD 10303-42:1992
 
 A circle is defined by a radius and the location and orientation of the circle. Interpretation of data should be as follows:

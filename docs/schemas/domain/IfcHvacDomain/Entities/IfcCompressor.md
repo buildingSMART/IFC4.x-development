@@ -5,7 +5,6 @@ A compressor is a device that compresses a fluid typically used in a refrigerati
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

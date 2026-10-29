@@ -9,7 +9,6 @@ Ports are assigned the distribution systems in order to indicate its role in a p
 
 > HISTORY New entity in IFC2x2
 
-{ .change-ifc2x4}
 
 ## Attributes
 

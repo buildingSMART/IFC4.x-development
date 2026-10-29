@@ -15,7 +15,6 @@ Objects are independent pieces of information that might contain or reference ot
 
 > HISTORY New abstract entity in IFC2x3.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The new subtype _IfcContext_ and the relationship to context _HasContext_ has been added. The decomposition relationship is split into ordered nesting (_Nests_, _IsNestedBy_) and un-ordered aggregating (_Decomposes_, _IsDecomposedBy_).
 
 ## Attributes
@@ -26,31 +25,26 @@ Reference to the relationship objects, that assign (by an association relationsh
 ### Nests
 References to the decomposition relationship being a nesting. It determines that this object definition is a part within an ordered whole/part decomposition relationship. An object occurrence or type can only be part of a single decomposition (to allow hierarchical structures only).
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse attribute datatype has been added and separated from _Decomposes_ defined at _IfcObjectDefinition_.
 
 ### IsNestedBy
 References to the decomposition relationship being a nesting. It determines that this object definition is the whole within an ordered whole/part decomposition relationship. An object or object type can be nested by several other objects (occurrences or types).
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse attribute datatype has been added and separated from _IsDecomposedBy_ defined at _IfcObjectDefinition_.
 
 ### HasContext
 References to the context providing context information such as project unit or representation context. It should only be asserted for the uppermost non-spatial object.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse attribute datatype has been added.
 
 ### IsDecomposedBy
 References to the decomposition relationship being an aggregation. It determines that this object definition is the whole within an unordered whole/part decomposition relationship. An object definition can be aggregated by several other objects (occurrences or parts).
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse attribute datatype has been changed from the supertype _IfcRelDecomposes_ to subtype _IfcRelAggregates_.
 
 ### Decomposes
 References to the decomposition relationship being an aggregation. It determines that this object definition is a part within an unordered whole/part decomposition relationship. An object definition can only be part of a single decomposition (to allow hierarchical structures only).
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The inverse attribute datatype has been changed from the supertype _IfcRelDecomposes_ to subtype _IfcRelAggregates_.
 
 ### HasAssociations

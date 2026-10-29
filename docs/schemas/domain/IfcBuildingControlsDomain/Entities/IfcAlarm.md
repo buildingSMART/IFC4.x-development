@@ -7,7 +7,6 @@ Alarms include the provision of break glass buttons and manual pull boxes that a
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

@@ -9,5 +9,4 @@ The _IfcPropertyAbstraction_ is an abstract supertype of all property related en
 
 ### HasExternalReferences
 Reference to an external reference, e.g. library, classification, or document information, that is associated to the property definition.
-{ .change-ifc2x4}
 > IFC4 CHANGE New inverse attribute.

@@ -12,7 +12,6 @@ It is used to define a vibration isolator type specification indicating the spec
 
 > HISTORY New entity in IFC2x2
 
-{ .note}
 >
 
 ## Attributes

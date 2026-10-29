@@ -6,7 +6,7 @@ Bounded Value
 ```
 concept {
     IfcPropertyBoundedValue:Name -> IfcIdentifier
-    IfcPropertyBoundedValue:Description -> IfcText
+    IfcPropertyBoundedValue:Specification -> IfcText
     IfcPropertyBoundedValue:UpperBoundValue -> IfcValue_0
     IfcPropertyBoundedValue:LowerBoundValue -> IfcValue_1
     IfcPropertyBoundedValue:SetPointValue -> IfcValue_2

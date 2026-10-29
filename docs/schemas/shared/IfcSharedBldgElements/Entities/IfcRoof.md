@@ -3,7 +3,6 @@
 A roof is the covering of the top part of a building, it protects the building against the effects of weather.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition according to ISO 6707-1: construction enclosing the building from above.
 
 The _IfcRoof_ shall either be represented:
@@ -17,7 +16,6 @@ The _IfcRoof_ shall either be represented:
 
 > HISTORY New entity in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _ShapeType_ renamed to _PredefinedType_.
 
 ## Attributes
@@ -26,7 +24,6 @@ The _IfcRoof_ shall either be represented:
 Predefined generic types for a roof that are specified in an enumeration. There may be a property set given for the predefined types.
 > NOTE The _PredefinedType_ shall only be used, if no _IfcRoofType_ is assigned, providing its own _IfcRoofType.PredefinedType_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been renamed from _ShapeType_ and changed to be OPTIONAL with upward compatibility for file based exchange.
 
 ## Formal Propositions

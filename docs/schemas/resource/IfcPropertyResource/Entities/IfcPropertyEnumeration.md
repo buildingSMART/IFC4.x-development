@@ -20,7 +20,6 @@ Table 1 — Property enumeration with values, measure types and units
 
 > HISTORY New entity in IFC2.0, capabilities enhanced in IFC2x.
 
-{ .change-ifc2x}
 > IFC2x CHANGE Entity has been renamed from IfcEnumeration
 
 ## Attributes

@@ -3,7 +3,6 @@
 The _IfcGeometricSetSelect_ includes the geometric representation items applicable to be part of the geometric set.
 <!-- end of short definition -->
 
-{ .extDef}
 > NOTE Definition from ISO10303-42:
 > This select type identifies the types of entities which can occur in a geometric set.
 

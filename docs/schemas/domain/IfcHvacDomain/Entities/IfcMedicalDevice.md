@@ -7,7 +7,6 @@ Outlets for medical gasses should use _IfcValve_ with PredefinedType equal to GA
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

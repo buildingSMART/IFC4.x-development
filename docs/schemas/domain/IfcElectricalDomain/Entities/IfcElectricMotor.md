@@ -5,7 +5,6 @@ An electric motor is an engine that is a machine for converting electrical energ
 
 > HISTORY New entity in IFC4
 
-{ .note}
 >
 
 ## Attributes

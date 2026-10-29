@@ -11,10 +11,8 @@ The _IfcPoint_ (or the _IfcVertexPoint_ with an associated _IfcPoint_) at the _P
 
 > HISTORY New entity in IFC1.5.
 
-{ .change-ifc2x}
 > IFC2x CHANGE Renamed from IfcPointConnectionGeometry.
 
-{ .change-ifc2x3}
 > IFC2x3 CHANGE The provision of topology with associated geometry, _IfcVertexPoint_, is enabled by using the _IfcPointOrVertexPoint_.
 
 ## Attributes

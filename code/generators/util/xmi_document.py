@@ -1,4 +1,5 @@
-REPO_URL = "https://github.com/buildingSMART/IFC4.3.x-development/edit/xmi-refresh/"
+from version import target_repo, target_branch
+REPO_URL = f"https://github.com/{target_repo}/edit/{target_branch}/"
 
 import csv
 import os
@@ -30,16 +31,8 @@ is_package = os.environ.get('PACKAGE', '0') == '1'
 if is_package or is_iso:
     SCHEMA_NAME = "IFC4X3_ADD2"
 else:
-    SCHEMA_NAME = "IFC4X3_DEV"
-
-    try:
-        if os.environ.get("REPO_DIR"):
-            repo_dir = "-C", os.environ.get("REPO_DIR")
-        else:
-            repo_dir = []
-        sha = subprocess.check_output(["git", *repo_dir, "rev-parse", "--short", "HEAD"]).decode('ascii').strip()
-        SCHEMA_NAME += f"_{sha}"
-    except: pass
+    # derived in code/version.py
+    from version import schema_name as SCHEMA_NAME
 
 def unescape(s):
     # @todo this is bizarre encoding, what happened here?
@@ -347,7 +340,7 @@ class xmi_document:
 
         def format_aggr(ag):
             ag_names = ("ARRAY", "LIST", "SET", "BAG")
-            m = re.match(r'(\w)(U)?\[(\d+):(\d+|\?)\]', ag)
+            m = re.match(r'(\w)(U)?\[(\d+):([^\]]+)\]', ag)
             assert m
             t, u, l, h = m.groups()
             unique = ("UNIQUE",) if u else ()
@@ -360,7 +353,7 @@ class xmi_document:
             if c.xmi_id is None or c.name is None:
                 continue
 
-            if c.xmi_type in ("uml:Package", "uml:EnumerationLiteral", "uml:Generalization", "uml:OpaqueExpression", "uml:Property", "uml:Association", "uml:Dependency"):
+            if c.xmi_type in ("uml:Package", "uml:EnumerationLiteral", "uml:Generalization", "uml:OpaqueExpression", "uml:Property", "uml:Association", "uml:Dependency", "uml:LiteralInteger", "uml:LiteralUnlimitedNatural"):
                 continue
 
             if c.xml.tagName == 'uml:Model':
@@ -380,7 +373,7 @@ class xmi_document:
                     yield xmi_item(
                         (c|"language").text.split('_')[-1], 
                         c.name, 
-                        (c|"body").text.strip(), 
+                        fix_schema_name((c|"body").text.strip()), 
                         c, 
                         document=self
                     )
@@ -454,7 +447,7 @@ class xmi_document:
                     ty = self.xmi.by_id[(attr.resolve("type"))]
                     
                     if c.name.startswith("Pset"):
-                        bounds = ((attr|"lowerValue").value, (attr|"upperValue").value)
+                        bounds = ((attr|"lowerValue").value or "0", (attr|"upperValue").value or "1")
                         prop_args = {"Type": re.split(r'_\w\[', ty.name)[0]}
 
                         allowed_reference_types = {"IfcAddress", "IfcAppliedValue", "IfcExternalReference", "IfcMaterialDefinition", "IfcOrganization", "IfcPerson", "IfcPersonAndOrganization", "IfcTable", "IfcTimeSeries"}
@@ -505,7 +498,7 @@ class xmi_document:
                     parts.append(supert)
                     supert = " ".join(parts)
                 
-                constraints = [(r.name, (r|"body").text) for r in c/"ownedRule" if (r|"language").text == 'EXPRESS_WHERE']
+                constraints = [(r.name, fix_schema_name((r|"body").text)) for r in c/"ownedRule" if (r|"language").text == 'EXPRESS_WHERE']
                 if ocl := next(((r|"body").text for r in c/"ownedRule" if (r|"language").text == 'OCL'), None):
                     if m := re.match(r'self\.size\(\) (=|<=) (\d+)', ocl):
                         op, sz = m.groups()
@@ -570,7 +563,7 @@ class xmi_document:
                     else:
                         name, *aggr = a.name.split('_')
                         parts = []
-                        if (a|'lowerValue').value == "0":
+                        if ((a|'lowerValue').value or "0") == "0":
                             parts.append("OPTIONAL")
                         for ag in aggr:
                             parts.extend(format_aggr(ag))
@@ -651,7 +644,7 @@ class xmi_document:
                                 ("CorrectTypeAssigned", f"(SIZEOF(IsTypedBy) = 0) OR\n  ('{SCHEMA_NAME}.{c.name.upper()}TYPE' IN TYPEOF(SELF\\IfcObject.IsTypedBy[1].RelatingType))")
                             )
 
-                where_rules = sorted([*((r.name, (r|"body").text) for r in c/"ownedRule" if (r|"language").text == 'EXPRESS_WHERE'), *generated_whererules])
+                where_rules = sorted([*((r.name, fix_schema_name((r|"body").text)) for r in c/"ownedRule" if (r|"language").text == 'EXPRESS_WHERE'), *generated_whererules])
                 unique_rules = sorted((r.name, (r|"body").text) for r in c/"ownedRule" if (r|"language").text == 'EXPRESS_UNIQUE')
 
                 express_entity = express.entity(c.name, attributes, 
@@ -664,5 +657,5 @@ class xmi_document:
                     "ENTITY", c.name, 
                     express_entity, c, children,
                     document=self,
-                    supertypes=subtypes
+                    supertypes=supertypes
                 )

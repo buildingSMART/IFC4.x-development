@@ -9,7 +9,6 @@ Figure 1 shows an instance diagram explaining the use of _IfcSeamCurve_ as a bou
 
 ![seam curve usage](../../../../figures/ifcseamcurve_01.png "Figure 1 — use of a seam curve bounding a cylindrical surface")
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > A seam curve is a type of surface curve, that is a curve on a closed parametric surface which has two distinct representations as constant parameter curves at the two extremes of the parameter range for the surface.
 

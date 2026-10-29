@@ -7,7 +7,6 @@ The objectified relationship _IfcRelAssignsToControl_ handles the assignment of 
 
 > HISTORY New entity in IFC2.0.
 
-{ .change-ifc2x}
 > IFC2x CHANGE Entity has been renamed from _IfcRelControls_.
 
 ## Attributes

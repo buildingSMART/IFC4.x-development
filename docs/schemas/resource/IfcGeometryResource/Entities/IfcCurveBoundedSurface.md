@@ -10,7 +10,6 @@ The outer boundary shall be either defined by:
 
 > NOTE Some surfaces, like _IfcCylindricalSurface_ does not have identifiable implicit boundaries.
 
-{ .extDef}
 > NOTE Definition according to ISO/CD 10303-42:1992
 > The curve bounded surface is a parametric surface with curved boundaries defined by one or more boundary curves. One of the boundary curves may be the outer boundary; any number of inner boundaries is permissible. The region of the curve bounded surface in the basis surface is defined to be the portion of the basis surface in the direction of **_N_ x _T_** from any point on the boundary, where **N** is the surface normal and **T** the boundary curve tangent vector at this point. The region so defined shall be arcwise connected.
 

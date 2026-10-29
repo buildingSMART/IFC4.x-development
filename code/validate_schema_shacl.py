@@ -1,5 +1,6 @@
 import os
 import re
+import csv
 import glob
 import platform
 import tempfile
@@ -11,7 +12,7 @@ from md import parse_document
 
 import rdflib
 
-import append_xmi
+import xmi
 
 from rdflib import Namespace
 from rdflib.namespace import RDF, RDFS
@@ -21,6 +22,12 @@ def relative_path(*args):
     return os.path.abspath(os.path.join(os.path.dirname(__file__), *args))
 
 SHACL = Namespace("http://www.w3.org/ns/shacl#")
+
+SCHEMA_FILE = os.path.join(tempfile.gettempdir(), "schema.ttl")
+INFERRED_SCHEMA_FILE = os.path.join(tempfile.gettempdir(), "schema-inferred.ttl")
+SHAPES_FILE = relative_path("shapes.ttl")
+MAX_INFERENCE_ITERATIONS = 20
+base_path = relative_path("..")
 
 def process_document(g, fn, subj, cls):
     g.add((subj, RDF.type, cls))
@@ -53,15 +60,59 @@ def process_document(g, fn, subj, cls):
     contents = parse_document(fn=fn)
     if contents:
         write(subj, contents)
+
+def process_general_usage_csv(g, fn):
+    template = os.path.splitext(os.path.basename(fn))[0]
+
+    with open(fn, newline="", encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f)
+        if reader.fieldnames is None:
+            return
+
+        fieldnames = [field.strip() for field in reader.fieldnames]
+        reader.fieldnames = fieldnames
+
+        for row_number, row in enumerate(reader, start=2):
+            values = {
+                field: (row.get(field) or "").strip()
+                for field in fieldnames
+            }
+            if not any(values.values()):
+                continue
+
+            subj = fqdn(f"{template}_row_{row_number}")
+            g.add((subj, RDF.type, fqdn("GeneralUsageRow")))
+            g.add((subj, fqdn("Template"), rdflib.Literal(template)))
+
+            for field, value in values.items():
+                g.add((subj, fqdn(field), rdflib.Literal(value)))
+
+def schema_source_files():
+    yield relative_path("../schemas/ifc4x3_add2.uml")
+    yield __file__
+    for pattern in (
+        "docs/properties/**/*.md",
+        "docs/schemas/**/*.md",
+        "schemas/mvd/GeneralUsage/*.csv",
+    ):
+        yield from glob.glob(os.path.join(base_path, pattern), recursive=True)
+
+def schema_cache_is_current():
+    if not os.path.exists(SCHEMA_FILE):
+        return False
+
+    schema_mtime = os.path.getmtime(SCHEMA_FILE)
+    return all(
+        os.path.getmtime(source_file) <= schema_mtime
+        for source_file in schema_source_files()
+    )
     
 
-if not os.path.exists(os.path.join(tempfile.gettempdir(), "schema.ttl")):
+if not schema_cache_is_current():
 
-    d = append_xmi.context(filename=relative_path("../schemas/IFC.xml"))
+    d = xmi.doc(relative_path("../schemas/ifc4x3_add2.uml"))
     
     id_to_node = {}
-    counter = {'c': 1}
-    node_mapping = {}
     g = rdflib.Graph()
 
     def fqdn(s):
@@ -69,47 +120,43 @@ if not os.path.exists(os.path.join(tempfile.gettempdir(), "schema.ttl")):
             return rdflib.URIRef("/".join(s[1:].split("}")))
         else:
             return rdflib.URIRef(f"http://example.org/ifc43Shapes/{s}")
-    
-    def v(nd, stack):
-        if nd.tag == "{http://schema.omg.org/spec/XMI/2.1}Extension":
-            return False
-
-        nid = nd.attributes.get("{http://schema.omg.org/spec/XMI/2.1}id")
-        if nid:
-            id_to_node[nid] = nd
-            
-        s = fqdn(f"node_{counter['c']}")
-        counter['c'] += 1
-        node_mapping[nd] = s
-
-    d._recurse(v)
-    
-    def v(nd, stack):
-        if nd.tag == "{http://schema.omg.org/spec/XMI/2.1}Extension":
-            return False
-            
-        s = node_mapping[nd]
         
-        g.add((s, RDF.type, fqdn(nd.tag)))
-        
-        if nd.child_with_tag("generalization"):
-            # embellish with proper subtype relationship so that we
-            # can use property paths for recursive query in sparql
-            st = nd.child_with_tag("generalization").attributes['general']
-            g.add((s, RDFS.subClassOf, node_mapping[id_to_node[st]]))
-            
-        for k, v in nd.attributes.items():
-            if v in id_to_node:
-                g.add((s, fqdn(k), node_mapping[id_to_node[v]]))
+    all_ids = set(filter(None, (nd.attributes().get('xmi:id') for nd in d.traverse())))
+    
+    for nd in d.traverse():
+        nd_id = nd.attributes().get('xmi:id')
+        if nd_id is None:
+            continue
+        s = fqdn(nd_id)
+        g.add((s, RDF.type, fqdn(nd.xml.tagName)))
+        if xmi_type := nd.attributes().get('xmi:type'):
+            g.add((s, RDF.type, fqdn(xmi_type.removeprefix('uml:'))))
+
+        for ch in nd.child_with_tag('generalization'):
+            gen = ch.attributes().get('general')
+            if gen is None:
+                gen = next(ch.child_with_tag('general')).attributes()['href'].split('#')[-1]
+            g.add((s, RDFS.subClassOf, fqdn(gen)))
+                    
+        for k, v in nd.attributes().items():
+            if v in all_ids:
+                g.add((s, fqdn(k), fqdn(v)))
+            elif v and v.split() and all(x in all_ids for x in v.split()):
+                for x in v.split():
+                    g.add((s, fqdn(k), fqdn(x)))
             else:
                 g.add((s, fqdn(k), rdflib.Literal(v)))
-            
-        if stack:
-            g.add((s, fqdn("containedIn"), node_mapping[stack[-1]]))
 
-    d._recurse(v)
-    
-    base_path = relative_path("..")
+        for ch in nd.children:
+            if href := ch.attributes().get('href'):
+                g.add((s, fqdn(ch.xml.tagName), fqdn(href.split('#')[-1])))
+
+        if nd.xml.tagName == "ownedComment":
+            g.add((s, fqdn('body'), rdflib.Literal(next(iter(nd.children)).text)))
+
+        if nd.parent:
+            if pid := nd.parent.attributes().get('xmi:id'):
+                g.add((s, fqdn("containedIn"), fqdn(pid)))
     
     for i,fn in enumerate(glob.glob(os.path.join(base_path, "docs/properties/**/*.md"), recursive=True)):
         process_document(g, fn, fqdn(f"doc_{i}"), fqdn("MarkdownPropertyDefinition"))
@@ -117,31 +164,87 @@ if not os.path.exists(os.path.join(tempfile.gettempdir(), "schema.ttl")):
     for i,fn in enumerate(glob.glob(os.path.join(base_path, "docs/schemas/**/*.md"), recursive=True), start=i):
         process_document(g, fn, fqdn(f"doc_{i}"), fqdn("MarkdownResourceDefinition"))
 
-    g.serialize(os.path.join(tempfile.gettempdir(), "schema.ttl"), format="turtle", encoding="utf-8")
+    for fn in glob.glob(os.path.join(base_path, "schemas/mvd/GeneralUsage/*.csv")):
+        process_general_usage_csv(g, fn)
+
+    g.serialize(SCHEMA_FILE, format="turtle", encoding="utf-8")
 
 VALIDATE_PATH = "shaclvalidate.sh"
+INFER_PATH = "shaclinfer.sh"
 if platform.system() == 'Windows':
-    SHACL_PATH = os.environ.get("SHACL_HOME", os.path.join(os.path.abspath(os.path.dirname(__file__)), 'shacl-1.3.2'))
+    default_shacl_path = r"C:\Apps\shacl-1.5.0"
+    if not os.path.exists(default_shacl_path):
+        default_shacl_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'shacl-1.5.0')
+
+    SHACL_PATH = os.environ.get("SHACL_HOME", default_shacl_path)
     VALIDATE_PATH = os.path.join(SHACL_PATH, 'bin', 'shaclvalidate.bat')
+    INFER_PATH = os.path.join(SHACL_PATH, 'bin', 'shaclinfer.bat')
     
-    if not os.path.exists(VALIDATE_PATH):
+    if not os.path.exists(VALIDATE_PATH) or not os.path.exists(INFER_PATH):
         raise RuntimeError(
-            "Unable to find shaclvalidate \n"
-            "Download shacl from https://repo1.maven.org/maven2/org/topbraid/shacl/1.3.2/shacl-1.3.2-bin.zip\n"
-            "Extract and place in the this folder: \n" + 
-            os.path.abspath(os.path.dirname(__file__))            
+            "Unable to find shaclvalidate and shaclinfer \n"
+            "Download shacl from https://repo1.maven.org/maven2/org/topbraid/shacl/1.5.0/shacl-1.5.0-bin.zip\n"
+            "Extract it to C:\\Apps\\shacl-1.5.0 or set SHACL_HOME."
         )
         
     os.environ['SHACL_HOME'] = SHACL_PATH
 
-proc = subprocess.Popen(
-    [VALIDATE_PATH, "-datafile", os.path.join(tempfile.gettempdir(), "schema.ttl"), "-shapesfile", relative_path('shapes.ttl')],
-    stdout=subprocess.PIPE)
-stdout, stderr = proc.communicate()
-stdout = stdout.decode('ascii')
+def run_shacl_tool(args, allowed_returncodes=(0,)):
+    proc = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    stdout, stderr = proc.communicate()
+    if proc.returncode not in allowed_returncodes:
+        raise RuntimeError(
+            f"{os.path.basename(args[0])} failed with exit code {proc.returncode}\n"
+            + stderr.decode("utf-8", errors="replace")
+            + stdout.decode("utf-8", errors="replace")
+        )
+    return stdout
 
-g = rdflib.Graph()
-g.parse(data=stdout, format="ttl")
+def strip_jena_log_lines(text):
+    return re.sub(
+        r"(?m)^\d{2}:\d{2}:\d{2}\s+(?:TRACE|DEBUG|INFO|WARN|ERROR)\s+\S+\s+:: .*(?:\n|$)",
+        "",
+        text)
+
+def parse_turtle(data):
+    g = rdflib.Graph()
+    if data.strip():
+        text = strip_jena_log_lines(data.decode("utf-8"))
+        text = re.sub(
+            r"(?m)^PREFIX\s+([A-Za-z][\w-]*|):\s*<([^>]+)>\s*$",
+            r"@prefix \1: <\2> .",
+            text)
+        g.parse(data=text, format="ttl")
+    return g
+
+def add_new_triples(target_graph, inferred_graph):
+    new_count = 0
+    for triple in inferred_graph:
+        if triple not in target_graph:
+            target_graph.add(triple)
+            new_count += 1
+    return new_count
+
+def infer_to_fixpoint():
+    data_graph = rdflib.Graph()
+    data_graph.parse(SCHEMA_FILE, format="ttl")
+
+    for iteration in range(1, MAX_INFERENCE_ITERATIONS + 1):
+        data_graph.serialize(INFERRED_SCHEMA_FILE, format="turtle", encoding="utf-8")
+        inferred_stdout = run_shacl_tool([INFER_PATH, "-datafile", INFERRED_SCHEMA_FILE, "-shapesfile", SHAPES_FILE])
+        new_count = add_new_triples(data_graph, parse_turtle(inferred_stdout))
+        if new_count == 0:
+            data_graph.serialize(INFERRED_SCHEMA_FILE, format="turtle", encoding="utf-8")
+            return iteration
+
+    raise RuntimeError(f"SHACL inference did not converge after {MAX_INFERENCE_ITERATIONS} iterations")
+
+infer_to_fixpoint()
+
+stdout = run_shacl_tool(
+    [VALIDATE_PATH, "-datafile", INFERRED_SCHEMA_FILE, "-shapesfile", SHAPES_FILE],
+    allowed_returncodes=(0, 1))
+g = parse_turtle(stdout)
 
 results = []
 
@@ -156,9 +259,4 @@ with open(relative_path('../output/shacl-result.md'), "w") as f:
         f.write(f"## {k.split('/')[-1]}\n\n")
         for _, v in vs:
             f.write(f"* {v}\n")
-        
-
-# set PATH=C:\Program Files\Eclipse Adoptium\jdk-17.0.2.8-hotspot\bin;%PATH%
-# set JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-17.0.2.8-hotspot
-# set JENA_HOME=C:\Apps\apache-jena-4.3.2
-# C:\Apps\apache-jena-4.3.2\bat\shacl.bat validate -v --shapes shapes.ttl --data %TEMP%\schema.ttl
+        f.write("\n")

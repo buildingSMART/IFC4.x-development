@@ -14,5 +14,4 @@ Types are used as follows:
 
 > HISTORY New type in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE IfcValue added, which includes removed IfcDateTime and IfcText; IfcReference added.

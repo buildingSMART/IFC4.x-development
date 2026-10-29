@@ -7,7 +7,6 @@ The _IfcMaterialProperties_ assigns a set of material properties to associated m
 
 > HISTORY New entity in IFC2x.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Entity made non-abstract. The subtypes IfcMechanicalMaterialProperties, IfcThermalMaterialProperties, IfcHygroscopicMaterialProperties, IfcGeneralMaterialProperties, IfcOpticalMaterialProperties, IfcWaterProperties, IfcFuelProperties, IfcProductsOfCombustionProperties, IfcExtendedMaterialProperties have been deleted, use _IfcMaterialProperties_ instead.
 
 
@@ -16,5 +15,4 @@ The _IfcMaterialProperties_ assigns a set of material properties to associated m
 
 ### Material
 Reference to the material definition to which the set of properties is assigned.
-{ .change-ifc2x4}
 > IFC4 CHANGE The datatype has been changed to supertype _IfcMaterialDefinition_.

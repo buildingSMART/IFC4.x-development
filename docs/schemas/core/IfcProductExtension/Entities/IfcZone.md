@@ -7,7 +7,6 @@ A zone is a group of spaces, partial spaces or other zones. These spaces may or 
 
 > HISTORY New entity in IFC1.0
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The entity is now subtyped from _IfcSystem_ (not its supertype _IfcGroup_) with upward compatibility for file based exchange.
 
 ## Attributes
@@ -17,7 +16,6 @@ Long name for a zone, used for informal purposes. It should be used, if availabl
 > NOTE In many scenarios the _Name_ attribute refers to the short name or number of a zone, and the _LongName_ refers to the full name.
 
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute has been added at the end of the entity definition.
 
 ## Formal Propositions

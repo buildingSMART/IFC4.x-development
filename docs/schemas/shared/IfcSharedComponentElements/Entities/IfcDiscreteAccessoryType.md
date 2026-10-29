@@ -12,7 +12,6 @@ It is used to define a discrete accessory type specification indicating the spec
 
 > HISTORY New entity in IFC4.
 
-{ .use-head}
 Type Use Definition
 
 The exact type information of the _IfcDiscreteAccessoryType_ is given in the _PredefinedType_ attribute, possibly in combination with the _ElementType_ attribute inherited from _IfcElementType_. Standard _ElementType_ designations are provided for guideline below. The list is not exhaustive and the list of definitions may be extended based on local agreements.

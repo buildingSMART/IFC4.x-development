@@ -11,14 +11,12 @@ There are a number of costs that can be associated with an inventory, each cost 
 
 > HISTORY New entity in IFC2.0.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE All attributes optional, Where Rule removed.
 
 ## Attributes
 
 ### PredefinedType
 A list of the types of inventories from which that required may be selected.
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute made optional.
 
 ### Jurisdiction
@@ -30,7 +28,6 @@ Persons who are responsible for the inventory.
 ### LastUpdateDate
 The date on which the last update of the inventory was carried out.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Type changed from IfcDateTimeSelect.
 
 ### CurrentValue

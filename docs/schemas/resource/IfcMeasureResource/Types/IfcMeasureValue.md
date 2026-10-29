@@ -1,6 +1,5 @@
 # IfcMeasureValue
 
-{ .extDef}
 <!-- end of short definition -->
 
 > NOTE Definition according to ISO/CD 10303-41:1992
@@ -12,5 +11,4 @@
 
 > HISTORY New type in IFC1.5.1.
 
-{ .change-ifc2x4}
 > IFC 2x4 CHANGE _IfcNonNegativeLengthMeasure_ added.

@@ -6,7 +6,7 @@ Table Value
 ```
 concept {
     IfcPropertyTableValue:Name -> IfcIdentifier
-    IfcPropertyTableValue:Description -> IfcText_0
+    IfcPropertyTableValue:Specification -> IfcText_0
     IfcPropertyTableValue:DefiningValues -> IfcValue_0
     IfcPropertyTableValue:DefinedValues -> IfcValue_1
     IfcPropertyTableValue:Expression -> IfcText_1

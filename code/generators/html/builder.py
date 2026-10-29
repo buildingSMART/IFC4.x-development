@@ -14,6 +14,7 @@ import subprocess
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from dataclasses import dataclass
+from fnmatch import fnmatchcase
 from pathlib import Path
 import tempfile
 from types import SimpleNamespace
@@ -32,8 +33,9 @@ from .search import SearchIndexBuilder
 from . import translate
 from ..util.xmi_document import SCHEMA_NAME
 from . import md as mdp
+from git_history import page_history
 
-REPO_BRANCH = os.environ.get("REPO_BRANCH", "xmi-refresh")
+from version import target_branch as REPO_BRANCH
 REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
 DOC_ANNOTATION_PATTERN = re.compile(r"\{\s*\..+?\}")
 
@@ -326,9 +328,6 @@ class StaticTemplateRenderer(markdown_mixin):
             return self._render_annex_c()
         if path == "/annex-d.html":
             return self._render_annex_d()
-        match = re.fullmatch(r"/annex_d/(.+)\.html", path)
-        if match:
-            return self._render_annex_d_diagram_page(unquote(match.group(1)))
         match = re.fullmatch(r"/annex_d/(.+)\.png", path)
         if match:
             return self._file_response(self.config.repo_root / "output" / "ifc4x3_add2.uml" / f"{unquote(match.group(1))}.png")
@@ -423,16 +422,28 @@ class StaticTemplateRenderer(markdown_mixin):
         return template.render(self._template_context(**context))
 
     def _template_context(self, **context) -> dict:
+        import version
+        """
+        >>> from matplotlib import cm, colors
+        >>> [colors.to_hex(c) for c in cm.Pastel1.colors][0:3]
+        ['#fbb4ae', '#b3cde3', '#ccebc5']
+        """
+        color = ['#fbb4ae', '#b3cde3', '#ccebc5'][version.status_number]
         payload = {
             "is_iso": False,
             "is_package": False,
             "schema_version_string": self.version.schema_version_string,
+            "schema_name": SCHEMA_NAME,
             "spec_version_string": self.version.spec_version_string,
             "spec_version_string_full": self.version.spec_version_string_full,
             "branch": REPO_BRANCH,
+            "target_repo": self.version.target_repo,
             "get_language_icon": translate.get_language_icon,
             "current_lang_slug": slugify("English (default)"),
             "languages": translate.list_languages(),
+            "get_page_history": lambda path: page_history(context.get("repo_dir", self.config.repo_root), path),
+            "header_color": color,
+            "status_message": version.status_message,
         }
         payload.update(context)
         return payload
@@ -1024,11 +1035,13 @@ class StaticTemplateRenderer(markdown_mixin):
             is_bold = False
             bgcolor = "white"
             color = "#333333"
+            font_size = 16
 
             if row.get("is_title"):
                 bgcolor = "#1976d2"
                 color = "white"
                 is_bold = True
+                font_size = 20
             if row.get("is_binding"):
                 is_bold = True
                 align = "center"
@@ -1039,21 +1052,23 @@ class StaticTemplateRenderer(markdown_mixin):
                 bgcolor = "#dddddd"
 
             name = row["name"]
+            link = f' href="/lexical/{schema_entity}.html" tooltip="{schema_entity}"' if row.get("is_title") else ""
             html += "<tr>"
-            html += f'<td sides="b" width="250" height="{height}" bgcolor="{bgcolor}" align="{align}" port="{name}0">'
+            html += f'<td sides="b" width="250" height="{height}" bgcolor="{bgcolor}" align="{align}" port="{name}0"{link}>'
             if is_bold:
                 html += "<b>"
-            html += f'<font color="{color}">{row["label"]}</font>'
+            html += f'<font color="{color}" point-size="{font_size}">{row["label"]}</font>'
             if is_bold:
                 html += "</b>"
             html += "</td>"
             html += f'<td sides="b" width="20" height="{height}" bgcolor="{bgcolor}" align="right" port="{name}1">'
-            html += row.get("cardinality", "")
+            if cardinality := row.get("cardinality"):
+                html += f'<font point-size="16">{cardinality}</font>'
             html += "</td></tr>"
         html += "</table>>"
         return html
 
-    def process_graphviz_concept(self, name, markdown_text):
+    def process_graphviz_concept(self, name, markdown_text, *, source_path: Path):
         graphviz_code = filter(lambda value: value.strip().startswith("concept"), re.findall("```(.*?)```", markdown_text, re.S))
 
         def replace_edge(match):
@@ -1098,7 +1113,8 @@ class StaticTemplateRenderer(markdown_mixin):
             graph_data = re.sub(r'\w+\:\w+\[binding="[\w_]+"\]', "", graph_data)
 
             graph = pydot.graph_from_dot_data(graph_data)[0]
-            graph.set_node_defaults(shape="plaintext", width="3")
+            graph.set_node_defaults(shape="plaintext", width="3", fontname="Arial")
+            graph.set_edge_defaults(fontname="Arial")
             graph.set_nodesep("0.1")
             graph.set_splines("polyline")
             graph.set_rankdir("LR")
@@ -1132,11 +1148,24 @@ class StaticTemplateRenderer(markdown_mixin):
                 tmp_dot = tmpdir / Path(file_name).name
                 shutil.copy2(file_name, tmp_dot)
 
-                subprocess.run(
+                result = subprocess.run(
                     [shutil.which("dot") or "dot", "-O", "-Tsvg", "-Gbgcolor=#ffffff00", tmp_dot.name],
                     cwd=tmpdir,
-                    check=True,
+                    stderr=subprocess.PIPE,
+                    text=True,
                 )
+                for line in result.stderr.splitlines():
+                    print(f"{source_path.as_posix()}: {line}", file=sys.stderr, flush=True)
+                result.check_returncode()
+                unrecognized = [
+                    line for line in result.stderr.splitlines()
+                    if re.search(r"^Warning:.*\bunrecognized\b", line)
+                ]
+                if unrecognized:
+                    raise RuntimeError(
+                        f"Unrecognized Graphviz ports in {source_path.as_posix()}:\n"
+                        + "\n".join(unrecognized)
+                    )
 
                 tmp_svg = tmpdir / (tmp_dot.name + ".svg")
                 final_svg = file_name + ".svg"
@@ -1561,7 +1590,11 @@ class StaticTemplateRenderer(markdown_mixin):
         if path.exists():
             markdown = path.read_text(encoding="utf-8")
             if "concept {" in markdown:
-                diagram_markdown = self.process_graphviz_concept("".join(char for char in normalized if char.isalnum()), markdown[markdown.index("```") :])
+                diagram_markdown = self.process_graphviz_concept(
+                    "".join(char for char in normalized if char.isalnum()),
+                    markdown[markdown.index("```") :],
+                    source_path=path.relative_to(self.config.repo_root),
+                )
                 diagram = self.process_markdown("", diagram_markdown)
                 soup = BeautifulSoup(diagram)
                 for svg in soup.find_all("svg"):
@@ -1839,26 +1872,9 @@ class StaticTemplateRenderer(markdown_mixin):
         )
 
     def _render_annex_d(self) -> StaticResponse:
-        diagrams = [
-            self._toc_entry(name, url=f"/annex_d/{name}.html", number=f"D.{index}")
-            for index, name in enumerate(self._diagram_names(), 1)
-        ]
         return self._html_response(
             "annex-d.html",
             navigation=self.get_navigation(),
-            diagrams=diagrams,
-            body_class="annex",
-        )
-
-    def _render_annex_d_diagram_page(self, name: str) -> StaticResponse:
-        diagrams = self._diagram_names()
-        if name not in diagrams:
-            self._abort(404)
-        return self._html_response(
-            "annex-d-item.html",
-            navigation=self.get_navigation(),
-            name=name,
-            number=diagrams.index(name) + 1,
             body_class="annex",
         )
 
@@ -1909,6 +1925,7 @@ class StaticTemplateRenderer(markdown_mixin):
             navigation=self.get_navigation(),
             content=html,
             path=path.resolve().relative_to(self.examples_repo_root).as_posix(),
+            repo_dir=str(self.examples_repo_root),
             repo="buildingSMART/IFC4.3.x-sample-models",
             branch="main",
             title=self._example_title(Path(example).name),
@@ -2056,6 +2073,12 @@ class StaticSiteBuilder:
 
         structure_path = self.config.repo_root / "output" / "structure.json"
         self.structure = json.loads(structure_path.read_text(encoding="utf-8"))
+        # Precomputed change-log and MVD data are emitted as standalone sidecars
+        # by the workflow; fold them in so the templates can render them.
+        for sidecar in ("changes_by_schema", "changes_by_type", "mvd_entity_usage", "xmi_mvd_concepts"):
+            sidecar_path = self.config.code_dir / f"{sidecar}.json"
+            if sidecar_path.exists():
+                self.structure.setdefault(sidecar, json.loads(sidecar_path.read_text(encoding="utf-8")))
         resource_names = self.structure['entity_definitions'].keys() | self.structure['pset_definitions'].keys() | self.structure['type_values'].keys()
         resource_names = tuple(sorted(resource_names))
 
@@ -2083,7 +2106,8 @@ class StaticSiteBuilder:
         self._render_html_paths(self._utility_paths(), collect=False, resource_names=resource_names)
 
         self._copy_generated_svgs()
-        self._build_search_index()
+        if not self.config.no_index:
+            self._build_search_index()
 
         return {
             "written": len([path for path in self.config.output_dir.rglob("*") if path.is_file()]),
@@ -2223,6 +2247,20 @@ class StaticSiteBuilder:
             if public_path not in excluded and not public_path.startswith("/annex")
         ]
 
+    def _should_render(self, path: str) -> bool:
+        if self.config.include_paths is None:
+            return True
+
+        normalized = path.strip("/")
+        return any(
+            fnmatchcase(normalized, include.strip("/"))
+            or (
+                include.strip("/")
+                and normalized.startswith(include.strip("/") + "/")
+            )
+            for include in self.config.include_paths
+        )
+
     def _render_html_paths(
         self,
         public_paths: list[str],
@@ -2231,6 +2269,8 @@ class StaticSiteBuilder:
         listing_payloads: dict[str, list[dict[str, str]]] | None = None,
         resource_names: tuple[str, ...],
     ) -> None:
+        public_paths = [p for p in public_paths if self._should_render(p)]
+
         if self.config.profile or self.config.threads == 1:
             for public_path in public_paths:
                 try:

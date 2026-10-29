@@ -41,7 +41,7 @@ def parse_document(*, fn=None, data=None, linesep="", as_text=True):
         first.insert_before(soup.new_tag('h1', 'DocumentRoot'))
 
     
-    headings = soup.find_all(re.compile("h\d"))
+    headings = soup.find_all(re.compile(r"h\d"))
     next_heading = headings[1:] + [None]
     
     root = None

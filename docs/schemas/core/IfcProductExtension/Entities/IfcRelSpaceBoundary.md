@@ -90,10 +90,8 @@ The following constraints apply to the 2D curve representation:
 
 > HISTORY New entity in IFC1.5, the entity has been modified in IFC2x.
 
-{ .change-ifc2x}
 > IFC2x CHANGE The data type of the attribute _RelatedBuildingElement_ has been changed from _IfcBuildingElement_ to its supertype _IfcElement_. The data type of the attribute _ConnectionGeometry_ has been changed from _IfcConnectionSurfaceGeometry_ to its supertype _IfcConnectionGeometry_.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE The attribute _RelatedBuildingElement_ has been made mandatory. For virtual boundaries the reference to _IfcVirtualElement_ is now mandatory.
 
 ## Attributes
@@ -111,7 +109,6 @@ Reference to the Element that defines the Space Boundaries.
 
 ### ConnectionGeometry
 Physical representation of the space boundary. Provided as a curve or surface given within the LCS of the space.
-{ .change-ifc2x}
 > IFC2x CHANGE The data type has been changed from _IfcConnectionSurfaceGeometry_ to _IfcConnectionGeometry_ with upward compatibility for file based exchange.
 
 ### PhysicalOrVirtualBoundary
@@ -124,5 +121,4 @@ Defines whether the Space Boundary is INTERNAL, or EXTERNAL, i.e. adjacent to op
 
 ### CorrectPhysOrVirt
 If the space boundary is physical, it shall be provided by an element (i.e. excluding a virtual element). If the space boundary is virtual, it shall either have a virtual element or an opening providing the space boundary. If the space boundary _PhysicalOrVirtualBoundary_ attribute is not defined, no restrictions are imposed.
-{ .change-ifc2x4}
 > IFC4 CHANGE Where rule corrected to accept an _IfcOpeningElement_ for a virtual space boundary.

@@ -5,7 +5,6 @@ _IfcRectangleHollowProfileDef_ defines a section profile that provides the defin
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Types of _InnerFilletRadius_ and _OuterFilletRadius_ relaxed to allow for zero values.
 
 Figure 1 illustrates parameters of a rectangular or square hollow profile definition.

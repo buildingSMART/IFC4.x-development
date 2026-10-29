@@ -52,4 +52,7 @@ Specifies the value along the northing axis of the end point of a vector indicat
 _XAxisAbscissa_ it provides the direction of the local x axis within the horizontal plane of the map coordinate system.
 
 ### Scale
-Scale to be used, when the units of the CRS are not identical to the units of the engineering coordinate system. If omitted, the value of 1.0 is assumed.
+Scale to be used, when the units of the CRS are not identical to the units of the engineering coordinate system.
+If omitted, the value of 1.0 is assumed.
+If the units of the referenced source location engineering coordinate system are different from the units of the referenced target coordinate system,
+then this attribute must be included and must have the value of the scale from the source to the target units.

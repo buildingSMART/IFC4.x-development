@@ -5,7 +5,6 @@ Instances of _IfcStructuralCurveConnection_ describe edge 'nodes', i.e. edges wh
 
 > HISTORY New entity in IFC2x2.
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Attribute _Axis_ added, allowing for skewed supports. Use definitions added.
 
 ****Coordinate Systems****:

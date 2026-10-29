@@ -17,7 +17,6 @@ The unambiguous identifier by which the coordinate reference system is known, is
 
 > EXAMPLE The code 'EPSG:5555' identifies the combination of *ETRS89 / UTM zone 32N + DHHN92 height* (i.e., a projected CRS + a vertical CRS). The code **'EPSG:6258'** identifies the **geodetic datum** of the projected CRS *ETRS89 / UTM zone 32N* (itself identified as EPSG:25832). The code **'EPSG:5181'** identifies the **vertical datum** of the vertical CRS *DHHN92 height* (itself identified as EPSG:5783).
 
-{ .extDef}
 > NOTE Definition from OpenGIS Abstract Specification, Topic 2:
 > A 2D (or with vertical coordinate axis 3D) coordinate reference system used to approximate the shape of the earth on a planar surface, but in such a way that the distortion that is inherent to the approximation is carefully controlled and known. Distortion correction is commonly applied to calculated bearings and distances to produce values that are a close match to actual field values.
 

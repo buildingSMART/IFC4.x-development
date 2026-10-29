@@ -12,10 +12,8 @@ It is used to define a mechanical fastener type specification indicating the spe
 
 > HISTORY New entity in IFC2x2
 
-{ .change-ifc2x4}
 > IFC4 CHANGE Supertype changed from _IfcFastenerType_ to _IfcElementComponentType_. Attributes _PredefinedType_, _NominalDiameter_, _NominalLength_ added.
 
-{ .use-head}
 Classification Use Definition
 
 Mechanical fasteners, especially bolts, are often standardized. To refer to a formal fastener designation according to a standard (a product norm), _IfcRelAssociatesClassification_ together with _IfcClassificationReference_ should be used.
