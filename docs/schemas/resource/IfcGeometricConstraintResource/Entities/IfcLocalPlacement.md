@@ -3,9 +3,9 @@
 An _IfcLocalPlacement_ defines the relative placement of a product in relation to the placement of another product or the absolute placement of a product within the geometric representation context of the project.
 <!-- end of short definition -->
 
-The _IfcLocalPlacement_ allows that an _IfcProduct_ can be placed by this _IfcLocalPlacement_ (through the attribute_ObjectPlacement_) within the local coordinate system of the object placement of another _IfcProduct_, which is referenced by the _PlacementRelTo_. Rules to prevent cyclic relative placements have to be introduced on the application level.
+The _IfcLocalPlacement_ allows that an _IfcProduct_ can be placed by this _IfcLocalPlacement_ (through the attribute _ObjectPlacement_) within the local coordinate system of the object placement of another _IfcProduct_, which is referenced by the _PlacementRelTo_. Rules to prevent cyclic relative placements have to be introduced on the application level.
 
-If the _PlacementRelTo_ is not given, then the _IfcProduct_ is placed absolutely within the world coordinate system.
+If the _PlacementRelTo_ is not given, then the _IfcProduct_ is placed relatively to the coordinate system established by the _IfcGeometricRepresentationContext_ of the _IfcProject_.
 
 The following conventions shall apply as default relative positions if the relative placement is used. The conventions are given for all five direct subtypes of _IfcProduct_, the _IfcSpatialStructureElement_, _IfcElement_, _IfcAnnotation_, _IfcGrid_, _IfcPort_. More detailed placement information is given at the level of subtypes of those five types mentioned.
 
