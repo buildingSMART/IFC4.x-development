@@ -66,7 +66,7 @@ The example shows a mirroring of an <em>IfcLShapeProfileDef</em>
 to match the centre cardinal point. The attributes of the CTO are:</p>
 
   Axis1 = (-1.,0.)
-  Axis2 = NIL (defaults to 0.,1.)
+  Axis2 = (0.,1.)
   LocalOrigin = IfcCartesianPoint(0.,0.)
   Scale = NIL (defaults to 1.)
 
