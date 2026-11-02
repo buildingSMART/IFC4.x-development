@@ -28,10 +28,19 @@ of an <em>IfcRectangleProfileDef</em>
 to match the lower-left cardinal point. The attributes of the CTO are:<br>
 </p>
 
-  Axis1 = NIL (defaults to 1.,0.)
-  Axis2 = NIL (defaults to 0.,1.)
-  LocalOrigin = IfcCartesianPoint(<1/2 XDim>,<1/2 YDim>)
-  Scale = 2.
+```
+Axis1 = NIL
+Axis2 = NIL
+LocalOrigin = IfcCartesianPoint(<1/2 XDim>,<1/2 YDim>)
+Scale = 2.
+```
+
+The transformation matrix **T** computed by _IfcBaseAxis_ is:
+
+```
+T = [ 1  0 ]
+    [ 0  1 ]
+```
 
 > NOTE The <em>ParentProfile</em> has a <em>Position</em> = <em>IfcCartesianPoint</em>(<1/2 XDim>,<1/2 YDim>) already.
 
@@ -46,11 +55,20 @@ as a subtype of the 2D CTO.</p>
 The example shows a non-uniform scaling and a translation of an <em>IfcRectangleProfileDef</em>
 to match the lower-left cardinal point. The attributes of the CTO are:</p>
 
-  Axis1 = NIL (defaults to 1.,0.)
-  Axis2 = NIL (defaults to 0.,1.)
-  LocalOrigin = IfcCartesianPoint(0.,<1/2 YDim>)
-  Scale = 1.
-  Scale2 = 2.
+```
+Axis1 = NIL
+Axis2 = NIL
+LocalOrigin = IfcCartesianPoint(0.,<1/2 YDim>)
+Scale = 1.
+Scale2 = 2.
+```
+
+The transformation matrix **T** computed by _IfcBaseAxis_ is:
+
+```
+T = [ 1  0 ]
+    [ 0  1 ]
+```
 
 > NOTE The <em>ParentProfile</em> has a <em>Position</em> = <em>IfcCartesianPoint</em>(<1/2 XDim>,<1/2 YDim>) already.
 
@@ -65,10 +83,21 @@ is defined using mirroring by applying the <em>IfcCartesianTransformationOperato
 The example shows a mirroring of an <em>IfcLShapeProfileDef</em>
 to match the centre cardinal point. The attributes of the CTO are:</p>
 
-  Axis1 = (-1.,0.)
-  Axis2 = (0.,1.)
-  LocalOrigin = IfcCartesianPoint(0.,0.)
-  Scale = NIL (defaults to 1.)
+```
+Axis1 = IfcDirection(-1.,0.)
+Axis2 = IfcDirection(0.,1.)
+LocalOrigin = IfcCartesianPoint(0.,0.)
+Scale = NIL (defaults to 1.)
+```
+
+The transformation matrix **T** computed by _IfcBaseAxis_ is:
+
+```
+T = [ -1  0 ]
+    [  0  1 ]
+```
+
+Since **|T| = -1**, the transformation includes mirroring.
 
 > NOTE The <em>ParentProfile</em> has a <em>Position</em> = <em>IfcCartesianPoint</em>(0.,0.).
 
