@@ -19,10 +19,10 @@ Roof Top Unit Controller
 Unit Ventilator Controller
 
 ### SPACECONFORTCONTROLLER
-Space Confort Controller
+Space Comfort Controller
 
 ### VAV
-VAV
+Variable Air Volume Controller
 
 ### PUMPCONTROLLER
 Pump Controller
@@ -58,10 +58,10 @@ Lighting Panel Controller
 Sunblind Controller
 
 ### OTHER
-required category not on scale
+Different kind of controller
 
 ### NOTKNOWN
-Value is unkown
+Value is unknown
 
 ### UNSET
 Value has not been specified
