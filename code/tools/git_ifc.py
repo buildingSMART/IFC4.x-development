@@ -9,6 +9,7 @@ import re
 import shlex
 import subprocess
 import sys
+import uuid
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -23,7 +24,7 @@ STATE_VERSION = 3
 STATE_NAME = "ifc-pr-merge-state.json"
 PR_JSON_FIELDS = (
     "number,title,headRefName,headRefOid,headRepositoryOwner,"
-    "baseRefName,baseRefOid,isDraft,url,author,updatedAt,state,mergedAt"
+    "baseRefName,baseRefOid,isDraft,url,author,updatedAt,state,mergedAt,mergeCommit"
 )
 SELECTABLE_PR_STATES = {"OPEN", "MERGED", "CLOSED"}
 LIST_PR_STATES = {"all", "open", "merged", "closed"}
@@ -50,6 +51,7 @@ class PullRequest:
     author: str
     updated_at: str
     merged_at: str | None
+    merge_oid: str = ""
 
     @classmethod
     def from_gh(cls, value: dict[str, Any]) -> PullRequest:
@@ -70,6 +72,7 @@ class PullRequest:
             author=str(author.get("login") or author.get("name") or ""),
             updated_at=str(value["updatedAt"]),
             merged_at=str(merged_at) if merged_at is not None else None,
+            merge_oid=str((value.get("mergeCommit") or {}).get("oid") or ""),
         )
 
 
@@ -503,12 +506,45 @@ def _commit_message(pr: PullRequest) -> str:
 
 
 def _replay_source_oid(repo_root: Path, pr: PullRequest, fetched_oid: str) -> str:
-    parents = _git(repo_root, "show", "-s", "--format=%P", fetched_oid).stdout.split()
-    if pr.base_oid and len(parents) == 2 and pr.base_oid in parents:
-        topic_parents = [parent for parent in parents if parent != pr.base_oid]
-        if len(topic_parents) == 1:
-            return topic_parents[0]
-    return fetched_oid
+    """Represent only the PR delta, with an isolated base tree as its parent."""
+    if not pr.base_oid:
+        raise WorkflowError(f"PR #{pr.number} has no base commit")
+    base_tip = pr.base_oid
+    if pr.state == "MERGED":
+        if not pr.merge_oid:
+            raise WorkflowError(f"PR #{pr.number} has no merge commit to recover its base")
+        base_tip = _git(repo_root, "rev-parse", f"{pr.merge_oid}^1").stdout.strip()
+    bases = _git(repo_root, "merge-base", "--all", base_tip, fetched_oid).stdout.split()
+    if len(bases) != 1:
+        raise WorkflowError(f"PR #{pr.number} does not have a unique merge base")
+    base_oid = bases[0]
+    base_tree = _git(repo_root, "rev-parse", f"{base_oid}^{{tree}}").stdout.strip()
+    base = _git(repo_root, "commit-tree", base_tree, "-m", "IFC PR replay base").stdout.strip()
+    tree = _git(repo_root, "rev-parse", f"{fetched_oid}^{{tree}}").stdout.strip()
+    return _git(
+        repo_root, "commit-tree", tree, "-p", base, "-m", _commit_message(pr)
+    ).stdout.strip()
+
+
+def _merge_replay(repo_root: Path, replay_oid: str) -> subprocess.CompletedProcess[str]:
+    # Give the merge an explicit base without changing preview's real ancestry.
+    # The replacement is visible only to this Git invocation and its drivers.
+    head = _git(repo_root, "rev-parse", "HEAD").stdout.strip()
+    tree = _git(repo_root, "rev-parse", "HEAD^{tree}").stdout.strip()
+    base = _git(repo_root, "rev-parse", f"{replay_oid}^").stdout.strip()
+    current = _git(repo_root, "commit-tree", tree, "-p", base, "-m", "IFC preview replay").stdout.strip()
+    namespace = f"refs/ifc-replay/{uuid.uuid4().hex}/"
+    ref = namespace + head
+    env = _driver_environment(Path(xmi_merge.__file__).resolve())
+    env["GIT_REPLACE_REF_BASE"] = namespace
+    _git(repo_root, "update-ref", ref, current)
+    try:
+        return _git(
+            repo_root, "merge", "--no-commit", "--no-ff", replay_oid,
+            check=False, capture=False, env=env,
+        )
+    finally:
+        _git(repo_root, "update-ref", "-d", ref)
 
 
 def _fetch_pull_request(
@@ -530,6 +566,11 @@ def _fetch_pull_request(
             f"fetched PR #{pr.number} at {fetched_oid[:12]}, but GitHub reports "
             f"{current_pr.head_oid[:12]}; retry the merge"
         )
+    if not current_pr.base_oid:
+        raise WorkflowError(f"PR #{pr.number} has no base commit")
+    _git(repo_root, "fetch", "--no-tags", remote, current_pr.base_oid, capture=False)
+    if current_pr.state == "MERGED" and current_pr.merge_oid:
+        _git(repo_root, "fetch", "--no-tags", remote, current_pr.merge_oid, capture=False)
     replay_oid = _replay_source_oid(repo_root, current_pr, fetched_oid)
     return pr_ref, current_pr, fetched_oid, replay_oid
 
@@ -822,11 +863,7 @@ def start_pr_merge(
             _record_summary(summary, pr, "skipped", reason)
             return 0
         raise
-    if replay_oid != fetched_oid:
-        print(
-            f"PR #{pr.number} head {fetched_oid[:12]} is a terminal base-sync "
-            f"merge; replaying topic parent {replay_oid[:12]}."
-        )
+    print(f"Replaying PR #{pr.number} relative to its own base onto preview.")
     state = MergeState(
         version=STATE_VERSION,
         remote=remote,
@@ -845,16 +882,7 @@ def start_pr_merge(
         labels=list(labels) if labels else None,
     )
     _write_state(repo_root, state)
-    process = _git(
-        repo_root,
-        "merge",
-        "--no-commit",
-        "--no-ff",
-        replay_oid,
-        check=False,
-        capture=False,
-        env=_driver_environment(Path(xmi_merge.__file__).resolve()),
-    )
+    process = _merge_replay(repo_root, replay_oid)
     if not _merge_in_progress(repo_root):
         _clear_state(repo_root)
         if process.returncode == 0:

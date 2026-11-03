@@ -50,19 +50,31 @@ The command:
 
 1. Requires a clean worktree and no existing merge.
 2. Resolves the GitHub repository from the configured Git remote using `gh`.
-3. Fetches `refs/pull/<number>/head` into `refs/ifc/pr/<number>`.
+3. Fetches `refs/pull/<number>/head` into `refs/ifc/pr/<number>` and fetches its base.
 4. Records the exact PR head OID and merge state under `.git`.
-5. Runs `git merge --no-commit --no-ff` with the structural UML driver.
+5. Replays the PR diff from its merge base onto the current branch using
+   `git merge --no-commit --no-ff` with the structural UML driver.
 6. Validates all UML, duplicate `xmi:id` values, and EXPRESS generation.
 7. Creates a local merge commit when validation succeeds.
 
 It does not push the resulting commit.
 
+The replay uses the PR's own base branch, rather than the common ancestor
+between preview and the PR. Changes inherited from the base branch are therefore
+excluded, while edits made by the PR (including conflict resolutions) are retained.
+There is no file-extension filter: a PR's own code changes are replayed too.
+
+The local merge has the existing branch tip as its first parent and a synthetic
+PR snapshot as its second parent. The snapshot has an isolated base-tree parent,
+so it does not import the source branch's infrastructure history. A temporary,
+invocation-scoped Git replacement supplies this base to the merge and is removed
+before validation or user conflict resolution. Normal continue and abort commands
+still apply.
+
 Merged PRs are included so a fresh reconstruction branch can replay work that
-GitHub already marked merged. If a PR head is a final synchronization merge
-whose parent is the PR's recorded GitHub base commit, the workflow merges the
-topic-side parent instead. This avoids replaying an old conflict resolution
-from GitHub while still validating the reconstructed result locally.
+GitHub already marked merged. Their base is recovered from the first parent of
+the GitHub merge commit, before the PR was integrated; this prevents an already
+merged PR from appearing to have an empty diff against today's base branch.
 
 If Git, the structural driver, or the generator requires user intervention,
 resolve and stage the files before continuing:

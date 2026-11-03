@@ -169,32 +169,66 @@ def test_sorts_pull_requests_by_bracketed_code_naturally():
     ]
 
 
-def test_replay_source_peels_terminal_base_sync_merge(tmp_path, monkeypatch):
-    base_oid = "b" * 40
-    topic_oid = "c" * 40
-    fetched_oid = "d" * 40
-    pull_request = pr(20, "content/tm20", "[TM20] Full", base_oid=base_oid)
+@pytest.mark.parametrize("conflict", [False, True])
+@pytest.mark.parametrize("merged", [False, True])
+def test_replays_only_pr_delta_with_real_git(tmp_path, conflict, merged):
+    import subprocess
+    from dataclasses import replace
 
-    def fake_git(_repo, *args, **_kwargs):
-        assert args == ("show", "-s", "--format=%P", fetched_oid)
-        return completed(stdout=f"{topic_oid} {base_oid}\n")
+    def git(*args):
+        return subprocess.check_output(["git", *args], cwd=tmp_path, text=True).strip()
 
-    monkeypatch.setattr(git_ifc, "_git", fake_git)
-
-    assert git_ifc._replay_source_oid(tmp_path, pull_request, fetched_oid) == topic_oid
-
-
-def test_replay_source_keeps_non_base_merge_head(tmp_path, monkeypatch):
-    fetched_oid = "d" * 40
-    pull_request = pr(20, "content/tm20", "[TM20] Full", base_oid="b" * 40)
-
-    def fake_git(_repo, *args, **_kwargs):
-        assert args == ("show", "-s", "--format=%P", fetched_oid)
-        return completed(stdout=f"{'c' * 40} {'e' * 40}\n")
-
-    monkeypatch.setattr(git_ifc, "_git", fake_git)
-
-    assert git_ifc._replay_source_oid(tmp_path, pull_request, fetched_oid) == fetched_oid
+    git("init")
+    git("config", "user.name", "Test")
+    git("config", "user.email", "test@example.test")
+    (tmp_path / "workflow.yml").write_text("original\n")
+    (tmp_path / "content.md").write_text("original\n")
+    git("add", ".")
+    git("commit", "-m", "common")
+    git("branch", "preview")
+    (tmp_path / "workflow.yml").write_text("main infrastructure\n")
+    git("commit", "-am", "main infrastructure")
+    base = git("rev-parse", "HEAD")
+    (tmp_path / "content.md").write_text("PR content\n")
+    git("commit", "-am", "topic")
+    topic = git("rev-parse", "HEAD")
+    # Advancing the base after the PR branched must not replay base changes.
+    git("checkout", "-b", "advanced-base", base)
+    (tmp_path / "later.py").write_text("main only\n")
+    git("add", ".")
+    git("commit", "-m", "later main")
+    base = git("rev-parse", "HEAD")
+    merge_oid = ""
+    if merged:
+        git("merge", "--no-ff", topic, "-m", "merged PR into main")
+        merge_oid = git("rev-parse", "HEAD")
+        base = merge_oid
+    git("checkout", "preview")
+    (tmp_path / "workflow.yml").write_text("preview infrastructure\n")
+    if conflict:
+        (tmp_path / "content.md").write_text("preview content\n")
+    git("commit", "-am", "preview infrastructure")
+    head = git("rev-parse", "HEAD")
+    request = replace(
+        pr(20, "topic", "[TC20] Topic"), base_oid=base,
+        state="MERGED" if merged else "OPEN", merge_oid=merge_oid,
+    )
+    replay = git_ifc._replay_source_oid(tmp_path, request, topic)
+    result = git_ifc._merge_replay(tmp_path, replay)
+    assert result.returncode == (1 if conflict else 0)
+    assert (tmp_path / "workflow.yml").read_text() == "preview infrastructure\n"
+    assert not (tmp_path / "later.py").exists()
+    assert git("rev-parse", "HEAD") == head
+    assert not git("for-each-ref", "refs/ifc-replay")
+    if conflict:
+        assert git("diff", "--name-only", "--diff-filter=U") == "content.md"
+        git("merge", "--abort")
+        assert (tmp_path / "content.md").read_text() == "preview content\n"
+    else:
+        assert (tmp_path / "content.md").read_text() == "PR content\n"
+        git("commit", "-m", "replayed")
+        assert git("rev-parse", "HEAD^1") == head
+        assert git("diff", "--name-only", "HEAD^1", "HEAD") == "content.md"
 
 
 def test_fetch_pull_request_accepts_missing_closed_head_oid(tmp_path, monkeypatch):
@@ -215,7 +249,7 @@ def test_fetch_pull_request_accepts_missing_closed_head_oid(tmp_path, monkeypatc
 
     def fake_git(_repo, *args, **kwargs):
         commands.append(args)
-        if args[:2] == ("fetch", "--force"):
+        if args[0] == "fetch":
             return completed()
         if args == ("rev-parse", "refs/ifc/pr/20"):
             return completed(stdout="d" * 40 + "\n")
@@ -225,6 +259,7 @@ def test_fetch_pull_request_accepts_missing_closed_head_oid(tmp_path, monkeypatc
 
     monkeypatch.setattr(git_ifc, "_git", fake_git)
     monkeypatch.setattr(git_ifc, "get_pull_request", lambda *_args: current)
+    monkeypatch.setattr(git_ifc, "_replay_source_oid", lambda *_args: "d" * 40)
 
     assert git_ifc._fetch_pull_request(
         tmp_path, "origin", "owner/repo", pull_request
