@@ -1423,5 +1423,610 @@
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceModelTypeEnum_NOTDEFINED_gen_IfcGeoScienceModel" general="cl_IfcGeoScienceModel"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceModelTypeEnum_NOTDEFINED_gen_IfcGeoScienceModelType" general="cl_IfcGeoScienceModelType"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeContact" name="Pset_GeoScienceFeatureTypeContact">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeContact_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeContact_DipDirection" name="DipDirection">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeContact_DipDirection_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeContact_DipDirection_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeContact_GeoContactType" name="GeoContactType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeContact_GeoContactType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeContact_GeoContactType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeContact_IfcGeoScienceFeatureTypeEnum_CONTACT" client="cl_Pset_GeoScienceFeatureTypeContact" supplier="cl_IfcGeoScienceFeatureTypeEnum_CONTACT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeDiscontinuity" name="Pset_GeoScienceFeatureTypeDiscontinuity">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeDiscontinuity_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DipDirection" name="DipDirection">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DipDirection_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DipDirection_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityAperture" name="DiscontinuityAperture">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityAperture_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityAperture_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityPersistence" name="DiscontinuityPersistence">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityPersistence_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityPersistence_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityRoughness" name="DiscontinuityRoughness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityRoughness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityRoughness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuitySpacing" name="DiscontinuitySpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuitySpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuitySpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_Cohesion" name="Cohesion">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_Cohesion_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_Cohesion_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DipAngle" name="DipAngle">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DipAngle_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DipAngle_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityFilling" name="DiscontinuityFilling">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityFilling_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityFilling_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityFrictionAngle" name="DiscontinuityFrictionAngle">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityFrictionAngle_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityFrictionAngle_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityWaterPresence" name="DiscontinuityWaterPresence">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityWaterPresence_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DiscontinuityWaterPresence_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_RockQualityDesignation" name="RockQualityDesignation">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_RockQualityDesignation_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_RockQualityDesignation_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_StrikeDirection" name="StrikeDirection">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_StrikeDirection_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_StrikeDirection_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeDiscontinuity_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT" client="cl_Pset_GeoScienceFeatureTypeDiscontinuity" supplier="cl_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeFault" name="Pset_GeoScienceFeatureTypeFault">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeFault_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultDeformationStyle" name="FaultDeformationStyle">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultDeformationStyle_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultDeformationStyle_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultDisplacement" name="FaultDisplacement">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultDisplacement_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultDisplacement_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultGeologicHistory" name="FaultGeologicHistory">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultGeologicHistory_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultGeologicHistory_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultMovementType" name="FaultMovementType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultMovementType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultMovementType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFault_DipDirection" name="DipDirection">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeFault_DipDirection_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeFault_DipDirection_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultLength" name="FaultLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultSlipDirection" name="FaultSlipDirection">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultSlipDirection_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultSlipDirection_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultActivity" name="FaultActivity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultActivity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultActivity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultInfilling" name="FaultInfilling">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultInfilling_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultInfilling_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeFault_IfcGeoScienceFeatureTypeEnum_FAULT" client="cl_Pset_GeoScienceFeatureTypeFault" supplier="cl_IfcGeoScienceFeatureTypeEnum_FAULT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeFluidBody" name="Pset_GeoScienceFeatureTypeFluidBody">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeFluidBody_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFluidBody_PHLevel" name="PHLevel">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPHMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeFluidBody_PHLevel_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeFluidBody_PHLevel_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeFluidBody_IfcGeoScienceFeatureTypeEnum_FLUIDBODY" client="cl_Pset_GeoScienceFeatureTypeFluidBody" supplier="cl_IfcGeoScienceFeatureTypeEnum_FLUIDBODY"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeFold" name="Pset_GeoScienceFeatureTypeFold">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeFold_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFold_DipDirection" name="DipDirection">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeFold_DipDirection_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeFold_DipDirection_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFold_ProfileType" name="ProfileType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeFold_ProfileType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeFold_ProfileType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFold_StrikeDirection" name="StrikeDirection">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeFold_StrikeDirection_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeFold_StrikeDirection_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeFold_IfcGeoScienceFeatureTypeEnum_FOLD" client="cl_Pset_GeoScienceFeatureTypeFold" supplier="cl_IfcGeoScienceFeatureTypeEnum_FOLD"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeGeoHazard" name="Pset_GeoScienceFeatureTypeGeoHazard">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeGeoHazard_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_ValidityPeriodDescription" name="ValidityPeriodDescription">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_ValidityPeriodDescription_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_ValidityPeriodDescription_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_DeterminationMethod" name="DeterminationMethod">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_DeterminationMethod_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_DeterminationMethod_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_HazardLevel" name="HazardLevel">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_HazardLevel_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_HazardLevel_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_HazardType" name="HazardType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_HazardType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_HazardType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_LevelOfIntensity" name="LevelOfIntensity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_LevelOfIntensity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_LevelOfIntensity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_LikelihoodOfOccurence" name="LikelihoodOfOccurence">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_LikelihoodOfOccurence_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_LikelihoodOfOccurence_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_ValidityPeriodEncoding" name="ValidityPeriodEncoding">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_ValidityPeriodEncoding_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_ValidityPeriodEncoding_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeGeoHazard_IfcGeoScienceFeatureTypeEnum_HAZARDAREA" client="cl_Pset_GeoScienceFeatureTypeGeoHazard" supplier="cl_IfcGeoScienceFeatureTypeEnum_HAZARDAREA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeGeologicalUnit" name="Pset_GeoScienceFeatureTypeGeologicalUnit">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeGeologicalUnit_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_FaciesLithostratigraphy" name="FaciesLithostratigraphy">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_FaciesLithostratigraphy_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_FaciesLithostratigraphy_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_FaciesPetrophysics" name="FaciesPetrophysics">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_FaciesPetrophysics_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_FaciesPetrophysics_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_GeologicalHazard" name="GeologicalHazard">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_GeologicalHazard_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_GeologicalHazard_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_GeologicHistory" name="GeologicHistory">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_GeologicHistory_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_GeologicHistory_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_GeologicUnitType" name="GeologicUnitType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_GeologicUnitType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_GeologicUnitType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_Lithology" name="Lithology">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_Lithology_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_Lithology_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_Rank" name="Rank">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_Rank_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_Rank_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_RepresentativeAge" name="RepresentativeAge">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_RepresentativeAge_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_RepresentativeAge_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeGeologicalUnit_IfcGeoScienceFeatureTypeEnum_GEOLOGICUNIT" client="cl_Pset_GeoScienceFeatureTypeGeologicalUnit" supplier="cl_IfcGeoScienceFeatureTypeEnum_GEOLOGICUNIT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeHydroGeoUnit" name="Pset_GeoScienceFeatureTypeHydroGeoUnit">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeHydroGeoUnit_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_HydraulicPermeabilityHorizontal" name="HydraulicPermeabilityHorizontal">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearVelocityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_HydraulicPermeabilityHorizontal_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_HydraulicPermeabilityHorizontal_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_HydraulicPermeabilityVertical" name="HydraulicPermeabilityVertical">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearVelocityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_HydraulicPermeabilityVertical_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_HydraulicPermeabilityVertical_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_StorageCoefficient" name="StorageCoefficient">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_StorageCoefficient_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_StorageCoefficient_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_Transmissivity" name="Transmissivity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_Transmissivity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_Transmissivity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_UnitDischarge" name="UnitDischarge">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcVolumetricFlowRateMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_UnitDischarge_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_UnitDischarge_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_UnitRecharge" name="UnitRecharge">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcVolumetricFlowRateMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_UnitRecharge_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_UnitRecharge_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeHydroGeoUnit_IfcGeoScienceFeatureTypeEnum_HYDROGEOUNIT" client="cl_Pset_GeoScienceFeatureTypeHydroGeoUnit" supplier="cl_IfcGeoScienceFeatureTypeEnum_HYDROGEOUNIT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeIntactRock" name="Pset_GeoScienceFeatureTypeIntactRock">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeIntactRock_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_Weathering" name="Weathering">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_Weathering_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_Weathering_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_GeologicalFormation" name="GeologicalFormation">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_GeologicalFormation_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_GeologicalFormation_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_Lithology" name="Lithology">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_Lithology_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_Lithology_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_MineralComposition" name="MineralComposition">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_MineralComposition_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_MineralComposition_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_PoissonRatio" name="PoissonRatio">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_PoissonRatio_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_PoissonRatio_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_TensileStrength" name="TensileStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_TensileStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_TensileStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_UnconfinedCompressiveStrength" name="UnconfinedCompressiveStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_UnconfinedCompressiveStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_UnconfinedCompressiveStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_VoidRatio" name="VoidRatio">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_VoidRatio_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_VoidRatio_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_YoungModulus" name="YoungModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_YoungModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_YoungModulus_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeIntactRock_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT" client="cl_Pset_GeoScienceFeatureTypeIntactRock" supplier="cl_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypePiezometricWaterLevel" name="Pset_GeoScienceFeatureTypePiezometricWaterLevel">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypePiezometricWaterLevel_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypePiezometricWaterLevel_Elevation" name="Elevation">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypePiezometricWaterLevel_Elevation_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypePiezometricWaterLevel_Elevation_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypePiezometricWaterLevel_IfcGeoScienceFeatureTypeEnum_PIEZOMETRICWATERLEVEL" client="cl_Pset_GeoScienceFeatureTypePiezometricWaterLevel" supplier="cl_IfcGeoScienceFeatureTypeEnum_PIEZOMETRICWATERLEVEL"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeRockMass" name="Pset_GeoScienceFeatureTypeRockMass">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeRockMass_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_K0" name="K0">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_K0_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_K0_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_QValue" name="QValue">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_QValue_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_QValue_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_Cohesion" name="Cohesion">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_Cohesion_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_Cohesion_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_FrictionAngle" name="FrictionAngle">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_FrictionAngle_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_FrictionAngle_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_GeologicalStrengthIndex" name="GeologicalStrengthIndex">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_GeologicalStrengthIndex_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_GeologicalStrengthIndex_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_RockMassRating" name="RockMassRating">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_RockMassRating_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_RockMassRating_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_RockQualityDesignation" name="RockQualityDesignation">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_RockQualityDesignation_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_RockQualityDesignation_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_YoungModulus" name="YoungModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_YoungModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_YoungModulus_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeRockMass_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT" client="cl_Pset_GeoScienceFeatureTypeRockMass" supplier="cl_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeSoilLikeMaterial" name="Pset_GeoScienceFeatureTypeSoilLikeMaterial">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeSoilLikeMaterial_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_MenardLimitPressure" name="MenardLimitPressure">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_MenardLimitPressure_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_MenardLimitPressure_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_PlasticityIndex" name="PlasticityIndex">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_PlasticityIndex_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_PlasticityIndex_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_WaterContent" name="WaterContent">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_WaterContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_WaterContent_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_CPTConeResistance" name="CPTConeResistance">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_CPTConeResistance_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_CPTConeResistance_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_CompressionIndex" name="CompressionIndex">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_CompressionIndex_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_CompressionIndex_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_ConsistencyIndex" name="ConsistencyIndex">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_ConsistencyIndex_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_ConsistencyIndex_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_DryBulkDensity" name="DryBulkDensity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMassDensityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_DryBulkDensity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_DryBulkDensity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_K0" name="K0">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_K0_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_K0_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_Lithology" name="Lithology">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_Lithology_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_Lithology_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_OCR" name="OCR">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_OCR_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_OCR_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_PeakCohesion" name="PeakCohesion">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_PeakCohesion_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_PeakCohesion_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_PeakFrictionAngle" name="PeakFrictionAngle">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_PeakFrictionAngle_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_PeakFrictionAngle_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_PoissonRatio" name="PoissonRatio">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_PoissonRatio_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_PoissonRatio_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_RelativeDensity" name="RelativeDensity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_RelativeDensity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_RelativeDensity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_ResidualCohesion" name="ResidualCohesion">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_ResidualCohesion_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_ResidualCohesion_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_ResidualFrictionAngle" name="ResidualFrictionAngle">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_ResidualFrictionAngle_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_ResidualFrictionAngle_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_SPTBlowCount" name="SPTBlowCount">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_SPTBlowCount_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_SPTBlowCount_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_SwellingIndex" name="SwellingIndex">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_SwellingIndex_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_SwellingIndex_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_UndrainedShearStrength" name="UndrainedShearStrength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_UndrainedShearStrength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_UndrainedShearStrength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_VoidRatio" name="VoidRatio">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_VoidRatio_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_VoidRatio_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_WetBulkDensity" name="WetBulkDensity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_WetBulkDensity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_WetBulkDensity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_YoungModulus" name="YoungModulus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_YoungModulus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_YoungModulus_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeSoilLikeMaterial_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT" client="cl_Pset_GeoScienceFeatureTypeSoilLikeMaterial" supplier="cl_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceModelCommon" name="Pset_GeoScienceModelCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceModelCommon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceModelCommon_AreaOfInterest" name="AreaOfInterest">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceModelCommon_AreaOfInterest_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceModelCommon_AreaOfInterest_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceModelCommon_Authors" name="Authors">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceModelCommon_Authors_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceModelCommon_Authors_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceModelCommon_CreationDate" name="CreationDate">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceModelCommon_CreationDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceModelCommon_CreationDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceModelCommon_ModelPurpose" name="ModelPurpose">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceModelCommon_ModelPurpose_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceModelCommon_ModelPurpose_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceModelCommon_ModelStatus" name="ModelStatus">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceModelCommon_ModelStatus_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceModelCommon_ModelStatus_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceModelCommon_ModelUseCase" name="ModelUseCase">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceModelCommon_ModelUseCase_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceModelCommon_ModelUseCase_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceModelCommon_Organizations" name="Organizations">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceModelCommon_Organizations_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceModelCommon_Organizations_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceModelCommon_ReleaseDate" name="ReleaseDate">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceModelCommon_ReleaseDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceModelCommon_ReleaseDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceModelCommon_UpdateDate" name="UpdateDate">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDate"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceModelCommon_UpdateDate_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceModelCommon_UpdateDate_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceModelCommon_VersionNumber" name="VersionNumber">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceModelCommon_VersionNumber_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceModelCommon_VersionNumber_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceModelCommon_IfcGeoScienceModel" client="cl_Pset_GeoScienceModelCommon" supplier="cl_IfcGeoScienceModel"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoSciencePropertiesCommon" name="Pset_GeoSciencePropertiesCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoSciencePropertiesCommon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoSciencePropertiesCommon_DryBulkDensity" name="DryBulkDensity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMassDensityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoSciencePropertiesCommon_DryBulkDensity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoSciencePropertiesCommon_DryBulkDensity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoSciencePropertiesCommon_PwaveVelocity" name="PwaveVelocity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearVelocityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoSciencePropertiesCommon_PwaveVelocity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoSciencePropertiesCommon_PwaveVelocity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoSciencePropertiesCommon_SwaveVelocity" name="SwaveVelocity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearVelocityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoSciencePropertiesCommon_SwaveVelocity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoSciencePropertiesCommon_SwaveVelocity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoSciencePropertiesCommon_GroundwaterTemperature" name="GroundwaterTemperature">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcThermodynamicTemperatureMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoSciencePropertiesCommon_GroundwaterTemperature_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoSciencePropertiesCommon_GroundwaterTemperature_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoSciencePropertiesCommon_Resistivity" name="Resistivity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcElectricalResistivityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoSciencePropertiesCommon_Resistivity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoSciencePropertiesCommon_Resistivity_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoSciencePropertiesCommon_WetBulkDensity" name="WetBulkDensity">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMassDensityMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoSciencePropertiesCommon_WetBulkDensity_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoSciencePropertiesCommon_WetBulkDensity_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoSciencePropertiesCommon_IfcGeoScienceFeatureTypeEnum_GEOLOGICUNIT" client="cl_Pset_GeoSciencePropertiesCommon" supplier="cl_IfcGeoScienceFeatureTypeEnum_GEOLOGICUNIT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoSciencePropertiesCommon_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT" client="cl_Pset_GeoSciencePropertiesCommon" supplier="cl_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT"/>
   </packagedElement>
 </uml:Model>
