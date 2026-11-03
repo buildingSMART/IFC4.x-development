@@ -19,7 +19,7 @@ class markdown_section:
     first_node_content : str
     children : list = field(default_factory=list)
     
-def parse_document(*, fn=None, data=None, linesep="", as_text=True):
+def parse_document(*, fn=None, data=None, linesep=" ", as_text=True):
     if fn:
         data = open(fn, encoding="utf-8").read()
     else:
@@ -84,7 +84,7 @@ def parse_document(*, fn=None, data=None, linesep="", as_text=True):
     return root
 
 class markdown_attribute_parser:
-    def __init__(self, *, fn=None, data=None, as_text=True, heading_name="Attributes", short=False, linesep=""):
+    def __init__(self, *, fn=None, data=None, as_text=True, heading_name="Attributes", short=False, linesep=" "):
     
         self.heading_name = heading_name
         self.root = parse_document(fn=fn, data=data, as_text=as_text, linesep=linesep)
