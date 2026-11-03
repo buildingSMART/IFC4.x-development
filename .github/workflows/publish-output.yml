@@ -110,7 +110,7 @@ jobs:
           python code/tools/git_ifc.py install --remote upstream
           git config user.name "bSI-Bot"
           git config user.email "${{ secrets.BSI_BOT_EMAIL }}"
-          git ifc pr merge --auto --all-prs --codes-only --label 4.4 --remote upstream
+          git ifc pr merge --auto --all-prs --codes-only --label tunnel-ready-for-review --remote upstream
 
       - name: Capture source commit message
         working-directory: ifc43
