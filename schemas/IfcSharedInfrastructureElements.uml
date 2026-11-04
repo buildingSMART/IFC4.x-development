@@ -1363,6 +1363,7 @@
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceFeatureTypeEnum_DISCRETEDISCONTINUITY_gen_IfcGeoScienceFeature" general="cl_IfcGeoScienceFeature"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceFeatureTypeEnum_DISCRETEDISCONTINUITY_gen_IfcGeoScienceFeatureType" general="cl_IfcGeoScienceFeatureType"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsDiscontinuityCommon_IfcGeoScienceFeatureTypeEnum_DISCRETEDISCONTINUITY" client="cl_Pset_GeoObsDiscontinuityCommon" supplier="cl_IfcGeoScienceFeatureTypeEnum_DISCRETEDISCONTINUITY"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceFeatureTypeEnum_FAULT" name="IfcGeoScienceFeatureTypeEnum.FAULT">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceFeatureTypeEnum_FAULT_gen_IfcGeoScienceFeature" general="cl_IfcGeoScienceFeature"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceFeatureTypeEnum_FAULT_gen_IfcGeoScienceFeatureType" general="cl_IfcGeoScienceFeatureType"/>
