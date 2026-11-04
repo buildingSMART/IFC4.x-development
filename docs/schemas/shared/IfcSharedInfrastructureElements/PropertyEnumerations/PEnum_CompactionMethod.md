@@ -12,5 +12,11 @@ Compaction using some kind of tamping equipment.
 ### NONE
 No compaction.
 
-### USERDEFINED
-User Defined
+### OTHER
+The type is user-defined.
+
+### NOTKNOWN
+Value is unknown.
+
+### UNSET
+Value has not been specified.

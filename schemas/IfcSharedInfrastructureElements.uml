@@ -1303,7 +1303,9 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CompactionMethod_ROLLER" name="ROLLER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CompactionMethod_TAMPING" name="TAMPING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CompactionMethod_NONE" name="NONE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CompactionMethod_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CompactionMethod_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CompactionMethod_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CompactionMethod_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SourceOfFill" name="PEnum_SourceOfFill">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SourceOfFill_IMPORTED" name="IMPORTED"/>
