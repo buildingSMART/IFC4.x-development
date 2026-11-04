@@ -1,4 +1,4 @@
 SwaveVelocity
 =============
 
-S-wave velocity of a rock or soil.
+Value of shear wave (S) velocity measured through the unit (rock or soil).
