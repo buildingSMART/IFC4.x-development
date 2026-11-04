@@ -6,17 +6,17 @@
 ### STEEL
 Steel fibre.
 
-### MACRO_POLYPROPYLEN
+### MACRO_POLYPROPYLENE
 Macro polypropylen fibre.
 
-### MICRO_POLYPROPYLEN
+### MICRO_POLYPROPYLENE
 Micro polypropylen fibre.
 
-### GLASSFIBRE
+### GLASS_FIBRE
 Glassfibre.
 
-### USERDEFINED
-User Defined
+### OTHER
+The type is user-defined.
 
 ### NOTKNOWN
 Value is unknown.

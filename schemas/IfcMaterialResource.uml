@@ -1527,10 +1527,10 @@ END_FUNCTION;
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SprayedConcreteFibreType" name="PEnum_SprayedConcreteFibreType">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SprayedConcreteFibreType_STEEL" name="STEEL"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SprayedConcreteFibreType_MACRO_POLYPROPYLEN" name="MACRO_POLYPROPYLEN"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SprayedConcreteFibreType_MICRO_POLYPROPYLEN" name="MICRO_POLYPROPYLEN"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SprayedConcreteFibreType_GLASSFIBRE" name="GLASSFIBRE"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SprayedConcreteFibreType_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SprayedConcreteFibreType_MACRO_POLYPROPYLENE" name="MACRO_POLYPROPYLENE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SprayedConcreteFibreType_MICRO_POLYPROPYLENE" name="MICRO_POLYPROPYLENE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SprayedConcreteFibreType_GLASS_FIBRE" name="GLASS_FIBRE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SprayedConcreteFibreType_OTHER" name="OTHER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SprayedConcreteFibreType_NOTKNOWN" name="NOTKNOWN"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SprayedConcreteFibreType_UNSET" name="UNSET"/>
     </packagedElement>
