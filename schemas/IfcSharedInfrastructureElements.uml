@@ -1271,5 +1271,45 @@
       <supplier xmi:type="uml:Class" href="IfcStructuralElementsDomain.uml#cl_IfcSurfaceFeature"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_VolumetricStratumBaseQuantities_IfcGeotechnicalStratum" client="cl_Qto_VolumetricStratumBaseQuantities" supplier="cl_IfcGeotechnicalStratum"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_EarthworksFillCommon" name="Pset_EarthworksFillCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_EarthworksFillCommon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksFillCommon_CompactionMethod" name="CompactionMethod" type="en_PEnum_CompactionMethod">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksFillCommon_CompactionMethod_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksFillCommon_CompactionMethod_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksFillCommon_SourceOfFill" name="SourceOfFill" type="en_PEnum_SourceOfFill">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksFillCommon_SourceOfFill_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksFillCommon_SourceOfFill_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksFillCommon_CompactionFactor" name="CompactionFactor">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksFillCommon_CompactionFactor_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksFillCommon_CompactionFactor_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksFillCommon_CompactionMethodOther" name="CompactionMethodOther">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksFillCommon_CompactionMethodOther_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksFillCommon_CompactionMethodOther_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_EarthworksFillCommon_SourceOfFillOther" name="SourceOfFillOther">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_EarthworksFillCommon_SourceOfFillOther_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_EarthworksFillCommon_SourceOfFillOther_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_CompactionMethod" name="PEnum_CompactionMethod">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CompactionMethod_ROLLER" name="ROLLER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CompactionMethod_TAMPING" name="TAMPING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CompactionMethod_NONE" name="NONE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_CompactionMethod_USERDEFINED" name="USERDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SourceOfFill" name="PEnum_SourceOfFill">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SourceOfFill_IMPORTED" name="IMPORTED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SourceOfFill_EXCAVATED" name="EXCAVATED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SourceOfFill_USERDEFINED" name="USERDEFINED"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EarthworksFillCommon_IfcEarthworksFill" client="cl_Pset_EarthworksFillCommon" supplier="cl_IfcEarthworksFill"/>
   </packagedElement>
 </uml:Model>

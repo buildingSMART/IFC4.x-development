@@ -1850,5 +1850,29 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_FlowInstrumentBaseQuantities_IfcFlowInstrument" client="cl_Qto_FlowInstrumentBaseQuantities" supplier="cl_IfcFlowInstrument"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SensorBaseQuantities_IfcSensor" client="cl_Qto_SensorBaseQuantities" supplier="cl_IfcSensor"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_UnitaryControlElementBaseQuantities_IfcUnitaryControlElement" client="cl_Qto_UnitaryControlElementBaseQuantities" supplier="cl_IfcUnitaryControlElement"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsSensor" name="Pset_SpatialGeoObsSensor">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpatialGeoObsSensor_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SpatialGeoObsSensor_PlacementType" name="PlacementType" type="en_PEnum_SensorPlacementType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SpatialGeoObsSensor_PlacementType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SpatialGeoObsSensor_PlacementType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SpatialGeoObsSensor_MeasurementEndTime" name="MeasurementEndTime">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SpatialGeoObsSensor_MeasurementEndTime_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SpatialGeoObsSensor_MeasurementEndTime_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SpatialGeoObsSensor_MeasurementStartTime" name="MeasurementStartTime">
+        <type xmi:type="uml:DataType" href="IfcDateTimeResource.uml#dt_IfcDateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SpatialGeoObsSensor_MeasurementStartTime_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SpatialGeoObsSensor_MeasurementStartTime_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SensorPlacementType" name="PEnum_SensorPlacementType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SensorPlacementType_MONITORING" name="MONITORING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SensorPlacementType_SURVEY" name="SURVEY"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpatialGeoObsSensor_IfcSensor" client="cl_Pset_SpatialGeoObsSensor" supplier="cl_IfcSensor"/>
   </packagedElement>
 </uml:Model>
