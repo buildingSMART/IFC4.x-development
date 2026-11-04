@@ -1540,6 +1540,9 @@ END_FUNCTION;
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ResidualStrengthStructuralClass_C" name="C"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ResidualStrengthStructuralClass_D" name="D"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ResidualStrengthStructuralClass_E" name="E"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ResidualStrengthStructuralClass_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ResidualStrengthStructuralClass_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ResidualStrengthStructuralClass_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_EarlyStrengthDevelopment" name="PEnum_EarlyStrengthDevelopment">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarlyStrengthDevelopment_J1" name="J1"/>
