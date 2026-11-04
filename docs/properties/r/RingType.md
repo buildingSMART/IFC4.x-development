@@ -1,0 +1,4 @@
+RingType
+========
+
+Type of ring.

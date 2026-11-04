@@ -12,3 +12,7 @@ The type of mesh is user defined.
 
 ### NOTDEFINED
 The type of mesh is not defined.
+
+### STEELSTRAPS
+Straps that bind steel reinforcing meshes.
+

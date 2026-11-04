@@ -62,3 +62,19 @@ User-defined type.
 
 ### NOTDEFINED
 Undefined type.
+
+### FIREPROTECTION
+Passive fire protection for containing fire and preventing it from spreading further.
+
+### TUNNEL_LINING
+A functional grouping of tunnel lining elements.
+
+### TUNNEL_PRESUPPORT
+A grouping of rigid elements installed before excavation at the tunnel face at the top perimeter of the tunnel section.
+
+### TUNNEL_SUPPORT
+Grouping of elements designed and installed to guarantee the long term stability of the underground structure.
+
+### WATERPROOFING
+Grouping of elements used to protect the facility against damage from moisture or the unintentional entry of water as well as the danger posed by aggressive water or soils and the effects of chemicals.
+

@@ -17,6 +17,8 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAudioVisualApplianceTypeEnum_TUNER" name="TUNER"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAudioVisualApplianceTypeEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAudioVisualApplianceTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAudioVisualApplianceTypeEnum_BEACON" name="BEACON"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAudioVisualApplianceTypeEnum_SIREN" name="SIREN"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcCableCarrierFittingTypeEnum" name="IfcCableCarrierFittingTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcCableCarrierFittingTypeEnum_BEND" name="BEND"/>
@@ -5603,5 +5605,13 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SolarDeviceBaseQuantities_IfcSolarDevice" client="cl_Qto_SolarDeviceBaseQuantities" supplier="cl_IfcSolarDevice"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SwitchingDeviceBaseQuantities_IfcSwitchingDevice" client="cl_Qto_SwitchingDeviceBaseQuantities" supplier="cl_IfcSwitchingDevice"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_TransformerBaseQuantities_IfcTransformer" client="cl_Qto_TransformerBaseQuantities" supplier="cl_IfcTransformer"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAudioVisualApplianceTypeEnum_BEACON" name="IfcAudioVisualApplianceTypeEnum.BEACON">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAudioVisualApplianceTypeEnum_BEACON_gen_IfcAudioVisualAppliance" general="cl_IfcAudioVisualAppliance"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAudioVisualApplianceTypeEnum_BEACON_gen_IfcAudioVisualApplianceType" general="cl_IfcAudioVisualApplianceType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcAudioVisualApplianceTypeEnum_SIREN" name="IfcAudioVisualApplianceTypeEnum.SIREN">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAudioVisualApplianceTypeEnum_SIREN_gen_IfcAudioVisualAppliance" general="cl_IfcAudioVisualAppliance"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcAudioVisualApplianceTypeEnum_SIREN_gen_IfcAudioVisualApplianceType" general="cl_IfcAudioVisualApplianceType"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
