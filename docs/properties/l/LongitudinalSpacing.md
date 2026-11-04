@@ -1,4 +1,4 @@
 LongitudinalSpacing
 ===================
 
-Longitudinal spacing between steel ribs.
+Longitudinal spacing between elements.
