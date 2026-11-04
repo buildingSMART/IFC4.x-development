@@ -1,6 +1,4 @@
 # IfcGeoScienceElement
 
 An abstract entity for geotechnical and geological concepts.
-## Attributes
-
-## Formal Propositions
+<!-- end of short definition -->
