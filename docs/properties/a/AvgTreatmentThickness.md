@@ -1,4 +1,0 @@
-AvgTreatmentThickness
-=====================
-
-Average treatment thickness.
