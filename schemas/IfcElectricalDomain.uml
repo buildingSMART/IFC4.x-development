@@ -5603,5 +5603,16 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SolarDeviceBaseQuantities_IfcSolarDevice" client="cl_Qto_SolarDeviceBaseQuantities" supplier="cl_IfcSolarDevice"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SwitchingDeviceBaseQuantities_IfcSwitchingDevice" client="cl_Qto_SwitchingDeviceBaseQuantities" supplier="cl_IfcSwitchingDevice"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_TransformerBaseQuantities_IfcTransformer" client="cl_Qto_TransformerBaseQuantities" supplier="cl_IfcTransformer"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ProtectiveDeviceTypeEarthingSwitch" name="Pset_ProtectiveDeviceTypeEarthingSwitch">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ProtectiveDeviceTypeEarthingSwitch_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ProtectiveDeviceTypeEarthingSwitch_NumberOfPhases" name="NumberOfPhases">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ProtectiveDeviceTypeEarthingSwitch_NumberOfPhases_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ProtectiveDeviceTypeEarthingSwitch_NumberOfPhases_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ProtectiveDeviceTypeEarthingSwitch_IfcProtectiveDeviceTypeEnum_EARTHINGSWITCH" client="cl_Pset_ProtectiveDeviceTypeEarthingSwitch" supplier="cl_IfcProtectiveDeviceTypeEnum_EARTHINGSWITCH"/>
   </packagedElement>
 </uml:Model>
