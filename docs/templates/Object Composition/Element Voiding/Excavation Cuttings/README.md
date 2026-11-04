@@ -7,11 +7,11 @@ The resulting geometry of the relationship, when applied, is the result of CSG o
 
 ```
 concept {
-    IfcElement:HasOpenings -> IfcRelVoidsElement:RelatingBuildingElement
+    IfcElement_0:HasOpenings -> IfcRelVoidsElement:RelatingBuildingElement
     IfcRelVoidsElement:RelatedOpeningElement -> IfcExcavation
     IfcExcavation:FillsVoids -> IfcRelFillsElement:RelatedBuildingElement
-    IfcRelFillsElement:RelatedBuildingElement -> IfcElement
-    IfcElement:HasOpenings[binding="HasOpenings"]
+    IfcRelFillsElement:RelatedBuildingElement -> IfcElement_1
+    IfcElement_0:HasOpenings[binding="HasOpenings"]
     IfcRelVoidsElement:RelatedOpeningElement[binding="RelatedEarthworksCut"]
     IfcExcavation:FillsVoids[binding="FillsVoids"]
     IfcRelFillsElement:RelatedBuildingElement[binding="RelatedBuiltElement"]

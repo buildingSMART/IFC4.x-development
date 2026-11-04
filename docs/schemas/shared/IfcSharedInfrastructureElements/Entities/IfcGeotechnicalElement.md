@@ -5,7 +5,7 @@ Abstract supertype for geotechnical entities.
 
 ## Concepts
 
-### Earthworks Cuttings
+### Excavation Cuttings
 
 
 
