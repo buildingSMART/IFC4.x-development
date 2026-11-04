@@ -1396,60 +1396,60 @@ END_FUNCTION;
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialSolid_comment_0">
         <body>PSET_TYPEDRIVENOVERRIDE</body>
       </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_AsContent" name="AsContent">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_ArsenicContent" name="ArsenicContent">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_AsContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_AsContent_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_ArsenicContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_ArsenicContent_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_CdContent" name="CdContent">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_CadmiumContent" name="CadmiumContent">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_CdContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_CdContent_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_CadmiumContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_CadmiumContent_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_CrContent" name="CrContent">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_ChromiumContent" name="ChromiumContent">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_CrContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_CrContent_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_ChromiumContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_ChromiumContent_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_CuContent" name="CuContent">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_CopperContent" name="CopperContent">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_CuContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_CuContent_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_CopperContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_CopperContent_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_HgContent" name="HgContent">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_MercuryContent" name="MercuryContent">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_HgContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_HgContent_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_MercuryContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_MercuryContent_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_MnContent" name="MnContent">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_ManganeseContent" name="ManganeseContent">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_MnContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_MnContent_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_ManganeseContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_ManganeseContent_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_NiContent" name="NiContent">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_NickelContent" name="NickelContent">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_NiContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_NiContent_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_NickelContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_NickelContent_upper" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_OrganicMatterContent" name="OrganicMatterContent">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_OrganicMatterContent_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_OrganicMatterContent_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_PbContent" name="PbContent">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_LeadContent" name="LeadContent">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_PbContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_PbContent_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_LeadContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_LeadContent_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_TS" name="TS">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_TotalSulfurContent" name="TotalSulfurContent">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_TS_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_TS_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_TotalSulfurContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_TotalSulfurContent_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_ZnContent" name="ZnContent">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_ZincContent" name="ZincContent">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_ZnContent_lower"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_ZnContent_upper" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_MaterialSolid_ZincContent_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_MaterialSolid_ZincContent_upper" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialSolid_IfcMaterial" client="cl_Pset_MaterialSolid" supplier="cl_IfcMaterial"/>
