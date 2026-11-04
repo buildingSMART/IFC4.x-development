@@ -1,4 +1,4 @@
-# Pset_GeoObsFoldAxis
+# Pset_GeoScienceObservationFoldAxis
 
 Properties for geological fold axis observations.
 <!-- end of short definition -->
