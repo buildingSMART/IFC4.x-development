@@ -9,5 +9,11 @@ The fill material is imported.
 ### EXCAVATED
 The fill material is excavated on site.
 
-### USERDEFINED
-User Defined
+### OTHER
+The type is user-defined.
+
+### NOTKNOWN
+Value is unknown.
+
+### UNSET
+Value has not been specified.

@@ -1310,7 +1310,9 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SourceOfFill" name="PEnum_SourceOfFill">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SourceOfFill_IMPORTED" name="IMPORTED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SourceOfFill_EXCAVATED" name="EXCAVATED"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SourceOfFill_USERDEFINED" name="USERDEFINED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SourceOfFill_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SourceOfFill_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SourceOfFill_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EarthworksFillCommon_IfcEarthworksFill" client="cl_Pset_EarthworksFillCommon" supplier="cl_IfcEarthworksFill"/>
   </packagedElement>
