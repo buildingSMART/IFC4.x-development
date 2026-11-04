@@ -10,8 +10,10 @@ The pre-support is around the circumference of the tunnel.
 The pre-support is in the tunnel face.
 
 ### OTHER
-The value falls outside of the predefined values of this enumeration.
+The type is user-defined.
 
 ### NOTKNOWN
-Value is unkown.
+Value is unknown.
 
+### UNSET
+Value has not been specified.
