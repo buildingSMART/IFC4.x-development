@@ -1349,5 +1349,11 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_EarthworksCutTypeTrench_IfcEarthworksCutTypeEnum_TRENCH" client="cl_Pset_EarthworksCutTypeTrench" supplier="cl_IfcEarthworksCutTypeEnum_TRENCH"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsCommon_IfcSpatialZoneTypeEnum_MAPPEDZONE" client="cl_Pset_GeoObsCommon">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialZoneTypeEnum_MAPPEDZONE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsCommon_IfcSpatialZoneTypeEnum_TESTEDZONE" client="cl_Pset_GeoObsCommon">
+      <supplier xmi:type="uml:Class" href="IfcProductExtension.uml#cl_IfcSpatialZoneTypeEnum_TESTEDZONE"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
