@@ -11,3 +11,12 @@ Class J2.
 
 ### J3
 Class J3.
+
+### OTHER
+The type is user-defined.
+
+### NOTKNOWN
+Value is unknown.
+
+### UNSET
+Value has not been specified.

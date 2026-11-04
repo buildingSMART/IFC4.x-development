@@ -1548,6 +1548,9 @@ END_FUNCTION;
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarlyStrengthDevelopment_J1" name="J1"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarlyStrengthDevelopment_J2" name="J2"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarlyStrengthDevelopment_J3" name="J3"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarlyStrengthDevelopment_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarlyStrengthDevelopment_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_EarlyStrengthDevelopment_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialSprayedConcrete_IfcMaterial" client="cl_Pset_MaterialSprayedConcrete" supplier="cl_IfcMaterial"/>
   </packagedElement>
