@@ -1872,6 +1872,9 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_SensorPlacementType" name="PEnum_SensorPlacementType">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SensorPlacementType_MONITORING" name="MONITORING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SensorPlacementType_SURVEY" name="SURVEY"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SensorPlacementType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SensorPlacementType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_SensorPlacementType_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpatialGeoObsSensor_IfcSensor" client="cl_Pset_SpatialGeoObsSensor" supplier="cl_IfcSensor"/>
   </packagedElement>
