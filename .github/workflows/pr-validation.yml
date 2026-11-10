@@ -1,4 +1,5 @@
 # Pass criteria (each emits ::error:: and fails the job if violated):
+#   - Literal type names in TYPEOF membership and intersections are uppercase
 #   - EXPRESS schema closes with END_SCHEMA;
 #   - EXPRESS line count >= 10,000 (catches the silent-empty-schema bug)
 #   - EXPRESS line count within +/- 50% of the BASE_REF baseline
@@ -221,7 +222,7 @@ jobs:
             echo "size=$(wc -c < /tmp/express_diff.md)" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: VALIDATE -- EXPRESS line count and END_SCHEMA
+      - name: VALIDATE -- EXPRESS line count, END_SCHEMA and TYPEOF literal case
         id: validate_express
         if: always()
         env:
@@ -238,6 +239,7 @@ jobs:
             echo "::error::EXPRESS schema has only $LINES lines (expected ~14000). This is the silent-empty-schema class of bug -- see PR #1087."
             fail=1
           fi
+          python code/validate_typeof_case.py /tmp/pr.exp || fail=1
           if [ -n "$BASE_LINES" ] && [ "$BASE_LINES" -gt 0 ]; then
             ratio=$(python -c "print($LINES/$BASE_LINES)")
             echo "  PR=$LINES  baseline=$BASE_LINES  ratio=$ratio"
@@ -246,7 +248,9 @@ jobs:
               fail=1
             fi
           fi
-          [ $fail -eq 0 ] || exit ${SHADOW_MODE:+0}${SHADOW_MODE:-1}
+          if [ "$fail" -ne 0 ] && [ "$SHADOW_MODE" != "true" ]; then
+            exit 1
+          fi
 
       # ----------------------------------------------------------------
       - name: Generate Pset XMLs
