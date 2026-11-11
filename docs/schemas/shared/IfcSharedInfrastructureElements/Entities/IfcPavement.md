@@ -9,7 +9,6 @@ NOTE Definition from ISO 6707-1: road, runway, or similar construction above the
 
 ### PredefinedType
 Identifies the predefined type of a pavement element. This type may associate additional specific property sets.
-NOTE The PredefinedType shall only be used, if no IfcPavementType is assigned, providing its own IfcCourseType.PredefinedType.
 
 ## Formal Propositions
 

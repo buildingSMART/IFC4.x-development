@@ -7,7 +7,6 @@ A liquid terminal is a terminating or origination point for the transfer of liqu
 
 ### PredefinedType
 Identifies the predefined type of a liquid terminal. This type may associate additional specific property sets.
-NOTE The PredefinedType shall only be used, if no _IfcLiquidTerminalType_ is assigned, providing its own IfcLiquidTerminalType.PredefinedType.
 
 ## Formal Propositions
 

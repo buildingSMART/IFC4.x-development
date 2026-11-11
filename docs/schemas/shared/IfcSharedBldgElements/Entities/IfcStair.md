@@ -22,7 +22,6 @@ The _IfcStair_ shall either be represented:
 
 ### PredefinedType
 Predefined generic type for a stair that is specified in an enumeration. There may be a property set given specifically for the predefined types.
-> NOTE The _PredefinedType_ shall only be used, if no _IfcStairType_ is assigned, providing its own _IfcStairType.PredefinedType_.
 
 > IFC4 CHANGE The attribute has been renamed from _ShapeType_ and changed to be OPTIONAL with upward compatibility for file based exchange.
 

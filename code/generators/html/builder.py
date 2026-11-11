@@ -34,6 +34,7 @@ from . import translate
 from ..util.xmi_document import SCHEMA_NAME
 from . import md as mdp
 from git_history import page_history
+from object_typing import has_predefined_type_on_assigned_type
 
 from version import target_branch as REPO_BRANCH
 REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
@@ -733,11 +734,11 @@ class StaticTemplateRenderer(markdown_mixin):
                 "description": self.process_markdown(resource, attr[3]),
                 "is_inverse": not attr[0],
             }
-            if attribute["name"] == "PredefinedType" and not attribute["description"]:
-                description = "A list of types to further identify the object. Some property sets may be specifically applicable to one of these types."
-                if "Type" not in group["name"]:
-                    description += "\n> NOTE  If the object has an associated IfcTypeObject with a _PredefinedType_, then this attribute shall not be used."
-                attribute["description"] = self.process_markdown(resource, description)
+            if attribute["name"] == "PredefinedType":
+                attribute["show_predefined_type_note"] = has_predefined_type_on_assigned_type(
+                    resource, self.structure.get("xmi_concepts", {}),
+                    self.structure["entity_supertype"], self.structure["entity_attributes"],
+                )
             group["attributes"].append(attribute)
 
         total_inherited_attributes = sum([g["total_attributes"] for g in groups if g["is_inherited"]])

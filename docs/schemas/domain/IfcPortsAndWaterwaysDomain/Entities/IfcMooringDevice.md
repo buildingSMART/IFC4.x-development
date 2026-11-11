@@ -7,7 +7,6 @@ A mooring device is an active or passive built element who's primary function is
 
 ### PredefinedType
 Identifies the predefined type of a mooring device. This type may associate additional specific property sets.
-NOTE The PredefinedType shall only be used, if no _IfcMooringDeviceType_ is assigned, providing its own IfcMooringDeviceType.PredefinedType.
 
 ## Formal Propositions
 

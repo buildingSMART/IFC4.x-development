@@ -30,7 +30,6 @@ Coverings can be assigned to
 
 ### PredefinedType
 Predefined types to define the particular type of the covering. There may be property set definitions available for each predefined type.
-> NOTE The _PredefinedType_ shall only be used, if no _IfcCoveringType_ is assigned, providing its own _IfcCoveringType.PredefinedType_.
 
 ### CoversSpaces
 Reference to the objectified relationship that handles the relationship of the covering to the covered space.

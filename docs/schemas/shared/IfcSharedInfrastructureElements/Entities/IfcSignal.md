@@ -12,7 +12,6 @@ Signals can be logically (functionally) grouped together into a signalling syste
 
 ### PredefinedType
 Identifies the predefined type of a signal. This type may associate additional specific property sets.
-NOTE The PredefinedType shall only be used, if no IfcSignalType is assigned, providing its own IfcSignType .PredefinedType.
 
 ## Formal Propositions
 
