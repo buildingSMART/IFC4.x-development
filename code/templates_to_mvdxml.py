@@ -16,8 +16,8 @@ import markdown
 import networkx
 import xmlschema
 
-import md
-from xmi_document import SCHEMA_NAME
+from generators.util import md
+from generators.util.xmi_document import SCHEMA_NAME
 
 def BeautifulSoup(*args):
     return bs4.BeautifulSoup(*args, features='lxml')

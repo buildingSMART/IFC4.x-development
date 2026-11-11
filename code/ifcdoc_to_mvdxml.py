@@ -6,7 +6,7 @@ import functools
 import ifcopenshell
 from ifcopenshell.mvd.mvdxml_expression import parse as parse_mvd_expr
 
-import xml_dict
+from generators.util import xml_dict
 
 class DependencyError(BaseException): pass  
   

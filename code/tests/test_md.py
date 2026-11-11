@@ -1,4 +1,4 @@
-from md import markdown_attribute_parser
+from generators.util.md import markdown_attribute_parser
 
 
 def test_sibling_paragraphs_are_separated_by_a_space():

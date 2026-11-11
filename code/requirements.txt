@@ -28,3 +28,4 @@ deepdiff
 hilbertcurve==1.0.5
 python-dotenv
 pytest
+tqdm

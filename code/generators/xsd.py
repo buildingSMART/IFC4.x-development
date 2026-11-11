@@ -4,13 +4,13 @@ import sys
 import itertools
 from pathlib import Path
 
-from . import xml_dict
+from .util import xml_dict
 
 from dataclasses import dataclass
 
-from .append_xmi import namespace
+from .util.append_xmi import namespace
 from ifcopenshell.express import express_parser
-from .xmi_document import SCHEMA_NAME
+from .util.xmi_document import SCHEMA_NAME
 
 X = xml_dict.xml_node
 
@@ -41,7 +41,7 @@ express_xsd_mapping = {
     'logical': 'ifc:logical',
 }
 
-CODE_DIR = Path(__file__).resolve().parents[2]
+CODE_DIR = Path(__file__).resolve().parents[1]
 
 conf = xml_dict.read(str(CODE_DIR / "IFC4_conf.xml"))
 entity_configuration = {
@@ -661,7 +661,8 @@ def baseschema():
     ])
    
     
-def run(express_path, xsd_path):
+def write_xsd(express_path, xsd_path):
+    xsd_path.parent.mkdir(parents=True, exist_ok=True)
     global mapping, schema, entities, selects, enums, simpletypes
 
     defined_sequences.clear()
@@ -759,12 +760,16 @@ def run(express_path, xsd_path):
     xml_dict.serialize([content], str(xsd_path))
 
 
+def run(doc, output_dir: Path) -> None:
+    write_xsd(output_dir / "IFC.exp", output_dir / "IFC.xsd")
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Generate IFC XSD from an EXPRESS schema.")
     parser.add_argument("express", type=Path, help="Path to the input EXPRESS schema.")
     parser.add_argument("output", type=Path, help="Path to the generated XSD file.")
     args = parser.parse_args(argv)
-    run(args.express, args.output)
+    write_xsd(args.express, args.output)
 
 
 if __name__ == "__main__":

@@ -80,7 +80,7 @@ parsed_issues = map(parse_issue, issues)
 parsable_issues = filter(lambda ab: ab[0] is not None, zip(parsed_issues, issues))
 issue_mapping = dict(parsable_issues)
 
-from xmi_document import xmi_document
+from generators.util.xmi_document import xmi_document
 
 try:
     fn = sys.argv[1]
