@@ -895,7 +895,7 @@ END_FUNCTION;
           <body>SIZEOF (QUERY (Vsh &lt;* Voids |
   SIZEOF (QUERY (Afs &lt;* Vsh.CfsFaces |
   (NOT ('IFC4X3_ADD2.IFCADVANCEDFACE' IN TYPEOF(Afs)))
-  )) = 0
+  )) > 0
 )) = 0</body>
         </specification>
       </ownedRule>
