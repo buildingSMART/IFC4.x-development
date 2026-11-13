@@ -211,7 +211,7 @@ def construct_xml(xmi_doc, pset, path, by_id, by_name):
                 .toprettyxml(indent="  ")
         )
         
-def run(xmi_doc, path):
+def write_psd(xmi_doc, path):
     psets = []
     by_id = {}
     by_name = {}
@@ -250,7 +250,7 @@ def compare(path1, path2, output):
             print(p, file=sys.stderr)
             data = subprocess.check_output([
                 sys.executable,
-                str(CODE_DIR / "compare_pset.py"),
+                str(Path(__file__).parent / "util" / "compare_pset.py"),
                 os.path.join(path1, p),
                 os.path.join(path2, p)])
             if data:
@@ -259,6 +259,12 @@ def compare(path1, path2, output):
                 print(data.decode('ascii'), file=f, flush=True)
             
             
+def run(doc, output_dir: Path) -> None:
+    psd_dir = output_dir / "psd"
+    psd_dir.mkdir(parents=True, exist_ok=True)
+    write_psd(doc, str(psd_dir))
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Generate IFC property set definition XML files.")
     parser.add_argument("schema", nargs="?", type=Path, help="Path to the input schema XML.")
@@ -297,7 +303,7 @@ def main(argv=None):
     if args.schema is None:
         parser.error("schema is required unless --compare is used")
 
-    run(xmi_document(str(args.schema)), str(args.output))
+    write_psd(xmi_document(str(args.schema)), str(args.output))
 
 
 if __name__ == "__main__":

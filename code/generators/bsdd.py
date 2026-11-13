@@ -1064,7 +1064,7 @@ def generate_translation_template(to_translate, po_files):
     print("-- Saved %s terms in %s POT files. --" % (i, len(pos)))
 
 
-def run(schema_path, output_path):
+def write_bsdd(doc, output_path):
     global xmi_doc, output_dir, excluded_entites, MEASURE_MAPPING, name_improve, definition_improve
 
     from .util.measure_mapping import MEASURE_MAPPING as loaded_measure_mapping
@@ -1079,7 +1079,7 @@ def run(schema_path, output_path):
     name_improve = loaded_name_improve
     definition_improve = loaded_definition_improve
 
-    xmi_doc = xmi_document(str(schema_path))
+    xmi_doc = doc
     xmi_doc.should_translate_pset_types = False
 
     bsdd_excluded_entites = CODE_DIR / "bsdd_excluded_entites.json"
@@ -1097,6 +1097,10 @@ def run(schema_path, output_path):
     generate_translation_template(to_translate, po_files)
 
 
+def run(doc, output_dir: Path) -> None:
+    write_bsdd(doc, output_dir / "bsdd")
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Generate IFC bSDD export files.")
     parser.add_argument("schema", type=Path, help="Path to the input schema XML.")
@@ -1108,7 +1112,7 @@ def main(argv=None):
         help="Output directory for generated bSDD files.",
     )
     args = parser.parse_args(argv)
-    run(args.schema, args.output)
+    write_bsdd(xmi_document(args.schema), args.output)
 
 
 if __name__ == "__main__":

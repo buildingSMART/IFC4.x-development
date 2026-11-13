@@ -1,9 +1,9 @@
 import glob
 import operator
 
-import xml_dict
+from generators.util import xml_dict
 
-from xmi_document import xmi_document
+from generators.util.xmi_document import xmi_document
 
 NS_QTO = "http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd"
 

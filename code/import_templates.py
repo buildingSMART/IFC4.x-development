@@ -11,7 +11,7 @@ from collections import defaultdict
 from dataclasses import dataclass
 from xml.etree import ElementTree as ET
 
-import xml_dict
+from generators.util import xml_dict
 
 entity_attributes = json.load(open(os.path.join(
     os.path.abspath(os.path.dirname(__file__)), "entity_attributes.json"

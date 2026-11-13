@@ -10,7 +10,7 @@ from collections import defaultdict
 
 import express
 import concept_interpretation
-from xmi_document import xmi_document
+from generators.util.xmi_document import xmi_document
 from concept_extractor import extractor
 
 class predefined_type_attribute: pass

@@ -1,6 +1,6 @@
 import pytest
 
-from name_improve import INPUT_CORRECTIONS, definition_improve, name_improve
+from generators.util.name_improve import INPUT_CORRECTIONS, definition_improve, name_improve
 
 # one case per rendering rule; the id names what the case proves.
 # bare correction keys are not listed here, they are covered wholesale below.

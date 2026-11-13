@@ -1,24 +1,34 @@
+import argparse
 import re
 import sys
 import itertools
+from pathlib import Path
 
-import xml_dict
+from .util import xml_dict
 
 from dataclasses import dataclass
 
-from append_xmi import namespace
+from .util.append_xmi import namespace
 from ifcopenshell.express import express_parser
-from xmi_document import SCHEMA_NAME
+from .util.xmi_document import SCHEMA_NAME
 
 X = xml_dict.xml_node
 
 def flatmap(func, *iterable):
     return itertools.chain.from_iterable(map(func, *iterable))
 
+def _schema_namespace(schema_name):
+    # drafts live under /IFC/DEV/, releases under /IFC/RELEASE/
+    m = re.fullmatch(r"(.+?)_(DEV|PREVIEW|DRAFT)_(\w+)", schema_name)
+    if m:
+        return f"https://standards.buildingsmart.org/IFC/DEV/{'/'.join(re.split('_|X', m.group(1)))}/{m.group(2)}/{m.group(3)}"
+    return f"https://standards.buildingsmart.org/IFC/RELEASE/{'/'.join(re.split('_|X', schema_name))}"
+
+
 namespaces = {
     'xs': "http://www.w3.org/2001/XMLSchema",
     'xlink': "http://www.w3.org/1999/xlink",
-    'ifc': f"https://standards.buildingsmart.org/IFC/RELEASE/{'/'.join(re.split('_|X', SCHEMA_NAME))}"
+    'ifc': _schema_namespace(SCHEMA_NAME)
 }
 
 express_xsd_mapping = {
@@ -31,7 +41,9 @@ express_xsd_mapping = {
     'logical': 'ifc:logical',
 }
 
-conf = xml_dict.read("IFC4_conf.xml")
+CODE_DIR = Path(__file__).resolve().parents[1]
+
+conf = xml_dict.read(str(CODE_DIR / "IFC4_conf.xml"))
 entity_configuration = {
     c.attributes['select']:\
     {cc.attributes['select']:cc.attributes for cc in c.children if cc.tag.endswith('attribute') or cc.tag.endswith('inverse') } \
@@ -107,6 +119,13 @@ def do_try(fn):
 defined_sequences = []
 referenced_wrappers = set()
 
+def literal_bound(b):
+    # Numeric bound -> int; '?' or symbolic expression -> None (unbounded). (mirrors IfcOpenShell #8039)
+    try:
+        return int(b)
+    except (TypeError, ValueError):
+        return None
+
 def create_attribute(entity, a, name_override=None):
     if isinstance(a, express_parser.AggregationType):
         a_type = a
@@ -158,7 +177,7 @@ def create_attribute(entity, a, name_override=None):
             return agt
 
         def format_unbounded(v):
-            if v in (float("inf"), "?"):
+            if v in (float("inf"), "?") or literal_bound(v) is None:
                 return "unbounded"
             return str(v)
         
@@ -167,12 +186,12 @@ def create_attribute(entity, a, name_override=None):
             is_optional = True
 
             min_occurs_mult = int(a.bounds.lower)
-            max_occurs_mult = float("inf") if a.bounds.upper == "?" else int(a.bounds.upper)
+            max_occurs_mult = float("inf") if literal_bound(a.bounds.upper) is None else int(a.bounds.upper)
         else:
             if isinstance(a_type.type, express_parser.AggregationType):
                 # nested lists don't require a lot of special handling, just list list
                 min_occurs_mult = int(a_type.bounds.lower)
-                max_occurs_mult = float("inf") if a_type.bounds.upper == "?" else int(a_type.bounds.upper)
+                max_occurs_mult = float("inf") if literal_bound(a_type.bounds.upper) is None else int(a_type.bounds.upper)
                 aggregate_type_prefix = aggregate_type(a_type) + " "
                 a_type = a_type.type
 
@@ -213,7 +232,7 @@ def create_attribute(entity, a, name_override=None):
                         XS.minLength,
                         {"value": (a_type.bounds.lower)}
                     )]
-                if a_type.bounds.upper != "?":
+                if literal_bound(a_type.bounds.upper) is not None:
                     length_constraint += [X(
                         XS.maxLength,
                         {"value": (a_type.bounds.upper)}
@@ -246,11 +265,14 @@ def create_attribute(entity, a, name_override=None):
             
             if a_type.aggregate_type == 'array':
                 assert min_occurs_mult == 1
-                extent = int(a_type.bounds.upper) - int(a_type.bounds.lower) + 1
-                for c in (XS.minLength, XS.maxLength):
-                    length_constraint += [X(
-                        c, {"value": str(extent)}
-                    )]
+                upper = literal_bound(a_type.bounds.upper)
+                if upper is not None:
+                    extent = upper - int(a_type.bounds.lower) + 1
+                    for c in (XS.minLength, XS.maxLength):
+                        length_constraint += [X(
+                            c, {"value": str(extent)}
+                        )]
+                # else: symbolic/expression upper bound -> no fixed extent (unbounded)
             else:                
                 if int(a_type.bounds.lower) != 1:
                     length_constraint += [X(
@@ -476,7 +498,7 @@ def convert_simple(nm_def):
         
             yield X(XS.complexType, {"name": nm}, children=[
                 X(XS.sequence, children=[X(XS.element,
-                    {"ref": base, 'maxOccurs': "unbounded" if defn.bounds.upper == '?' else defn.bounds.upper}
+                    {"ref": base, 'maxOccurs': defn.bounds.upper if literal_bound(defn.bounds.upper) is not None else "unbounded"}
                 )])]+attrs
             )
             
@@ -639,93 +661,116 @@ def baseschema():
     ])
    
     
-mapping = express_parser.parse(sys.argv[1])
-schema = mapping.schema
-entities = list(schema.entities.values())
-selects = list(schema.selects.items())
-enums = list(schema.enumerations.items())
-simpletypes = list(schema.simpletypes.items())
+def write_xsd(express_path, xsd_path):
+    xsd_path.parent.mkdir(parents=True, exist_ok=True)
+    global mapping, schema, entities, selects, enums, simpletypes
 
-header = complex_type(
-    [
-        X(
-            XS.element,
-            {"name": "header", "minOccurs": "0"},
-            children=[complex_type(
-                [
-                    element("name", "xs:string", minOccurs="0").to_xml(),
-                    element("time_stamp", "xs:dateTime", minOccurs="0").to_xml(),
-                    element("author", "xs:string", minOccurs="0").to_xml(),
-                    element("organization", "xs:string", minOccurs="0").to_xml(),
-                    element("preprocessor_version", "xs:string", minOccurs="0").to_xml(),
-                    element("originating_system", "xs:string", minOccurs="0").to_xml(),
-                    element("authorization", "xs:string", minOccurs="0").to_xml(),
-                    element("documentation", "xs:string", minOccurs="0").to_xml(),               
-                ],
-                []
-            )],
-        )
-    ],
-    [
-        attribute("id", "xs:ID"),
-        attribute("express", "ifc:Seq-anyURI"),
-        attribute("configuration", "ifc:Seq-anyURI")
-    ],
-    name="uos", abstract="true"
-)
+    defined_sequences.clear()
+    referenced_wrappers.clear()
 
-content = X(
-    XS.schema,
-    {
-        "targetNamespace": namespaces['ifc'],
-        "elementFormDefault": "qualified",
-        "attributeFormDefault": "unqualified"
-    },
-    namespaces=namespaces,
-    children=[
-        X(XS.element,
-            {
-                "name": "uos",
-                "type": "ifc:uos",
-                "abstract": "true"
-            },
-        ),
-        X(XS.simpleType,
-            {
-                "name": "Seq-anyURI",
-            },
-            children=[
-                X(XS.list,
-                    {
-                        "itemType": "xs:anyURI",
-                    }
-                )
-            ]
-        ),
-        header,
-        element("ifcXML", "ifc:ifcXML", minOccurs=None, substitutionGroup="ifc:uos").to_xml(),
-        complex_type([], [], content=X(
-            XS.complexContent,
-            children=[X(
-                XS.extension,
-                {"base": "ifc:uos"},
-                children = [X(
-                    XS.choice,
-                    {"minOccurs": "0", "maxOccurs": "unbounded"},
-                    children=[(
-                        X(XS.element, {"ref": "ifc:Entity"})
+    mapping = express_parser.parse(str(express_path))
+    schema = mapping.schema
+    entities = list(schema.entities.values())
+    selects = list(schema.selects.items())
+    enums = list(schema.enumerations.items())
+    simpletypes = list(schema.simpletypes.items())
+
+    header = complex_type(
+        [
+            X(
+                XS.element,
+                {"name": "header", "minOccurs": "0"},
+                children=[complex_type(
+                    [
+                        element("name", "xs:string", minOccurs="0").to_xml(),
+                        element("time_stamp", "xs:dateTime", minOccurs="0").to_xml(),
+                        element("author", "xs:string", minOccurs="0").to_xml(),
+                        element("organization", "xs:string", minOccurs="0").to_xml(),
+                        element("preprocessor_version", "xs:string", minOccurs="0").to_xml(),
+                        element("originating_system", "xs:string", minOccurs="0").to_xml(),
+                        element("authorization", "xs:string", minOccurs="0").to_xml(),
+                        element("documentation", "xs:string", minOccurs="0").to_xml(),
+                    ],
+                    []
+                )],
+            )
+        ],
+        [
+            attribute("id", "xs:ID"),
+            attribute("express", "ifc:Seq-anyURI"),
+            attribute("configuration", "ifc:Seq-anyURI")
+        ],
+        name="uos", abstract="true"
+    )
+
+    content = X(
+        XS.schema,
+        {
+            "targetNamespace": namespaces['ifc'],
+            "elementFormDefault": "qualified",
+            "attributeFormDefault": "unqualified"
+        },
+        namespaces=namespaces,
+        children=[
+            X(XS.element,
+                {
+                    "name": "uos",
+                    "type": "ifc:uos",
+                    "abstract": "true"
+                },
+            ),
+            X(XS.simpleType,
+                {
+                    "name": "Seq-anyURI",
+                },
+                children=[
+                    X(XS.list,
+                        {
+                            "itemType": "xs:anyURI",
+                        }
+                    )
+                ]
+            ),
+            header,
+            element("ifcXML", "ifc:ifcXML", minOccurs=None, substitutionGroup="ifc:uos").to_xml(),
+            complex_type([], [], content=X(
+                XS.complexContent,
+                children=[X(
+                    XS.extension,
+                    {"base": "ifc:uos"},
+                    children = [X(
+                        XS.choice,
+                        {"minOccurs": "0", "maxOccurs": "unbounded"},
+                        children=[(
+                            X(XS.element, {"ref": "ifc:Entity"})
+                        )]
                     )]
-                )]
-            
-            )]
-        ),name="ifcXML")
-    ] + list(flatmap(convert, entities)) + \
-        list(flatmap(convert_select, selects)) + \
-        list(flatmap(convert_enum, enums)) + \
-        list(flatmap(convert_simple, simpletypes)) + \
-        list(baseschema()) + \
-        defined_sequences +\
-        list(flatmap(convert_simple_wrapper, sorted(simpletypes + enums)))
-)
 
-xml_dict.serialize([content], sys.argv[2])
+                )]
+            ),name="ifcXML")
+        ] + list(flatmap(convert, entities)) + \
+            list(flatmap(convert_select, selects)) + \
+            list(flatmap(convert_enum, enums)) + \
+            list(flatmap(convert_simple, simpletypes)) + \
+            list(baseschema()) + \
+            defined_sequences +\
+            list(flatmap(convert_simple_wrapper, sorted(simpletypes + enums)))
+    )
+
+    xml_dict.serialize([content], str(xsd_path))
+
+
+def run(doc, output_dir: Path) -> None:
+    write_xsd(output_dir / "IFC.exp", output_dir / "IFC.xsd")
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Generate IFC XSD from an EXPRESS schema.")
+    parser.add_argument("express", type=Path, help="Path to the input EXPRESS schema.")
+    parser.add_argument("output", type=Path, help="Path to the generated XSD file.")
+    args = parser.parse_args(argv)
+    write_xsd(args.express, args.output)
+
+
+if __name__ == "__main__":
+    main()

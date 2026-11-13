@@ -1,7 +1,7 @@
 import sys
 
-import xml_dict
-from append_xmi import XMI
+from generators.util import xml_dict
+from generators.util.append_xmi import XMI
 
 fn, ofn = sys.argv[1:]
 content = xml_dict.read(fn)

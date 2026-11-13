@@ -13,8 +13,8 @@ from deepdiff import DeepDiff
 from ifcopenshell.express import express_parser
 
 from collections import defaultdict
-from xmi_document import fix_schema_name
-from md import markdown_attribute_parser
+from generators.util.xmi_document import fix_schema_name
+from generators.util.md import markdown_attribute_parser
 
 import markdown
 import bs4
@@ -322,7 +322,7 @@ def pset_to_dict(D):
     }
 
 def compare_pset(fn0, fn1):
-    import xml_dict
+    from generators.util import xml_dict
     d0d1 = list(map(pset_to_dict, map(xml_dict.xml_node.strip_namespaces, map(xml_dict.read, (fn0, fn1)))))
     
     pset = d0d1[0]['name']
