@@ -7,7 +7,6 @@ A sign is a notice on display that gives information or instructions in a writte
 
 ### PredefinedType
 Identifies the predefined type of a signs. This type may associate additional specific property sets.
-NOTE The PredefinedType shall only be used, if no IfcSignType is assigned, providing its own IfcSignType .PredefinedType.
 
 ## Formal Propositions
 

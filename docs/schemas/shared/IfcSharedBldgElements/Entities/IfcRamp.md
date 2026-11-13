@@ -22,7 +22,6 @@ The _IfcRamp_ shall either be represented:
 
 ### PredefinedType
 Predefined generic types for a ramp that are specified in an enumeration. There may be a property set given for the predefined types.
-> NOTE The _PredefinedType_ shall only be used, if no _IfcRampType_ is assigned, providing its own _IfcRampType.PredefinedType_.
 
 > IFC4 CHANGE The attribute has been renamed from _ShapeType_ and changed to be OPTIONAL with upward compatibility for file based exchange.
 

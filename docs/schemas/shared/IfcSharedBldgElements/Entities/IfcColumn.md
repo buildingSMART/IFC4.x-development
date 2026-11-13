@@ -26,7 +26,6 @@ For any longitudial structural member, not constrained to be predominately horiz
 
 ### PredefinedType
 Predefined generic type for a column that is specified in an enumeration. There may be a property set given specifically for the predefined types.
-> NOTE The _PredefinedType_ shall only be used, if no _IfcColumnType_ is assigned, providing its own _IfcColumnType.PredefinedType_.
 
 > IFC4 CHANGE The attribute has been added at the end of the entity definition.
 

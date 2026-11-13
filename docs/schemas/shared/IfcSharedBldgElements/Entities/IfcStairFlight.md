@@ -29,7 +29,6 @@ Horizontal distance from the front to the back of the tread. The tread length is
 
 ### PredefinedType
 Predefined generic type for a stair flight that is specified in an enumeration. There may be a property set given specifically for the predefined types.
-> NOTE The _PredefinedType_ shall only be used, if no _IfcStairFlightType_ is assigned, providing its own _IfcStairFlightType.PredefinedType_.
 
 > IFC4 CHANGE The attribute has been added at the end of the entity definition.
 

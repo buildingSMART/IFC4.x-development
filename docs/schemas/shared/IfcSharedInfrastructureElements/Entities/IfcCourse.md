@@ -13,7 +13,6 @@ Structurally a course does not have capacity to carry loads over open span, or t
 
 ### PredefinedType
 Identifies the predefined type of a course element. This type may associate additional specific property sets.
-NOTE The PredefinedType shall only be used, if no _IfcCourseType_ is assigned, providing its own _IfcCourseType_.PredefinedType.
 
 ## Formal Propositions
 

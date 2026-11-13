@@ -122,11 +122,20 @@
                 {% endif %}
                 {% if attribute.description %}
                 {{ attribute.description | safe }}
-                {% endif %}
-                {% if not attribute.formal and not attribute.description %}
+                {% elif attribute.name == "PredefinedType" %}
+                <p>A list of types to further identify the object. Some property sets may be specifically applicable to one of these types.</p>
+                {% elif not attribute.formal %}
                 <p class="search-skip">
                     <em>No description available.</em>
                 </p>
+                {% endif %}
+                {% if attribute.show_predefined_type_note %}
+                <aside class="aside-note"><mark>NOTE</mark>
+                    The occurrence may specify its own <em>PredefinedType</em> if no type is assigned
+                    or if the assigned type’s <em>PredefinedType</em> is <em>NOTDEFINED</em>.
+                    Otherwise, the occurrence shall leave <em>PredefinedType</em> unset.
+                    See <a href="{{ base }}/concepts/Object_Attributes/Object_Predefined_Type/content.html">Object Predefined Type</a>.
+                </aside>
                 {% endif %}
             </td>
         </tr>
