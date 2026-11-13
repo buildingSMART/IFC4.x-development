@@ -258,7 +258,7 @@ def write_structure(xmi_doc, psd_dir: Path, output_path: Path) -> None:
                 get_schema(item_package)['Quantity Sets'].append(item.name)
 
         
-    for fn in psd_dir.glob("*.xml"):
+    for fn in sorted(psd_dir.glob("*.xml")):
         xml = read_psd(fn)
         
         psetname = child_by_tag(xml, "Name")["#text"]
