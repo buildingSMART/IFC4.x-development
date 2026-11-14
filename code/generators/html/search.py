@@ -11,7 +11,6 @@ from .refiner import BeautifulSoup
 CAMEL_BOUNDARY = re.compile(
     r"(?<=[a-z])(?=[A-Z0-9])"
     r"|(?<=[A-Z][A-Z])(?=[0-9])"
-    r"|(?<=[0-9])(?=[a-z])"
     r"|(?<=[0-9])(?=[A-Z][A-Za-z])"
     r"|(?<=[A-Z])(?=[A-Z][a-z])"
 )
