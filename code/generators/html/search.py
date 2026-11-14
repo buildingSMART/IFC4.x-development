@@ -155,5 +155,5 @@ class SearchIndexBuilder:
 
     def _added_words(self, value: str) -> str:
         words = split_words(value)
-        plain = [word for word in WORD_SEPARATOR.split(value.lower()) if word]
+        plain = [word for word in WORD_SEPARATOR.split(value.lower()) if word and word != "ifc"]
         return " ".join(words) if words != plain else ""
