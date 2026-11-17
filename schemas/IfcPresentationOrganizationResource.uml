@@ -95,7 +95,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcPresentationLayerWithStyle_ApplicableOnlyToItems" name="ApplicableOnlyToItems">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcPresentationLayerWithStyle_ApplicableOnlyToItems" name="ApplicableOnlyToItems">
           <language>EXPRESS_WHERE</language>
-          <body>SIZEOF(QUERY(temp &lt;* AssignedItems | (SIZEOF(TYPEOF(temp) * ['IFC4X3_ADD2.IfcGeometricRepresentationItem','IFC4X3_ADD2.IfcMappedItem']) >= 1))) = SIZEOF(AssignedItems)</body>
+          <body>SIZEOF(QUERY(temp &lt;* AssignedItems | (SIZEOF(TYPEOF(temp) * ['IFC4X3_ADD2.IFCGEOMETRICREPRESENTATIONITEM','IFC4X3_ADD2.IFCMAPPEDITEM']) >= 1))) = SIZEOF(AssignedItems)</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcPresentationLayerWithStyle_gen_IfcPresentationLayerAssignment" general="cl_IfcPresentationLayerAssignment"/>
