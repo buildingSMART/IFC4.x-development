@@ -297,7 +297,9 @@ jobs:
               fail=1
             fi
           done <<< "$PSD_FILES"
-          [ $fail -eq 0 ] || exit ${SHADOW_MODE:+0}${SHADOW_MODE:-1}
+          if [ "$fail" -ne 0 ] && [ "$SHADOW_MODE" != "true" ]; then
+            exit 1
+          fi
 
       # ----------------------------------------------------------------
       - name: Generate JSON
@@ -321,7 +323,9 @@ jobs:
               fail=1
             fi
           done <<< "$NEW_ENTITIES"
-          [ $fail -eq 0 ] || exit ${SHADOW_MODE:+0}${SHADOW_MODE:-1}
+          if [ "$fail" -ne 0 ] && [ "$SHADOW_MODE" != "true" ]; then
+            exit 1
+          fi
 
       # ----------------------------------------------------------------
       - name: VALIDATE -- new entities have MD docs
