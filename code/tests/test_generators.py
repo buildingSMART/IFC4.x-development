@@ -24,3 +24,25 @@ def test_second_json_run_does_not_duplicate_hierarchy_members(monkeypatch, tmp_p
     hierarchy = json.loads((tmp_path / "structure.json").read_text(encoding="utf-8"))["hierarchy"]
     kernel = dict(dict(hierarchy)["Core data schemas"])["IfcKernel"]
     assert kernel["Property Sets"] == ["Pset_X"]
+
+
+def test_application_unique_rule_descriptions(tmp_path):
+    from generators.html.builder import StaticTemplateRenderer
+    from generators.html.config import BuildConfig
+
+    renderer = StaticTemplateRenderer(
+        BuildConfig.from_repo_root(tmp_path),
+        structure={"entity_where_clauses": {"IfcApplication": [
+            ("UR1", "UNIQUE ApplicationIdentifier"),
+            ("UR2", "UNIQUE ApplicationFullName, Version"),
+        ]}},
+    )
+
+    result = renderer.get_formal_propositions(
+        "IfcApplication", SimpleNamespace(formal_propositions=[])
+    )
+
+    assert [(item["name"], item["description"]) for item in result["items"]] == [
+        ("UR1", "The attribute ApplicationIdentifier should be unique"),
+        ("UR2", "The combination of attributes ApplicationFullName and Version should be unique"),
+    ]

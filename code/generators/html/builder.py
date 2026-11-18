@@ -762,14 +762,23 @@ class StaticTemplateRenderer(markdown_mixin):
         if not clauses:
             return
 
+        number = self.numberer.generate()
+        items = []
+        for name, clause in clauses:
+            if clause.startswith("UNIQUE "):
+                attributes = [attribute.strip() for attribute in clause[len("UNIQUE "):].split(",")]
+                if len(attributes) == 1:
+                    description = f"The attribute {attributes[0]} should be unique"
+                else:
+                    attribute_list = ", ".join(attributes[:-1]) + " and " + attributes[-1]
+                    description = f"The combination of attributes {attribute_list} should be unique"
+                items.append({"name": name, "formal": None, "description": description})
+            else:
+                items.append({"name": name, "formal": clause, "description": self.process_markdown(resource, defs.get(name))})
+
         return {
-            "number": self.numberer.generate(),
-            "items": [
-                {"name": c[0], "formal": None, "description": f"The attribute {c[1].split(' ')[1]} should be unique" } \
-                if c[1].startswith("UNIQUE ") else \
-                {"name": c[0], "formal": c[1], "description": self.process_markdown(resource, defs.get(c[0]))} \
-                for c in clauses
-            ],
+            "number": number,
+            "items": items,
         }
     
     def get_property_sets(self, resource):
