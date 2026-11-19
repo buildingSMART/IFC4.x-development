@@ -9,7 +9,6 @@ A conveyor segment defines an occurrence of a flow segment/ continuous run withi
 
 ### PredefinedType
 Identifies the predefined type of a conveyor segment. This type may associate additional specific property sets.
-NOTE The PredefinedType shall only be used, if no _IfcConveyorSegmentType_ is assigned, providing its own _IfcConveyorSegmentType_.PredefinedType.
 
 ## Formal Propositions
 

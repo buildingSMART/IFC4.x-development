@@ -21,7 +21,6 @@ The geometric representation of _IfcCurtainWall_ is defined using the following 
 
 ### PredefinedType
 Predefined generic type for a curtain wall that is specified in an enumeration. There may be a property set given specifically for the predefined types.
-> NOTE The _PredefinedType_ shall only be used, if no _IfcCurtainWallType_ is assigned, providing its own _IfcCurtainWallType.PredefinedType_.
 
 > IFC4 CHANGE The attribute has been added at the end of the entity definition.
 

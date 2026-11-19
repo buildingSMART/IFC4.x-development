@@ -13,7 +13,6 @@ An impact protection device is a component used to protect other built elements 
 
 Identifies the predefined type of an impact device. This type may associate additional specific property sets.
 
-> NOTE The _PredefinedType_ shall only be used, if no _IfcImpactProtectionDeviceType_ is assigned, providing its own _IfcImpactProtectionDeviceType.PredefinedType_.
 
 ## Formal Propositions
 

@@ -307,6 +307,13 @@ def load_doc_entity(spec_dir, entity_name):
             if not doc_children:
                 continue
             txt = _clean_doc_text(_text_of(doc_children[0]))
+            if nm == "PredefinedType":
+                # Older DocEntity files include the note now supplied by the entity template.
+                txt = re.sub(
+                    r"^(?:> *)?NOTE[^\S\n]+The _?PredefinedType_? shall only be used,? if no "
+                    r"_?Ifc\w+Type_? is assigned, providing its own _?Ifc\w+Type_? *\.PredefinedType_?\.[ \t]*(?:\n|$)",
+                    "", txt, flags=re.MULTILINE,
+                )
             if txt:
                 attr_docs[nm] = txt
 
@@ -365,14 +372,10 @@ def _synth_attr_doc(entity_name, attr_name, attr_type):
     if attr_name == "PredefinedType":
         noun = _entity_noun(entity_name)
         article = _indefinite_article(noun)
-        # Paired type entity name: IfcArchElement → IfcArchElementType.
-        type_entity = f"{entity_name}Type"
         return (
             f"Predefined generic type for {article} {noun} that is specified in an "
-            f"enumeration. There may be a property set given specifically for the "
-            f"predefined types.\n"
-            f"> NOTE  The _PredefinedType_ shall only be used, if no _{type_entity}_ "
-            f"is assigned, providing its own _{type_entity}.PredefinedType_."
+            "enumeration. There may be a property set given specifically for the "
+            "predefined types."
         )
     return None
 

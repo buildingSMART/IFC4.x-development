@@ -11,7 +11,6 @@ Shading devices are purpose built devices to protect from the sunlight, from nat
 
 ### PredefinedType
 Predefined generic type for a shading device that is specified in an enumeration. There may be a property set given specifically for the predefined types.
-> NOTE The _PredefinedType_ shall only be used, if no _IfcShadingDeviceType_ is assigned, providing its own _IfcShadingDeviceType.PredefinedType_.
 
 ## Formal Propositions
 
