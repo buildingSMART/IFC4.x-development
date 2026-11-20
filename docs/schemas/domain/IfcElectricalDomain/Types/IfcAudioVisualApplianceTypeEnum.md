@@ -51,3 +51,10 @@ User-defined type.
 
 ### NOTDEFINED
 Undefined type.
+
+### BEACON
+A light or other visible object serving as a signal, warning, or guide.
+
+### SIREN
+A device that makes a loud prolonged signal or warning sound.
+
