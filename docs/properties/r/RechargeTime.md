@@ -1,4 +1,4 @@
 RechargeTime
 ============
 
-Recharge time for a rechargable battery.
+Recharge time for a rechargeable battery.

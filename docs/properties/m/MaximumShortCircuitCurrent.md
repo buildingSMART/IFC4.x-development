@@ -1,4 +1,4 @@
 MaximumShortCircuitCurrent
 ==========================
 
-Maximun short circuit current of the battery.
+Maximum short circuit current of the battery.
