@@ -694,7 +694,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SolidStratumCapacity_HydraulicConductivity_upper" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SolidStratumCapacity_LoadBearingCapacity" name="LoadBearingCapacity">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlanarForceMeasure"/>
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SolidStratumCapacity_LoadBearingCapacity_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SolidStratumCapacity_LoadBearingCapacity_upper" value="1"/>
       </ownedAttribute>

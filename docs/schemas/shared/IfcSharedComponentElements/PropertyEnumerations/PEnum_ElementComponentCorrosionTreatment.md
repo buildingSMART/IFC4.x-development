@@ -15,6 +15,10 @@ Galvanised
 ### STAINLESS
 Stainless
 
+### POWDERCOATED
+
+### GALVANIZEDANDPOWDERCOATED
+
 ### NONE
 No waterproof.
 
