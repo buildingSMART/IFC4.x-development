@@ -4105,7 +4105,7 @@ AND
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PreSupportCommon_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" client="cl_Pset_PreSupportCommon" supplier="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsExcavatedZone" name="Pset_SpatialGeoScienceObservationExcavatedZone">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpatialGeoObsExcavatedZone_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SpatialGeoObsExcavatedZone_ExcavationFaceType" name="ExcavationFaceType" type="en_PEnum_ExcavationFaceType">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SpatialGeoObsExcavatedZone_ExcavationFaceType_lower" value="1"/>
@@ -4154,7 +4154,7 @@ AND
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpatialGeoObsExcavatedZone_IfcSpatialZoneTypeEnum_MAPPEDZONE" client="cl_Pset_SpatialGeoObsExcavatedZone" supplier="cl_IfcSpatialZoneTypeEnum_MAPPEDZONE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsFieldOutcrop" name="Pset_SpatialGeoScienceObservationFieldOutcrop">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpatialGeoObsFieldOutcrop_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SpatialGeoObsFieldOutcrop_AzimuthExposure" name="AzimuthExposure">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
@@ -4170,7 +4170,7 @@ AND
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpatialGeoObsFieldOutcrop_IfcSpatialZoneTypeEnum_MAPPEDZONE" client="cl_Pset_SpatialGeoObsFieldOutcrop" supplier="cl_IfcSpatialZoneTypeEnum_MAPPEDZONE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsMappedZoneCommon" name="Pset_MappedZoneCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpatialGeoObsMappedZoneCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SpatialGeoObsMappedZoneCommon_GSI" name="GeologicalStrengthIndex">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
@@ -4191,7 +4191,7 @@ AND
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpatialGeoObsMappedZoneCommon_IfcSpatialZoneTypeEnum_MAPPEDZONE" client="cl_Pset_SpatialGeoObsMappedZoneCommon" supplier="cl_IfcSpatialZoneTypeEnum_MAPPEDZONE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsSlopeArea" name="Pset_SpatialGeoScienceObservationSlopeArea">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpatialGeoObsSlopeArea_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SpatialGeoObsSlopeArea_SlopeBaseElevation" name="SlopeBaseElevation">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
@@ -4207,7 +4207,7 @@ AND
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SpatialGeoObsSlopeArea_IfcSpatialZoneTypeEnum_MAPPEDZONE" client="cl_Pset_SpatialGeoObsSlopeArea" supplier="cl_IfcSpatialZoneTypeEnum_MAPPEDZONE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsTunnelFace" name="Pset_SpatialGeoScienceObservationTunnelFace">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpatialGeoObsTunnelFace_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SpatialGeoObsTunnelFace_GroundClassTBM" name="GroundClassTBM">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
