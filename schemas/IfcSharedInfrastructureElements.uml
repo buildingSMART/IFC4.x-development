@@ -1273,7 +1273,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_VolumetricStratumBaseQuantities_IfcGeotechnicalStratum" client="cl_Qto_VolumetricStratumBaseQuantities" supplier="cl_IfcGeotechnicalStratum"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoAspects" name="Pset_GeoAspects">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoAspects_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoAspects_AsbestosPotential" name="AsbestosPotential">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
