@@ -256,11 +256,12 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcRelAssociatesMaterial_AllowedElements" name="AllowedElements">
           <language>EXPRESS_WHERE</language>
           <body>SIZEOF(QUERY(temp &lt;* SELF\IfcRelAssociates.RelatedObjects | (
-  SIZEOF(TYPEOF(temp) * [   
-    'IFC4X3_ADD2.IFCELEMENT', 
+  SIZEOF(TYPEOF(temp) * [
+    'IFC4X3_ADD2.IFCELEMENT',
     'IFC4X3_ADD2.IFCELEMENTTYPE',
     'IFC4X3_ADD2.IFCSTRUCTURALMEMBER',
-    'IFC4X3_ADD2.IFCPORT']) = 0) 
+    'IFC4X3_ADD2.IFCPORT',
+    'IFC4X3_ADD2.IFCGEOSCIENCEOBSERVATION']) = 0)
 )) = 0</body>
         </specification>
       </ownedRule>
@@ -3843,5 +3844,13 @@ AND
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ProjectionElementBaseQuantities_IfcProjectionElement" client="cl_Qto_ProjectionElementBaseQuantities" supplier="cl_IfcProjectionElement"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SiteBaseQuantities_IfcSite" client="cl_Qto_SiteBaseQuantities" supplier="cl_IfcSite"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SpaceBaseQuantities_IfcSpace" client="cl_Qto_SpaceBaseQuantities" supplier="cl_IfcSpace"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcComplementaryData" name="IfcComplementaryData" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcComplementaryData_gen_IfcProduct">
+        <general xmi:type="uml:Class" href="IfcKernel.uml#cl_IfcProduct"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcObservation" name="IfcObservation">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcObservation_gen_IfcComplementaryData" general="cl_IfcComplementaryData"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
