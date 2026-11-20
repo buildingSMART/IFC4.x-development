@@ -1349,7 +1349,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ExcavationCommon" name="Pset_ExcavationCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ExcavationCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ExcavationCommon_BulkingFactor" name="BulkingFactor">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
@@ -1360,7 +1360,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ExcavationCommon_IfcUndergroundExcavation" client="cl_Pset_ExcavationCommon" supplier="cl_IfcUndergroundExcavation"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_FaceExcavationCommon" name="Pset_FaceExcavationCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FaceExcavationCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FaceExcavationCommon_DriveInclination" name="DriveInclination" type="en_PEnum_DriveInclination">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FaceExcavationCommon_DriveInclination_lower" value="1"/>
@@ -1425,7 +1425,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FaceExcavationCommon_IfcFaceExcavation" client="cl_Pset_FaceExcavationCommon" supplier="cl_IfcFaceExcavation"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_LateralExcavationCommon" name="Pset_LateralExcavationCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_LateralExcavationCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_LateralExcavationCommon_RadialExcavationDepth" name="RadialExcavationDepth">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
@@ -1465,7 +1465,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_LateralExcavationCommon_IfcRadialExcavation" client="cl_Pset_LateralExcavationCommon" supplier="cl_IfcRadialExcavation"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_UndergroundExcavationCommon" name="Pset_UndergroundExcavationCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_UndergroundExcavationCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_UndergroundExcavationCommon_ExcavationClass" name="ExcavationClass">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
