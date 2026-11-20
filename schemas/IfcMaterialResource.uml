@@ -1394,7 +1394,7 @@ END_FUNCTION;
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_MaterialGranular_IfcMaterial" client="cl_Pset_MaterialGranular" supplier="cl_IfcMaterial"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_MaterialSolid" name="Pset_MaterialSolid">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_MaterialSolid_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_MATERIALDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_MaterialSolid_ArsenicContent" name="ArsenicContent">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
