@@ -15,8 +15,8 @@ Reinforcing mesh.
 ### FIBRE
 Fibre reinforcement.
 
-### USERDEFINED
-User Defined
+### OTHER
+The type is user-defined.
 
 ### NOTKNOWN
 Value is unknown.
