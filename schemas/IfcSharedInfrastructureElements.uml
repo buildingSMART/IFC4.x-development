@@ -1326,7 +1326,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsBoreholeConstruction" name="Pset_GeoScienceObservationBoreholeConstruction">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsBoreholeConstruction_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsBoreholeConstruction_BoreholeFilter" name="BoreholeFilter">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
@@ -1352,7 +1352,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsBoreholeConstruction_IfcBorehole" client="cl_Pset_GeoObsBoreholeConstruction" supplier="cl_IfcBorehole"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsCommon" name="Pset_GeoScienceObservationCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsCommon_Lithology" name="Lithology">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
@@ -1376,7 +1376,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpatialGeoObsBorehole" name="Pset_SpatialGeoScienceObservationBorehole">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpatialGeoObsBorehole_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SpatialGeoObsBorehole_BoreholeAzimuth" name="BoreholeAzimuth">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
