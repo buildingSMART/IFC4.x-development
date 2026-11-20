@@ -1,4 +1,4 @@
 Cl-
 ===
 
-Content of Cl- in the water sample.
+Content of Cl- (chloride ion) in the water sample.

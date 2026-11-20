@@ -1,4 +1,4 @@
 K+
 ==
 
-Content of K+ in the water sample.
+Content of K+ (potassium ion) in the water sample.

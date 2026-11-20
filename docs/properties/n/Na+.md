@@ -1,4 +1,4 @@
 Na+
 ===
 
-Content of Na+ in the water sample.
+Content of Na+ (sodium ion) in the water sample.

@@ -1,4 +1,4 @@
 Ca2+
 ====
 
-Content of Ca2+ in the water sample.
+Content of Ca2+ (calcium ion) in the water sample.
