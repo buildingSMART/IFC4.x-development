@@ -639,7 +639,7 @@ class StaticTemplateRenderer(markdown_mixin):
 
     def _render_property(self, prop: str) -> StaticResponse:
         translations = translate.get_translations(prop)
-        safe_prop = "".join(char for char in prop if char.isalnum() or char == "_")
+        safe_prop = "".join(char for char in prop if char.isalnum() or char in "_+-")
         path = self.config.repo_root / "docs" / "properties" / safe_prop[0].lower() / f"{safe_prop}.md"
         markdown = path.read_text(encoding="utf-8") if path.exists() else ""
         property_sets = [[name] for name, definition in self.structure['pset_definitions'].items() if any(item["name"] == safe_prop for item in definition["properties"])]

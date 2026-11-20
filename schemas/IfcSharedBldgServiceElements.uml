@@ -1528,6 +1528,11 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SoundGeneration_SoundCurve_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SoundGeneration_SoundCurve_upper" value="*"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SoundGeneration_SoundPressureLevel" name="SoundPressureLevel">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcSoundPressureLevelMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SoundGeneration_SoundPressureLevel_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SoundGeneration_SoundPressureLevel_upper" value="1"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SpaceAirHandlingDimensioning" name="Pset_SpaceAirHandlingDimensioning">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SpaceAirHandlingDimensioning_comment_0">

@@ -1,0 +1,4 @@
+CompactionMethod
+================
+
+Method of compaction.

@@ -1,0 +1,4 @@
+ManganeseContent
+================
+
+Content of Manganese.
