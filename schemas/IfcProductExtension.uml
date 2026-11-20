@@ -3843,5 +3843,14 @@ AND
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ProjectionElementBaseQuantities_IfcProjectionElement" client="cl_Qto_ProjectionElementBaseQuantities" supplier="cl_IfcProjectionElement"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SiteBaseQuantities_IfcSite" client="cl_Qto_SiteBaseQuantities" supplier="cl_IfcSite"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SpaceBaseQuantities_IfcSpace" client="cl_Qto_SpaceBaseQuantities" supplier="cl_IfcSpace"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_GroutingType" name="PEnum_GroutingType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_STANDARD_GROUTING_CEMENT" name="STANDARD_GROUTING_CEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_MICROFINE_CEMENT" name="MICROFINE_CEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_ULTRAFINE_CEMENT" name="ULTRAFINE_CEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_CHEMICAL_COMPONENT" name="CHEMICAL_COMPONENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_UNSET" name="UNSET"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>

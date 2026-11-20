@@ -3,6 +3,8 @@
 Soil reinforced or stabilized by some mechanical or chemical method.
 <!-- end of short definition -->
 
+> IFC4.4.0.0 DEPRECATION This entity is now deprecated. Use IfcImprovedGround instead.
+
 ## Attributes
 
 ### PredefinedType
