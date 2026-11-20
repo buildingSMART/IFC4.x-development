@@ -4,6 +4,7 @@ IfcAirTerminalBox,IfcAirTerminalBoxType
 IfcAirTerminal,IfcAirTerminalType
 IfcAirToAirHeatRecovery,IfcAirToAirHeatRecoveryType
 IfcAlarm,IfcAlarmType
+IfcArchElement,IfcArchElementType
 IfcAudioVisualAppliance,IfcAudioVisualApplianceType
 IfcBeam,IfcBeamType
 IfcBearing,IfcBearingType
