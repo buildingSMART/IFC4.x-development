@@ -1322,7 +1322,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BoreholeTestPressuremeter" name="Pset_BoreholeTestPressuremeter">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BoreholeTestPressuremeter_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_BoreholeTestPressuremeter_MenardLimitPressure" name="MenardLimitPressure">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
@@ -1353,7 +1353,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BoreholeTestPressuremeter_IfcGeoScienceObservationTypeEnum_INSITUTESTRESULT" client="cl_Pset_BoreholeTestPressuremeter" supplier="cl_IfcGeoScienceObservationTypeEnum_INSITUTESTRESULT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_BoreholeTestSPT" name="Pset_BoreholeTestSPT">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_BoreholeTestSPT_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_BoreholeTestSPT_YoungModulus" name="YoungModulus">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcModulusOfElasticityMeasure"/>
@@ -1364,7 +1364,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_BoreholeTestSPT_IfcGeoScienceObservationTypeEnum_INSITUTESTRESULT" client="cl_Pset_BoreholeTestSPT" supplier="cl_IfcGeoScienceObservationTypeEnum_INSITUTESTRESULT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsBoreholeCommon" name="Pset_GeoScienceObservationTypeBorehole">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsBoreholeCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsBoreholeCommon_DepthRange" name="DepthRange">
         <ownedComment xmi:type="uml:Comment" xmi:id="at_Pset_GeoObsBoreholeCommon_DepthRange_comment_0">
@@ -1378,7 +1378,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsBoreholeCommon_IfcGeoScienceObservationTypeEnum_BOREHOLELOG" client="cl_Pset_GeoObsBoreholeCommon" supplier="cl_IfcGeoScienceObservationTypeEnum_BOREHOLELOG"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsBoreholeGeoLogInterval" name="Pset_GeoScienceObservationBoreholeGeoLogInterval">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsBoreholeGeoLogInterval_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsBoreholeGeoLogInterval_FractureIndex" name="FractureIndex">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
@@ -1413,7 +1413,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsBoreholeGeoLogInterval_IfcGeoScienceObservationTypeEnum_BOREHOLELOG" client="cl_Pset_GeoObsBoreholeGeoLogInterval" supplier="cl_IfcGeoScienceObservationTypeEnum_BOREHOLELOG"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsBoreholeGeophysicalInterval" name="Pset_GeoScienceObservationBoreholeGeophysicalInterval">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsBoreholeGeophysicalInterval_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsBoreholeGeophysicalInterval_BoreholeDiameter" name="BoreholeDiameter">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
@@ -1474,7 +1474,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsBoreholeGeophysicalInterval_IfcGeoScienceObservationTypeEnum_BOREHOLELOG" client="cl_Pset_GeoObsBoreholeGeophysicalInterval" supplier="cl_IfcGeoScienceObservationTypeEnum_BOREHOLELOG"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsBoreholeMWDInterval" name="Pset_GeoScienceObservationBoreholeMWDInterval">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsBoreholeMWDInterval_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsBoreholeMWDInterval_Cracking" name="Cracking">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
@@ -1495,7 +1495,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsBoreholeMWDInterval_IfcGeoScienceObservationTypeEnum_BOREHOLELOG" client="cl_Pset_GeoObsBoreholeMWDInterval" supplier="cl_IfcGeoScienceObservationTypeEnum_BOREHOLELOG"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsBoreholeWaterLevel" name="Pset_GeoScienceObservationBoreholeWaterLevel">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsBoreholeWaterLevel_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsBoreholeWaterLevel_IsPiezometric" name="IsPiezometric">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
@@ -1511,7 +1511,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsBoreholeWaterLevel_IfcGeoScienceObservationTypeEnum_BOREHOLELOG" client="cl_Pset_GeoObsBoreholeWaterLevel" supplier="cl_IfcGeoScienceObservationTypeEnum_BOREHOLELOG"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsCommon" name="Pset_GeoScienceObservationCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsCommon_Lithology" name="Lithology">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
@@ -1536,7 +1536,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsDiscontinuityCommon" name="Pset_GeoScienceObservationDiscontinuityCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsDiscontinuityCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsDiscontinuityCommon_DipAngle" name="DipAngle">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
@@ -1597,7 +1597,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsDiscontinuityCommon_IfcGeoScienceObservationTypeEnum_LOCALINFORMATION" client="cl_Pset_GeoObsDiscontinuityCommon" supplier="cl_IfcGeoScienceObservationTypeEnum_LOCALINFORMATION"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsDiscontinuityFault" name="Pset_GeoScienceObservationDiscontinuityFault">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsDiscontinuityFault_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsDiscontinuityFault_DeformationPhase" name="DeformationPhase">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
@@ -1648,7 +1648,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsDiscontinuityFault_IfcGeoScienceObservationTypeEnum_LOCALINFORMATION" client="cl_Pset_GeoObsDiscontinuityFault" supplier="cl_IfcGeoScienceObservationTypeEnum_LOCALINFORMATION"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsFoldAxis" name="Pset_GeoScienceObservationFoldAxis">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsFoldAxis_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsFoldAxis_AzimuthHingeLine" name="AzimuthHingeLine">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
@@ -1682,7 +1682,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsFoldAxis_IfcGeoScienceObservationTypeEnum_MAPPEDFEATURE" client="cl_Pset_GeoObsFoldAxis" supplier="cl_IfcGeoScienceObservationTypeEnum_MAPPEDFEATURE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsHydroGeologyWaterInflow" name="Pset_GeoScienceObservationHydroGeologyWaterInflow">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsHydroGeologyWaterInflow_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsHydroGeologyWaterInflow_InflowRate" name="InflowRate">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcVolumetricFlowRateMeasure"/>
@@ -1708,7 +1708,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsHydroGeologyWaterInflow_IfcGeoScienceObservationTypeEnum_LOCALINFORMATION" client="cl_Pset_GeoObsHydroGeologyWaterInflow" supplier="cl_IfcGeoScienceObservationTypeEnum_LOCALINFORMATION"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsLineation" name="Pset_GeoScienceObservationLineation">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsLineation_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsLineation_DefiningElement" name="DefiningElement">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
@@ -1742,7 +1742,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsLineation_IfcGeoScienceObservationTypeEnum_MAPPEDFEATURE" client="cl_Pset_GeoObsLineation" supplier="cl_IfcGeoScienceObservationTypeEnum_MAPPEDFEATURE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsMappedUnit" name="Pset_GeoScienceObservationMappedUnit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsMappedUnit_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsMappedUnit_AreaID" name="AreaID">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
@@ -1804,7 +1804,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsMappedUnit_IfcGeoScienceObservationTypeEnum_MAPPEDFEATURE" client="cl_Pset_GeoObsMappedUnit" supplier="cl_IfcGeoScienceObservationTypeEnum_MAPPEDFEATURE"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoObsPtObservationCommon" name="Pset_GeoScienceObservationPointCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoObsPtObservationCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsPtObservationCommon_Boulders" name="Boulders">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
@@ -1854,7 +1854,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoObsPtObservationCommon_IfcGeoScienceObservationTypeEnum_LOCALINFORMATION" client="cl_Pset_GeoObsPtObservationCommon" supplier="cl_IfcGeoScienceObservationTypeEnum_LOCALINFORMATION"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeophysicalSurveyBorehole" name="Pset_GeophysicalSurveyBorehole">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeophysicalSurveyBorehole_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeophysicalSurveyBorehole_BoreholeGeophysConfiguration" name="BoreholeGeophysConfiguration">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
@@ -1865,7 +1865,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeophysicalSurveyBorehole_IfcGeoScienceObservationTypeEnum_GEOPHYSICALSURVEYRESULT" client="cl_Pset_GeophysicalSurveyBorehole" supplier="cl_IfcGeoScienceObservationTypeEnum_GEOPHYSICALSURVEYRESULT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeophysicalSurveyCommon" name="Pset_GeophysicalSurveyResultCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeophysicalSurveyCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeophysicalSurveyCommon_SurveyDimension" name="SurveyDimension">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
@@ -1906,7 +1906,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeophysicalSurveyCommon_IfcGeoScienceObservationTypeEnum_GEOPHYSICALSURVEYRESULT" client="cl_Pset_GeophysicalSurveyCommon" supplier="cl_IfcGeoScienceObservationTypeEnum_GEOPHYSICALSURVEYRESULT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_InSituTestCPT" name="Pset_InSituTestCPT">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_InSituTestCPT_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_InSituTestCPT_CPTConeResistance" name="CPTConeResistance">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
@@ -1932,7 +1932,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_InSituTestCPT_IfcGeoScienceObservationTypeEnum_INSITUTESTRESULT" client="cl_Pset_InSituTestCPT" supplier="cl_IfcGeoScienceObservationTypeEnum_INSITUTESTRESULT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_InSituTestCommon" name="Pset_InSituTestResultCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_InSituTestCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_InSituTestCommon_TestDepthRange" name="TestDepthRange">
         <ownedComment xmi:type="uml:Comment" xmi:id="at_Pset_InSituTestCommon_TestDepthRange_comment_0">
@@ -1956,7 +1956,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_InSituTestCommon_IfcGeoScienceObservationTypeEnum_INSITUTESTRESULT" client="cl_Pset_InSituTestCommon" supplier="cl_IfcGeoScienceObservationTypeEnum_INSITUTESTRESULT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_InSituTestHydro" name="Pset_InSituTestHydro">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_InSituTestHydro_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_InSituTestHydro_HydraulicConductivity" name="HydraulicConductivity">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearVelocityMeasure"/>
@@ -1987,7 +1987,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_InSituTestHydro_IfcGeoScienceObservationTypeEnum_INSITUTESTRESULT" client="cl_Pset_InSituTestHydro" supplier="cl_IfcGeoScienceObservationTypeEnum_INSITUTESTRESULT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_LabTestCommon" name="Pset_LabTestResultCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_LabTestCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_LabTestCommon_TestMethod" name="TestMethod">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
@@ -2008,7 +2008,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_LabTestCommon_IfcGeoScienceObservationTypeEnum_LABTESTRESULT" client="cl_Pset_LabTestCommon" supplier="cl_IfcGeoScienceObservationTypeEnum_LABTESTRESULT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_LabTestResult" name="Pset_LabTestResult">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_LabTestResult_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_LabTestResult_CohesionBehaviour" name="CohesionBehaviour">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
