@@ -1817,6 +1817,9 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_FrictionAngle_upper" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_GeologicalStrengthIndex" name="GeologicalStrengthIndex">
+        <ownedComment xmi:type="uml:Comment" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_GeologicalStrengthIndex_comment_0">
+          <body>bounded</body>
+        </ownedComment>
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcInteger"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_GeologicalStrengthIndex_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_GeologicalStrengthIndex_upper" value="1"/>
