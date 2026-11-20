@@ -441,7 +441,7 @@ class xmi_document:
                         print(f"WARNING: For PQset {c.name} applicability [{', '.join(ref_names)}] results in type associations [{', '.join(ref_type_names)}]")
                     
                     # augment with predefined types again:
-                    corresponding_types = [(a,) + b[1:] if b[1:] else a for a, b in zip(corresponding_types, refs_combined)]
+                    corresponding_types = [(a,) + b[1:] if b[1:] else a for b in refs_combined if (a := object_typing_reversed.get(b[0]))]
                     
                     if is_type_driven_only:
                         refs = corresponding_types
