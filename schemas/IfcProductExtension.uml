@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="md_IfcProductExtension" name="IfcProductExtension">
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="md_IfcProductExtension" name="IfcProductExtension" xmi:version="20131001">
   <packagedElement xmi:type="uml:Package" xmi:id="pk_IfcProductExtension" name="IfcProductExtension">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcAlignmentTypeEnum" name="IfcAlignmentTypeEnum">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcAlignmentTypeEnum_USERDEFINED" name="USERDEFINED"/>
@@ -63,6 +63,8 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_SHADING" name="SHADING"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TRACKCIRCUIT" name="TRACKCIRCUIT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TRANSPORT" name="TRANSPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT" name="TUNNEL_PRESUPPORT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_TUNNEL_SUPPORT" name="TUNNEL_SUPPORT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcBuiltSystemTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
@@ -95,6 +97,8 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_TRAFFIC_CALMING_DEVICE" name="TRAFFIC_CALMING_DEVICE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_TRUSS" name="TRUSS"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_TURNOUTPANEL" name="TURNOUTPANEL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT" name="PRESUPPORTVAULT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" name="PRESUPPORTFACE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcElementAssemblyTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
@@ -296,7 +300,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRelConnectsElements_NoSelfReference" name="NoSelfReference">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcRelConnectsElements_NoSelfReference" name="NoSelfReference">
           <language>EXPRESS_WHERE</language>
-          <body>RelatingElement :&lt;>: RelatedElement</body>
+          <body>RelatingElement :&lt;&gt;: RelatedElement</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRelConnectsElements_gen_IfcRelConnects">
@@ -336,7 +340,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRelConnectsPorts_NoSelfReference" name="NoSelfReference">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcRelConnectsPorts_NoSelfReference" name="NoSelfReference">
           <language>EXPRESS_WHERE</language>
-          <body>RelatingPort :&lt;>: RelatedPort</body>
+          <body>RelatingPort :&lt;&gt;: RelatedPort</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRelConnectsPorts_gen_IfcRelConnects">
@@ -392,7 +396,7 @@
       <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcRelInterferesElements_NoSelfReference" name="NoSelfReference">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcRelInterferesElements_NoSelfReference" name="NoSelfReference">
           <language>EXPRESS_WHERE</language>
-          <body>RelatingElement :&lt;>: RelatedElement</body>
+          <body>RelatingElement :&lt;&gt;: RelatedElement</body>
         </specification>
       </ownedRule>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcRelInterferesElements_gen_IfcRelConnects">
@@ -3843,5 +3847,212 @@ AND
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_ProjectionElementBaseQuantities_IfcProjectionElement" client="cl_Qto_ProjectionElementBaseQuantities" supplier="cl_IfcProjectionElement"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SiteBaseQuantities_IfcSite" client="cl_Qto_SiteBaseQuantities" supplier="cl_IfcSite"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Qto_SpaceBaseQuantities_IfcSpace" client="cl_Qto_SpaceBaseQuantities" supplier="cl_IfcSpace"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcLinearZone" name="IfcLinearZone" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcLinearZone_gen_IfcLinearElement" general="cl_IfcLinearElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT" name="IfcBuiltSystemTypeEnum.TUNNEL_PRESUPPORT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT_gen_IfcBuiltSystem" general="cl_IfcBuiltSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_SUPPORT" name="IfcBuiltSystemTypeEnum.TUNNEL_SUPPORT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcBuiltSystemTypeEnum_TUNNEL_SUPPORT_gen_IfcBuiltSystem" general="cl_IfcBuiltSystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT" name="IfcElementAssemblyTypeEnum.PRESUPPORTVAULT">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT_gen_IfcElementAssemblyType" general="cl_IfcElementAssemblyType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" name="IfcElementAssemblyTypeEnum.PRESUPPORTFACE">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE_gen_IfcElementAssembly" general="cl_IfcElementAssembly"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE_gen_IfcElementAssemblyType" general="cl_IfcElementAssemblyType"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_PreSupportCommon" name="Pset_PreSupportCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_PreSupportCommon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PreSupportCommon_AreHolesGrouted" name="AreHolesGrouted">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PreSupportCommon_AreHolesGrouted_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PreSupportCommon_AreHolesGrouted_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PreSupportCommon_SupportArrangement" name="SupportArrangement" type="en_PEnum_PreSupportArrangement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PreSupportCommon_SupportArrangement_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PreSupportCommon_SupportArrangement_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PreSupportCommon_BoreholeLengthPlanned" name="BoreholeLengthPlanned">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PreSupportCommon_BoreholeLengthPlanned_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PreSupportCommon_BoreholeLengthPlanned_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PreSupportCommon_BoreholeOverlap" name="BoreholeOverlap">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PreSupportCommon_BoreholeOverlap_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PreSupportCommon_BoreholeOverlap_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PreSupportCommon_DrillingDiameter" name="DrillingDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PreSupportCommon_DrillingDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PreSupportCommon_DrillingDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PreSupportCommon_DrillingMethod" name="DrillingMethod">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PreSupportCommon_DrillingMethod_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PreSupportCommon_DrillingMethod_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PreSupportCommon_IsBoreholeCased" name="IsBoreholeCased">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcBoolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PreSupportCommon_IsBoreholeCased_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PreSupportCommon_IsBoreholeCased_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PreSupportCommon_PreSupportLocation" name="PreSupportLocation" type="en_PEnum_PreSupportLocation">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PreSupportCommon_PreSupportLocation_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PreSupportCommon_PreSupportLocation_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PreSupportCommon_PreSupportType" name="PreSupportType" type="en_PEnum_PreSupportType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PreSupportCommon_PreSupportType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PreSupportCommon_PreSupportType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PreSupportCommon_UsefulLength" name="UsefulLength">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PreSupportCommon_UsefulLength_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PreSupportCommon_UsefulLength_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PreSupportCommon_UserDefinedPreSupportLocation" name="UserDefinedPreSupportLocation">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PreSupportCommon_UserDefinedPreSupportLocation_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PreSupportCommon_UserDefinedPreSupportLocation_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_PreSupportCommon_UserDefinedPreSupportType" name="UserDefinedPreSupportType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_PreSupportCommon_UserDefinedPreSupportType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_PreSupportCommon_UserDefinedPreSupportType_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PreSupportArrangement" name="PEnum_PreSupportArrangement">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_SIMPLE" name="SIMPLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_STAGGERED" name="STAGGERED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportArrangement_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PreSupportLocation" name="PEnum_PreSupportLocation">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_TUNNEL_VAULT" name="TUNNEL_VAULT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_TUNNEL_FACE" name="TUNNEL_FACE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportLocation_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_PreSupportType" name="PEnum_PreSupportType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_JET_GROUTED" name="JET_GROUTED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_PIPE_UMBRELLA" name="PIPE_UMBRELLA"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_FREEZING" name="FREEZING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_FOREPOLING" name="FOREPOLING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_SPILING" name="SPILING"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_PreSupportType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PreSupportCommon_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT" client="cl_Pset_PreSupportCommon" supplier="cl_IfcBuiltSystemTypeEnum_TUNNEL_PRESUPPORT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PreSupportCommon_IfcTunnelTypicalSectionTypeEnum_EXCAVATIONSUPPORT" client="cl_Pset_PreSupportCommon">
+      <supplier xmi:type="uml:Class" href="IfcTunnelDomain.uml#cl_IfcTunnelTypicalSectionTypeEnum_EXCAVATIONSUPPORT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PreSupportCommon_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT" client="cl_Pset_PreSupportCommon" supplier="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_PreSupportCommon_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" client="cl_Pset_PreSupportCommon" supplier="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_SupportCommon" name="Pset_SupportCommon">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_SupportCommon_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SupportCommon_SupportArrangement" name="SupportArrangement" type="en_PEnum_PreSupportArrangement">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SupportCommon_SupportArrangement_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SupportCommon_SupportArrangement_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SupportCommon_GroutingType" name="GroutingType" type="en_PEnum_GroutingType">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SupportCommon_GroutingType_lower" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SupportCommon_GroutingType_upper" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SupportCommon_BoltHorizontalSpacing" name="BoltHorizontalSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SupportCommon_BoltHorizontalSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SupportCommon_BoltHorizontalSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SupportCommon_LongitudinalSpacing" name="LongitudinalSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SupportCommon_LongitudinalSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SupportCommon_LongitudinalSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SupportCommon_NumberOfBolts" name="NumberOfBolts">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcCountMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SupportCommon_NumberOfBolts_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SupportCommon_NumberOfBolts_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SupportCommon_PlateType" name="PlateType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SupportCommon_PlateType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SupportCommon_PlateType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SupportCommon_RadialSpacing" name="RadialSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SupportCommon_RadialSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SupportCommon_RadialSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SupportCommon_UserDefinedGroutingType" name="UserDefinedGroutingType">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SupportCommon_UserDefinedGroutingType_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SupportCommon_UserDefinedGroutingType_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SupportCommon_BoltVerticalSpacing" name="BoltVerticalSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SupportCommon_BoltVerticalSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SupportCommon_BoltVerticalSpacing_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_GroutingType" name="PEnum_GroutingType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_STANDARD_GROUTING_CEMENT" name="STANDARD_GROUTING_CEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_MICROFINE_CEMENT" name="MICROFINE_CEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_ULTRAFINE_CEMENT" name="ULTRAFINE_CEMENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_CHEMICAL_COMPONENT" name="CHEMICAL_COMPONENT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_OTHER" name="OTHER"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_NOTKNOWN" name="NOTKNOWN"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_GroutingType_UNSET" name="UNSET"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SupportCommon_IfcBuiltSystemTypeEnum_TUNNEL_SUPPORT" client="cl_Pset_SupportCommon" supplier="cl_IfcBuiltSystemTypeEnum_TUNNEL_SUPPORT"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_SupportCommon_IfcTunnelTypicalSectionTypeEnum_EXCAVATIONSUPPORT" client="cl_Pset_SupportCommon">
+      <supplier xmi:type="uml:Class" href="IfcTunnelDomain.uml#cl_IfcTunnelTypicalSectionTypeEnum_EXCAVATIONSUPPORT"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypePreSupportVault" name="Pset_ElementAssemblyTypePreSupportVault">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementAssemblyTypePreSupportVault_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementAssemblyTypePreSupportVault_BoreholeGradient" name="BoreholeGradient">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementAssemblyTypePreSupportVault_BoreholeGradient_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementAssemblyTypePreSupportVault_BoreholeGradient_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementAssemblyTypePreSupportVault_RadialSpacing" name="RadialSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementAssemblyTypePreSupportVault_RadialSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementAssemblyTypePreSupportVault_RadialSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementAssemblyTypePreSupportVault_VaultOffset" name="VaultOffset">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementAssemblyTypePreSupportVault_VaultOffset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementAssemblyTypePreSupportVault_VaultOffset_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypePreSupportVault_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT" client="cl_Pset_ElementAssemblyTypePreSupportVault" supplier="cl_IfcElementAssemblyTypeEnum_PRESUPPORTVAULT"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_ElementAssemblyTypePreSupportFace" name="Pset_ElementAssemblyTypePreSupportFace">
+      <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_ElementAssemblyTypePreSupportFace_comment_0">
+        <body>PSET_TYPEDRIVENOVERRIDE</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementAssemblyTypePreSupportFace_TransverseBoreholeSpacing" name="TransverseBoreholeSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementAssemblyTypePreSupportFace_TransverseBoreholeSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementAssemblyTypePreSupportFace_TransverseBoreholeSpacing_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementAssemblyTypePreSupportFace_VerticalBoreholeSpacing" name="VerticalBoreholeSpacing">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementAssemblyTypePreSupportFace_VerticalBoreholeSpacing_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementAssemblyTypePreSupportFace_VerticalBoreholeSpacing_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ElementAssemblyTypePreSupportFace_IfcElementAssemblyTypeEnum_PRESUPPORTFACE" client="cl_Pset_ElementAssemblyTypePreSupportFace" supplier="cl_IfcElementAssemblyTypeEnum_PRESUPPORTFACE"/>
   </packagedElement>
 </uml:Model>
