@@ -1446,7 +1446,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeContact" name="Pset_GeoScienceFeatureTypeContact">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeContact_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeContact_DipDirection" name="DipDirection">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
@@ -1462,7 +1462,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeContact_IfcGeoScienceFeatureTypeEnum_CONTACT" client="cl_Pset_GeoScienceFeatureTypeContact" supplier="cl_IfcGeoScienceFeatureTypeEnum_CONTACT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeDiscontinuity" name="Pset_GeoScienceFeatureTypeDiscontinuity">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeDiscontinuity_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeDiscontinuity_DipDirection" name="DipDirection">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
@@ -1527,7 +1527,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeDiscontinuity_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT" client="cl_Pset_GeoScienceFeatureTypeDiscontinuity" supplier="cl_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeFault" name="Pset_GeoScienceFeatureTypeFault">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeFault_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFault_FaultDeformationStyle" name="FaultDeformationStyle">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
@@ -1589,7 +1589,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeFluidBody_IfcGeoScienceFeatureTypeEnum_FLUIDBODY" client="cl_Pset_GeoScienceFeatureTypeFluidBody" supplier="cl_IfcGeoScienceFeatureTypeEnum_FLUIDBODY"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeFold" name="Pset_GeoScienceFeatureTypeFold">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeFold_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFold_DipDirection" name="DipDirection">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPlaneAngleMeasure"/>
@@ -1610,7 +1610,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeFold_IfcGeoScienceFeatureTypeEnum_FOLD" client="cl_Pset_GeoScienceFeatureTypeFold" supplier="cl_IfcGeoScienceFeatureTypeEnum_FOLD"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeGeoHazard" name="Pset_GeoScienceFeatureTypeGeoHazard">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeGeoHazard_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_ValidityPeriodDescription" name="ValidityPeriodDescription">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
@@ -1651,7 +1651,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeGeoHazard_IfcGeoScienceFeatureTypeEnum_HAZARDAREA" client="cl_Pset_GeoScienceFeatureTypeGeoHazard" supplier="cl_IfcGeoScienceFeatureTypeEnum_HAZARDAREA"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeGeologicalUnit" name="Pset_GeoScienceFeatureTypeGeologicalUnit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeGeologicalUnit_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeologicalUnit_FaciesLithostratigraphy" name="FaciesLithostratigraphy">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
@@ -1697,7 +1697,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeGeologicalUnit_IfcGeoScienceFeatureTypeEnum_GEOLOGICUNIT" client="cl_Pset_GeoScienceFeatureTypeGeologicalUnit" supplier="cl_IfcGeoScienceFeatureTypeEnum_GEOLOGICUNIT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeHydroGeoUnit" name="Pset_GeoScienceFeatureTypeHydroGeoUnit">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeHydroGeoUnit_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeHydroGeoUnit_HydraulicPermeabilityHorizontal" name="HydraulicPermeabilityHorizontal">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLinearVelocityMeasure"/>
@@ -1733,7 +1733,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeHydroGeoUnit_IfcGeoScienceFeatureTypeEnum_HYDROGEOUNIT" client="cl_Pset_GeoScienceFeatureTypeHydroGeoUnit" supplier="cl_IfcGeoScienceFeatureTypeEnum_HYDROGEOUNIT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeIntactRock" name="Pset_GeoScienceFeatureTypeIntactRock">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeIntactRock_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_Weathering" name="Weathering" type="en_PEnum_Weathering">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeIntactRock_Weathering_lower"/>
@@ -1783,7 +1783,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeIntactRock_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT" client="cl_Pset_GeoScienceFeatureTypeIntactRock" supplier="cl_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypePiezometricWaterLevel" name="Pset_GeoScienceFeatureTypePiezometricWaterLevel">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypePiezometricWaterLevel_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypePiezometricWaterLevel_Elevation" name="Elevation">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLengthMeasure"/>
@@ -1794,7 +1794,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypePiezometricWaterLevel_IfcGeoScienceFeatureTypeEnum_PIEZOMETRICWATERLEVEL" client="cl_Pset_GeoScienceFeatureTypePiezometricWaterLevel" supplier="cl_IfcGeoScienceFeatureTypeEnum_PIEZOMETRICWATERLEVEL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeRockMass" name="Pset_GeoScienceFeatureTypeRockMass">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeRockMass_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeRockMass_K0" name="K0">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
@@ -1843,7 +1843,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeRockMass_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT" client="cl_Pset_GeoScienceFeatureTypeRockMass" supplier="cl_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeSoilLikeMaterial" name="Pset_GeoScienceFeatureTypeSoilLikeMaterial">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeSoilLikeMaterial_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeSoilLikeMaterial_MenardLimitPressure" name="MenardLimitPressure">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPressureMeasure"/>
@@ -1959,7 +1959,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeSoilLikeMaterial_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT" client="cl_Pset_GeoScienceFeatureTypeSoilLikeMaterial" supplier="cl_IfcGeoScienceFeatureTypeEnum_GEOTECHNICALUNIT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceModelCommon" name="Pset_GeoScienceModelCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceModelCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceModelCommon_AreaOfInterest" name="AreaOfInterest">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcIdentifier"/>
@@ -2015,7 +2015,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceModelCommon_IfcGeoScienceModel" client="cl_Pset_GeoScienceModelCommon" supplier="cl_IfcGeoScienceModel"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoSciencePropertiesCommon" name="Pset_GeoSciencePropertiesCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoSciencePropertiesCommon_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoSciencePropertiesCommon_DryBulkDensity" name="DryBulkDensity">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMassDensityMeasure"/>
