@@ -4,3 +4,5 @@ Representation of the concept of an identified discrete almost homogeneous geolo
 <!-- end of short definition -->
 
 The shape representations used should correspond to the sub-type of _IfcGeotechnicalAssembly_ in which it occurs
+
+> IFC4.4.0.0 DEPRECATION This entity is now deprecated. Use IfcGeoScienceFeature instead.
