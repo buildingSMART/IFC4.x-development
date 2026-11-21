@@ -1,4 +1,4 @@
 SamplePurpose
 =============
 
-Provides the reason why the sample was collected, planed methods for testingand analysis.
+Provides the reason why the sample was collected, planned methods for testing and analysis.

@@ -1,4 +1,4 @@
 TestMethod
 ==========
 
-Name of the test method that was used to optain the exchanged results.
+Name of the test method that was used to obtain the exchanged results.

@@ -1,4 +1,4 @@
 GeologyCode
 ===========
 
-Reference to any existing classification, e.g. from ageological survey or stratigraphy table.
+Reference to any existing classification, e.g. from a geological survey or stratigraphy table.

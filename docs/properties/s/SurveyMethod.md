@@ -1,4 +1,4 @@
 SurveyMethod
 ============
 
-Method of gephysical survey used.
+Method of geophysical survey used.
