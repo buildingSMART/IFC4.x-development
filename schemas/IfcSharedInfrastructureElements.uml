@@ -36,6 +36,9 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcEarthworksFillTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_IfcGeotechnicalStratumTypeEnum" name="IfcGeotechnicalStratumTypeEnum">
+      <ownedComment xmi:type="uml:Comment" xmi:id="en_IfcGeotechnicalStratumTypeEnum_comment_0">
+        <body>DEPRECATED</body>
+      </ownedComment>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeotechnicalStratumTypeEnum_SOLID" name="SOLID"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeotechnicalStratumTypeEnum_VOID" name="VOID"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeotechnicalStratumTypeEnum_WATER" name="WATER"/>
