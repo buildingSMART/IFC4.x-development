@@ -15,3 +15,5 @@ Injection is performed during excavation.
 ### OTHER
 The value falls outside of the predefined values of this enumeration.
 
+### UNSET
+Value has not been specified.
