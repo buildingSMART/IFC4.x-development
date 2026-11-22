@@ -16,3 +16,7 @@ It is used to define an earthing element type specification indicating the speci
 ### PredefinedType
 Identifies the predefined types of earthing element from which the type required may be set.
 
+## Formal Propositions
+
+### CorrectPredefinedType
+The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.
