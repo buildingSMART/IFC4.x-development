@@ -6,5 +6,5 @@ An element that connects the conductive parts of an electrical installation to t
 ## Attributes
 
 ### PredefinedType
-Identifies the predefined types of earting element from which the type required may be set.
+Identifies the predefined types of earthing element from which the type required may be set.
 
