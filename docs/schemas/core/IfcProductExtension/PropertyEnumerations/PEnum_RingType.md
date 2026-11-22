@@ -19,7 +19,7 @@ Ring segment of type Parallel with corrective geometry.
 Ring segment of type Swiss-Tubbing.
 
 ### INVERT_SEGMENT_WITH_SHOTCRETE
-Shortcrete-made invert segment.
+Shotcrete-made invert segment.
 
 ### HEXAGONAL
 Ring segment of type Hexagonal.

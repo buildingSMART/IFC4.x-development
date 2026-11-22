@@ -1,4 +1,4 @@
 LogNumber
 =========
 
-Identifer of the records.
+Identifier of the records.
