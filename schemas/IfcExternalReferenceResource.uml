@@ -564,5 +564,45 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcConversionBasedUnit_HasExternalReference_target_end_upper" value="1"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDatasetInformation" name="IfcDatasetInformation">
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDatasetInformation_gen_IfcDocumentInformation" general="cl_IfcDocumentInformation"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDatasetInformation_SchemaReference" name="SchemaReference">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcURIReference"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDatasetInformation_SchemaReference_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDatasetInformation_SchemaReference_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcDatasetReference" name="IfcDatasetReference">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="ct_IfcDatasetReference_WR1" name="WR1">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcDatasetReference_WR1" name="WR1">
+          <language>EXPRESS_WHERE</language>
+          <body>EXISTS(Name) XOR EXISTS(ReferencedDataset)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcDatasetReference_gen_IfcExternalReference" general="cl_IfcExternalReference"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDatasetReference_Description" name="Description">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDatasetReference_Description_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDatasetReference_Description_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDatasetReference_ReferencedDataset" name="ReferencedDataset" type="cl_IfcDatasetInformation" association="as_IfcDatasetReference_ReferencedDataset">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDatasetReference_ReferencedDataset_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDatasetReference_ReferencedDataset_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_IfcDatasetReference_Filter" name="Filter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcText"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_IfcDatasetReference_Filter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_IfcDatasetReference_Filter_upper" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="un_IfcDatasetSelect" name="IfcDatasetSelect"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDatasetSelect_IfcDatasetInformation" client="un_IfcDatasetSelect" supplier="cl_IfcDatasetInformation"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_IfcDatasetSelect_IfcDatasetReference" client="un_IfcDatasetSelect" supplier="cl_IfcDatasetReference"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="as_IfcDatasetReference_ReferencedDataset" name="ReferencedDataset" memberEnd="at_IfcDatasetReference_ReferencedDataset as_IfcDatasetReference_ReferencedDataset_target_end">
+      <ownedEnd xmi:type="uml:Property" xmi:id="as_IfcDatasetReference_ReferencedDataset_target_end" name="INV_HasDatasetReferences_S[0:?]" type="cl_IfcDatasetReference" association="as_IfcDatasetReference_ReferencedDataset">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="as_IfcDatasetReference_ReferencedDataset_target_end_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcDatasetReference_ReferencedDataset_target_end_upper" value="1"/>
+      </ownedEnd>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
