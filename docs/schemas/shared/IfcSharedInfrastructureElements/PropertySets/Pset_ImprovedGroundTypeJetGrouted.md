@@ -1,4 +1,4 @@
 # Pset_ImprovedGroundTypeJetGrouted
 
-Properties for improved ground of type JETGROUTED. (Applicability must be amended when PR with PDT JETGROUTED has been merged.)
+Properties for improved ground of type JETGROUTED.
 <!-- end of short definition -->
