@@ -1,4 +1,4 @@
 VerticalSpacing
 ===============
 
-Vertical spacing of elements.
+Vertical spacing between tubes in the tube bundle.

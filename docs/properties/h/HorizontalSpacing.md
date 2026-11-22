@@ -1,4 +1,4 @@
 HorizontalSpacing
 =================
 
-Horizontal spacing of elements.
+Horizontal spacing between tubes in the tube bundle.
