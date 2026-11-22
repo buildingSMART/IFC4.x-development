@@ -16,7 +16,7 @@ Pneumatic or hydraulic percussion tool breaking rock or concrete.
 Equipment with a toothed tool to break and loosen hard soil.
 
 ### DRILL_AND_BLAST
-A method of desintegrating rock by drilling small diameter holes on a planned layout, packing these with explosives and then firing to a fixed program to shatter the rock in a desired form.
+A method of disintegrating rock by drilling small diameter holes on a planned layout, packing these with explosives and then firing to a fixed program to shatter the rock in a desired form.
 
 ### ROADHEADER
 Machine with rotating cutter head specifically designed for the excavation of roadways, tunnels, and underground chambers.
