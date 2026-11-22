@@ -5283,7 +5283,7 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FlowMeterOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FlowMeterOccurrence_FlowMeterOurpose" name="FlowMeterOurpose" type="en_PEnum_FlowMeterPurpose">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FlowMeterOccurrence_FlowMeterOurpose" name="FlowMeterPurpose" type="en_PEnum_FlowMeterPurpose">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FlowMeterOccurrence_FlowMeterOurpose_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FlowMeterOccurrence_FlowMeterOurpose_upper" value="*"/>
       </ownedAttribute>
