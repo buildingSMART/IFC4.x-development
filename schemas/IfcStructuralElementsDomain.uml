@@ -1447,6 +1447,9 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="as_IfcReinforcingMeshType_BendingParameters_target_end_upper" value="1"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcArchElement" client="cl_Pset_ConcreteElementGeneral">
+      <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcArchElement"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_ConcreteElementGeneral_IfcBeam" client="cl_Pset_ConcreteElementGeneral">
       <supplier xmi:type="uml:Class" href="IfcSharedBldgElements.uml#cl_IfcBeam"/>
     </packagedElement>
