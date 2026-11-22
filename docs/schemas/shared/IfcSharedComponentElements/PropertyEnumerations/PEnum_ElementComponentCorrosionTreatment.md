@@ -20,7 +20,7 @@ Stainless
 ### GALVANIZEDANDPOWDERCOATED
 
 ### NONE
-No waterproof.
+None, empty or no additional action or function.
 
 ### NOTDEFINED
 Notdefined
