@@ -1,4 +1,4 @@
 GroundwaterAgressiveness
 ========================
 
-Rating of the agressiveness e.g. towards concrete.
+Rating of the aggressiveness e.g. towards concrete.
