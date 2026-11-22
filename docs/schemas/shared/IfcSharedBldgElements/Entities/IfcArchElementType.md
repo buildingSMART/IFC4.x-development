@@ -21,3 +21,7 @@ Occurrences of the _IfcArchElementType_ within building models are represented b
 ### PredefinedType
 Specifies the type for which the value is selected from a predefined type enumeration.
 
+## Formal Propositions
+
+### CorrectPredefinedType
+The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.
