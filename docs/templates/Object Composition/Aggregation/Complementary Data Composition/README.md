@@ -16,7 +16,7 @@ The part should not be contained in the spatial hierarchy, i.e. the concept _Spa
 The part should not be assigned to an _IfcProduct_, i.e. the concept _Product Assignment_ shall not be used at the level of parts.
 
 
-> EXAMPLE  An _IfcComplementaryData_ may be aggregated into an composite _IfcComplementaryData_ using the objectified relationship _IfcRelAggregates_, referring to it by its inverse attribute _SELF\IfcObjectDefinition.Decomposes_. Any subtype of _IfcComplementaryData_ can be an element assembly. In this case it should not be additionally contained in the spatial hierarchy, i.e. _SELF\IfcElement.ContainedInStructure_ should be NIL.
+> EXAMPLE  An _IfcComplementaryData_ may be aggregated into a composite _IfcComplementaryData_ using the objectified relationship _IfcRelAggregates_, referring to it by its inverse attribute _SELF\IfcObjectDefinition.Decomposes_. Any subtype of _IfcComplementaryData_ can be an element assembly. In this case it should not be additionally contained in the spatial hierarchy, i.e. _SELF\IfcElement.ContainedInStructure_ should be NIL.
 
 
 ```
