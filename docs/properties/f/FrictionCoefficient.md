@@ -1,4 +1,4 @@
 FrictionCoefficient
 ===================
 
-The friction coefficient between tendon and tendon sheet while the tendon is unbonded.
+The friction coefficient between tendon and tendon sheath while the tendon is unbonded.

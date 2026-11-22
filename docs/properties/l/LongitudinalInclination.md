@@ -1,4 +1,4 @@
 LongitudinalInclination
 =======================
 
-Incination measured vs the cross section plane.
+Inclination measured vs the cross section plane.

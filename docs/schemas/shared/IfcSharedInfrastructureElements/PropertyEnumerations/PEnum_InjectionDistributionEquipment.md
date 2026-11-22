@@ -18,7 +18,7 @@ Grouting tube equipped with sleeves for controlled injections, providing a metho
 ### PILLOW
 
 ### BULLFLEX
-Textile formwork system a closed textile countainer is filled with grout to form a barrier or seal an opening.
+Textile formwork system a closed textile container is filled with grout to form a barrier or seal an opening.
 
 ### OTHER
 The value falls outside of the predefined values of this enumeration.

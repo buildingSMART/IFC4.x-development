@@ -18,7 +18,7 @@ The method of using dynamic tamping machine usually free falling a heavy hammer 
 Dig out the soft soil in a certain range below the foundation ground and then backfill the area with high strength, low compressibility and no corrosive materials.
 
 ### ROLLERCOMPACTED
-A kind of compacting method that adopts rolling machinery, repeated rolling and vibration compacts the foundation soil, increasing strength and descreasing compressibility.
+A kind of compacting method that adopts rolling machinery, repeated rolling and vibration compacts the foundation soil, increasing strength and decreasing compressibility.
 
 ### INJECTIONGROUTED
 A method of injecting curable slurry into cracks or pores of a geotechnical foundation to improve its physical and mechanical properties.

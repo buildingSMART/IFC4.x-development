@@ -1,4 +1,4 @@
 TAMTubesSpacing
 ===============
 
-Spacing between the tubes Tubes á manchette (TAM).
+Spacing between the Tubes á manchette (TAM).
