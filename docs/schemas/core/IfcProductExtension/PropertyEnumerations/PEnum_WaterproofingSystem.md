@@ -12,3 +12,5 @@ The groundwater flows freely through a drainage layer into the tunnel and is col
 ### OTHER
 The value falls outside of the predefined values of this enumeration.
 
+### NOTKNOWN
+Value is unknown.
