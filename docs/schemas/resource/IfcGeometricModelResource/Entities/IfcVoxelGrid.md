@@ -19,7 +19,7 @@ Number of voxels along the X axis.
 Number of voxels along the Y axis.
 
 ### NumberOfVoxelsZ
-NumberOf voxels along the Z axis.
+Number of voxels along the Z axis.
 
 ### Voxels
 Indication of voxels on the grid. The array is one-dimensional where values are distributed in the following order:
