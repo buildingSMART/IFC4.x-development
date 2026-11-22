@@ -1,4 +1,4 @@
 SupportArrangement
 ==================
 
-Arrangement of support elements.
+Specifies whether the support is simple or staggered.

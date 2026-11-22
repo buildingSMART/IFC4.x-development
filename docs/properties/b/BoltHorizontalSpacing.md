@@ -1,4 +1,4 @@
 BoltHorizontalSpacing
 =====================
 
-Horizontal spacing between bolts in the support system.
+Horizontal spacing of bolts.
