@@ -7,10 +7,10 @@
 Steel fibre.
 
 ### MACRO_POLYPROPYLENE
-Macro polypropylen fibre.
+Macro polypropylene fibre.
 
 ### MICRO_POLYPROPYLENE
-Micro polypropylen fibre.
+Micro polypropylene fibre.
 
 ### GLASS_FIBRE
 Glassfibre.
