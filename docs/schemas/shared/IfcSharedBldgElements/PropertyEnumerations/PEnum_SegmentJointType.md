@@ -25,6 +25,6 @@ Value has not been specified
 ### NOTKNOWN
 Value is unkown
 
-### USERDEFINED
-<!-- FILL IN: description of USERDEFINED. -->
+### OTHER
+The value falls outside of the predefined values of this enumeration.
 
