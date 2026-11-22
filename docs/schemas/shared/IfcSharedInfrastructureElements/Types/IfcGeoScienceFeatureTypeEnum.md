@@ -6,7 +6,7 @@ Defines the different predefined types of geoscience features that can specify a
 
 ## Items
 ### DISCRETEDISCONTINUITY
-Any interuption of the continuity in the rock material with its attendant mechanical, hydraulic and thermal properties.
+Any interruption of the continuity in the rock material with its attendant mechanical, hydraulic and thermal properties.
 
 ### FOLD
 A fold is formed by one or more systematically curved layers, surfaces, or lines in a rock body. A fold denotes a structure formed by the deformation of a geologic structure, such as a contact of which the original undeformed geometry is presumed, to form a structure that may be described by the translation of an abstract line (the fold axis) parallel to itself along some curvilinear path (the fold profile). Folds have a hinge zone (zone of maximum curvature along the surface) and limbs (parts of the deformed surface not in the hinge zone). Folds are described by an axial surface, hinge line, profile geometry, the solid angle between the limbs, and the relationships between adjacent folded surfaces if the folded structure is a layering fabric.
@@ -39,7 +39,7 @@ A shear displacement structure includes all brittle to ductile style structures 
 A contact is a general concept representing any kind of surface separating two geologic units, including primary boundaries such as depositional contacts, all kinds of unconformities, intrusive contacts, and gradational contacts, as well as faults that separate geologic units.
 
 ### PHYSICALPROPERTYDISTRIBUTION
-Additional option (alternative to discrete models) to describe a +/- continuous spatial distribution of any physical parameter (geotechnical key-parameters, permeabilty, likelyhood of. e.g. a fault or any other uncertainty-related information)
+Additional option (alternative to discrete models) to describe a +/- continuous spatial distribution of any physical parameter (geotechnical key-parameters, permeability, likelihood of. e.g. a fault or any other uncertainty-related information)
 
 ### USERDEFINED
 User-defined type.
