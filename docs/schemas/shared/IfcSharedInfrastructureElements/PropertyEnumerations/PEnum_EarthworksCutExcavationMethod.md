@@ -21,3 +21,8 @@ Controlled drilling followed by explosive blasting.
 ### OTHER
 The value falls outside of the predefined values of this enumeration.
 
+### NOTKNOWN
+Value is unknown.
+
+### UNSET
+Value has not been specified.

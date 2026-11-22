@@ -17,3 +17,12 @@ Flexible membrane that bridges a gap to provide seal.
 
 ### INFLATABLE
 Seal installed in gap and inflated to provide seal.
+
+### OTHER
+The value falls outside of the predefined values of this enumeration.
+
+### NOTKNOWN
+Value is unknown.
+
+### UNSET
+Value has not been specified.

@@ -14,3 +14,12 @@ Observation done on the roof of the excavation.
 
 ### INVERT
 Observation done on the floor of the excavation.
+
+### OTHER
+The value falls outside of the predefined values of this enumeration.
+
+### NOTKNOWN
+Value is unknown.
+
+### UNSET
+Value has not been specified.
