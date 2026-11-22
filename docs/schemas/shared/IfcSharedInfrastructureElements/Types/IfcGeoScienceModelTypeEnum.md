@@ -16,7 +16,7 @@ Model of geological structure as considered relevant for the project, as a base 
 
 ### GEOTECHSYNTHESISMODEL
 Link between the design and modelled geology and geotechnical conditions:
-summarized interpretation with regard to building, construction method,? in relation to a section of the alignment or building structure. Typical definition of "baseline conditions" as usually included in a geotech. longitudinal section
+summarized interpretation with regard to building, construction method,… in relation to a section of the alignment or building structure. Typical definition of "baseline conditions" as usually included in a geotech. longitudinal section
 
 ### PHYSICALPROPERTYDISTIBUTIONMODEL
 Additional option (alternative to discrete models) to describe a +/- continuous spatial distribution of any physical properties (geotechnical key-parameters, permeabilty, likelyhood of. e.g. a fault or any other uncertainty-related information)

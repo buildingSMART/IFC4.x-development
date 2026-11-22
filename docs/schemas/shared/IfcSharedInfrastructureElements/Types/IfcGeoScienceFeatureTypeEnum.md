@@ -33,7 +33,7 @@ Discrete spatial object representing a natural hazard.
 Any soil or rock unit or zone that by virtue of its hydraulic properties has a distinct influence on the storage or movement of groundwater (after ANS, 1980).
 
 ### FAULT
-A shear displacement structure includes all brittle to ductile style structures along which displacement has occurred, from a simple, single 'planar' surface to a fault system comprised of tens of strands of both brittle and ductile nature. This structure may have some significant thickness (a deformation zone) and have an associated body of deformed rock that may be considered a deformation unit (which geologicUnitType is ?DeformationUnit?) which can be associated to the ShearDisplacementStructure using GeologicFeatureRelation from the GeoSciML Extension package
+A shear displacement structure includes all brittle to ductile style structures along which displacement has occurred, from a simple, single 'planar' surface to a fault system comprised of tens of strands of both brittle and ductile nature. This structure may have some significant thickness (a deformation zone) and have an associated body of deformed rock that may be considered a deformation unit (which geologicUnitType is ‘DeformationUnit’) which can be associated to the ShearDisplacementStructure using GeologicFeatureRelation from the GeoSciML Extension package
 
 ### CONTACT
 A contact is a general concept representing any kind of surface separating two geologic units, including primary boundaries such as depositional contacts, all kinds of unconformities, intrusive contacts, and gradational contacts, as well as faults that separate geologic units.
