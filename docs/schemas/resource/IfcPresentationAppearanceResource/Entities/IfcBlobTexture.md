@@ -22,7 +22,7 @@ Blob, given as a single binary, to capture the texture within one popular file (
 ## Formal Propositions
 
 ### SupportedRasterFormat
-Currently the formats of bmp, jpg, gif and pgn, shall be supported.
+Currently the formats of bmp, jpg, gif and png, shall be supported.
 
 ### RasterCodeByteStream
 The size of the raster code shall be a multiple of 8 bits.
