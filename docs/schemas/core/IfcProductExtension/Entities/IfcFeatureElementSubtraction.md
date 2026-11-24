@@ -18,7 +18,7 @@ The local placement for _IfcFeatureElementSubtraction_ is defined in its superty
 ## Attributes
 
 ### VoidsElements
-Reference to the _Voids_ Relationship that uses this Opening Element to create a void within an Element. The Opening Element can only be used to create a single void within a single Element.
+Reference to the _IfcRelVoidsElement_ relationship that uses this feature element subtraction to create a void within an element. The feature element subtraction can only be used to create a single void within a single element.
 
 ## Formal Propositions
 
