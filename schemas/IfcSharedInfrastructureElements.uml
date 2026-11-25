@@ -1423,7 +1423,7 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_TunnelInclination_UNSET" name="UNSET"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_FaceExcavationCommon_IfcFaceExcavation" client="cl_Pset_FaceExcavationCommon" supplier="cl_IfcFaceExcavation"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_LateralExcavationCommon" name="Pset_LateralExcavationCommon">
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_LateralExcavationCommon" name="Pset_RadialExcavationCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_LateralExcavationCommon_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
