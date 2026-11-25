@@ -11,7 +11,7 @@ concept {
     IfcObjectDefinition:HasAssociations -> IfcRelAssociatesMaterial:RelatedObjects
     IfcRelAssociatesMaterial:RelatingMaterial -> IfcMaterialProfileSet
 
-    IfcMaterialProfileSet:MaterialLayers -> IfcMaterialProfile
+    IfcMaterialProfileSet:MaterialProfiles -> IfcMaterialProfile
     IfcMaterialProfile:Name -> IfcLabel_0
     IfcMaterialProfile:Material -> IfcMaterial_0
     IfcMaterialProfile:Name[binding="Name"]
