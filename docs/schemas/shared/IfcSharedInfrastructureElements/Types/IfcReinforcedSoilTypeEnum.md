@@ -3,6 +3,8 @@
 This container defines the different predefined types of soil reinforcement that can specify an _IfcReinforcedSoil_.
 <!-- end of short definition -->
 
+> IFC4.4.0.0 DEPRECATION This type is now deprecated. Use IfcImprovedGroundTypeEnum instead.
+
 ## Items
 
 ### SURCHARGEPRELOADED
