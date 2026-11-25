@@ -1,4 +1,4 @@
 UserDefinedPreSupportType
 =========================
 
-Specifies a user defined type of pre-support applied. Used when PreSupporttype is set to USERDEFINED.
+Specifies a user defined type of pre-support applied. Used when PreSupportType is set to OTHER.
