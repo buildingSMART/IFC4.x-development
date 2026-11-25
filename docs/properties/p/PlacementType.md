@@ -1,4 +1,4 @@
 PlacementType
 =============
 
-Indicates how the object is designed to be placed.
+Indicates the purpose of the sensor placement.
