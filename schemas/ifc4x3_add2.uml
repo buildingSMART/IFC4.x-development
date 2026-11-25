@@ -126,6 +126,9 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="ip_IfcRailDomain">
     <importedPackage xmi:type="uml:Package" href="IfcRailDomain.uml#pk_IfcRailDomain"/>
   </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="ip_IfcTunnelDomain">
+    <importedPackage xmi:type="uml:Package" href="IfcTunnelDomain.uml#pk_IfcTunnelDomain"/>
+  </packageImport>
   <packageImport xmi:type="uml:PackageImport" xmi:id="ip_propertytypes">
     <importedPackage xmi:type="uml:Package" href="propertytypes.uml#pk_propertytypes"/>
   </packageImport>
