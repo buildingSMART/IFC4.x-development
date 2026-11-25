@@ -1563,7 +1563,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoObsDiscontinuityCommon_DiscontinuityFrictionAngle_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoObsDiscontinuityCommon_DiscontinuityFrictionAngle_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsDiscontinuityCommon_DiscontinuityInFilling" name="DiscontinuityInFilling">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoObsDiscontinuityCommon_DiscontinuityInFilling" name="DiscontinuityInfilling">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcLabel"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoObsDiscontinuityCommon_DiscontinuityInFilling_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoObsDiscontinuityCommon_DiscontinuityInFilling_upper" value="1"/>
@@ -2025,7 +2025,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_LabTestResult_HydraulicConductivity_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_LabTestResult_HydraulicConductivity_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_LabTestResult_LiquidLimits" name="LiquidLimits">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_LabTestResult_LiquidLimits" name="LiquidLimit">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveRatioMeasure"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_LabTestResult_LiquidLimits_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_LabTestResult_LiquidLimits_upper" value="1"/>
