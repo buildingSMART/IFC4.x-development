@@ -719,7 +719,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SolidStratumCapacity_PwaveVelocity_upper" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_SolidStratumCapacity_Resistivity" name="Resistivity">
-        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcElectricResistanceMeasure"/>
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcElectricalResistivityMeasure"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_SolidStratumCapacity_Resistivity_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_SolidStratumCapacity_Resistivity_upper" value="1"/>
       </ownedAttribute>

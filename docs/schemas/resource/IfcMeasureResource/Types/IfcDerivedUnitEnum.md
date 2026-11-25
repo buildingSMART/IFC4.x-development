@@ -166,5 +166,8 @@ Warping constraint unit.
 ### WARPINGMOMENTUNIT
 Warping moment unit.
 
+### ELECTRICRESISTIVITYUNIT
+Electrical resistivity unit.
+
 ### USERDEFINED
 User defined derived unit.

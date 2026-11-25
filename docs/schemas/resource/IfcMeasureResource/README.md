@@ -90,6 +90,7 @@ Table 1 indicates measures, units, and corresponding data types.
 |Electric current|SI / Basic|ampere|A||AMPERE|ELECTRICCURRENTUNIT||IfcElectricCurrentMeasure|
 |Electric potential, potential difference, tension, electromotive force|SI / Derived|volt|V|W / A|VOLT|ELECTRICVOLTAGEUNIT||IfcElectricVoltageMeasure|
 |Electric resistance|SI / Derived|ohm|W|V / A|OHM|ELECTRICRESISTANCEUNIT||IfcElectricResistanceMeasure|
+|Electrical resistivity|Derived|||Ω · m|||ELECTRICRESISTIVITYUNIT|IfcElectricalResistivityMeasure|
 |Energy, work, quantity of heat|SI / Derived|joule|J|N · m|JOULE|ENERGYUNIT||IfcEnergyMeasure|
 |Force|SI / Derived|newton|N|kg · m / s2|NEWTON|FORCEUNIT||IfcForceMeasure|
 |Frequency|SI / Derived|hertz|Hz|1 / s|HERTZ|FREQUENCYUNIT||IfcFrequencyMeasure|
