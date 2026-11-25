@@ -18,7 +18,6 @@ Occurrences of the _IfcFillElementType_ within building models are represented b
 
 ### PredefinedType
 Predefined generic type for a fill element type that is specified in an enumeration. There may be a property set given specifically for the predefined types.
-> NOTE  The _PredefinedType_ shall only be used, if no _IfcFillElementType_ is assigned, providing its own _IfcFillElementType.PredefinedType_.
 
 ## Formal Propositions
 
