@@ -344,7 +344,7 @@ END_FUNCTION;
         <specification xmi:type="uml:OpaqueExpression" xmi:id="cl_IfcBooleanClippingResult_FirstOperandType" name="FirstOperandType">
           <language>EXPRESS_WHERE</language>
           <body>('IFC4X3_ADD2.IFCSWEPTAREASOLID' IN TYPEOF(FirstOperand)) OR 
-('IFC4X3_ADD2.IFCSWEPTDISCSOLID' IN TYPEOF(FirstOperand)) OR 
+('IFC4X3_ADD2.IFCSWEPTDISKSOLID' IN TYPEOF(FirstOperand)) OR 
 ('IFC4X3_ADD2.IFCBOOLEANCLIPPINGRESULT' IN TYPEOF(FirstOperand))</body>
         </specification>
       </ownedRule>

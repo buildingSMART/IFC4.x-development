@@ -10,7 +10,7 @@ A clipping result is the Boolean difference between a swept solid and a half spa
 ## Formal Propositions
 
 ### FirstOperandType
-The first operand of the Boolean clipping operation shall be either an IfcSweptAreaSolid or (in case of more than one clipping) an IfcBooleanResult.
+The first operand of the Boolean clipping operation shall be either an IfcSweptAreaSolid, an IfcSweptDiskSolid or (in case of more than one clipping) an IfcBooleanClippingResult.
 
 ### SecondOperandType
 The second operand of the Boolean clipping operation shall be an IfcHalfSpaceSolid.
