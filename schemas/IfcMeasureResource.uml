@@ -458,6 +458,7 @@ OR
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_COMPOUNDPLANEANGLEUNIT" name="COMPOUNDPLANEANGLEUNIT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_CURVATUREUNIT" name="CURVATUREUNIT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_DYNAMICVISCOSITYUNIT" name="DYNAMICVISCOSITYUNIT"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_ELECTRICRESISTIVITYUNIT" name="ELECTRICRESISTIVITYUNIT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_HEATFLUXDENSITYUNIT" name="HEATFLUXDENSITYUNIT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_HEATINGVALUEUNIT" name="HEATINGVALUEUNIT"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcDerivedUnitEnum_INTEGERCOUNTRATEUNIT" name="INTEGERCOUNTRATEUNIT"/>
