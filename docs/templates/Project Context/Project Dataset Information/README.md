@@ -6,9 +6,6 @@ Projects may define external datasets, which may be used to attach arbitrary mac
 ```
 concept {
     IfcContext:HasAssociations -> IfcRelAssociatesDataset:RelatedObjects
-    IfcContext:LongName -> IfcLabel_1
-    IfcContext:ObjectType -> IfcLabel_2
-    IfcContext:Phase -> IfcLabel_3
     IfcRelAssociatesDataset:RelatingDataset -> IfcDatasetInformation
     IfcDatasetInformation:Identification -> IfcIdentifier_0
     IfcDatasetInformation:Name -> IfcLabel_0
