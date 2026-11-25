@@ -1578,7 +1578,7 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="dp_Pset_GeoScienceFeatureTypeFault_IfcGeoScienceFeatureTypeEnum_FAULT" client="cl_Pset_GeoScienceFeatureTypeFault" supplier="cl_IfcGeoScienceFeatureTypeEnum_FAULT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_GeoScienceFeatureTypeFluidBody" name="Pset_GeoScienceFeatureTypeFluidBody">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_GeoScienceFeatureTypeFluidBody_comment_0">
-        <body>PSET_TYPEDRIVENOVERRIDE</body>
+        <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeFluidBody_PHLevel" name="PHLevel">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPHMeasure"/>
