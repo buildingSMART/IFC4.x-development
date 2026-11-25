@@ -66,6 +66,7 @@ IfcEvaporator,IfcEvaporatorType
 IfcEvent,IfcEventType
 IfcFan,IfcFanType
 IfcFastener,IfcFastenerType
+IfcFillElement,IfcFillElementType
 IfcFilter,IfcFilterType
 IfcFireSuppressionTerminal,IfcFireSuppressionTerminalType
 IfcFlowController,IfcFlowControllerType
