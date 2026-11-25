@@ -1313,7 +1313,7 @@
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceModelTypeEnum_GEOTECHMODEL" name="GEOTECHMODEL"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceModelTypeEnum_GEOTECHSYNTHESISMODEL" name="GEOTECHSYNTHESISMODEL"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceModelTypeEnum_HYDROGEOMODEL" name="HYDROGEOMODEL"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceModelTypeEnum_PHYSICALPROPERTYDISTIBUTIONMODEL" name="PHYSICALPROPERTYDISTIBUTIONMODEL"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceModelTypeEnum_PHYSICALPROPERTYDISTIBUTIONMODEL" name="PHYSICALPROPERTYDISTRIBUTIONMODEL"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceModelTypeEnum_USERDEFINED" name="USERDEFINED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_IfcGeoScienceModelTypeEnum_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>
@@ -1432,7 +1432,7 @@
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceModelTypeEnum_HYDROGEOMODEL_gen_IfcGeoScienceModel" general="cl_IfcGeoScienceModel"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceModelTypeEnum_HYDROGEOMODEL_gen_IfcGeoScienceModelType" general="cl_IfcGeoScienceModelType"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceModelTypeEnum_PHYSICALPROPERTYDISTIBUTIONMODEL" name="IfcGeoScienceModelTypeEnum.PHYSICALPROPERTYDISTIBUTIONMODEL">
+    <packagedElement xmi:type="uml:Class" xmi:id="cl_IfcGeoScienceModelTypeEnum_PHYSICALPROPERTYDISTIBUTIONMODEL" name="IfcGeoScienceModelTypeEnum.PHYSICALPROPERTYDISTRIBUTIONMODEL">
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceModelTypeEnum_PHYSICALPROPERTYDISTIBUTIONMODEL_gen_IfcGeoScienceModel" general="cl_IfcGeoScienceModel"/>
       <generalization xmi:type="uml:Generalization" xmi:id="cl_IfcGeoScienceModelTypeEnum_PHYSICALPROPERTYDISTIBUTIONMODEL_gen_IfcGeoScienceModelType" general="cl_IfcGeoScienceModelType"/>
     </packagedElement>
@@ -1637,7 +1637,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_LevelOfIntensity_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_LevelOfIntensity_upper" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_LikelihoodOfOccurence" name="LikelihoodOfOccurence">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_LikelihoodOfOccurence" name="LikelihoodOfOccurrence">
         <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcReal"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_LikelihoodOfOccurence_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_GeoScienceFeatureTypeGeoHazard_LikelihoodOfOccurence_upper" value="1"/>
