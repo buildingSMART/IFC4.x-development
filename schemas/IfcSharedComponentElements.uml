@@ -634,8 +634,10 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_ElementComponentCorrosionTreatment" name="PEnum_ElementComponentCorrosionTreatment">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_EPOXYCOATED" name="EPOXYCOATED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_GALVANISED" name="GALVANISED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_GALVANIZEDANDPOWDERCOATED" name="GALVANIZEDANDPOWDERCOATED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_NONE" name="NONE"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_PAINTED" name="PAINTED"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_POWDERCOATED" name="POWDERCOATED"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_STAINLESS" name="STAINLESS"/>
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_ElementComponentCorrosionTreatment_NOTDEFINED" name="NOTDEFINED"/>
     </packagedElement>

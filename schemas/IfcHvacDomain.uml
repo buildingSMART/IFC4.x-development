@@ -4369,6 +4369,21 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementSize_NominalHeight_lower"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementSize_NominalHeight_upper" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementSize_NominalThickness" name="NominalThickness">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNonNegativeLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementSize_NominalThickness_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementSize_NominalThickness_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementSize_NominalDiameter" name="NominalDiameter">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcPositiveLengthMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementSize_NominalDiameter_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementSize_NominalDiameter_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_ElementSize_NominalWeight" name="NominalWeight">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcMassMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_ElementSize_NominalWeight_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_ElementSize_NominalWeight_upper" value="1"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="cl_Pset_EngineTypeCommon" name="Pset_EngineTypeCommon">
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_EngineTypeCommon_comment_0">
@@ -4883,6 +4898,21 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FanTypeCommon_EfficiencyCurve_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FanTypeCommon_EfficiencyCurve_upper" value="*"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FanTypeCommon_EfficiencyPoint" name="EfficiencyPoint">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcNormalisedRatioMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FanTypeCommon_EfficiencyPoint_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FanTypeCommon_EfficiencyPoint_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FanTypeCommon_StaticLoad" name="StaticLoad">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FanTypeCommon_StaticLoad_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FanTypeCommon_StaticLoad_upper" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FanTypeCommon_DynamicLoad" name="DynamicLoad">
+        <type xmi:type="uml:DataType" href="IfcMeasureResource.uml#dt_IfcForceMeasure"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FanTypeCommon_DynamicLoad_lower"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FanTypeCommon_DynamicLoad_upper" value="1"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="en_PEnum_FanMotorConnectionType" name="PEnum_FanMotorConnectionType">
       <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="en_PEnum_FanMotorConnectionType_BELTDRIVE" name="BELTDRIVE"/>
@@ -5253,7 +5283,7 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="cl_Pset_FlowMeterOccurrence_comment_0">
         <body>PSET_OCCURRENCEDRIVEN</body>
       </ownedComment>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FlowMeterOccurrence_FlowMeterOurpose" name="FlowMeterOurpose" type="en_PEnum_FlowMeterPurpose">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="at_Pset_FlowMeterOccurrence_FlowMeterOurpose" name="FlowMeterPurpose" type="en_PEnum_FlowMeterPurpose">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="at_Pset_FlowMeterOccurrence_FlowMeterOurpose_lower" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="at_Pset_FlowMeterOccurrence_FlowMeterOurpose_upper" value="*"/>
       </ownedAttribute>
