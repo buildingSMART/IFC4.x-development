@@ -1,4 +1,4 @@
 CompactionMethodOther
 =====================
 
-User defined method of compaction when CompactionMethod = USERDEFINED.
+User defined method of compaction when CompactionMethod = OTHER.
