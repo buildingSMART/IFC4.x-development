@@ -33,3 +33,7 @@ User-defined fan type.
 
 ### NOTDEFINED
 Undefined fan type.
+
+### JET
+A fan used for producing a high-velocity flow of air in a space. The typical function is to add momentum to the air within a tunnel. Inlets and outlets are not ducted.
+
